@@ -1,0 +1,18 @@
+{
+  "name": "球途 Chronicle",
+  "short_name": "球途",
+  "description": "从青训起步，体验属于你的足球职业生涯。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#071015",
+  "theme_color": "#071015",
+  "icons": [
+    {
+      "src": "assets/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

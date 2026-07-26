@@ -1,0 +1,20 @@
+{
+  "name": "qiutu-career",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/prepare-site.cjs && vinext build && node tools/finalize-site.cjs",
+    "start": "vinext start"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-server-dom-webpack": "^19.2.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-rsc": "latest",
+    "vinext": "latest",
+    "vite": "^8.0.0"
+  }
+}

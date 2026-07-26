@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 9d683e05a7d63f80e45d7e38e2d7ac8cbe2b0d1f Codex <codex@openai.com> 1785030933 +0200	commit (initial): Prepare mobile football career game for deployment
+9d683e05a7d63f80e45d7e38e2d7ac8cbe2b0d1f 30f9f122f43bd1d8e9116c46bdfa889d885f6709 Codex <codex@openai.com> 1785031079 +0200	commit: Add deployable Next.js hosting shell
+30f9f122f43bd1d8e9116c46bdfa889d885f6709 7b456f0904211145cbdde07a4402336e9d8490e4 Codex <codex@openai.com> 1785031448 +0200	commit: Export hosting build to dist
+7b456f0904211145cbdde07a4402336e9d8490e4 cbc61cfcdffa866b4e1aa81623b7a0ebe74fd0e9 Codex <codex@openai.com> 1785032201 +0200	commit: Use Vinext hosting output
+cbc61cfcdffa866b4e1aa81623b7a0ebe74fd0e9 da1a63683e03a55552eddfaef1cdb92c41d009ba Codex <codex@openai.com> 1785032329 +0200	commit: Add Vinext RSC build plugin
+da1a63683e03a55552eddfaef1cdb92c41d009ba 22b5c34f3a503d854164c5bf96aee62391c4d1cd Codex <codex@openai.com> 1785032856 +0200	commit: Rebalance career peak ability distribution

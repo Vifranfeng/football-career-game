@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">金靴</title>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a1"/>
+      <stop offset=".42" stop-color="#f9c536"/>
+      <stop offset="1" stop-color="#b96b08"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#gold)" stroke="#fff0a1" stroke-width="2" d="M33 18h39l3 40c1 9 8 16 17 18l13 3c8 2 13 9 13 17v5H15v-9c0-8 5-16 13-19l18-8c5-2 8-7 7-13l-2-12H33z"/>
+  <path fill="#8d5007" d="M14 99h104v10H14zM47 67l10 13-10 9-17-12z"/>
+  <path fill="none" stroke="#fff4bb" stroke-width="5" stroke-linecap="round" d="M44 33h29M46 43h28M49 53h26"/>
+  <circle cx="32" cy="108" r="4" fill="#f7ca45"/>
+  <circle cx="51" cy="108" r="4" fill="#f7ca45"/>
+  <circle cx="82" cy="108" r="4" fill="#f7ca45"/>
+  <circle cx="102" cy="108" r="4" fill="#f7ca45"/>
+</svg>
