@@ -1,0 +1,567 @@
+﻿{{Short description|South Korean football league season}}
+{{Use British English|date=January 2025}}
+{{Use dmy dates|date=January 2025}}
+{{Infobox football league season
+| competition = [[K3 League]]
+| season = [[2025 in South Korean football|2025]]
+| dates = 1 March – 8 November 2025
+| winners = [[Gimhae FC 2008]] <br> (2nd title)
+| promoted = [[Gimhae FC 2008]] <br> [[Paju Citizen FC|Paju Citizen]]
+| relegated = 
+| continentalcup1 = 
+| continentalcup1 qualifiers = 
+| continentalcup2 = 
+| continentalcup2 qualifiers = 
+| best player = [[Lee Jae-gun]]<ref name="mvp">{{cite news |url=https://sports.news.nate.com/view/20251210n33150 |script-title=ko:K3·K4리그를 빛내다…이재건·신재욱 MVP로 반짝 |lang=ko |publisher=Sports World |website=Nate |date=2025-12-10 |access-date=2025-12-27}}</ref>
+| league topscorer = [[Lee Rae-jun]] <br> (15 goals)<ref name="mvp"/>
+| best goalkeeper = 
+| biggest home win = 
+| biggest away win = 
+| highest scoring = 
+| matches = 
+| total goals = 
+| longest wins = 
+| longest unbeaten = 
+| longest winless = 
+| longest losses = 
+| highest attendance = 
+| lowest attendance = 
+| attendance = 
+| average attendance = 
+| prevseason = [[2024 K3 League|2024]]
+| nextseason = [[2026 K3 League|2026]]
+}}
+
+The '''2025 K3 League''' is the sixth season of the semi-professional [[K3 League]], the third-highest league of men's [[football in South Korea]].
+
+On 11 August 2025, [[Gimhae FC 2008]] and [[Paju Citizen FC|Paju Citizen]] were approved to join the [[K League 2]] for the [[2026 K League 2|2026 season]] after switching to professional teams at the fourth meeting of the K League Federation. This season was their last season in semi-professional leagues.<ref>{{cite news |url=https://www.yna.co.kr/view/AKR20250811123100007 |script-title=ko:김해·용인·파주 회원가입 승인…내년 K리그2 17개 팀으로 |lang=ko |publisher=Yonhap News Agency |date=2025-08-11 |access-date=2025-12-23}}</ref>
+
+== Competition format ==
+The pre-season winter transfer window opened between 1 January 2025 and 24 March 2025, and the summer transfer window opened between 20 June 2025 and 31 July 2025.{{Citation needed |date=January 2025}}
+
+The 2025 season was held from 1 March to 8 November, and consisted of 30 rounds, with each team playing 28 matches.<ref>{{Cite Instagram |postid=DFpTGfpSx1E |user=thekfa_k3k4league |script-title=ko:2025 K4리그 일정표 |author=Korea Football Association |date=February 5, 2025 |access-date=February 6, 2025 |language=ko |trans-title=2025 K4 League schedule |link=https://www.instagram.com/p/DFpTGfpSx1E/?img_index=7}}</ref><ref name=":0">{{Cite web |last=Ko |first=Sung-hwan |date=27 February 2025 |script-title=ko:'15개팀 참가' 2025 K3리그, 3월 1일 개막...8개월 대장정 막 올린다 |trans-title=With 15 participating teams, the 2025 K3 League will begin its 8-month odyssey on 1 March |url=https://www.chosun.com/sports/football/2025/02/27/MIMTWAPALMY3Y47FRGV2BS35T4/ |access-date=28 February 2025 |website=The Chosun Ilbo |language=ko}}</ref> One team took a rest in each round as the number of participating teams was an odd number.<ref name=":0" />
+
+While fifteen teams competed in the 2025 season, each of them had to include at least three under-23 players in the matchday squad, and at least one of those players had to include in the starting line-up.<ref name=":1">{{Cite web |last=Lee |first=Young-ho |date=27 February 2025 |script-title=ko:K3리그, 2025시즌 3월 1일 개막... 15개팀 경쟁 |trans-title=The 2025 season of the K3 League will be started on 1 March, with 15 teams competing |url=https://www.yna.co.kr/view/AKR20250227149500007?section=sports/all |access-date=28 February 2025 |website=Yonhap News Agency |language=ko}}</ref>
+
+The 15th-placed team advanced to the [[#Relegation play-off|relegation play-off]], where they played runners-up of the [[2025 K4 League]].<ref>{{cite news |url=https://www.munhwa.com/article/11531511 |script-title=ko:대한축구협회, 2025시즌 K3·K4리그 승강 팀 수·방식 변경 |lang=ko |publisher=Munhwa Ilbo |date=2025-09-08 |access-date=2025-12-24}}</ref>
+
+==Teams==
+=== Team changes ===
+There was generally no promotion or relegation between the K3 League and the [[K League 2]], but [[Hwaseong FC]] qualified for the K League 2 after succeeding to turn professional at the end of 2024 season.<ref>{{Cite web |last=Kwon |first=Jae-min |date=December 1, 2024 |script-title=ko:한국프로축구연맹 이사회, 화성FC 회원 가입 승인...연맹 권한 범위도 확대 |trans-title=K League Federation approved Hwaseong FC's membership, and also expanded their own authority |url=https://sports.donga.com/sports/article/all/20241201/130538850/1 |access-date=February 5, 2025 |website=Sports Donga |language=Korean}}</ref><ref>{{Cite web |last=Bae |first=Jin-nam |date=January 13, 2025 |script-title=ko:화성FC 합류로 K리그2 14개 구단 체제...권오갑 총재 4선도 확정(종합) |trans-title=With Hwaseong FC's inclusion, K League 2 has 14 teams, Kwon Oh-gap's fourth term was also confirmed |url=https://www.yna.co.kr/view/AKR20250113119051007 |access-date=February 5, 2025 |website=Yonhap News Agency |language=ko}}</ref>
+
+Previously known as Jeonbuk Hyundai Motors B, [[Jeonbuk Hyundai Motors N]] participated after winning the 2024 K4 League.<ref>{{Cite web |last=Lee |first=Young-ho |date=January 9, 2025 |script-title=ko:K리그1 전북, 2군팀 명칭 변경..."N팀으로 불러주세요" |trans-title=K League 1's Jeonbuk changed their reserve team's name... "Call us the N team" |url=https://www.yna.co.kr/view/AKR20250109076600007 |access-date=February 5, 2025 |website=Yonhap News Agency |language=ko}}</ref> [[Daegu FC B]] were directly relegated as the lowest-ranked team of the 2024 season.<ref>{{Cite web |last=Kim |first=Ga-eul |date=January 21, 2025 |script-title=ko:대구FC B팀 사령탑으로 새 도전, 박원재 감독 "선수들 열심히 해줘 감사...잘 성장시키겠다" |trans-title=Park Won-jae's new challenge as Daegu FC B manager: "I'm grateful for the players who work hard... I must help them to develop well" |url=https://www.chosun.com/sports/football/2025/01/21/DY7423FB5RJOKHFN33CQHFMQTI/ |access-date=February 5, 2025 |website=The Chosun Ilbo |language=ko}}</ref>
+
+'''Promoted to [[2025 K League 2|K League 2]]'''
+* [[Hwaseong FC]]
+
+'''Promoted from [[2024 K4 League|K4 League]]'''
+* [[Jeonbuk Hyundai Motors N]]
+
+'''Relegated to [[2025 K4 League|K4 League]]'''
+* [[Daegu FC B]]
+
+===Stadiums and locations===
+{{location map+ |South Korea |width=250 |caption=Locations of the 2025 K3 League teams|places=
+{{location map~ |South Korea |lat=37.3398086 |long=126.7553364 
+|label=<div style="font-size:80%;position:relative;">[[Siheung Citizen FC|Siheung]]</div>|position=left}}
+{{location map~ |South Korea |lat=37.755001  |long=126.784478  
+|label=<div style="font-size:80%;position:relative;">[[Paju Citizen FC|Paju]]</div>|position=left}}
+{{location map~ |South Korea |lat=37.7736304 |long=128.895307  
+|label=<div style="font-size:80%;position:relative;">[[Gangneung Citizen FC|Gangneung]]</div>|position=right}}
+{{location map~ |South Korea |lat=35.931267  |long=129.1318329  
+|label=<div style="font-size:80%;position:relative;">[[Gyeongju Korea Hydro & Nuclear Power FC|KHNP]]</div>|position=right}}
+{{location map~ |South Korea |lat=36.3171283 |long=127.4305733 
+|label=<div style="font-size:80%;position:relative;">[[Daejeon Korail FC|Korail]]</div>|position=left}}
+{{location map~ |South Korea |lat=37.4779733 |long=127.5849185 
+|label=<div style="font-size:80%;position:relative;">[[Yangpyeong FC|Yangpyeong]]</div>|position=right}}
+{{location map~ |South Korea |lat=37.2932188 |long=127.6222535 
+|label=<div style="font-size:80%;position:relative;top:3px;">[[Yeoju FC|Yeoju]]</div>|position=right}}
+{{location map~ |South Korea |lat=35.920490 |long=127.097060
+|label=<div style="font-size:80%;position:relative;">[[Jeonbuk Hyundai Motors N|Jeonbuk]]</div>|position=left}}
+{{location map~ |South Korea |lat=35.5623831 |long=129.3457465 
+|label=<div style="font-size:80%;position:relative;">[[Ulsan Citizen FC|Ulsan]]</div>|position=right}}
+{{location map~ |South Korea |lat=35.2342114 |long=128.6621013 
+|label=<div style="font-size:80%;position:relative;">[[Changwon City FC|Changwon]]</div>|position=left}}
+{{location map~ |South Korea |lat=37.8560802 |long=127.6888628 
+|label=<div style="font-size:80%;position:relative;top:-9px;left:-9px;">[[Chuncheon FC|Chuncheon]]</div>|position=right}}
+{{location map~ |South Korea |lat=35.1160376 |long=129.0128769 
+|label=<div style="font-size:80%;position:relative;top:12px;left:-9px">[[Busan Transportation Corporation FC|Busan TC]]</div>|position=right}}
+{{location map~ |South Korea |lat=35.2555744 |long=128.8741913 
+|label=<div style="font-size:80%;position:relative;">[[Gimhae FC|Gimhae]]</div>|position=right}}
+{{location map~ |South Korea |lat=34.8294426 |long=126.3942692 
+|label=<div style="font-size:80%;position:relative;">[[FC Mokpo|Mokpo]]</div>|position=right}}
+{{location map~ |South Korea |lat=37.8878606 |long=127.1985832 
+|label=<div style="font-size:80%;position:relative;top:-9px;left:9px">[[Pocheon Citizen FC|Pocheon]]</div>|position=left}} }}
+
+{| class="wikitable sortable"
+|-
+! Team
+! City
+! Stadium
+! Capacity
+|-
+| [[Busan Transportation Corporation FC|Busan Transportation Corporation]]|| [[Busan]]|| [[Busan Gudeok Stadium|Gudeok Stadium]] || align="right"|4,549
+|-
+| [[Changwon City FC|Changwon FC]]|| [[Changwon]]|| [[Changwon Stadium|Changwon Sports Park]]|| align="right"|27,085
+|-
+| [[Chuncheon FC]]|| [[Chuncheon]]|| [[Chuncheon Songam Sports Town|Chuncheon Songam Sports Town Auxiliary Stadium]]|| align="right"|500
+|-
+| [[Daejeon Korail FC|Daejeon Korail]]|| [[Daejeon]]|| [[Daejeon World Cup Stadium|Daejeon World Cup Stadium Auxiliary Pitch]]|| align="right"|478
+|-
+| [[Gangneung Citizen FC|Gangneung Citizen]]|| [[Gangneung]]|| [[Gangneung Stadium]]|| align="right"|3,000
+|-
+| [[Gyeongju Korea Hydro & Nuclear Power FC|Gyeongju KHNP]]|| [[Gyeongju]]|| [[Gyeongju Civic Stadium]] || align="right"|12,199
+|-
+| [[Gimhae FC 2008]]|| [[Gimhae]]|| Gimhae Sports Complex || align="right"|15,066
+|-
+| [[Jeonbuk Hyundai Motors N]]|| [[Wanju County|Wanju]]|| Wanju Public Stadium || align="right"|3,377
+|-
+| [[FC Mokpo]]|| [[Mokpo]]|| [[Mokpo International Football Center]]|| align="right"|9,132
+|-
+| [[Paju Citizen FC|Paju Citizen]]|| [[Paju]]|| [[Paju Stadium]]|| align="right"|25,000
+|-
+| [[Pocheon Citizen FC|Pocheon Citizen]]|| [[Pocheon]]|| Pocheon Sports Complex || align="right"|7,000
+|-
+| [[Siheung Citizen FC|Siheung Citizen]]|| [[Siheung]]|| Jeongwang Stadium || align="right"|1,000
+|-
+| [[Ulsan Citizen FC|Ulsan Citizen]]|| [[Ulsan]]|| [[Ulsan Stadium]]|| align="right"|19,431
+|-
+| [[Yangpyeong FC]] || [[Yangpyeong County|Yangpyeong]]|| Yangpyeong Sports Complex || align="right"|6,300
+|-
+| [[Yeoju FC]]|| [[Yeoju]]|| Yeoju Sports Complex || align="right"|10,180
+|}
+
+=== Foreign players ===
+The number of foreign players was restricted to three per team, or four per team if one player was from an [[Asian Football Confederation|AFC]] country.<ref name=":0" />
+
+{| class="sortable wikitable"
+|-
+! style="width:190px;" | Club
+! style="width:170px;" | Player 1
+! style="width:170px;" | Player 2
+! style="width:170px;" | Player 3
+! style="width:170px;" | AFC player
+! style="width:170px;" | Former player(s)
+|-
+| [[Busan Transportation Corporation FC|Busan Transportation Corporation]]
+| {{flagicon|GER}} [[Jan Rabens]]
+|
+| 
+|
+|
+|-
+| [[Changwon City FC|Changwon FC]]
+| {{flagicon|BRA}} [[Felipe Fonseca]]
+|
+| 
+|
+|
+|-
+| [[Chuncheon FC]]
+| {{flagicon|BRA}} [[Felipe Machado]]
+| {{flagicon|BRA}} [[Klysman Hanry Ribeiro Pereira|Klysman]]
+| {{flagicon|SSD}} [[Martin Sawi]]
+| {{flagicon|JPN}} [[Reo Nishiguchi]]
+|
+|-
+| [[FC Mokpo]]
+| {{flagicon|NGR}} [[Uzo Michael]]
+|
+| 
+|
+|
+|-
+| [[Gangneung Citizen FC|Gangneung Citizen]]
+| {{flagicon|BRA}} [[Lucas Carvalho Domingos da Silva|Lucão]]
+| {{flagicon|BRA}} [[Careca (footballer, born 1995)|Careca]]
+| 
+|
+|
+|-
+| [[Gimhae FC 2008]]
+| {{flagicon|JPN}} [[Kaisei Ishii]]
+|
+| 
+|
+|
+|-
+| [[Gyeongju Korea Hydro & Nuclear Power FC|Gyeongju KHNP]]
+| {{flagicon|BRA}} [[Victor Ribeiro]]
+| {{flagicon|BRA}} [[Denzel (footballer)|Denzel]]
+| {{flagicon|BRA}} [[Alex Camilo Júnior|Camilo]]
+| 
+|
+|-
+| [[Paju Citizen FC|Paju Citizen]]
+| {{flagicon|NGR}} [[Yuri Silva de Oliveira|Yuri]]
+| {{flagicon|NGR}} [[Matheus Devellard]]
+| 
+|
+|
+|-
+| [[Siheung Citizen FC|Siheung Citizen]]
+| {{flagicon|BRA}} [[Julen Sandy Rodrigues Ferreira|Sandy]]
+|
+|
+|{{flagicon|JPN}} [[Haruto Tanaka]]
+|
+|-
+| [[Yangpyeong FC]]
+| {{flagicon|BRA}} [[Richard Luca]]
+| {{flagicon|BRA}} [[Vinicius dos Reis Macedo|Joaninha]]
+| 
+|
+|
+|}
+
+==League table==
+<onlyinclude>{{#invoke:Sports table|main
+|style=WDL
+|source= [https://www.joinkfa.com/ JoinKFA] [https://www.sofascore.com/tournament/football/south-korea/k3-league/10268#id:72594 Sofascore]
+|matches_style = FBR
+|update= complete
+<!--Update team positions here-->
+|team_order = GH, SHC, PCC, DJK, GJK, BTC, CW, YP, YJ, PJC, GNC, CC, USC, JBN, MP
+
+<!--Team definitions (wikilinks in table)-->
+|name_BTC=[[Busan Transportation Corporation FC|Busan Transportation Corporation]]
+|name_CW=[[Changwon City FC|Changwon FC]]
+|name_CC=[[Chuncheon FC]]
+|name_DJK=[[Daejeon Korail FC|Daejeon Korail]]
+|name_JBN=[[Jeonbuk Hyundai Motors N]]
+|name_GNC=[[FC Gangneung|Gangneung Citizen]]
+|name_GH=[[Gimhae FC 2008]]
+|name_GJK=[[Gyeongju Korea Hydro & Nuclear Power FC|Gyeongju KHNP]]
+|name_MP=[[FC Mokpo]]
+|name_PJC=[[Paju Frontier FC|Paju Citizen]]
+|name_PCC=[[Pocheon Citizen FC|Pocheon Citizen]]
+|name_SHC=[[Siheung Citizen FC|Siheung Citizen]]
+|name_USC=[[Ulsan Citizen FC|Ulsan Citizen]]
+|name_YP=[[Yangpyeong FC]]
+|name_YJ=[[Yeoju FC]]
+
+|result1=P |result10=P |result15=PLO
+|win_BTC=14 |draw_BTC=2 |loss_BTC=12|gf_BTC=35|ga_BTC=34
+|win_CW=12 |draw_CW=7  |loss_CW=9  |gf_CW=31 |ga_CW=23
+|win_CC=9 |draw_CC=3 |loss_CC=16 |gf_CC=27|ga_CC=37
+|win_DJK=14 |draw_DJK=7 |loss_DJK=7|gf_DJK=48|ga_DJK=32
+|win_GNC=8 |draw_GNC=7 |loss_GNC=13 |gf_GNC=38|ga_GNC=45
+|win_GH=18|draw_GH=7 |loss_GH=3 |gf_GH=48 |ga_GH=20 |status_GH=C,P
+|win_GJK=12 |draw_GJK=9 |loss_GJK=7 |gf_GJK=34|ga_GJK=29
+|win_JBN=5 |draw_JBN=5 |loss_JBN=18|gf_JBN=28|ga_JBN=51
+|win_MP=4 |draw_MP=4 |loss_MP=20|gf_MP=18 |ga_MP=51|status_MP=O
+|win_PJC=10 |draw_PJC=6 |loss_PJC=12 |gf_PJC=27 |ga_PJC=32 |status_PJC=P
+|win_PCC=16|draw_PCC=7 |loss_PCC=5 |gf_PCC=47|ga_PCC=28
+|win_SHC=17|draw_SHC=6 |loss_SHC=5 |gf_SHC=45|ga_SHC=25
+|win_USC=5 |draw_USC=6 |loss_USC=17 |gf_USC=20 |ga_USC=38
+|win_YP=13 |draw_YP=4 |loss_YP=11 |gf_YP=27|ga_YP=24
+|win_YJ=10 |draw_YJ=6 |loss_YJ=12  |gf_YJ=31 |ga_YJ=35
+
+|res_col_header=PR
+|class_rules=1) Points; 2) Goal difference; 3) Goals scored; 4) Wins
+|col_P=green1 |text_P=Promotion to [[2026 K League 2|K League 2]]
+|note_res_P=Promoted after getting a license for K League 2.
+|col_PLO=red1 |text_PLO=Qualification for [[2025 K3 League#Relegation play-off|relegation play-off]]
+}}</onlyinclude>
+
+==Results==
+{{#invoke:Sports results
+|main
+|style=WDL
+|source= [https://www.joinkfa.com/ JoinKFA] [https://www.sofascore.com/tournament/football/south-korea/k3-league/10268#id:72594 Sofascore]
+|update= complete
+|matches_style = FBR
+
+|team1=BTC | name_BTC=[[Busan Transportation Corporation FC|Busan Transportation Corporation]]
+|team2=CW | name_CW=[[Changwon City FC|Changwon FC]]
+|team3=CC | name_CC=[[Chuncheon FC]]
+|team4=DJK | name_DJK=[[Daejeon Korail FC|Daejeon Korail]]
+|team5=GNC | name_GNC=[[FC Gangneung|Gangneung Citizen]]
+|team6=GH | name_GH=[[Gimhae FC 2008]]
+|team7=GJK | name_GJK=[[Gyeongju Korea Hydro & Nuclear Power FC|Gyeongju KHNP]]
+|team8=JBH | name_JBH=[[Jeonbuk Hyundai Motors N]]
+|team9=MP | name_MP=[[FC Mokpo]]
+|team10=PJC | name_PJC=[[Paju Frontier FC|Paju Citizen]]
+|team11=PCC | name_PCC=[[Pocheon Citizen FC|Pocheon Citizen]]
+|team12=SHC | name_SHC=[[Siheung Citizen FC|Siheung Citizen]]
+|team13=USC | name_USC=[[Ulsan Citizen FC|Ulsan Citizen]]
+|team14=YP | name_YP=[[Yangpyeong FC]]
+|team15=YJ | name_YJ=[[Yeoju FC]]
+
+<!-- Busan Transport home matches -->
+|match_BTC_CW=2-1
+|match_BTC_CC=0-1
+|match_BTC_DJK=1-2
+|match_BTC_GNC=2-0
+|match_BTC_GH=0-1
+|match_BTC_GJK=2–1
+|match_BTC_JBH=2-1
+|match_BTC_MP=2-1
+|match_BTC_PJC=1-2
+|match_BTC_PCC=2-1
+|match_BTC_SHC=0-1
+|match_BTC_USC=2-1
+|match_BTC_YP=0-0
+|match_BTC_YJ=1-1
+
+<!-- Changwon home matches -->
+|match_CW_BTC=3-0
+|match_CW_CC=2-1
+|match_CW_DJK=0-0
+|match_CW_GNC=2-1
+|match_CW_GH=0-1
+|match_CW_GJK=0-0
+|match_CW_JBH=3-1
+|match_CW_MP=0–0
+|match_CW_PJC=0-1
+|match_CW_PCC=1–2
+|match_CW_SHC=1-2
+|match_CW_USC=2-1
+|match_CW_YP=1-0
+|match_CW_YJ=2-1
+
+<!-- Chuncheon home matches -->
+|match_CC_BTC=0-3
+|match_CC_CW=2-4
+|match_CC_DJK=0-1
+|match_CC_GNC=1-2
+|match_CC_GH=0-1
+|match_CC_GJK=1-0
+|match_CC_JBH=3-1
+|match_CC_MP=3-2
+|match_CC_PJC=0-3
+|match_CC_PCC=0-1
+|match_CC_SHC=1–2
+|match_CC_USC=0-0
+|match_CC_YP=1-0
+|match_CC_YJ=1-2
+
+<!-- Daejeon Korail home matches -->
+|match_DJK_BTC=2-0
+|match_DJK_CW=1-1
+|match_DJK_CC=0-1
+|match_DJK_GNC=1-1
+|match_DJK_GH=0–0
+|match_DJK_GJK=2-0
+|match_DJK_JBH=2-1
+|match_DJK_MP=0-1
+|match_DJK_PJC=2-0
+|match_DJK_PCC=2-0
+|match_DJK_SHC=2-3
+|match_DJK_USC=3-0
+|match_DJK_YP=1-0
+|match_DJK_YJ=3-3
+
+<!-- Gangneung Citizen home matches -->
+|match_GNC_BTC=2-1
+|match_GNC_CW=1-0
+|match_GNC_CC=2-4
+|match_GNC_DJK=4-3
+|match_GNC_GH=1-1
+|match_GNC_GJK=1-3
+|match_GNC_JBH=3-1
+|match_GNC_MP=3-1
+|match_GNC_PJC=1-1
+|match_GNC_PCC=0-1
+|match_GNC_SHC=2-2
+|match_GNC_USC=2-2
+|match_GNC_YP=3–1
+|match_GNC_YJ=1-1
+
+<!-- Gimhae home matches -->
+|match_GH_BTC=5-1
+|match_GH_CW=2-1
+|match_GH_CC=3-1
+|match_GH_DJK=3-0
+|match_GH_GNC=2-0
+|match_GH_GJK=1-3
+|match_GH_JBH=2–2
+|match_GH_MP=4-0
+|match_GH_PJC=2-0
+|match_GH_PCC=1-2
+|match_GH_SHC=1-1
+|match_GH_USC=0-0
+|match_GH_YP=3-0
+|match_GH_YJ=1-1
+
+<!-- Gyeongju KHNP home matches -->
+|match_GJK_BTC=1-0
+|match_GJK_CW=0-0
+|match_GJK_CC=0-0
+|match_GJK_DJK=2-1
+|match_GJK_GNC=2-1
+|match_GJK_GH=3-1
+|match_GJK_JBH=2-1
+|match_GJK_MP=2-0
+|match_GJK_PJC=1-1
+|match_GJK_PCC=0-3
+|match_GJK_SHC=2-3
+|match_GJK_USC=2-2
+|match_GJK_YP=0-0
+|match_GJK_YJ=0-1
+
+<!-- Jeonbuk N home matches -->
+|match_JBH_BTC=0-1
+|match_JBH_CW=0-2
+|match_JBH_CC=2-1
+|match_JBH_DJK=2-2
+|match_JBH_GNC=2-1
+|match_JBH_GH=1-2
+|match_JBH_GJK=0-1
+|match_JBH_MP=1-3
+|match_JBH_PJC=1–1
+|match_JBH_PCC=1-3
+|match_JBH_SHC=0-3
+|match_JBH_USC=0-1
+|match_JBH_YP=2-1
+|match_JBH_YJ=2-4
+
+<!-- Mokpo home matches -->
+|match_MP_BTC=1-3
+|match_MP_CW=0-2
+|match_MP_CC=1-0
+|match_MP_DJK=3-2
+|match_MP_GNC=2-1
+|match_MP_GH=0-1
+|match_MP_GJK=0-1
+|match_MP_JBH=1-1
+|match_MP_PJC=0-2
+|match_MP_PCC=0-0
+|match_MP_SHC=0-4
+|match_MP_USC=1-2
+|match_MP_YP=0-2
+|match_MP_YJ=0-3
+
+<!-- Paju Citizen home matches -->
+|match_PJC_BTC=0-1
+|match_PJC_CW=0-0
+|match_PJC_CC=0-1
+|match_PJC_DJK=1-2
+|match_PJC_GNC=2-1
+|match_PJC_GH=1-2
+|match_PJC_GJK=0-0
+|match_PJC_JBH=4-0
+|match_PJC_MP=2-0
+|match_PJC_PCC=0–4
+|match_PJC_SHC=0-4
+|match_PJC_USC=1-1
+|match_PJC_YP=0-1
+|match_PJC_YJ=2-0
+
+<!-- Pocheon Citizen home matches -->
+|match_PCC_BTC=3-1
+|match_PCC_CW=1-0
+|match_PCC_CC=1-0
+|match_PCC_DJK=2-6
+|match_PCC_GNC=3-1
+|match_PCC_GH=1-1
+|match_PCC_GJK=3-3
+|match_PCC_JBH=1-1
+|match_PCC_MP=1-1
+|match_PCC_PJC=3-0
+|match_PCC_SHC=2-3
+|match_PCC_USC=0-0
+|match_PCC_YP=1-0
+|match_PCC_YJ=2-0
+
+<!-- Siheung Citizen home matches -->
+|match_SHC_BTC=0-3
+|match_SHC_CW=2-0
+|match_SHC_CC=1-0
+|match_SHC_DJK=1-1
+|match_SHC_GNC=0-1
+|match_SHC_GH=1-2
+|match_SHC_GJK=0-0
+|match_SHC_JBH=1-0
+|match_SHC_MP=3-1
+|match_SHC_PJC=2-0
+|match_SHC_PCC=1-1
+|match_SHC_USC=2-1
+|match_SHC_YP=0-0
+|match_SHC_YJ=0-1
+
+<!-- Ulsan Citizen home matches -->
+|match_USC_BTC=0-1
+|match_USC_CW=0-1
+|match_USC_CC=1-3
+|match_USC_DJK=1–2
+|match_USC_GNC=1–0
+|match_USC_GH=0-1
+|match_USC_GJK=3-4
+|match_USC_JBH=0-3
+|match_USC_MP=1-0
+|match_USC_PJC=0-1
+|match_USC_PCC=1-2
+|match_USC_SHC=0-1
+|match_USC_YP=0-1
+|match_USC_YJ=0-1
+
+<!-- Yangpyeong home matches -->
+|match_YP_BTC=2-0
+|match_YP_CW=0-0
+|match_YP_CC=2–1
+|match_YP_DJK=1-2
+|match_YP_GNC=2-1
+|match_YP_GH=0-2
+|match_YP_GJK=0-1
+|match_YP_JBH=2-1
+|match_YP_MP=2-1
+|match_YP_PJC=3-1
+|match_YP_PCC=1-2
+|match_YP_SHC=2-0
+|match_YP_USC=2-0
+|match_YP_YJ=1-0
+
+<!-- Yeoju home matches -->
+|match_YJ_BTC=1–3
+|match_YJ_CW=1-2
+|match_YJ_CC=0-0
+|match_YJ_DJK=0-3
+|match_YJ_GNC=1-1
+|match_YJ_GH=0-2
+|match_YJ_GJK=1-0
+|match_YJ_JBH=2-0
+|match_YJ_MP=3-1
+|match_YJ_PJC=0-2
+|match_YJ_PCC=1-0
+|match_YJ_SHC=1–2
+|match_YJ_USC=1-2
+|match_YJ_YP=0-1
+}}
+
+== Relegation play-off ==
+The relegation play-off was contested between the 15th-placed team of K3 League and the runners-up of [[2025 K4 League|K4 League]].
+
+{{footballbox
+|date       = 22 November 2025
+|time       = 14:00 [[UTC+9]]
+|team1      = [[FC Mokpo]]
+|score1     = 1
+|report     = https://www.soccerway.com/match/mokpo-nuXok2WM/namyangju-ELkyHmfS/?mid=8GCGUML8
+|team2      = [[Namyangju FC]]
+|score2     = 0
+|goals1     = Ryu Yeon-joon {{goal|63}}
+|goals2     = 
+|stadium    = [[Mokpo International Football Center]], [[Mokpo]]
+|attendance =
+|referee    =
+}}
+
+==See also==
+*[[2025 in South Korean football]]
+*[[2025 K League 2]]
+*[[2025 K4 League]]
+*[[2025 Korea Cup]]
+
+==References==
+{{reflist}}
+
+==External links==
+* {{website|https://www.kfa.or.kr/competition/k3_2025.php|K3 League}} at [[Korean Football Association|KFA]] {{in lang|ko}}
+
+{{K3 League}}
+{{2025 in South Korean football}}
+
+[[Category:Men's football competitions in South Korea]]
+[[Category:K3 League]]
+[[Category:K3 League clubs]]

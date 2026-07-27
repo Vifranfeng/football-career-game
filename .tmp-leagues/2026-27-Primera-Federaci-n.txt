@@ -1,0 +1,1536 @@
+﻿{{Infobox football league season
+|competition = [[Primera Federación]]
+|season = [[2026–27 in Spanish football|2026–27]]
+|dates = August 2026 – June 2027
+|champion =
+|promoted = 
+|relegated = 
+|league topscorer = 
+|biggest home win = 
+|biggest away win = 
+|highest scoring = 
+|highest attendance = 
+|prevseason = [[2025–26 Primera Federación|2025–26]]
+|nextseason = 2027–28
+}}
+
+The '''2026–27 Primera Federación''' season is the sixth for the [[Primera Federación]], the third-highest level in the [[Spanish football league system]]. Forty teams will participate, divided into two groups of twenty clubs each based on geographical proximity. In each group, the champions are automatically promoted to [[Segunda División]] and the second to fifth placers will play promotion play-offs and the bottom five are relegated to the [[Segunda Federación]].
+
+==Overview before the season==
+A total of 40 teams joined the league, including four relegated from the [[2025–26 Segunda División]], 26 retained from the [[2025–26 Primera Federación]], and ten promoted from the [[2025–26 Segunda Federación]]. The groups were defined on 24 June 2026, keeping the same criteria from the last season.<ref>{{cite web|url=https://rfef.es/es/noticias/aprobados-los-grupos-de-primera-federacion-para-la-temporada-202627|title=Aprobados los grupos de Primera Federación para la temporada 2026/27|trans-title=Approved the Primera Federación groups for the 2026/27 season|publisher=[[Royal Spanish Football Federation]]|language=es|date=24 June 2026|accessdate=24 June 2026}}</ref>
+
+===Team changes===
+{|class="wikitable" style="text-align:center;"
+|-
+! colspan="2" style="width:25%;"| Promoted from [[2025–26 Segunda Federación]] !! Relegated from [[2025–26 Segunda División]] !! Promoted to [[2026–27 Segunda División]] !! colspan="2" style="width:25%;"| Relegated to [[2026–27 Segunda Federación]] !! Relegated administratively{{efn|Teams which suffered administrative relegation due to financial problems;<ref>{{cite web|url=https://www.mundodeportivo.com/futbol/regional/20260701/1004201717/arenteiro-tarazona-descienden-impagos-atletic-lleida-dispuesto-pagar-plaza.html|title=Arenteiro y Tarazona descienden por impagos, el Atlètic Lleida dispuesto a pagar la plaza|trans-title=Arenteiro and Tarazona are relegated due to unpaid debts; Atlètic Lleida prepared to pay for the spot|publisher=[[Mundo Deportivo]]|language=es|date=1 July 2026|accessdate=1 July 2026}}</ref> both teams were already relegated to the fourth division by sporting merit beforehand.}}
+|-
+| [[Águilas FC|Águilas]] <br> [[CD Coria|Coria]] <br> [[Deportivo Fabril]] <br> [[CD Extremadura|Extremadura]] <br> [[Real Jaén|Jaén]] || [[UD Logroñés]] <br> [[UD Ourense]] <br> [[CF Rayo Majadahonda|Rayo Majadahonda]] <br> [[Real Unión]] <br> [[UE Sant Andreu|Sant Andreu]] || [[CD Mirandés|Mirandés]]<br>[[SD Huesca|Huesca]]<br>[[Cultural y Deportiva Leonesa|Cultural Leonesa]]<br>[[Real Zaragoza|Zaragoza]]  || [[CD Tenerife|Tenerife]] <br> [[CD Eldense|Eldense]] <br> [[CE Sabadell FC|Sabadell]] <br> [[RC Celta Fortuna|Celta Fortuna]] || [[Atlético Sanluqueño CF|Atlético Sanluqueño]] <br> [[Betis Deportivo]] <br> [[CD Guadalajara (Spain)|Guadalajara]] <br> [[Marbella FC|Marbella]] || [[CA Osasuna B|Osasuna B]] <br> [[Ourense CF]] <br> [[Sevilla Atlético]] <br> [[CF Talavera de la Reina|Talavera de la Reina]] || [[CD Arenteiro|Arenteiro]] <br> [[SD Tarazona|Tarazona]]
+|}
+
+==Group 1==
+{{Location map+ |Spain |width=500 |float=right |caption=Location of teams in '''2026–27 Primera Federación – Group 1'''  |places=
+{{Location map~ |Spain |lat=43.3315 |long=-3.0065 |marksize=5 |label={{small|[[Arenas Club de Getxo|Arenas]]}}|position=top}}
+{{Location map~ |Spain |lat=43.5567 |long=-5.9256 |marksize=5 |label={{small|[[Real Avilés Industrial|Avilés]]}} |position=top}}
+{{Location map~ |Spain |lat=43.3022 |long=-2.9885 |marksize=5 |label={{small|[[Barakaldo CF|Barakaldo]]}}|position=left}}
+{{Location map~ |Spain |lat=43.2782 |long=-2.8392 |marksize=5 |label={{small|[[Bilbao Athletic|Bilbao Ath.]]}}|position=bottom}}
+{{Location map~ |Spain |lat=39.4871 |long=-6.4123 |marksize=5 |label={{small|[[CP Cacereño|Cacereño]]}} |position=right}}
+{{Location map~ |Spain |lat_deg=39 |lat_min=59 |lat_dir=N |lon_deg=6 |lon_min=32 |lon_dir=W |marksize=5 |label={{small|[[CD Coria|Coria]]}} |position=right}}
+{{Location map~ |Spain |lat=42.5875   |long=-5.5767 |marksize=5 |label={{nowrap|{{small|[[Cultural y Deportiva Leonesa|Cultural]]}}}}|position=bottom}}
+{{Location map~ |Spain |lat=43.2513 |long=-8.2880 |marksize=5 |label={{small|[[Deportivo Fabril|Fabril]]}} |position=left}}
+{{Location map~ |Spain |lat=38.68278 |long=-6.40914 |marksize=5 |label={{small|{{nowrap|[[CD Extremadura|Extremadura]]}}}}|position=right}}
+{{Location map~ |Spain |lat=42.478103 |long=-2.456755 |marksize=5 |label={{small|[[UD Logroñés|Logroñés]]}}|position=right}}
+{{Location map~ |Spain |lat=43.016667 |long=-7.55000 |marksize=5 |label={{small|[[CD Lugo|Lugo]]}} |position=top}}
+{{Location map~ |Spain |lat=38.9139 |long=-6.3364 |marksize=5 |label={{small|[[Mérida AD|Mérida]]}} |position=left}}
+{{Location map~ |Spain |lat=42.6808  |long=-2.9354 |marksize=5 |label={{small|[[CD Mirandés|Mirandés]]}}|position=left}}
+{{Location map~ |Spain |lat_deg=42|lat_min=20|lat_sec=11|lat_dir=N|lon_deg=7|lon_min=51|lon_sec=48|lon_dir=W |marksize=5 |label={{small|[[UD Ourense|Ourense]]}}|position=bottom}}
+{{Location map~ |Spain |lat=42.557428 |long=-6.599989 |marksize=5 |label={{small|[[SD Ponferradina|Ponferradina]]}}|position=top}}
+{{Location map~ |Spain |lat=42.4338 |long=-8.6599 |marksize=5 |label={{small|[[Pontevedra CF|Pontevedra]]}}|position=top}}
+{{Location map~ |Spain |lat=43.4913 |long=-8.2390 |marksize=5 |label={{small|{{nowrap|[[Racing de Ferrol|Racing Ferrol]]}}}} |position=top}}
+{{Location map~ |Spain |lat=43.3456 |long=-1.7858 |marksize=5 |label={{small|[[Real Unión]]}}|position=right}}
+{{Location map~ |Spain |lat=40.9958 |long=-5.6631 |marksize=5 |label={{small|[[Unionistas de Salamanca CF|Unionistas]]}} |position=left}}
+{{Location map~ |Spain |lat=41.4864 |long=-5.7481 |marksize=5 |label={{small|[[Zamora CF|Zamora]]}}| position=right}}
+}}
+=== Teams and locations ===
+{| class="wikitable sortable"
+|-
+! Team
+! Home city
+! Stadium
+! Capacity
+|-
+| [[Arenas Club de Getxo|Arenas]] || [[Getxo]] || [[Campo Municipal de Gobela|Gobela]] || align=center|2,000<ref>{{cite web|url=http://lafutbolteca.com/tag/estadio-gobela/|title=Historial del Arenas Club de Getxo|language=es|website=La Futbolteca|access-date=17 September 2020}}</ref>
+|-
+| [[Real Avilés Industrial CF|Avilés Industrial]] || [[Avilés]] || [[Estadio Román Suárez Puerta|Román Suárez Puerta]] || align=center| 5,400
+|-
+| [[Barakaldo CF|Barakaldo]] || [[Barakaldo]] || [[Campo de Lasesarre|Lasesarre]] || align=center| 7,960
+|-
+| [[Athletic Bilbao B|Bilbao Athletic]] || [[Bilbao]] || [[Lezama Facilities|Lezama]] || align=center|3,250
+|-
+| [[CP Cacereño|Cacereño]] || [[Cáceres, Spain|Cáceres]] || [[Estadio Príncipe Felipe|Príncipe Felipe]] || align=center|7,000
+|-
+| [[CD Coria|Coria]] || [[Coria, Cáceres|Coria]] || La Isla || align=center| 3,000
+|-
+| [[Cultural y Deportiva Leonesa|Cultural Leonesa]] || [[León, Spain|León]] || [[Estadio Reino de León]] || align=center| {{Nts|13346}}<ref>{{cite web|url=https://footballtripper.com/spain/cultural-leonesa-stadium/|title=Estadio Reino de León |website=Football Tripper|access-date=3 June 2021}}</ref>
+|-
+| [[Deportivo Fabril]] || [[Abegondo]] ||  Cidade Deportiva de Abegondo || align=center|1,000
+|-
+| [[CD Extremadura|Extremadura]] || [[Almendralejo]] || [[Estadio Francisco de la Hera|Francisco de la Hera]] || align="center" |11,580
+|-
+| [[UD Logroñés]] || [[Logroño]] || [[Estadio Las Gaunas|Las Gaunas]] || align=center|16,000<ref>{{cite web |title=Estadio Nuevo Municipal Las Gaunas |url=https://int.soccerway.com/venues/spain/estadio-nuevo-municipal-las-gaunas/v2525/ |website=soccerway.com |access-date=3 June 2021}}</ref>
+|-
+| [[CD Lugo|Lugo]] || [[Lugo]] || [[Estadio Anxo Carro|Anxo Carro]] || align="center"| 7,070<ref>{{cite web|url=http://www.cdlugo.com/club/instalaciones/estadio-anxo-carro|title=Estadio Anxo Carro|publisher=CD Lugo|access-date=1 July 2019|language=es|archive-url=https://web.archive.org/web/20190130162601/http://www.cdlugo.com/club/instalaciones/estadio-anxo-carro|archive-date=30 January 2019|url-status=dead}}</ref>
+|-
+| [[Mérida AD|Mérida]] || [[Mérida, Spain|Mérida]] || [[Estadio Romano]] || align=center| 14,600
+|-
+| [[CD Mirandés|Mirandés]] || [[Miranda de Ebro]] || [[Estadio Municipal de Anduva]] || align="center" | {{Nts|5759}}<ref>{{cite web|title=El Estadio Municipal de Anduva|url=https://www.cdmirandes.com/club/instalaciones|publisher=CD Mirandés|access-date=1 July 2019|archive-date=22 October 2020|archive-url=https://web.archive.org/web/20201022062835/https://www.cdmirandes.com/club/instalaciones|url-status=dead}}</ref>
+|-
+| [[UD Ourense]] || [[Ourense]] || O Couto || align=center|5,659
+|-
+| [[SD Ponferradina|Ponferradina]] || [[Ponferrada]] || [[Estadio El Toralín|El Toralín]] || align="center"| 8,400<ref>{{cite web|url=http://www.sdponferradina.com/club/estadio-el-toralin|title=Estadio El Toralín|publisher=SD Ponferradina|access-date=1 July 2019|archive-date=15 April 2016|archive-url=https://web.archive.org/web/20160415062152/http://www.sdponferradina.com/club/estadio-el-toralin|url-status=dead}}</ref>
+|-
+| [[Pontevedra CF|Pontevedra]] || [[Pontevedra]] || [[Estadio Municipal de Pasarón|Pasarón]] || align=center|12,000<ref>{{cite web|url=https://www.e-architect.co.uk/spain/estadio-pasaron-building|title=Estadio Pasaron, Pontevedra |website=E-Architect|date=9 December 2013 |access-date=17 September 2020}}</ref> 
+|-
+| [[Racing de Ferrol|Racing Ferrol]] || [[Ferrol, Spain|Ferrol]] || [[Estadio Municipal da Malata|A Malata]] || align=center| 12,043<ref>{{cite web|url=https://www.resultados-futbol.com/racing-club-ferrol|title=Racing Ferrol |language=es |website=Resultados de Futbol|access-date=3 June 2021}}</ref>
+|-
+| [[Real Unión]] || [[Irun]] || [[Stadium Gal]] || align=center|5,000<ref>{{cite web|url=https://www.stadiumguide.com/stadium-gal/|title=Stadium Gal|publisher=The Stadium Guide|access-date=3 June 2021}}</ref>
+|-
+| [[Unionistas de Salamanca CF|Unionistas]] || [[Salamanca]] || Reina Sofía || align=center| 5,000<ref>{{cite web|url=https://www.unionistascf.com/estadio-unionistas-de-salamanca-disputara-sus-encuentros-como-local-esta-temporada-en-el-reina-sofia/|title=ESTADIO {{!}} Unionistas de Salamanca disputará sus encuentros como local esta temporada en el Reina Sofía|trans-title=STADIUM {{!}} Unionistas de Salamanca will play their home fixtures this season at the Reina Sofía|publisher=Unionistas de Salamanca CF|language=es|date=5 October 2020|access-date=3 June 2021}}</ref>
+|-
+| [[Zamora CF|Zamora]] || [[Zamora, Spain|Zamora]] || [[Estadio Ruta de la Plata|Ruta de la Plata]] || align=center| 7,813<ref>{{cite web |title=Estadio |url=https://www.zamoracf.es/estadio-ruta-de-la-plata/?v=0b98720dcb2c |website=Zamora CF |access-date=3 June 2021 |language=es}}</ref>
+|-
+|}
+
+=== Personnel and sponsorship ===
+{| class="wikitable sortable" style="text-align: left;"
+! Team
+! Manager
+! Captain
+! Kit manufacturer
+! Shirt main sponsor
+|-
+|{{nowrap|Arenas}}
+|{{nowrap|{{flagicon|ESP}} [[Jon Erice]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|[[Hummel International|Hummel]]}}
+|{{nowrap|Selzur}}
+|-
+|{{nowrap|Avilés Industrial}}
+|{{nowrap|{{flagicon|ESP}} [[Yago Iglesias]]}}
+|{{nowrap|{{flagicon|ESP}} [[Natalio Lorenzo|Natalio]]}}
+|{{nowrap|[[Macron (sportswear)|Macron]]}}
+|
+|-
+|{{nowrap|Barakaldo}}
+|{{nowrap|{{flagicon|ESP}} [[Imanol de la Sota]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Hummel}}
+|{{nowrap|SR Financial}}
+|-
+|{{nowrap|Bilbao Athletic}}
+|{{nowrap|{{flagicon|ESP}} [[Bittor Llopis]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|[[Castore]]}}
+|
+|-
+|{{nowrap|Cacereño}}
+|{{nowrap|{{flagicon|ESP}} [[Julio Cobos (footballer)|Julio Cobos]]}}
+|{{nowrap|{{flagicon|ESP}} Deco}}
+|{{nowrap|Hummel}}
+|{{nowrap|[[Extremadura]]}}
+|-
+|{{nowrap|Coria}}
+|{{nowrap|{{flagicon|ESP}} [[Rai Rosa]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Macron}}
+|{{nowrap|Extremadura}}
+|-
+|{{nowrap|Cultural Leonesa}}
+|{{nowrap|{{flagicon|ESP}} [[Jandro (footballer, born 1979)|Jandro Castro]]}}
+|{{nowrap|{{flagicon|ESP}} [[Rodri (footballer, born 2002)|Rodri Suárez]]}}
+|{{nowrap|Macron}}
+|{{nowrap|[[Grupo Caja Rural|Caja Rural]]}}
+|-
+|{{nowrap|Deportivo Fabril}}
+|{{nowrap|{{flagicon|ESP}} [[Manuel Pablo]]}}
+|{{nowrap|{{flagicon|ESP}} Hugo Ríos}}
+|{{nowrap|[[Nike, Inc.|Nike]]}}
+|{{nowrap|[[Estrella Galicia]]}}
+|-
+|{{nowrap|Extremadura}}
+|{{nowrap|{{flagicon|ESP}} [[David Rocha]]}}
+|{{nowrap|{{flagicon|ESP}} Imanol Barace}}
+|{{nowrap|Macron}}
+|{{nowrap|OJ Maven}}
+|-
+|{{nowrap|UD Logroñés}}
+|{{nowrap|{{flagicon|ESP}} [[Unai Mendia]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Nike}}
+|
+|-
+|{{nowrap|Lugo}}
+|{{nowrap|{{flagicon|ESP}} [[Borja Fernández (footballer, born 1981)|Borja Fernández]]}}
+|{{nowrap|{{flagicon|ESP}} [[Marc Martínez (footballer, born 1990)|Marc Martínez]]}}
+|{{nowrap|[[Puma (brand)|Puma]]}}
+|{{nowrap|Estrella Galicia}}
+|-
+|{{nowrap|Mérida}}
+|{{nowrap|{{flagicon|ESP}} [[Fran Beltrán (football manager)|Fran Beltrán]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Macron}}
+|{{nowrap|[[Mérida, Spain|Mérida]]}}
+|-
+|{{nowrap|Mirandés}}
+|{{nowrap|{{flagicon|ESP}} [[Antxon Muneta]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|[[Adidas]]}}
+|{{nowrap|Miranda Empresas}}
+|-
+|{{nowrap|UD Ourense}}
+|{{nowrap|{{flagicon|ESP}} [[Juan Carballo]]}}
+|{{nowrap|{{flagicon|VEN}} Viti Nieves}}
+|{{nowrap|Nike}}
+|{{nowrap|BricoCentro Paradelo}}
+|-
+|{{nowrap|Ponferradina}}
+|{{nowrap|{{flagicon|TUN}} [[Mehdi Nafti]]}}
+|{{nowrap|{{flagicon|ESP}} [[Borja Valle]]}}
+|{{nowrap|Adidas}}
+|{{nowrap|Tvitec}}
+|-
+|{{nowrap|Pontevedra}}
+|{{nowrap|{{flagicon|ESP}} [[Rubén Domínguez (footballer)|Rubén Domínguez]]}}
+|{{nowrap|{{flagicon|ESP}} Álex González}}
+|{{nowrap|[[Kappa (brand)|Kappa]]}}
+|{{nowrap|Estrella Galicia}}
+|-
+|{{nowrap|Racing Ferrol}}
+|{{nowrap|{{flagicon|ESP}} [[Javi Vázquez (footballer, born 1986)|Javi Vázquez]] 
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Adidas}}
+|{{nowrap|Estrella Galicia}}
+|-
+|{{nowrap|Real Unión}}
+|{{nowrap|{{flagicon|ESP}} [[Ramsés Gil]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Macron}}
+|{{nowrap|Ekipate}}
+|-
+|{{nowrap|Unionistas}}
+|{{nowrap|{{flagicon|ESP}} [[Javi Medina]]}}
+|{{nowrap|{{flagicon|ESP}} [[Ramiro Mayor]]}}
+|{{nowrap|[[Erreà]]}}
+|{{nowrap|Telefurgo}}
+|-
+|{{nowrap|Zamora}}
+|{{nowrap|{{flagicon|ESP}} [[Óscar Cano]]}}
+|{{nowrap|{{flagicon|ESP}} Carlos Ramos}}
+|{{nowrap|Macron}}
+|{{nowrap|Caja Rural}}
+|-
+|}
+
+==== Managerial changes ====
+{| class="wikitable sortable"
+!Team
+!Outgoing manager
+!Manner of departure
+!Date of vacancy
+!Position in the table
+!Incoming manager
+!Date of appointment
+|-
+|Lugo
+|{{flagicon|ESP}} [[Álex Ortiz (football manager)|Álex Ortiz]]<ref>{{cite web|url=https://cadenaser.com/galicia/2026/05/28/alex-ortiz-no-continuara-en-el-cd-lugo-tras-acabar-la-temporada-a-cinco-puntos-del-playoff-radio-lugo/|title=Álex Ortiz no continuará en el CD Lugo tras acabar la temporada a cinco puntos del playoff|trans-title=Álex Ortiz will not continue at CD Lugo after ending the season five points shy of the play-offs|publisher=[[Cadena SER]]|language=es|date=28 May 2026|accessdate=28 May 2026}}</ref>
+|End of caretaker spell
+|28 May 2026
+|rowspan=7|Pre-season
+|{{flagicon|ESP}} [[Borja Fernández (footballer, born 1981)|Borja Fernández]]<ref>{{cite web|url=https://cdlugo.com/borja-fernndez-nuevo-entrenador-del-cd-lugo/|title=Borja Fernández, nuevo entrenador del CD Lugo|trans-title=Borja Fernández, new manager of CD Lugo|publisher=CD Lugo|language=es|date=16 June 2026|accessdate=17 June 2026}}</ref>
+|16 June 2026
+|-
+|Unionistas
+|{{flagicon|ESP}} [[Mario Simón]]<ref>{{cite web|url=https://unionistascf.com/cuerpo-tecnico-mario-simon-no-seguira-ligado-a-unionistas-de-salamanca/|title=CUERPO TÉCNICO {{!}} Mario Simón no seguirá ligado a Unionistas de Salamanca|trans-title=TECHNICAL STAFF {{!}} Mario Simón will not continue linked to Unionistas de Salamanca|publisher=Unionistas de Salamanca CF|language=es|date=25 May 2026|accessdate=28 May 2026}}</ref>
+|rowspan=6|End of contract
+|rowspan=6|30 June 2026
+|{{flagicon|ESP}} [[Javi Medina]]<ref>{{cite web|url=https://unionistascf.com/javi-medina-nuevo-entrenador-de-unionistas-de-salamanca/|title=Javi Medina, nuevo entrenador de Unionistas de Salamanca|trans-title=Javi Medina, new manager of Unionistas de Salamanca|publisher=Unionistas de Salamanca CF|language=es|date=9 June 2026|accessdate=10 June 2026}}</ref>
+|9 June 2026
+|-
+|Racing Ferrol
+|{{flagicon|ESP}} [[Guillermo Fernández Romo]]<ref>{{cite web|url=https://www.racingclubferrol.net/noticias/adios-guillermo-fernandez-romo|title=Adiós a Guillermo Fernández Romo|trans-title=Farewell to Guillermo Fernández Romo|publisher=Racing Ferrol|language=es|date=26 May 2026|accessdate=28 May 2026}}</ref>
+|{{flagicon|ESP}} [[Javi Vázquez (footballer, born 1986)|Javi Vázquez]]<ref>{{cite web|url=https://www.racingclubferrol.net/noticias/fichaje-javi-vazquez|title=Javi Vázquez dirigirá al Racing Club Ferrol en la próxima campaña|trans-title=Javi Vázquez will manage Racing Club Ferrol the following season|publisher=Racing Ferrol|language=es|date=2 June 2026|accessdate=3 June 2026}}</ref>
+|2 June 2026
+|-
+|Cultural Leonesa
+|{{flagicon|ESP}} [[Rubén de la Barrera]]<ref>{{cite web|url=https://www.cydleonesa.com/noticias/comunicado-oficial-or-ruben-de-la-barrera|title=Comunicado oficial {{!}} Rubén de la Barrera|trans-title=Official statement {{!}} Rubén de la Barrera|publisher=Cultural y Deportiva Leonesa|language=es|date=28 May 2026|accessdate=29 May 2026}}</ref>
+|{{flagicon|ESP}} [[Jandro (footballer, born 1979)|Jandro Castro]]<ref>{{cite web|url=https://www.cydleonesa.com/noticias/jandro-castro-nuevo-entrenador-de-la-cultural-y-deportiva-leonesa|title=Jandro Castro, nuevo entrenador de la Cultural y Deportiva Leonesa|trans-title=Jandro Castro, new manager of Cultural y Deportiva Leonesa|publisher=Cultural y Deportiva Leonesa|language=es|date=3 June 2026|accessdate=9 June 2026}}</ref>
+|3 June 2026
+|-
+|Bilbao Athletic
+|{{flagicon|ESP}} [[Jokin Aranbarri]]<ref>{{cite web|url=https://www.athletic-club.eus/noticias/2026/05/28/jokin-aranbarri-finaliza-su-etapa-en-el-bilbao-athletic/|title=Jokin Aranbarri finaliza su etapa en el Bilbao Athletic|trans-title=Jokin Aranbarri ends his spell at Bilbao Athletic|publisher=Athletic Bilbao|language=es|date=28 May 2026|accessdate=28 May 2026}}</ref>
+|{{flagicon|ESP}} [[Bittor Llopis]]<ref>{{cite web|url=https://www.athletic-club.eus/en/news/2026/06/24/bittor-llopis-to-take-charge-of-bilbao-athletic/|title=Bittor Llopis to take charge of Bilbao Athletic|publisher=Athletic Bilbao|date=24 June 2026|accessdate=30 June 2026}}</ref>
+|24 June 2026
+|-
+|Avilés Industrial
+|{{flagicon|ESP}} [[Lolo Escobar]]<ref>{{cite web|url=https://www.realavilesindustrial1903.com/comunicado-oficial-lolo-escobar/|title=Comunicado oficial {{!}} Lolo Escobar|trans-title=Official statement {{!}} Lolo Escobar|publisher=Real Avilés Industrial CF|language=es|date=30 May 2026|accessdate=3 June 2026}}</ref>
+|{{flagicon|ESP}} [[Yago Iglesias]]<ref>{{cite web|url=https://www.realavilesindustrial1903.com/yago-iglesias-nuevo-entrenador-blanquiazul/|title=Yago Iglesias, nuevo entrenador blanquiazul|trans-title=Yago Iglesias, new white-and-blue manager|publisher=Real Avilés Industrial CF|language=es|date=10 June 2026|accessdate=10 June 2026}}</ref>
+|10 June 2026
+|-
+|UD Ourense
+|{{flagicon|ESP}} [[Borja Fernández (footballer, born 1981)|Borja Fernández]]<ref>{{cite web|url=https://as.com/futbol/primera-rfef/borja-fernandez-cierra-su-etapa-en-el-banquillo-del-ourense-f202606-n/|title=Borja Fernandez cierra su etapa en el banquillo del Ourense|trans-title=Borja Fernandez ends his spell on Ourense's bench|publisher=[[Diario AS]]|language=es|date=8 June 2026|accessdate=11 June 2026}}</ref>
+|{{flagicon|ESP}} [[Juan Carballo]]<ref>{{cite web|url=https://www.laregion.es/deporte-local/juan-carballo-nuevo-entrenador-ud_1_20260613-4314549.html|title=Juan Carballo, nuevo entrenador de la UD Ourense: “Estoy deseando empezar”|trans-title=Juan Carballo, new manager of UD Ourense: "I am eager to start"|publisher=La Región|language=es|date=13 June 2026|accessdate=15 June 2026}}</ref>
+|13 June 2026
+|}
+
+===League table===
+<onlyinclude>
+{{#invoke:Sports table|main
+|section=Group 1
+|start_date=August 2026
+|update=Future
+|source= [https://rfef.es/es/clasificacion?season=21&competition=23289295&group=23289296&journey=_none RFEF]
+
+|team_order = ARE, AVI, BAR, ATH, CAC, COR, CUL, FAB, EXT, LOG, LUG, MER, MIR, OUR, PNF, PNT, RFE, RUN, UNI, ZAM
+
+|win_ARE=0|draw_ARE=0|loss_ARE=0|gf_ARE=0|ga_ARE=0|name_ARE=[[Arenas Club de Getxo|Arenas]]
+|win_AVI=0|draw_AVI=0|loss_AVI=0|gf_AVI=0|ga_AVI=0|name_AVI=[[Real Avilés Industrial CF|Avilés]]
+|win_BAR=0|draw_BAR=0|loss_BAR=0|gf_BAR=0|ga_BAR=0|name_BAR=[[Barakaldo CF|Barakaldo]]
+|win_ATH=0|draw_ATH=0|loss_ATH=0|gf_ATH=0|ga_ATH=0|name_ATH=[[Athletic Bilbao B|Bilbao Athletic]]
+|win_CAC=0|draw_CAC=0|loss_CAC=0|gf_CAC=0|ga_CAC=0|name_CAC=[[CP Cacereño|Cacereño]]
+|win_COR=0|draw_COR=0|loss_COR=0|gf_COR=0|ga_COR=0|name_COR=[[CD Coria|Coria]]
+|win_CUL=0|draw_CUL=0|loss_CUL=0|gf_CUL=0|ga_CUL=0|name_CUL=[[Cultural y Deportiva Leonesa|Cultural Leonesa]]
+|win_FAB=0|draw_FAB=0|loss_FAB=0|gf_FAB=0|ga_FAB=0|name_FAB=[[Deportivo Fabril]]
+|win_EXT=0|draw_EXT=0|loss_EXT=0|gf_EXT=0|ga_EXT=0|name_EXT=[[CD Extremadura|Extremadura]]
+|win_LOG=0|draw_LOG=0|loss_LOG=0|gf_LOG=0|ga_LOG=0|name_LOG=[[UD Logroñés]]
+|win_LUG=0|draw_LUG=0|loss_LUG=0|gf_LUG=0|ga_LUG=0|name_LUG=[[CD Lugo|Lugo]]
+|win_MER=0|draw_MER=0|loss_MER=0|gf_MER=0|ga_MER=0|name_MER=[[Mérida AD|Mérida]]
+|win_MIR=0|draw_MIR=0|loss_MIR=0|gf_MIR=0|ga_MIR=0|name_MIR=[[CD Mirandés|Mirandés]]
+|win_OUR=0|draw_OUR=0|loss_OUR=0|gf_OUR=0|ga_OUR=0|name_OUR=[[UD Ourense]]
+|win_PNF=0|draw_PNF=0|loss_PNF=0|gf_PNF=0|ga_PNF=0|name_PNF=[[SD Ponferradina|Ponferradina]]
+|win_PNT=0|draw_PNT=0|loss_PNT=0|gf_PNT=0|ga_PNT=0|name_PNT=[[Pontevedra CF|Pontevedra]]
+|win_RFE=0|draw_RFE=0|loss_RFE=0|gf_RFE=0|ga_RFE=0|name_RFE=[[Racing Club de Ferrol|Racing Ferrol]]
+|win_RUN=0|draw_RUN=0|loss_RUN=0|gf_RUN=0|ga_RUN=0|name_RUN=[[Real Unión]]
+|win_UNI=0|draw_UNI=0|loss_UNI=0|gf_UNI=0|ga_UNI=0|name_UNI=[[Unionistas de Salamanca CF|Unionistas]]
+|win_ZAM=0|draw_ZAM=0|loss_ZAM=0|gf_ZAM=0|ga_ZAM=0|name_ZAM=[[Zamora CF|Zamora]]
+
+<!--status-->
+
+|result1=PRC |result2=POC |result3=POC |result4=PO |result5=POC |result6=COP |result7=COP |result16=REL |result17=REL |result18=REL |result19=REL |result20=REL
+
+<!--Table settings and rules-->
+|show_limit=5
+|class_rules = 1) points; 2) head-to-head points; 3) head-to-head goal difference; 4) goal difference; 5) number of goals scored<br>(Note: Head-to-head record is used only after all the matches between the teams in question have been played).
+
+<!--Qualification column definitions-->
+|res_col_header=Q
+|col_PRO=green1 |text_PRO=Promotion to Segunda División
+|col_PRC=green1 |text_PRC=Promotion to Segunda División and qualification for the Copa del Rey
+|col_PO=blue1 |text_PO=Qualification for the promotion play-offs
+|col_POC=blue1 |text_POC=Qualification for the promotion play-offs and Copa del Rey
+|col_REL=red1 |text_REL=Relegation to Segunda Federación
+|col_COP=yellow1 |text_COP=Qualification for the Copa del Rey
+}}</onlyinclude>
+
+===Results===
+{{#invoke:Sports results|main
+|update=complete
+|source=
+|matches_style=FBR
+|team1=ARE |team2=AVI |team3=BAR |team4=ATH |team5=CAC |team6=COR |team7=CUL |team8=FAB |team9=EXT |team10=LOG|team11=LUG|team12=MER |team13=MIR|team14=OUR|team15=PNF |team16=PNT|team17=RFE|team18=RUN |team19=UNI|team20=ZAM
+
+|name_ARE=[[Arenas Club de Getxo|Arenas]]
+|name_AVI=[[Real Avilés Industrial CF|Avilés]]
+|name_BAR=[[Barakaldo CF|Barakaldo]]
+|name_ATH=[[Athletic Bilbao B|Bilbao Athletic]]
+|name_CAC=[[CP Cacereño|Cacereño]]
+|name_COR=[[CD Coria|Coria]]
+|name_CUL=[[Cultural y Deportiva Leonesa|Cultural Leonesa]]
+|name_FAB=[[Deportivo Fabril]]
+|name_EXT=[[CD Extremadura|Extremadura]]
+|name_LOG={{nowrap|[[UD Logroñés]]}}
+|name_LUG=[[CD Lugo|Lugo]]
+|name_MER=[[Mérida AD|Mérida]]
+|name_MIR=[[CD Mirandés|Mirandés]]
+|name_OUR=[[UD Ourense]]
+|name_PNF=[[SD Ponferradina|Ponferradina]]
+|name_PNT=[[Pontevedra CF|Pontevedra]]
+|name_RFE=[[Racing de Ferrol|Racing Ferrol]]
+|name_RUN=[[Real Unión]]
+|name_UNI=[[Unionistas de Salamanca CF|Unionistas]]
+|name_ZAM=[[Zamora CF|Zamora]]
+
+|match_ARE_AVI=
+|match_ARE_BAR=
+|match_ARE_ATH=
+|match_ARE_CAC=
+|match_ARE_COR=
+|match_ARE_CUL=
+|match_ARE_FAB=
+|match_ARE_EXT=
+|match_ARE_LOG=
+|match_ARE_LUG=
+|match_ARE_MER=
+|match_ARE_MIR=
+|match_ARE_OUR=
+|match_ARE_PNF=
+|match_ARE_PNT=
+|match_ARE_RFE=
+|match_ARE_RUN=
+|match_ARE_UNI=
+|match_ARE_ZAM=
+
+|match_AVI_ARE=
+|match_AVI_BAR=
+|match_AVI_ATH=
+|match_AVI_CAC=
+|match_AVI_COR=
+|match_AVI_CUL=
+|match_AVI_FAB=
+|match_AVI_EXT=
+|match_AVI_LOG=
+|match_AVI_LUG=
+|match_AVI_MER=
+|match_AVI_MIR=
+|match_AVI_OUR=
+|match_AVI_PNF=
+|match_AVI_PNT=
+|match_AVI_RFE=
+|match_AVI_RUN=
+|match_AVI_UNI=
+|match_AVI_ZAM=
+
+|match_BAR_ARE=
+|match_BAR_AVI=
+|match_BAR_ATH=
+|match_BAR_CAC=
+|match_BAR_COR=
+|match_BAR_CUL=
+|match_BAR_FAB=
+|match_BAR_EXT=
+|match_BAR_LOG=
+|match_BAR_LUG=
+|match_BAR_MER=
+|match_BAR_MIR=
+|match_BAR_OUR=
+|match_BAR_PNF=
+|match_BAR_PNT=
+|match_BAR_RFE=
+|match_BAR_RUN=
+|match_BAR_UNI=
+|match_BAR_ZAM=
+
+|match_ATH_ARE=
+|match_ATH_AVI=
+|match_ATH_BAR=
+|match_ATH_CAC=
+|match_ATH_COR=
+|match_ATH_CUL=
+|match_ATH_FAB=
+|match_ATH_EXT=
+|match_ATH_LOG=
+|match_ATH_LUG=
+|match_ATH_MER=
+|match_ATH_MIR=
+|match_ATH_OUR=
+|match_ATH_PNF=
+|match_ATH_PNT=
+|match_ATH_RFE=
+|match_ATH_RUN=
+|match_ATH_UNI=
+|match_ATH_ZAM=
+
+|match_CAC_ARE=
+|match_CAC_AVI=
+|match_CAC_BAR=
+|match_CAC_ATH=
+|match_CAC_COR=
+|match_CAC_CUL=
+|match_CAC_FAB=
+|match_CAC_EXT=
+|match_CAC_LOG=
+|match_CAC_LUG=
+|match_CAC_MER=
+|match_CAC_MIR=
+|match_CAC_OUR=
+|match_CAC_PNF=
+|match_CAC_PNT=
+|match_CAC_RFE=
+|match_CAC_RUN=
+|match_CAC_UNI=
+|match_CAC_ZAM=
+
+|match_COR_ARE=
+|match_COR_AVI=
+|match_COR_BAR=
+|match_COR_ATH=
+|match_COR_CAC=
+|match_COR_CUL=
+|match_COR_FAB=
+|match_COR_EXT=
+|match_COR_LOG=
+|match_COR_LUG=
+|match_COR_MER=
+|match_COR_MIR=
+|match_COR_OUR=
+|match_COR_PNF=
+|match_COR_PNT=
+|match_COR_RFE=
+|match_COR_RUN=
+|match_COR_UNI=
+|match_COR_ZAM=
+
+|match_CUL_ARE=
+|match_CUL_AVI=
+|match_CUL_BAR=
+|match_CUL_ATH=
+|match_CUL_CAC=
+|match_CUL_COR=
+|match_CUL_FAB=
+|match_CUL_EXT=
+|match_CUL_LOG=
+|match_CUL_LUG=
+|match_CUL_MER=
+|match_CUL_MIR=
+|match_CUL_OUR=
+|match_CUL_PNF=
+|match_CUL_PNT=
+|match_CUL_RFE=
+|match_CUL_RUN=
+|match_CUL_UNI=
+|match_CUL_ZAM=
+
+|match_FAB_ARE=
+|match_FAB_AVI=
+|match_FAB_BAR=
+|match_FAB_ATH=
+|match_FAB_CAC=
+|match_FAB_COR=
+|match_FAB_CUL=
+|match_FAB_EXT=
+|match_FAB_LOG=
+|match_FAB_LUG=
+|match_FAB_MER=
+|match_FAB_MIR=
+|match_FAB_OUR=
+|match_FAB_PNF=
+|match_FAB_PNT=
+|match_FAB_RFE=
+|match_FAB_RUN=
+|match_FAB_UNI=
+|match_FAB_ZAM=
+
+|match_EXT_ARE=
+|match_EXT_AVI=
+|match_EXT_BAR=
+|match_EXT_ATH=
+|match_EXT_CAC=
+|match_EXT_COR=
+|match_EXT_CUL=
+|match_EXT_FAB=
+|match_EXT_LOG=
+|match_EXT_LUG=
+|match_EXT_MER=
+|match_EXT_MIR=
+|match_EXT_OUR=
+|match_EXT_PNF=
+|match_EXT_PNT=
+|match_EXT_RFE=
+|match_EXT_RUN=
+|match_EXT_UNI=
+|match_EXT_ZAM=
+
+|match_LOG_ARE=
+|match_LOG_AVI=
+|match_LOG_BAR=
+|match_LOG_ATH=
+|match_LOG_CAC=
+|match_LOG_COR=
+|match_LOG_CUL=
+|match_LOG_FAB=
+|match_LOG_EXT=
+|match_LOG_LUG=
+|match_LOG_MER=
+|match_LOG_MIR=
+|match_LOG_OUR=
+|match_LOG_PNF=
+|match_LOG_PNT=
+|match_LOG_RFE=
+|match_LOG_RUN=
+|match_LOG_UNI=
+|match_LOG_ZAM=
+
+|match_LUG_ARE=
+|match_LUG_AVI=
+|match_LUG_BAR=
+|match_LUG_ATH=
+|match_LUG_CAC=
+|match_LUG_COR=
+|match_LUG_CUL=
+|match_LUG_FAB=
+|match_LUG_EXT=
+|match_LUG_LOG=
+|match_LUG_MER=
+|match_LUG_MIR=
+|match_LUG_OUR=
+|match_LUG_PNF=
+|match_LUG_PNT=
+|match_LUG_RFE=
+|match_LUG_RUN=
+|match_LUG_UNI=
+|match_LUG_ZAM=
+
+|match_MER_ARE=
+|match_MER_AVI=
+|match_MER_BAR=
+|match_MER_ATH=
+|match_MER_CAC=
+|match_MER_COR=
+|match_MER_CUL=
+|match_MER_FAB=
+|match_MER_EXT=
+|match_MER_LOG=
+|match_MER_LUG=
+|match_MER_MIR=
+|match_MER_OUR=
+|match_MER_PNF=
+|match_MER_PNT=
+|match_MER_RFE=
+|match_MER_RUN=
+|match_MER_UNI=
+|match_MER_ZAM=
+
+|match_MIR_ARE=
+|match_MIR_AVI=
+|match_MIR_BAR=
+|match_MIR_ATH=
+|match_MIR_CAC=
+|match_MIR_COR=
+|match_MIR_CUL=
+|match_MIR_FAB=
+|match_MIR_EXT=
+|match_MIR_LOG=
+|match_MIR_LUG=
+|match_MIR_MER=
+|match_MIR_OUR=
+|match_MIR_PNF=
+|match_MIR_PNT=
+|match_MIR_RFE=
+|match_MIR_RUN=
+|match_MIR_UNI=
+|match_MIR_ZAM=
+
+|match_OUR_ARE=
+|match_OUR_AVI=
+|match_OUR_BAR=
+|match_OUR_ATH=
+|match_OUR_CAC=
+|match_OUR_COR=
+|match_OUR_CUL=
+|match_OUR_FAB=
+|match_OUR_EXT=
+|match_OUR_LOG=
+|match_OUR_LUG=
+|match_OUR_MER=
+|match_OUR_MIR=
+|match_OUR_PNF=
+|match_OUR_PNT=
+|match_OUR_RFE=
+|match_OUR_RUN=
+|match_OUR_UNI=
+|match_OUR_ZAM=
+
+|match_PNF_ARE=
+|match_PNF_AVI=
+|match_PNF_BAR=
+|match_PNF_ATH=
+|match_PNF_CAC=
+|match_PNF_COR=
+|match_PNF_CUL=
+|match_PNF_FAB=
+|match_PNF_EXT=
+|match_PNF_LOG=
+|match_PNF_LUG=
+|match_PNF_MER=
+|match_PNF_MIR=
+|match_PNF_OUR=
+|match_PNF_PNT=
+|match_PNF_RFE=
+|match_PNF_RUN=
+|match_PNF_UNI=
+|match_PNF_ZAM=
+
+|match_PNT_ARE=
+|match_PNT_AVI=
+|match_PNT_BAR=
+|match_PNT_ATH=
+|match_PNT_CAC=
+|match_PNT_COR=
+|match_PNT_CUL=
+|match_PNT_FAB=
+|match_PNT_EXT=
+|match_PNT_LOG=
+|match_PNT_LUG=
+|match_PNT_MER=
+|match_PNT_MIR=
+|match_PNT_OUR=
+|match_PNT_PNF=
+|match_PNT_RFE=
+|match_PNT_RUN=
+|match_PNT_UNI=
+|match_PNT_ZAM=
+
+|match_RFE_ARE=
+|match_RFE_AVI=
+|match_RFE_BAR=
+|match_RFE_ATH=
+|match_RFE_CAC=
+|match_RFE_COR=
+|match_RFE_CUL=
+|match_RFE_FAB=
+|match_RFE_EXT=
+|match_RFE_LOG=
+|match_RFE_LUG=
+|match_RFE_MER=
+|match_RFE_MIR=
+|match_RFE_OUR=
+|match_RFE_PNF=
+|match_RFE_PNT=
+|match_RFE_RUN=
+|match_RFE_UNI=
+|match_RFE_ZAM=
+
+|match_RUN_ARE=
+|match_RUN_AVI=
+|match_RUN_BAR=
+|match_RUN_ATH=
+|match_RUN_CAC=
+|match_RUN_COR=
+|match_RUN_CUL=
+|match_RUN_FAB=
+|match_RUN_EXT=
+|match_RUN_LOG=
+|match_RUN_LUG=
+|match_RUN_MER=
+|match_RUN_MIR=
+|match_RUN_OUR=
+|match_RUN_PNF=
+|match_RUN_PNT=
+|match_RUN_RFE=
+|match_RUN_UNI=
+|match_RUN_ZAM=
+
+|match_UNI_ARE=
+|match_UNI_AVI=
+|match_UNI_BAR=
+|match_UNI_ATH=
+|match_UNI_CAC=
+|match_UNI_COR=
+|match_UNI_CUL=
+|match_UNI_FAB=
+|match_UNI_EXT=
+|match_UNI_LOG=
+|match_UNI_LUG=
+|match_UNI_MER=
+|match_UNI_MIR=
+|match_UNI_OUR=
+|match_UNI_PNF=
+|match_UNI_PNT=
+|match_UNI_RFE=
+|match_UNI_RUN=
+|match_UNI_ZAM=
+
+|match_ZAM_ARE=
+|match_ZAM_AVI=
+|match_ZAM_BAR=
+|match_ZAM_ATH=
+|match_ZAM_CAC=
+|match_ZAM_COR=
+|match_ZAM_CUL=
+|match_ZAM_FAB=
+|match_ZAM_EXT=
+|match_ZAM_LOG=
+|match_ZAM_LUG=
+|match_ZAM_MER=
+|match_ZAM_MIR=
+|match_ZAM_OUR=
+|match_ZAM_PNF=
+|match_ZAM_PNT=
+|match_ZAM_RFE=
+|match_ZAM_RUN=
+|match_ZAM_UNI=
+}}
+
+==Group 2==
+{{Location map+ |Spain |width=500 |float=right |caption=Location of teams in '''2026–27 Primera Federación – Group 2'''  |places=
+{{Location map~ |Spain |lat=37.4107 |long=-1.5935 |marksize=5 |label={{small|[[Águilas FC|Águilas]]}} |position=bottom}}
+{{Location map~ |Spain |lat=36.1633 |long=-5.4653 |marksize=5 |label={{small|[[Algeciras CF|Algeciras]]}} |position=left}}
+{{Location map~ |Spain |lat_deg=37 |lat_min=1 |lat_dir=N |lon_deg=4 |lon_min=34 |lon_dir=W |marksize=5 |label={{small|[[Antequera CF|Antequera]]}} |position=right}}
+{{Location map~ |Spain |lat=37.6097 |long=-0.9960 |marksize=5 |label={{small|[[FC Cartagena|Cartagena]]}} |position=right}}
+{{Location map~ |Spain |lat=41.4117 |long=2.1611 |marksize=5 |label={{small|[[CE Europa|Europa]]}} |position=left}}
+{{Location map~ |Spain |lat=41.1269 |long=1.2728  |marksize=5 |label={{small|[[Gimnàstic de Tarragona|Gimnàstic]]}} |position=left}}
+{{Location map~ |Spain |lat=38.3572 |long=-0.4925 |marksize=5 |label={{small|[[Hércules CF|Hércules]]}} |position=right}}
+{{Location map~ |Spain |lat=42.131845 |long=-0.4078058 |marksize=5 |label={{small|[[SD Huesca|Huesca]]}} |position=right}}
+{{Location map~ |Spain |lat=38.9138 |long=1.4150 |marksize=5 |label={{small|[[UD Ibiza|Ibiza]]}}|position=right}}
+{{Location map~ |Spain |lat=37.76 |long=-3.79 |marksize=5 |label={{small|[[Real Jaén|Jaén]]}} |position=left}}
+{{Location map~ |Spain |lat=36.6223 |long=-4.4957 |marksize=5 |label={{small|{{nowrap|[[Juventud de Torremolinos CF|Juventud]]}}}} |position=right}}
+{{Location map~ |Spain |lat=38.0422 |long=-1.1447 |marksize=5 |label={{small|[[Real Murcia|Murcia]]}} |position=left}}
+{{Location map~ |Spain |lat=41.4295 |long=2.1921  |marksize=5 |label={{small|[[UE Sant Andreu|Sant Andreu]]}}| position=right}}
+{{Location map~ |Spain |lat_deg=40 |lat_min=20 |lat_sec=37 |lat_dir=N |lon_deg=1 |lon_min=6 |lon_sec=26 |lon_dir=W |marksize=5 |label={{small|[[CD Teruel|Teruel]]}}| position=right}}
+{{Location map~ |Spain |lat=39.9405 |long=-0.1150 |marksize=5 |label={{small|[[Villarreal CF B|Villarreal B]]}} |position=right}}
+{{Location map~ |Spain |lat=41.636472 |long=-0.901828 |marksize=5 |label={{small|[[Real Zaragoza|Zaragoza]]}}|position=left}}
+{{Location map~ |Spain |lat=40.4168 |long=-3.7035 |marksize=8 |label={{small|'''[[Community of Madrid]]'''}} |mark=Black pog.svg|position=bottom}}<!--REGION-->
+}}
+{{Location map+ |Spain Community of Madrid |width=260 |float=right |caption=Location of teams in '''2026–27 Segunda Federación – Group 5''' (Community of Madrid)
+|places=
+{{Location map~ |Spain Community of Madrid |lat=40.338847 |long=-3.840475 |marksize=5 |label={{small|[[AD Alcorcón|Alcorcón]]}} |position=bottom}}
+{{Location map~ |Spain Community of Madrid |lat=40.508333 |long=-3.3625 |marksize=5 |label={{small|[[Atlético Madrileño|At. Madrileño]]}} |position=right}}
+{{Location map~ |Spain Community of Madrid |lat=40.4575 |long=-3.8603 |marksize=5 |label={{small|{{nowrap|[[CF Rayo Majadahonda|Rayo Majadahonda]]}}}} |position=left}}
+{{Location map~ |Spain Community of Madrid |lat=40.4767 |long=-3.6142 |marksize=5 |label={{small|[[Real Madrid Castilla|RM Castilla]]}}|position=top}}
+}}
+=== Teams and locations ===
+{| class="wikitable sortable"
+|-
+! Team
+! Home city
+! Stadium
+! Capacity
+|-
+| [[Águilas FC|Águilas]] || [[Águilas]] || [[Estadio El Rubial|El Rubial]] || align=center| 4,000
+|-
+| [[AD Alcorcón|Alcorcón]] || [[Alcorcón]] || [[Estadio Municipal de Santo Domingo|Santo Domingo]] || align="center"| 5,100<ref>{{cite web|url=http://www.adalcorcon.com/club/informacion|title=Información|language=es|publisher=AD Alcorcón|access-date=4 June 2016|archive-date=24 March 2019|archive-url=https://web.archive.org/web/20190324143736/https://www.adalcorcon.com/club/informacion|url-status=dead}}</ref>
+|-
+| [[Algeciras CF|Algeciras]] || [[Algeciras]] || [[Estadio Nuevo Mirador|Nuevo Mirador]] || align=center| 7,200<ref>{{cite web |title=ESTADIO |url=https://algecirascf.eu/estadio-2/ |website=Algeciras CF |access-date=3 June 2021 |language=es |archive-date=3 June 2021 |archive-url=https://web.archive.org/web/20210603232052/https://algecirascf.eu/estadio-2/ |url-status=dead }}</ref>
+|-
+| [[Antequera CF|Antequera]] || [[Antequera]] || El Maulí || align=center|6,000
+|-
+| [[Atlético Madrileño]] || [[Alcalá de Henares]] || [[Centro Deportivo Wanda Alcalá de Henares|Centro Deportivo Alcalá de Henares]] || align=center|2,685<ref>{{cite web|url=https://www.atleticodemadrid.com/noticias/el-atleti-b-entrenara-y-jugara-en-el-centro-deportivo-alcala-de-henares|title=El Atlético Madrileño entrenará y jugará en el Centro Deportivo Alcalá de Henares|trans-title=Atlético Madrileño will play at the Centro Deportivo Alcalá de Henares|publisher=Atlético Madrid|language=es|date=4 June 2025|accessdate=25 July 2025}}</ref>
+|-
+| [[FC Cartagena|Cartagena]] || [[Cartagena, Spain|Cartagena]] || [[Estadio Cartagonova|Cartagonova]] || align="center"| 15,105<ref>{{cite web|url=http://futbolclubcartagena.com/estadio/|title=Estadio Cartagonova|language=es|publisher=FC Cartagena|access-date=23 July 2020}}</ref>
+|-
+| [[CE Europa|Europa]] || [[Barcelona]] || Can Dragó<ref>{{cite web |last= |first= |date=13 July 2026 |title=Els socis i sòcies voten que l'Europa jugui com a local a Can Dragó |url=https://www.ceeuropa.cat/resultats-votacions/ |trans-title=The members vote for Europa to play at home at Can Dragó |website=ceeuropa.cat |language=ca |location= |publisher= |access-date=14 July 2026}}</ref> || align=center| 3,000
+|-
+| [[Gimnàstic de Tarragona|Gimnàstic]] || [[Tarragona]] || [[Nou Estadi Costa Daurada|Nou Estadi]] || align="center"| 14,591<ref>{{cite web |title=Nou Estadi |url=https://www.gimnasticdetarragona.cat/es/sad/nou-estadi |website=Gimnàstic de Tarragona |access-date=3 June 2021 |language=es}}</ref>
+|-
+| [[Hércules CF|Hércules]] || [[Alicante]] || [[Estadio José Rico Pérez|José Rico Pérez]] || align=center| 30,000
+|-
+| [[SD Huesca|Huesca]] || [[Huesca]] || [[Estadio El Alcoraz]] || align="center" |{{Nts|9100}}<ref>{{cite web |url=https://www.sdhuesca.es/el-club/el-alcoraz-1|title=El Alcoraz|access-date=1 July 2019|publisher=SD Huesca|language=es}}</ref>
+|-
+| [[UD Ibiza|Ibiza]] || [[Ibiza (town)|Ibiza]] || [[Estadi Municipal de Can Misses|Can Misses]] || align="center"| 6,000<ref>{{Cite web|url=https://www.lapreferente.com/index.php?IDestadio=489|title=Can Misses :: Estadios y Pabellones ::|website=www.lapreferente.com|access-date=2020-01-16}}</ref>
+|-
+| [[Real Jaén|Jaén]] || [[Jaén, Spain|Jaén]] || [[Nuevo Estadio de La Victoria|La Victoria]] || align=center|12,569
+|-
+| [[Juventud de Torremolinos CF|Juventud Torremolinos]] || [[Torremolinos]] || El Pozuelo || align=center| 3,000
+|-
+| [[Real Murcia|Murcia]] || [[Murcia]] || [[Estadio Nueva Condomina|Enrique Roca]] || align=center| 31,179
+|-
+| [[CF Rayo Majadahonda|Rayo Majadahonda]] || [[Majadahonda]] || [[Estadio Cerro del Espino|Cerro del Espino]] || align="center" |3,865
+|-
+| [[Real Madrid Castilla]] || [[Madrid]] || [[Alfredo di Stéfano Stadium|Alfredo di Stéfano]] || align=center| 6,000<ref>{{cite web|url=https://www.esmadrid.com/deporte/ciudad-real-madrid|title=Ciudad Real Madrid |language=es |publisher=City of Madrid|access-date=3 June 2021}}</ref>
+|-
+| [[UE Sant Andreu|Sant Andreu]] || [[Barcelona]] || [[Camp Municipal Narcís Sala|Narcís Sala]] || align=center|6,653
+|-
+| [[CD Teruel|Teruel]] || [[Teruel]] || Pinilla || align=center|4,500
+|-
+| [[Villarreal CF B|Villarreal B]] || [[Villarreal]] ||[[Estadio de la Cerámica]] || align=center| 23,000<ref>{{cite web|url=https://footballtripper.com/spain/villarreal-stadium/|title=Estadio de la Cerámica|date=16 August 2014 |language=es|publisher=Football Tripper|access-date=6 January 2020}}</ref>
+|-
+| [[Real Zaragoza|Zaragoza]] || [[Zaragoza]] || [[Ibercaja Stadium]] || align="center"| {{Nts|20000}}<ref>{{Cite web|url=https://www.realzaragoza.com/noticias/ibercaja-estadio-abre-el-telon-con-su-inauguracion-oficial|title=Ibercaja Estadio abre el telón con su inauguración oficial|website=www.realzaragoza.com|date=25 July 2025}}</ref>
+|-
+|}
+
+=== Personnel and sponsorship ===
+{| class="wikitable sortable" style="text-align: left;"
+! Team
+! Manager
+! Captain
+! Kit manufacturer
+! Shirt main sponsor
+|-
+|{{nowrap|Águilas}}
+|{{nowrap|{{flagicon|ESP}} [[Adrián Hernández (football manager)|Adrián Hernández]]}}
+|{{nowrap|{{flagicon|ESP}} [[Mario Abenza]]}}
+|{{nowrap|Erreà}}
+|
+|-
+|{{nowrap|Alcorcón}}
+|{{nowrap|{{flagicon|ESP}} [[Fran Justo]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Kappa}}
+|{{nowrap|Lynks Tic}}
+|-
+|{{nowrap|Algeciras}}
+|{{nowrap|{{flagicon|ESP}} [[Adrián Colunga]]}}
+|{{nowrap|{{flagicon|ESP}} Iván Turrillo}}
+|{{nowrap|Capelli Sport}}
+|
+|-
+|{{nowrap|Antequera}}
+|{{nowrap|{{flagicon|ESP}} [[Abraham Paz]] 
+|{{nowrap|{{flagicon|ESP}} Luismi Gutiérrez}}
+|{{nowrap|Hummel}}
+|
+|-
+|{{nowrap|Atlético Madrileño}}
+|{{nowrap|{{flagicon|ESP}} [[Fernando Torres]]}}
+|{{nowrap|{{flagicon|ESP}} Jorge Castillo}}
+|{{nowrap|Nike}}
+|{{nowrap|}}
+|-
+|{{nowrap|Cartagena}}
+|{{nowrap|{{flagicon|ESP}} [[Iñigo Vélez]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Macron}}
+|
+|-
+|{{nowrap|Europa}}
+|{{nowrap|{{flagicon|ESP}} [[Josep Maria Gené]]}}
+|{{nowrap|{{flagicon|ESP}} [[Àlex Cano]]}}
+|{{nowrap|Hummel}}
+|
+|-
+|{{nowrap|Gimnàstic}}
+|{{nowrap|{{flagicon|ESP}} [[Xisco Campos]]}}
+|{{nowrap|{{flagicon|ESP}} [[Marc Montalvo]]}}
+|{{nowrap|Adidas}}
+|
+|-
+|{{nowrap|Hércules}}
+|{{nowrap|{{flagicon|ESP}} [[Beto Company]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Kappa}}
+|{{nowrap|Ekokai}}
+|-
+|{{nowrap|Huesca}}
+|{{nowrap|{{flagicon|ESP}} [[Raúl Jardiel]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Soka}}
+|{{nowrap|Grupo Aramón}}
+|-
+|{{nowrap|Ibiza}}
+|{{nowrap|{{flagicon|ESP}} [[Raúl Llona]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Puma}}
+|{{nowrap|Power Electronics}}
+|-
+|{{nowrap|Jaén}}
+|{{nowrap|{{flagicon|ESP}} [[Manolo Herrero (footballer, born 1970)|Manolo Herrero]]}}
+|{{nowrap|{{flagicon|ESP}} [[Javi Moyano]]}}
+|{{nowrap|Macron}}
+|{{nowrap|Caja Rural}}
+|-
+|{{nowrap|Juventud Torremolinos}}
+|{{nowrap|{{flagicon|ESP}} [[Aitor Martínez (footballer)|Aitor Martínez]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Macron}}
+|
+|-
+|{{nowrap|Murcia}}
+|{{nowrap|{{flagicon|ESP}} [[Sergi Guilló]]}}
+|{{nowrap|{{flagicon|ESP}} Alberto González}}
+|{{nowrap|[[Joma]]}}
+|{{nowrap|Inversus Group}}
+|-
+|{{nowrap|Rayo Majadahonda}}
+|{{nowrap|{{flagicon|ESP}} [[Guille Fernández (footballer, born 1989)|Guille Fernández]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Hummel}}
+|{{nowrap|Afar 4}}
+|-
+|{{nowrap|Real Madrid Castilla}}
+|{{nowrap|{{flagicon|ESP}} [[Julián López (footballer, born 1987)|Julián López de Lerma]]}}
+|{{nowrap|{{flagicon|ESP}} [[Manuel Ángel]]}}
+|{{nowrap|Adidas}}
+|{{nowrap|[[Emirates (airline)|Emirates]]}}
+|-
+|{{nowrap|Sant Andreu}}
+|{{nowrap|{{flagicon|ESP}} [[Natxo González]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|[[Munich (sport shoes)|Munich]]}}
+|{{nowrap|XGel}}
+|-
+|{{nowrap|Teruel}}
+|{{nowrap|{{flagicon|ESP}} [[Kiko Ramírez]]}}
+|{{nowrap|{{flagicon|}} TBD}}
+|{{nowrap|Nike}}
+|
+|-
+|{{nowrap|Villarreal B}}
+|{{nowrap|{{flagicon|ESP}} [[David Albelda]]}}
+|{{nowrap|{{flagicon|SEN}} Cheikh Thiam}}
+|{{nowrap|Joma}}
+|{{nowrap|Pamesa Cerámica}}
+|-
+|{{nowrap|Zaragoza}}
+|{{nowrap|{{flagicon|ESP}} [[Ibai Gómez]]}}
+|{{nowrap|{{flagicon|ESP}} [[Francho Serrano]]}}
+|{{nowrap|Adidas}}
+|{{nowrap|Caravan Fragancias}}
+|-
+|}
+
+==== Managerial changes ====
+{| class="wikitable sortable"
+!Team
+!Outgoing manager
+!Manner of departure
+!Date of vacancy
+!Position in the table
+!Incoming manager
+!Date of appointment
+|-
+|Zaragoza
+|{{flagicon|ESP}} [[David Navarro (football manager)|David Navarro]]
+|Back to staff role
+|1 June 2026
+|rowspan=10|Pre-season
+|{{flagicon|ESP}} [[Ibai Gómez]]<ref>{{cite web|url=https://www.realzaragoza.com/noticias/ibai-gomez-nuevo-entrenador-del-real-zaragoza|title=Ibai Gómez, nuevo entrenador del Real Zaragoza|trans-title=Ibai Gómez, new manager of Real Zaragoza|publisher=Real Zaragoza|language=es|date=4 June 2026|access-date=4 June 2026}}</ref>
+|4 June 2026
+|-
+|Alcorcón
+|{{flagicon|ESP}} [[Pablo Álvarez (footballer, born 1994)|Pablo Álvarez]]<ref>{{cite web|url=https://www.adalcorcon.com/noticias/comunicado-oficial-pablo-alvarez|title=Comunicado oficial: Pablo Álvarez|trans-title=Official statement: Pablo Álvarez|publisher=AD Alcorcón|language=es|date=19 May 2026|accessdate=28 May 2026}}</ref>
+|rowspan=8|End of contract
+|rowspan=8|30 June 2026
+|{{flagicon|ESP}} [[Fran Justo]]<ref>{{cite web|url=https://www.adalcorcon.com/noticias/fran-justo-nuevo-entrenador-alcorcon|title=¡Bienvenido, Fran!|trans-title=Welcome, Fran!|publisher=AD Alcorcón|language=es|date=1 June 2026|accessdate=2 June 2026}}</ref>
+|1 June 2026
+|-
+|Ibiza
+|{{flagicon|ESP}} [[Miguel Álvarez (football manager, born 1958)|Miguel Álvarez]]<ref>{{cite web|url=https://www.ibizaud.com/noticias/comunicado-oficial-miguel-alvarez-finalizacion|title=Comunicado Oficial: Miguel Álvarez|trans-title=Official statement: Miguel Álvarez|publisher=UD Ibiza|language=es|date=25 May 2026|accessdate=28 May 2026}}</ref>
+|{{flagicon|ESP}} [[Raúl Llona]]<ref>{{cite web|url=https://www.ibizaud.com/noticias/raul-llona-nuevo-entrenador-ud-ibiza-2026-27|title=Raúl Llona, nuevo entrenador de la UD Ibiza para la 2026/27|trans-title=Raúl Llona, new manager of UD Ibiza for the 2026/27 season|publisher=UD Ibiza|language=es|date=12 June 2026|accessdate=15 June 2026}}</ref>
+|12 June 2026
+|-
+|Murcia
+|{{flagicon|ESP}} [[Curro Torres]]<ref>{{cite web|url=https://www.realmurcia.es/curro-torres-no-continuara-como-entrenador-de-la-primera-plantilla-gracias-mister/|title=Curro Torres no continuará como entrenador de la primera plantilla ¡Gracias, míster!|trans-title=Curro Torres will not continue as first team manager. Thank you, mister!|publisher=Real Murcia CF|language=es|date=25 May 2026|access-date=28 May 2026}}</ref>
+|{{flagicon|ESP}} [[Sergi Guilló]]<ref>{{cite web|url=https://www.realmurcia.es/sergi-guillo-sera-el-entrenador-del-real-murcia-c-f-para-la-temporada-2026-2027/|title=Sergi Guilló será el entrenador del Real Murcia C.F. para la temporada 2026/2027|trans-title=Sergi Guilló will be the manager of Real Murcia C.F. for the 2026/2027 season|publisher=Real Murcia CF|language=es|date=25 May 2026|accessdate=28 May 2026}}</ref>
+|25 May 2026
+|-
+|Huesca
+|{{flagicon|ESP}} [[José Luis Oltra]]<ref>{{cite web|url=https://www.sdhuesca.es/noticias/finaliza-la-etapa-de-jose-luis-oltra-en-la-sd-huesca|title=Finaliza la etapa de José Luis Oltra en la SD Huesca|trans-title=José Luis Oltra's spell at SD Huesca ends|publisher=SD Huesca|language=es|date=1 June 2026|access-date=7 June 2026}}</ref>
+|{{flagicon|ESP}} [[Raúl Jardiel]]<ref>{{cite web|url=https://www.sdhuesca.es/noticias/raul-jardiel-nuevo-entrenador-de-la-sd-huesca|title=Raúl Jardiel, nuevo entrenador de la SD Huesca|trans-title=Raúl Jardiel, new manager of SD Huesca|publisher=SD Huesca|language=es|date=3 June 2026|accessdate=7 June 2026}}</ref>
+|3 June 2026
+|-
+|Algeciras
+|{{flagicon|ESP}} [[Javi Vázquez (footballer, born 1986)|Javi Vázquez]]<ref>{{cite web|url=https://cadenaser.com/andalucia/2026/06/02/javi-vazquez-dice-adios-al-algeciras-radio-algeciras/|title=Javi Vázquez dice adiós al Algeciras|trans-title=Javi Vázquez bids farewell to Algeciras|publisher=[[Cadena SER]]|language=es|date=2 June 2026|accessdate=3 June 2026}}</ref>
+|{{flagicon|ESP}} [[Adrián Colunga]]<ref>{{cite news|url=https://as.com/futbol/mas_futbol/adrian-colunga-es-el-nuevo-tecnico-del-algeciras-f202606-n/|title=Adrián Colunga es el nuevo técnico del Algeciras|trans-title=Adrián Colunga is the new manager of Algeciras|newspaper=[[Diario AS]]|first=Beni|last=Arroyo|language=Spanish|date=7 June 2026|accessdate=7 June 2026}}</ref>
+|7 June 2026
+|-
+|Gimnàstic
+|{{flagicon|ESP}} [[Pablo Alfaro]]<ref>{{cite web|url=https://gimnasticdetarragona.cat/pablo-alfaro-finalitza-la-seva-vinculacio-amb-el-nastic/|title=Pablo Alfaro finalitza la seva vinculació amb el Nàstic|trans-title=Pablo Alfaro ends his link with ''Nàstic''|publisher=Gimnàstic Tarragona|language=ca|date=5 June 2026|access-date=8 June 2026}}</ref>
+|{{flagicon|ESP}} [[Xisco Campos]]<ref>{{cite web|url=https://gimnasticdetarragona.cat/xisco-campos-nou-entrenador-del-nastic/|title=Xisco Campos, nou entrenador del Nàstic|trans-title=Xisco Campos, new manager of ''Nàstic''|publisher=Gimnàstic Tarragona|language=ca|date=10 June 2026|accessdate=10 June 2026}}</ref>
+|10 June 2026
+|-
+|Teruel
+|{{flagicon|ESP}} [[Vicente Parras]]<ref>{{cite web|url=https://www.sportaragon.com/articulo/cd-teruel/vicente-parras-despide-cd-teruel-temporada-notable/20260606132429154138.html|title=Vicente Parras dice adiós al CD Teruel tras una temporada solvente|trans-title=Vicente Parras bids farewell to CD Teruel after a solid season|publisher=Sport Aragón|language=es|date=6 June 2026|accessdate=7 June 2026}}</ref>
+|{{flagicon|ESP}} [[Kiko Ramírez]]<ref>{{cite web|url=https://www.sportaragon.com/articulo/cd-teruel/kiko-ramirez-tecnico-trotamundos-abrir-nueva-etapa-cd-teruel/20260606174803154145.html|title=Kiko Ramírez, un técnico trotamundos para abrir una nueva etapa en el CD Teruel|trans-title=Kiko Ramírez, a journeyman manager to start a new era at CD Teruel|publisher=Sport Aragón|language=es|date=6 June 2026|accessdate=7 June 2026}}</ref>
+|6 June 2026
+|-
+|Juventud Torremolinos
+|{{flagicon|ESP}} [[Carlos Alós]]<ref>{{cite web|url=https://www.jtorremolinoscf.com/post/comunicado-oficial-carlos-al%C3%B3s|title=Comunicado Oficial: Carlos Alós|trans-title=Official statement: Carlos Alós|publisher=Juventud Torremolinos CF|language=es|date=17 June 2026|accessdate=22 June 2026}}</ref>
+|{{flagicon|ESP}} [[Aitor Martínez (footballer)|Aitor Martínez]]<ref>{{cite web|url=https://www.jtorremolinoscf.com/post/oficial-aitor-mart%C3%ADnez-nuevo-entrenador-del-juventud-torremolinos-cf|title=OFICIAL {{!}} Aitor Martínez, nuevo entrenador del Juventud Torremolinos CF|trans-title=OFFICIAL {{!}} Aitor Martínez, new manager of Juventud Torremolinos CF|publisher=Juventud Torremolinos CF|language=es|date=22 June 2026|accessdate=22 June 2026}}</ref>
+|22 June 2026
+|-
+|Europa
+|{{flagicon|ESP}} [[Aday Benítez]]<ref>{{cite web|url=https://www.lesportiudecatalunya.cat/futbol/article/2660283-aday-deixa-l-europa.html|title=Aday deixa l’Europa|trans-title=Aday leaves Europa|publisher=[[L'Esportiu]]|language=ca|date=18 July 2026|accessdate=19 July 2026}}</ref>
+|Resigned
+|18 July 2026
+|{{flagicon|ESP}} [[Josep Maria Gené]]<ref>{{cite web|url=https://www.ceeuropa.cat/josep-maria-gene-assumeix-la-direccio-del-primer-equip-despres-de-ladeu-daday-benitez/|title=Josep Maria Gené assumeix la direcció del primer equip després de l’adéu d’Aday Benítez|trans-title=Josep Maria Gené takes over the first team after Aday Benítez's farewell|publisher=CE Europa|language=ca|date=18 July 2026|accessdate=19 July 2026}}</ref>
+|18 July 2026
+|}
+
+===League table===
+<onlyinclude>
+{{#invoke:Sports table|main
+|section=Group 2
+|update=Future
+|start_date=August 2026
+|source= [https://rfef.es/es/clasificacion?season=21&competition=23289295&group=23289297&journey=_none RFEF]
+
+|team_order = AGU, ALC, ALG, ANT, ATM, CAR, EUR, GIM, HER, HUE, IBI, JAE, JUV, MUR, RMJ, RMC, SAN, TER, VIL, ZAR
+
+|win_AGU=0|draw_AGU=0|loss_AGU=0|gf_AGU=0|ga_AGU=0|name_AGU=[[Águilas FC|Águilas]]
+|win_ALC=0|draw_ALC=0|loss_ALC=0|gf_ALC=0|ga_ALC=0|name_ALC=[[AD Alcorcón|Alcorcón]]
+|win_ALG=0|draw_ALG=0|loss_ALG=0|gf_ALG=0|ga_ALG=0|name_ALG=[[Algeciras CF|Algeciras]]
+|win_ANT=0|draw_ANT=0|loss_ANT=0|gf_ANT=0|ga_ANT=0|name_ANT=[[Antequera CF|Antequera]]
+|win_ATM=0|draw_ATM=0|loss_ATM=0|gf_ATM=0|ga_ATM=0|name_ATM=[[Atlético Madrileño]]
+|win_CAR=0|draw_CAR=0|loss_CAR=0|gf_CAR=0|ga_CAR=0|name_CAR=[[FC Cartagena|Cartagena]]
+|win_EUR=0|draw_EUR=0|loss_EUR=0|gf_EUR=0|ga_EUR=0|name_EUR=[[CE Europa|Europa]]
+|win_GIM=0|draw_GIM=0|loss_GIM=0|gf_GIM=0|ga_GIM=0|name_GIM=[[Gimnàstic de Tarragona|Gimnàstic]]
+|win_HER=0|draw_HER=0|loss_HER=0|gf_HER=0|ga_HER=0|name_HER=[[Hércules CF|Hércules]]
+|win_HUE=0|draw_HUE=0|loss_HUE=0|gf_HUE=0|ga_HUE=0|name_HUE=[[SD Huesca|Huesca]]
+|win_IBI=0|draw_IBI=0|loss_IBI=0|gf_IBI=0|ga_IBI=0|name_IBI=[[UD Ibiza|Ibiza]]
+|win_JAE=0|draw_JAE=0|loss_JAE=0|gf_JAE=0|ga_JAE=0|name_JAE=[[Real Jaén|Jaén]]
+|win_JUV=0|draw_JUV=0|loss_JUV=0|gf_JUV=0|ga_JUV=0|name_JUV=[[Juventud de Torremolinos CF|Juventud Torremolinos]]
+|win_MUR=0|draw_MUR=0|loss_MUR=0|gf_MUR=0|ga_MUR=0|name_MUR=[[Real Murcia CF|Murcia]]
+|win_RMJ=0|draw_RMJ=0|loss_RMJ=0|gf_RMJ=0|ga_RMJ=0|name_RMJ=[[CF Rayo Majadahonda|Rayo Majadahonda]]
+|win_RMC=0|draw_RMC=0|loss_RMC=0|gf_RMC=0|ga_RMC=0|name_RMC=[[Real Madrid Castilla]]
+|win_SAN=0|draw_SAN=0|loss_SAN=0|gf_SAN=0|ga_SAN=0|name_SAN=[[UE Sant Andreu|Sant Andreu]]
+|win_TER=0|draw_TER=0|loss_TER=0|gf_TER=0|ga_TER=0|name_TER=[[CD Teruel|Teruel]]
+|win_VIL=0|draw_VIL=0|loss_VIL=0|gf_VIL=0|ga_VIL=0|name_VIL=[[Villarreal CF B|Villarreal B]]
+|win_ZAR=0|draw_ZAR=0|loss_ZAR=0|gf_ZAR=0|ga_ZAR=0|name_ZAR=[[Real Zaragoza|Zaragoza]]
+
+<!--status-->
+
+|result1=PRC |result2=POC |result3=POC |result4=POC |result5=PO |result6=COP |result7=COP |result16=REL |result17=REL |result18=REL |result19=REL |result20=REL
+
+<!--Table settings and rules-->
+|show_limit=5
+|class_rules = 1) points; 2) head-to-head points; 3) head-to-head goal difference; 4) goal difference; 5) number of goals scored<br>(Note: Head-to-head record is used only after all the matches between the teams in question have been played)
+
+<!--Qualification column definitions-->
+|res_col_header=Q
+|col_PRO=green1 |text_PRO=Promotion to Segunda División
+|col_PRC=green1 |text_PRC=Promotion to Segunda División and qualification for the Copa del Rey
+|col_PO=blue1 |text_PO=Qualification for the promotion play-offs
+|col_POC=blue1 |text_POC=Qualification for the promotion play-offs and Copa del Rey
+|col_REL=red1 |text_REL=Relegation to Segunda Federación
+|col_COP=yellow1 |text_COP=Qualification for the Copa del Rey
+}}
+
+</onlyinclude>
+
+===Results===
+{{#invoke:Sports results|main
+|update=Future
+|start_date=August 2026
+|source=
+|matches_style=FBR
+|team1=AGU |team2=ALC |team3=ALG |team4=ANT |team5=ATM |team6=CAR |team7=EUR |team8=GIM |team9=HER |team10=HUE|team11=IBI|team12=JAE |team13=JUV|team14=MUR|team15=RMJ |team16=RMC|team17=SAN|team18=TER |team19=VIL|team20=ZAR
+
+|name_AGU=[[Águilas FC|Águilas]]
+|name_ALC=[[AD Alcorcón|Alcorcón]]
+|name_ALG=[[Algeciras CF|Algeciras]]
+|name_ANT=[[Antequera CF|Antequera]]
+|name_ATM=[[Atlético Madrileño]]
+|name_CAR=[[FC Cartagena|Cartagena]]
+|name_EUR=[[CE Europa|Europa]]
+|name_GIM=[[Gimnàstic de Tarragona|Gimnàstic]]
+|name_HER=[[Hércules CF|Hércules]]
+|name_HUE=[[SD Huesca|Huesca]]
+|name_IBI=[[UD Ibiza|Ibiza]]
+|name_JAE=[[Real Jaén|Jaén]]
+|name_JUV=[[Juventud de Torremolinos CF|Juventud Torremolinos]]
+|name_MUR=[[Real Murcia|Murcia]]
+|name_RMJ=[[CF Rayo Majadahonda|Rayo Majadahonda]]
+|name_RMC=[[Real Madrid Castilla]]
+|name_SAN=[[UE Sant Andreu|Sant Andreu]]
+|name_TER=[[CD Teruel|Teruel]]
+|name_VIL=[[Villarreal CF B|Villarreal B]]
+|name_ZAR=[[Real Zaragoza|Zaragoza]]
+
+|match_AGU_ALC=
+|match_AGU_ALG=
+|match_AGU_ANT=
+|match_AGU_ATM=
+|match_AGU_CAR=
+|match_AGU_EUR=
+|match_AGU_GIM=
+|match_AGU_HER=
+|match_AGU_HUE=
+|match_AGU_IBI=
+|match_AGU_JAE=
+|match_AGU_JUV=
+|match_AGU_MUR=
+|match_AGU_RMJ=
+|match_AGU_RMC=
+|match_AGU_SAN=
+|match_AGU_TER=
+|match_AGU_VIL=
+|match_AGU_ZAR=
+
+|match_ALC_AGU=
+|match_ALC_ALG=
+|match_ALC_ANT=
+|match_ALC_ATM=
+|match_ALC_CAR=
+|match_ALC_EUR=
+|match_ALC_GIM=
+|match_ALC_HER=
+|match_ALC_HUE=
+|match_ALC_IBI=
+|match_ALC_JAE=
+|match_ALC_JUV=
+|match_ALC_MUR=
+|match_ALC_RMJ=
+|match_ALC_RMC=
+|match_ALC_SAN=
+|match_ALC_TER=
+|match_ALC_VIL=
+|match_ALC_ZAR=
+
+|match_ALG_AGU=
+|match_ALG_ALC=
+|match_ALG_ANT=
+|match_ALG_ATM=
+|match_ALG_CAR=
+|match_ALG_EUR=
+|match_ALG_GIM=
+|match_ALG_HER=
+|match_ALG_HUE=
+|match_ALG_IBI=
+|match_ALG_JAE=
+|match_ALG_JUV=
+|match_ALG_MUR=
+|match_ALG_RMJ=
+|match_ALG_RMC=
+|match_ALG_SAN=
+|match_ALG_TER=
+|match_ALG_VIL=
+|match_ALG_ZAR=
+
+|match_ANT_AGU=
+|match_ANT_ALC=
+|match_ANT_ALG=
+|match_ANT_ATM=
+|match_ANT_CAR=
+|match_ANT_EUR=
+|match_ANT_GIM=
+|match_ANT_HER=
+|match_ANT_HUE=
+|match_ANT_IBI=
+|match_ANT_JAE=
+|match_ANT_JUV=
+|match_ANT_MUR=
+|match_ANT_RMJ=
+|match_ANT_RMC=
+|match_ANT_SAN=
+|match_ANT_TER=
+|match_ANT_VIL=
+|match_ANT_ZAR=
+
+|match_ATM_AGU=
+|match_ATM_ALC=
+|match_ATM_ALG=
+|match_ATM_ANT=
+|match_ATM_CAR=
+|match_ATM_EUR=
+|match_ATM_GIM=
+|match_ATM_HER=
+|match_ATM_HUE=
+|match_ATM_IBI=
+|match_ATM_JAE=
+|match_ATM_JUV=
+|match_ATM_MUR=
+|match_ATM_RMJ=
+|match_ATM_RMC=
+|match_ATM_SAN=
+|match_ATM_TER=
+|match_ATM_VIL=
+|match_ATM_ZAR=
+
+|match_CAR_AGU=
+|match_CAR_ALC=
+|match_CAR_ALG=
+|match_CAR_ANT=
+|match_CAR_ATM=
+|match_CAR_EUR=
+|match_CAR_GIM=
+|match_CAR_HER=
+|match_CAR_HUE=
+|match_CAR_IBI=
+|match_CAR_JAE=
+|match_CAR_JUV=
+|match_CAR_MUR=
+|match_CAR_RMJ=
+|match_CAR_RMC=
+|match_CAR_SAN=
+|match_CAR_TER=
+|match_CAR_VIL=
+|match_CAR_ZAR=
+
+|match_EUR_AGU=
+|match_EUR_ALC=
+|match_EUR_ALG=
+|match_EUR_ANT=
+|match_EUR_ATM=
+|match_EUR_CAR=
+|match_EUR_GIM=
+|match_EUR_HER=
+|match_EUR_HUE=
+|match_EUR_IBI=
+|match_EUR_JAE=
+|match_EUR_JUV=
+|match_EUR_MUR=
+|match_EUR_RMJ=
+|match_EUR_RMC=
+|match_EUR_SAN= [[Pla de Barcelona derby|a]]
+|match_EUR_TER=
+|match_EUR_VIL=
+|match_EUR_ZAR=
+
+|match_GIM_AGU=
+|match_GIM_ALC=
+|match_GIM_ALG=
+|match_GIM_ANT=
+|match_GIM_ATM=
+|match_GIM_CAR=
+|match_GIM_EUR=
+|match_GIM_HER=
+|match_GIM_HUE=
+|match_GIM_IBI=
+|match_GIM_JAE=
+|match_GIM_JUV=
+|match_GIM_MUR=
+|match_GIM_RMJ=
+|match_GIM_RMC=
+|match_GIM_SAN=
+|match_GIM_TER=
+|match_GIM_VIL=
+|match_GIM_ZAR=
+
+|match_HER_AGU=
+|match_HER_ALC=
+|match_HER_ALG=
+|match_HER_ANT=
+|match_HER_ATM=
+|match_HER_CAR=
+|match_HER_EUR=
+|match_HER_GIM=
+|match_HER_HUE=
+|match_HER_IBI=
+|match_HER_JAE=
+|match_HER_JUV=
+|match_HER_MUR=
+|match_HER_RMJ=
+|match_HER_RMC=
+|match_HER_SAN=
+|match_HER_TER=
+|match_HER_VIL=
+|match_HER_ZAR=
+
+|match_HUE_AGU=
+|match_HUE_ALC=
+|match_HUE_ALG=
+|match_HUE_ANT=
+|match_HUE_ATM=
+|match_HUE_CAR=
+|match_HUE_EUR=
+|match_HUE_GIM=
+|match_HUE_HER=
+|match_HUE_IBI=
+|match_HUE_JAE=
+|match_HUE_JUV=
+|match_HUE_MUR=
+|match_HUE_RMJ=
+|match_HUE_RMC=
+|match_HUE_SAN=
+|match_HUE_TER=
+|match_HUE_VIL=
+|match_HUE_ZAR= [[Aragonese derby|a]]
+
+|match_IBI_AGU=
+|match_IBI_ALC=
+|match_IBI_ALG=
+|match_IBI_ANT=
+|match_IBI_ATM=
+|match_IBI_CAR=
+|match_IBI_EUR=
+|match_IBI_GIM=
+|match_IBI_HER=
+|match_IBI_HUE=
+|match_IBI_JAE=
+|match_IBI_JUV=
+|match_IBI_MUR=
+|match_IBI_RMJ=
+|match_IBI_RMC=
+|match_IBI_SAN=
+|match_IBI_TER=
+|match_IBI_VIL=
+|match_IBI_ZAR=
+
+|match_JAE_AGU=
+|match_JAE_ALC=
+|match_JAE_ALG=
+|match_JAE_ANT=
+|match_JAE_ATM=
+|match_JAE_CAR=
+|match_JAE_EUR=
+|match_JAE_GIM=
+|match_JAE_HER=
+|match_JAE_HUE=
+|match_JAE_IBI=
+|match_JAE_JUV=
+|match_JAE_MUR=
+|match_JAE_RMJ=
+|match_JAE_RMC=
+|match_JAE_SAN=
+|match_JAE_TER=
+|match_JAE_VIL=
+|match_JAE_ZAR=
+
+|match_JUV_AGU=
+|match_JUV_ALC=
+|match_JUV_ALG=
+|match_JUV_ANT=
+|match_JUV_ATM=
+|match_JUV_CAR=
+|match_JUV_EUR=
+|match_JUV_GIM=
+|match_JUV_HER=
+|match_JUV_HUE=
+|match_JUV_IBI=
+|match_JUV_JAE=
+|match_JUV_MUR=
+|match_JUV_RMJ=
+|match_JUV_RMC=
+|match_JUV_SAN=
+|match_JUV_TER=
+|match_JUV_VIL=
+|match_JUV_ZAR=
+
+|match_MUR_AGU=
+|match_MUR_ALC=
+|match_MUR_ALG=
+|match_MUR_ANT=
+|match_MUR_ATM=
+|match_MUR_CAR=
+|match_MUR_EUR=
+|match_MUR_GIM=
+|match_MUR_HER=
+|match_MUR_HUE=
+|match_MUR_IBI=
+|match_MUR_JAE=
+|match_MUR_JUV=
+|match_MUR_RMJ=
+|match_MUR_RMC=
+|match_MUR_SAN=
+|match_MUR_TER=
+|match_MUR_VIL=
+|match_MUR_ZAR=
+
+|match_RMJ_AGU=
+|match_RMJ_ALC=
+|match_RMJ_ALG=
+|match_RMJ_ANT=
+|match_RMJ_ATM=
+|match_RMJ_CAR=
+|match_RMJ_EUR=
+|match_RMJ_GIM=
+|match_RMJ_HER=
+|match_RMJ_HUE=
+|match_RMJ_IBI=
+|match_RMJ_JAE=
+|match_RMJ_JUV=
+|match_RMJ_MUR=
+|match_RMJ_RMC=
+|match_RMJ_SAN=
+|match_RMJ_TER=
+|match_RMJ_VIL=
+|match_RMJ_ZAR=
+
+|match_RMC_AGU=
+|match_RMC_ALC=
+|match_RMC_ALG=
+|match_RMC_ANT=
+|match_RMC_ATM=
+|match_RMC_CAR=
+|match_RMC_EUR=
+|match_RMC_GIM=
+|match_RMC_HER=
+|match_RMC_HUE=
+|match_RMC_IBI=
+|match_RMC_JAE=
+|match_RMC_JUV=
+|match_RMC_MUR=
+|match_RMC_RMJ=
+|match_RMC_SAN=
+|match_RMC_TER=
+|match_RMC_VIL=
+|match_RMC_ZAR=
+
+|match_SAN_AGU=
+|match_SAN_ALC=
+|match_SAN_ALG=
+|match_SAN_ANT=
+|match_SAN_ATM=
+|match_SAN_CAR=
+|match_SAN_EUR= [[Pla de Barcelona derby|a]]
+|match_SAN_GIM=
+|match_SAN_HER=
+|match_SAN_HUE=
+|match_SAN_IBI=
+|match_SAN_JAE=
+|match_SAN_JUV=
+|match_SAN_MUR=
+|match_SAN_RMJ=
+|match_SAN_RMC=
+|match_SAN_TER=
+|match_SAN_VIL=
+|match_SAN_ZAR=
+
+|match_TER_AGU=
+|match_TER_ALC=
+|match_TER_ALG=
+|match_TER_ANT=
+|match_TER_ATM=
+|match_TER_CAR=
+|match_TER_EUR=
+|match_TER_GIM=
+|match_TER_HER=
+|match_TER_HUE=
+|match_TER_IBI=
+|match_TER_JAE=
+|match_TER_JUV=
+|match_TER_MUR=
+|match_TER_RMJ=
+|match_TER_RMC=
+|match_TER_SAN=
+|match_TER_VIL=
+|match_TER_ZAR=
+
+|match_VIL_AGU=
+|match_VIL_ALC=
+|match_VIL_ALG=
+|match_VIL_ANT=
+|match_VIL_ATM=
+|match_VIL_CAR=
+|match_VIL_EUR=
+|match_VIL_GIM=
+|match_VIL_HER=
+|match_VIL_HUE=
+|match_VIL_IBI=
+|match_VIL_JAE=
+|match_VIL_JUV=
+|match_VIL_MUR=
+|match_VIL_RMJ=
+|match_VIL_RMC=
+|match_VIL_SAN=
+|match_VIL_TER=
+|match_VIL_ZAR=
+
+|match_ZAR_AGU=
+|match_ZAR_ALC=
+|match_ZAR_ALG=
+|match_ZAR_ANT=
+|match_ZAR_ATM=
+|match_ZAR_CAR=
+|match_ZAR_EUR=
+|match_ZAR_GIM=
+|match_ZAR_HER=
+|match_ZAR_HUE= [[Aragonese derby|a]]
+|match_ZAR_IBI=
+|match_ZAR_JAE=
+|match_ZAR_JUV=
+|match_ZAR_MUR=
+|match_ZAR_RMJ=
+|match_ZAR_RMC=
+|match_ZAR_SAN=
+|match_ZAR_TER=
+|match_ZAR_VIL=
+}}
+
+==See also==
+*[[2026–27 La Liga]]
+*[[2026–27 Segunda División]]
+*[[2026–27 Segunda Federación]]
+*[[2026–27 Tercera Federación]]
+
+==Notes==
+{{notelist}}
+
+==References==
+{{Reflist}}
+
+{{Primera Federación}}
+{{Primera Federación seasons}}
+{{2026–27 in Spanish football}}
+
+[[Category:Primera Federación seasons]]
+[[Category:2026–27 in European third-tier association football leagues|Spain]]
+[[Category:2026–27 in Spanish men's football leagues|3]]

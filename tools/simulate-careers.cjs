@@ -33,7 +33,17 @@ function createGame() {
     window: {}
   };
   vm.createContext(context);
-  ["countries.js", "trophies.js", "clubs.js", "derbies.js", "events.js"].forEach((file) => {
+  [
+    "countries.js",
+    "trophies.js",
+    "clubs.js",
+    "third-tier-clubs.js",
+    "third-tier-translations.js",
+    "derbies.js",
+    "events.js",
+    "league-simulation.js",
+    "competition-simulation.js"
+  ].forEach((file) => {
     vm.runInContext(fs.readFileSync(path.join(root, "data", file), "utf8"), context);
   });
   let appSource = fs.readFileSync(path.join(root, "app.js"), "utf8");
@@ -126,7 +136,7 @@ function runCareer(strategy, seedOffset, requestedPosition) {
       choiceOutcome: summaryState.lastChoiceOutcome,
       derbyNote: summary.derbyNote,
       derbyWasFeatured: summary.derbyWasFeatured,
-      decision: summary.clubDecisionNote,
+      decision: summary.clubDecisionNote || "",
       event: event.title,
       eventId: event.id,
       offeredBigFive: summaryState.transferOptions.some((option) =>
@@ -142,7 +152,9 @@ function runCareer(strategy, seedOffset, requestedPosition) {
       selectedTransferType: selectedTransfer ? selectedTransfer.type : "",
       transfer: selectedTransfer ? selectedTransfer.label + " -> " + selectedTransfer.club.name : "none"
     });
-    game.handleTransferChoice(transferIndex);
+    if (!summaryState.gameOver) {
+      game.handleTransferChoice(transferIndex);
+    }
     guard += 1;
   }
   return { player: game.getState().player, seasons };

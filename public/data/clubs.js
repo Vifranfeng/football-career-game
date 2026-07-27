@@ -310,5 +310,45 @@ window.CLUBS = [
   { id: "bukit-tambun-a1", name: "Bukit Tambun", nameZh: "武吉淡汶", shortName: "BTU", country: "马来西亚", region: "亚洲", league: "Malaysia A1 Semi-Pro League", leagueLevel: 2, band: "练级队", strength: 52, reputation: 47, salaryLevel: 34, youthChance: 88 },
   { id: "university-malaya-a1", name: "University Malaya", nameZh: "马来亚大学", shortName: "UM", country: "马来西亚", region: "亚洲", league: "Malaysia A1 Semi-Pro League", leagueLevel: 2, band: "练级队", strength: 52, reputation: 47, salaryLevel: 34, youthChance: 89 },
   { id: "bunga-raya-a1", name: "Bunga Raya FC", nameZh: "大红花", shortName: "BRF", country: "马来西亚", region: "亚洲", league: "Malaysia A1 Semi-Pro League", leagueLevel: 2, band: "练级队", strength: 53, reputation: 48, salaryLevel: 35, youthChance: 87 },
-  { id: "ypm-a1", name: "YPM FC", nameZh: "YPM俱乐部", shortName: "YPM", country: "马来西亚", region: "亚洲", league: "Malaysia A1 Semi-Pro League", leagueLevel: 2, band: "练级队", strength: 52, reputation: 46, salaryLevel: 34, youthChance: 88 }
+  { id: "ypm-a1", name: "YPM FC", nameZh: "YPM俱乐部", shortName: "YPM", country: "马来西亚", region: "亚洲", league: "Malaysia A1 Semi-Pro League", leagueLevel: 2, band: "练级队", strength: 52, reputation: 46, salaryLevel: 34, youthChance: 88 },
+
+  { id: "blackpool-l1", name: "Blackpool", nameZh: "布莱克浦", shortName: "BPL", country: "英格兰", region: "欧洲", league: "EFL League One", leagueLevel: 3, band: "强队", strength: 59, reputation: 55, salaryLevel: 39, youthChance: 77 },
+  { id: "reading-l1", name: "Reading", nameZh: "雷丁", shortName: "REA", country: "英格兰", region: "欧洲", league: "EFL League One", leagueLevel: 3, band: "练级队", strength: 56, reputation: 52, salaryLevel: 36, youthChance: 82 },
+  { id: "huddersfield-l1", name: "Huddersfield Town", nameZh: "哈德斯菲尔德", shortName: "HUD", country: "英格兰", region: "欧洲", league: "EFL League One", leagueLevel: 3, band: "强队", strength: 60, reputation: 57, salaryLevel: 40, youthChance: 76 },
+  { id: "barnsley-l1", name: "Barnsley", nameZh: "巴恩斯利", shortName: "BAR", country: "英格兰", region: "欧洲", league: "EFL League One", leagueLevel: 3, band: "练级队", strength: 58, reputation: 54, salaryLevel: 38, youthChance: 80 },
+
+  { id: "murcia-rfef", name: "Real Murcia", nameZh: "皇家穆尔西亚", shortName: "MUR", country: "西班牙", region: "欧洲", league: "Primera Federación", leagueLevel: 3, band: "强队", strength: 59, reputation: 56, salaryLevel: 39, youthChance: 78 },
+  { id: "nastic-rfef", name: "Gimnastic Tarragona", nameZh: "塔拉戈纳体操", shortName: "NAS", country: "西班牙", region: "欧洲", league: "Primera Federación", leagueLevel: 3, band: "强队", strength: 58, reputation: 54, salaryLevel: 38, youthChance: 79 },
+  { id: "lugo-rfef", name: "CD Lugo", nameZh: "卢戈", shortName: "LUG", country: "西班牙", region: "欧洲", league: "Primera Federación", leagueLevel: 3, band: "练级队", strength: 55, reputation: 51, salaryLevel: 35, youthChance: 83 },
+  { id: "sabadell-rfef", name: "CE Sabadell", nameZh: "萨瓦德尔", shortName: "SAB", country: "西班牙", region: "欧洲", league: "Primera Federación", leagueLevel: 3, band: "练级队", strength: 56, reputation: 52, salaryLevel: 36, youthChance: 82 },
+
+  { id: "hansa-3liga", name: "Hansa Rostock", nameZh: "汉莎罗斯托克", shortName: "HAN", country: "德国", region: "欧洲", league: "3. Liga", leagueLevel: 3, band: "强队", strength: 61, reputation: 59, salaryLevel: 41, youthChance: 76 },
+  { id: "essen-3liga", name: "Rot-Weiss Essen", nameZh: "红白埃森", shortName: "RWE", country: "德国", region: "欧洲", league: "3. Liga", leagueLevel: 3, band: "强队", strength: 59, reputation: 57, salaryLevel: 39, youthChance: 78 },
+  { id: "aachen-3liga", name: "Alemannia Aachen", nameZh: "亚琛", shortName: "AAC", country: "德国", region: "欧洲", league: "3. Liga", leagueLevel: 3, band: "练级队", strength: 58, reputation: 56, salaryLevel: 38, youthChance: 80 },
+  { id: "duisburg-3liga", name: "MSV Duisburg", nameZh: "杜伊斯堡", shortName: "DUI", country: "德国", region: "欧洲", league: "3. Liga", leagueLevel: 3, band: "强队", strength: 60, reputation: 58, salaryLevel: 40, youthChance: 77 },
+
+  { id: "catania-seriec", name: "Catania", nameZh: "卡塔尼亚", shortName: "CAT", country: "意大利", region: "欧洲", league: "Serie C", leagueLevel: 3, band: "强队", strength: 59, reputation: 57, salaryLevel: 39, youthChance: 78 },
+  { id: "perugia-seriec", name: "Perugia", nameZh: "佩鲁贾", shortName: "PER", country: "意大利", region: "欧洲", league: "Serie C", leagueLevel: 3, band: "强队", strength: 58, reputation: 56, salaryLevel: 38, youthChance: 79 },
+  { id: "crotone-seriec", name: "Crotone", nameZh: "克罗托内", shortName: "CRO", country: "意大利", region: "欧洲", league: "Serie C", leagueLevel: 3, band: "练级队", strength: 57, reputation: 54, salaryLevel: 37, youthChance: 81 },
+  { id: "ternana-seriec", name: "Ternana", nameZh: "特尔纳纳", shortName: "TER", country: "意大利", region: "欧洲", league: "Serie C", leagueLevel: 3, band: "练级队", strength: 58, reputation: 55, salaryLevel: 38, youthChance: 80 },
+
+  { id: "sochaux-national", name: "Sochaux", nameZh: "索肖", shortName: "SOC", country: "法国", region: "欧洲", league: "Championnat National", leagueLevel: 3, band: "强队", strength: 59, reputation: 57, salaryLevel: 39, youthChance: 79 },
+  { id: "dijon-national", name: "Dijon", nameZh: "第戎", shortName: "DIJ", country: "法国", region: "欧洲", league: "Championnat National", leagueLevel: 3, band: "强队", strength: 58, reputation: 55, salaryLevel: 38, youthChance: 80 },
+  { id: "rouen-national", name: "Rouen", nameZh: "鲁昂", shortName: "ROU", country: "法国", region: "欧洲", league: "Championnat National", leagueLevel: 3, band: "练级队", strength: 56, reputation: 52, salaryLevel: 36, youthChance: 82 },
+  { id: "valenciennes-national", name: "Valenciennes", nameZh: "瓦朗谢讷", shortName: "VAL", country: "法国", region: "欧洲", league: "Championnat National", leagueLevel: 3, band: "练级队", strength: 57, reputation: 54, salaryLevel: 37, youthChance: 81 },
+
+  { id: "dalian-kewei-c2", name: "Dalian Kewei", nameZh: "大连可为", shortName: "DLK", country: "中国", region: "亚洲", league: "China League Two", leagueLevel: 3, band: "强队", strength: 54, reputation: 48, salaryLevel: 32, youthChance: 86 },
+  { id: "lanzhou-longyuan-c2", name: "Lanzhou Longyuan Athletic", nameZh: "兰州陇原竞技", shortName: "LZY", country: "中国", region: "亚洲", league: "China League Two", leagueLevel: 3, band: "强队", strength: 53, reputation: 47, salaryLevel: 31, youthChance: 87 },
+  { id: "shenzhen-2028-c2", name: "Shenzhen 2028", nameZh: "深圳二零二八", shortName: "SZ8", country: "中国", region: "亚洲", league: "China League Two", leagueLevel: 3, band: "练级队", strength: 51, reputation: 44, salaryLevel: 29, youthChance: 90 },
+  { id: "chengdu-b-c2", name: "Chengdu Rongcheng B", nameZh: "成都蓉城B队", shortName: "CDB", country: "中国", region: "亚洲", league: "China League Two", leagueLevel: 3, band: "练级队", strength: 52, reputation: 45, salaryLevel: 30, youthChance: 91 },
+
+  { id: "gifu-j3", name: "FC Gifu", nameZh: "FC岐阜", shortName: "GIF", country: "日本", region: "亚洲", league: "J3 League", leagueLevel: 3, band: "强队", strength: 56, reputation: 52, salaryLevel: 35, youthChance: 84 },
+  { id: "nagano-j3", name: "AC Nagano Parceiro", nameZh: "长野帕塞罗", shortName: "NGN", country: "日本", region: "亚洲", league: "J3 League", leagueLevel: 3, band: "练级队", strength: 54, reputation: 49, salaryLevel: 33, youthChance: 86 },
+  { id: "tottori-j3", name: "Gainare Tottori", nameZh: "鸟取飞翔", shortName: "TOT", country: "日本", region: "亚洲", league: "J3 League", leagueLevel: 3, band: "练级队", strength: 53, reputation: 48, salaryLevel: 32, youthChance: 87 },
+  { id: "fukushima-j3", name: "Fukushima United", nameZh: "福岛联", shortName: "FUK", country: "日本", region: "亚洲", league: "J3 League", leagueLevel: 3, band: "练级队", strength: 54, reputation: 49, salaryLevel: 33, youthChance: 86 },
+
+  { id: "gimhae-k3", name: "Gimhae FC", nameZh: "金海FC", shortName: "GIM", country: "韩国", region: "亚洲", league: "K3 League", leagueLevel: 3, band: "强队", strength: 54, reputation: 49, salaryLevel: 33, youthChance: 84 },
+  { id: "gyeongju-k3", name: "Gyeongju KHNP", nameZh: "庆州水利", shortName: "GYE", country: "韩国", region: "亚洲", league: "K3 League", leagueLevel: 3, band: "强队", strength: 55, reputation: 50, salaryLevel: 34, youthChance: 83 },
+  { id: "siheung-k3", name: "Siheung Citizen", nameZh: "始兴市民", shortName: "SIH", country: "韩国", region: "亚洲", league: "K3 League", leagueLevel: 3, band: "练级队", strength: 52, reputation: 46, salaryLevel: 31, youthChance: 87 },
+  { id: "daejeon-korail-k3", name: "Daejeon Korail", nameZh: "大田铁路", shortName: "DKR", country: "韩国", region: "亚洲", league: "K3 League", leagueLevel: 3, band: "练级队", strength: 53, reputation: 48, salaryLevel: 32, youthChance: 86 }
 ];

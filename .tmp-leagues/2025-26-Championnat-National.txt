@@ -1,0 +1,1199 @@
+﻿{{Short description|33rd season of third division league in France}}
+{{Infobox football league season
+| competition = [[Championnat National]]
+| logo = Championnat National.png
+| season = [[2025–26 in French football|2025–26]]
+| dates = 8 August 2025 – 15 May 2026
+| winners = [[Dijon FCO|Dijon]]
+| promoted = Dijon<br>[[FC Sochaux-Montbéliard|Sochaux]]
+| relegated = [[LB Châteauroux|Châteauroux]]<br>[[Stade Briochin]]
+| matches = 
+| total goals = 
+| league topscorer = 
+| biggest home win = 
+| biggest away win = 
+| highest scoring = 
+| longest wins = 
+| longest unbeaten = 
+| longest winless = 
+| longest losses = 
+| highest attendance = 
+| lowest attendance = 
+| average attendance = 
+| prevseason = [[2024–25 Championnat National|2024–25]]
+| nextseason = [[2026–27 Ligue 3|2026–27 (L3)]]
+| updated = 
+}}
+The '''2025–26 Championnat National''' season is the 33rd since the establishment of the [[Championnat National]] and the 27th in its current format, which serves as third division of the [[French football league system]].
+
+This season is also be the last to use the National name, with the league being renamed [[Ligue 3]] starting in the 2026–27 season.<ref>{{cite web|last=|first=|date=17 January 2025|url=https://lequipe.fr/Football/Actualites/La-fff-veut-creer-une-ligue-3-professionnelle-en-2026/1532766/ |title=La FFF confirme son projet d'une Ligue 3 professionnelle en 2026 |language=fr |website=L'Equipe |access-date=22 July 2025}}</ref>
+
+== Teams ==
+=== Changes ===
+The following teams changed division since the 2024–25 season.
+{|
+|- style="vertical-align:top"
+|
+{| class="wikitable"
+|+ To National
+|-
+! {{Decrease}} Relegated from [[2024–25 Ligue 2|Ligue 2]] 
+|-
+|
+* [[AC Ajaccio|Ajaccio]]{{efn|Originally ranked 12th in [[Ligue 2]] the previous season but was relegated administratively due to financial problems.<ref>{{cite web|last=|first=|date=16 July 2025|url=https://getfootballnewsfrance.com/2025/official-ajaccio-relegated-from-ligue-2-to-championnat-national-after-unsuccessful-appeal/ |title=Official: Ajaccio relegated from Ligue 2 to Championnat National after unsuccessful appeal |language=en |website=Get Football News France |access-date=22 July 2025}}</ref>}}
+* [[SM Caen|Caen]]
+|-
+! {{Increase}} Promoted from [[2024–25 Championnat National 2|National 2]]
+|-
+| 
+* [[Le Puy Foot 43 Auvergne|Le Puy]]
+* [[Stade Briochin]]
+* [[FC Fleury 91 (men)|Fleury]]
+|}
+|
+{| class="wikitable"
+|+ From National
+|-
+! {{Increase}} Promoted to [[2025–26 Ligue 2|Ligue 2]]
+|-
+| 
+* [[AS Nancy Lorraine|Nancy]]
+* [[Le Mans FC|Le Mans]]
+* [[US Boulogne|Boulogne]]{{efn|Promoted despite losing in the promotion play-offs in the previous season.}}
+|-
+! {{Decrease}} Relegated to [[2025–26 Championnat National 2|National 2]]
+|-
+|
+* [[Nîmes Olympique|Nîmes]]
+|}
+|
+{| class="wikitable"
+|+ Administrative
+|-
+! {{Decrease}} Demoted to [[Régional 2]]
+|-
+| 
+* [[AC Ajaccio|Ajaccio]]{{efn|On 14 August 2025, due to continuing financial issues, Ajaccio were excluded from the competition.<ref>{{cite web|publisher=Humanité|url=https://www.humanite.fr/sports/ajaccio/lac-ajaccio-deja-relegue-de-ligue-2-en-national-exclu-de-toutes-competitions-nationales-par-la-dncg|title=L'AC Ajaccio, déjà relégué de Ligue 2 en National, exclu de toutes compétitions nationales par la DNCG|trans-title=AC Ajaccio, already relegated from Ligue 2 to National, excluded from all national competitions by the DNCG|date=14 August 2025|access-date=15 August 2025|language=fr}}</ref>}}
+|-
+! {{Decrease}} Relegated to [[French football league system#Provence Alpes-Cote d'Azur Region|Départemental 3]]
+|-
+| 
+* [[FC Martigues|Martigues]]{{efn|On 4 July 2025, the [[Direction Nationale du Contrôle de Gestion|DNCG]] excluded Martigues from national competitions.<ref>{{Cite web |title=Le FC Martigues exclu des Championnats nationaux par la DNCG |url=https://www.lequipe.fr/Football/Actualites/Le-fc-martigues-exclu-des-championnats-nationaux-par-la-dncg/1575382 |access-date=2025-07-15 |website=L'Équipe |language=fr}}</ref>}}
+|}
+|}
+
+Notes:
+{{notelist}}
+
+=== Name changes ===
+* '''Aubagne''' changed its official name to '''[[SC Aubagne Air Bel|Aubagne Air Bel]]''' after the team merged with SC Air Bel and took effect this season.<ref>{{cite web|last=Noailles |first=Yan |date=27 May 2025|url=https://laprovence.com/article/sports/6471109592073814/football-national-la-fusion-entre-aubagne-et-air-bel-officiellement-validee-par-la-dncg/ |title=Football - National : la fusion entre Aubagne et Air Bel officiellement validée par la DNCG |language=fr |website=La Provence |access-date=23 July 2025}}</ref>
+
+=== Stadia and locations ===
+{{Location map+ |France |float=left |width=500 |caption=Locations of teams in the 2025–26 Championnat National. |alt=Championnat National teams in France |places=
+{{Location map~ |France |lat=47.5123863 |long=6.8079719 |position=top |label=[[FC Sochaux-Montbéliard|Sochaux]]}}
+{{Location map~ |France |lat=43.2935012 |long=5.5592011 |position=right |label=[[SC Aubagne Air Bel|Aubagne]]}}
+{{Location map~ |France |lat=46.21 |long=5.2346473 |position=top |label=[[Football Bourg-en-Bresse Péronnas 01|Bourg-Péronnas]]}}
+{{Location map~ |France |lat=47.324369 |long=5.0657695 |position=right |label=[[Dijon FCO|Dijon]]}}
+{{Location map~ |France |lat=45.999982 |long=4.7047043 |position=left |label=[[FC Villefranche Beaujolais|Villefranche]]}}
+{{Location map~ |France |lat=45.0459995 |long=3.8712333 |position=right |label=[[Le Puy Foot 43 Auvergne|Le Puy]]}}
+{{Location map~ |France |lat=50.3484216 |long=3.5291868 |position=left |label=[[Valenciennes FC|Valenciennes]]}}
+{{Location map~ |France |lat=47.8406445 |long=1.9390869 |position=left |label=[[US Orléans|Orléans]]}}
+{{Location map~ |France |lat=46.8017852 |long=1.7187702 |position=left |label=[[LB Châteauroux|Châteauroux]]}}
+{{Location map~ |France |lat=49.411043 |long=1.0681308 |position=left |label=[[US Quevilly-Rouen Métropole|QRM]]<hr>[[FC Rouen|Rouen]]}}
+{{Location map~ |France |lat=49.179489 |long=-0.3993715 |position=left |label=[[SM Caen|Caen]]}}
+{{Location map~ |France |lat=48.508806 |long=-2.746387 |position=left |label=[[Stade Briochin]]}}
+{{Location map~ |France |lat=47.889189 |long=-3.9161334 |position=right |label=[[US Concarneau|Concarneau]]}}
+{{Location map~ |France |lat=48.8185279 |long=2.3440757 |position=right |mark=Blue pog.svg}}
+{{Location map~ |France |lat=48.6337579 |long=2.3609971 |position=right |mark=Blue pog.svg}}
+{{Location map~ |France |lat=48.8014025 |long=2.1374339 |position=right |mark=Blue pog.svg}}
+}}
+
+{{Location map+ |France Île-de-France |float=center |width=200 |caption=Locations of teams in the 2025–26 Championnat National from Île-de-France |alt=Championnat National teams in Île-de-France |places=
+{{Location map~ |France Île-de-France |lat=48.8185279 |long=2.3440757 |position=right |label=[[Paris 13 Atletico|Paris 13]]}}
+{{Location map~ |France Île-de-France |lat=48.6337579 |long=2.3609971 |position=right |label=[[FC Fleury 91 (men)|Fleury]]}}
+{{Location map~ |France Île-de-France |lat=48.8014025 |long=2.1374339 |position=left |label=[[FC Versailles 78|Versailles]]}}
+}}
+
+{| class="wikitable sortable" 
+|-
+! Team
+! Location
+! Stadium
+! Capacity
+! 2024–25 season
+|- style="background-color:#bbb"
+| {{nowrap|[[AC Ajaccio|Ajaccio]]}}<sup>↓</sup>
+| {{nowrap|[[Ajaccio]]}}
+| {{nowrap|[[Stade Michel Moretti]]}}
+| align="center"|10,600
+| {{nowrap|[[2024–25 Ligue 2|12th in Ligue 2]]}}
+|-
+| {{nowrap|[[SC Aubagne Air Bel|Aubagne Air Bel]]}}
+| {{nowrap|[[Aubagne]]}}
+| {{nowrap|Stade de Lattre-de-Tassigny}}
+| align="center"|1,000
+| {{nowrap|[[2024–25 Championnat National|6th in National]]}}
+|-
+| {{nowrap|[[Football Bourg-en-Bresse Péronnas 01|Bourg-Péronnas]]}}
+| {{nowrap|[[Bourg-en-Bresse]]}}
+| {{nowrap|[[Stade Marcel-Verchère]]}}
+| align="center"|11,400
+| {{nowrap|[[2024–25 Championnat National|5th in National]]}}
+|-
+| {{nowrap|[[Stade Malherbe Caen|Caen]]}}<sup>↓</sup>
+| {{nowrap|[[Caen]]}}
+| {{nowrap|[[Stade Michel d'Ornano]]}}
+| align="center"|20,300
+| {{nowrap|[[2024–25 Ligue 2|18th in Ligue 2]]}}
+|-
+| {{nowrap|[[LB Châteauroux|Châteauroux]]}}
+| {{nowrap|[[Châteauroux]]}}
+| {{nowrap|[[Stade Gaston-Petit]]}}
+| align="center"|17,173
+| {{nowrap|[[2024–25 Championnat National|16th in National]]}}
+|-
+| {{nowrap|[[US Concarneau|Concarneau]]}}
+| {{nowrap|[[Concarneau]]}}
+| {{nowrap|Stade Guy-Piriou}}
+| align="center"|5,800
+| {{nowrap|[[2024–25 Championnat National|8th in National]]}}
+|-
+| {{nowrap|[[Dijon FCO|Dijon]]}}
+| {{nowrap|[[Dijon]]}}
+| {{nowrap|[[Stade Gaston Gérard]]}}
+| align="center"|15,995
+| {{nowrap|[[2024–25 Championnat National|4th in National]]}}
+|-
+| {{nowrap|[[FC Fleury 91 (men)|Fleury]]}}<sup>↑</sup>
+| {{nowrap|[[Fleury-Mérogis]]}}
+| {{nowrap|Stade Auguste Gentelet}}
+| align="center"|2,000
+| {{nowrap|[[2024–25 Championnat National 2|1st in National 2 Group C]]}}
+|-
+| {{nowrap|[[Le Puy Foot 43 Auvergne|Le Puy]]}}<sup>↑</sup>
+| {{nowrap|[[Le Puy-en-Velay]]}}
+| {{nowrap|Stade Charles Massot}}
+| align="center"|4,800
+| {{nowrap|[[2024–25 Championnat National 2|1st in National 2 Group A]]}}
+|-
+| {{nowrap|[[US Orléans|Orléans]]}}
+| {{nowrap|[[Orléans]]}}
+| {{nowrap|[[Stade de la Source]]}}
+| align="center"|7,533
+| {{nowrap|[[2024–25 Championnat National|7th in National]]}}
+|-
+| {{nowrap|[[Paris 13 Atletico]]}}
+| {{nowrap|[[13th arrondissement of Paris|Paris 13]]}}
+| {{nowrap|[[Stade Sébastien Charléty]]}}
+| align="center"|20,000
+| {{nowrap|[[2024–25 Championnat National|14th in National]]}}
+|-
+| {{nowrap|[[US Quevilly-Rouen Métropole|Quevilly-Rouen]]}}
+| {{nowrap|[[Le Petit-Quevilly]]}}
+| rowspan="2"| {{nowrap|[[Stade Robert Diochon]]}}
+| rowspan="2" align="center"|12,018
+| {{nowrap|[[2024–25 Championnat National|11th in National]]}}
+|-
+| {{nowrap|[[FC Rouen|Rouen]]}}
+| {{nowrap|[[Rouen]]}}
+| {{nowrap|[[2024–25 Championnat National|10th in National]]}}
+|-
+| {{nowrap|[[FC Sochaux-Montbéliard|Sochaux]]}}
+| {{nowrap|[[Montbéliard]]}}
+| {{nowrap|[[Stade Auguste-Bonal]]}}
+| align="center"|20,005
+| {{nowrap|[[2024–25 Championnat National|12th in National]]}}
+|-
+| {{nowrap|[[Stade Briochin]]}}<sup>↑</sup>
+| {{nowrap|[[Saint-Brieuc]]}}
+| {{nowrap|[[Stade Fred-Aubert]]}}
+| align="center"|10,600
+| {{nowrap|[[2024–25 Championnat National 2|1st in National 2 Group B]]}}
+|-
+| {{nowrap|[[Valenciennes FC|Valenciennes]]}}
+| {{nowrap|[[Valenciennes]]}}
+| {{nowrap|[[Stade du Hainaut]]}}
+| align="center"|25,172
+| {{nowrap|[[2024–25 Championnat National|9th in National]]}}
+|-
+| {{nowrap|[[FC Versailles 78|Versailles]]}}
+| {{nowrap|[[Versailles, Yvelines|Versailles]]}}
+| {{nowrap|[[Stade Georges Lefèvre]]}}
+| align="center"|2,164
+| {{nowrap|[[2024–25 Championnat National|13th in National]]}}
+|-
+| {{nowrap|[[FC Villefranche Beaujolais|Villefranche]]}}
+| {{nowrap|[[Villefranche-sur-Saône]]}}
+| {{nowrap|Stade Armand Chouffet}}
+| align="center"|3,500
+| {{nowrap|[[2024–25 Championnat National|15th in National]]}}
+|}
+
+{| class="wikitable" style="font-size:85%;" 
+|-
+| <sup>↓</sup>
+| Relegated from the [[2024–25 Ligue 2|Ligue 2]]
+|-
+| <sup>↑</sup>
+| Promoted from the [[2024–25 Championnat National 2|National 2]]
+|}
+
+=== Personnel and kits ===
+<small>Note: Flags indicate national team as has been defined under [[FIFA]] eligibility rules. Players and coaches may hold more than one non-FIFA nationality.</small>
+{| class="wikitable" 
+|-
+! Team
+! Manager
+! Captain
+! class="nowrap"| Kit manufacturer
+! Main kit sponsor
+! Other kit sponsor(s)
+|-
+| {{Nowrap|Ajaccio}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} [[Thierry Debès]]}}{{ref|n1|1}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} }}
+| {{#invoke:flag|icon|GER}} [[Adidas]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Aubagne Air Bel}}
+| {{nobreak|{{#invoke:flag|fbicon|POR}} Gabriel Santos}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|GER}} [[Adidas]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Bourg-Péronnas}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} [[David Le Frapper]]}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|DEN}} [[Hummel International|Hummel]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Caen}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} Maxime d'Ornano}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|USA}} [[Nike, Inc.|Nike]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Châteauroux}}
+| {{nobreak|{{#invoke:flag|fbicon|BRA}} [[Cris (footballer, born 1977)|Cris]]}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} }}
+| {{#invoke:flag|icon|ITA}} [[Erreà]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Concarneau}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} [[Stéphane Rossi]]}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|DEN}} [[Hummel International|Hummel]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Dijon}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} Baptiste Ridira}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|USA}} [[Nike, Inc.|Nike]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Fleury}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} [[David Vignes]]}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|FRA}} Skita
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+|-
+| {{Nowrap|Le Puy}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} Stéphane Dief}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|GER}} [[Adidas]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Orléans}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} [[Hervé Della Maggiore]]}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|DEN}} [[Hummel International|Hummel]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+|-
+| {{Nowrap|Paris 13 Atletico}}
+| ''Vacant''
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|FRA}} Skita
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Quevilly-Rouen}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} David Carré}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|DEN}} [[Hummel International|Hummel]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Rouen}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} [[Régis Brouard]]}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|FRA}} XKript
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+|-
+| {{Nowrap|Sochaux}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} Vincent Hognon}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|FRA}} Eldera
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Stade Briochin}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} Guillaume Allanou}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|ITA}} [[Kappa (brand)|Kappa]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Valenciennes}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} [[Stéphane Moulin]]}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|DEN}} [[Hummel International|Hummel]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Versailles}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} Jordan Gonzalez}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|ITA}} [[Kappa (brand)|Kappa]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|-
+| {{Nowrap|Villefranche}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}} Fabien Pujo}}
+| {{nobreak|{{#invoke:flag|fbicon|FRA}}}}
+| {{#invoke:flag|icon|GER}} [[Adidas]]
+| 
+| {{collapsible list|{{smalldiv|
+* '''Front:''' ''None''
+* '''Back:''' ''None''
+* '''Sleeves:''' ''None''
+* '''Shorts:''' ''None''
+}}
+}}
+|}
+
+# {{Note|n1}}Interim.
+# {{Note|n2}}Apparel made by club.
+# {{Note|n3}}Applied on home shirt
+# {{Note|n4}}Applied on away shirt
+# {{Note|n5}}Applied on third shirt
+
+=== Managerial changes ===
+==== Pre-season ====
+{| class="wikitable" style="font-size:85%;" 
+|-
+! rowspan="2"|Team
+! rowspan="2"|Outgoing manager
+! rowspan="2"|{{Abbr|Manner|Manner of departure}}
+! rowspan="2"|Date of vacancy
+! rowspan="2"|Replaced by
+! colspan="2"|Arrival date
+|-
+! Announced on
+! Arrival on
+|-
+|Caen
+|{{#invoke:flag|icon|ARM}} [[Michel Der Zakarian]]
+|rowspan="3"|End of contract
+|1 May 2025<ref>{{cite web|last=|first=|date=2 May 2025|url=https://getfootballnewsfrance.com/2025/michel-der-zakarian-confirms-sm-caen-departure/ |title=Michel Der Zakarian confirms SM Caen departure |language=en |website=Get Football News France |access-date=20 June 2025}}</ref>
+|{{#invoke:flag|icon|FRA}} Maxime d'Ornano
+|12 May 2025<ref>{{cite web|last=|first=|date=12 May 2025|url=https://smcaen.fr/2024-2025/actualites/groupe-pro/maxime-dornano-nouvel-entraineur-du-stade-malherbe-caen/ |title=Maxime d'Ornano nouvel entraîneur du Stade Malherbe Caen |language=fr |website=Stade Malherbe Caen |access-date=20 June 2025}}</ref>
+|1 July 2025
+|-
+|Sochaux
+|{{#invoke:flag|icon|FRA}} Frédéric Bompard
+|7 May 2025<ref>{{cite web|last=Farge |first=Rémi |date=7 May 2025|url=https://estrepublicain.fr/sport/2025/05/07/frederic-bompard-ne-sera-plus-l-entraineur-du-fc-sochaux-la-saison-prochaine/ |title=Frédéric Bompard ne sera plus l’entraîneur du FC Sochaux la saison prochaine |language=fr |website=L’Ést Républicain |access-date=21 June 2025}}</ref>
+|{{#invoke:flag|icon|FRA}} Vincent Hognon
+|21 May 2025<ref>{{cite web|last1=Minonzio |first1=Pierre-Etienne |last2=Trésarrieu |first2=Flavien |date=21 May 2025|url=https://lequipe.fr/Football/Actualites/Sochaux-a-choisi-vincent-hognon-comme-nouvel-entraineur-pour-la-saison-2025-2026/1563684/ |title=Sochaux a choisi Vincent Hognon comme nouvel entraîneur pour la saison 2025-2026 |language=fr |website=L’Équipe |access-date=21 June 2025}}</ref>
+|1 July 2025
+|-
+|Valenciennes
+|{{#invoke:flag|icon|FRA}} Vincent Hognon
+|19 May 2025
+|{{#invoke:flag|icon|FRA}} [[Stéphane Moulin]]
+|21 May 2025<ref>{{cite web|last1=Doucet |first1=Thomas |last2=Trésarrieu |first2=Flavien |date=21 May 2025|url=https://lequipe.fr/Football/Actualites/Stephane-moulin-s-est-engage-avec-valenciennes-pour-deux-ans-au-poste-d-entraineur-officiel/1563523/ |title=Stéphane Moulin s'est engagé avec Valenciennes pour deux ans au poste d'entraîneur (officiel) |language=fr |website=L’Équipe |access-date=21 June 2025}}</ref>
+|1 July 2025
+|}
+
+==== During the season ====
+{| class="wikitable" style="font-size:85%;" 
+|-
+! Team
+! Outgoing manager
+! {{Abbr|Manner|Manner of departure}}
+! Date of vacancy
+! Week
+! Position in table
+! Replaced by
+! Date of appointment
+|-
+|
+|
+|
+|
+|
+|
+|
+|
+|}
+
+== Standings ==
+=== League table ===
+<onlyinclude>{{#invoke:Sports table|main|style=WDL
+|section=League table
+|source=[https://ffftv.fff.fr/63-national.html/ NATIONAL]
+
+<!--Update team positions here-->
+|team_order = DIJ, SOC, ROU, FLE, VER, ORL, LEP, CAE, CON, VAL, AUB, VIL, QUE, P13, BBP, CHA, STB, ACA
+<!--Update team qualifications here (defined below)-->
+|result1=L2 |result2=L2 |result3=PO |result4=L3 |result5=L3 |result6=L3 |result7=L3 |result8=L3 |result9=L3 |result10=L3 |result11=L3 |result12=L3 |result13=L3 |result14=L3 |result15=L3 |result16=N2 |result17=N2 |result18=REA
+|status_text_E=Expelled
+
+<!--Update team head-to-head where two or more teams had same points and have faced each other-->
+
+<!--Points deductions-->
+|adjust_points_VAL = -1
+|hth_VAL = Valenciennes were deducted 1 point due to the abandonment of their home game on 12 December against Sochaux.
+|adjust_points_CHA = -1
+|hth_CHA = Châteauroux were deducted 1 point.
+
+<!--Update team results here and then (if needed) positions above. Don't forget to update the date (update parameter)-->
+| update = complete
+|win_AUB=9 |draw_AUB=10|loss_AUB=13|gf_AUB=38 |ga_AUB=46
+|win_BBP=8 |draw_BBP=7 |loss_BBP=17|gf_BBP=25 |ga_BBP=44
+|win_CAE=8 |draw_CAE=16|loss_CAE=8 |gf_CAE=39 |ga_CAE=34
+|win_CHA=6 |draw_CHA=13|loss_CHA=13|gf_CHA=35 |ga_CHA=49
+|win_CON=8 |draw_CON=14|loss_CON=10|gf_CON=32 |ga_CON=37
+|win_DIJ=18|draw_DIJ=11|loss_DIJ=3 |gf_DIJ=52 |ga_DIJ=25
+|win_FLE=15|draw_FLE=9 |loss_FLE=8 |gf_FLE=47 |ga_FLE=30
+|win_LEP=12|draw_LEP=11|loss_LEP=9 |gf_LEP=45 |ga_LEP=38
+|win_ORL=14|draw_ORL=9 |loss_ORL=9 |gf_ORL=42 |ga_ORL=42
+|win_P13=7 |draw_P13=11|loss_P13=14|gf_P13=26 |ga_P13=41
+|win_QUE=8 |draw_QUE=9 |loss_QUE=15|gf_QUE=34 |ga_QUE=45
+|win_ROU=14|draw_ROU=13|loss_ROU=5 |gf_ROU=43 |ga_ROU=29
+|win_SOC=16|draw_SOC=10|loss_SOC=6 |gf_SOC=51 |ga_SOC=26
+|win_STB=5 |draw_STB=12|loss_STB=15|gf_STB=35 |ga_STB=50
+|win_VAL=10|draw_VAL=8 |loss_VAL=14|gf_VAL=35 |ga_VAL=44
+|win_VER=15|draw_VER=8 |loss_VER=9 |gf_VER=46 |ga_VER=34
+|win_VIL=10|draw_VIL=7 |loss_VIL=15|gf_VIL=34 |ga_VIL=45
+
+|hth_ACA=[[AC Ajaccio|Ajaccio]] were excluded from all French national competitions by the FFF on 14 August 2025 and their record was expunged.
+
+|status_text_X = Assured of at least promotion play-off, but may still be promoted automatically
+|status_DIJ = CP
+|status_SOC = P
+|status_CHA = R
+|status_STB = R
+
+<!--Team definitions (wikilinks in table)-->
+|name_ACA=[[AC Ajaccio|Ajaccio]]
+|name_AUB=[[SC Aubagne Air Bel|Aubagne Air Bel]]
+|name_BBP=[[Football Bourg-en-Bresse Péronnas 01|Bourg-Péronnas]]
+|name_CAE=[[Stade Malherbe Caen|Caen]]
+|name_CHA=[[LB Châteauroux|Châteauroux]]
+|name_CON=[[US Concarneau|Concarneau]]
+|name_DIJ=[[Dijon FCO|Dijon]]
+|name_FLE=[[FC Fleury 91 (men)|Fleury]]
+|name_LEP=[[Le Puy Foot 43 Auvergne|Le Puy]]
+|name_ORL=[[US Orléans|Orléans]]
+|name_P13=[[Paris 13 Atletico]]
+|name_QUE=[[US Quevilly-Rouen Métropole|Quevilly-Rouen]]
+|name_ROU=[[FC Rouen|Rouen]]
+|name_SOC=[[FC Sochaux-Montbéliard|Sochaux]]
+|name_STB=[[Stade Briochin]]
+|name_VAL=[[Valenciennes FC|Valenciennes]]
+|name_VER=[[FC Versailles 78|Versailles]]
+|name_VIL=[[FC Villefranche Beaujolais|Villefranche]]
+
+<!--Table settings and rules-->
+|show_limit=5
+|class_rules=1) head-to-head results; 2) head-to-head goal difference; 3) goal difference; 4) goals scored; 5) fair play points
+
+<!--Promotion and relegation column definitions-->
+|res_col_header=PQR
+|col_L2=green1 |text_L2={{nowrap|Promotion to [[2026–27 Ligue 2|Ligue 2]]}}
+|col_PO=yellow1 |text_PO={{nowrap|Qualification to [[2025–26 Ligue 2#Relegation_play-offs|promotion play-offs]]}}
+|col_L3=green4 |text_L3={{nowrap|Qualification to [[2026–27 Ligue 3|Ligue 3]]}}
+|col_REA=black1
+|text_REA=Excluded
+|status_ACA=DR
+|col_N2=red1 |text_N2={{nowrap|Relegation to the [[2026–27 Championnat National 1|National 1]]}}
+}}</onlyinclude>
+
+=== Position by round ===
+{{#invoke:sports rbr table|table|sortable=y|legendpos=br|labelnowrap=y
+|update     = future
+|start_date = 8 August 2025
+|source=[https://ffftv.fff.fr/63-national.html/ NATIONAL]
+
+<!--Update team positions here-->
+|team1=AUB |team2=BBP |team3=CAE |team4=CHA |team5=CON |team6=DIJ |team7=FLE |team8=LEP |team9=ORL |team10=P13 |team11=QUE |team12=ROU |team13=SOC |team14=STB |team15=VAL |team16=VER |team17=VIL 
+
+|pos_AUB= /////////////////////////////////
+|pos_BBP= /////////////////////////////////
+|pos_CAE= /////////////////////////////////
+|pos_CHA= /////////////////////////////////
+|pos_CON= /////////////////////////////////
+|pos_DIJ= /////////////////////////////////
+|pos_FLE= /////////////////////////////////
+|pos_LEP= /////////////////////////////////
+|pos_ORL= /////////////////////////////////
+|pos_P13= /////////////////////////////////
+|pos_QUE= /////////////////////////////////
+|pos_ROU= /////////////////////////////////
+|pos_SOC= /////////////////////////////////
+|pos_STB= /////////////////////////////////
+|pos_VAL= /////////////////////////////////
+|pos_VER= /////////////////////////////////
+|pos_VIL= /////////////////////////////////
+
+<!--Team definitions (wikilinks in table)-->
+|name_AUB=[[SC Aubagne Air Bel|Aubagne Air Bel]]
+|name_BOU=[[US Boulogne|Boulogne]]
+|name_BBP=[[Football Bourg-en-Bresse Péronnas 01|Bourg-Péronnas]]
+|name_CAE=[[SM Caen|Caen]]
+|name_CHA=[[LB Châteauroux|Châteauroux]]
+|name_CON=[[US Concarneau|Concarneau]]
+|name_DIJ=[[Dijon FCO|Dijon]]
+|name_FLE=[[FC Fleury 91 (men)|Fleury]]
+|name_LEP=[[Le Puy Foot 43 Auvergne|Le Puy]]
+|name_ORL=[[US Orléans|Orléans]]
+|name_P13=[[Paris 13 Atletico]]
+|name_QUE=[[US Quevilly-Rouen Métropole|Quevilly-Rouen]]
+|name_ROU=[[FC Rouen|Rouen]]
+|name_SOC=[[FC Sochaux-Montbéliard|Sochaux]]
+|name_STB=[[Stade Briochin]]
+|name_VAL=[[Valenciennes FC|Valenciennes]]
+|name_VER=[[FC Versailles 78|Versailles]]
+|name_VIL=[[FC Villefranche Beaujolais|Villefranche]]
+
+|color_1-2=green1|text_1-2=Promotion to the [[Ligue 2]]
+|color_3=green2|text_3=Qualification for the [[Ligue 2|Promotion play-off]]
+|color_16-18=red1|text_16-18=Relegation to the [[Championnat National 2|National]]
+}}
+
+== Results ==
+=== Fixture and results ===
+{{#invoke:sports results|main
+| source=[https://ffftv.fff.fr/63-national.html/ NATIONAL]
+| update = complete
+| a_note = yes
+| matches_style = FBR |solid_cell=grey
+
+|team_order = AUB, BBP, CAE, CHA, CON, DIJ, FLE, LEP, ORL, P13, QUE, ROU, SOC, STB, VAL, VER, VIL
+
+<!-- NOTE PLEASE ALSO UPDATE ALL the match_XXX_YYY combinations when you add a team! -->
+|name_AUB={{nowrap|[[SC Aubagne Air Bel|Aubagne Air Bel]]}}
+|name_BBP={{nowrap|[[Football Bourg-en-Bresse Péronnas 01|Bourg-Péronnas]]}}
+|name_CAE={{nowrap|[[SM Caen|Caen]]}}
+|name_CHA={{nowrap|[[LB Châteauroux|Châteauroux]]}}
+|name_CON={{nowrap|[[US Concarneau|Concarneau]]}}
+|name_DIJ={{nowrap|[[Dijon FCO|Dijon]]}}
+|name_FLE={{nowrap|[[FC Fleury 91 (men)|Fleury]]}}
+|name_LEP={{nowrap|[[Le Puy Foot 43 Auvergne|Le Puy]]}}
+|name_ORL={{nowrap|[[US Orléans|Orléans]]}}
+|name_P13={{nowrap|[[Paris 13 Atletico]]}}
+|name_QUE={{nowrap|[[US Quevilly-Rouen Métropole|Quevilly-Rouen]]}}
+|name_ROU={{nowrap|[[FC Rouen|Rouen]]}}
+|name_SOC={{nowrap|[[FC Sochaux-Montbéliard|Sochaux]]}}
+|name_STB={{nowrap|[[Stade Briochin]]}}
+|name_VAL={{nowrap|[[Valenciennes FC|Valenciennes]]}}
+|name_VER={{nowrap|[[FC Versailles 78|Versailles]]}}
+|name_VIL={{nowrap|[[FC Villefranche Beaujolais|Villefranche]]}}
+
+<!-- Aubagne Air Bel -->
+|match_AUB_BBP= 1-0
+|match_AUB_CAE= 3-1
+|match_AUB_CHA= 1-1
+|match_AUB_CON= 1-1
+|match_AUB_DIJ= 1-1
+|match_AUB_FLE= 1-2
+|match_AUB_LEP= 1-4
+|match_AUB_ORL= 0-2
+|match_AUB_P13= 1-1
+|match_AUB_QUE= 0-1
+|match_AUB_ROU= 1-1
+|match_AUB_SOC= 1-4
+|match_AUB_STB= 1-2
+|match_AUB_VAL= 1-1
+|match_AUB_VER= 1-1
+|match_AUB_VIL= 3-1
+
+<!-- Bourg-Péronnas -->
+|match_BBP_AUB= 0-0
+|match_BBP_CAE= 0-2
+|match_BBP_CHA= 1-1
+|match_BBP_CON= 0-2
+|match_BBP_DIJ= 1-2
+|match_BBP_FLE= 2-2
+|match_BBP_LEP= 1-0
+|match_BBP_ORL= 0-3
+|match_BBP_P13= 1-0
+|match_BBP_QUE= 0-3
+|match_BBP_ROU= 3-1
+|match_BBP_SOC= 1-3
+|match_BBP_STB= 1-1
+|match_BBP_VAL= 1-0
+|match_BBP_VER= 0-1
+|match_BBP_VIL= 1-0
+
+<!-- Caen -->
+|match_CAE_AUB= 3-0
+|match_CAE_BBP= 1-0
+|match_CAE_CHA= 2-2
+|match_CAE_CON= 0-0
+|match_CAE_DIJ= 0-0
+|match_CAE_FLE= 1-0
+|match_CAE_LEP= 2-0
+|match_CAE_ORL= 1-1
+|match_CAE_P13= 0-0
+|match_CAE_QUE= 0-0
+|match_CAE_ROU= 1-1
+|match_CAE_SOC= 1-3
+|match_CAE_STB= 1-1
+|match_CAE_VAL= 0-0
+|match_CAE_VER= 0-2
+|match_CAE_VIL= 3-0
+
+<!-- Châteauroux -->
+|match_CHA_AUB= 0-3
+|match_CHA_BBP= 2-2
+|match_CHA_CAE= 2-1
+|match_CHA_CON= 3-1
+|match_CHA_DIJ= 0-0
+|match_CHA_FLE= 0-2
+|match_CHA_LEP= 0-2
+|match_CHA_ORL= 0-1
+|match_CHA_P13= 0-1
+|match_CHA_QUE= 3-5
+|match_CHA_ROU= 1-2
+|match_CHA_SOC= 2-1
+|match_CHA_STB= 2-2
+|match_CHA_VAL= 0-0
+|match_CHA_VER= 1-3
+|match_CHA_VIL= 0-1
+
+<!-- Concarneau -->
+|match_CON_AUB= 1-0
+|match_CON_BBP= 0-1
+|match_CON_CAE= 3-3
+|match_CON_CHA= 0-0
+|match_CON_DIJ= 1-1
+|match_CON_FLE= 0-1
+|match_CON_LEP= 0-3
+|match_CON_ORL= 3-0
+|match_CON_P13= 0-0
+|match_CON_QUE= 3-1
+|match_CON_ROU= 0-0
+|match_CON_SOC= 1-0
+|match_CON_STB= 2-2
+|match_CON_VAL= 1-2
+|match_CON_VER= 0-2
+|match_CON_VIL= 2-2
+
+<!-- Dijon -->
+|match_DIJ_AUB= 2-1
+|match_DIJ_BBP= 2-0
+|match_DIJ_CAE= 3-3
+|match_DIJ_CHA= 1-2
+|match_DIJ_CON= 3-0
+|match_DIJ_FLE= 0-1
+|match_DIJ_LEP= 2-0
+|match_DIJ_ORL= 3-2
+|match_DIJ_P13= 4-2
+|match_DIJ_QUE= 4-1
+|match_DIJ_ROU= 1-1
+|match_DIJ_SOC= 0-0
+|match_DIJ_STB= 0-0
+|match_DIJ_VAL= 4-1
+|match_DIJ_VER= 3-1
+|match_DIJ_VIL= 0-0
+
+<!-- Fleury -->
+|match_FLE_AUB= 0-2
+|match_FLE_BBP= 3-0
+|match_FLE_CAE= 1-2
+|match_FLE_CHA= 0-0
+|match_FLE_CON= 0-4
+|match_FLE_DIJ= 3-1
+|match_FLE_LEP= 4-0
+|match_FLE_ORL= 3-0
+|match_FLE_P13= 1-0
+|match_FLE_QUE= 2-1
+|match_FLE_ROU= 1-2
+|match_FLE_SOC= 0-0
+|match_FLE_STB= 4-1
+|match_FLE_VAL= 2-0
+|match_FLE_VER= 0-0
+|match_FLE_VIL= 2-2
+
+<!-- Le Puy -->
+|match_LEP_AUB= 1-2
+|match_LEP_BBP= 1-1
+|match_LEP_CAE= 1-0
+|match_LEP_CHA= 2-2
+|match_LEP_CON= 1-1
+|match_LEP_DIJ= 1-2
+|match_LEP_FLE= 2-1
+|match_LEP_ORL= 1-1
+|match_LEP_P13= 1-1
+|match_LEP_QUE= 2-1
+|match_LEP_ROU= 0-3
+|match_LEP_SOC= 0-1
+|match_LEP_STB= 1-1
+|match_LEP_VAL= 3-0
+|match_LEP_VER= 2-2
+|match_LEP_VIL= 3-0
+
+<!-- Orléans -->
+|match_ORL_AUB= 2-4
+|match_ORL_BBP= 1-0
+|match_ORL_CAE= 2-1
+|match_ORL_CHA= 2-2
+|match_ORL_CON= 1-1
+|match_ORL_DIJ= 1-2
+|match_ORL_FLE= 2-0
+|match_ORL_LEP= 1-1
+|match_ORL_P13= 2-1
+|match_ORL_QUE= 0-3
+|match_ORL_ROU= 1-1
+|match_ORL_SOC= 1-2
+|match_ORL_STB= 3-2
+|match_ORL_VAL= 2-1
+|match_ORL_VER= 2-0
+|match_ORL_VIL= 0-0
+
+<!-- Paris 13 Atletico -->
+|match_P13_AUB= 1-1
+|match_P13_BBP= 2-1
+|match_P13_CAE= 0-3
+|match_P13_CHA= 1-1
+|match_P13_CON= 0-0
+|match_P13_DIJ= 1-4
+|match_P13_FLE= 1-0
+|match_P13_LEP= 0-1
+|match_P13_ORL= 2-2
+|match_P13_QUE= 1-0
+|match_P13_ROU= 0-0
+|match_P13_SOC= 1-3
+|match_P13_STB= 3-0
+|match_P13_VAL= 1-1
+|match_P13_VER= 1-3
+|match_P13_VIL= 1-0
+
+<!-- Quevilly-Rouen -->
+|match_QUE_AUB= 1-2
+|match_QUE_BBP= 2-2
+|match_QUE_CAE= 1-1
+|match_QUE_CHA= 0-3
+|match_QUE_CON= 2-1
+|match_QUE_DIJ= 0-1
+|match_QUE_FLE= 1-1
+|match_QUE_LEP= 0-0
+|match_QUE_ORL= 0-1
+|match_QUE_P13= 1-0
+|match_QUE_ROU= 0-0
+|match_QUE_SOC= 1-1
+|match_QUE_STB= 0-0
+|match_QUE_VAL= 3-2
+|match_QUE_VER= 2-2
+|match_QUE_VIL= 1-2
+
+<!-- Rouen -->
+|match_ROU_AUB= 3-1
+|match_ROU_BBP= 1-0
+|match_ROU_CAE= 1-1
+|match_ROU_CHA= 1-2
+|match_ROU_CON= 0-0
+|match_ROU_DIJ= 0-0
+|match_ROU_FLE= 0-0
+|match_ROU_LEP= 1-1
+|match_ROU_ORL= 1-0
+|match_ROU_P13= 3-0
+|match_ROU_QUE= 1-0
+|match_ROU_SOC= 3-1
+|match_ROU_STB= 3-2
+|match_ROU_VAL= 1-2
+|match_ROU_VER= 1-3
+|match_ROU_VIL= 2-1
+
+<!-- Sochaux -->
+|match_SOC_AUB= 2-0
+|match_SOC_BBP= 2-1
+|match_SOC_CAE= 1-1
+|match_SOC_CHA= 1-0
+|match_SOC_CON= 2-0
+|match_SOC_DIJ= 0-1
+|match_SOC_FLE= 2-2
+|match_SOC_LEP= 2-2
+|match_SOC_ORL= 5-0
+|match_SOC_P13= 1-1
+|match_SOC_QUE= 2-0
+|match_SOC_ROU= 1-1
+|match_SOC_STB= 2-0
+|match_SOC_VAL= 1-1
+|match_SOC_VER= 2-0
+|match_SOC_VIL= 2-1
+
+<!-- Stade Briochin -->
+|match_STB_AUB= 1-3
+|match_STB_BBP= 1-2
+|match_STB_CAE= 1-1
+|match_STB_CHA= 2-0
+|match_STB_CON= 1-2
+|match_STB_DIJ= 0-0
+|match_STB_FLE= 2-3
+|match_STB_LEP= 1-2
+|match_STB_ORL= 1-3
+|match_STB_P13= 0-1
+|match_STB_QUE= 3-0
+|match_STB_ROU= 0-1
+|match_STB_SOC= 1-1
+|match_STB_VAL= 2-1
+|match_STB_VER= 0-1
+|match_STB_VIL= 0-0
+
+<!-- Valenciennes -->
+|match_VAL_AUB= 0-0
+|match_VAL_BBP= 3-1
+|match_VAL_CAE= 2-1
+|match_VAL_CHA= 2-2
+|match_VAL_CON= 1-2
+|match_VAL_DIJ= 0-1
+|match_VAL_FLE= 0-2
+|match_VAL_LEP= 2-1
+|match_VAL_ORL= 0-1
+|match_VAL_P13= 1-0
+|match_VAL_QUE= 2-0
+|match_VAL_ROU= 2-3
+|match_VAL_SOC= 0-3
+|match_VAL_STB= 1-2
+|match_VAL_VER= 1-0
+|match_VAL_VIL= 2-0
+
+<!-- Versailles -->
+|match_VER_AUB= 3-0
+|match_VER_BBP= 1-0
+|match_VER_CAE= 2-1
+|match_VER_CHA= 4-0
+|match_VER_CON= 4-0
+|match_VER_DIJ= 0-2
+|match_VER_FLE= 1-1
+|match_VER_LEP= 0-3
+|match_VER_ORL= 0-0
+|match_VER_P13= 2-1
+|match_VER_QUE= 1-2
+|match_VER_ROU= 1-3
+|match_VER_SOC= 1-0
+|match_VER_STB= 2-2
+|match_VER_VAL= 1-1
+|match_VER_VIL= 2-1
+
+<!-- Villefranche -->
+|match_VIL_AUB= 2-1
+|match_VIL_BBP= 0-1
+|match_VIL_CAE= 1-1
+|match_VIL_CHA= 2-1
+|match_VIL_CON= 0-0
+|match_VIL_DIJ= 1-2
+|match_VIL_FLE= 0-3
+|match_VIL_LEP= 2-3
+|match_VIL_ORL= 1-2
+|match_VIL_P13= 3-1
+|match_VIL_QUE= 2-1
+|match_VIL_ROU= 2-1
+|match_VIL_SOC= 1-0
+|match_VIL_STB= 3-1
+|match_VIL_VAL= 2-3
+|match_VIL_VER= 1-0
+|}}
+
+
+==== Matchdays 1–17 ====
+
+==== Matchdays 18–34 ====
+
+=== Results by round ===
+{{#invoke:Sports rbr table|table
+| sortable = y
+| labelnowrap = y
+| source=[https://ffftv.fff.fr/63-national.html/ NATIONAL]
+| update = future
+| start_date = 8 August 2025
+
+<!-- Team list order -->
+|team1 =AUB
+|team2 =BBP
+|team3 =CAE
+|team4 =CHA
+|team5 =CON
+|team6 =DIJ
+|team7 =FLE
+|team8 =LEP
+|team9 =ORL
+|team10=P13
+|team11=QUE
+|team12=ROU
+|team13=SOC
+|team14=STB
+|team15=VAL
+|team16=VER
+|team17=VIL
+
+<!--Team definitions (wikilinks in table)-->
+|name_ACA=[[AC Ajaccio|Ajaccio]]
+|name_AUB=[[SC Aubagne Air Bel|Aubagne Air Bel]]
+|name_BBP=[[Football Bourg-en-Bresse Péronnas 01|Bourg-Péronnas]]
+|name_CAE=[[SM Caen|Caen]]
+|name_CHA=[[LB Châteauroux|Châteauroux]]
+|name_CON=[[US Concarneau|Concarneau]]
+|name_DIJ=[[Dijon FCO|Dijon]]
+|name_FLE=[[FC Fleury 91 (men)|Fleury]]
+|name_LEP=[[Le Puy Foot 43 Auvergne|Le Puy]]
+|name_ORL=[[US Orléans|Orléans]]
+|name_P13=[[Paris 13 Atletico]]
+|name_QUE=[[US Quevilly-Rouen Métropole|Quevilly-Rouen]]
+|name_ROU=[[FC Rouen|Rouen]]
+|name_SOC=[[FC Sochaux-Montbéliard|Sochaux]]
+|name_STB=[[Stade Briochin]]
+|name_VAL=[[Valenciennes FC|Valenciennes]]
+|name_VER=[[FC Versailles 78|Versailles]]
+|name_VIL=[[FC Villefranche Beaujolais|Villefranche]]
+
+<!-- Results by round -->
+| res_ACA = /////////////////////////////////
+| res_AUB = /////////////////////////////////
+| res_BBP = /////////////////////////////////
+| res_CAE = /////////////////////////////////
+| res_CHA = /////////////////////////////////
+| res_CON = /////////////////////////////////
+| res_DIJ = /////////////////////////////////
+| res_FLE = /////////////////////////////////
+| res_LEP = /////////////////////////////////
+| res_ORL = /////////////////////////////////
+| res_P13 = /////////////////////////////////
+| res_QUE = /////////////////////////////////
+| res_ROU = /////////////////////////////////
+| res_SOC = /////////////////////////////////
+| res_STB = /////////////////////////////////
+| res_VAL = /////////////////////////////////
+| res_VER = /////////////////////////////////
+| res_VIL = /////////////////////////////////
+
+<!-- Definitions -->
+| color_W = blue1| color_D = yellow1| color_L = red1 |color_P = black1
+}}
+
+Notes:
+
+== Season statistics ==
+=== Top Goalscorers ===
+=== Top assists ===
+=== Hat-trick ===
+=== Clean sheets ===
+=== Discipline ===
+
+== Attendances ==
+=== Overall ===
+{{Fb a header}}
+{{Fb a team|p=1 |t=[[AC Ajaccio|Ajaccio]]                         |s=0 |h=0 |l=0 |a=0 |pr=0 |nt=†}}
+{{Fb a team|p=2 |t=[[SC Aubagne Air Bel|Aubagne Air Bel]]           |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=3 |t=[[Football Bourg-en-Bresse Péronnas 01|Bourg-Péronnas]]          |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=4 |t=[[SM Caen|Caen]]                         |s=0 |h=0 |l=0 |a=0 |pr=0 |nt=†}}
+{{Fb a team|p=5 |t=[[LB Châteauroux|Châteauroux]]                         |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=6 |t=[[US Concarneau|Concarneau]]          |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=7 |t=[[Dijon FCO|Dijon]]           |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=8 |t=[[FC Fleury 91 (men)|Fleury]]              |s=0 |h=0 |l=0 |a=0 |pr=0 |nt=‡}}
+{{Fb a team|p=9 |t=[[Le Puy Foot 43 Auvergne|Le Puy]]              |s=0 |h=0 |l=0 |a=0 |pr=0 |nt=‡}}
+{{Fb a team|p=10 |t=[[US Orléans|Orléans]]           |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=11 |t=[[Paris 13 Atletico]]           |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=12 |t=[[US Quevilly-Rouen Métropole|Quevilly-Rouen]]           |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=13 |t=[[FC Rouen|Rouen]]           |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=14 |t=[[FC Sochaux-Montbéliard|Sochaux]]           |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=15 |t=[[Stade Briochin]]              |s=0 |h=0 |l=0 |a=0 |pr=0 |nt=‡}}
+{{Fb a team|p=16 |t=[[Valenciennes FC|Valenciennes]]           |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=17 |t=[[FC Versailles 78|Versailles]]           |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a team|p=18 |t=[[FC Villefranche Beaujolais|Villefranche]]           |s=0 |h=0 |l=0 |a=0 |pr=0}}
+{{Fb a footer                                                  |s=0 |h=0 |l=0 |a=0 |pr=0 |source=[https://ffftv.fff.fr/63-national.html/ NATIONAL] |u= |date=2025 | |notes=<sup>†</sup>
+Teams played previous season in [[2024–25 Ligue 2|Ligue 2]]
+<br/><sup>‡</sup> Teams played previous season in [[2024–25 Championnat National 2|National 2]]}}
+
+=== Home match played ===
+{{Updated|future}}
+{| class="wikitable sortable" style="font-size:85%;"  text-align:center;"
+|-
+! style="width:76px;" |Team \ Match played
+! align=center|1 !! align=center|2 !! align=center|3 !! align=center|4 !! align=center|5 !! align=center|6 !! align=center|7 !! align=center|8 !! ! align=center|9 !! align=center|10 !! align=center|11 !! align=center|12 !! align=center|13 !! align=center|14 !! align=center|15 !! align=center|16 !! align=center|17 !! align=center|Total
+|- align=center
+|align=left|{{Nowrap|[[AC Ajaccio|Ajaccio]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[SC Aubagne Air Bel|Aubagne Air Bel]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[Football Bourg-en-Bresse Péronnas 01|Bourg-Péronnas]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[SM Caen|Caen]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[LB Châteauroux|Châteauroux]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[US Concarneau|Concarneau]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[Dijon FCO|Dijon]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[FC Fleury 91 (men)|Fleury]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[Le Puy Foot 43 Auvergne|Le Puy]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[US Orléans|Orléans]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[Paris 13 Atletico]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[US Quevilly-Rouen Métropole|Quevilly-Rouen]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[FC Rouen|Rouen]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[FC Sochaux-Montbéliard|Sochaux]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[Stade Briochin]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[Valenciennes FC|Valenciennes]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[FC Versailles 78|Versailles]]}} || || || || || || || || || || || || || || || || || ||
+|- align=center
+|align=left|{{Nowrap|[[FC Villefranche Beaujolais|Villefranche]]}} || || || || || || || || || || || || || || || || || ||
+|-
+!!  style="color:black; background:#dcf0fa;" colspan=18|League total ||style="color:black; background:#dcf0fa;"| 0
+|}
+<small> '''Source: [https://ffftv.fff.fr/63-national.html/ NATIONAL]''' </small>
+
+== See also ==
+* [[2025–26 Ligue 1]]
+* [[2025–26 Ligue 2]]
+* [[2025–26 Championnat National 2]]
+* [[2025–26 Championnat National 3]]
+* [[2025–26 Coupe de France]]
+
+== References ==
+{{reflist}}
+
+{{Championnat National}}
+{{2025–26 in French football}}
+
+{{DEFAULTSORT:Championnat National}}
+[[Category:Ligue 3 seasons|2025–26]]
+[[Category:2025–26 in French men's football leagues|3]]
+[[Category:2025–26 in European third-tier association football leagues|France]]

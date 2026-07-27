@@ -1,0 +1,843 @@
+﻿{{Infobox football league season
+|competition               = [[3. Liga]]
+|season                    = [[2026–27 in German football|2026–27]]
+|logo                      =
+|pixels                    = 
+|dates                     = 7 August 2026 – 22 May 2027
+|winners                   =
+|promoted                  =
+|relegated                 = 
+|matches                   = 
+|total goals               = 
+|league topscorer          = 
+|biggest home win          = 
+|biggest away win          = 
+|highest scoring           = 
+|longest wins              = 
+|longest unbeaten          = 
+|longest winless           = 
+|longest losses            = 
+|highest attendance        = 
+|lowest attendance         = 
+|attendancecalc            = 
+|prevseason                = [[2025–26 3. Liga|2025–26]]
+|nextseason                = ''2027–28''
+|updated                   = 
+}}
+The '''2026–27 3. Liga''' will be the 19th season of the [[3. Liga]]. It will start on 7 August 2026 and will conclude on 22 May 2027.<ref>{{cite news |url=https://www.dfb.de/news/rahmenterminkalender-fuer-saison-2026/2027-festgelegt|title=Rahmenterminkalender für Saison 2026/2027 festgelegt|website=kicker.de |publisher=[[Kicker (magazine)|kicker]] |date=6 November 2025 |access-date=6 November 2025 |language=de}}</ref>
+
+==Teams==
+{{Location map+|Germany|width=400|float=right|caption=Locations of the 2026–27 3. Liga teams|places=
+{{Location map~|Germany|lat=50.793333|long= 6.097222|label=[[Alemannia Aachen|Aachen]]|position=bottom}}
+{{Location map~|Germany|lat=51.409167|long= 6.778611|label=[[MSV Duisburg|Duisburg]]|position=left}}
+{{Location map~|Germany|lat=51.261667|long= 6.733056|label=[[Fortuna Düsseldorf|Düsseldorf]]|position=right}}
+{{Location map~|Germany|lat=51.450832|long= 7.013056|label=[[Rot-Weiss Essen|Essen]]|position=right}}
+{{Location map~|Germany|lat=50.9175  |long= 6.943611|label=[[SC Fortuna Köln|Fortuna]]|position=left}}
+{{Location map~|Germany|lat=48.9735  |long= 9.4032  |label=[[SG Sonnenhof Großaspach|Großaspach]]|position=right}}
+{{Location map~|Germany|lat=52.408333|long= 9.602222|label=[[TSV Havelse|Havelse]]|position=right}}
+{{Location map~|Germany|lat=49.278278|long= 8.842111|label=[[TSG 1899 Hoffenheim II|Hoffenheim]]|position=right}}
+{{Location map~|Germany|lat=48.744642|long=11.483325|label=[[FC Ingolstadt 04|Ingolstadt]]|position=left}}
+{{Location map~|Germany|lat=49.479487|long= 8.502486|label=[[SV Waldhof Mannheim|Mannheim]]|position=top}}
+{{Location map~|Germany|lat=52.6983  |long= 7.2917  |label=[[SV Meppen|Meppen]]|position=2}}
+{{Location map~|Germany|lat=51.961563|long= 7.628202|label=[[SC Preußen Münster|Münster]]|position=left}}
+{{Location map~|Germany|lat=49.0156  |long=12.073914|label=[[SSV Jahn Regensburg|Regensburg]]|position=top}}
+{{Location map~|Germany|lat=54.084722|long=12.086666|label=[[FC Hansa Rostock|Rostock]]|position=right}}
+{{Location map~|Germany|lat=49.248055|long= 6.983888|label=[[1. FC Saarbrücken|{{nowrap|Saarbrücken}}]]|position=bottom}}
+{{Location map~|Germany|lat=48.792295|long= 9.232141|label=[[VfB Stuttgart II|Stuttgart]]|position=bottom}}
+{{Location map~|Germany|lat=51.88333 |long= 8.51667 |label=[[SC Verl|Verl]]|position=left}}
+{{Location map~|Germany|lat=50.945167|long= 7.030417|label=[[FC Viktoria Köln|Viktoria]]|position=right}}
+{{Location map~|Germany|lat=50.069668|long= 8.257188|label=[[SV Wehen Wiesbaden|Wiesbaden]]|position=top}}
+{{Location map~|Germany|lat=49.783333|long= 9.933333|label=[[FC Würzburger Kickers|Würzburg]]|position=right}}
+}}
+
+===Team changes===
+{| class="wikitable"
+|-
+! Promoted from [[2025–26 Regionalliga]]
+! Relegated from [[2025–26 2. Bundesliga]]
+! Promoted to [[2026–27 2. Bundesliga]]
+! Relegated from [[2025–26 3. Liga]]
+|-
+| [[SC Fortuna Köln|Fortuna Köln]]<br>[[SV Meppen]]<br>[[SG Sonnenhof Großaspach|Sonnenhof Großaspach]]<br>[[FC Würzburger Kickers|Würzburger Kickers]]
+| [[Fortuna Düsseldorf]]<br>[[SC Preußen Münster|Preußen Münster]]
+| [[VfL Osnabrück]]<br>[[FC Energie Cottbus|Energie Cottbus]]
+| [[TSV 1860 Munich|1860 Munich]]{{efn|1860 Munich were administratively relegated to the Regionalliga Bayern after failing to obtain a 3. Liga license.}}<br>[[FC Erzgebirge Aue|Erzgebirge Aue]]<br>[[SSV Ulm 1846|SSV Ulm]]<br>[[1. FC Schweinfurt 05|1. FC Schweinfurt]]
+|}
+
+===Stadiums and locations===
+{| class="wikitable sortable" style="text-align:left;"
+! Team
+! Location
+! Stadium
+! Capacity
+|-
+| data-sort-value="Aachen" | [[Alemannia Aachen]]
+| [[Aachen]]
+| [[New Tivoli|Tivoli]]
+| 32,960
+|-
+| data-sort-value="Duisburg" | [[MSV Duisburg]]
+| [[Duisburg]]
+| [[MSV-Arena|Schauinsland-Reisen-Arena]]
+| 31,514
+|-
+| data-sort-value="Dusseldorf" | [[Fortuna Düsseldorf]]
+| [[Düsseldorf]]
+| [[Merkur Spiel-Arena]]
+| 54,600
+|-
+| data-sort-value="Essen" | [[Rot-Weiss Essen]]
+| [[Essen]]
+| [[Stadion an der Hafenstraße]]
+| 19,962
+|-
+| data-sort-value="Grossaspach" | [[SG Sonnenhof Großaspach|Sonnenhof Großaspach]]
+| [[Aspach, Baden-Württemberg|Aspach]]
+| [[WIRmachenDRUCK Arena]]
+| 10,001
+|-
+| data-sort-value="Havelse" | [[TSV Havelse]]
+| [[Hanover]]
+| [[Eilenriedestadion]]<br>[[Niedersachsenstadion|Heinz von Heiden Arena]]<sup>1</sup>
+| 5,001<br>49,000
+|-
+| data-sort-value="Hoffenheim" | [[TSG 1899 Hoffenheim II|TSG Hoffenheim II]]
+| [[Sinsheim]]
+| [[Dietmar-Hopp-Stadion]]
+| 6,350
+|-
+| data-sort-value="Ingolstadt" | [[FC Ingolstadt 04|FC Ingolstadt]]
+| [[Ingolstadt]]
+| [[Audi Sportpark]]
+| 15,200
+|-
+| data-sort-value="Koln, Fortuna" | [[SC Fortuna Köln|Fortuna Köln]]
+| [[Cologne]]
+| [[Südstadion]]
+| 11,748
+|-
+| data-sort-value="Koln, Viktoria" | [[FC Viktoria Köln|Viktoria Köln]]
+| [[Cologne]]
+| [[Sportpark Höhenberg]]
+| 8,343
+|-
+| data-sort-value="Mannheim" | [[SV Waldhof Mannheim|Waldhof Mannheim]]
+| [[Mannheim]]
+| [[Carl-Benz-Stadion]]
+| 24,302
+|-
+| data-sort-value="Meppen" | [[SV Meppen]]
+| [[Meppen]]
+| [[Hänsch-Arena]]
+| 13,241
+|-
+| data-sort-value="Munster" | [[SC Preußen Münster|Preußen Münster]]
+| [[Münster]]
+| [[Preußenstadion|LVM-Preußenstadion]]
+| 14,300
+|-
+| data-sort-value="Regensburg" | [[SSV Jahn Regensburg|Jahn Regensburg]]
+| [[Regensburg]]
+| [[Jahnstadion Regensburg]]
+| 15,210
+|-
+| data-sort-value="Rostock" | [[FC Hansa Rostock|Hansa Rostock]]
+| [[Rostock]]
+| [[Ostseestadion]]
+| 29,000
+|-
+| data-sort-value="Saarbrucken" | [[1. FC Saarbrücken]]
+| [[Saarbrücken]]
+| [[Ludwigsparkstadion]]
+| 16,003
+|-
+| data-sort-value="Stuttgart" | [[VfB Stuttgart II]]
+| [[Aspach, Baden-Württemberg|Aspach]]
+| [[WIRmachenDRUCK Arena]]<sup>2</sup>
+| 10,001
+|-
+| data-sort-value="Verl" | [[SC Verl]]
+| [[Verl]]
+| [[Sportclub Arena]]
+| 5,207
+|-
+| data-sort-value="Wiesbaden" | [[SV Wehen Wiesbaden|Wehen Wiesbaden]]
+| [[Wiesbaden]]
+| [[Brita-Arena|BRITA-Arena]]
+| 15,295
+|-
+| data-sort-value="Wurzburg" | [[FC Würzburger Kickers|Würzburger Kickers]]
+| [[Würzburg]]
+| [[Akon Arena]]
+| 13,090
+|}
+<sup>1</sup> TSV Havelse is planning to play their home matches at the Eilenriedestadion since their home stadium, the [[Wilhelm-Langrehr-Stadion]] in [[Garbsen]], did not meet 3. Liga standards. They would move to the Heinz von Heiden Arena for high-risk matches.<ref>{{cite web |url=https://www.kicker.de/alle-unterlagen-fristgerecht-eingereicht-havelse-will-den-freien-platz-in-der-3-liga-einnehmen-1225082/artikel |title="Alle Unterlagen fristgerecht eingereicht": Havelse will den freien Platz in der 3. Liga einnehmen |website=[[Kicker (magazine)|Kicker]] |date=3 June 2026 |access-date=3 June 2026 |language=de}}</ref><br>
+<sup>2</sup> VfB Stuttgart II will play their home matches at the WIRmachenDRUCK Arena since their home stadium, the Robert-Schlienz-Stadion in [[Stuttgart]], did not meet 3. Liga standards.<ref>{{cite web |url=https://www.vfb.de/de/vfb/aktuell/neues/junge-wilde/24-25/spielstaetten-u21-und-u19/ |title=Heimspielstätten stehen fest |publisher=VfB Stuttgart |date=14 June 2024 |access-date=14 June 2024 |language=de}}</ref>
+
+===Personnel and kits===
+{| class="wikitable sortable"
+|-
+! rowspan=2|Team
+! rowspan=2|Manager
+! rowspan=2|Captain
+! rowspan=2|Kit manufacturer
+! colspan=3|Shirt sponsor
+|-
+! Front
+! Sleeve
+! Back
+|-
+| data-sort-value="Aachen" | [[Alemannia Aachen]]
+| data-sort-value="Selimbegović, Mersad" | {{flagicon|BIH}} [[Mersad Selimbegović]]
+| data-sort-value="Hanraths, Mika" | {{flagicon|GER}} Mika Hanraths
+| [[Capelli Sport]]
+| Universal Polythex
+| Buxtrade
+| Stölting Service Group
+|-
+| data-sort-value="Duisburg" | [[MSV Duisburg]]
+| data-sort-value="Hirsch, Dietmar" | {{flagicon|GER}} [[Dietmar Hirsch]]
+| data-sort-value="Hahn, Alexander" | {{flagicon|GER}} [[Alexander Hahn (footballer)|Alexander Hahn]]
+| [[Adidas]]
+| Trinkgut
+| ZOXS
+| [[Phoenix Pharmahandel#Business areas|gesund.de]]
+|-
+| data-sort-value="Dusseldorf" | [[Fortuna Düsseldorf]]
+| data-sort-value="Ende, Alexander" | {{flagicon|GER}} [[Alexander Ende]]
+|nowrap data-sort-value="Hendrix, Jorrit" | {{flagicon|NED}} [[Jorrit Hendrix]]
+| Adidas
+| [[Targobank]]
+| [[Metro AG|Metro Chef]]
+| [[Vodafone Germany|Vodafone]]
+|-
+| data-sort-value="Essen" | [[Rot-Weiss Essen]]
+| data-sort-value="Koschinat, Uwe" | {{flagicon|GER}} [[Uwe Koschinat]]
+| data-sort-value="Golz, Jakob" | {{flagicon|GER}} [[Jakob Golz]]
+| [[Jako]]
+| [[RWE]]
+| [[Ifm group|ifm electronic]]
+| NEO.bet
+|-
+| data-sort-value="Grossaspach" | [[SG Sonnenhof Großaspach|Sonnenhof Großaspach]]
+| data-sort-value="Reinhardt, Pascal" | {{flagicon|GER}} [[Pascal Reinhardt]]
+| data-sort-value="Celiktas, Volkan" | {{flagicon|GER}} Volkan Celiktas
+| [[Nike, Inc.|Nike]]
+| Hotel Sonnenhof Aspach
+| Teinacher
+| Weitblick Immobilien
+|-
+| data-sort-value="Havelse" | [[TSV Havelse]]
+| data-sort-value="Ferchichi, Samir" | {{flagicon|GER}} [[Samir Ferchichi]]
+| data-sort-value="" | TBA
+| Nike
+| [[enercity]]
+| ''None''
+| ''None''
+|-
+| data-sort-value="Hoffenheim" | [[TSG 1899 Hoffenheim II|TSG Hoffenheim II]]
+| data-sort-value="Kleineheismann, Stefan" | {{flagicon|GER}} [[Stefan Kleineheismann]]
+| data-sort-value="Lassig, Valentin" | {{flagicon|GER}} Valentin Lässig
+| [[Macron (sportswear)|Macron]]
+| syNeo
+| [[German Cooperative Financial Group#Group structure and operations|Volksbank]] Kraichgau
+| ''None''
+|-
+| data-sort-value="Ingolstadt" | [[FC Ingolstadt 04|FC Ingolstadt]]
+| data-sort-value="Wittmann, Sabrina" | {{flagicon|GER}} [[Sabrina Wittmann]]
+| data-sort-value="Frode, Lukas" | {{flagicon|GER}} [[Lukas Fröde]]
+| [[Erreà]]
+| team KRAFT GmbH
+| [[Audi|Audi Schanzer Fußballschule]]
+| SI Electronics
+|-
+| data-sort-value="Koln, Fortuna" | [[SC Fortuna Köln|Fortuna Köln]]
+| data-sort-value="Mink, Matthias" | {{flagicon|GER}} [[Matthias Mink]]
+| data-sort-value="Afamefuna, Robin" | {{flagicon|GER}} [[Robin Afamefuna]]
+| Robey Sportswear
+| HIT
+| format:c
+| D+P office AG
+|-
+| data-sort-value="Koln, Viktoria" | [[FC Viktoria Köln|Viktoria Köln]]
+| data-sort-value="Wilhelm, Marian" | {{flagicon|GER}} [[Marian Wilhelm]]
+| data-sort-value="Greger, Christoph" | {{flagicon|GER}} [[Christoph Greger]]
+| [[Joma]]
+| [[ETL Group|ETL]]
+| Wintec Autoglas
+| Oertel & Prümm
+|-
+| data-sort-value="Mannheim" | [[SV Waldhof Mannheim|Waldhof Mannheim]]
+| data-sort-value="Mota, Rui" | {{flagicon|POR}} [[Rui Mota]]
+| data-sort-value="Klünter, Lukas" | {{flagicon|GER}} [[Lukas Klünter]]
+| [[Uhlsport]]
+| ''None''
+| PLAZA Hotelgroup
+| Tiptorro
+|-
+| data-sort-value="Meppen" | [[SV Meppen]]
+| data-sort-value="Beniermann, Lucas" | {{flagicon|GER}} [[Lucas Beniermann]]
+| data-sort-value="Fedl, Jonas" | {{flagicon|GER}} [[Jonas Fedl]]
+| Jako
+| KiKxxl
+| ''None''
+| ''None''
+|-
+| data-sort-value="Munster" | [[SC Preußen Münster|Preußen Münster]]
+| data-sort-value="Woerle, Thomas" | {{flagicon|GER}} [[Thomas Wörle]]
+| data-sort-value="TBA" | TBA
+| Jako
+| [[Fiege Logistik|Fiege]]
+| Stadtwerke Münster
+| Gieseke
+|-
+| data-sort-value="Regensburg" | [[SSV Jahn Regensburg|Jahn Regensburg]]
+| data-sort-value="Hildmann, Sascha" | {{flagicon|GER}} [[Sascha Hildmann]]
+| data-sort-value="" | TBA
+| [[Hummel International|Hummel]]
+| [[Netto Marken-Discount]]
+| ''None''
+| Netto Marken-Discount
+|-
+| data-sort-value="Rostock" | [[FC Hansa Rostock|Hansa Rostock]]
+| data-sort-value="Brinkmann, Daniel" | {{flagicon|GER}} [[Daniel Brinkmann]]
+| data-sort-value="Pfanne, Franz" | {{flagicon|GER}} [[Franz Pfanne]]
+| [[Reebok]]
+| SLT Unternehmen
+| Time Scan
+| ''None''
+|-
+| data-sort-value="Saarbrucken" | [[1. FC Saarbrücken]]
+| data-sort-value="Giannikis, Argirios" | {{flagicon|GER}} [[Argirios Giannikis]]
+| data-sort-value="" | TBA
+| Uhlsport
+| Victor's Group
+| LOTTO Saartoto
+| Victor's Group
+|-
+| data-sort-value="Stuttgart" | [[VfB Stuttgart II]]
+| data-sort-value="Willig, Nico" | {{flagicon|GER}} [[Nico Willig]]
+| data-sort-value="Nothnagel, Dominik" | {{flagicon|GER}} [[Dominik Nothnagel]]
+| Jako
+| [[Landesbank Baden-Württemberg]]
+| [[Porsche]]
+| ''None''
+|-
+| data-sort-value="Verl" | [[SC Verl]]
+| data-sort-value="Shala, Orest" | {{flagicon|KOS}} [[Orest Shala]]
+| data-sort-value="Kijewski, Niko" | {{flagicon|GER}} [[Niko Kijewski]]
+| Joma
+| Beckhoff
+| EGE GmbH
+| ''None''
+|-
+| data-sort-value="Wiesbaden" | [[SV Wehen Wiesbaden|Wehen Wiesbaden]]
+| data-sort-value="Scherning, Daniel" | {{flagicon|GER}} [[Daniel Scherning]]
+| data-sort-value="" | TBA
+| Erreà
+| [[Brita (company)|Brita]]
+| R+V Versicherung
+| A.B.S. Global Factoring
+|-
+| data-sort-value="Wurzburg" | [[FC Würzburger Kickers|Würzburger Kickers]]
+| data-sort-value="Schiele, Michael" | {{flagicon|GER}} [[Michael Schiele]]
+| data-sort-value="" | TBA
+| Jako
+| Akon
+| [[Sparkassen-Finanzgruppe#Sparkassen|Sparkasse]] Mainfranken Würzburg
+| WEGMANN automotive
+|}
+
+===Managerial changes===
+{| class="wikitable" style="text-align:center" "font-size:85%; width:60%;"
+|-
+! rowspan="2" | Team
+! rowspan="2" | Outgoing
+! rowspan="2" | {{Abbr|Manner|Manner of departure}}
+! colspan="2" | Exit date
+! rowspan="2" | Position in table
+! rowspan="2" | Incoming
+! colspan="2" | Incoming date
+! rowspan="2" | {{Abbr|Ref.|References}}
+|-
+! Announced on
+! Departed on
+! Announced on
+! Arrived on
+|-
+| align="left" | [[SC Preußen Münster|Preußen Münster]]
+| nowrap align="left" | {{flagicon|GER}} [[Alois Schwartz]]
+| Mutual consent
+| 14 May 2026
+| rowspan="2"| 30 June 2026
+| rowspan="3" | ''Pre-season''
+| align="left" | {{flagicon|GER}} [[Thomas Wörle]]
+| 18 May 2026
+| rowspan=3|1 July 2026
+| <ref>{{cite web |url=https://scpreussen-muenster.de/news/alois-schwartz-in-elversberg-zum-letzten-mal-an-der-seitenlinie/|title=Alois Schwartz in Elversberg zum letzten Mal an der Seitenlinie |publisher=Preußen Münster|date=14 May 2026 |access-date=14 May 2026 |language=de}}</ref><ref>{{cite web |url=https://scpreussen-muenster.de/news/thomas-woerle-wird-neuer-cheftrainer-des-sc-preussen-muenster/|title=Thomas Wörle wird neuer Cheftrainer des SC Preußen Münster |publisher=Preußen Münster|date=18 May 2026 |access-date=18 May 2026 |language=de}}</ref>
+|-
+| align="left" | [[SC Verl]]
+| nowrap align="left" | {{flagicon|GER}} Tobias Strobl
+| Signed by [[VfL Wolfsburg]]
+| 3 June 2026
+| align="left" nowrap | {{flagicon|KOS}} [[Orest Shala]]
+| 18 June 2026
+| <ref>{{cite web|url=https://www.kicker.de/strobl-soll-wolfsburg-zurueck-in-die-bundesliga-fuehren-1224396/artikel|title=Strobl soll Wolfsburg zurück in die Bundesliga führen|language=german|publisher=[[Kicker (magazine)|Kicker]]|date=3 June 2026|access-date=3 June 2026}}</ref><ref>{{cite web|url=https://www.sportclub-verl.de/artikel/108464/neuer-sportclub-trainer-wird-orest-shala|title=Neuer Sportclub-Trainer wird Orest Shala|language=de|publisher=sportclub-verl.de|date=18 June 2026|access-date=18 June 2026}}</ref>
+|-
+| align="left" |[[SV Waldhof Mannheim|Waldhof Mannheim]]
+| align="left" |{{flagicon|LUX}} [[Luc Holtz]]
+| Signed by [[FC Metz|Metz]]
+| colspan="2" |5 June 2026
+| align="left" |{{flagicon|POR}} [[Rui Mota]]
+|18 June 2026
+| <ref>{{Cite web |date=5 June 2026|title=LUC HOLTZ NOMMÉ ENTRAÎNEUR DU FC METZ|url=https://www.fcmetz.com/articles/luc-holtz-nomme-entraineur-du-fc-metz|website=fcmetz.com}}</ref><ref>{{Cite web |date=18 June 2026|title=Rui Mota wird neuer Cheftrainer des SV Waldhof|url=https://svw07.de/rui-mota-wird-neuer-cheftrainer-des-sv-waldhof/|website=svw07.de}}</ref>
+|}
+
+==League table==
+{{2026–27 3. Liga table}}
+
+==Results==
+{{#invoke:Sports results|main
+| source        = [https://www.dfb.de/3-liga/spieltagtabelle/?no_cache=1&spieledb_path=%2Fcompetitions%2F4%2Fseasons%2F18014%2Fmatchday%2Fcurrent DFB]
+| update        = future |start_date=7 August 2026
+| matches_style = FBR
+
+|team_order=AAC, DUI, DÜS, ESS, GRO, HAV, HOF, ING, FOR, VIK, MAN, MEP, MÜN, REG, ROS, SAA, STU, VER, WIE, WÜR
+
+|name_AAC=[[Alemannia Aachen]]
+|name_DUI=[[MSV Duisburg]]
+|name_DÜS=[[Fortuna Düsseldorf]]
+|name_ESS=[[Rot-Weiss Essen]]
+|name_GRO=[[SG Sonnenhof Großaspach|Sonnenhof Großaspach]]
+|name_HAV=[[TSV Havelse]]
+|name_HOF=[[TSG 1899 Hoffenheim II|TSG Hoffenheim II]]
+|name_ING=[[FC Ingolstadt 04|FC Ingolstadt]]
+|name_FOR=[[SC Fortuna Köln|Fortuna Köln]]
+|name_VIK=[[FC Viktoria Köln|Viktoria Köln]]
+|name_MAN=[[SV Waldhof Mannheim|Waldhof Mannheim]]
+|name_MEP=[[SV Meppen]]
+|name_MÜN=[[SC Preußen Münster|Preußen Münster]]
+|name_REG=[[SSV Jahn Regensburg|Jahn Regensburg]]
+|name_ROS=[[FC Hansa Rostock|Hansa Rostock]]
+|name_SAA=[[1. FC Saarbrücken]]
+|name_STU=[[VfB Stuttgart II]]
+|name_VER=[[SC Verl]]
+|name_WIE=[[SV Wehen Wiesbaden|Wehen Wiesbaden]]
+|name_WÜR=[[FC Würzburger Kickers|Würzburger Kickers]]
+
+| match_AAC_DUI = 
+| match_AAC_DÜS = 
+| match_AAC_ESS = 
+| match_AAC_GRO = 
+| match_AAC_HAV = 
+| match_AAC_HOF = 
+| match_AAC_ING = 
+| match_AAC_FOR = 
+| match_AAC_VIK = 
+| match_AAC_MAN = 
+| match_AAC_MEP = 
+| match_AAC_MÜN = 
+| match_AAC_REG = 
+| match_AAC_ROS = 
+| match_AAC_SAA = 
+| match_AAC_STU = 
+| match_AAC_VER = 
+| match_AAC_WIE = 
+| match_AAC_WÜR = 
+
+| match_DUI_AAC = 
+| match_DUI_DÜS = 
+| match_DUI_ESS = 
+| match_DUI_GRO = 
+| match_DUI_HAV = 
+| match_DUI_HOF = 
+| match_DUI_ING = 
+| match_DUI_FOR = 
+| match_DUI_VIK = 
+| match_DUI_MAN = 
+| match_DUI_MEP = 
+| match_DUI_MÜN = 
+| match_DUI_REG = 
+| match_DUI_ROS = 
+| match_DUI_SAA = 
+| match_DUI_STU = 
+| match_DUI_VER = 
+| match_DUI_WIE = 
+| match_DUI_WÜR = 
+
+| match_DÜS_AAC = 
+| match_DÜS_DUI = 
+| match_DÜS_ESS = 
+| match_DÜS_GRO = 
+| match_DÜS_HAV = 
+| match_DÜS_HOF = 
+| match_DÜS_ING = 
+| match_DÜS_FOR = 
+| match_DÜS_VIK = 
+| match_DÜS_MAN = 
+| match_DÜS_MEP = 
+| match_DÜS_MÜN = 
+| match_DÜS_REG = 
+| match_DÜS_ROS = 
+| match_DÜS_SAA = 
+| match_DÜS_STU = 
+| match_DÜS_VER = 
+| match_DÜS_WIE = 
+| match_DÜS_WÜR = 
+
+| match_ESS_AAC = 
+| match_ESS_DUI = 
+| match_ESS_DÜS = 
+| match_ESS_GRO = 
+| match_ESS_HAV = 
+| match_ESS_HOF = 
+| match_ESS_ING = 
+| match_ESS_FOR = 
+| match_ESS_VIK = 
+| match_ESS_MAN = 
+| match_ESS_MEP = 
+| match_ESS_MÜN = 
+| match_ESS_REG = 
+| match_ESS_ROS = 
+| match_ESS_SAA = 
+| match_ESS_STU = 
+| match_ESS_VER = 
+| match_ESS_WIE = 
+| match_ESS_WÜR = 
+
+| match_GRO_AAC = 
+| match_GRO_DUI = 
+| match_GRO_DÜS = 
+| match_GRO_ESS = 
+| match_GRO_HAV = 
+| match_GRO_HOF = 
+| match_GRO_ING = 
+| match_GRO_FOR = 
+| match_GRO_VIK = 
+| match_GRO_MAN = 
+| match_GRO_MEP = 
+| match_GRO_MÜN = 
+| match_GRO_REG = 
+| match_GRO_ROS = 
+| match_GRO_SAA = 
+| match_GRO_STU = 
+| match_GRO_VER = 
+| match_GRO_WIE = 
+| match_GRO_WÜR = 
+
+| match_HAV_AAC = 
+| match_HAV_DUI = 
+| match_HAV_DÜS = 
+| match_HAV_ESS = 
+| match_HAV_GRO = 
+| match_HAV_HOF = 
+| match_HAV_ING = 
+| match_HAV_FOR = 
+| match_HAV_VIK = 
+| match_HAV_MAN = 
+| match_HAV_MEP = 
+| match_HAV_MÜN = 
+| match_HAV_REG = 
+| match_HAV_ROS = 
+| match_HAV_SAA = 
+| match_HAV_STU = 
+| match_HAV_VER = 
+| match_HAV_WIE = 
+| match_HAV_WÜR = 
+
+| match_HOF_AAC = 
+| match_HOF_DUI = 
+| match_HOF_DÜS = 
+| match_HOF_ESS = 
+| match_HOF_GRO = 
+| match_HOF_HAV = 
+| match_HOF_ING = 
+| match_HOF_FOR = 
+| match_HOF_VIK = 
+| match_HOF_MAN = 
+| match_HOF_MEP = 
+| match_HOF_MÜN = 
+| match_HOF_REG = 
+| match_HOF_ROS = 
+| match_HOF_SAA = 
+| match_HOF_STU = 
+| match_HOF_VER = 
+| match_HOF_WIE = 
+| match_HOF_WÜR = 
+
+| match_ING_AAC = 
+| match_ING_DUI = 
+| match_ING_DÜS = 
+| match_ING_ESS = 
+| match_ING_GRO = 
+| match_ING_HAV = 
+| match_ING_HOF = 
+| match_ING_FOR = 
+| match_ING_VIK = 
+| match_ING_MAN = 
+| match_ING_MEP = 
+| match_ING_MÜN = 
+| match_ING_REG = 
+| match_ING_ROS = 
+| match_ING_SAA = 
+| match_ING_STU = 
+| match_ING_VER = 
+| match_ING_WIE = 
+| match_ING_WÜR = 
+
+| match_FOR_AAC = 
+| match_FOR_DUI = 
+| match_FOR_DÜS = 
+| match_FOR_ESS = 
+| match_FOR_GRO = 
+| match_FOR_HAV = 
+| match_FOR_HOF = 
+| match_FOR_ING = 
+| match_FOR_VIK = 
+| match_FOR_MAN = 
+| match_FOR_MEP = 
+| match_FOR_MÜN = 
+| match_FOR_REG = 
+| match_FOR_ROS = 
+| match_FOR_SAA = 
+| match_FOR_STU = 
+| match_FOR_VER = 
+| match_FOR_WIE = 
+| match_FOR_WÜR = 
+
+| match_VIK_AAC = 
+| match_VIK_DUI = 
+| match_VIK_DÜS = 
+| match_VIK_ESS = 
+| match_VIK_GRO = 
+| match_VIK_HAV = 
+| match_VIK_HOF = 
+| match_VIK_ING = 
+| match_VIK_FOR = 
+| match_VIK_MAN = 
+| match_VIK_MEP = 
+| match_VIK_MÜN = 
+| match_VIK_REG = 
+| match_VIK_ROS = 
+| match_VIK_SAA = 
+| match_VIK_STU = 
+| match_VIK_VER = 
+| match_VIK_WIE = 
+| match_VIK_WÜR = 
+
+| match_MAN_AAC =
+| match_MAN_DUI =
+| match_MAN_DÜS =
+| match_MAN_ESS =
+| match_MAN_GRO =
+| match_MAN_HAV =
+| match_MAN_HOF =
+| match_MAN_ING =
+| match_MAN_FOR =
+| match_MAN_VIK =
+| match_MAN_MEP =
+| match_MAN_MÜN =
+| match_MAN_REG =
+| match_MAN_ROS =
+| match_MAN_SAA =
+| match_MAN_STU =
+| match_MAN_VER =
+| match_MAN_WIE =
+| match_MAN_WÜR =
+
+| match_MEP_AAC =
+| match_MEP_DUI =
+| match_MEP_DÜS =
+| match_MEP_ESS =
+| match_MEP_GRO =
+| match_MEP_HAV =
+| match_MEP_HOF =
+| match_MEP_ING =
+| match_MEP_FOR =
+| match_MEP_VIK =
+| match_MEP_MAN =
+| match_MEP_MÜN =
+| match_MEP_REG =
+| match_MEP_ROS =
+| match_MEP_SAA =
+| match_MEP_STU =
+| match_MEP_VER =
+| match_MEP_WIE =
+| match_MEP_WÜR =
+
+| match_MÜN_AAC =
+| match_MÜN_DUI =
+| match_MÜN_DÜS =
+| match_MÜN_ESS =
+| match_MÜN_GRO =
+| match_MÜN_HAV =
+| match_MÜN_HOF =
+| match_MÜN_ING =
+| match_MÜN_FOR =
+| match_MÜN_VIK =
+| match_MÜN_MAN =
+| match_MÜN_MEP =
+| match_MÜN_REG =
+| match_MÜN_ROS =
+| match_MÜN_SAA =
+| match_MÜN_STU =
+| match_MÜN_VER =
+| match_MÜN_WIE =
+| match_MÜN_WÜR =
+
+| match_REG_AAC =
+| match_REG_DUI =
+| match_REG_DÜS =
+| match_REG_ESS =
+| match_REG_GRO =
+| match_REG_HAV =
+| match_REG_HOF =
+| match_REG_ING =
+| match_REG_FOR =
+| match_REG_VIK =
+| match_REG_MAN =
+| match_REG_MEP =
+| match_REG_MÜN =
+| match_REG_ROS =
+| match_REG_SAA =
+| match_REG_STU =
+| match_REG_VER =
+| match_REG_WIE =
+| match_REG_WÜR =
+
+| match_ROS_AAC =
+| match_ROS_DUI =
+| match_ROS_DÜS =
+| match_ROS_ESS =
+| match_ROS_GRO =
+| match_ROS_HAV =
+| match_ROS_HOF =
+| match_ROS_ING =
+| match_ROS_FOR =
+| match_ROS_VIK =
+| match_ROS_MAN =
+| match_ROS_MEP =
+| match_ROS_MÜN =
+| match_ROS_REG =
+| match_ROS_SAA =
+| match_ROS_STU =
+| match_ROS_VER =
+| match_ROS_WIE =
+| match_ROS_WÜR =
+
+| match_SAA_AAC =
+| match_SAA_DUI =
+| match_SAA_DÜS =
+| match_SAA_ESS =
+| match_SAA_GRO =
+| match_SAA_HAV =
+| match_SAA_HOF =
+| match_SAA_ING =
+| match_SAA_FOR =
+| match_SAA_VIK =
+| match_SAA_MAN =
+| match_SAA_MEP =
+| match_SAA_MÜN =
+| match_SAA_REG =
+| match_SAA_ROS =
+| match_SAA_STU =
+| match_SAA_VER =
+| match_SAA_WIE =
+| match_SAA_WÜR =
+
+| match_STU_AAC =
+| match_STU_DUI =
+| match_STU_DÜS =
+| match_STU_ESS =
+| match_STU_GRO =
+| match_STU_HAV =
+| match_STU_HOF =
+| match_STU_ING =
+| match_STU_FOR =
+| match_STU_VIK =
+| match_STU_MAN =
+| match_STU_MEP =
+| match_STU_MÜN =
+| match_STU_REG =
+| match_STU_ROS =
+| match_STU_SAA =
+| match_STU_VER =
+| match_STU_WIE =
+| match_STU_WÜR =
+
+| match_VER_AAC =
+| match_VER_DUI =
+| match_VER_DÜS =
+| match_VER_ESS =
+| match_VER_GRO =
+| match_VER_HAV =
+| match_VER_HOF =
+| match_VER_ING =
+| match_VER_FOR =
+| match_VER_VIK =
+| match_VER_MAN =
+| match_VER_MEP =
+| match_VER_MÜN =
+| match_VER_REG =
+| match_VER_ROS =
+| match_VER_SAA =
+| match_VER_STU =
+| match_VER_WIE =
+| match_VER_WÜR =
+
+| match_WIE_AAC =
+| match_WIE_DUI =
+| match_WIE_DÜS =
+| match_WIE_ESS =
+| match_WIE_GRO =
+| match_WIE_HAV =
+| match_WIE_HOF =
+| match_WIE_ING =
+| match_WIE_FOR =
+| match_WIE_VIK =
+| match_WIE_MAN =
+| match_WIE_MEP =
+| match_WIE_MÜN =
+| match_WIE_REG =
+| match_WIE_ROS =
+| match_WIE_SAA =
+| match_WIE_STU =
+| match_WIE_VER =
+| match_WIE_WÜR =
+
+| match_WÜR_AAC =
+| match_WÜR_DUI =
+| match_WÜR_DÜS =
+| match_WÜR_ESS =
+| match_WÜR_GRO =
+| match_WÜR_HAV =
+| match_WÜR_HOF =
+| match_WÜR_ING =
+| match_WÜR_FOR =
+| match_WÜR_VIK =
+| match_WÜR_MAN =
+| match_WÜR_MEP =
+| match_WÜR_MÜN =
+| match_WÜR_REG =
+| match_WÜR_ROS =
+| match_WÜR_SAA =
+| match_WÜR_STU =
+| match_WÜR_VER =
+| match_WÜR_WIE =
+
+}}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.dfb.de/3-liga-der-maenner/start/ Official website]
+
+{{3. Liga}}
+{{2026–27 in German football}}
+
+{{DEFAULTSORT:3. Liga, 2026-27 }}
+[[Category:2026–27 in German football leagues]]
+[[Category:3. Liga seasons|2026–27]]
+[[Category:2026–27 in European third-tier association football leagues|Germany]]
+[[Category:Scheduled association football competitions |Germany 3]]

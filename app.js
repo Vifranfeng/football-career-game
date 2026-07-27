@@ -5,22 +5,31 @@
   var LEAGUE_MATCH_COUNTS = {
     "Premier League": 38,
     "EFL Championship": 46,
+    "EFL League One": 46,
     "LALIGA EA SPORTS": 38,
     "LALIGA HYPERMOTION": 42,
+    "Primera Federación": 38,
     "Bundesliga": 34,
     "2. Bundesliga": 34,
+    "3. Liga": 38,
     "Serie A": 38,
     "Serie BKT": 38,
+    "Serie C": 38,
     "Ligue 1 McDonald's": 34,
     "Ligue 2 BKT": 34,
+    "Championnat National": 34,
     "J1 League": 38,
     "J2 League": 38,
+    "J3 League": 38,
     "K League 1": 38,
     "K League 2": 36,
+    "K3 League": 30,
     "Chinese Super League": 30,
     "China League One": 30,
+    "China League Two": 30,
     "Saudi Pro League": 34,
     "Saudi First Division": 34,
+    "Saudi Second Division": 30,
     "Thai League 1": 30,
     "Thai League 2": 34,
     "Malaysia Super League": 24,
@@ -29,22 +38,31 @@
   var LEAGUE_TEAM_COUNTS = {
     "Premier League": 20,
     "EFL Championship": 24,
+    "EFL League One": 24,
     "LALIGA EA SPORTS": 20,
     "LALIGA HYPERMOTION": 22,
+    "Primera Federación": 20,
     "Bundesliga": 18,
     "2. Bundesliga": 18,
+    "3. Liga": 20,
     "Serie A": 20,
     "Serie BKT": 20,
+    "Serie C": 20,
     "Ligue 1 McDonald's": 18,
     "Ligue 2 BKT": 18,
+    "Championnat National": 18,
     "J1 League": 20,
     "J2 League": 20,
+    "J3 League": 20,
     "K League 1": 12,
     "K League 2": 14,
+    "K3 League": 16,
     "Chinese Super League": 16,
     "China League One": 16,
+    "China League Two": 16,
     "Saudi Pro League": 18,
     "Saudi First Division": 18,
+    "Saudi Second Division": 16,
     "Thai League 1": 16,
     "Thai League 2": 18,
     "Malaysia Super League": 13,
@@ -52,27 +70,45 @@
   };
   var PROMOTION_LEAGUE_MAP = {
     "EFL Championship": "Premier League",
+    "EFL League One": "EFL Championship",
     "LALIGA HYPERMOTION": "LALIGA EA SPORTS",
+    "Primera Federación": "LALIGA HYPERMOTION",
     "2. Bundesliga": "Bundesliga",
+    "3. Liga": "2. Bundesliga",
     "Serie BKT": "Serie A",
+    "Serie C": "Serie BKT",
     "Ligue 2 BKT": "Ligue 1 McDonald's",
+    "Championnat National": "Ligue 2 BKT",
     "J2 League": "J1 League",
+    "J3 League": "J2 League",
     "K League 2": "K League 1",
+    "K3 League": "K League 2",
     "China League One": "Chinese Super League",
+    "China League Two": "China League One",
     "Saudi First Division": "Saudi Pro League",
+    "Saudi Second Division": "Saudi First Division",
     "Thai League 2": "Thai League 1",
     "Malaysia A1 Semi-Pro League": "Malaysia Super League"
   };
   var RELEGATION_LEAGUE_MAP = {
     "Premier League": "EFL Championship",
+    "EFL Championship": "EFL League One",
     "LALIGA EA SPORTS": "LALIGA HYPERMOTION",
+    "LALIGA HYPERMOTION": "Primera Federación",
     "Bundesliga": "2. Bundesliga",
+    "2. Bundesliga": "3. Liga",
     "Serie A": "Serie BKT",
+    "Serie BKT": "Serie C",
     "Ligue 1 McDonald's": "Ligue 2 BKT",
+    "Ligue 2 BKT": "Championnat National",
     "J1 League": "J2 League",
+    "J2 League": "J3 League",
     "K League 1": "K League 2",
+    "K League 2": "K3 League",
     "Chinese Super League": "China League One",
+    "China League One": "China League Two",
     "Saudi Pro League": "Saudi First Division",
+    "Saudi First Division": "Saudi Second Division",
     "Thai League 1": "Thai League 2",
     "Malaysia Super League": "Malaysia A1 Semi-Pro League"
   };
@@ -170,7 +206,36 @@
     manutd: 0.12
   };
   var CLUB_BADGE_OVERRIDES = {
-    "paris-lumiere": "https://crests.football-data.org/524.png"
+    "paris-lumiere": "https://crests.football-data.org/524.png",
+    "blackpool-l1": "https://r2.thesportsdb.com/images/media/team/badge/utywru1448754934.png",
+    "reading-l1": "https://r2.thesportsdb.com/images/media/team/badge/tprvtu1448811527.png",
+    "huddersfield-l1": "https://r2.thesportsdb.com/images/media/team/badge/y11fin1677527513.png",
+    "barnsley-l1": "https://r2.thesportsdb.com/images/media/team/badge/glbmdm1781719675.png",
+    "murcia-rfef": "https://r2.thesportsdb.com/images/media/team/badge/zoo96h1747995489.png",
+    "nastic-rfef": "https://r2.thesportsdb.com/images/media/team/badge/tpytry1447591259.png",
+    "lugo-rfef": "https://r2.thesportsdb.com/images/media/team/badge/iwnbbw1616444140.png",
+    "sabadell-rfef": "https://r2.thesportsdb.com/images/media/team/badge/21mapu1690094066.png",
+    "hansa-3liga": "https://r2.thesportsdb.com/images/media/team/badge/g96u1z1660300651.png",
+    "aachen-3liga": "https://r2.thesportsdb.com/images/media/team/badge/hcbovz1726533617.png",
+    "duisburg-3liga": "https://r2.thesportsdb.com/images/media/team/badge/16m3st1677552500.png",
+    "catania-seriec": "https://r2.thesportsdb.com/images/media/team/badge/mov8wk1677499346.png",
+    "perugia-seriec": "https://r2.thesportsdb.com/images/media/team/badge/7e4l2k1603811720.png",
+    "crotone-seriec": "https://r2.thesportsdb.com/images/media/team/badge/u7d49h1677257238.png",
+    "ternana-seriec": "https://r2.thesportsdb.com/images/media/team/badge/1ohbvo1754608758.png",
+    "sochaux-national": "https://r2.thesportsdb.com/images/media/team/badge/ymsdjh1766618296.png",
+    "dijon-national": "https://r2.thesportsdb.com/images/media/team/badge/viin5f1547898121.png",
+    "rouen-national": "https://r2.thesportsdb.com/images/media/team/badge/6m1fwf1690606286.png",
+    "valenciennes-national": "https://www.thesportsdb.com/images/media/team/badge/guirg71784504305.png",
+    "dalian-kewei-c2": "https://r2.thesportsdb.com/images/media/team/badge/tu9jt11773419457.png",
+    "lanzhou-longyuan-c2": "https://r2.thesportsdb.com/images/media/team/badge/9mwt3z1740761964.png",
+    "shenzhen-2028-c2": "https://r2.thesportsdb.com/images/media/team/badge/hkpf1s1737320216.png",
+    "chengdu-b-c2": "https://r2.thesportsdb.com/images/media/team/badge/e693gt1737321270.png",
+    "gifu-j3": "https://r2.thesportsdb.com/images/media/team/badge/6omgdc1590074208.png",
+    "nagano-j3": "https://www.thesportsdb.com/images/media/team/badge/e21v6l1782756856.png",
+    "tottori-j3": "https://r2.thesportsdb.com/images/media/team/badge/c6w78x1617289656.png",
+    "fukushima-j3": "https://r2.thesportsdb.com/images/media/team/badge/arv5gu1617289649.png",
+    "gimhae-k3": "https://r2.thesportsdb.com/images/media/team/badge/hhi8821771815980.png",
+    "gyeongju-k3": "https://r2.thesportsdb.com/images/media/team/badge/csmz091747852775.png"
   };
   var EUROPEAN_QUALIFICATION_RULES = {
     "Premier League": { championsLeague: 5, europaLeague: 6, conferenceLeague: 7, cupWinner: "欧联杯" },
@@ -249,22 +314,31 @@
   var LEAGUE_NAME_ZH = {
     "Premier League": "英超",
     "EFL Championship": "英冠",
+    "EFL League One": "英甲",
     "LALIGA EA SPORTS": "西甲",
     "LALIGA HYPERMOTION": "西乙",
+    "Primera Federación": "西协甲",
     "Bundesliga": "德甲",
     "2. Bundesliga": "德乙",
+    "3. Liga": "德丙",
     "Serie A": "意甲",
     "Serie BKT": "意乙",
+    "Serie C": "意丙",
     "Ligue 1 McDonald's": "法甲",
     "Ligue 2 BKT": "法乙",
+    "Championnat National": "法丙",
     "J1 League": "日职联",
     "J2 League": "日职乙",
+    "J3 League": "日职丙",
     "K League 1": "韩K1联",
     "K League 2": "韩K2联",
+    "K3 League": "韩国K3联赛",
     "Chinese Super League": "中超",
     "China League One": "中甲",
+    "China League Two": "中乙",
     "Saudi Pro League": "沙特联",
     "Saudi First Division": "沙特甲",
+    "Saudi Second Division": "沙特乙",
     "Thai League 1": "泰超",
     "Thai League 2": "泰甲",
     "Malaysia Super League": "马来超",
@@ -555,7 +629,7 @@
         var normalizedName = club.name.toLowerCase().replace(/[^a-z0-9]/g, "");
         var match = footballTeams.find(function (team) {
           return String(team.strTeam || "").toLowerCase().replace(/[^a-z0-9]/g, "") === normalizedName;
-        }) || footballTeams[0];
+        });
         var badgeUrl = match && (match.strBadge || match.strTeamBadge) || fallbackBadge;
         clubBadgeCache[clubId] = badgeUrl;
         return badgeUrl;
@@ -724,6 +798,9 @@
       buildMiniStat("国家队助攻", summary.nationalAssists || 0) +
       "  </div>" +
       buildCompetitionBreakdown(summary) +
+      (summary.leagueTable && summary.leagueTable.length
+        ? '<button class="btn btn-ghost league-table-button" id="open-league-table">查看积分榜</button>'
+        : "") +
       buildSeasonBadgeRow(summary) +
       (summary.transferNote ? '  <p class="section-copy">' + summary.transferNote + "</p>" : "") +
       (summary.rejectedOfferNote ? '  <p class="section-copy rejected-offer-note">' + summary.rejectedOfferNote + "</p>" : "") +
@@ -745,7 +822,50 @@
         handleTransferChoice(Number(button.getAttribute("data-transfer-index")));
       });
     });
+    var leagueTableButton = document.getElementById("open-league-table");
+    if (leagueTableButton) {
+      leagueTableButton.addEventListener("click", function () {
+        showLeagueTable(summary);
+      });
+    }
     hydrateClubBadges();
+  }
+
+  function showLeagueTable(summary) {
+    var table = summary.leagueTable || [];
+    if (!table.length) return;
+    var existing = document.getElementById("league-table-layer");
+    if (existing) existing.remove();
+    var rows = table.map(function (row) {
+      return '<tr class="' + (row.clubId === summary.clubId ? "is-player-club" : "") + '">' +
+        "<td>" + row.position + "</td><td>" + row.clubName + "</td><td>" + row.played +
+        "</td><td>" + row.wins + "</td><td>" + row.draws + "</td><td>" + row.losses +
+        "</td><td>" + signed(row.goalDifference) + "</td><td><strong>" + row.points + "</strong></td></tr>";
+    }).join("");
+    var layer = document.createElement("div");
+    layer.id = "league-table-layer";
+    layer.className = "league-table-layer";
+    layer.setAttribute("role", "dialog");
+    layer.setAttribute("aria-modal", "true");
+    layer.innerHTML =
+      '<div class="league-table-dialog"><div class="league-table-heading"><div><span>完整积分榜</span><h3>' +
+      getLeagueDisplayName(getClubById(summary.clubId).league) +
+      '</h3></div><button class="league-table-close" type="button" aria-label="关闭">×</button></div>' +
+      '<div class="league-table-scroll"><table><thead><tr><th>排名</th><th>球队</th><th>场</th><th>胜</th><th>平</th><th>负</th><th>净胜球</th><th>积分</th></tr></thead><tbody>' +
+      rows + "</tbody></table></div></div>";
+    document.body.appendChild(layer);
+    function close() {
+      layer.remove();
+      document.removeEventListener("keydown", onKeydown);
+    }
+    function onKeydown(event) {
+      if (event.key === "Escape") close();
+    }
+    layer.querySelector(".league-table-close").addEventListener("click", close);
+    layer.addEventListener("click", function (event) {
+      if (event.target === layer) close();
+    });
+    document.addEventListener("keydown", onKeydown);
   }
 
   function renderRetirementScreen() {
@@ -1232,7 +1352,33 @@
       verdicts.push({ icon: "C", name: "领袖袖标", description: "曾以队长身份承担球队责任" });
     }
     if (!verdicts.length) {
-      verdicts.push({ icon: "●", name: "职业典范", description: "完整走过了一段值得回望的职业生涯" });
+      if (peakOverall < 60) {
+        verdicts.push({
+          icon: "↓",
+          name: "职业联赛边缘人",
+          description: "实力始终没有达到稳定立足职业联赛的标准",
+          tier: "negative"
+        });
+      } else if (peakOverall < 70) {
+        verdicts.push({
+          icon: "·",
+          name: "实力平平",
+          description: "拥有过职业比赛经历，但整体表现和上限都较为有限",
+          tier: "negative"
+        });
+      } else if (peakOverall < 82) {
+        verdicts.push({
+          icon: "●",
+          name: "中规中矩",
+          description: "完成了一段稳定但并不耀眼的职业生涯"
+        });
+      } else {
+        verdicts.push({
+          icon: "●",
+          name: "职业典范",
+          description: "长期保持可靠表现，完整走过了一段值得回望的职业生涯"
+        });
+      }
     }
     return verdicts.slice(0, 9);
   }
@@ -1244,14 +1390,24 @@
     var featuredHonor = honors.find(function (name) {
       return /世界杯冠军|欧冠冠军|金球奖|世界俱乐部冠军/.test(name);
     }) || honors[0] || "职业生涯完整落幕";
+    var forcedByMarket = Boolean(player.forcedRetirementReason);
+    var retirementTitle = forcedByMarket ? "无人问津" : "传奇谢幕";
+    var retirementSummary = forcedByMarket
+      ? player.forcedRetirementReason
+      : "最高 OVR " + peakOverall + " · " + championshipCount + " 座冠军 · " + featuredHonor;
+    var retirementCardClass = forcedByMarket
+      ? "result-fx-card result-fx-failure retirement-fx-card"
+      : "result-fx-card result-fx-achievement result-fx-legend retirement-fx-card";
+    var retirementIcon = forcedByMarket
+      ? '<div class="result-fx-down"><i>↓</i><i>×</i><i>↓</i></div>'
+      : '<div class="achievement-fx-star">★<b></b><b></b><b></b></div>';
     app.insertAdjacentHTML(
       "beforeend",
       '<div class="season-result-fx result-fx-persistent retirement-result-fx" id="retirement-result-fx" role="button" tabindex="0" aria-label="关闭生涯谢幕">' +
       '  <div class="season-result-fx-stack">' +
-      '    <div class="result-fx-card result-fx-achievement result-fx-legend retirement-fx-card">' +
-      '      <div class="achievement-fx-star">★<b></b><b></b><b></b></div>' +
-      '      <strong>传奇谢幕</strong><span>最高 OVR ' + peakOverall + " · " + championshipCount +
-      " 座冠军 · " + featuredHonor + "</span>" +
+      '    <div class="' + retirementCardClass + '">' +
+      retirementIcon +
+      '      <strong>' + retirementTitle + '</strong><span>' + retirementSummary + "</span>" +
       "    </div>" +
       '    <p class="result-fx-dismiss">点击任意位置查看完整生涯</p>' +
       "  </div>" +
@@ -1504,12 +1660,27 @@
     state.lastChoiceLabel = option.label;
     var summary = simulatePhase(state.player);
     state.lastChoiceOutcome = buildChoiceOutcome(event, option, summary, dynamicResolution.note);
+    if (shouldForceMarketRetirement(state.player)) {
+      state.player.retirementAge = state.player.age;
+      state.player.forcedRetirementReason = "年龄和竞技水平已经无法满足职业联赛要求，转会市场没有俱乐部愿意提供新合同。";
+      state.latestSummary = summary;
+      state.transferOptions = [];
+      state.currentEvent = null;
+      state.screen = "retirement";
+      state.gameOver = true;
+      render();
+      return;
+    }
     state.latestSummary = summary;
     state.transferOptions = generateTransferOptions(state.player, summary);
     state.currentEvent = null;
     state.screen = "summary";
     render();
     showSeasonResultEffects(summary, dynamicResolution);
+  }
+
+  function shouldForceMarketRetirement(player) {
+    return player.age >= 27 && player.overall < 58;
   }
 
   function showSeasonResultEffects(summary, dynamicResolution) {
@@ -1536,6 +1707,7 @@
     });
     var hasLegendMoment = Boolean(summary.legendStory || majorAchievement === "传奇时刻");
     var hasBallonDorControversy = Boolean(summary.ballonDorControversy);
+    var hasRefereeScandal = Boolean(summary.refereeScandal);
     var dynastyMoments = summary.dynastyMoments || [];
     var hasDynastyMoment = dynastyMoments.length > 0;
     var injury = summary.injuries && summary.injuries[0];
@@ -1553,6 +1725,7 @@
       !choiceSucceeded &&
       !majorAchievement &&
       !hasBallonDorControversy &&
+      !hasRefereeScandal &&
       !hasDynastyMoment &&
       !injury &&
       !majorGrowth &&
@@ -1584,6 +1757,15 @@
         '<div class="result-fx-card result-fx-failure result-fx-ballon-controversy" style="--fx-order:0">' +
         '  <div class="result-fx-down"><i>!</i><i>!</i><i>!</i></div>' +
         '  <strong>金球争议</strong><span>' + summary.ballonDorControversy + "</span>" +
+        "</div>"
+      );
+    }
+
+    if (hasRefereeScandal) {
+      cards.unshift(
+        '<div class="result-fx-card result-fx-failure" style="--fx-order:0">' +
+        '  <div class="result-fx-down"><i>!</i><i>VAR</i><i>!</i></div>' +
+        '  <strong>判罚惨案</strong><span>' + summary.refereeScandal + "</span>" +
         "</div>"
       );
     }
@@ -1678,11 +1860,13 @@
     }
 
     var requiresDismiss = hasRivalSabotage || hasLegendMoment || hasRelegation ||
-      hasBallonDorControversy || hasDynastyMoment;
+      hasBallonDorControversy || hasRefereeScandal || hasDynastyMoment;
     var dismissLabel = hasDynastyMoment
       ? "关闭王朝时刻提示"
       : hasBallonDorControversy
       ? "关闭金球争议提示"
+      : hasRefereeScandal
+      ? "关闭判罚争议提示"
       : hasRelegation
       ? "关闭联赛降级提示"
       : hasLegendMoment ? "关闭传奇时刻提示" : "关闭狙击死敌提示";
@@ -1933,10 +2117,10 @@
     if (!standing) return;
     var nextLeague = "";
     var transitionType = "";
-    if (club.leagueLevel === 2 && standing.position <= 2 && PROMOTION_LEAGUE_MAP[club.league]) {
+    if (club.leagueLevel >= 2 && standing.position <= 2 && PROMOTION_LEAGUE_MAP[club.league]) {
       nextLeague = PROMOTION_LEAGUE_MAP[club.league];
       transitionType = "promotion";
-    } else if (club.leagueLevel === 1 && standing.status === "降级区" && RELEGATION_LEAGUE_MAP[club.league]) {
+    } else if (club.leagueLevel <= 2 && standing.status === "降级区" && RELEGATION_LEAGUE_MAP[club.league]) {
       nextLeague = RELEGATION_LEAGUE_MAP[club.league];
       transitionType = "relegation";
     }
@@ -1970,7 +2154,11 @@
     }
     var previousLeague = club.league;
     club.league = nextLeague;
-    club.leagueLevel = transitionType === "promotion" ? 1 : 2;
+    club.leagueLevel = clamp(
+      club.leagueLevel + (transitionType === "promotion" ? -1 : 1),
+      1,
+      3
+    );
     player.pendingSeasonTransition = {
       type: transitionType,
       clubId: club.id,
@@ -2054,6 +2242,10 @@
     var plannedGrowth = calculateOverallChange(player);
     var seasonOutlook = simulateClubSeasonOutlook(player, club, stats, competitionStats);
     var trophies = simulateTrophies(player, club, stats, seasonOutlook);
+    var refereeScandal = buildRefereeScandalMoment(player, club, competitionStats);
+    if (refereeScandal) {
+      applyEffects(player, refereeScandal.effects);
+    }
     var ballonDorControversy = buildBallonDorControversy(player, club, stats, trophies, seasonOutlook);
     var derbyResult = simulateDerbyMoment(player, club, stats);
     var nationalSummary = simulateNationalTeamSeason(player);
@@ -2061,6 +2253,10 @@
     var legendStory = buildSingleMatchScoringStory(player, club, stats) ||
       buildUniversalLegendStory(player, club, stats, trophies, seasonOutlook, nationalSummary);
     var seasonMoment = generateSeasonMoment(player, club, stats, trophies, derbyResult, nationalSummary, seasonOutlook, legendStory, ballonDorControversy, dynastyMoments);
+    if (refereeScandal) {
+      seasonMoment = refereeScandal.text;
+    }
+    var defeatContext = buildSeasonDefeatReason(player, club, stats, competitionStats, seasonOutlook);
     var seasonAchievements = getSeasonAchievements(player, club, stats, trophies, nationalSummary, legendStory, seasonOutlook, ballonDorControversy);
     seasonAchievements = unique(seasonAchievements.concat(dynastyMoments.map(function (moment) {
       return moment.name;
@@ -2110,14 +2306,18 @@
       leagueAssists: stats.leagueAssists,
       competitionStats: competitionStats,
       leagueStanding: seasonOutlook.leagueStanding,
+      leagueTable: seasonOutlook.leagueSimulation ? seasonOutlook.leagueSimulation.table : [],
       leagueOutcomeStory: buildLeagueOutcomeStory(club, seasonOutlook.leagueStanding),
       titleDroughtStory: buildDynamicTitleDroughtStory(player, club, seasonOutlook.leagueStanding, competitionStats),
       domesticCupStory: buildDomesticCupStory(club, competitionStats),
       continentalStory: buildContinentalCampaignStory(competitionStats),
+      defeatReason: defeatContext ? defeatContext.text : "",
+      defeatReasonSource: defeatContext ? defeatContext.source : "",
       trophies: trophies,
       achievements: seasonAchievements,
       ballonDorNominated: Boolean(player.pendingBallonDorNomination),
       ballonDorControversy: ballonDorControversy,
+      refereeScandal: refereeScandal ? refereeScandal.text : "",
       dynastyMoments: dynastyMoments,
       injuries: player.pendingSeasonInjury ? [player.pendingSeasonInjury] : [],
       potential: player.potential,
@@ -2152,6 +2352,18 @@
     player.pendingSeasonCompetitionImpact = null;
     player.pendingDerbyChoiceBonus = 0;
     player.pendingTransferCollapse = "";
+    if (window.LeagueSimulation && seasonOutlook.leagueSimulation) {
+      seasonOutlook.leagueSimulation.table.forEach(function (row) {
+        var simulatedClub = getClubById(row.clubId);
+        if (simulatedClub) {
+          window.LeagueSimulation.evolveClubStrength(
+            simulatedClub,
+            row,
+            seasonOutlook.leagueSimulation.table.length
+          );
+        }
+      });
+    }
     evolveClubLandscape(club.id, entry);
     return entry;
   }
@@ -3055,7 +3267,11 @@
       return "高薪邀约";
     }
     if (club.region === "欧洲") {
-      return club.leagueLevel === 2 ? "欧洲次级联赛" : "欧洲联赛";
+      return club.leagueLevel >= 3
+        ? "欧洲第三级联赛"
+        : club.leagueLevel === 2
+        ? "欧洲次级联赛"
+        : "欧洲联赛";
     }
     return getLeagueDisplayName(club.league);
   }
@@ -3087,7 +3303,7 @@
     if (isBigFiveTopFlight(club)) {
       baseCeiling = 99;
     } else if (club.region === "欧洲") {
-      baseCeiling = club.leagueLevel === 2 ? 74 : 82;
+      baseCeiling = club.leagueLevel >= 3 ? 64 : club.leagueLevel === 2 ? 74 : 82;
     } else if (isSaudiClub(club)) {
       baseCeiling = 84;
     } else if (club.league === "Chinese Super League") {
@@ -3584,6 +3800,7 @@
   function getLeagueMarketMultiplier(club) {
     if (club.league === "Premier League") return 1.22;
     if (isBigFiveTopFlight(club)) return 1.04;
+    if (club.region === "欧洲" && club.leagueLevel >= 3) return 0.42;
     if (club.region === "欧洲" && club.leagueLevel === 2) return 0.58;
     if (club.region === "欧洲") return 0.76;
     if (isSaudiClub(club)) return 0.72;
@@ -3608,7 +3825,9 @@
     if (isSaudiClub(club)) {
       budget *= club.band === "豪门" ? 1.35 : 1.08;
     }
-    if (club.leagueLevel === 2) {
+    if (club.leagueLevel >= 3) {
+      budget *= 0.42;
+    } else if (club.leagueLevel === 2) {
       budget *= 0.62;
     }
     return roundTransferAmount(budget);
@@ -3702,25 +3921,18 @@
       }
       if (event.id === "fixture-congestion") {
         var lastSeenSeason = (player.eventLastSeenSeason || {})[event.id] || 0;
-        var recentCareer = (player.career || []).slice(-3);
-        var consecutiveChampionsLeagueSeasons = 0;
-        for (var careerIndex = recentCareer.length - 1; careerIndex >= 0; careerIndex -= 1) {
-          var seasonCompetition = recentCareer[careerIndex].competitionStats &&
-            recentCareer[careerIndex].competitionStats.continentalName;
-          if (seasonCompetition !== "欧冠") break;
-          consecutiveChampionsLeagueSeasons += 1;
-        }
-        var stableChampionsLeagueClub =
-          player.nextContinentalCompetition === "欧冠" &&
-          consecutiveChampionsLeagueSeasons >= 2;
-        var cooldown = stableChampionsLeagueClub ? 7 : 4;
-        var appearedRecently = lastSeenSeason &&
-          player.seasonYear - lastSeenSeason < cooldown;
+        var hasPlayedContinentalFootball = (player.career || []).some(function (season) {
+          return Boolean(
+            season.competitionStats &&
+            season.competitionStats.continentalName
+          );
+        });
         var hasHeavyCalendar = Boolean(player.nextContinentalCompetition) ||
           getNationalCompetitionName(player.countryCode, player.seasonYear) !== "国家队比赛";
-        var eventChance = stableChampionsLeagueClub ? 0.06 :
-          consecutiveChampionsLeagueSeasons === 0 ? 0.28 : 0.16;
-        return !appearedRecently && hasHeavyCalendar && Math.random() < eventChance;
+        return !lastSeenSeason &&
+          !hasPlayedContinentalFootball &&
+          hasHeavyCalendar &&
+          Math.random() < 0.24;
       }
       return recentEvents.indexOf(event.id) === -1;
     });
@@ -4232,7 +4444,7 @@
         { label: "拒绝额外责任", effects: { happiness: 2, reputation: -2, coachRelation: -2 } }
       ];
     } else {
-      title = "五年坚守让你成为熟悉的面孔";
+      title = "多年坚守让你成为熟悉的面孔";
       text = "这是你连续效力 " + clubName + " 的第 " + yearsAtClub +
         " 年。俱乐部准备公开确认你的长期价值，媒体也在询问你是否愿意继续留下。";
       options = [
@@ -4925,6 +5137,7 @@
       finalDecision,
       competitionImpact
     );
+    completeCompetitionWorldResults(club, domesticCupCampaign, continentalCampaign);
     var continentalMatches = continentalCampaign.matches;
 
     var leagueApps = clamp(Math.round(leagueMatches * playingChance), 0, leagueMatches);
@@ -4969,10 +5182,13 @@
       continentalName: continentalCampaign.name,
       continentalStage: continentalCampaign.stage,
       continentalOpponent: continentalCampaign.opponent,
+      continentalScore: continentalCampaign.score,
       continentalNotableWin: continentalCampaign.notableWin,
       continentalLeaguePosition: continentalCampaign.leaguePosition,
       continentalChampion: continentalCampaign.champion,
       continentalRunnerUp: continentalCampaign.runnerUp,
+      continentalWorldResult: continentalCampaign.worldResult || null,
+      domesticCupWorldResult: domesticCupCampaign.worldResult || null,
       injuryMatchesMissed: injury
         ? Math.max(1, Math.round((leagueMatches + cupMatches + continentalMatches) * (1 - (injury.availabilityFactor || 0.76))))
         : 0,
@@ -5020,6 +5236,7 @@
       matches: 0,
       stage: "",
       opponent: "",
+      score: "",
       notableWin: "",
       leaguePosition: 0,
       champion: "",
@@ -5090,9 +5307,10 @@
       if (!winsContinentalTie(clubStrength, playoffOpponent, -2)) {
         campaign.stage = "淘汰赛附加赛出局";
         campaign.opponent = playoffOpponent ? getClubDisplayName(playoffOpponent) : "";
+        campaign.score = buildContinentalScore(false, true);
         return campaign;
       }
-      campaign.notableWin = buildContinentalWinText(campaign.name, "淘汰赛附加赛", playoffOpponent);
+      campaign.notableWin = buildContinentalWinText(campaign.name, "淘汰赛附加赛", playoffOpponent, true);
     }
 
     var rounds = [
@@ -5125,10 +5343,11 @@
       if (!won) {
         campaign.stage = round.stage === "决赛" ? "决赛失利" : round.stage + "出局";
         campaign.opponent = opponent ? getClubDisplayName(opponent) : "";
+        campaign.score = buildContinentalScore(false, round.matches === 2);
         campaign.runnerUp = round.stage === "决赛";
         return campaign;
       }
-      campaign.notableWin = buildContinentalWinText(campaign.name, round.stage, opponent);
+      campaign.notableWin = buildContinentalWinText(campaign.name, round.stage, opponent, round.matches === 2);
     }
     campaign.stage = "冠军";
     campaign.champion = campaign.name + "冠军";
@@ -5161,10 +5380,11 @@
       if (!winsContinentalTie(clubStrength, opponent, round.difficulty)) {
         campaign.stage = round.stage === "决赛" ? "决赛失利" : round.stage + "出局";
         campaign.opponent = opponent ? getClubDisplayName(opponent) : "";
+        campaign.score = buildContinentalScore(false, round.matches === 2);
         campaign.runnerUp = round.stage === "决赛";
         return campaign;
       }
-      campaign.notableWin = buildContinentalWinText(campaign.name, round.stage, opponent);
+      campaign.notableWin = buildContinentalWinText(campaign.name, round.stage, opponent, round.matches === 2);
     }
     campaign.stage = "冠军";
     campaign.champion = "亚冠冠军";
@@ -5177,10 +5397,47 @@
     return Math.random() < chance;
   }
 
-  function buildContinentalWinText(competitionName, stage, opponent) {
+  function buildContinentalWinText(competitionName, stage, opponent, twoLegged) {
+    var score = buildContinentalScore(true, twoLegged);
     return opponent
-      ? competitionName + stage + "战胜 " + getClubDisplayName(opponent)
+      ? competitionName + stage + score + "战胜 " + getClubDisplayName(opponent)
       : competitionName + stage + "成功晋级";
+  }
+
+  function completeCompetitionWorldResults(club, domesticCupCampaign, continentalCampaign) {
+    if (!window.CompetitionSimulation) return;
+    var sameCountry = window.CLUBS.filter(function (candidate) {
+      return candidate.country === club.country;
+    });
+    if (!domesticCupCampaign.winner && sameCountry.length >= 2) {
+      domesticCupCampaign.worldResult = window.CompetitionSimulation.simulateKnockoutCompetition({
+        competition: getCompetitionNames(club).domesticCup.replace("冠军", ""),
+        clubs: sameCountry,
+        excludedIds: [club.id],
+        participantCount: 16
+      });
+    }
+    if (!continentalCampaign.name || continentalCampaign.champion) return;
+    var region = club.region;
+    var continentalClubs = window.CLUBS.filter(function (candidate) {
+      return candidate.region === region && candidate.leagueLevel === 1;
+    });
+    continentalCampaign.worldResult = window.CompetitionSimulation.simulateKnockoutCompetition({
+      competition: continentalCampaign.name,
+      clubs: continentalClubs,
+      excludedIds: [club.id],
+      participantCount: 16
+    });
+  }
+
+  function buildContinentalScore(won, twoLegged) {
+    var winningScores = twoLegged
+      ? ["以总比分 2 比 1 ", "以总比分 3 比 2 ", "以总比分 4 比 2 ", "在总比分战平后通过点球大战 "]
+      : ["以 1 比 0 ", "以 2 比 1 ", "以 3 比 1 ", "在点球大战中 "];
+    var losingScores = twoLegged
+      ? ["以总比分 1 比 2 负于 ", "以总比分 2 比 3 负于 ", "以总比分 2 比 4 负于 ", "在总比分战平后点球大战惜败于 "]
+      : ["以 0 比 1 负于 ", "以 1 比 2 负于 ", "以 1 比 3 负于 ", "在点球大战中惜败于 "];
+    return pickOne(won ? winningScores : losingScores);
   }
 
   function pickAsianOpponent(excludedClubId, minimumStrength, additionalExcludedIds) {
@@ -5480,6 +5737,8 @@
       benchmark = 61;
     } else if (club.league === "Chinese Super League") {
       benchmark = 67;
+    } else if (club.leagueLevel >= 3) {
+      benchmark = club.region === "欧洲" ? 55 : 51;
     } else if (club.leagueLevel === 2) {
       benchmark = 67;
     } else if (isBigFiveTopFlight(club)) {
@@ -5497,8 +5756,8 @@
     var gapWeight =
       club.league === "Chinese Super League" || club.league === "China League One"
         ? 0.035
-        : club.leagueLevel === 2 ? 0.032 : 0.027;
-    return clamp(1 + relativeGap * gapWeight, 0.68, 1.46);
+        : club.leagueLevel >= 3 ? 0.045 : club.leagueLevel === 2 ? 0.032 : 0.027;
+    return clamp(1 + relativeGap * gapWeight, club.leagueLevel >= 3 ? 0.72 : 0.68, club.leagueLevel >= 3 ? 1.72 : 1.46);
   }
 
   function simulateInternationalStats(player, appearances) {
@@ -6069,6 +6328,33 @@
     return clamp(chance, 0.08, 0.86);
   }
 
+  function buildRefereeScandalMoment(player, club, competitionStats) {
+    if (
+      player.refereeScandalSeen ||
+      !competitionStats ||
+      competitionStats.continentalName !== "欧冠" ||
+      competitionStats.continental < 4 ||
+      Math.random() >= 0.06
+    ) {
+      return null;
+    }
+
+    var opponent = pickEuropeanOpponent(club.id, 82);
+    if (!opponent) return null;
+
+    player.refereeScandalSeen = true;
+    var benefited = Math.random() < 0.28;
+    var fixture = getClubDisplayName(club) + " 对阵 " + getClubDisplayName(opponent);
+    return {
+      text: benefited
+        ? fixture + " 的欧冠淘汰赛出现连续争议判罚，球队在巨大质疑声中改变了比赛走势。这一夜多年后仍被对手球迷反复提起。"
+        : fixture + " 的欧冠淘汰赛被连续争议判罚彻底改变，这一夜成为俱乐部历史上的判罚惨案。",
+      effects: benefited
+        ? { reputation: -3, happiness: -2, coachRelation: 1 }
+        : { reputation: 1, happiness: -7, fitness: -3 }
+    };
+  }
+
   function buildBallonDorControversy(player, club, stats, trophies, seasonOutlook) {
     var previousControversies = (player.career || []).filter(function (season) {
       return Boolean(season.ballonDorControversy);
@@ -6221,7 +6507,7 @@
     if (club.leagueLevel === 1 && wonLeague && wonDomesticCup && wonChampionsLeague) {
       achievements.push("三冠王");
     }
-    if (leagueStanding && club.leagueLevel === 2 && leagueStanding.position <= 2) {
+    if (leagueStanding && club.leagueLevel >= 2 && leagueStanding.position <= 2) {
       achievements.push("直接升级");
     } else if (leagueStanding && club.leagueLevel === 2 && leagueStanding.status === "升级附加赛区") {
       achievements.push("升级附加赛资格");
@@ -6284,16 +6570,61 @@
     var playerImpact = clamp((player.overall - clubStrength) * 0.12, -1.5, 2.5) * participation;
     var teamPower = clubStrength + playerImpact;
     var competitionImpact = player.pendingSeasonCompetitionImpact || {};
-    var leagueRoll = teamPower + (competitionImpact.leaguePoints || 0) * 0.72 + randomInt(-12, 12);
-    var leagueStanding = simulateLeagueStanding(club, teamPower, leagueRoll);
-    if (competitionImpact.forceLeagueChampion) {
-      leagueStanding.position = 1;
-      leagueStanding.points = Math.max(
-        leagueStanding.points,
-        Math.round((LEAGUE_MATCH_COUNTS[club.league] || 34) * 2.18)
-      );
-      leagueStanding.status = "冠军";
+    var leagueTeams = window.CLUBS.filter(function (candidate) {
+      return candidate.league === club.league;
+    });
+    var configuredTeamCount = LEAGUE_TEAM_COUNTS[club.league] || leagueTeams.length;
+    if (leagueTeams.length > configuredTeamCount) {
+      leagueTeams = leagueTeams.filter(function (candidate) {
+        return candidate.id !== club.id;
+      }).sort(function (first, second) {
+        return Math.abs(getClubStrength(first) - clubStrength) -
+          Math.abs(getClubStrength(second) - clubStrength);
+      }).slice(0, Math.max(1, configuredTeamCount - 1));
+      leagueTeams.push(club);
     }
+    var fullLeagueSeason = window.LeagueSimulation && leagueTeams.length >= 2
+      ? window.LeagueSimulation.simulateFullLeagueSeason({
+          leagueId: club.league,
+          teams: leagueTeams,
+          player: player,
+          playerClubId: club.id,
+          seasonYear: player.seasonYear,
+          matches: LEAGUE_MATCH_COUNTS[club.league],
+          seasonStats: {
+            appearances: competitionStats ? competitionStats.league : stats.appearances,
+            leagueAvailable: competitionStats ? competitionStats.leagueAvailable : 34,
+            goals: stats.leagueGoals,
+            assists: stats.leagueAssists
+          },
+          playerClubPowerBonus: clamp((competitionImpact.leaguePoints || 0) * 0.28, -1.5, 2.5)
+        })
+      : null;
+    if (
+      fullLeagueSeason &&
+      competitionImpact.forceLeagueChampion &&
+      window.LeagueSimulation.forceClubChampion
+    ) {
+      window.LeagueSimulation.forceClubChampion(fullLeagueSeason, club.id);
+    }
+    var playerLeagueRow = fullLeagueSeason && fullLeagueSeason.table.find(function (row) {
+      return row.clubId === club.id;
+    });
+    var leagueStanding = playerLeagueRow
+      ? {
+          position: playerLeagueRow.position,
+          points: playerLeagueRow.points,
+          teamCount: fullLeagueSeason.table.length,
+          status: getLeagueStandingStatus(club, playerLeagueRow.position, fullLeagueSeason.table.length),
+          played: playerLeagueRow.played,
+          wins: playerLeagueRow.wins,
+          draws: playerLeagueRow.draws,
+          losses: playerLeagueRow.losses,
+          goalsFor: playerLeagueRow.goalsFor,
+          goalsAgainst: playerLeagueRow.goalsAgainst,
+          goalDifference: playerLeagueRow.goalDifference
+        }
+      : simulateLeagueStanding(club, teamPower, teamPower + randomInt(-12, 12));
     var leagueChampion = leagueStanding.position === 1;
     var topFinish = club.leagueLevel === 1
       ? leagueStanding.position <= Math.min(6, leagueStanding.teamCount)
@@ -6352,8 +6683,7 @@
       club.region === "欧洲" &&
       club.leagueLevel === 1 &&
       club.band === "练级队" &&
-      club.strength <= 76 &&
-      randomInt(1, 1000) <= 38
+      club.strength <= 76
     ) {
       specialStory = "你所在的 " + getClubDisplayName(club) + " 完成了震惊足坛的黑马夺冠，赛季开始前几乎没有人相信这一切会发生。";
     } else if (
@@ -6362,7 +6692,7 @@
       club.leagueLevel === 1 &&
       club.band === "强队" &&
       club.strength <= 82 &&
-      randomInt(1, 1000) <= 32
+      randomInt(1, 1000) <= 260
     ) {
       specialStory = getClubDisplayName(club) + " 击败多支传统豪门夺得联赛冠军，这座意外而珍贵的奖杯改变了俱乐部历史。";
     } else if (
@@ -6371,7 +6701,7 @@
       club.region === "欧洲" &&
       club.leagueLevel === 1 &&
       (club.band === "豪门" || teamPower >= 90) &&
-      randomInt(1, 1000) <= 28
+      randomInt(1, 1000) <= 180
     ) {
       specialStory = getClubDisplayName(club) + " 曾长期占据积分榜首位，却在冲刺阶段连续失分，最终被竞争对手完成逆转。";
     }
@@ -6383,6 +6713,7 @@
     return {
       leagueChampion: leagueChampion,
       leagueStanding: leagueStanding,
+      leagueSimulation: fullLeagueSeason,
       topFinish: topFinish,
       domesticCupWinner: domesticCupWinner,
       continentalChampion: continentalChampion,
@@ -6548,7 +6879,13 @@
   }
 
   function getLeagueStandingStatus(club, position, teamCount) {
-    if (position === 1) return club.leagueLevel === 2 ? "联赛冠军并直接升级" : "联赛冠军";
+    if (position === 1) return club.leagueLevel >= 2 ? "联赛冠军并直接升级" : "联赛冠军";
+    if (club.leagueLevel >= 3) {
+      if (position <= 2) return "直接升级";
+      if (position <= 6) return "升级附加赛区";
+      if (position > teamCount - 3) return "保级成功";
+      return position <= Math.ceil(teamCount / 2) ? "联赛上半区" : "联赛下半区";
+    }
     if (club.leagueLevel === 2) {
       if (position <= 2) return "直接升级";
       if (position <= (club.league === "EFL Championship" ? 6 : 3)) return "升级附加赛区";
@@ -6844,22 +7181,31 @@
     var leagueTitles = {
       "Premier League": "英超冠军",
       "EFL Championship": "英冠冠军",
+      "EFL League One": "英甲冠军",
       "LALIGA EA SPORTS": "西甲冠军",
       "LALIGA HYPERMOTION": "西乙冠军",
+      "Primera Federación": "西协甲冠军",
       "Bundesliga": "德甲冠军",
       "2. Bundesliga": "德乙冠军",
+      "3. Liga": "德丙冠军",
       "Serie A": "意甲冠军",
       "Serie BKT": "意乙冠军",
+      "Serie C": "意丙冠军",
       "Ligue 1 McDonald's": "法甲冠军",
       "Ligue 2 BKT": "法乙冠军",
+      "Championnat National": "法丙冠军",
       "J1 League": "日职联冠军",
       "J2 League": "日职乙冠军",
+      "J3 League": "日职丙冠军",
       "K League 1": "韩K1联冠军",
       "K League 2": "韩K2联冠军",
+      "K3 League": "韩国K3联赛冠军",
       "Chinese Super League": "中超冠军",
       "China League One": "中甲冠军",
+      "China League Two": "中乙冠军",
       "Saudi Pro League": "沙特联冠军",
       "Saudi First Division": "沙特甲冠军",
+      "Saudi Second Division": "沙特乙冠军",
       "Thai League 1": "泰超冠军",
       "Thai League 2": "泰甲冠军",
       "Malaysia Super League": "马来超冠军",
@@ -8634,13 +8980,28 @@
     if (competitionStats.injuryMatchesMissed) {
       parts.push("伤缺 " + competitionStats.injuryMatchesMissed + " 场");
     }
+    var europeanResult = competitionStats.continentalWorldResult;
+    if (europeanResult) {
+      var championClub = getClubById(europeanResult.championId);
+      var runnerUpClub = getClubById(europeanResult.runnerUpId);
+      parts.push(
+        competitionStats.continentalName + "冠军：" +
+        (championClub ? getClubDisplayName(championClub) : "待定") +
+        (runnerUpClub ? " · 决赛 " + europeanResult.finalScore + " " + getClubDisplayName(runnerUpClub) : "")
+      );
+    }
     var standing = summary.leagueStanding;
     var standingText = standing
       ? "联赛第 " + standing.position + "/" + standing.teamCount + " 名 · " +
         standing.points + " 分 · " + standing.status
       : "";
+    var recordText = standing && typeof standing.wins === "number"
+      ? standing.played + " 场 " + standing.wins + "胜" + standing.draws + "平" +
+        standing.losses + "负 · 进" + standing.goalsFor + "球 / 失" + standing.goalsAgainst + "球"
+      : "";
     return '<div class="competition-breakdown">' +
       (standingText ? '<span>赛季排名</span><b>' + standingText + '</b>' : '') +
+      (recordText ? '<b>' + recordText + '</b>' : '') +
       '<span>出场构成</span>' + parts.map(function (part) {
       return "<b>" + part + "</b>";
     }).join("") + "</div>";
@@ -8653,11 +9014,13 @@
       return competitionStats.continentalNotableWin || ("你随队赢得了" + competitionName + "冠军。");
     }
     if (competitionStats.continentalOpponent) {
-      return competitionName + competitionStats.continentalStage + "，对手是 " +
-        competitionStats.continentalOpponent + "。" +
+      return competitionName + "征程止步" +
+        competitionStats.continentalStage.replace("出局", "").replace("失利", "") + "，你们" +
+        (competitionStats.continentalScore || "负于 ") +
+        competitionStats.continentalOpponent + "；" +
         (competitionStats.continentalNotableWin
-          ? " 此前你们曾在" + competitionStats.continentalNotableWin.replace(competitionName, "") + "。"
-          : "");
+          ? "此前曾在" + competitionStats.continentalNotableWin.replace(competitionName, "") + "。"
+          : "这场失利结束了本赛季的欧战征程。");
     }
     if (competitionStats.continentalLeaguePosition) {
       return competitionName + "联赛阶段排名第 " +
@@ -8677,6 +9040,73 @@
       (competitionStats.domesticCupOpponent
         ? "，负于 " + competitionStats.domesticCupOpponent + "。"
         : "。");
+  }
+
+  function buildSeasonDefeatReason(player, club, stats, competitionStats, seasonOutlook) {
+    if (!competitionStats || !seasonOutlook) return "";
+
+    var competition = "";
+    var stage = "";
+    var opponentName = "";
+    var continentalStage = competitionStats.continentalStage || "";
+    var domesticStage = competitionStats.domesticCupStage || "";
+    var importantContinentalExit =
+      competitionStats.continentalName &&
+      /十六强出局|八强出局|半决赛出局|决赛失利/.test(continentalStage);
+    var importantDomesticExit = /半决赛出局|决赛失利/.test(domesticStage);
+
+    if (importantContinentalExit) {
+      competition = competitionStats.continentalName;
+      stage = continentalStage;
+      opponentName = competitionStats.continentalOpponent || "对手";
+    } else if (importantDomesticExit) {
+      competition = getCompetitionNames(club).domesticCup.replace("冠军", "");
+      stage = domesticStage;
+      opponentName = competitionStats.domesticCupOpponent || "对手";
+    } else if (
+      seasonOutlook.leagueStanding &&
+      seasonOutlook.leagueStanding.position === 2
+    ) {
+      competition = getLeagueDisplayName(club.league);
+      stage = "争冠冲刺";
+      var leagueOpponent = pickLeagueOpponent(club);
+      opponentName = leagueOpponent ? getClubDisplayName(leagueOpponent) : "争冠对手";
+    } else {
+      return null;
+    }
+
+    var playerWasKey = player.overall >= getClubStrength(club) - 3 && stats.appearances >= 22;
+    var reasons = [
+      "扳平球在补时阶段被 VAR 判定越位，" + getClubDisplayName(club) + " 最终没能改写结果。",
+      "球队在最后时刻被 " + opponentName + " 完成绝杀，整季努力停在了终场哨前。",
+      opponentName + " 的门将打出超神表现，连续化解必进球，让比赛始终无法被扳回来。",
+      "一次争议判罚改变了比赛走势，" + getClubDisplayName(club) + " 在持续围攻中仍未能追回比分。",
+      "球队领先后没能控制住节奏，" + opponentName + " 在下半场完成逆转。",
+      "决胜点球大战中球队罚失关键点球，最终以最残酷的方式告别赛事。"
+    ];
+
+    if (player.position === "GK") {
+      reasons.push(
+        "你完成了多次关键扑救，但防线在最后一次定位球中漏人，球队仍被 " + opponentName + " 淘汰。"
+      );
+    } else if (["CB", "LB", "RB"].indexOf(player.position) !== -1) {
+      reasons.push(
+        "球队大部分时间守住了压力，却在一次定位球二点争抢中失位，被 " + opponentName + " 抓住唯一机会。"
+      );
+    } else if (playerWasKey) {
+      reasons.push(
+        "你创造出了足够多的机会，但全队临门一脚连续失准，" + opponentName + " 将微弱优势守到了最后。"
+      );
+    }
+
+    return {
+      source: importantContinentalExit
+        ? "continental"
+        : importantDomesticExit
+        ? "domestic"
+        : "league",
+      text: competition + stage + "的转折点在于：" + pickOne(reasons)
+    };
   }
 
   function buildLeagueOutcomeStory(club, standing) {
@@ -8724,9 +9154,12 @@
     var importantMemory = getImportantSeasonMemory(summary);
     var campaignReview = [
       summary.leagueOutcomeStory,
+      summary.defeatReasonSource === "league" ? summary.defeatReason : "",
       summary.titleDroughtStory,
       summary.domesticCupStory,
-      summary.continentalStory
+      summary.defeatReasonSource === "domestic" ? summary.defeatReason : "",
+      summary.continentalStory,
+      summary.defeatReasonSource === "continental" ? summary.defeatReason : ""
     ].filter(Boolean).join(" ");
     return performance + production + "。" +
       (campaignReview ? '<span class="important-memory"><strong>赛季进程：</strong>' + campaignReview + "</span>" : "") +
@@ -9093,7 +9526,9 @@
   function findTrophyIcon(name) {
     var trophyImage = getTrophyImage(name);
     if (trophyImage) {
-      var visualClass = name === "世界杯冠军" || name === "足总杯冠军"
+      var visualClass = name === "世界杯冠军"
+        ? " trophy-visual-compact trophy-visual-world-cup"
+        : name === "足总杯冠军"
         ? " trophy-visual-compact"
         : "";
       return '<span class="trophy-visual' + visualClass + '"><span class="trophy-visual-fallback">🏆</span><img src="' +

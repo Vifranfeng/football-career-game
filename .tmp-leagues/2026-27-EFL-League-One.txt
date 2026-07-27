@@ -1,0 +1,1206 @@
+﻿{{Infobox football league season
+| image = 
+| competition = [[EFL League One]]
+| season = [[2026–27 in English football|2026–27]]
+| dates = 15 August 2026 - May 2027
+| prevseason = [[2025–26 EFL League One|2025–26]]
+| nextseason = 2027–28
+| updated = 25 June 2026
+}}
+The '''2026–27 EFL League One''', referred to as the '''[[Sky Betting & Gaming|Sky Bet]] League One''' due to sponsorship reasons, will be the 23rd season of the [[EFL League One]] under its current title, and the 35th season under its current league division format. The season will start between 14 and 16 August 2026, and end in late April/early May 2027.
+
+== Summary ==
+
+=== Pre-season managerial changes ===
+On 2 May 2026, it was announced that both [[Conor Hourihane]] and [[Gary Rowett]] would leave [[Barnsley F.C.|Barnsley]] and [[Leicester City F.C.|Leicester City]] respectively, at the end of their contracts with Hourihane being replaced by former [[Hannover 96 II]] manager [[Daniel Stendel]] on 12 May 2026 and Rowett being replaced by former [[Rangers F.C.|Rangers]] and [[Southampton F.C.|Southampton]] manager [[Russell Martin (footballer)|Russell Martin]] on 15 June 2026.<ref>{{Cite web |date=2026-04-18 |title=Conor Hourihane: Barnsley head coach to leave by mutual agreement |url=https://www.bbc.co.uk/sport/football/articles/cq8w13v9vyno |access-date=2026-06-29 |website=BBC Sport |language=en-GB}}</ref><ref>{{Cite web |title=Leicester City Statement: Gary Rowett & Callum Davidson |url=https://www.lcfc.com/media-article/leicester-city-statement-gary-rowett-and-callum-davidson |access-date=2026-06-29 |website=www.lcfc.com |language=en}}</ref><ref>{{Cite web |date=2026-05-12 |title=Daniel Stendel: Barnsley reappoint German as head coach |url=https://www.bbc.co.uk/sport/football/articles/cdxp5z8qj5do |access-date=2026-06-29 |website=BBC Sport |language=en-GB}}</ref><ref>{{Cite web |date=2026-06-15 |title=Russell Martin: Leicester City name ex-Rangers and Southampton boss as manager |url=https://www.bbc.co.uk/sport/football/articles/c0ly1k1e6pro |access-date=2026-06-29 |website=BBC Sport |language=en-GB}}</ref> On 11 May 2026, [[Huddersfield Town A.F.C.|Huddersfield Town]] announced that [[Liam Manning]] had left the club by mutual consent due to personal family reasons and Manning was replaced by interim manager [[Martin Drury]] on 27 May 2026.<ref>{{Cite web |date=2026-05-11 |title=Liam Manning: Huddersfield Town boss leaves club after period of compassionate leave |url=https://www.bbc.co.uk/sport/football/articles/cgepqj08gl8o |access-date=2026-06-29 |website=BBC Sport |language=en-GB}}</ref><ref>{{Cite web |date=2026-05-27 |title=Huddersfield Town: Martin Drury named new head coach |url=https://www.bbc.co.uk/sport/football/articles/cg7p4dp20eeo |access-date=2026-06-29 |website=BBC Sport |language=en-GB}}</ref> On 1 June 2026, [[Stockport County F.C.|Stockport County]] announced that [[Dave Challinor]] had left the club by mutual consent after losing the [[2026 EFL League One play-off final]] to [[Bolton Wanderers F.C.|Bolton Wanderers]] on 24 May 2026 at [[Wembley Stadium]] and Challinor was replaced by former [[Rochdale A.F.C.|Rochdale]] manager [[Jimmy McNulty (footballer)|Jimmy McNulty]] on 5 June 2026.<ref>{{Cite web |date=2026-06-01 |title=Dave Challinor: Stockport County manager leaves League One club |url=https://www.bbc.co.uk/sport/football/articles/ce3prl257ywo |access-date=2026-06-29 |website=BBC Sport |language=en-GB}}</ref><ref>{{Cite web |date=2026-06-05 |title=Jim McNulty: Stockport County appoint Rochdale boss as new manager |url=https://www.bbc.co.uk/sport/football/articles/cn8p8j4gn6xo |access-date=2026-06-29 |website=BBC Sport |language=en-GB}}</ref> On 20 June 2026, the first sacking of the new season occurred when [[Oxford United F.C.|Oxford United]] parted company with [[Matt Bloomfield]] following their relegation from the [[2025–26 EFL Championship|2025-26 EFL Championship]] and Bloomfield was replaced by former [[Cardiff City F.C.|Cardiff City]] caretaker manager, [[Arsenal F.C.|Arsenal]] and [[Wales national football team]] player [[Aaron Ramsey]] on 23 June 2026 for his first permanent managerial role.<ref>{{Cite web |date=2026-06-20 |title=Matt Bloomfield: Oxford United sack head coach |url=https://www.bbc.co.uk/sport/football/articles/cly8nq5ee11o |access-date=2026-06-29 |website=BBC Sport |language=en-GB}}</ref><ref>{{Cite web |date=2026-06-23 |title=Aaron Ramsey: Oxford United appoint ex-Arsenal midfielder as head coach |url=https://www.bbc.co.uk/sport/football/articles/cvg43gnlyzxo |access-date=2026-06-29 |website=BBC Sport |language=en-GB}}</ref>
+
+== Team changes ==
+The following teams have changed division since [[2025–26 in English football|the 2025–26 season]]:
+
+{{col-begin|width=auto}}
+{{col-2}}
+
+=== To League One ===
+
+''' Promoted from [[2025–26 EFL League Two|League Two]] '''
+* [[Bromley F.C.|Bromley]]
+* [[Milton Keynes Dons F.C.|Milton Keynes Dons]]
+* [[Cambridge United F.C.|Cambridge United]]
+* [[Notts County F.C.|Notts County]]
+''' Relegated from the [[2025–26 EFL Championship|Championship]] '''
+* [[Oxford United F.C.|Oxford United]]
+* [[Leicester City F.C.|Leicester City]]
+* [[Sheffield Wednesday F.C.|Sheffield Wednesday]]
+
+{{col-2}}
+
+=== From League One ===
+
+''' Promoted to the [[2026–27 EFL Championship|Championship]] '''
+* [[Lincoln City F.C.|Lincoln City]]
+* [[Cardiff City F.C.|Cardiff City]]
+* [[Bolton Wanderers F.C.|Bolton Wanderers]]
+''' Relegated to [[2026–27 EFL League Two|League Two]] '''
+* [[Exeter City F.C.|Exeter City]] 
+* [[Port Vale F.C.|Port Vale]]
+* [[Rotherham United F.C.|Rotherham United]] 
+* [[Northampton Town F.C.|Northampton Town]]
+
+{{col-end}}
+
+==Stadiums and locations==
+{{location map+|England|float=right|width=550|caption=Locations of the 2026–27 EFL League One teams|places=
+{{location map~ |England |lat=51.516 |long=-0.092 |label_size=80 |label={{background colour|white|[[Football in London|London]]}}|mark=Blue pog.svg |position=bottom}}
+{{location map~ |England |lat=53.522222|long=-1.46750 |label={{background colour|white|[[Barnsley F.C.|Barnsley]]}} |label_size=85 |position=left}}
+{{location map~ |England |lat=53.8049 |long=-3.0481 |label={{background colour|white|[[Blackpool F.C.|Blackpool]]}} |label_size=85 |position=left}}
+{{location map~ |England |lat=53.8036 |long=-1.7600 |label={{background colour|white|[[Bradford City A.F.C.|{{nowrap|Bradford<br>City}}]]}} |label_size=85 |position=top}}
+{{location map~ |England |lat=52.8216 |long=-1.6273 |label={{background colour|white|[[Burton Albion F.C.|{{nowrap|Burton Albion}}]]}} |label_size=85 |position=left}}
+{{location map~ |England |lat=52.2121 |long=0.1541 |label={{background color|white|[[Cambridge United F.C.|{{nowrap|Cambridge<br>United}}]]}} |label_size=85 |position=right}}
+{{location map~ |England |lat=53.5099 |long=-1.1158 |label={{background colour|white|{{nowrap|[[Doncaster Rovers F.C.|Doncaster Rovers]]}}}} |label_size=85 |position=right}}
+{{location map~ |England |lat=53.6543 |long=-1.7684 |label={{background colour|white|{{nowrap|[[Huddersfield Town A.F.C.|Huddersfield Town]]}}}} |label_size=85 |position=right}}
+{{location map~ |England |lat=52.62 |long=-1.142 |label={{background colour|white|[[Leicester City F.C.|Leicester City]]}} |label_size=85 |position=left}}
+{{location map~ |England |lat=51.8841 |long=-0.4316 |label={{background colour|white|[[Luton Town F.C.|{{nowrap|Luton Town}}]]}} |label_size=85 |position=let }}
+{{location map~ |England |lat=53.13826 |long=-1.20069 |label={{background colour|white|{{nowrap|[[Mansfield Town F.C.|Mansfield<br>Town]]}}}} |label_size=85 |position=left}}
+{{location map~ |England |lat=52.0097 |long=-0.7334 |label={{background color|white|[[Milton Keynes Dons F.C.|{{nowrap|Milton<br>Keynes<br>Dons}}]]}} |label_size=85 |position=top}}
+{{location map~ |England |lat=52.9426 |long=-1.1372 |label={{background color|white|[[Notts County F.C.|{{nowrap|Notts<br>County}}]]}} |label_size=85 |position=right}}
+{{location map~ |England |lat=51.716 |long=-1.208 |label={{background colour|white|{{nowrap|[[Oxford United F.C.|Oxford<br>United]]}}}} |label_size=85 |position=left}}
+{{location map~ |England |lat=52.5647 |long=-0.2402 |label={{background colour|white|[[Peterborough United F.C.|{{nowrap|Peterborough<br>United}}]]}} |label_size=85 |position=right}}
+{{location map~ |England |lat=50.3880 |long=-4.1508 |label={{background colour|white|[[Plymouth Argyle F.C.|{{nowrap|Plymouth<br>Argyle}}]]}} |label_size=85 |position=left}}
+{{location map~ |England |lat=51.4224 |long=-0.9826 |label={{background colour|white|[[Reading F.C.|Reading]]}} |label_size=85 |position=left}}
+{{location map~ |England |lat=53.411 |long=-1.5 |label={{background colour|white|{{nowrap|[[Sheffield Wednesday F.C.|Sheffield Wednesday]]}}}} |label_size=85 |position=bottom}}
+{{location map~ |England |lat=53.4083 |long=-2.1494 |label={{background colour|white|{{nowrap|[[Stockport County F.C.|Stockport County]]}}}} |label_size=85 |position=left}}
+{{location map~ |England |lat=51.89000 |long=-0.19361 |label={{background colour|white|[[Stevenage F.C.|Stevenage]]}} |label_size=85 |position=right}}
+{{location map~ |England |lat=53.547778 |long=-2.653889 |label={{background colour|white|[[Wigan Athletic F.C.|{{nowrap|Wigan Athletic}}]]}} |label_size=85 |position=left}}
+{{location map~ |England |lat=51.6286 |long=-0.7482 |label={{background colour|white|{{nowrap|[[Wycombe Wanderers F.C.|Wycombe Wanderers]]}}}} |label_size=85 |position=right}}
+{{Location map~ |England |mark=TransparentPlaceholder.png |marksize=1 |lat=55.7 |long=-.7 |label_size=85|label='''{{nowrap|[[Football in London|London]] teams:}}'''<br/>
+{{nowrap|[[AFC Wimbledon]]}}<br>
+[[Bromley F.C.|Bromley]]<br>
+[[Leyton Orient F.C.|Leyton Orient]]
+|position=right}}
+}}
+
+{{Location map+|Greater London
+|width=400
+|float=right
+|caption=Greater London EFL League One football clubs
+|alt=Greater London EFL League One football clubs
+|places=
+{{location map~ |Greater London |lat=51.422 |long=-0.208 |mark=Blue 000080 pog.svg |label_size=80 |label={{background colour|white|[[AFC Wimbledon]]}} |position=right}}
+{{location map~ |Greater London |lat=51.3901 |long=0.0211 |mark=Blue 000080 pog.svg |label_size=80 |label={{background colour|white|[[Bromley F.C.|Bromley]]}} |position=right}}
+{{location map~ |Greater London |lat=51.5602 |long=-0.0127 |mark=Blue 000080 pog.svg |label_size=80 |label={{background colour|white|[[Leyton Orient F.C.|Leyton Orient]]}} |position=right}}
+}}
+
+<!-- Use the same name as the article name. Only use sponsored names where there is no alternative. PLEASE don't forget to Change also data-sort-value for Sorting! -->
+:''Note: Table lists in alphabetical order.''
+{| class="wikitable sortable"
+! Team
+! Location
+! Stadium
+! Capacity
+|-
+| [[AFC Wimbledon|AFC Wimbledon]]
+| [[London]] {{small|([[Wimbledon, London|Wimbledon]])}}
+| [[Plough Lane]]
+| align="center" | 9,215
+|-
+| [[Barnsley F.C.|Barnsley]]
+| [[Barnsley]]
+| [[Oakwell]]
+| align="center" | 23,287
+|-
+| [[Blackpool F.C.|Blackpool]]
+| [[Blackpool]]
+| [[Bloomfield Road]]
+| align="center" | 16,500
+|-
+| [[Bradford City A.F.C.|Bradford City]]
+| [[Bradford]]
+| [[Valley Parade]]
+| align="center" | 24,840
+|-
+| [[Bromley F.C.|Bromley]]
+| [[London]] {{small|([[Bromley]])}}
+| [[Hayes Lane]]
+| align="center" | 6,100
+|-
+| [[Burton Albion F.C.|Burton Albion]]
+| [[Burton upon Trent]]
+| [[Pirelli Stadium]]
+| align="center" | 6,912
+|-
+| [[Cambridge United F.C.|Cambridge United]]
+| [[Cambridge]]
+| [[Abbey Stadium]]
+| align="center" | 7,937
+|-
+| [[Doncaster Rovers F.C.|Doncaster Rovers]]
+| [[Doncaster]]
+| [[Eco-Power Stadium]]
+| align="center" | 15,231
+|-
+| [[Huddersfield Town A.F.C.|Huddersfield Town]]
+| [[Huddersfield]]
+| [[Kirklees Stadium]]
+| align="center" | 24,121
+|-
+| [[Leicester City F.C.|Leicester City]]
+| [[Leicester]]
+| [[King Power Stadium]]
+| align="center" | 32,259
+|-
+| [[Leyton Orient F.C.|Leyton Orient]]
+| [[London]] {{small|([[Leyton]])}}
+| [[Brisbane Road]]
+| align="center" | 9,271
+|-
+| [[Luton Town F.C.|Luton Town]]
+| [[Luton]]
+| [[Kenilworth Road]]
+| align="center" | 12,056
+|-
+| [[Mansfield Town F.C.|Mansfield Town]]
+| [[Mansfield]]
+| [[Field Mill]]
+| align="center" | 10,022
+|-
+| [[Milton Keynes Dons F.C.|Milton Keynes Dons]]
+| [[Milton Keynes]] 
+| [[Stadium MK]]
+| align="center" | 30,500
+|-
+| [[Notts County F.C.|Notts County]]
+| [[Nottingham]]
+| [[Meadow Lane]]
+| align="center" | 19,841
+|-
+| [[Oxford United F.C.|Oxford United]]
+| [[Oxford]]
+| [[Kassam Stadium]]
+| align="center" | 12,500
+|-
+| [[Peterborough United F.C.|Peterborough United]]
+| [[Peterborough]]
+| [[London Road Stadium]]
+| align="center" | 15,314
+|-
+| [[Plymouth Argyle F.C.|Plymouth Argyle]]
+| [[Plymouth]]
+| [[Home Park]]
+| align="center" | 17,900
+|-
+| [[Reading F.C.|Reading]]
+| [[Reading, Berkshire|Reading]] 
+| [[Madejski Stadium]]
+| align="center" | 24,161
+|-
+| [[Sheffield Wednesday F.C.|Sheffield Wednesday]]
+| [[Sheffield]] {{small|([[Hillsborough, Sheffield|Hillsborough]])}}
+| [[Hillsborough Stadium]]
+| align="center" | 39,732
+|-
+| [[Stevenage F.C.|Stevenage]]
+| [[Stevenage]]
+| [[Broadhall Way]]
+| align="center" | 7,318
+|-
+| [[Stockport County F.C.|Stockport County]]
+| [[Stockport]] {{small|([[Edgeley]])}}
+| [[Edgeley Park]]
+| align="center" | 10,852
+|-
+| [[Wigan Athletic F.C.|Wigan Athletic]]
+| [[Wigan]]
+| [[Brick Community Stadium]]
+| align="center" | 25,138
+|-
+| [[Wycombe Wanderers F.C.|Wycombe Wanderers]]
+| [[High Wycombe]]
+| [[Adams Park]]
+| align="center" | 10,446
+|}
+{{clear}}
+
+== Personnel and sponsoring ==<!--PLEASE don't forget to CHANGE also data-sort-value for SORTING!-->
+{| class="wikitable sortable" style="text-align: left;"
+! Team
+! Manager
+! Captain
+! Kit manufacturer
+! Shirt sponsor (chest)
+! Shirt sponsor (back)
+! Shirt sponsor (sleeve)
+! Shorts sponsor
+|-
+| [[AFC Wimbledon|AFC Wimbledon]]
+| {{flagicon|ENG}} [[Johnnie Jackson]]
+| {{flagicon|ENG}} [[Jake Reeves]]
+| {{flagicon|ITA}} [[Lotto Sport Italia|Lotto]]
+| [[Football Manager]] (H) World Within (A) [[War Child (charity)|War Child]] (T) 
+| Togglit
+| Silvermere Golf Store
+| [[DFTBA]]
+|-
+| [[Barnsley F.C.|Barnsley]]
+| {{flagicon|GER}} [[Daniel Stendel]]
+| {{flagicon|IRL}} [[Luca Connell]]
+| {{flagicon|ENG}} Oxen
+| TheInvestmentRoom (H) Rapid Response Telecoms (A) (T)
+| NParliament
+| Weston Park Cancer Charity
+| TheInvestmentRoom
+|-
+| [[Blackpool F.C.|Blackpool]]
+| {{flagicon|ENG}} [[Ian Evatt]]
+| {{flagicon|ENG}} [[James Husband (footballer)|James Husband]]
+| {{flagicon|GER}} [[Puma (brand)|Puma]]
+| TreadTracker.com (H) Pleasure Beach Resort (A)
+| Visit Blackpool
+| None
+| None 
+|-
+| [[Bradford City A.F.C.|Bradford City]]
+| {{flagicon|SCO}} [[Graham Alexander]]
+| {{flagicon|ENG}} [[Max Power (footballer)|Max Power]]
+| {{flagicon|ITA}} [[Macron (sportswear)|Macron]]
+| [[JCT600]]
+| [[University of Bradford]]
+| [[Flamingo Land Resort|Flamingo Land]]/Penny Appeal (in league cup matches)
+| Regal Foods
+|-
+| [[Bromley F.C.|Bromley]]
+| {{flagicon|ENG}} [[Andy Woodman]]
+| TBC
+| {{flagicon|ITA}} [[Macron (sportswear)|Macron]]
+| LSP Renewables
+| Blue Security Systems 
+| Brownhill Insurance Group 
+| Bromley Signs 
+|-
+| [[Burton Albion F.C.|Burton Albion]]
+| {{flagicon|ENG}} [[Gary Bowyer]]
+| {{flagicon|ENG}} [[Udoka Godwin-Malife]]
+| {{flagicon|ENG}} [[Admiral Sportswear|Admiral]]
+| Burton Kia
+| The Hill Group
+| Fora
+| Alan Boswell Group
+|-
+| [[Cambridge United F.C.|Cambridge United]]
+| {{flagicon|ENG}} [[Neil Harris (footballer, born 1977)|Neil Harris]]
+| {{flagicon|ENG}} [[Michael Morrison (footballer)|Michael Morrison]]
+| {{flagicon|ENG}} [[Umbro]]
+|[[Brooks Sports|Brooks]]
+| Russell Roof Tiles
+| Home and Trade
+| Hardy Sign
+|-
+| [[Doncaster Rovers F.C.|Doncaster Rovers]]
+| {{flagicon|NIR}} [[Grant McCann]]
+| {{flagicon|ENG}} [[Owen Bailey]]
+| {{flagicon|ENG}} Oxen
+| Eco-Power Group
+| [[Stoneacre Motor Group]]
+| MF Hire
+| IPM Group
+|-
+| [[Huddersfield Town A.F.C.|Huddersfield Town]]
+| {{flagicon|ENG}} [[Martin Drury]]
+| {{flagicon|ENG}} [[Ryan Ledson]]
+| {{flagicon|ENG}} [[Castore]]
+| HEYDUDE
+| [[Utilita Energy|Utilita]]
+| Core Facility Services
+| None
+|-
+| [[Leicester City F.C.|Leicester City]]
+| {{flagicon|SCO}} [[Russell Martin (footballer)|Russell Martin]]
+| TBC
+| {{flagicon|GER}} [[Adidas]]
+| [[TGP Europe|BC.GAME]]
+| None
+| [[Sabeco Brewery|Bia Saigon]]
+| None
+|-
+| [[Leyton Orient F.C.|Leyton Orient]]
+| {{flagicon|ENG}} [[Richie Wellens]]
+| {{flagicon|ENG}} [[Will Forrester]]
+| {{flagicon|ESP}} [[Meyba]]
+| Eastdil Secured
+| [[Moore Kingston Smith]]
+| Easy Heat Pumps
+| Nicholsons Chartered Accountants
+|-
+| [[Luton Town F.C.|Luton Town]]
+| {{flagicon|ENG}} [[Jack Wilshere]]
+| {{flagicon|SCO}} [[Kal Naismith]]
+| {{flagicon|ENG}} [[Reflo]]
+| Capital Sky
+| [[Utilita Energy|Utilita]]
+| Switchshop
+| None
+|-
+| [[Mansfield Town F.C.|Mansfield Town]]
+| {{flagicon|ENG}} [[Nigel Clough]]
+| {{flagicon|IRL}} [[Ryan Sweeney (footballer)|Ryan Sweeney]]
+| {{flagicon|ITA}} [[Errea]]<ref>{{Cite web |title=Mansfield Town announce new kit partner |url=https://www.mansfieldtown.net/news/2025/june/30/mansfield-town-announce-new-kit-partner/ |access-date=2025-07-06 |website=www.mansfieldtown.net}}</ref>
+| One Call Insurance (H) OCL Solicitors (A) BeeNoticed (T)
+| A. Wass Funeral Directors (H) AGG Electrical Safety Testing (A)
+| Source Travel<ref>{{cite web |date=8 August 2024 |title=Source Travel become official travel partner |url=https://www.mansfieldtown.net/news/2024/august/08/source-travel-become-sleeve-sponsor-and-official-travel-partner/ |access-date=7 October 2024 |publisher=Mansfield Town F.C.}}</ref> (H)
+| A Woodland & Son
+|-
+| [[Milton Keynes Dons F.C.|Milton Keynes Dons]]
+| {{flagicon|ENG}} [[Paul Warne]]
+| {{flagicon|ENG}} [[Alex Gilbey]]
+| {{flagicon|USA}} [[Reebok]]
+| None
+| None
+| Visit Kuwait
+| None
+|-
+| [[Notts County F.C.|Notts County]]
+| {{flagicon|NIR}} [[Martin Paterson]]
+| {{flagicon|ENG}} [[Matt Palmer (footballer)|Matthew Palmer]]
+| {{flagicon|GER}} [[Puma (brand)|Puma]]<ref>{{cite web |title=Partner: PUMA|url=https://www.nottscountyfc.co.uk/news/2023/june/puma-partnership-extended-090623/ |date=9 June 2023 |access-date=16 April 2024 |publisher=Notts County F.C.}}</ref>
+| John Pye Auctions (H)<ref>{{cite web |title=Extension: John Pye|url=https://www.nottscountyfc.co.uk/news/2024/february/john-pye-partnership-extension-080224/ |date=8 February 2024 |access-date=16 April 2024 |publisher=Notts County F.C.}}</ref> [[University of Nottingham]] (A)
+| John Pye Auctions (H) Swan Homes (A)
+| WorkBox UK
+| ''None''
+|-
+| [[Oxford United F.C.|Oxford United]]
+| {{flagicon|WAL}} [[Aaron Ramsey]]
+| {{flagicon|ENG}} [[Cameron Brannagan]]
+| {{flagicon|ITA}} [[Macron (sportswear)|Macron]]
+| [[Baxi]]
+| None
+| Caprinos Pizza
+| None
+|-
+| [[Peterborough United F.C.|Peterborough United]]
+| {{flagicon|ENG}} [[Luke Williams (football manager)|Luke Williams]]
+| {{flagicon|ENG}} [[Sam Hughes (footballer)|Sam Hughes]]
+| {{flagicon|GER}} [[Puma (brand)|Puma]]
+| Mick George
+| Princebuild
+| NextLevel Fibreoptics
+| Kings Power Solutions
+|-
+| [[Plymouth Argyle F.C.|Plymouth Argyle]]
+| {{flagicon|ENG}} [[Tom Cleverley]]
+| {{flagicon|ENG}} [[Joe Edwards (footballer, born 1990)|Joe Edwards]]
+| {{flagicon|GER}} [[Puma (brand)|Puma]]
+| Classic Builders
+| Project 35
+| [[Vertu Motors]]
+| Retain Limited
+|-
+| [[Reading F.C.|Reading]]
+| {{flagicon|ENG}} [[Leam Richardson]]
+| {{flagicon|ENG}} [[Lewis Wing]]
+| {{flagicon|ITA}} [[Macron (sportswear)|Macron]]
+| Select Car Leasing
+| [[Village Hotel Club]]
+| [[Barracuda Networks]]
+| CRL Fire & Flood Damage
+|-
+| [[Sheffield Wednesday F.C.|Sheffield Wednesday]]
+| {{flagicon|DEN}} [[Henrik Pedersen (football manager)|Henrik Pedersen]]
+| {{flagicon|SCO}} [[Liam Palmer]]
+| {{flagicon|ENG}} [[Umbro]]<ref>{{cite news |title=SWFC x Umbro |url=https://www.swfc.co.uk/news/2026/june/30/swfc-x-umbro/|access-date=30 June 2026 |publisher=Sheffield Wednesday FC |date=30 June 2026}}</ref>
+| Fibrely<ref>{{cite news |title=Fibrly named front of shirt partner |url=https://www.swfc.co.uk/news/2026/july/08/fibrely-named-front-of-shirt-partner/|access-date=8 July 2026 |publisher=Sheffield Wednesday FC |date=8 July 2026}}</ref>
+| None
+| Wolf Competitions<ref>{{cite news |title=New partnership Wolf Competitions |url=https://www.swfc.co.uk/news/2026/july/08/new-partnership--wolf-competitions/|access-date=8 July 2026 |publisher=Sheffield Wednesday FC |date=8 July 2026}}</ref>
+
+| None
+|-
+| [[Stevenage F.C.|Stevenage]]
+| {{flagicon|ENG}} [[Alex Revell]]
+| {{flagicon|ENG}} [[Carl Piergianni]]
+| {{flagicon|GER}} [[Puma (brand)|Puma]]<ref>https://www.stevenagefc.com/news/2026/june/26/stevenage-fc-announce-new-kit-partnership/</ref>
+| [[Xsolla]]
+| HG Group
+| [[Sports and Leisure Management|Everyone Active]]
+| Perfect Pet Insurance
+|-
+| [[Stockport County F.C.|Stockport County]]
+| {{flagicon|SCO}} [[Jimmy McNulty (footballer)|Jimmy McNulty]]
+| {{flagicon|ENG}} [[Lewis Bate]]
+| {{flagicon|GER}} [[Puma (brand)|Puma]] 
+| VITA
+| None
+| None
+| None
+|-
+| [[Wigan Athletic F.C.|Wigan Athletic]]
+| {{flagicon|SCO}} [[Gary Caldwell]]
+| {{flagicon|SCO}} [[Jason Kerr (footballer)|Jason Kerr]]<ref>{{Cite press release |url=https://wiganathletic.com/news/2024/august/07/jason-kerr-appointed-as-wigan-athletic-captain-/ |title=Jason Kerr appointed as Wigan Athletic captain! |publisher=Wigan Athletic Football Club |location=[[Wigan]] |date=2024-08-07 |access-date=2024-08-11 }}</ref>
+| {{flagicon|IRL}} [[O'Neills|O'Neills]]<ref>https://wiganathletic.com/news/2026/april/01/o-neills-to-become-clubs-official-kit-supplier/</ref>
+| [[Smurfit Kappa|Smurfit Westrock]]<ref>{{Cite press release |date=2023-08-05 |title=Wigan Athletic and Smurfit Kappa agree three-year Principal Partner and Front of Shirt Sponsorship! |url=https://wiganathletic.com/news/2023/august/05/wigan-athletic-and-smurfit-kappa-agree-three-year-principal-partner-and-front-of-shirt-sponsorship--/ |access-date=2023-11-19 |publisher=Wigan Athletic Football Club|location=[[Wigan]]}}</ref>
+| Greenmount Projects
+| ''None''
+| ''None''
+|-
+| [[Wycombe Wanderers F.C.|Wycombe Wanderers]]
+| {{flagicon|NIR}} [[Michael Duff (footballer)|Michael Duff]]<ref name=":0">{{Cite web |last=Wanderers |first=Wycombe |date=2025-09-18 |title=Michael Duff appointed new Head Coach |url=https://www.wwfc.com/news/2025/september/18/michael-duff-appointed-new-head-coach/ |access-date=2025-09-18 |website=Wycombe Wanderers}}</ref>
+| {{flagicon|SCO}} [[Jack Grimmer]]<ref>{{Cite web |last=Wanderers |first=Wycombe |date=4 July 2024 |title=Jack Grimmer Appointed Club Captain of Wycombe Wanderers |url=https://www.wwfc.com/news/2024/july/04/jack-grimmer-appointed-club-captain-of-wycombe-wanderers/ |access-date=2024-07-04 |website=Wycombe Wanderers}}</ref>
+| {{flagicon|DEN}} [[Hummel International|Hummel]]<ref>{{Cite press release |date=2023-06-01 |title=It's hummel! |url=https://www.wwfc.com/news/2023/june/01/its-hummel/ |access-date=2023-06-01 |publisher=Wycombe Wanderers Football Club|location=[[High Wycombe]]}}</ref>
+| Origin Doors and Windows
+| [[Buckinghamshire New University]]
+| Kress
+| [[Cherry Red Records]]
+|}
+
+== Managerial changes ==
+{| class="wikitable sortable"
+!Team
+!Outgoing manager
+!Manner of departure
+!Date of vacancy
+!Position in the table
+!Incoming manager
+!Date of appointment
+|-
+|[[Barnsley F.C.|Barnsley]]
+|{{flagicon|IRL}} [[Conor Hourihane]]<ref>{{cite web|url=https://www.barnsleyfc.co.uk/news/2026/april/18/club-statement---conor-hourihane/|title=Club Statement {{!}} Conor Hourihane|website=www.barnsleyfc.co.uk|date=18 April 2026|accessdate=18 April 2026}}</ref>
+|Mutual consent
+| rowspan="2" |2 May 2026
+| rowspan="5" |''Pre-season''
+|{{flagicon|GER}} [[Daniel Stendel]]<ref>{{Cite web |title=Daniel Stendel Returns to Barnsley FC: Promotion-Winning Head Coach Rejoins the  Reds on Two-Year Deal |url=https://www.barnsleyfc.co.uk/news/2026/may/12/daniel-stendel-returns-to-barnsley-fc--promotion-winning-head-coach-rejoins-the-reds-on-two-year-deal/ |access-date=12 May 2026 |website=www.barnsleyfc.co.uk}}</ref>
+|12 May 2026
+|-
+|[[Leicester City F.C.|Leicester City]]
+|{{flagicon|ENG}} [[Gary Rowett]]<ref>{{cite web|url=https://www.lcfc.com/media-article/gary-rowett-leicester-city-new-manager-lcfc-press-release|title=Gary Rowett: Leicester City Appoint New Manager Until The End Of The Season|website=www.lcfc.com|date=18 February 2026|accessdate=6 June 2026}}</ref>
+|End of contract
+|{{flagicon|SCO}} [[Russell Martin (footballer)|Russell Martin]]<ref>{{Cite web |title=Russell Martin Appointed Leicester City First Team Manager |url=https://www.lcfc.com/media-article/russell-martin-appointed-leicester-city-first-team-manager-lcfc-press-release |access-date=15 June 2026 |website=lcfc.com |date=15 June 2026}}</ref>
+|15 June 2026
+|-
+|[[Huddersfield Town A.F.C.|Huddersfield Town]]
+|{{flagicon|ENG}} [[Liam Manning]]<ref>{{Cite web |date=11 May 2026 |title=Club Statement: Liam Manning |url=https://www.htafc.com/news/2026/may/11/club-statement--liam-manning/ |access-date=11 May 2026 |website=htafc.com}}</ref>
+| rowspan="2" |Mutual consent
+|11 May 2026
+|{{flagicon|ENG}} [[Martin Drury]]<ref>{{Cite web |date=27 May 2026 |title=Martin Drury Appointed Men's First Team Head Coach |url=https://www.htafc.com/news/2026/may/27/martin-drury-appointed-men-s-first-team-head-coach/|access-date=27 May 2026 |website=htafc.com}}</ref>
+|27 May 2026
+|-
+|[[Stockport County F.C.|Stockport County]]
+|{{flagicon|ENG}} [[Dave Challinor]]<ref>{{Cite web |date=1 June 2026 |title=Club Statement: Dave Challinor |url=https://www.stockportcounty.com/news/2026/june/01/club-statement--dave-challinor/?utm_source=X&utm_medium=OrganicSocial&utm_campaign=dave_challinor_departs |access-date=1 June 2026 |website=stockportcounty.com}}</ref>
+|1 June 2026
+|{{flagicon|SCO}} [[Jimmy McNulty (footballer)|Jimmy McNulty]]<ref>{{Cite web |date=5 June 2026 |title=Jimmy McNulty appointed as new Head Coach |url=https://www.stockportcounty.com/news/2026/june/05/jimmy-mcnulty-appointed-as-new-head-coach/ |access-date=5 June 2026 |website=stockportcounty.com}}</ref>
+|5 June 2026
+|-
+|[[Oxford United F.C.|Oxford United]]
+|{{flagicon|ENG}} [[Matt Bloomfield]]<ref>{{Cite web |date=20 June 2026 |title=Club Statement: Matt Bloomfield |url=https://www.oufc.co.uk/news/club-statement-matt-bloomfield |access-date=20 June 2026 |website=oufc.co.uk}}</ref>
+|Sacked
+|20 June 2026
+|{{flagicon|WAL}} [[Aaron Ramsey]]<ref>{{Cite web |date=23 June 2026 |title=Oxford United Appoint Aaron Ramsey |url=https://www.oufc.co.uk/news/oxford-united-appoint-aaron-ramsey |access-date=23 June 2026 |website=oufc.co.uk}}</ref>
+|23 June 2026
+|}
+<references group="lower-alpha" responsive="1"></references>
+
+== League table ==
+<onlyinclude>{{#invoke:Sports table|main|style=WDL
+|source=[https://www.efl.com/competitions/efl-league-one EFL Official Website]
+<!--Update team qualifications here (defined below)-->
+|result1=PL |result2=PL |result3=POSF |result4=POSF |result5=POSF |result6=POSF |result21=REL |result22=REL |result23=REL |result24=REL
+
+<!--Team definitions (wikilinks in table)-->
+|team_order = WIM, BAR, BLP, BRA, BRO, BUR, CAM, DON, HUD, LEI, LEY, LUT, MAN, MKD, NCO, OXF, PET, PLY, REA, SHW, STE, STP, WIG, WYC,
+
+<!--Update team results here and then (if needed) positions above. Don't forget to update the date (update parameter).-->
+|update=future|start_date=August 2026
+|win_WIM=0|draw_WIM=0|loss_WIM=0|gf_WIM=0|ga_WIM=0 <!-- AFC Wimbledon-->
+|win_BAR=0|draw_BAR=0|loss_BAR=0|gf_BAR=0|ga_BAR=0 <!-- Barnsley-->
+|win_BLP=0|draw_BLP=0|loss_BLP=0|gf_BLP=0|ga_BLP=0 <!-- Blackpool-->
+|win_BRA=0|draw_BRA=0|loss_BRA=0|gf_BRA=0|ga_BRA=0 <!-- Bradford City-->
+|win_BRO=0|draw_BRO=0|loss_BRO=0|gf_BRO=0|ga_BRO=0 <!-- Bromley-->
+|win_BUR=0|draw_BUR=0|loss_BUR=0|gf_BUR=0|ga_BUR=0 <!-- Burton Albion-->
+|win_DON=0|draw_DON=0|loss_DON=0|gf_DON=0|ga_DON=0 <!-- Doncaster Rovers-->
+|win_HUD=0|draw_HUD=0|loss_HUD=0|gf_HUD=0|ga_HUD=0 <!-- Huddersfield Town-->
+|win_LEI=0|draw_LEI=0|loss_LEI=0|gf_LEI=0|ga_LEI=0 <!-- Leicester City-->
+|win_LEY=0|draw_LEY=0|loss_LEY=0|gf_LEY=0|ga_LEY=0 <!-- Leyton Orient-->
+|win_LUT=0|draw_LUT=0|loss_LUT=0|gf_LUT=0|ga_LUT=0 <!-- Luton Town-->
+|win_MAN=0|draw_MAN=0|loss_MAN=0|gf_MAN=0|ga_MAN=0 <!-- Mansfield Town-->
+|win_MKD=0|draw_MKD=0|loss_MKD=0|gf_MKD=0|ga_MKD=0 <!-- Milton Keynes Dons-->
+|win_NCO=0|draw_NCO=0|loss_NCO=0|gf_NCO=0|ga_NCO=0 <!-- Notts County-->
+|win_OXF=0|draw_OXF=0|loss_OXF=0|gf_OXF=0|ga_OXF=0 <!-- Oxford United-->
+|win_PET=0|draw_PET=0|loss_PET=0|gf_PET=0|ga_PET=0 <!-- Peterborough United-->
+|win_PLY=0|draw_PLY=0|loss_PLY=0|gf_PLY=0|ga_PLY=0 <!-- Plymouth Argyle-->
+|win_REA=0|draw_REA=0|loss_REA=0|gf_REA=0|ga_REA=0 <!-- Reading-->
+|win_SHW=0|draw_SHW=0|loss_SHW=0|gf_SHW=0|ga_SHW=0 <!-- Sheffield Wednesday-->
+|win_STE=0|draw_STE=0|loss_STE=0|gf_STE=0|ga_STE=0 <!-- Stevenage-->
+|win_STP=0|draw_STP=0|loss_STP=0|gf_STP=0|ga_STP=0 <!-- Stockport County-->
+|win_WIG=0|draw_WIG=0|loss_WIG=0|gf_WIG=0|ga_WIG=0 <!-- Wigan Athletic-->
+|win_WYC=0|draw_WYC=0|loss_WYC=0|gf_WYC=0|ga_WYC=0 <!-- Wycombe Wanderers-->
+
+|status_text_X=Assured of at least a play-off round, but may yet be promoted automatically. 
+
+
+
+<!--Team definitions (wikilinks in table)-->
+| name_WIM = [[AFC Wimbledon]]
+| name_BAR = [[Barnsley F.C.|Barnsley]]
+| name_BLP = [[Blackpool F.C.|Blackpool]]
+| name_BRA = [[Bradford City A.F.C.|Bradford City]]
+| name_BRO = [[Bromley F.C.|Bromley]]
+| name_BUR = [[Burton Albion F.C.|Burton Albion]]
+| name_CAM = [[Cambridge United F.C.|Cambridge United]]
+| name_DON = [[Doncaster Rovers F.C.|Doncaster Rovers]]
+| name_HUD = [[Huddersfield Town A.F.C.|Huddersfield Town]]
+| name_LEI = [[Leicester City F.C.|Leicester City]]
+| name_LEY = [[Leyton Orient F.C.|Leyton Orient]]
+| name_LUT = [[Luton Town F.C.|Luton Town]]
+| name_MAN = [[Mansfield Town F.C.|Mansfield Town]]
+| name_MKD = [[Milton Keynes Dons F.C.|Milton Keynes Dons]]
+| name_NCO = [[Notts County F.C.|Notts County]]
+| name_OXF = [[Oxford United F.C.|Oxford United]]
+| name_PET = [[Peterborough United F.C.|Peterborough United]]
+| name_PLY = [[Plymouth Argyle F.C.|Plymouth Argyle]]
+| name_REA = [[Reading F.C.|Reading]]
+| name_SHW = [[Sheffield Wednesday F.C.|Sheffield Wednesday]]
+| name_STE = [[Stevenage F.C.|Stevenage]]
+| name_STP = [[Stockport County F.C.|Stockport County]]
+| name_WIG = [[Wigan Athletic F.C.|Wigan Athletic]]
+| name_WYC = [[Wycombe Wanderers F.C.|Wycombe Wanderers]]
+
+<!--Table settings and rules-->
+|show_limit=5
+|class_rules = 1) Points; 2) Goal difference; 3) Number of goals scored; 4) Head-to-head results; 5) Wins; 6) Away goals; 7) Penalty points (sec 9.5); 8) 12-point sending off offences<ref name="EFL Regulations23-24">{{Cite web |title=Section 3 - The League |url=https://www.efl.com/-more/governance/efl-rules--regulations/efl-regulations/section-3-the-league/ |archive-url=https://web.archive.org/web/20211019113156/https://www.efl.com/-more/governance/efl-rules--regulations/efl-regulations/section-3-the-league/ |archive-date=19 October 2021 |access-date=31 May 2026 |website=EFL Official Website |at=subsection 9 – Method of Determining League Positions |language=en-gb}}</ref>
+
+<!--Qualification and relegation column definitions-->
+|res_col_header=PQR
+|col_PL=green1   |text_PL=Promotion to [[EFL Championship]]
+|col_POSF=yellow1|text_POSF=Qualification for League One play-offs
+|col_REL=red1    |text_REL=Relegation to [[EFL League Two]]
+}}</onlyinclude>
+
+==Results==
+{{#invoke:sports results|main
+| source = [https://www.bbc.co.uk/sport/football/league-one/table BBC Sport]
+| update        = 19 April 2026
+| a_note        = yes
+| matches_style = FBR
+
+|team1=WIM |team2=BAR |team3=BLP |team4=BRA |team5=BRO |team6=BUR |team7=CAM |team8=DON |team9=HUD |team10=LEI |team11=LEY |team12=LUT |team13=MAN |team14=MKD |team15=NCO |team16=OXF |team17=PET |team18=PLY |team19=REA |team20=SHW |team21=STE |team22=STO
+|team23=WIG |team24=WYC
+
+| name_WIM = [[AFC Wimbledon]]
+| name_BAR = [[Barnsley F.C.|Barnsley]]
+| name_BLP = [[Blackpool F.C.|Blackpool]]
+| name_BRA = [[Bradford City A.F.C.|Bradford City]]
+| name_BRO = [[Bromley F.C.|Bromley]]
+| name_BUR = [[Burton Albion F.C.|Burton Albion]]
+| name_CAM = [[Cambridge United F.C.|Cambridge United]]
+| name_DON = [[Doncaster Rovers F.C.|Doncaster Rovers]]
+| name_HUD = [[Huddersfield Town A.F.C.|Huddersfield Town]]
+| name_LEI = [[Leicester City F.C.|Leicester City]]
+| name_LEY = [[Leyton Orient F.C.|Leyton Orient]]
+| name_LUT = [[Luton Town F.C.|Luton Town]]
+| name_MAN = [[Mansfield Town F.C.|Mansfield Town]]
+| name_MKD = [[Milton Keynes Dons F.C.|Milton Keynes Dons]]
+| name_NCO = [[Notts County F.C.|Notts County]]
+| name_OXF = [[Oxford United F.C.|Oxford United]]
+| name_PET = [[Peterborough United F.C.|Peterborough United]]
+| name_PLY = [[Plymouth Argyle F.C.|Plymouth Argyle]]
+| name_REA = [[Reading F.C.|Reading]]
+| name_SHW = [[Sheffield Wednesday F.C.|Sheffield Wednesday]]
+| name_STO = [[Stockport County F.C.|Stockport County]]
+| name_STE = [[Stevenage F.C.|Stevenage]]
+| name_WIG = [[Wigan Athletic F.C.|Wigan Athletic]]
+| name_WYC = [[Wycombe Wanderers F.C.|Wycombe Wanderers]]
+
+| match_WIM_BAR = {{small|}}
+| match_WIM_BLP = {{small|}}
+| match_WIM_BRA = {{small|}}
+| match_WIM_BRO = {{small|}}
+| match_WIM_BUR = {{small|}}
+| match_WIM_CAM = {{small|}}
+| match_WIM_DON = {{small|}}
+| match_WIM_HUD = {{small|}}
+| match_WIM_LEI = {{small|}}
+| match_WIM_LEY = {{small|}}
+| match_WIM_LUT = {{small|}}
+| match_WIM_MAN = {{small|}}
+| match_WIM_MKD = [[AFC Wimbledon–Milton Keynes Dons F.C. rivalry|a]]
+| match_WIM_NCO = {{small|}}
+| match_WIM_OXF = {{small|}}
+| match_WIM_PET = {{small|}}
+| match_WIM_PLY = {{small|}}
+| match_WIM_REA = {{small|}}
+| match_WIM_SHW = {{small|}}
+| match_WIM_STE = {{small|}}
+| match_WIM_STO = {{small|}}
+| match_WIM_WIG = {{small|}}
+| match_WIM_WYC = {{small|}}
+
+| match_BAR_WIM = {{small|}}
+| match_BAR_BLP = {{small|}}
+| match_BAR_BRA = {{small|}} 
+| match_BAR_BRO = {{small|}} 
+| match_BAR_BUR = {{small|}}
+| match_BAR_CAM = {{small|}}
+| match_BAR_DON = {{small|}}
+| match_BAR_HUD = {{small|}}
+| match_BAR_LEI = {{small|}}
+| match_BAR_LEY = {{small|}}
+| match_BAR_LUT = {{small|}}
+| match_BAR_MAN = {{small|}}
+| match_BAR_MKD = {{small|}}
+| match_BAR_NCO = {{small|}}
+| match_BAR_OXF = {{small|}}
+| match_BAR_PET = {{small|}}
+| match_BAR_PLY = {{small|}}
+| match_BAR_REA = {{small|}}
+| match_BAR_SHW = {{small|}}
+| match_BAR_STE = {{small|}}
+| match_BAR_STO = {{small|}}
+| match_BAR_WIG = {{small|}}
+| match_BAR_WYC = {{small|}}
+
+| match_BLP_WIM = {{small|}}
+| match_BLP_BAR = {{small|}}
+| match_BLP_BRA = {{small|}}
+| match_BLP_BRO = {{small|}}
+| match_BLP_BUR = {{small|}}
+| match_BLP_CAM = {{small|}}
+| match_BLP_DON = {{small|}}
+| match_BLP_HUD = {{small|}}
+| match_BLP_LEI = {{small|}}
+| match_BLP_LEY = {{small|}}
+| match_BLP_LUT = {{small|}}
+| match_BLP_MAN = {{small|}}
+| match_BLP_MKD = {{small|}}
+| match_BLP_NCO = {{small|}}
+| match_BLP_OXF = {{small|}}
+| match_BLP_PET = {{small|}}
+| match_BLP_PLY = {{small|}}
+| match_BLP_REA = {{small|}}
+| match_BLP_SHW = {{small|}}
+| match_BLP_STE = {{small|}}
+| match_BLP_STO = {{small|}}
+| match_BLP_WIG = {{small|}}
+| match_BLP_WYC = {{small|}}
+
+| match_BRA_WIM = {{small|}}
+| match_BRA_BAR = {{small|}}
+| match_BRA_BLP = {{small|}}
+| match_BRA_BRO = {{small|}}
+| match_BRA_BUR = {{small|}}
+| match_BRA_CAM = {{small|}}
+| match_BRA_DON = {{small|}}
+| match_BRA_HUD = {{small|}}
+| match_BRA_LEI = {{small|}}
+| match_BRA_LEY = {{small|}}
+| match_BRA_LUT = {{small|}}
+| match_BRA_MAN = {{small|}}
+| match_BRA_MKD = {{small|}}
+| match_BRA_NCO = {{small|}}
+| match_BRA_OXF = {{small|}}
+| match_BRA_PET = {{small|}}
+| match_BRA_PLY = {{small|}}
+| match_BRA_REA = {{small|}}
+| match_BRA_SHW = {{small|}}
+| match_BRA_STE = {{small|}}
+| match_BRA_STO = {{small|}}
+| match_BRA_WIG = {{small|}}
+| match_BRA_WYC = {{small|}}
+
+| match_BRO_WIM = {{small|}}
+| match_BRO_BAR = {{small|}}
+| match_BRO_BLP = {{small|}}
+| match_BRO_BRA = {{small|}}
+| match_BRO_BUR = {{small|}}
+| match_BRO_CAM = {{small|}}
+| match_BRO_DON = {{small|}}
+| match_BRO_HUD = {{small|}}
+| match_BRO_LEI = {{small|}}
+| match_BRO_LEY = {{small|}}
+| match_BRO_LUT = {{small|}}
+| match_BRO_MAN = {{small|}}
+| match_BRO_MKD = {{small|}}
+| match_BRO_NCO = {{small|}}
+| match_BRO_OXF = {{small|}}
+| match_BRO_PET = {{small|}}
+| match_BRO_PLY = {{small|}}
+| match_BRO_REA = {{small|}}
+| match_BRO_SHW = {{small|}}
+| match_BRO_STE = {{small|}}
+| match_BRO_STO = {{small|}}
+| match_BRO_WIG = {{small|}}
+| match_BRO_WYC = {{small|}}
+
+| match_BUR_WIM = {{small|}}
+| match_BUR_BAR = {{small|}}
+| match_BUR_BLP = {{small|}}
+| match_BUR_BRA = {{small|}}
+| match_BUR_BRO = {{small|}}
+| match_BUR_CAM = {{small|}}
+| match_BUR_DON = {{small|}}
+| match_BUR_HUD = {{small|}}
+| match_BUR_LEI = {{small|}}
+| match_BUR_LEY = {{small|}}
+| match_BUR_LUT = {{small|}}
+| match_BUR_MAN = {{small|}}
+| match_BUR_MKD = {{small|}}
+| match_BUR_NCO = {{small|}}
+| match_BUR_OXF = {{small|}}
+| match_BUR_PET = {{small|}}
+| match_BUR_PLY = {{small|}}
+| match_BUR_REA = {{small|}}
+| match_BUR_SHW = {{small|}}
+| match_BUR_STE = {{small|}}
+| match_BUR_STO = {{small|}}
+| match_BUR_WIG = {{small|}}
+| match_BUR_WYC = {{small|}}
+
+| match_CAM_WIM = {{small|}}
+| match_CAM_BAR = {{small|}}
+| match_CAM_BLP = {{small|}}
+| match_CAM_BRA = {{small|}}
+| match_CAM_BRO = {{small|}}
+| match_CAM_BUR = {{small|}}
+| match_CAM_DON = {{small|}}
+| match_CAM_HUD = {{small|}}
+| match_CAM_LEI = {{small|}}
+| match_CAM_LEY = {{small|}}
+| match_CAM_LUT = {{small|}}
+| match_CAM_MAN = {{small|}}
+| match_CAM_MKD = {{small|}} 
+| match_CAM_NCO = {{small|}}
+| match_CAM_OXF = {{small|}}
+| match_CAM_PET = {{small|}}
+| match_CAM_PLY = {{small|}}
+| match_CAM_REA = {{small|}}
+| match_CAM_SHW = {{small|}}
+| match_CAM_STE = {{small|}}
+| match_CAM_STO = {{small|}}
+| match_CAM_WIG = {{small|}}
+| match_CAM_WYC = {{small|}}
+
+| match_DON_WIM = {{small|}}
+| match_DON_BAR = {{small|}}
+| match_DON_BLP = {{small|}}
+| match_DON_BRA = {{small|}}
+| match_DON_BRO = {{small|}}
+| match_DON_BUR = {{small|}}
+| match_DON_CAM = {{small|}}
+| match_DON_HUD = {{small|}}
+| match_DON_LEI = {{small|}}
+| match_DON_LEY = {{small|}}
+| match_DON_LUT = {{small|}}
+| match_DON_MAN = {{small|}}
+| match_DON_MKD = {{small|}}
+| match_DON_NCO = {{small|}}
+| match_DON_OXF = {{small|}}
+| match_DON_PET = {{small|}}
+| match_DON_PLY = {{small|}}
+| match_DON_REA = {{small|}}
+| match_DON_SHW = {{small|}}
+| match_DON_STE = {{small|}}
+| match_DON_STO = {{small|}}
+| match_DON_WIG = {{small|}}
+| match_DON_WYC = {{small|}}
+
+| match_HUD_WIM = {{small|}}
+| match_HUD_BAR = {{small|}}
+| match_HUD_BLP = {{small|}}
+| match_HUD_BRA = {{small|}}
+| match_HUD_BRO = {{small|}}
+| match_HUD_BUR = {{small|}}
+| match_HUD_CAM = {{small|}}
+| match_HUD_DON = {{small|}}
+| match_HUD_LEI = {{small|}}
+| match_HUD_LEY = {{small|}}
+| match_HUD_LUT = {{small|}}
+| match_HUD_MAN = {{small|}}
+| match_HUD_MKD = {{small|}}
+| match_HUD_NCO = {{small|}}
+| match_HUD_OXF = {{small|}}
+| match_HUD_PET = {{small|}}
+| match_HUD_PLY = {{small|}}
+| match_HUD_REA = {{small|}}
+| match_HUD_SHW = {{small|}}
+| match_HUD_STE = {{small|}}
+| match_HUD_STO = {{small|}}
+| match_HUD_WIG = {{small|}}
+| match_HUD_WYC = {{small|}}
+
+| match_LEI_WIM = {{small|}}
+| match_LEI_BAR = {{small|}}
+| match_LEI_BLP = {{small|}}
+| match_LEI_BRA = {{small|}}
+| match_LEI_BRO = {{small|}}
+| match_LEI_BUR = {{small|}}
+| match_LEI_CAM = {{small|}}
+| match_LEI_DON = {{small|}}
+| match_LEI_HUD = {{small|}}
+| match_LEI_LEY = {{small|}}
+| match_LEI_LUT = {{small|}}
+| match_LEI_MAN = {{small|}}
+| match_LEI_MKD = {{small|}}
+| match_LEI_NCO = {{small|}}
+| match_LEI_OXF = {{small|}}
+| match_LEI_PET = {{small|}}
+| match_LEI_PLY = {{small|}}
+| match_LEI_REA = {{small|}}
+| match_LEI_SHW = {{small|}}
+| match_LEI_STE = {{small|}}
+| match_LEI_STO = {{small|}}
+| match_LEI_WIG = {{small|}}
+| match_LEI_WYC = {{small|}}
+
+| match_LEY_WIM = {{small|}}
+| match_LEY_BAR = {{small|}}
+| match_LEY_BLP = {{small|}}
+| match_LEY_BRA = {{small|}}
+| match_LEY_BRO = {{small|}}
+| match_LEY_BUR = {{small|}}
+| match_LEY_CAM = {{small|}}
+| match_LEY_DON = {{small|}}
+| match_LEY_HUD = {{small|}}
+| match_LEY_LEI = {{small|}}
+| match_LEY_LUT = {{small|}}
+| match_LEY_MAN = {{small|}}
+| match_LEY_MKD = {{small|}}
+| match_LEY_NCO = {{small|}}
+| match_LEY_OXF = {{small|}}
+| match_LEY_PET = {{small|}}
+| match_LEY_PLY = {{small|}}
+| match_LEY_REA = {{small|}}
+| match_LEY_SHW = {{small|}}
+| match_LEY_STE = {{small|}}
+| match_LEY_STO = {{small|}}
+| match_LEY_WIG = {{small|}}
+| match_LEY_WYC = {{small|}}
+
+| match_LUT_WIM = {{small|}}
+| match_LUT_BAR = {{small|}}
+| match_LUT_BLP = {{small|}}
+| match_LUT_BRA = {{small|}}
+| match_LUT_BRO = {{small|}}
+| match_LUT_BUR = {{small|}}
+| match_LUT_CAM = {{small|}}
+| match_LUT_DON = {{small|}}
+| match_LUT_HUD = {{small|}}
+| match_LUT_LEI = {{small|}}
+| match_LUT_LEY = {{small|}}
+| match_LUT_MAN = {{small|}}
+| match_LUT_MKD = {{small|}}
+| match_LUT_NCO = {{small|}}
+| match_LUT_OXF = {{small|}}
+| match_LUT_PET = {{small|}}
+| match_LUT_PLY = {{small|}}
+| match_LUT_REA = {{small|}}
+| match_LUT_SHW = {{small|}}
+| match_LUT_STE = {{small|}}
+| match_LUT_STO = {{small|}}
+| match_LUT_WIG = {{small|}}
+| match_LUT_WYC = {{small|}}
+
+| match_MAN_WIM = {{small|}}
+| match_MAN_BAR = {{small|}}
+| match_MAN_BLP = {{small|}}
+| match_MAN_BRA = {{small|}}
+| match_MAN_BRO = {{small|}}
+| match_MAN_BUR = {{small|}}
+| match_MAN_CAM = {{small|}}
+| match_MAN_DON = {{small|}}
+| match_MAN_HUD = {{small|}}
+| match_MAN_LEI = {{small|}}
+| match_MAN_LEY = {{small|}}
+| match_MAN_LUT = {{small|}}
+| match_MAN_MKD = {{small|}}
+| match_MAN_NCO = {{small|}}
+| match_MAN_OXF = {{small|}}
+| match_MAN_PET = {{small|}}
+| match_MAN_PLY = {{small|}}
+| match_MAN_REA = {{small|}}
+| match_MAN_SHW = {{small|}}
+| match_MAN_STE = {{small|}}
+| match_MAN_STO = {{small|}}
+| match_MAN_WIG = {{small|}} 
+| match_MAN_WYC = {{small|}}
+
+| match_MKD_WIM = [[AFC Wimbledon–Milton Keynes Dons F.C. rivalry|a]]
+| match_MKD_BAR = {{small|}}
+| match_MKD_BLP = {{small|}}
+| match_MKD_BRA = {{small|}}
+| match_MKD_BRO = {{small|}}
+| match_MKD_BUR = {{small|}}
+| match_MKD_CAM = {{small|}}
+| match_MKD_DON = {{small|}}
+| match_MKD_HUD = {{small|}}
+| match_MKD_LEI = {{small|}}
+| match_MKD_LEY = {{small|}} 
+| match_MKD_LUT = {{small|}}
+| match_MKD_MAN = {{small|}}
+| match_MKD_NCO = {{small|}}
+| match_MKD_OXF = {{small|}}
+| match_MKD_PET = {{small|}}
+| match_MKD_PLY = {{small|}}
+| match_MKD_REA = {{small|}}
+| match_MKD_SHW = {{small|}}
+| match_MKD_STE = {{small|}}
+| match_MKD_STO = {{small|}}
+| match_MKD_WIG = {{small|}}
+| match_MKD_WYC = {{small|}}
+
+| match_NCO_WIM = {{small|}}
+| match_NCO_BAR = {{small|}}
+| match_NCO_BLP = {{small|}}
+| match_NCO_BRA = {{small|}}
+| match_NCO_BRO = {{small|}}
+| match_NCO_BUR = {{small|}}
+| match_NCO_CAM = {{small|}}
+| match_NCO_DON = {{small|}}
+| match_NCO_HUD = {{small|}}
+| match_NCO_LEI = {{small|}}
+| match_NCO_LEY = {{small|}}
+| match_NCO_LUT = {{small|}}
+| match_NCO_MAN = {{small|}}
+| match_NCO_MKD = {{small|}}
+| match_NCO_OXF = {{small|}}
+| match_NCO_PET = {{small|}}
+| match_NCO_PLY = {{small|}}
+| match_NCO_REA = {{small|}}
+| match_NCO_SHW = {{small|}}
+| match_NCO_STE = {{small|}}
+| match_NCO_STO = {{small|}}
+| match_NCO_WIG = {{small|}}
+| match_NCO_WYC = {{small|}}
+
+| match_OXF_WIM = {{small|}}
+| match_OXF_BAR = {{small|}}
+| match_OXF_BLP = {{small|}}
+| match_OXF_BRA = {{small|}}
+| match_OXF_BRO = {{small|}}
+| match_OXF_BUR = {{small|}}
+| match_OXF_CAM = {{small|}}
+| match_OXF_DON = {{small|}}
+| match_OXF_HUD = {{small|}}
+| match_OXF_LEI = {{small|}}
+| match_OXF_LEY = {{small|}}
+| match_OXF_LUT = {{small|}} 
+| match_OXF_MAN = {{small|}}
+| match_OXF_MKD = {{small|}}
+| match_OXF_NCO = {{small|}}
+| match_OXF_PET = {{small|}} 
+| match_OXF_PLY = {{small|}}
+| match_OXF_REA = {{small|}}
+| match_OXF_SHW = {{small|}}
+| match_OXF_STE = {{small|}}
+| match_OXF_STO = {{small|}}
+| match_OXF_WIG = {{small|}}
+| match_OXF_WYC = {{small|}}
+
+| match_PET_WIM = {{small|}}
+| match_PET_BAR = {{small|}}
+| match_PET_BLP = {{small|}}
+| match_PET_BRA = {{small|}}
+| match_PET_BRO = {{small|}}
+| match_PET_BUR = {{small|}}
+| match_PET_CAM = {{small|}}
+| match_PET_DON = {{small|}}
+| match_PET_HUD = {{small|}}
+| match_PET_LEI = {{small|}}
+| match_PET_LEY = {{small|}}
+| match_PET_LUT = {{small|}}
+| match_PET_MAN = {{small|}}
+| match_PET_MKD = {{small|}}
+| match_PET_NCO = {{small|}}
+| match_PET_OXF = {{small|}}
+| match_PET_PLY = {{small|}}
+| match_PET_REA = {{small|}}
+| match_PET_SHW = {{small|}}
+| match_PET_STE = {{small|}}
+| match_PET_STO = {{small|}}
+| match_PET_WIG = {{small|}}
+| match_PET_WYC = {{small|}}
+
+| match_PLY_WIM = {{small|}}
+| match_PLY_BAR = {{small|}}
+| match_PLY_BLP = {{small|}}
+| match_PLY_BRA = {{small|}}
+| match_PLY_BRO = {{small|}}
+| match_PLY_BUR = {{small|}}
+| match_PLY_CAM = {{small|}}
+| match_PLY_DON = {{small|}}
+| match_PLY_HUD = {{small|}}
+| match_PLY_LEI = {{small|}}
+| match_PLY_LEY = {{small|}}
+| match_PLY_LUT = {{small|}}
+| match_PLY_MAN = {{small|}}
+| match_PLY_MKD = {{small|}}
+| match_PLY_NCO = {{small|}}
+| match_PLY_OXF = {{small|}}
+| match_PLY_PET = {{small|}}
+| match_PLY_REA = {{small|}}
+| match_PLY_SHW = {{small|}}
+| match_PLY_STE = {{small|}}
+| match_PLY_STO = {{small|}}
+| match_PLY_WIG = {{small|}}
+| match_PLY_WYC = {{small|}}
+
+| match_REA_WIM = {{small|}}
+| match_REA_BAR = {{small|}}
+| match_REA_BLP = {{small|}}
+| match_REA_BRA = {{small|}}
+| match_REA_BRO = {{small|}}
+| match_REA_BUR = {{small|}}
+| match_REA_CAM = {{small|}}
+| match_REA_DON = {{small|}}
+| match_REA_HUD = {{small|}}
+| match_REA_LEI = {{small|}}
+| match_REA_LEY = {{small|}}
+| match_REA_LUT = {{small|}}
+| match_REA_MAN = {{small|}}
+| match_REA_MKD = {{small|}}
+| match_REA_NCO = {{small|}}
+| match_REA_OXF = {{small|}} 
+| match_REA_PET = {{small|}}
+| match_REA_PLY = {{small|}}
+| match_REA_SHW = {{small|}}
+| match_REA_STE = {{small|}}
+| match_REA_STO = {{small|}}
+| match_REA_WIG = {{small|}}
+| match_REA_WYC = {{small|}}
+
+| match_SHW_WIM = {{small|}}
+| match_SHW_BAR = {{small|}}
+| match_SHW_BLP = {{small|}}
+| match_SHW_BRA = {{small|}}
+| match_SHW_BRO = {{small|}}
+| match_SHW_BUR = {{small|}}
+| match_SHW_CAM = {{small|}}
+| match_SHW_DON = {{small|}}
+| match_SHW_HUD = {{small|}}
+| match_SHW_LEI = {{small|}}
+| match_SHW_LEY = {{small|}}
+| match_SHW_LUT = {{small|}}
+| match_SHW_MAN = {{small|}}
+| match_SHW_MKD = {{small|}}
+| match_SHW_NCO = {{small|}}
+| match_SHW_OXF = {{small|}}
+| match_SHW_PET = {{small|}}
+| match_SHW_PLY = {{small|}}
+| match_SHW_REA = {{small|}}
+| match_SHW_STE = {{small|}}
+| match_SHW_STO = {{small|}}
+| match_SHW_WIG = {{small|}}
+| match_SHW_WYC = {{small|}}
+
+| match_STE_WIM = {{small|}}
+| match_STE_BAR = {{small|}}
+| match_STE_BLP = {{small|}}
+| match_STE_BRA = {{small|}}
+| match_STE_BRO = {{small|}}
+| match_STE_BUR = {{small|}}
+| match_STE_CAM = {{small|}}
+| match_STE_DON = {{small|}}
+| match_STE_HUD = {{small|}}
+| match_STE_LEI = {{small|}}
+| match_STE_LEY = {{small|}}
+| match_STE_LUT = {{small|}}
+| match_STE_MAN = {{small|}}
+| match_STE_MKD = {{small|}}
+| match_STE_NCO = {{small|}}
+| match_STE_OXF = {{small|}}
+| match_STE_PET = {{small|}}
+| match_STE_PLY = {{small|}}
+| match_STE_REA = {{small|}}
+| match_STE_SHW = {{small|}}
+| match_STE_STO = {{small|}}
+| match_STE_WIG = {{small|}}
+| match_STE_WYC = {{small|}}
+
+| match_STO_WIM = {{small|}}
+| match_STO_BAR = {{small|}}
+| match_STO_BLP = {{small|}}
+| match_STO_BRA = {{small|}}
+| match_STO_BRO = {{small|}}
+| match_STO_BUR = {{small|}}
+| match_STO_CAM = {{small|}}
+| match_STO_DON = {{small|}}
+| match_STO_HUD = {{small|}}
+| match_STO_LEI = {{small|}}
+| match_STO_LEY = {{small|}}
+| match_STO_LUT = {{small|}}
+| match_STO_MAN = {{small|}}
+| match_STO_MKD = {{small|}}
+| match_STO_NCO = {{small|}}
+| match_STO_OXF = {{small|}}
+| match_STO_PET = {{small|}}
+| match_STO_PLY = {{small|}}
+| match_STO_REA = {{small|}}
+| match_STO_SHW = {{small|}}
+| match_STO_STE = {{small|}}
+| match_STO_WIG = {{small|}}
+| match_STO_WYC = {{small|}}
+
+| match_WIG_WIM = {{small|}}
+| match_WIG_BAR = {{small|}} 
+| match_WIG_BLP = {{small|}}
+| match_WIG_BRA = {{small|}}
+| match_WIG_BRO = {{small|}}
+| match_WIG_BUR = {{small|}}
+| match_WIG_CAM = {{small|}}
+| match_WIG_DON = {{small|}}
+| match_WIG_HUD = {{small|}}
+| match_WIG_LEI = {{small|}}
+| match_WIG_LEY = {{small|}}
+| match_WIG_LUT = {{small|}}
+| match_WIG_MAN = {{small|}}
+| match_WIG_MKD = {{small|}}
+| match_WIG_NCO = {{small|}}
+| match_WIG_OXF = {{small|}}
+| match_WIG_PET = {{small|}}
+| match_WIG_PLY = {{small|}}
+| match_WIG_REA = {{small|}}
+| match_WIG_SHW = {{small|}}
+| match_WIG_STE = {{small|}}
+| match_WIG_STO = {{small|}}
+| match_WIG_WYC = {{small|}}
+
+| match_WYC_WIM = {{small|}}
+| match_WYC_BAR = {{small|}}
+| match_WYC_BLP = {{small|}}
+| match_WYC_BRA = {{small|}}
+| match_WYC_BRO = {{small|}}
+| match_WYC_BUR = {{small|}}
+| match_WYC_CAM = {{small|}}
+| match_WYC_DON = {{small|}}
+| match_WYC_HUD = {{small|}}
+| match_WYC_LEI = {{small|}}
+| match_WYC_LEY = {{small|}}
+| match_WYC_LUT = {{small|}}
+| match_WYC_MAN = {{small|}}
+| match_WYC_MKD = {{small|}}
+| match_WYC_NCO = {{small|}}
+| match_WYC_OXF = {{small|}}
+| match_WYC_PET = {{small|}}
+| match_WYC_PLY = {{small|}}
+| match_WYC_REA = {{small|}}
+| match_WYC_SHW = {{small|}}
+| match_WYC_STE = {{small|}}
+| match_WYC_STO = {{small|}}
+| match_WYC_WIG = {{small|}}
+}}
+
+== See also ==
+* [[2026–27 Premier League]]
+* [[2026–27 EFL Championship]]
+* [[2026–27 EFL League Two]]
+* [[2026–27 National League]]
+* [[2026–27 EFL Cup]]
+* [[2026–27 FA Cup]]
+* [[2026–27 EFL Trophy]]
+
+== References ==
+{{Reflist}}
+
+{{EFL League One}}
+{{2026–27 in English men's football}}
+
+{{DEFAULTSORT:EFL League One}}
+[[Category:2026–27 EFL League One| ]]
+[[Category:EFL League One seasons|2026–27]]
+[[Category:2026–27 English Football League|2]]
+[[Category:2026–27 in European men's third-tier domestic football leagues|England]]
+[[Category:Scheduled association football competitions|England 3]]

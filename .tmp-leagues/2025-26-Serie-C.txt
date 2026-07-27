@@ -1,0 +1,2763 @@
+﻿{{Infobox football league season
+| competition = [[Serie C]]
+| season = [[2025–26 in Italian football|2025–26]]
+| dates = ''Regular season:''<br>24 August 2025 – 26 April 2026<br>''Play-offs:''<br>3 May 2026 – 7 June 2026
+| logo = Serie C sky wifi 2025-2026.png
+| pixels = 140
+| promoted = [[LR Vicenza|Vicenza]]<br>[[SS Arezzo|Arezzo]]<br>[[Benevento Calcio|Benevento]]<br>[[Ascoli Calcio|Ascoli]] (via play-off)
+| relegated = [[Virtus Verona|Virtus Verona]]<br>[[Aurora Pro Patria 1919|Pro Patria]]<br>[[US Triestina|Triestina]]<br>[[AC Bra|Bra]]<br>[[US Città di Pontedera|Pontedera]]<br>[[Rimini FC 1912|Rimini]] (excluded)<br>[[Calcio Foggia 1920|Foggia]]<br>[[ASD Siracusa Calcio 1924|Siracusa]]<br>[[FC Trapani 1905|Trapani]]
+| matches = 1066
+| matches footnote = <ref>1,115 including play-offs.</ref>
+| total goals = 
+| total goals footnote = 
+| league topscorer = [[Cosimo Chiricò]] (18)
+| biggest home win = 
+| biggest away win = 
+| highest scoring = 
+| longest wins = 
+| longest unbeaten = 
+| longest winless = 
+| longest losses = 
+| highest attendance = 
+| lowest attendance = 
+| attendance = 
+| average attendance = 
+| prevseason = [[2024–25 Serie C|2024–25]]
+| nextseason = [[2026–27 Serie C|2026–27]]
+| updated = 7 June 2026
+}}
+The '''2025–26 Serie C''', officially known as '''Serie C [[Sky Italia|Sky Wifi]]''' for sponsorship,<ref>{{cite web|url=https://www.skygroup.sky/it-it/article/sky-wifi-sponsor-serie-c-stagione-2025-26|title=Sky Wifi nuovo title sponsor della Serie C per la stagione 2025-26|date=17 June 2025}}</ref> was the twelfth season of the unified [[Serie C]] division, the third tier of the [[Italian football league system]].
+
+==Changes==
+The league will be composed of 60 teams, geographically divided into three groups. The group composition will be decided and formalized by the Serie C league committee between July and August. Inter Milan have shown interest in adding their U23 team, but the change requires the approval of the league and an available spot, whereas [[Lucchese 1905|Lucchese]] opted not to apply for a league spot instead.<ref>{{Cite web |date=24 February 2025|title=Marotta: "L'Inter investirà sui giovani". Pronta la seconda squadra Under 23 |url=https://www.lastampa.it/sport/2025/02/24/news/inter_marotta_assemblea-15021155/ |access-date=13 May 2025|website=La Stampa |language=it}}</ref>
+
+The following teams have changed divisions since the 2024–25 season:
+
+===To Serie C===
+'''Relegated from [[2024–25 Serie B|Serie B]]'''
+* [[US Salernitana 1919|Salernitana]], after 10 years of absence
+* [[Brescia Calcio|Brescia]] (excluded)
+* [[AS Cittadella|Cittadella]], after 9 years of absence
+* [[Cosenza Calcio|Cosenza]], after 7 years of absence
+
+'''Promoted from [[2024–25 Serie D|Serie D]]'''
+* [[AC Bra|Bra]] (Group A winners)
+* [[AC Ospitaletto Franciacorta|Ospitaletto]] (Group B winners)
+* [[Dolomiti Bellunesi (football club)|Dolomiti Bellunesi]] (Group C winners)
+* [[Forlì FC|Forlì]] (Group D winners)
+* [[US Livorno 1915|Livorno]] (Group E winners)
+* [[AS Sambenedettese|Sambenedettese]] (Group F winners)
+* [[Guidonia Montecelio 1937 FC|Guidonia Montecelio]] (Group G winners)
+* [[Casarano Calcio|Casarano]] (Group H winners)
+* [[Siracusa Calcio 1924|Siracusa]] (Group I winners)
+* [[Ravenna FC|Ravenna]] (Wild-card as play-off winners)
+
+===From Serie C===
+'''Promoted to [[2025–26 Serie B|Serie B]]'''
+* [[Calcio Padova|Padova]] (Group A winners)
+* [[Virtus Entella]] (Group B winners)
+* [[US Avellino 1912|Avellino]] (Group C winners)
+* [[Delfino Pescara 1936|Pescara]] (Play-off winners)
+
+'''Relegated to [[2024–25 Serie D|Serie D]]'''
+* [[Union Clodiense Chioggia SSD|Union Clodiense Chioggia]]
+* [[Calcio Caldiero Terme|Caldiero Terme]]
+* [[Milan Futuro]]
+* [[Lucchese 1905|Lucchese]] (folded)
+* [[US Sestri Levante 1919|Sestri Levante]]
+* [[FC Legnago Salus|Legnago Salus]]
+* [[ACR Messina|Messina]]
+* [[SS Turris Calcio|Turris]] (retired)
+* [[Taranto FC 1927|Taranto]] (retired)
+* [[SPAL]] (excluded)
+
+According to the Italian Football Federation regulations, retired and folded clubs are included and counted among the ordinary seasonal relegations, while excluded clubs must be replaced, in order:
+
+* by a Serie A [[reserve team]];
+* by a [[Serie D]] playoff winner.<ref>[https://figc.it/media/259408/172-ordine-integrazione-organico-serie-c-2025-2026.pdf]</ref>
+
+Between June and July 2025, [[Brescia Calcio|Brescia]] and [[SPAL]]'s applications were rejected by the COVISOC (the Italian Football Federation's office responsible for evaluating the financial state of professional clubs).<ref>{{cite web |url=https://www.figc.it/it/federazione/news/spal-esclusa-dalla-serie-c-deliberata-la-mancata-concessione-della-licenza-nazionale/ |publisher=FIGC |language=it |date=19 June 2025 |accessdate=18 July 2025 |title=SPAL esclusa dalla Serie C: deliberata la mancata concessione della Licenza Nazionale}}</ref><ref>{{cite web |url=https://www.calcioefinanza.it/2025/07/03/esclusione-brescia-serie-c-motivazioni-covisoc/ |publisher=Calcio e Finanza |language=it |date=3 July 2025 |accessdate=18 July 2025 |title=Dai debiti ai mancati pagamenti: perché la Covisoc non ha ammesso il Brescia}}</ref> As a consequence, it was widely expected [[Inter Milan]]'s Under-23 team and [[Ravenna FC|Ravenna]] to be admitted to the league.<ref>{{cite web |url=https://www.ravennaedintorni.it/sport/2025/07/14/calcio-ravenna-serie-c/ |publisher=Ravenna e dintorni |language=it |date=14 July 2025 |title=Il Ravenna che aspetta la C: ufficialità il 24 luglio, gironi il 25, campionato al via il 24 agosto (in diretta su Sky e Now)}}</ref>
+
+Also, on 17 July 2025, [[Feralpisalò]] chairman and owner Giuseppe Pasini formally confirmed his club would rename to [[Union Brescia]] and relocate to the city of [[Brescia]].<ref>{{cite web |url=https://www.rainews.it/tgr/lombardia/articoli/2025/07/calcio-nasce-ufficialmente-lunion-brescia-la-presentazione-a-palazzo-loggia-89df58f3-3520-44a7-9d66-6d4307f55c68.html |publisher=RaiNews |language=it |date=17 July 2025 |accessdate=18 July 2025 |title=Calcio, nasce ufficialmente l’Union Brescia: la presentazione a palazzo Loggia}}</ref>
+
+On 24 July 2025, the Serie C Federal Council ratified the exclusion of [[Lucchese 1905|Lucchese]], [[SPAL]], and [[Brescia Calcio|Brescia]], approved the reinstatement of [[Aurora Pro Patria 1919|Pro Patria]], and confirmed the admission of [[Inter Milan Under-23]] and [[Ravenna FC|Ravenna]].<ref>{{cite web |url=https://www.corrieredellosport.it/news/calcio/2025/07/24-142162941/inter_u23_ravenna_e_pro_patria_in_serie_c_ecco_le_escluse_dalla_figc |publisher=Corriere dello Sport |language=it |date=24 July 2025 |accessdate=24 July 2025 |title=Inter U23, Ravenna e Pro Patria in Serie C. Ecco le escluse dalla Figc}}</ref>
+
+On 28 November 2025, the Italian Football Federation formally excluded [[Rimini FC 1912|Rimini]] from the league with immediate effect following the club's liquidation.<ref>{{cite web |url=https://www.figc.it/it/federazione/news/la-figc-revoca-laffiliazione-al-rimini-football-club-decadono-tutti-i-tesseramenti-u09gpr1s |publisher=FIGC |language=it |date=28 November 2025 |accessdate=28 November 2025 |title=La FIGC revoca l’affiliazione al Rimini Football Club, decadono tutti i tesseramenti}}</ref>
+
+==Group A (North)==
+===Stadia and locations===
+11 teams from [[Lombardy]], 5 teams from [[Veneto]], 2 teams from [[Piedmont]], 1 team from [[Friuli-Venezia Giulia]] and 1 team from [[Trentino-Alto Adige/Südtirol]].
+
+{{Location map+
+| Italy North
+| width   = 500
+| float   = right
+| caption = Location of teams in 2025–26 Serie C (Group A)
+| places  = 
+{{Location map~
+| Italy North
+| lat        = 45.6333330
+| long       = 9.68333300
+| label      = <small>[[UC AlbinoLeffe|AlbinoL]].</small>
+| position   = bottom
+| mark       = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy North
+| lat        = 45.4628250
+| long       = 9.09533210
+| label      = <small>[[Alcione Milano|Alcione]]</small>
+| position   = bottom
+| mark       = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy North
+| lat      = 45.5166670
+| long     = 11.3333330
+| label    = <small>[[FC Arzignano Valchiampo|Arzignano]]</small>
+| mark     = Red pog.svg
+| position = top
+}}
+{{Location map~
+| Italy North
+| lat      = 45.6452300
+| long     = 11.7845300
+| label    = <small>[[AS Cittadella|Cittadella]]</small>
+| mark     = Red pog.svg
+| position = top
+}}
+{{Location map~
+| Italy North
+| lat      = 46.1402780
+| long     = 12.2166670
+| label    = <small>[[Dolomiti Bellunesi SSD|Dolomiti Bellunesi]]</small>
+| mark     = Red pog.svg
+| position = right
+}}
+{{Location map~ |Italy North|lat=45.541553  |long=10.211802  |label=[[Brescia]]|position=bottom|mark       = Blue pog.svg|label_size=0}}
+{{Location map~
+| Italy North
+| lat        = 45.5333330
+| long       = 9.40000000
+| label      = <small>[[AS Giana Erminio|Giana Erminio]]</small>
+| position   = left
+| mark       = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy North
+| lat        = 45.4628250
+| long       = 9.19533210
+| label      = <small>Inter Milan U23</small>
+| position   = right
+| mark       = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy North
+| lat        = 45.8511210
+| long       = 9.36001410
+| label      = <small>[[Calcio Lecco 1912|Lecco]]</small>
+| position   = top
+| mark       = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy North
+| lat        = 45.6500000
+| long       = 10.2666670
+| label      = <small>[[FC Lumezzane|Lumezzane]]</small>
+| position   = top
+| mark       = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy North
+| lat      = 45.4500000
+| long     = 8.61666700
+| label    = <small>[[Novara FC|Novara]]</small>
+| mark     = Red pog.svg
+| position = left
+}}
+{{Location map~
+| Italy North
+| lat        = 45.5500000
+| long       = 10.0833330
+| label      = <small>[[AC Ospitaletto Franciacorta|Ospitaletto]]</small>
+| position   = bottom
+| mark       = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy North
+| lat        = 45.3628280
+| long       = 9.68745700
+| label      = <small>[[US Pergolettese 1932|Pergolettese]]</small>
+| position   = bottom
+| mark       = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy North
+| lat        = 45.613436
+| long       = 8.8808230
+| label      = <small>[[Aurora Pro Patria 1919|Pro Patria]]</small>
+| position   = left
+| mark       = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy North
+| lat      = 45.3198550
+| long     = 8.42130700
+| label    = <small>[[FC Pro Vercelli 1892|Pro Vercelli]]</small>
+| mark     = Red pog.svg
+| position = left
+}}
+{{Location map~
+| Italy North
+| lat        = 45.6543100
+| long       = 9.14959900
+| label      = <small>[[AC Renate|Renate]]</small>
+| position   = left
+| mark       = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy North
+| lat      = 46.0666670
+| long     = 11.1166670
+| label    = <small>[[AC Trento 1921|Trento]]</small>
+| mark     = Red pog.svg
+| position = top
+}}
+{{Location map~
+| Italy North
+| lat      = 45.6225740
+| long     = 13.7930180
+| label    = <small>[[US Triestina Calcio 1918|Triestina]]</small>
+| mark     = Red pog.svg
+| position = left
+}}
+{{Location map~
+| Italy North
+| lat      = 45.5443200
+| long     = 11.5540590
+| label    = <small>[[LR Vicenza|Vicenza]]</small>
+| mark     = Red pog.svg
+| position = bottom
+}}
+{{Location map~
+| Italy North
+| lat      = 45.4453530
+| long     = 11.0333910
+| label    = <small>[[Virtus Verona|V. Verona]]</small>
+| mark     = Red pog.svg
+| position = left
+}}
+}}
+
+{{Location map+
+| Italy Lombardy
+| width   = 500
+| float   = right
+| caption = Location of teams in 2025–26 Serie C (Group A) (Lombardy)
+| places  = 
+{{Location map~
+| Italy Lombardy
+| lat      = 45.6333330
+| long     = 9.68333300
+| label    = <small>[[U.C. AlbinoLeffe|AlbinoLeffe]]</small>
+| position = right
+| mark     = Blue pog.svg
+}}
+{{Location map~
+| Italy Lombardy
+| lat      = 45.4628250
+| long     = 9.09533210
+| label    = <small>[[Alcione Milano|Alcione]]</small>
+| position = top
+| mark     = Blue pog.svg
+}}
+{{Location map~
+| Italy Lombardy
+| lat        = 45.4628250
+| long       = 9.14533210
+| label      = <small>[[Inter Milan Under-23|Inter U23]]</small>
+| position   = right
+| mark       = Blue pog.svg
+}}
+{{Location map~ 
+| Italy Lombardy
+| lat      = 45.541553  
+| long     = 10.211802  
+| label    = <small>[[Union Brescia|U. Brescia]]</small>
+| mark     = Blue pog.svg
+| position = right}}
+{{Location map~
+| Italy Lombardy
+| lat      = 45.5333330
+| long     = 9.40000000
+| label    = <small>[[AS Giana Erminio|Giana Erminio]]</small>
+| position = right
+| mark     = Blue pog.svg
+}}
+{{Location map~
+| Italy Lombardy
+| lat      = 45.8511210
+| long     = 9.36001410
+| label    = <small>[[Calcio Lecco 1912|Lecco]]</small>
+| position = right
+| mark     = Blue pog.svg
+}}
+{{Location map~
+| Italy Lombardy
+| lat      = 45.6500000
+| long     = 10.2666670
+| label    = <small>[[FC Lumezzane SSD|Lumezzane]]</small>
+| position = top
+| mark     = Blue pog.svg
+}}
+{{Location map~
+| Italy Lombardy
+| lat      = 45.5500000
+| long     = 10.0833330
+| label    = <small>[[AC Ospitaletto Franciacorta|Ospitaletto]]</small>
+| position = bottom
+| mark     = Blue pog.svg
+}}
+{{Location map~
+| Italy Lombardy
+| lat      = 45.3628280
+| long     = 9.68745700
+| label    = <small>[[U.S. Pergolettese 1932|Pergolettese]]</small>
+| position = right
+| mark     = Blue pog.svg
+}}
+{{Location map~
+| Italy Lombardy
+| lat      = 45.6134360
+| long     = 8.88082300
+| label    = <small>[[Aurora Pro Patria 1919|Pro Patria]]</small>
+| position = bottom
+| mark     = Blue pog.svg
+}}
+{{Location map~
+| Italy Lombardy
+| lat      = 45.654310
+| long     = 9.14959900
+| label    = <small>[[A.C. Renate|Renate]]</small>
+| position = top
+| mark     = Blue pog.svg
+}}
+}}
+
+{| class="wikitable sortable"
+|-
+! Club
+! City
+! Stadium
+! Capacity
+|-
+| [[UC AlbinoLeffe|AlbinoLeffe]]
+| [[Albino, Italy|Albino]] and [[Leffe, Italy|Leffe]]
+| AlbinoLeffe Stadium <small>([[Zanica]])</small>
+| {{Nts|1791}}
+|-
+| [[Alcione Milano]]
+| [[Milan]]
+| [[Stadio Ernesto Breda|Ernesto Breda]] <small>([[Sesto San Giovanni]])</small>
+| {{Nts|3523}}
+|-
+| [[FC Arzignano Valchiampo|Arzignano Valchiampo]]
+| [[Arzignano]]
+| [[Stadio Tommaso Dal Molin|Tommaso Dal Molin]]
+| {{Nts|1690}}
+|-
+| [[AS Cittadella|Cittadella]]
+| [[Cittadella]]
+| [[Stadio Pier Cesare Tombolato|Piercesare Tombolato]]
+| {{Nts|7623}}
+|-
+| [[Dolomiti Bellunesi SSD|Dolomiti Bellunesi]]
+| [[Belluno]], [[Feltre]] and [[Sedico]]
+|Omero Tognon <small>([[Fontanafredda]])</small>
+| {{Nts|3295}}
+|-
+| [[AS Giana Erminio|Giana Erminio]]
+| [[Gorgonzola, Milan|Gorgonzola]]
+| [[Stadio Città di Gorgonzola|Città di Gorgonzola]]
+| {{Nts|3766}}
+|-
+| [[Inter Milan Under-23|Inter Milan U23]]
+| [[Milan]]
+| [[Stadio Brianteo|Brianteo]] <small>([[Monza]])</small>
+| {{Nts|17102}}
+|-
+| [[Calcio Lecco 1912|Lecco]]
+| [[Lecco]]
+| [[Stadio Rigamonti-Ceppi|Rigamonti-Ceppi]]
+| {{Nts|5508}}
+|-
+| [[FC Lumezzane|Lumezzane]]
+| [[Lumezzane]]
+| [[Stadio Tullio Saleri|Tullio Saleri]]
+| {{Nts|4150}}
+|-
+| [[Novara FC|Novara]]
+| [[Novara]]
+| [[Stadio Silvio Piola (Novara)|Silvio Piola (Novara)]]
+| {{Nts|17875}}
+|-
+| [[AC Ospitaletto Franciacorta|Ospitaletto]]
+| [[Ospitaletto]]
+| Comunale Gino Corioni
+| {{Nts|9000}}
+|-
+| [[US Pergolettese 1932|Pergolettese]]
+| [[Crema, Lombardy|Crema]]
+| [[Stadio Giuseppe Voltini|Giuseppe Voltini]]
+| {{Nts|4095}}
+|-
+| [[Aurora Pro Patria 1919|Pro Patria]]
+| [[Busto Arsizio]]
+| [[Stadio Carlo Speroni|Carlo Speroni]]
+| {{Nts|5000}}
+|-
+| [[FC Pro Vercelli 1892|Pro Vercelli]]
+| [[Vercelli]]
+| [[Stadio Silvio Piola (Vercelli)|Silvio Piola (Vercelli)]]
+| {{Nts|5526}}
+|-
+| [[AC Renate|Renate]]
+| [[Renate, Lombardy|Renate]]
+| Mino Favini <small>([[Meda, Lombardy|Meda]])</small>
+| {{Nts|2500}}
+|-
+| [[AC Trento 1921|Trento]]
+| [[Trento]]
+| [[Stadio Briamasco|Briamasco]]
+| {{Nts|3000}}
+|-
+| [[US Triestina Calcio 1918|Triestina]]
+| [[Trieste]]
+| [[Stadio Nereo Rocco|Nereo Rocco]]
+| {{Nts|26566}}
+|-
+| [[Union Brescia]]
+| [[Brescia]]
+| [[Stadio Mario Rigamonti|Mario Rigamonti]]
+| {{Nts|19550}}
+|-
+| [[LR Vicenza|Vicenza]]
+| [[Vicenza]]
+| [[Stadio Romeo Menti|Romeo Menti]]
+| {{Nts|17163}}
+|-
+| [[Virtus Verona]]
+| [[Verona]]
+| Gavagnin-Nocini
+| {{Nts|1500}}
+|}
+
+=== Personnel and sponsors ===
+{| class="wikitable"
+|+
+! rowspan="2" |Club
+! rowspan="2" |Manager
+! rowspan="2" |Captain
+! rowspan="2" |Kit maker
+!Shirt sponsor(s)
+|-
+!Main
+|-
+|[[UC AlbinoLeffe|AlbinoLeffe]]
+|{{Flag icon|ITA}} [[Giovanni Lopez]]
+|{{Flag icon|ITA}} [[Simone Potop]]
+|[[Acerbis]]
+|Isocell
+|-
+|[[Alcione Milano]]
+|{{Flag icon|ITA}} [[Giovanni Cusatis]]
+|{{Flag icon|ITA}} [[Giorgio Galli (footballer)|Giorgio Galli]]
+|[[Adidas]]
+|Banca del Fucino
+|-
+|nowrap|[[FC Arzignano Valchiampo|Arzignano Valchiampo]]
+|nowrap|{{Flag icon|ITA}} [[Giuseppe Bianchini (football manager)|Giuseppe Bianchini]]
+|{{Flag icon|ITA}} [[Andrea Boffelli]]
+|[[Jako]]
+|C.G.R.D. Chemicals
+|-
+|[[AS Cittadella|Cittadella]]
+|{{Flag icon|ITA}} [[Manuel Iori]]
+|{{Flag icon|ITA}} [[Alessio Vita]]
+|[[Erreà]]
+|Sirmax
+|-
+|[[Dolomiti Bellunesi SSD|Dolomiti Bellunesi]]
+|{{Flag icon|ITA}} [[Andrea Bonatti]]
+|{{Flag icon|ITA}} [[Salvatore Burrai]]
+|[[Adidas]]
+|Sportful
+|-
+|[[AS Giana Erminio|Giana Erminio]]
+|{{Flag icon|DOM}} [[Vinicio Espinal]]
+|{{Flag icon|ITA}} [[Daniele Pinto]]
+|[[Macron (sportswear)|Macron]]
+|Bamonte
+|-
+|[[Inter Milan Under-23|Inter Milan U23]]
+|{{Flag icon|ITA}} [[Stefano Vecchi]]
+|{{Flag icon|ITA}} [[Giuseppe Prestia]]
+|[[Nike, Inc.|Nike]]
+|[[Betsson.sport]]
+|-
+|[[Calcio Lecco 1912|Lecco]]
+|{{Flag icon|ITA}} [[Federico Valente]]
+|{{Flag icon|ITA}} [[Matteo Battistini]]
+|[[Legea]]
+|Cantine Pirovano
+|-
+|[[FC Lumezzane|Lumezzane]]
+|{{Flag icon|ITA}} [[Emanuele Troise]]
+|{{Flag icon|ITA}} [[Cesare Pogliano]]
+|[[Acerbis]]
+|Camozzi
+|-
+|[[Novara FC|Novara]]
+|{{Flag icon|ITA}} [[Andrea Zanchetta]]
+|{{Flag icon|ITA}} [[Davide Bertoncini]]
+|[[Erreà]]
+|Igor Gorgonzola
+|-
+|[[AC Ospitaletto Franciacorta|Ospitaletto]]
+|nowrap|{{Flag icon|ITA}} [[Andrea Quaresmini]]
+|nowrap|{{Flag icon|ITA}} [[Michel Panatti]]
+|[[Acerbis]]
+|Nova Sider Forgital
+|-
+|[[US Pergolettese 1932|Pergolettese]]
+|{{Flag icon|ITA}} [[Giacomo Curioni]]
+|{{Flag icon|ITA}} [[Mariano Arini]]
+|[[Joma]]
+|Bowling Pegaso
+|-
+|[[Aurora Pro Patria 1919|Pro Patria]]
+|{{Flag icon|ITA}} [[Leandro Greco]]
+|{{Flag icon|ITA}} [[Davide Ferri]]
+|[[Macron (sportswear)|Macron]]
+|[[Hupac]]
+|-
+|[[FC Pro Vercelli 1892|Pro Vercelli]]
+|{{Flag icon|ITA}} [[Michele Santoni]]
+|{{Flag icon|ITA}} [[Gianmario Comi]]
+|Fourteen
+|''None''
+|-
+|[[AC Renate|Renate]]
+|{{Flag icon|ITA}} [[Luciano Foschi]]
+|{{Flag icon|ITA}} [[Simone Auriletto]]
+|[[Kappa (brand)|Kappa]]
+|nowrap|[[Hyster-Yale Materials Handling|Yale Lift Truck Technologies]]
+|-
+|[[AC Trento 1921|Trento]]
+|{{Flag icon|ITA}} [[Luca Tabbiani]]
+|{{Flag icon|ITA}} [[Andrea Trainotti]]
+|[[Acerbis]]
+|[[Trentino]]
+|-
+|[[US Triestina Calcio 1918|Triestina]]
+|{{Flag icon|ITA}} [[Geppino Marino]]
+|{{Flag icon|MDA}} [[Artur Ioniță]]
+|[[Kappa (brand)|Kappa]]
+|''None''
+|-
+|[[Union Brescia]]
+|{{Flag icon|ITA}} [[Aimo Diana]]
+|{{Flag icon|ITA}} [[Davide Balestrero]]
+|''In-house''
+|[[A2A]]
+|-
+|[[LR Vicenza|Vicenza]]
+|{{Flag icon|ITA}} [[Fabio Gallo]]
+|{{Flag icon|ITA}} [[Filippo Costa]]
+|[[Hummel International|Hummel]]
+|[[Diesel (company)|Diesel]]
+|-
+|[[Virtus Verona]]
+|{{Flag icon|ITA}} [[Luigi Fresco]]
+|nowrap|{{Flag icon|ITA}} [[Leonardo Zarpellon]]
+|[[Erreà]]
+|nowrap|Argosped (Home) / VivColor (Away)
+|}
+
+=== Table ===
+{{2025–26 Serie C Group A table}}
+
+===Results===
+{{#invoke:sports results|main
+| source = [https://us.soccerway.com/national/italy/serie-c1/20252026/girone-a/r83338/matches/ Soccerway]
+| a_note = yes
+| update = complete 
+| matches_style = FBR
+|team1 = ALB |team2 = ALC |team3 = ARZ |team4 = CIT |team5 = DOB |team6 = GIA |team7 = INT |team8 = LEC |team9 = LUM |team10 = NOV |team11 = OSP |team12 = PER |team13 = PPA |team14 = PVE |team15 = REN |team16 = TRE |team17 = TRI |team18 = UBR |team19 = VIC |team20 = VVE  
+| name_ALB = [[UC AlbinoLeffe|AlbinoLeffe]]
+| name_ALC = [[Alcione Milano]]
+| name_ARZ = [[FC Arzignano Valchiampo|Arzignano]]
+| name_CIT = [[AS Cittadella|Cittadella]]
+| name_DOB = {{nowrap|[[Dolomiti Bellunesi (football club)|Dolomiti Bellunesi]]}}
+| name_GIA = [[AS Giana Erminio|Giana Erminio]]
+| name_INT = [[Inter Milan Under-23|Inter Milan U23]]
+| name_LEC = [[Calcio Lecco 1912|Lecco]]
+| name_LUM = [[FC Lumezzane|Lumezzane]]
+| name_NOV = [[Novara FC|Novara]]
+| name_OSP = [[ACD Ospitaletto SSD|Ospitaletto]]
+| name_PER = [[US Pergolettese 1932|Pergolettese]]
+| name_PPA = [[Aurora Pro Patria 1919|Pro Patria]]
+| name_PVE = [[FC Pro Vercelli 1892|Pro Vercelli]]
+| name_REN = [[AC Renate|Renate]]
+| name_TRE = [[AC Trento 1921|Trento]]
+| name_TRI = [[US Triestina Calcio 1918|Triestina]]
+| name_UBR = [[Union Brescia]]
+| name_VIC = [[LR Vicenza|Vicenza]]
+| name_VVE = [[Virtus Verona]]
+
+|match_ALB_ALC = 2–0
+|match_ALB_ARZ = 2–0
+|match_ALB_CIT = 2–1
+|match_ALB_DOB = 2–2
+|match_ALB_GIA = 0–1
+|match_ALB_INT = 1–3
+|match_ALB_LEC = 0–1
+|match_ALB_LUM = 0–1
+|match_ALB_NOV = 3–2
+|match_ALB_OSP = 1–1
+|match_ALB_PER = 3–0
+|match_ALB_PPA = 2–2
+|match_ALB_PVE = 2–1
+|match_ALB_REN = 2–3
+|match_ALB_TRE = 1–2
+|match_ALB_TRI = 3–0
+|match_ALB_UBR = 1–0
+|match_ALB_VIC = 0–1
+|match_ALB_VVE = 3–1
+
+|match_ALC_ALB = 2–1
+|match_ALC_ARZ = 1–0
+|match_ALC_CIT = 2–0
+|match_ALC_DOB = 5–0
+|match_ALC_GIA = 1–1
+|match_ALC_INT = 1–2
+|match_ALC_LEC = 0–2
+|match_ALC_LUM = 1–0
+|match_ALC_NOV = 0–1
+|match_ALC_OSP = 0–0
+|match_ALC_PER = 1–0
+|match_ALC_PPA = 2–0
+|match_ALC_PVE = 1–1
+|match_ALC_REN = 1–1
+|match_ALC_TRE = 2–0
+|match_ALC_TRI = 1–0
+|match_ALC_UBR = 0–0
+|match_ALC_VIC = 0–1
+|match_ALC_VVE = 0–1
+
+|match_ARZ_ALB = 0–0
+|match_ARZ_ALC = 1–3
+|match_ARZ_CIT = 1–0
+|match_ARZ_DOB = 2–2
+|match_ARZ_GIA = 0–0
+|match_ARZ_INT = 1–1
+|match_ARZ_LEC = 0−1
+|match_ARZ_LUM = 3–3
+|match_ARZ_NOV = 1–1
+|match_ARZ_OSP = 1–2
+|match_ARZ_PER = 1–0
+|match_ARZ_PPA = 2–1
+|match_ARZ_PVE = 3–0
+|match_ARZ_REN = 0–0
+|match_ARZ_TRE = 0–2
+|match_ARZ_TRI = 4–1
+|match_ARZ_UBR = 1–2
+|match_ARZ_VIC = 1–2
+|match_ARZ_VVE = 3–2
+
+|match_CIT_ALB = 0–1
+|match_CIT_ALC = 1–0
+|match_CIT_ARZ = 1–0
+|match_CIT_DOB = 2−1
+|match_CIT_GIA = 0−2
+|match_CIT_INT = 1–1
+|match_CIT_LEC = 2−1
+|match_CIT_LUM = 0–1
+|match_CIT_NOV = 2–2
+|match_CIT_OSP = 2–2
+|match_CIT_PER = 3–3
+|match_CIT_PPA = 0–0
+|match_CIT_PVE = 2–1
+|match_CIT_REN = 2–1
+|match_CIT_TRE = 1–3
+|match_CIT_TRI = 1–0
+|match_CIT_UBR = 1–1
+|match_CIT_VIC = 0–1
+|match_CIT_VVE = 4–1
+
+|match_DOB_ALB = 2–0
+|match_DOB_ALC = 1–1
+|match_DOB_ARZ = 1–2
+|match_DOB_CIT = 0–1
+|match_DOB_GIA = 0–0
+|match_DOB_INT = 1–0
+|match_DOB_LEC = 1–4
+|match_DOB_LUM = 2–0
+|match_DOB_NOV = 1–1
+|match_DOB_OSP = 4–1
+|match_DOB_PER = 1–2
+|match_DOB_PPA = 2–4
+|match_DOB_PVE = 1–2
+|match_DOB_REN = 0–3
+|match_DOB_TRE = 0–0
+|match_DOB_TRI = 1–0
+|match_DOB_UBR = 0–1
+|match_DOB_VIC = 1–2
+|match_DOB_VVE = 1–0
+
+|match_GIA_ALB = 1–1
+|match_GIA_ALC = 1–1
+|match_GIA_ARZ = 2–1
+|match_GIA_CIT = 0–2
+|match_GIA_DOB = 1–1
+|match_GIA_INT = 2–0
+|match_GIA_LEC = 0–1
+|match_GIA_LUM = 2–1
+|match_GIA_NOV = 0–0
+|match_GIA_OSP = 1–0
+|match_GIA_PER = 2–0
+|match_GIA_PPA = 2–1
+|match_GIA_PVE = 1–0
+|match_GIA_REN = 0–1
+|match_GIA_TRE = 0–2
+|match_GIA_TRI = 2–1
+|match_GIA_UBR = 0–2
+|match_GIA_VIC = 1−3
+|match_GIA_VVE = 1–3
+
+|match_INT_ALB = 0−1
+|match_INT_ALC = 0–0
+|match_INT_ARZ = 0–1
+|match_INT_CIT = 0–1
+|match_INT_DOB = 1–2
+|match_INT_GIA = 0–1
+|match_INT_LEC = 0–1
+|match_INT_LUM = 0–0
+|match_INT_NOV = 0–0
+|match_INT_OSP = 2–2
+|match_INT_PER = 1–1
+|match_INT_PPA = 2–2
+|match_INT_PVE = 1–1
+|match_INT_REN = 1–1
+|match_INT_TRE = 2–1
+|match_INT_TRI = 2–0
+|match_INT_UBR = 0–1
+|match_INT_VIC = 1–2
+|match_INT_VVE = 1–0
+
+|match_LEC_ALB = 0–0
+|match_LEC_ALC = 1–0
+|match_LEC_ARZ = 5–1
+|match_LEC_CIT = 0–1
+|match_LEC_DOB = 3–0
+|match_LEC_GIA = 0–0
+|match_LEC_INT = 0–2
+|match_LEC_LUM = 2–2
+|match_LEC_NOV = 0–0
+|match_LEC_OSP = 2–1
+|match_LEC_PER = 1–0
+|match_LEC_PPA = 1–0
+|match_LEC_PVE = 0–2
+|match_LEC_REN = 0–3
+|match_LEC_TRE = 3–1
+|match_LEC_TRI = 1–0
+|match_LEC_UBR = 0–1
+|match_LEC_VIC = 2−0
+|match_LEC_VVE = 2–2
+
+|match_LUM_ALB = 1–1
+|match_LUM_ALC = 1–0
+|match_LUM_ARZ = 0−1
+|match_LUM_CIT = 1–2
+|match_LUM_DOB = 3–0
+|match_LUM_GIA = 1–0
+|match_LUM_INT = 1–2
+|match_LUM_LEC = 1–1
+|match_LUM_NOV = 1–1
+|match_LUM_OSP = 2–0
+|match_LUM_PER = 2–3
+|match_LUM_PPA = 1−0
+|match_LUM_PVE = 3–1
+|match_LUM_REN = 0–0
+|match_LUM_TRE = 1–1
+|match_LUM_TRI = 1–2
+|match_LUM_UBR = 1–0
+|match_LUM_VIC = 1–1
+|match_LUM_VVE = 4–1
+
+|match_NOV_ALB = 2–2
+|match_NOV_ALC = 3–0
+|match_NOV_ARZ = 1–0
+|match_NOV_CIT = 0−1
+|match_NOV_DOB = 1–1
+|match_NOV_GIA = 3–1
+|match_NOV_INT = 1–1
+|match_NOV_LEC = 1–0
+|match_NOV_LUM = 1–3
+|match_NOV_OSP = 0–3
+|match_NOV_PER = 1–1
+|match_NOV_PPA = 3–1
+|match_NOV_PVE = 0–1
+|match_NOV_REN = 0–1
+|match_NOV_TRE = 1–1
+|match_NOV_TRI = 0–0
+|match_NOV_UBR = 0–0
+|match_NOV_VIC = 2–2
+|match_NOV_VVE = 1–1
+
+|match_OSP_ALB = 3–0
+|match_OSP_ALC = 0–1
+|match_OSP_ARZ = 2–1
+|match_OSP_CIT = 1–2
+|match_OSP_DOB = 3–1
+|match_OSP_GIA = 3–2
+|match_OSP_INT = 2–2
+|match_OSP_LEC = 1–1
+|match_OSP_LUM = 1–2
+|match_OSP_NOV = 0–2
+|match_OSP_PER = 1–2
+|match_OSP_PPA = 0–0
+|match_OSP_PVE = 2–0
+|match_OSP_REN = 1–1
+|match_OSP_TRE = 3−2
+|match_OSP_TRI = 1–0
+|match_OSP_UBR = 0–0
+|match_OSP_VIC = 0–0
+|match_OSP_VVE = 1–1
+
+|match_PER_ALB = 0–0
+|match_PER_ALC = 0–2
+|match_PER_ARZ = 0–1
+|match_PER_CIT = 3–1
+|match_PER_DOB = 1–2
+|match_PER_GIA = 0–3
+|match_PER_INT = 0–2
+|match_PER_LEC = 3–0
+|match_PER_LUM = 0–2
+|match_PER_NOV = 2–2
+|match_PER_OSP = 1–0
+|match_PER_PPA = 2–1
+|match_PER_PVE = 2–1
+|match_PER_REN = 0–1
+|match_PER_TRE = 1–2
+|match_PER_TRI = 2–0
+|match_PER_UBR = 2–1
+|match_PER_VIC = 0–1
+|match_PER_VVE = 2–2
+
+|match_PPA_ALB = 0–3
+|match_PPA_ALC = 1–1
+|match_PPA_ARZ = 2–3
+|match_PPA_CIT = 1–0
+|match_PPA_DOB = 0–2
+|match_PPA_GIA = 0–4
+|match_PPA_INT = 1–2
+|match_PPA_LEC = 1–4
+|match_PPA_LUM = 1–1
+|match_PPA_NOV = 0–0
+|match_PPA_OSP = 0–0
+|match_PPA_PER = 3–1
+|match_PPA_PVE = 2–3
+|match_PPA_REN = 0–3
+|match_PPA_TRE = 2–2
+|match_PPA_TRI = 1–1
+|match_PPA_UBR = 0–2
+|match_PPA_VIC = 0–4
+|match_PPA_VVE = 2−2
+
+|match_PVE_ALB = 2–1
+|match_PVE_ALC = 1–0
+|match_PVE_ARZ = 0–5
+|match_PVE_CIT = 0–2
+|match_PVE_DOB = 4–0
+|match_PVE_GIA = 0–0
+|match_PVE_INT = 0–2
+|match_PVE_LEC = 0–1
+|match_PVE_LUM = 1–1
+|match_PVE_NOV = 1–0
+|match_PVE_OSP = 1−0
+|match_PVE_PER = 2–0
+|match_PVE_PPA = 1–0
+|match_PVE_REN = 1–1
+|match_PVE_TRE = 1–3
+|match_PVE_TRI = 3–1
+|match_PVE_UBR = 0–0
+|match_PVE_VIC = 1–2
+|match_PVE_VVE = 0–2
+
+|match_REN_ALB = 1–1
+|match_REN_ALC = 1–0
+|match_REN_ARZ = 1–2
+|match_REN_CIT = 0–0
+|match_REN_DOB = 2–0
+|match_REN_GIA = 1–1
+|match_REN_INT = 2–1
+|match_REN_LEC = 0–1
+|match_REN_LUM = 0–0
+|match_REN_NOV = 3–1
+|match_REN_OSP = 1–2
+|match_REN_PER = 2–1
+|match_REN_PPA = 2–1
+|match_REN_PVE = 2–1
+|match_REN_TRE = 1–1
+|match_REN_TRI = 4–0
+|match_REN_UBR = 1-3
+|match_REN_VIC = 1–3
+|match_REN_VVE = 1–0
+
+|match_TRE_ALB = 2–2
+|match_TRE_ALC = 1–0
+|match_TRE_ARZ = 2–2
+|match_TRE_CIT = 1–0
+|match_TRE_DOB = 2–0
+|match_TRE_GIA = 3–1
+|match_TRE_INT = 0–1
+|match_TRE_LEC = 1–1
+|match_TRE_LUM = 1–1
+|match_TRE_NOV = 1–1
+|match_TRE_OSP = 3–1
+|match_TRE_PER = 0–0
+|match_TRE_PPA = 2–0
+|match_TRE_PVE = 1–0
+|match_TRE_REN = 3–3
+|match_TRE_TRI = 2−2
+|match_TRE_UBR = 0–2
+|match_TRE_VIC = 1–1
+|match_TRE_VVE = 1–0
+
+|match_TRI_ALB = 5–2
+|match_TRI_ALC = 1–2
+|match_TRI_ARZ = 2–1
+|match_TRI_CIT = 2–3
+|match_TRI_DOB = 2–3
+|match_TRI_GIA = 2–0
+|match_TRI_INT = 4–1
+|match_TRI_LEC = 1–1
+|match_TRI_LUM = 2–1
+|match_TRI_NOV = 0–1
+|match_TRI_OSP = 1–1
+|match_TRI_PER = 1–1
+|match_TRI_PPA = 2–1
+|match_TRI_PVE = 2−3
+|match_TRI_REN = 3–0
+|match_TRI_TRE = 1–1
+|match_TRI_UBR = 0–1
+|match_TRI_VIC = 1−6
+|match_TRI_VVE = 5−0
+
+|match_UBR_ALB = 2–1
+|match_UBR_ALC = 0–1
+|match_UBR_ARZ = 1–2
+|match_UBR_CIT = 2–1
+|match_UBR_DOB = 2–0
+|match_UBR_GIA = 2–0
+|match_UBR_INT = 2–0
+|match_UBR_LEC = 3–1
+|match_UBR_LUM = 0–1
+|match_UBR_NOV = 1–1
+|match_UBR_OSP = 0–0
+|match_UBR_PER = 0–0
+|match_UBR_PPA = 3–2
+|match_UBR_PVE = 5–0
+|match_UBR_REN = 1–2
+|match_UBR_TRE = 2–1
+|match_UBR_TRI = 0–0
+|match_UBR_VIC = 1–1
+|match_UBR_VVE = 3–1
+
+|match_VIC_ALB = 3–1
+|match_VIC_ALC = 0–1
+|match_VIC_ARZ = 2–1
+|match_VIC_CIT = 4–1
+|match_VIC_DOB = 0–0
+|match_VIC_GIA = 2–1
+|match_VIC_INT = 2−1
+|match_VIC_LEC = 1–0
+|match_VIC_LUM = 5–0
+|match_VIC_NOV = 3–1
+|match_VIC_OSP = 1–0
+|match_VIC_PER = 0–0
+|match_VIC_PPA = 3–0
+|match_VIC_PVE = 2–0
+|match_VIC_REN = 1–0
+|match_VIC_TRE = 2–3
+|match_VIC_TRI = 1–0
+|match_VIC_UBR = 1–1
+|match_VIC_VVE = 2–1
+
+|match_VVE_ALB = 1–3
+|match_VVE_ALC = 1–1
+|match_VVE_ARZ = 0–1
+|match_VVE_CIT = 1–1
+|match_VVE_DOB = 1–1
+|match_VVE_GIA = 0–1
+|match_VVE_INT = 1–2
+|match_VVE_LEC = 2–2
+|match_VVE_LUM = 0–0
+|match_VVE_NOV = 0–2
+|match_VVE_OSP = 0–0
+|match_VVE_PER = 1–1
+|match_VVE_PPA = 0–1
+|match_VVE_PVE = 2–2
+|match_VVE_REN = 2–2
+|match_VVE_TRE = 0–3
+|match_VVE_TRI = 0–0
+|match_VVE_UBR = 1–1
+|match_VVE_VIC = 0–1
+}}
+
+==Group B (Centre)==
+===Stadia and locations===
+4 teams from [[Emilia-Romagna]], 4 teams from [[Tuscany]], 3 teams from [[Marche]], 3 teams from [[Umbria]], 2 teams from [[Piedmont]], 1 team from [[Abruzzo]], 1 team from [[Lazio]], 1 team from [[Molise]] and 1 team from [[Sardinia]].
+
+{{Location map+
+| Italy
+| width   = 500
+| float   = right
+| caption = Location of teams in 2025–26 Serie C (Group B)
+| places  = 
+{{Location map~
+| Italy
+| lat      = 43.4633330
+| long     = 11.8783330
+| label    = <small>[[SS Arezzo|Arezzo]]</small>
+| mark     = Red pog.svg
+| position = top
+}}
+{{Location map~
+| Italy
+| lat      = 42.8529390
+| long     = 13.5678160
+| label    = <small>[[Ascoli Calcio 1898 FC|Ascoli]]</small>
+| mark     = Red pog.svg
+| position = left
+}}
+{{Location map~
+| Italy
+| lat      = 44.7000000
+| long     = 7.85000000
+| label    = <small>[[AC Bra|Bra]]</small>
+| mark     = Red pog.svg
+| position = bottom
+}}
+{{Location map~
+| Italy
+| lat      = 41.5575240
+| long     = 14.6474250
+| mark     = Red pog.svg
+| label    = <small>[[Campobasso FC|Campobasso]]</small>
+| position = top
+}}
+{{Location map~
+| Italy
+| lat      = 44.7788050
+| long     = 10.7988170
+| label    = <small>[[AC Carpi|Carpi]]</small>
+| mark     = Red pog.svg
+| position = left
+}}
+{{Location map~
+| Italy
+| lat      = 44.2333330
+| long     = 12.0500000
+| label    = <small>[[Forlì FC|Forlì]]</small>
+| mark     = Red pog.svg
+| position = left
+}}
+{{Location map~
+| Italy
+| lat      = 43.3500620
+| long     = 12.5675350
+| mark     = Red pog.svg
+| label    = <small>[[AS Gubbio 1910|Gubbio]]</small>
+| position = right
+}}
+{{Location map~
+| Italy
+| lat      = 42.0000000
+| long     = 12.7166670
+| mark     = Red pog.svg
+| label    = <small>[[Guidonia Montecelio 1937 FC|Guidonia]]</small>
+| position = left
+}}
+{{Location map~
+| Italy
+| lat      = 45.0791670
+| long     = 7.67611100
+| label    = <small>[[Juventus Next Gen|Juventus NG]]</small>
+| mark     = Red pog.svg
+| position = top
+}}
+{{Location map~
+| Italy
+| lat      = 43.5519440
+| long     = 10.3083330
+| mark     = Red pog.svg
+| label    = <small>[[US Livorno 1915|Livorno]]</small>
+| position = bottom
+}}
+{{Location map~
+| Italy
+| lat      = 43.1062160
+| long     = 12.3548520
+| mark     = Red pog.svg
+| label    = <small>[[AC Perugia Calcio|Perugia]]</small>
+| position = right
+}}
+{{Location map~
+| Italy
+| lat      = 42.8499150
+| long     = 11.6740830
+| label    = <small>[[US Pianese|Pianese]]</small>
+| mark     = Red pog.svg
+| position = left
+}}
+{{Location map~
+| Italy
+| lat      = 42.6166670
+| long     = 14.0666670
+| mark     = Red pog.svg
+| label    = <small>[[AS Pineto Calcio|Pineto]]</small>
+| position = right
+}}
+{{Location map~
+| Italy
+| lat      = 43.6690580
+| long     = 10.6442210
+| mark     = Red pog.svg
+| label    = <small>[[US Città di Pontedera|Pontedera]]</small>
+| position = top
+}}
+{{Location map~
+| Italy
+| lat      = 44.406270
+| long     = 12.194783
+| label    = <small>[[Ravenna F.C.|Ravenna]]</small>
+| mark     = Red pog.svg
+| position = right
+}}
+{{Location map~
+| Italy
+| lat      = 44.0594440
+| long     = 12.5683330
+| label    = <s><small>[[Rimini FC 1912|Rimini]]</small></s>
+| mark     = Red pog.svg
+| position = left
+}}
+{{Location map~
+| Italy
+| lat      = 42.9500000
+| long     = 13.8833330
+| mark     = Red pog.svg
+| label    = <small>[[US Sambenedettese|Sambenedettese]]</small>
+| position = right
+}}
+{{Location map~
+| Italy
+| lat      = 42.5620880
+| long     = 12.5868840
+| mark     = Red pog.svg
+| label    = <small>[[Ternana Calcio|Ternana]]</small>
+| position = left
+}}
+{{Location map~
+| Italy
+| lat      = 40.7333330
+| long     = 8.56666700
+| mark     = Red pog.svg
+| label    = <small>[[SEF Torres 1903|Torres]]</small>
+| position = right
+}}
+{{Location map~
+| Italy
+| lat      = 43.8996200
+| long     = 12.9054920
+| mark     = Red pog.svg
+| label    = <small>[[Vis Pesaro dal 1898|Vis Pesaro]]</small>
+| position = right
+}}
+}}
+
+{| class="wikitable sortable"
+|-
+! Club
+! City
+! Stadium
+! Capacity
+|-
+| [[SS Arezzo|Arezzo]]
+| [[Arezzo]]
+| [[Stadio Città di Arezzo|Città di Arezzo]]
+| {{Nts|13128}}
+|-
+| [[Ascoli Calcio 1898 FC|Ascoli]]
+| [[Ascoli Piceno]]
+| [[Stadio Cino e Lillo Del Duca|Cino e Lillo Del Duca]]
+| {{Nts|11326}}
+|-
+| [[AC Bra|Bra]]
+| [[Bra, Piedmont|Bra]]
+| Giuseppe Sivori <small>([[Sestri Levante]])</small>
+| {{Nts|1574}}
+|-
+| [[Campobasso FC|Campobasso]]
+| [[Campobasso]]
+| [[Stadio Nuovo Romagnoli|Antonio Molinari]]
+| {{Nts|25000}}
+|-
+| [[AC Carpi|Carpi]]
+| [[Carpi, Emilia-Romagna|Carpi]]
+| [[Stadio Sandro Cabassi|Sandro Cabassi]]
+| {{Nts|5510}}
+|-
+| [[Forlì FC|Forlì]]
+| [[Forlì]]
+| Tullo Morgagni
+| {{Nts|3500}}
+|-
+| [[AS Gubbio 1910|Gubbio]]
+| [[Gubbio]]
+| [[Stadio Pietro Barbetti|Pietro Barbetti]]
+| {{Nts|4939}}
+|-
+| [[Guidonia Montecelio 1937 FC|Guidonia Montecelio]]
+| [[Guidonia Montecelio]]
+| Comunale di Guidonia Montecelio
+| {{Nts|2900}}
+|-
+| [[Juventus Next Gen]]
+| [[Turin]]
+| [[Stadio Giuseppe Moccagatta|Giuseppe Moccagatta]] <small>([[Alessandria]])</small>
+| {{Nts|5827}}
+|-
+| [[US Livorno 1915|Livorno]]
+| [[Livorno]]
+| [[Stadio Armando Picchi|Armando Picchi]]
+| {{Nts|14312}}
+|-
+| [[AC Perugia Calcio|Perugia]]
+| [[Perugia]]
+| [[Stadio Renato Curi|Renato Curi]]
+| {{Nts|23625}}
+|-
+| [[US Pianese|Pianese]]
+| [[Piancastagnaio]]
+| Comunale di Piancastagnaio
+| {{Nts|1500}}
+|-
+| [[AS Pineto Calcio|Pineto]]
+| [[Pineto]]
+| Pavone-Mariani
+| {{Nts|1500}}
+|-
+| [[US Città di Pontedera|Pontedera]]
+| [[Pontedera]]
+| [[Stadio Ettore Mannucci|Ettore Mannucci]]
+| {{Nts|2700}}
+|-
+| [[Ravenna F.C.|Ravenna]]
+| [[Ravenna]]
+| [[Stadio Bruno Benelli|Bruno Benelli]]
+| {{Nts|12020}}
+|-
+| [[Rimini FC 1912|Rimini]]
+| [[Rimini]]
+| [[Stadio Romeo Neri|Romeo Neri]]
+| {{Nts|9768}}
+|-
+| [[US Sambenedettese|Sambenedettese]]
+| [[San Benedetto del Tronto]]
+| [[Stadio Riviera delle Palme|Riviera delle Palme]]
+| {{Nts|13786}}
+|-
+| [[Ternana Calcio|Ternana]]
+| [[Terni]]
+| [[Stadio Libero Liberati|Libero Liberati]]
+| {{Nts|14995}}
+|-
+| [[SEF Torres 1903|Torres]]
+| [[Sassari]]
+| [[Stadio Vanni Sanna|Vanni Sanna]]
+| {{Nts|6145}}
+|-
+| [[Vis Pesaro dal 1898|Vis Pesaro]]
+| [[Pesaro]]
+| [[Stadio Tonino Benelli|Tonino Benelli]]
+| {{Nts|4898}}
+|}
+
+=== Personnel and sponsors ===
+{| class="wikitable"
+! rowspan="2" |Club
+! rowspan="2" |Manager
+! rowspan="2" |Captain
+! rowspan="2" |Kit maker
+!Shirt sponsor(s)
+|-
+!Main
+|-
+|[[SS Arezzo|Arezzo]]
+|{{Flag icon|ITA}} [[Cristian Bucchi]]
+|{{Flag icon|ITA}} [[Marco Chiosa]]
+|Rever
+|[[UnoAErre]]
+|-
+|[[Ascoli Calcio 1898 FC|Ascoli]]
+|{{Flag icon|ITA}} [[Francesco Tomei (manager)|Francesco Tomei]]
+|{{Flag icon|ARG}} [[Marcos Curado]]
+|[[Kappa (brand)|Kappa]]
+|Portobello
+|-
+|[[AC Bra|Bra]]
+|{{Flag icon|ITA}} [[Fabio Nisticò]]
+|{{Flag icon|ITA}} [[Stefano Tuzza]]
+|[[Kappa (brand)|Kappa]]
+|Bragas
+|-
+|[[Campobasso FC|Campobasso]]
+|{{Flag icon|ITA}} [[Luciano Zauri]]
+|{{Flag icon|ITA}} [[Vito Leonetti]]
+|Diaza
+|Universo Ceramiche
+|-
+|[[AC Carpi|Carpi]]
+|{{Flag icon|ITA}} [[Stefano Cassani]]
+|{{Flag icon|ITA}} [[Matteo Cortesi]]
+|[[Macron (sportswear)|Macron]]
+|Texcart FiftyNine
+|-
+|[[Forlì FC|Forlì]]
+|{{Flag icon|ITA}} [[Alessandro Miramari]]
+|{{Flag icon|ITA}} [[Riccardo Gaiola]]
+|Ready Sport
+|ER Lux
+|-
+|[[AS Gubbio 1910|Gubbio]]
+|{{Flag icon|ITA}} [[Domenico Di Carlo]]
+|{{Flag icon|ITA}} [[Andrea Signorini]]
+|[[Legea]]
+|Colacem
+|-
+|[[Guidonia Montecelio 1937 FC|Guidonia Montecelio]]
+|{{Flag icon|ITA}} [[Ciro Ginestra]]
+|{{Flag icon|ITA}} [[Andrea Cristini]]
+|[[Givova]]
+|Magazzini Maury's
+|-
+|[[Juventus Next Gen]]
+|{{Flag icon|ITA}} [[Massimo Brambilla]]
+|{{Flag icon|ITA}} [[Simone Guerra]]
+|[[Adidas]]
+|[[Jeep]]
+|-
+|[[US Livorno 1915|Livorno]]
+|{{Flag icon|ITA}} [[Alessandro Formisano]]
+|{{Flag icon|ITA}} [[Federico Dionisi]]
+|[[Macron (sportswear)|Macron]]
+|Platinum-e Gas e Luce
+|-
+|[[AC Perugia Calcio|Perugia]]
+|{{Flag icon|ITA}} [[Piero Braglia]]
+|{{Flag icon|ITA}} [[Giovanni Giunti]]
+|Frankie Garage
+|''None''
+|-
+|[[US Pianese|Pianese]]
+|{{Flag icon|ITA}} [[Alessandro Birindelli]]
+|{{Flag icon|ITA}} [[Luca Simeoni]]
+|[[Mizuno]]
+|Stosa Cucine
+|-
+|[[AS Pineto Calcio|Pineto]]
+|{{Flag icon|ITA}} [[Ivan Tisci]]
+|{{Flag icon|ITA}} [[Stefano Amadio]]
+|[[Erreà]]
+|Liofilchem
+|-
+|[[US Città di Pontedera|Pontedera]]
+|{{Flag icon|ITA}} [[Leonardo Menichini]]
+|{{Flag icon|ITA}} [[Gabriele Perretta]]
+|[[Erreà]]
+|Freezanz
+|-
+|[[Ravenna F.C.|Ravenna]]
+|{{Flag icon|ITA}} [[Marco Marchionni]]
+|{{Flag icon|ITA}} [[Paolo Rrapaj]]
+|[[Nike, Inc.|Nike]]
+|[[Cipriani S.A.|Cipriani]]
+|-
+|[[Rimini FC 1912|Rimini]]
+|{{Flag icon|ITA}} [[Filippo D'Alesio]]
+|{{Flag icon|ITA}} [[Gabriele Bellodi]]
+|[[Givova]]
+|''None''
+|-
+|[[US Sambenedettese|Sambenedettese]]
+|{{Flag icon|ITA}} [[Ottavio Palladini]]
+|{{Flag icon|ITA}} [[Umberto Eusepi]]
+|[[Kappa (brand)|Kappa]]
+|Giudici Polidori
+|-
+|[[Ternana Calcio|Ternana]]
+|{{Flag icon|ITA}} [[Fabio Liverani]]
+|{{Flag icon|ITA}} [[Marco Capuano]]
+|[[Macron (sportswear)|Macron]]
+|''None''
+|-
+|[[SEF Torres 1903|Torres]]
+|{{Flag icon|ITA}} [[Michele Pazienza]]
+|{{Flag icon|ITA}} [[Giuseppe Mastinu]]
+|Footure Lab
+|[[Sardinia|Sardegna]]
+|-
+|[[Vis Pesaro dal 1898|Vis Pesaro]]
+|{{Flag icon|ITA}} [[Roberto Stellone]]
+|{{Flag icon|ITA}} [[Manuel Di Paola]]
+|[[Macron (sportswear)|Macron]]
+|LC Mobili
+|}
+
+=== Table ===
+{{2025–26 Serie C Group B table}}
+
+===Results===
+{{#invoke:sports results|main
+| source = [https://us.soccerway.com/national/italy/serie-c1/20252026/girone-b/r83339/matches/ Soccerway]
+| a_note = yes
+| update = complete 
+| matches_style = FBR
+|team1 = ARE |team2 = ASC |team3 = BRA |team4 = CAM |team5 = CRP |team6 = FOR |team7 = GUB |team8 = GUM |team9 = JNG |team10 = LIV |team11 = PER |team12 = PIA |team13 = PIN |team14 = PON |team15 = RAV |team16 = SAM |team17 = TER |team18 = TOR |team19 = VPE 
+ 
+| name_ARE = [[SS Arezzo|Arezzo]]
+| name_ASC = [[Ascoli Calcio 1898 FC|Ascoli]]
+| name_BRA = [[AC Bra|Bra]]
+| name_CAM = [[Campobasso FC|Campobasso]]
+| name_CRP = [[AC Carpi|Carpi]]
+| name_FOR = [[Forlì FC|Forlì]]
+| name_GUB = [[AS Gubbio 1910|Gubbio]]
+| name_GUM = {{nowrap|[[Guidonia Montecelio 1937 FC|Guidonia Montecelio]]}}
+| name_JNG = [[Juventus Next Gen]]
+| name_LIV = [[US Livorno 1915|Livorno]]
+| name_PER = [[AC Perugia Calcio|Perugia]]
+| name_PIA = [[US Pianese|Pianese]]
+| name_PIN = [[AS Pineto Calcio|Pineto]]
+| name_PON = [[US Città di Pontedera|Pontedera]]
+| name_RAV = [[Ravenna FC|Ravenna]]
+| name_SAM = [[AS Sambenedettese|Sambenedettese]]
+| name_TER = [[Ternana Calcio|Ternana]]
+| name_TOR = [[SEF Torres 1903|Torres]]
+| name_VPE = [[Vis Pesaro dal 1898|Vis Pesaro]]
+
+|match_ARE_ASC = 1–2
+|match_ARE_BRA = 2–1
+|match_ARE_CAM = 5–1
+|match_ARE_CRP = 3–1
+|match_ARE_FOR = 1–0
+|match_ARE_GUB = 1–0
+|match_ARE_GUM = 0–1
+|match_ARE_JNG = 1–0
+|match_ARE_LIV = 2–0
+|match_ARE_PER = 1–1
+|match_ARE_PIA = 2–0
+|match_ARE_PIN = 3–3
+|match_ARE_PON = 1–0
+|match_ARE_RAV = 1–1
+|match_ARE_SAM = 1–0
+|match_ARE_TER = 1–2
+|match_ARE_TOR = 3–1
+|match_ARE_VPE = 1–0
+
+|match_ASC_ARE = 0–2
+|match_ASC_BRA = 4–1
+|match_ASC_CAM = 0–0
+|match_ASC_CRP = 3–0
+|match_ASC_FOR = 3–0
+|match_ASC_GUB = 1–1
+|match_ASC_GUM = 1–0
+|match_ASC_JNG = 0–0
+|match_ASC_LIV = 3–1
+|match_ASC_PER = 2–1
+|match_ASC_PIA = 0–0
+|match_ASC_PIN = 3–0
+|match_ASC_PON = 5–0
+|match_ASC_RAV = 2–0
+|match_ASC_SAM = 1–0
+|match_ASC_TER = 1–0
+|match_ASC_TOR = 2–2
+|match_ASC_VPE = 2–1
+
+|match_BRA_ARE = 0−4
+|match_BRA_ASC = 1–3
+|match_BRA_CAM = 2–0
+|match_BRA_CRP = 1–3
+|match_BRA_FOR = 2–1
+|match_BRA_GUB = 1–0
+|match_BRA_GUM = 2–1
+|match_BRA_JNG = 1–1
+|match_BRA_LIV = 0–1
+|match_BRA_PER = 2–2
+|match_BRA_PIA = 1–1
+|match_BRA_PIN = 1–2
+|match_BRA_PON = 2–0
+|match_BRA_RAV = 2–1
+|match_BRA_SAM = 2–2
+|match_BRA_TER = 1−2
+|match_BRA_TOR = 1–1
+|match_BRA_VPE = 0–0
+
+|match_CAM_ARE = 0–1
+|match_CAM_ASC = 1–0
+|match_CAM_BRA = 0–0
+|match_CAM_CRP = 2–0
+|match_CAM_FOR = 2–0
+|match_CAM_GUB = 2–0
+|match_CAM_GUM = 2–2
+|match_CAM_JNG = 2–1
+|match_CAM_LIV = 1–2
+|match_CAM_PER = 1–0
+|match_CAM_PIA = 1–1
+|match_CAM_PIN = 0–1
+|match_CAM_PON = 3–2
+|match_CAM_RAV = 2–1
+|match_CAM_SAM = 1–1
+|match_CAM_TER = 0–1
+|match_CAM_TOR = 2–1
+|match_CAM_VPE = 2–2
+
+|match_CRP_ARE = 0–1
+|match_CRP_ASC = 1–1
+|match_CRP_BRA = 2–1
+|match_CRP_CAM = 2–2
+|match_CRP_FOR = 0–1
+|match_CRP_GUB = 0–3
+|match_CRP_GUM = 1–1
+|match_CRP_JNG = 1–1
+|match_CRP_LIV = 2–0
+|match_CRP_PER = 2–0
+|match_CRP_PIA = 1–1
+|match_CRP_PIN = 1–2
+|match_CRP_PON = 2–0
+|match_CRP_RAV = 1–2
+|match_CRP_SAM = 0–0
+|match_CRP_TER = 0–1
+|match_CRP_TOR = 1–1
+|match_CRP_VPE = 1–1
+
+|match_FOR_ARE = 1–2
+|match_FOR_ASC = 0−3
+|match_FOR_BRA = 1–1
+|match_FOR_CAM = 2–3
+|match_FOR_CRP = 4–2
+|match_FOR_GUB = 0–1
+|match_FOR_GUM = 1–0
+|match_FOR_JNG = 2–2
+|match_FOR_LIV = 1–1
+|match_FOR_PER = 1–1
+|match_FOR_PIA = 0–0
+|match_FOR_PIN = 1–1
+|match_FOR_PON = 2–0
+|match_FOR_RAV = 1–0
+|match_FOR_SAM = 0–2
+|match_FOR_TER = 1–1
+|match_FOR_TOR = 2–0
+|match_FOR_VPE = 3–1
+
+|match_GUB_ARE = 0–1
+|match_GUB_ASC = 1–3
+|match_GUB_BRA = 1–0
+|match_GUB_CAM = 1–0
+|match_GUB_CRP = 2–1
+|match_GUB_FOR = 2–0
+|match_GUB_GUM = 0–2
+|match_GUB_JNG = 1–1
+|match_GUB_LIV = 0–0
+|match_GUB_PER = 1–1
+|match_GUB_PIA = 1–1
+|match_GUB_PIN = 2–0
+|match_GUB_PON = 1–1
+|match_GUB_RAV = 0–1
+|match_GUB_SAM = 1–1
+|match_GUB_TER = 3–3
+|match_GUB_TOR = 0–0
+|match_GUB_VPE = 1–0
+
+|match_GUM_ARE = 0–0
+|match_GUM_ASC = 0–0
+|match_GUM_BRA = 1–1
+|match_GUM_CAM = 0–0
+|match_GUM_CRP = 2−3
+|match_GUM_FOR = 2–2
+|match_GUM_GUB = 0–1
+|match_GUM_JNG = 1–1
+|match_GUM_LIV = 0–2
+|match_GUM_PER = 1–2
+|match_GUM_PIA = 1–0
+|match_GUM_PIN = 0–2
+|match_GUM_PON = 2–0
+|match_GUM_RAV = 1–2
+|match_GUM_SAM = 0–1
+|match_GUM_TER = 1–1
+|match_GUM_TOR = 0–0
+|match_GUM_VPE = 0–0
+
+|match_JNG_ARE = 2–3
+|match_JNG_ASC = 1–0
+|match_JNG_BRA = 2–2
+|match_JNG_CAM = 0–1
+|match_JNG_CRP = 2–0
+|match_JNG_FOR = 1–0
+|match_JNG_GUB = 2–2
+|match_JNG_GUM = 1–0
+|match_JNG_LIV = 2–1
+|match_JNG_PER = 1–0
+|match_JNG_PIA = 0–0
+|match_JNG_PIN = 1–0
+|match_JNG_PON = 0–1
+|match_JNG_RAV = 2–4
+|match_JNG_SAM = 4–2
+|match_JNG_TER = 2–1
+|match_JNG_TOR = 2–1
+|match_JNG_VPE = 1–3
+
+|match_LIV_ARE = 2–1
+|match_LIV_ASC = 0–3
+|match_LIV_BRA = 2–1
+|match_LIV_CAM = 0–0
+|match_LIV_CRP = 2–2
+|match_LIV_FOR = 2–3
+|match_LIV_GUB = 3–0
+|match_LIV_GUM = 0–1
+|match_LIV_JNG = 1–2
+|match_LIV_LIV = 
+|match_LIV_PER = 1–2
+|match_LIV_PIA = 1–2
+|match_LIV_PIN = 1–0
+|match_LIV_PON = 2–2
+|match_LIV_RAV = 1–1
+|match_LIV_SAM = 2–1
+|match_LIV_TER = 1–0
+|match_LIV_TOR = 3–1
+|match_LIV_VPE = 2–1
+
+|match_PER_ARE = 0–0
+|match_PER_ASC = 0–2
+|match_PER_BRA = 1–1
+|match_PER_CAM = 0–1
+|match_PER_CRP = 1–1
+|match_PER_FOR = 4–0
+|match_PER_GUB = 0–1
+|match_PER_GUM = 0–0
+|match_PER_JNG = 2–2
+|match_PER_LIV = 2–0
+|match_PER_PIA = 0–1
+|match_PER_PIN = 0–1
+|match_PER_PON = 2–1
+|match_PER_RAV = 1–1
+|match_PER_SAM = 1–2
+|match_PER_TER = 1–2
+|match_PER_TOR = 1–1
+|match_PER_VPE = 2–1
+
+|match_PIA_ARE = 2–4
+|match_PIA_ASC = 4–2
+|match_PIA_BRA = 2–2
+|match_PIA_CAM = 0–2
+|match_PIA_CRP = 0–1
+|match_PIA_FOR = 3–2
+|match_PIA_GUB = 1–0
+|match_PIA_GUM = 0–0
+|match_PIA_JNG = 0–0
+|match_PIA_LIV = 2–1
+|match_PIA_PER = 2–1
+|match_PIA_PIN = 1–0
+|match_PIA_PON = 2–2
+|match_PIA_RAV = 0–1
+|match_PIA_SAM = 1–1
+|match_PIA_TER = 0–0
+|match_PIA_TOR = 1–1
+|match_PIA_VPE = 1–2
+
+|match_PIN_ARE = 1–4
+|match_PIN_ASC = 1–3
+|match_PIN_BRA = 2–1
+|match_PIN_CAM = 1–0
+|match_PIN_CRP = 1–0
+|match_PIN_FOR = 3−2
+|match_PIN_GUB = 1–0
+|match_PIN_GUM = 3–3
+|match_PIN_JNG = 2–3
+|match_PIN_LIV = 3–0
+|match_PIN_PER = 3–0
+|match_PIN_PIA = 1–1
+|match_PIN_PON = 1–1
+|match_PIN_RAV = 0–3
+|match_PIN_SAM = 0–0
+|match_PIN_TER = 0–3
+|match_PIN_TOR = 0–0
+|match_PIN_VPE = 1–1
+
+|match_PON_ARE = 0–3
+|match_PON_ASC = 1–3
+|match_PON_BRA = 0−0
+|match_PON_CAM = 0–4
+|match_PON_CRP = 0–1
+|match_PON_FOR = 2–1
+|match_PON_GUB = 1–1
+|match_PON_GUM = 0−1
+|match_PON_JNG = 0–1
+|match_PON_LIV = 0−2
+|match_PON_PER = 2–2
+|match_PON_PIA = 2–0
+|match_PON_PIN = 1–1
+|match_PON_RAV = 0–1
+|match_PON_SAM = 1–1
+|match_PON_TER = 2–2
+|match_PON_TOR = 1–3
+|match_PON_VPE = 0–2
+
+|match_RAV_ARE = 0–3
+|match_RAV_ASC = 1–0
+|match_RAV_BRA = 3–1
+|match_RAV_CAM = 3–2
+|match_RAV_CRP = 1–0
+|match_RAV_FOR = 0–0
+|match_RAV_GUB = 1–1
+|match_RAV_GUM = 2–1
+|match_RAV_JNG = 2–0
+|match_RAV_LIV = 2–0
+|match_RAV_PER = 3–2
+|match_RAV_PIA = 0–0
+|match_RAV_PIN = 1–0
+|match_RAV_PON = 2–1
+|match_RAV_SAM = 1–0
+|match_RAV_TER = 1–0
+|match_RAV_TOR = 3–0
+|match_RAV_VPE = 1–0
+
+|match_SAM_ARE = 0–0
+|match_SAM_ASC = 0−1
+|match_SAM_BRA = 1–0
+|match_SAM_CAM = 0–1
+|match_SAM_CRP = 0–1
+|match_SAM_FOR = 1–2
+|match_SAM_GUB = 0–0
+|match_SAM_GUM = 0–1
+|match_SAM_JNG = 4–2
+|match_SAM_LIV = 0–0
+|match_SAM_PER = 0–1
+|match_SAM_PIA = 0–2
+|match_SAM_PIN = 1–1
+|match_SAM_PON = 2–1
+|match_SAM_RAV = 0–1
+|match_SAM_TER = 0–0
+|match_SAM_TOR = 1–2
+|match_SAM_VPE = 0–2
+
+|match_TER_ARE = 1–1
+|match_TER_ASC = 0–2
+|match_TER_BRA = 2–0
+|match_TER_CAM = 2–4
+|match_TER_CRP = 2–0
+|match_TER_FOR = 2–1
+|match_TER_GUB = 0–1
+|match_TER_GUM = 1–2
+|match_TER_JNG = 1–0
+|match_TER_LIV = 2–1
+|match_TER_PER = 2–2
+|match_TER_PIA = 1−3
+|match_TER_PIN = 2–1
+|match_TER_PON = 2–1
+|match_TER_RAV = 2–0
+|match_TER_SAM = 1–1
+|match_TER_TOR = 0–2
+|match_TER_VPE = 1–1
+
+|match_TOR_ARE = 1–1
+|match_TOR_ASC = 0–1
+|match_TOR_BRA = 1–1
+|match_TOR_CAM = 2–2
+|match_TOR_CRP = 0–1
+|match_TOR_FOR = 0–2
+|match_TOR_GUB = 0–0
+|match_TOR_GUM = 2–1
+|match_TOR_JNG = 0–3
+|match_TOR_LIV = 3–1
+|match_TOR_PER = 1–1
+|match_TOR_PIA = 0–2
+|match_TOR_PIN = 1–1
+|match_TOR_PON = 1–0
+|match_TOR_RAV = 2–2
+|match_TOR_SAM = 0–2
+|match_TOR_TER = 1–1
+|match_TOR_VPE = 0–0
+
+|match_VPE_ARE = 0–3
+|match_VPE_ASC = 1–1
+|match_VPE_BRA = 2–1
+|match_VPE_CAM = 1–2
+|match_VPE_CRP = 3−0
+|match_VPE_FOR = 1–1
+|match_VPE_GUB = 1–1
+|match_VPE_GUM = 2–1
+|match_VPE_JNG = 1–0
+|match_VPE_LIV = 3–0
+|match_VPE_PER = 0–1
+|match_VPE_PIA = 0–0
+|match_VPE_PIN = 0–2
+|match_VPE_PON = 1–1
+|match_VPE_RAV = 1–0
+|match_VPE_SAM = 2–3
+|match_VPE_TER = 1–0
+|match_VPE_TOR = 0–0
+}}
+
+==Group C (South)==
+===Stadia and locations===
+6 teams from [[Campania]], 5 teams from [[Apulia]], 3 teams from [[Sicily]], 2 teams from [[Basilicata]], 2 teams from [[Calabria]], 1 team from [[Lazio]] and 1 team from [[Lombardy]].
+
+{{Location map+
+| Italy
+| width   = 500
+| float   = right
+| caption = Location of teams in 2025–26 Serie C (Group C)
+| places  = 
+{{Location map~
+| Italy
+| lat      = 45.6950000
+| long     = 9.67000000
+| label    = <small>[[Atalanta Under 23|Atalanta U23]]</small>
+| position = bottom
+| mark     = 
+}}
+{{Location map~
+| Italy
+| lat      = 41.2666670
+| long     = 15.9000000
+| label    = <small>[[SS Audace Cerignola|Cerignola]]</small>
+| position = right
+}}
+{{Location map~
+| Italy
+| lat      = 41.1297610
+| long     = 14.7826210
+| label    = <small>[[Benevento Calcio|Benevento]]</small>
+| position = top
+| mark     = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy
+| lat      = 40.0166670
+| long     = 18.1666670
+| label    = <small>[[Casarano Calcio|Casarano]]</small>
+| position = bottom
+}}
+{{Location map~
+| Italy
+| lat      = 41.0745100
+| long     = 14.3464460
+| label    = <small>[[Casertana FC|Casertana]]</small>
+| position = left
+| mark     = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy
+| lat      = 37.5000000
+| long     = 15.0902780
+| label    = <small>[[Catania FC|Catania]]</small>
+| position = left
+}}
+{{Location map~
+| Italy
+| lat      = 40.7099240
+| long     = 14.7024340
+| label    = <small>[[Cavese 1919|Cavese]]</small>
+| position = top
+| mark     = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy
+| lat      = 39.2953952
+| long     = 16.2536091
+| label    = <small>[[Cosenza Calcio|Cosenza]]</small>
+| position = top
+}}
+{{Location map~
+| Italy
+| lat      = 39.0792960
+| long     = 17.1144720
+| label    = <small>[[FC Crotone|Crotone]]</small>
+| position = bottom
+}}
+{{Location map~
+| Italy
+| lat      = 41.4584500
+| long     = 15.5518800
+| label    = <small>[[Calcio Foggia 1920|Foggia]]</small>
+| position = right
+}}
+{{Location map~
+| Italy
+| lat      = 40.9333330
+| long     = 14.2000000
+| label    = <small>[[Giugliano Calcio 1928|Giugliano]]</small>
+| position = left
+| mark     = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy
+| lat      = 41.5333330
+| long     = 12.9666670
+| label    = <small>[[Latina Calcio 1932|Latina]]</small>
+| position = left
+}}
+{{Location map~
+| Italy
+| lat      = 40.9571910
+| long     = 17.2935420
+| label    = <small>[[SS Monopoli 1966|Monopoli]]</small>
+| position = right
+}}
+{{Location map~
+| Italy
+| lat      = 40.6333330
+| long     = 15.6333330
+| label    = <small>[[AZ Picerno|Picerno]]</small>
+| position = top
+| mark     = Yellow pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy
+| lat      = 40.6455424
+| long     = 14.8214394
+| label    = <small>[[US Salernitana 1919|Salernitana]]</small>
+| position = bottom
+| mark     = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy
+| lat      = 37.0691670
+| long     = 15.2875000
+| label    = <small>[[Siracusa Calcio 1924|Siracusa]]</small>
+| position = left
+}}
+{{Location map~
+| Italy
+| lat      = 40.6261110
+| long     = 14.3761110
+| label    = <small>[[Sorrento Calcio 1945|Sorrento]]</small>
+| position = left
+| mark     = Blue pog.svg
+| label_size = 0
+}}
+{{Location map~
+| Italy
+| lat      = 40.8253790
+| long     = 16.5241980
+| label    = <small>[[ASD Team Altamura|Altamura]]</small>
+| position = top
+}}
+{{Location map~
+| Italy
+| lat      = 38.0174340
+| long     = 12.5180030
+| label    = <small>[[FC Trapani 1905|Trapani]]</small>
+| position = bottom
+}}
+{{Location map~ 
+|Italy 
+|lat=40.634012 
+|long=15.804282 
+|label=<small>[[Potenza Calcio|Potenza]]</small>                     |position=right|mark=Yellow pog.svg}}
+}}
+
+{{Location map+ |Italy Campania |width=500 |float=right |caption=Location of teams in 2025–26 Serie C (Group C) (Campania and Basilicata) |places=
+{{Location map~ |Italy Campania|lat=41.129761|long=14.782621|label=<small>[[Benevento Calcio|Benevento]]</small>|position=bottom|mark=Blue pog.svg}}
+{{Location map~ |Italy Campania |lat=41.074510|long=14.346446|label=<small>[[Casertana FC|Casertana]]</small>            |position=left |mark=Blue pog.svg}}
+{{Location map~|Italy Campania|lat=40.707239|long=14.703919|label=<small>[[Cavese 1919|Cavese]]</small>|position=top|mark=Blue pog.svg}}
+{{Location map~|Italy Campania|lat=40.933333|long=14.200000|label=<small>[[Giugliano Calcio 1928|Giugliano]]</small>|position=left|mark=Blue pog.svg}}
+{{Location map~ |Italy Campania|lat=40.6455424 |long=14.8214394 |label=<small>[[US Salernitana 1919|Salernitana]]</small>                  |position=right|mark=Blue pog.svg}}
+{{Location map~|Italy Campania|lat=40.626111|long=14.376111|label=<small>[[Sorrento Calcio 1945|Sorrento]]</small>|position=left|mark=Blue pog.svg}}
+{{Location map~ |Italy Campania |lat=40.633333 |long=15.633333 |label=<small>[[AZ Picerno|Picerno]]</small>                         |position=left|mark=Yellow pog.svg}}
+
+}}
+
+{| class="wikitable sortable"
+|-
+! Club
+! City
+! Stadium
+! Capacity
+|-
+| [[Atalanta Under 23|Atalanta U23]]
+| [[Bergamo]]
+| Comunale di Caravaggio <small>([[Caravaggio, Lombardy|Caravaggio]])</small>
+| {{Nts|2180}}
+|-
+| [[SS Audace Cerignola|Audace Cerignola]]
+| [[Cerignola]]
+| Domenico Monterisi
+| {{Nts|7453}}
+|-
+| [[Benevento Calcio|Benevento]]
+| [[Benevento]]
+| [[Stadio Ciro Vigorito|Ciro Vigorito]]
+| {{Nts|16867}}
+|-
+| [[Casarano Calcio|Casarano]]
+| [[Casarano]]
+| [[Stadio Giuseppe Capozza|Giuseppe Capozza]]
+| {{Nts|6500}}
+|-
+| [[Casertana FC|Casertana]]
+| [[Caserta]]
+| [[Stadio Alberto Pinto|Alberto Pinto]]
+| {{Nts|12000}}
+|-
+| [[Catania FC|Catania]]
+| [[Catania]]
+| [[Stadio Angelo Massimino|Angelo Massimino]]
+| {{Nts|20881}}
+|-
+| [[Cavese 1919|Cavese]]
+| [[Cava de' Tirreni]]
+| [[Stadio Simonetta Lamberti|Simonetta Lamberti]]
+| {{Nts|5200}}
+|-
+| [[Cosenza Calcio|Cosenza]]
+| [[Cosenza]]
+| [[Stadio San Vito-Gigi Marulla|San Vito-Gigi Marulla]]
+| {{Nts|20987}}
+|-
+| [[FC Crotone|Crotone]]
+| [[Crotone]]
+| [[Stadio Ezio Scida|Ezio Scida]]
+| {{Nts|16640}}
+|-
+| [[Calcio Foggia 1920|Foggia]]
+| [[Foggia]]
+| [[Stadio Pino Zaccheria|Pino Zaccheria]]
+| {{Nts|25085}}
+|-
+| [[Giugliano Calcio 1928|Giugliano]]
+| [[Giugliano in Campania]]
+| Alberto De Cristofaro
+| {{Nts|6030}}
+|-
+| [[Latina Calcio 1932|Latina]]
+| [[Latina, Lazio|Latina]]
+| [[Stadio Domenico Francioni|Domenico Francioni]]
+| {{Nts|9310}}
+|-
+| [[SS Monopoli 1966|Monopoli]]
+| [[Monopoli]]
+| [[Stadio Vito Simone Veneziani|Vito Simone Veneziani]]
+| {{Nts|6880}}
+|-
+| [[AZ Picerno|Picerno]]
+| [[Picerno]]
+| Donato Curcio
+| {{Nts|1600}}
+|-
+| [[Potenza Calcio|Potenza]]
+| [[Potenza]]
+| [[Stadio Alfredo Viviani|Alfredo Viviani]]
+| {{Nts|4977}}
+|-
+| [[US Salernitana 1919|Salernitana]]
+| [[Salerno]]
+| [[Stadio Arechi]]
+| {{Nts|20194}}
+|-
+| [[Siracusa Calcio 1924|Siracusa]]
+| [[Syracuse, Sicily|Syracuse]]
+| [[Stadio Nicola De Simone|Nicola De Simone]]
+| {{Nts|5946}}
+|-
+| [[Sorrento Calcio 1945|Sorrento]]
+| [[Sorrento]]
+| [[Stadio Italia|Italia]]
+| {{Nts|3600}}
+|-
+| [[ASD Team Altamura|Team Altamura]]
+| [[Altamura]]
+| Antonio D'Angelo
+| {{Nts|2800}}
+|-
+| [[FC Trapani 1905|Trapani]]
+| [[Trapani]]
+| [[Stadio Polisportivo Provinciale|Provinciale]]
+| {{Nts|7787}}
+|}
+
+=== Personnel and sponsors ===
+{| class="wikitable"
+! rowspan="2" |Club
+! rowspan="2" |Manager
+! rowspan="2" |Captain
+! rowspan="2" |Kit maker
+!Shirt sponsor(s)
+|-
+!Main
+|-
+|nowrap|[[Atalanta Under 23|Atalanta U23]]
+|nowrap|{{Flag icon|ITA}} [[Salvatore Bocchetti]]
+|{{Flag icon|ITA}} [[Simone Panada]]
+|[[Joma]]
+|TAO Ambiente
+|-
+|nowrap|[[SS Audace Cerignola|Audace Cerignola]]
+|{{Flag icon|ITA}} Vincenzo Maiuri
+|{{Flag icon|ITA}} [[Luca Martinelli]]
+|[[Adidas]]
+|Proshop (H) / Ecodaunia (A) / Mineccia Group (T)
+|-
+|[[Benevento Calcio|Benevento]]
+|nowrap|{{Flag icon|ITA}} [[Antonio Floro Flores]]
+|{{Flag icon|ITA}} [[Mattia Maita]]
+|[[Nike, Inc.|Nike]]
+|IVPC
+|-
+|[[Casarano Calcio|Casarano]]
+|{{Flag icon|ITA}} [[Vito Di Bari]]
+|{{Flag icon|ITA}} [[Raffaele Maiello]]
+|[[Macron (sportswear)|Macron]]
+|Leo Shoes
+|-
+|[[Casertana FC|Casertana]]
+|{{Flag icon|ITA}} [[Federico Coppitelli]]
+|{{Flag icon|ITA}} [[Federico Proia]]
+|[[Adidas]]
+|Pulsee Luce e Gas
+|-
+|[[Catania FC|Catania]]
+|{{Flag icon|ITA}} [[William Viali]]
+|nowrap|{{Flag icon|ITA}} [[Francesco Di Tacchio]]
+|[[Erreà]]
+|SuperConveniente
+|-
+|[[Cavese 1919|Cavese]]
+|{{Flag icon|ITA}} Fabio Prosperi
+|{{Flag icon|ITA}} Luca Piana
+|[[Givova]]
+|Viride Group
+|-
+|[[Cosenza Calcio|Cosenza]]
+|{{Flag icon|ITA}} [[Antonio Buscè]]
+|{{Flag icon|ITA}} [[Tommaso D'Orazio]]
+|[[Adidas]]
+|''None''
+|-
+|[[FC Crotone|Crotone]]
+|{{Flag icon|ITA}} Emilio Longo
+|{{Flag icon|ITA}} [[Guido Gómez]]
+|Zeus
+|Climamarket
+|-
+|[[Calcio Foggia 1920|Foggia]]
+|{{Flag icon|ITA}} [[Michele Pazienza]]
+|{{Flag icon|ITA}} [[Vincenzo Garofalo]]
+|[[Givova]]
+|''None''
+|-
+|[[Giugliano Calcio 1928|Giugliano]]
+|{{Flag icon|ITA}} Raffaele Di Napoli 
+|{{Flag icon|ITA}} Roberto De Rosa
+|[[Legea]]
+|Renato Mazzamauro & C.
+|-
+|[[Latina Calcio 1932|Latina]]
+|{{Flag icon|ITA}} [[Gennaro Volpe]] 
+|{{Flag icon|ITA}} [[Filippo Marenco]]
+|Ezeta
+|Distretti Ecologici
+|-
+|[[SS Monopoli 1966|Monopoli]]
+|{{Flag icon|ITA}} Alberto Colombo
+|{{Flag icon|ITA}} Orlando Viteritti
+|[[Joma]]
+|Eco Sud Ricicli
+|-
+|[[AZ Picerno|Picerno]]
+|{{Flag icon|ITA}} Claudio De Luca
+|{{Flag icon|ITA}} Emmanuele Esposito
+|[[Givova]]
+|Delle Rose Ricevimenti
+|-
+|[[Potenza Calcio|Potenza]]
+|{{Flag icon|ITA}} [[Pietro De Giorgio]]
+|{{Flag icon|ITA}} [[Fabrizio Alastra]]
+|[[Adidas]]
+|Cargo Trasporto e Distribuzione di Energia
+|-
+|[[US Salernitana 1919|Salernitana]]
+|{{Flag icon|ITA}} [[Serse Cosmi]] 
+|{{Flag icon|ITA}} [[Roberto Inglese]]
+|[[Puma (brand)|Puma]]
+|Peugeot Gruppo Noviello
+|-
+|[[Siracusa Calcio 1924|Siracusa]]
+|{{Flag icon|ITA}} [[Marco Turati]]
+|{{Flag icon|ITA}} [[Umberto Eusepi]]
+|[[Macron (sportswear)|Macron]]
+|Xeq Solar
+|-
+|[[Sorrento Calcio 1945|Sorrento]]
+|{{Flag icon|ITA}} Cristian Serpini
+|{{Flag icon|ITA}} Vincenzo Di Somma
+|Ezeta
+|[[Mediterranean Shipping Company]]
+|-
+|[[ASD Team Altamura|Team Altamura]]
+|{{Flag icon|ITA}} [[Devis Mangia]]
+|{{Flag icon|ITA}} [[Marco Crimi]]
+|[[Erreà]]
+|''None''
+|-
+|[[FC Trapani 1905|Trapani]]
+|{{Flag icon|ITA}} [[Salvatore Aronica]]
+|{{Flag icon|ITA}} [[Amedeo Benedetti (footballer)|Amedeo Benedetti]]
+|[[Macron (sportswear)|Macron]]
+|SportInvest
+|}
+
+=== Table ===
+{{2025–26 Serie C Group C table}}
+
+===Results===
+{{#invoke:sports results|main
+| source = [https://us.soccerway.com/national/italy/serie-c1/20252026/girone-c/r83340/matches/ Soccerway]
+| a_note = yes
+| update = complete
+| matches_style = FBR
+| team_order = ATA, ACR, BEN, CSO, CST, CAT, CAV, COS, CRO, FOG, GIU, LAT, MPO, PIC, POT, SAL, SIR, SOR, TAT, TRA
+| name_ATA = [[Atalanta BC Under-23|Atalanta U23]]
+| name_ACR = {{nowrap|[[SS Audace Cerignola|Audace Cerignola]]}}
+| name_BEN = [[Benevento Calcio|Benevento]]
+| name_CSO = [[SSD Casarano Calcio|Casarano]]
+| name_CST = [[Casertana FC|Casertana]]
+| name_CAT = [[Catania FC|Catania]]
+| name_CAV = [[Cavese 1919|Cavese]]
+| name_COS = [[Cosenza Calcio|Cosenza]]
+| name_CRO = [[FC Crotone|Crotone]]
+| name_FOG = [[Calcio Foggia 1920|Foggia]]
+| name_GIU = [[Giugliano Calcio 1928|Giugliano]]
+| name_LAT = [[Latina Calcio 1932|Latina]]
+| name_MPO = [[SS Monopoli 1966|Monopoli]]
+| name_PIC = [[AZ Picerno|Picerno]]
+| name_POT = [[Potenza Calcio|Potenza]]
+| name_SAL = [[US Salernitana 1919|Salernitana]]
+| name_SIR = [[ASD Siracusa Calcio 1924|Siracusa]]
+| name_SOR = [[Sorrento Calcio 1945|Sorrento]]
+| name_TAT = [[Team Altamura]]
+| name_TRA = [[FC Trapani 1905|Trapani]]
+
+|match_ATA_ACR = 3−2
+|match_ATA_BEN = 3–4
+|match_ATA_CSO = 6–2
+|match_ATA_CST = 0−2
+|match_ATA_CAT = 1−1
+|match_ATA_CAV = 1−1
+|match_ATA_COS = 0–0
+|match_ATA_CRO = 1–2
+|match_ATA_FOG = 1–1
+|match_ATA_GIU = 0–1
+|match_ATA_LAT = 1–2
+|match_ATA_MPO = 2−0
+|match_ATA_PIC = 6–2
+|match_ATA_POT = 2–2
+|match_ATA_SAL = 0–1
+|match_ATA_SIR = 3–1
+|match_ATA_SOR = 1–2
+|match_ATA_TAT = 0–0
+|match_ATA_TRA = 2–0
+
+|match_ACR_ATA = 2–4
+|match_ACR_BEN = 0–4
+|match_ACR_CSO = 2–1
+|match_ACR_CST = 1–1
+|match_ACR_CAT = 0–0
+|match_ACR_CAV = 1–3
+|match_ACR_COS = 1–2
+|match_ACR_CRO = 2–0
+|match_ACR_FOG = 0–0
+|match_ACR_GIU = 1−0
+|match_ACR_LAT = 1−1
+|match_ACR_MPO = 0–0
+|match_ACR_PIC = 2–2
+|match_ACR_POT = 4–0
+|match_ACR_SAL = 1–0
+|match_ACR_SIR = 3–1
+|match_ACR_SOR = 3−2
+|match_ACR_TAT = 1−1
+|match_ACR_TRA = 4−2
+
+|match_BEN_ATA = 2–0
+|match_BEN_ACR = 2−2
+|match_BEN_CSO = 3–0
+|match_BEN_CST = 2–1
+|match_BEN_CAT = 2–1
+|match_BEN_CAV = 0−1
+|match_BEN_COS = 1–1
+|match_BEN_CRO = 2–1
+|match_BEN_FOG = 1–0
+|match_BEN_GIU = 4–0
+|match_BEN_LAT = 1–1
+|match_BEN_MPO = 3–1
+|match_BEN_PIC = 1–0
+|match_BEN_POT = 2–0
+|match_BEN_SAL = 5–1
+|match_BEN_SIR = 3–2
+|match_BEN_SOR = 1–1
+|match_BEN_TAT = 4–0
+|match_BEN_TRA = 2–0
+
+|match_CSO_ATA = 0–1
+|match_CSO_ACR = 3–0
+|match_CSO_BEN = 1–0
+|match_CSO_CST = 3–2
+|match_CSO_CAT = 1–0
+|match_CSO_CAV = 3–0
+|match_CSO_COS = 2−1
+|match_CSO_CRO = 1−2
+|match_CSO_FOG = 0–2
+|match_CSO_GIU = 2−0
+|match_CSO_LAT = 1–1
+|match_CSO_MPO = 1–3
+|match_CSO_PIC = 2–2
+|match_CSO_POT = 2−1
+|match_CSO_SAL = 2–2
+|match_CSO_SIR = 1−1
+|match_CSO_SOR = 2–0
+|match_CSO_TAT = 1–0
+|match_CSO_TRA = 0–0
+
+|match_CST_ATA = 1–0
+|match_CST_ACR = 4−1
+|match_CST_BEN = 0–0
+|match_CST_CSO = 0–3
+|match_CST_CAT = 2–2
+|match_CST_CAV = 3–1
+|match_CST_COS = 1–1
+|match_CST_CRO = 2–2
+|match_CST_FOG = 3–2
+|match_CST_GIU = 1−1
+|match_CST_LAT = 3–1
+|match_CST_MPO = 2−1
+|match_CST_PIC = 2–1
+|match_CST_POT = 3–2
+|match_CST_SAL = 1−0
+|match_CST_SIR = 1–0
+|match_CST_SOR = 2−0
+|match_CST_TAT = 3–1
+|match_CST_TRA = 0–1
+
+|match_CAT_ATA = 2–0
+|match_CAT_ACR = 0–0
+|match_CAT_BEN = 1–0
+|match_CAT_CSO = 1−1
+|match_CAT_CST = 0−0
+|match_CAT_CAV = 2–0
+|match_CAT_COS = 2–0
+|match_CAT_CRO = 2–0
+|match_CAT_FOG = 6–0
+|match_CAT_GIU = 1–0
+|match_CAT_LAT = 1–0
+|match_CAT_MPO = 4–0
+|match_CAT_PIC = 1−2
+|match_CAT_POT = 1−1
+|match_CAT_SAL = 2–0
+|match_CAT_SIR = 2–0
+|match_CAT_SOR = 0–0
+|match_CAT_TAT = 2–0
+|match_CAT_TRA = 4–0
+
+|match_CAV_ATA = 2–2
+|match_CAV_ACR = 2−0
+|match_CAV_BEN = 0–1
+|match_CAV_CSO = 1–1
+|match_CAV_CST = 0−1
+|match_CAV_CAT = 0–1
+|match_CAV_COS = 1−1
+|match_CAV_CRO = 1–0
+|match_CAV_FOG = 0–0
+|match_CAV_GIU = 2–2
+|match_CAV_LAT = 0–2
+|match_CAV_MPO = 1–0
+|match_CAV_PIC = 2–0
+|match_CAV_POT = 3–0
+|match_CAV_SAL = 1–1
+|match_CAV_SIR = 1–1
+|match_CAV_SOR = 1–0
+|match_CAV_TAT = 1–2
+|match_CAV_TRA = 0–1
+
+|match_COS_ATA = 1–2
+|match_COS_ACR = 3–0
+|match_COS_BEN = 2–1
+|match_COS_CSO = 4–1
+|match_COS_CST = 3–1
+|match_COS_CAT = 4–1
+|match_COS_CAV = 2–1
+|match_COS_CRO = 0–2
+|match_COS_FOG = 1–0
+|match_COS_GIU = 4–1
+|match_COS_LAT = 3–1
+|match_COS_MPO = 0–2
+|match_COS_PIC = 1–0
+|match_COS_POT = 3–0
+|match_COS_SAL = 1–2
+|match_COS_SIR = 1–0
+|match_COS_SOR = 3−2
+|match_COS_TAT = 1–0
+|match_COS_TRA = 1–0
+
+|match_CRO_ATA = 1–0
+|match_CRO_ACR = 3−1
+|match_CRO_BEN = 1–2
+|match_CRO_CSO = 2–0
+|match_CRO_CST = 0–1
+|match_CRO_CAT = 2−0
+|match_CRO_CAV = 2−0
+|match_CRO_COS = 0–0
+|match_CRO_FOG = 3–1
+|match_CRO_GIU = 1–0
+|match_CRO_LAT = 2−5
+|match_CRO_MPO = 0–1
+|match_CRO_PIC = 3–0
+|match_CRO_POT = 2–0
+|match_CRO_SAL = 0−1
+|match_CRO_SIR = 2–0
+|match_CRO_SOR = 3–1
+|match_CRO_TAT = 0−1
+|match_CRO_TRA = 1–2
+
+|match_FOG_ATA = 0–1
+|match_FOG_ACR = 1–3
+|match_FOG_BEN = 0–3
+|match_FOG_CSO = 1–2
+|match_FOG_CST = 1–1
+|match_FOG_CAT = 1–1
+|match_FOG_CAV = 0–0
+|match_FOG_COS = 2–1
+|match_FOG_CRO = 0–3
+|match_FOG_GIU = 2–1
+|match_FOG_LAT = 1–1
+|match_FOG_MPO = 2–1
+|match_FOG_PIC = 1–2
+|match_FOG_POT = 0−1
+|match_FOG_SAL = 1−3
+|match_FOG_SIR = 1–1
+|match_FOG_SOR = 1–0
+|match_FOG_TAT = 0–1
+|match_FOG_TRA = 1–0
+
+|match_GIU_ATA = 3−1
+|match_GIU_ACR = 0–1
+|match_GIU_BEN = 1−1
+|match_GIU_CSO = 1–3
+|match_GIU_CST = 0–3
+|match_GIU_CAT = 0–3
+|match_GIU_CAV = 0–0
+|match_GIU_COS = 3–0
+|match_GIU_CRO = 1−0
+|match_GIU_FOG = 1–0
+|match_GIU_LAT = 1–1
+|match_GIU_MPO = 2–0
+|match_GIU_PIC = 0–1
+|match_GIU_POT = 2–3
+|match_GIU_SAL = 1–2
+|match_GIU_SIR = 2–1
+|match_GIU_SOR = 0–1
+|match_GIU_TAT = 0–1
+|match_GIU_TRA = 3–1
+
+|match_LAT_ATA = 1–0
+|match_LAT_ACR = 0–2
+|match_LAT_BEN = 1–0
+|match_LAT_CSO = 1−2
+|match_LAT_CST = 2−0
+|match_LAT_CAT = 0−1
+|match_LAT_CAV = 0–0
+|match_LAT_COS = 0–1
+|match_LAT_CRO = 1–1
+|match_LAT_FOG = 2–0
+|match_LAT_GIU = 0–1
+|match_LAT_MPO = 0–1
+|match_LAT_PIC = 1–2
+|match_LAT_POT = 0–1
+|match_LAT_SAL = 0–0
+|match_LAT_SIR = 2−1
+|match_LAT_SOR = 2−0
+|match_LAT_TAT = 0–0
+|match_LAT_TRA = 2–1
+
+|match_MPO_ATA = 1–1
+|match_MPO_ACR = 2–0
+|match_MPO_BEN = 2−1
+|match_MPO_CSO = 2−1
+|match_MPO_CST = 1–1
+|match_MPO_CAT = 1–2
+|match_MPO_CAV = 0–2
+|match_MPO_COS = 2–2
+|match_MPO_CRO = 1−1
+|match_MPO_FOG = 1−0
+|match_MPO_GIU = 3–1
+|match_MPO_LAT = 1–0
+|match_MPO_PIC = 0–2
+|match_MPO_POT = 2–1
+|match_MPO_SAL = 0–1
+|match_MPO_SIR = 1–0
+|match_MPO_SOR = 1–0
+|match_MPO_TAT = 1–1
+|match_MPO_TRA = 1−1
+
+|match_PIC_ATA = 1–1
+|match_PIC_ACR = 1–1
+|match_PIC_BEN = 2–2
+|match_PIC_CSO = 1–2
+|match_PIC_CST = 0–2
+|match_PIC_CAT = 0–1
+|match_PIC_CAV = 2–2
+|match_PIC_COS = 3−1
+|match_PIC_CRO = 3–1
+|match_PIC_FOG = 2–1
+|match_PIC_GIU = 2–2
+|match_PIC_LAT = 0–0
+|match_PIC_MPO = 0–0
+|match_PIC_POT = 2–0
+|match_PIC_SAL = 1–2
+|match_PIC_SIR = 1–2
+|match_PIC_SOR = 0−0
+|match_PIC_TAT = 0−0
+|match_PIC_TRA = 1−1
+
+|match_POT_ATA = 1–0
+|match_POT_ACR = 0–0
+|match_POT_BEN = 0−1
+|match_POT_CSO = 3–1
+|match_POT_CST = 2–0
+|match_POT_CAT = 1–1
+|match_POT_CAV = 2−2
+|match_POT_COS = 1−4
+|match_POT_CRO = 3–3
+|match_POT_FOG = 3–0
+|match_POT_GIU = 0–0
+|match_POT_LAT = 0–0
+|match_POT_MPO = 2−2
+|match_POT_PIC = 2–0
+|match_POT_SAL = 5−2
+|match_POT_SIR = 2–2
+|match_POT_SOR = 3−0
+|match_POT_TAT = 3–0
+|match_POT_TRA = 2–1
+
+|match_SAL_ATA = 1–0
+|match_SAL_ACR = 2–3
+|match_SAL_BEN = 0−1
+|match_SAL_CSO = 3–0
+|match_SAL_CST = 2–1
+|match_SAL_CAT = 0−0
+|match_SAL_CAV = 3–2
+|match_SAL_COS = 0–0
+|match_SAL_CRO = 0–0
+|match_SAL_FOG = 2–1
+|match_SAL_GIU = 1–1
+|match_SAL_LAT = 2−1
+|match_SAL_MPO = 0–1
+|match_SAL_PIC = 2−1
+|match_SAL_POT = 1–1
+|match_SAL_SIR = 1–0
+|match_SAL_SOR = 2–1
+|match_SAL_TAT = 2−1
+|match_SAL_TRA = 1–1
+
+|match_SIR_ATA = 3−3
+|match_SIR_ACR = 0–1
+|match_SIR_BEN = 0–3
+|match_SIR_CSO = 4–1
+|match_SIR_CST = 4−0
+|match_SIR_CAT = 1–1
+|match_SIR_CAV = 1−1
+|match_SIR_COS = 0–1
+|match_SIR_CRO = 1–3
+|match_SIR_FOG = 2–2
+|match_SIR_GIU = 2−1
+|match_SIR_LAT = 3–1
+|match_SIR_MPO = 1–2
+|match_SIR_PIC = 2−1
+|match_SIR_POT = 2–1
+|match_SIR_SAL = 3–1
+|match_SIR_SOR = 0–1
+|match_SIR_TAT = 1–1
+|match_SIR_TRA = 3–0
+
+|match_SOR_ATA = 1−1
+|match_SOR_ACR = 1–2
+|match_SOR_BEN = 0−2
+|match_SOR_CSO = 3–3
+|match_SOR_CST = 1–2
+|match_SOR_CAT = 3–1
+|match_SOR_CAV = 0–0
+|match_SOR_COS = 2–2
+|match_SOR_CRO = 2−2
+|match_SOR_FOG = 2–1
+|match_SOR_GIU = 1–0
+|match_SOR_LAT = 2–2
+|match_SOR_MPO = 0–0
+|match_SOR_PIC = 1–1
+|match_SOR_POT = 2–2
+|match_SOR_SAL = 0–2
+|match_SOR_SIR = 2–0
+|match_SOR_TAT = 2−0
+|match_SOR_TRA = 1–2
+
+|match_TAT_ATA = 1–1
+|match_TAT_ACR = 1–1
+|match_TAT_BEN = 1–2
+|match_TAT_CSO = 0−4
+|match_TAT_CST = 0–2
+|match_TAT_CAT = 1−2
+|match_TAT_CAV = 2–1
+|match_TAT_COS = 1–1
+|match_TAT_CRO = 0–4
+|match_TAT_FOG = 1−0
+|match_TAT_GIU = 1−1
+|match_TAT_LAT = 1–0
+|match_TAT_MPO = 2–0
+|match_TAT_PIC = 3–1
+|match_TAT_POT = 2–2
+|match_TAT_SAL = 1–2
+|match_TAT_SIR = 1−0
+|match_TAT_SOR = 1–2
+|match_TAT_TRA = 1–1
+
+|match_TRA_ATA = 0−2
+|match_TRA_ACR = 2–1
+|match_TRA_BEN = 0–5
+|match_TRA_CSO = 1–0
+|match_TRA_CST = 2–0
+|match_TRA_CAT = 1–1
+|match_TRA_CAV = 2–0
+|match_TRA_COS = 1–1
+|match_TRA_CRO = 1−4
+|match_TRA_FOG = 3–1
+|match_TRA_GIU = 1–1
+|match_TRA_LAT = 6–0
+|match_TRA_MPO = 1–1
+|match_TRA_PIC = 2–1
+|match_TRA_POT = 2−1
+|match_TRA_SAL = 1−2
+|match_TRA_SIR = 2−2
+|match_TRA_SOR = 4–0
+|match_TRA_TAT = 0–1
+}}
+
+== Promotion play-offs ==
+{{For|rules|Serie C#Promotion play-offs}}
+Date and rules were confirmed on 31 March and 7 April 2025, respectively.<ref name="playoffdates">{{cite web|url=https://www.lega-pro.com/com/2425-271L.pdf|title=COMUNICATO N. 271/L - 31 MARZO 2025|website=Lega Pro|language=Italian}}</ref><ref name="playoffrules">{{cite web|url=https://www.lega-pro.com/com/2425-143DIV.pdf |language=Italian |title=COMUNICATO N. 143/DIV - 7 APRILE 2025|website=Lega Pro}}</ref>
+
+=== Group phase ===
+
+==== First round ====
+Matches were played on 3 May 2026. {{OneLegStart}}
+{{OneLegResult|'''[[AS Cittadella|Cittadella]]'''||2–2|[[FC Arzignano Valchiampo|Arzignano]]}}
+{{OneLegResult|[[AC Trento 1921|Trento]]||1–2|'''[[AS Giana Erminio|Giana Erminio]]'''}}
+{{OneLegResult|'''[[FC Lumezzane|Lumezzane]]'''||0–0|[[Alcione Milano|Alcione Milano]]}}
+{{OneLegResult|'''[[US Pianese|Pianese]]'''||1–1|[[Ternana Calcio|Ternana]]}}
+{{OneLegResult|'''[[AS Pineto Calcio|Pineto]]'''||2–1|[[AS Gubbio 1910|Gubbio]]}}
+{{OneLegResult|'''[[FC Crotone|Crotone]]'''||1–1|[[Audace Cerignola|Audace Cerignola]]}}
+{{OneLegResult|[[SS Monopoli 1966|Monopoli]]||0–2|'''[[Casarano Calcio|Casarano]]'''}}
+{{OneLegResult|'''[[Casertana FC|Casertana]]'''||1–0|[[Atalanta Under 23|Atalanta U23]]}}
+{{OneLegResult|'''[[Juventus Next Gen]]'''||2–2|[[Vis Pesaro dal 1898|Vis Pesaro]]}}
+|}
+
+==== Second round ====
+Matches were played on 6 May 2026.{{OneLegStart}}
+{{OneLegResult|'''[[AS Cittadella|Cittadella]]'''||1–0|[[FC Lumezzane|Lumezzane]]}}
+{{OneLegResult|'''[[Calcio Lecco 1912|Lecco]]'''||2–1|[[AS Giana Erminio|Giana Erminio]]}}
+{{OneLegResult|'''[[Campobasso FC|Campobasso]]'''||1–1|[[AS Pineto Calcio|Pineto]]}}
+{{OneLegResult|[[Juventus Next Gen]]||0–2|'''[[US Pianese|Pianese]]}}'''
+{{OneLegResult|[[Cosenza Calcio|Cosenza]]||1–5|'''[[Casarano Calcio|Casarano]]'''}}
+{{OneLegResult|'''[[Casertana FC|Casertana]]'''||1–1|[[FC Crotone|Crotone]]}}
+|}
+
+=== National phase ===
+
+==== First round ====
+The first leg was played on 10 May 2026, and the second leg was played on 13 May 2026. {{TwoLegStart}}
+{{TwoLegResult|[[AS Cittadella|Cittadella]]||3–3|'''[[Ravenna FC|Ravenna]]'''||2–2|1–1|}}
+{{TwoLegResult|[[US Pianese|Pianese]]||2–2|'''[[Calcio Lecco 1912|Lecco]]'''||1–1|1–1|}}
+{{TwoLegResult|[[Campobasso FC|Campobasso]]||1–6|'''[[Potenza Calcio|Potenza]]'''||0–3|1–3|}}
+{{TwoLegResult|'''[[Casarano Calcio|Casarano]]'''||3–2|[[AC Renate|Renate]]||0–2|3–0|}}
+{{TwoLegResult|[[Casertana FC|Casertana]]||3–4|'''[[US Salernitana 1919|Salernitana]]'''||2–3|1–1|}}
+|}
+
+==== Second round ====
+The first legs was played on 17 May 2026 and the second legs was played on 20 May 2026.{{TwoLegStart}}
+{{TwoLegResult|'''[[Union Brescia|Union Brescia]]'''||3–0|[[Casarano Calcio|Casarano]]||3–0|0–0|}}
+{{TwoLegResult|'''[[Ascoli Calcio 1898 FC|Ascoli]]'''||1–0|[[Potenza Calcio|Potenza]]||0–0|1–0|}}
+{{TwoLegResult|'''[[Catania FC|Catania]]'''||3–3|[[Calcio Lecco 1912|Lecco]]||0–0|3–3|}}
+{{TwoLegResult|[[Ravenna FC|Ravenna]]||0–4|'''[[US Salernitana 1919|Salernitana]]'''||0–2|0–2|}}
+|}
+
+=== Final Four ===
+====Semi-finals====
+The first legs was played on 24 May 2026 and the second legs was played on 27 May 2026.
+{{TwoLegStart}}
+{{TwoLegResult|'''[[Ascoli Calcio 1898 FC|Ascoli]]'''||5–2|[[Catania FC|Catania]]||4–0|1–2|}}
+{{TwoLegResult|[[US Salernitana 1919|Salernitana]] ||1–3| '''[[Union Brescia|Union Brescia]]''' ||1–1|0–2|}}
+|}
+
+====Final====
+The first leg was played on 2 June 2026 and the second leg on 7 June 2026.
+{{#invoke:Sports series|main|flag=n
+|[[Union Brescia|Union Brescia]]|1–4|[[Ascoli Calcio 1898 FC|Ascoli]]|1–1|0–3
+}}
+
+==Relegation play-outs==
+{{For|rules|Serie C#Relegation play-offs}}
+The first leg was played on 9 May 2026 and the second leg on 16 May 2026.
+{{TwoLegStart}}
+{{TwoLegResult|'''[[SEF Torres 1903|Torres]]'''||3–1|[[AC Bra|Bra]]||1–0|2–1|}}
+|}
+
+==References==
+{{Portal|Association football|Italy}}
+{{reflist}}
+
+==External links==
+* [http://www.lega-pro.com Official website]
+
+{{Serie C}}
+{{Serie C seasons}}
+{{2025–26 in Italian football}}
+{{DEFAULTSORT:2025-26 Serie C}}
+[[Category:Serie C seasons]]
+[[Category:2025–26 in Italian football leagues|3]]
+[[Category:2025–26 in European third-tier association football leagues|Italy]]

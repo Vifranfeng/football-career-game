@@ -1,0 +1,1830 @@
+﻿{{Infobox football league season
+|image = 
+|pixels = 
+|competition = [[China League Two]]
+|season = 2025
+|dates = 22 March – 26 October 2025<ref>{{cite web|url=https://www.thecfa.cn/lstz/20241219/35419.html|title=中国足球协会公布2025赛季竞赛日历|website=thecfa.cn|date=19 December 2024|access-date=19 December 2024|language=zh}}</ref>
+|logo = 
+|winners = [[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|promoted = [[Guangxi Hengchen F.C.|Guangxi Hengchen]]<br>[[Wuxi Wugo F.C.|Wuxi Wugo]]
+|relegated = [[Kunming City F.C.|Kunming City]]<br>[[Quanzhou Yassin F.C.|Quanzhou Yassin]]<br>[[Guangxi Lanhang F.C.|Guangxi Lanhang]]
+|matches = 360
+|total goals = 812
+|league topscorer = [[Fei Ernanduo]]<br>(24 goals)
+|biggest home win = 
+|biggest away win = 
+|highest scoring = 
+|longest wins = 
+|longest unbeaten = 
+|longest winless = 
+|longest losses = 
+|highest attendance = 31,569<br>{{nowrap|[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]] 0–0 [[Kunming City F.C.|Kunming City]]}}<br>(22 March 2025)
+|lowest attendance = 0<br>{{nowrap|[[Kunming City F.C.|Kunming City]] 1–1 [[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]}}<br>(4 April 2025)<br>{{nowrap|[[Kunming City F.C.|Kunming City]] 1–0 [[Quanzhou Yassin F.C.|Quanzhou Yassin]]}}<br>(8 April 2025)<br>{{nowrap|[[Kunming City F.C.|Kunming City]] 1–0 [[Wenzhou Professional F.C.|Wenzhou]]}}<br>(8 June 2025)
+|average attendance = 2,437
+|attendance = 701,855
+|prevseason = [[2024 China League Two|2024]]
+|nextseason = ''[[2026 China League Two|2026]]''
+|updated = 
+}}
+The '''2025 China Resources Beverage Chinese Football League 2''' ({{lang-zh|2025华润饮料中国足球乙级联赛}}) was the 36th season of [[China League Two]], the third tier of the [[Chinese football league system|Chinese football league pyramid]], since its establishment in 1989.<ref>{{cite web|url=https://www.dongqiudi.com/articles/4926977.html|title=官方：华润饮料冠名新赛季中国三级联赛|publisher=Dongqiudi|date=22 February 2025|access-date=1 October 2025|language=zh}}</ref>
+
+==Clubs==
+===Club changes===
+{{col-begin|width=auto}}
+{{col-2}}
+
+====To League Two====
+'''Teams promoted from [[2024 Chinese Champions League]]'''
+*[[Shenzhen 2028 F.C.|Shenzhen 2028]]<ref name="promotion">{{cite web|url=https://www.dongqiudi.com/articles/4607196.html|title=深圳二零二八、贵州筑城竞技夺得各自小组头名，冲乙成功|publisher=Dongqiudi|date=13 October 2024|access-date=19 October 2024|language=zh}}</ref>
+*[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]]<ref name="promotion"/>
+*[[Guangdong Mingtu F.C.|Guangdong Mingtu]]
+*[[Guangzhou Dandelion Alpha F.C.|Guangzhou Alpha]]
+*[[Changchun Xidu F.C.|Changchun Xidu]]
+
+'''Teams promoted from [[2024 CFA U-21 League]]'''
+*[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+*[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+
+'''Teams relegated from [[2024 China League One]]'''
+*[[Wuxi Wugo F.C.|Wuxi Wugo]]
+*[[Jiangxi Lushan F.C.|Jiangxi Lushan]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/4619158.html|title=佛山南狮客场1-0送江西庐山提前2轮降级，福尔特斯建功|publisher=Dongqiudi|date=19 October 2024|access-date=19 October 2024|language=zh}}</ref>
+{{col-break|gap=3em}}
+
+====From League Two====
+'''Teams promoted to [[2025 China League One]]'''
+*[[Guangdong GZ-Power F.C.|Guangdong GZ-Power]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/4546486.html|title=中乙争冠组综述：广州豹提前5轮冲甲，深圳青年人重回第二|publisher=Dongqiudi|date=16 September 2024|access-date=19 October 2024|language=zh}}</ref>
+*[[Dalian K'un City F.C.|Dalian K'un City]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/4622268.html|title=大连鲲城1-0上海海港B队冲甲成功！陈佳奇点射制胜|publisher=Dongqiudi|date=20 October 2024|access-date=24 October 2024|language=zh}}</ref>
+*[[Shenzhen Juniors F.C.|Shenzhen Juniors]]
+*[[Shaanxi Union F.C.|Shaanxi Union]]
+
+'''Disqualified entries'''
+*<s>[[Hunan Billows F.C.|Hunan Billows]]</s>
+{{col-end}}
+
+===Name changes===
+*Guangzhou Alpha F.C. changed their name to [[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]] in December 2024.<ref>{{cite web|url=https://www.thecfa.cn/qttz/20241227/35440.html|title=中国足球协会关于安华足球俱乐部（广州）有限公司更名的公告|publisher=Chinese FA|date=27 December 2024|access-date=7 January 2025|language=zh}}</ref>
+*Xi'an Chongde Ronghai F.C.'s name change to [[Yan'an Ronghai F.C.|Yan'an Ronghai]] was put into effect in January 2025.
+*Rizhao Yuqi F.C. relocated to [[Lanzhou]], [[Gansu]], and changed their name to [[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]] in February 2025.<ref>{{cite web|url=https://www.thecfa.cn/qttz/20250220/35648.html|title=中国足球协会关于日照宇启足球俱乐部有限公司更名的公告|publisher=Chinese Football Association|date=20 February 2025|access-date=21 February 2025|language=zh}}</ref>
+*Langfang Glory City F.C. relocated to [[Hangzhou]], [[Zhejiang]], and changed their name to [[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]] in February 2025.<ref>{{Cite web |title=中国足球协会关于廊坊荣耀之城足球俱乐部有限公司更名的公告-中国足球协会官方网站 |url=https://www.thecfa.cn/qttz/20250220/35646.html |access-date=2025-03-02 |website=www.thecfa.cn}}</ref>
+*Haikou Mingcheng F.C. relocated to [[Kunming]], [[Yunnan]], and changed their name to [[Kunming City F.C.|Kunming City]] in February 2025.<ref>{{Cite web |title=中国足球协会关于海口名城足球俱乐部有限公司更名的公告-中国足球协会官方网站 |url=https://www.thecfa.cn/qttz/20250220/35647.html |access-date=2025-03-02 |website=www.thecfa.cn}}</ref>
+*Jiangxi Dark Horse Junior F.C. relocated to [[Wenzhou]], [[Zhejiang]], and changed their name to [[Wenzhou Professional F.C.|Wenzhou]] in February 2025.<ref>{{Cite web |title=中国足球协会关于江西黑马青年足球俱乐部有限公司更名的公告-中国足球协会官方网站 |url=https://www.thecfa.cn/qttz/20250220/35645.html |access-date=2025-03-02 |website=www.thecfa.cn}}</ref>
+*Yan'an Ronghai F.C. relocated to [[Taiyuan]], [[Shanxi]], and changed their name to [[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]] in February 2025.
+
+===Stadiums and locations===
+
+{{Location map+|China|width=650|float=right
+|caption = Locations of the 2025 China League Two teams
+<br/>[[File:Blue pog.svg|8px]] North Group &nbsp; [[File:Red pog.svg|8px]] South Group
+|places= 
+{{Location map~|China|lat=39.9580 |long=116.3096|label=<small>[[Beijing Institute of Technology F.C.|Beijing&nbsp;IT]]</small>|position=left|mark=Blue pog.svg}}
+{{Location map~|China|lat=43.7652 |long=125.3977|label=<small>[[Changchun Xidu F.C.|Changchun&nbsp;Xidu]]</small>|position=left|mark=Blue pog.svg}}
+{{Location map~|China|lat=30.4165 |long=120.3078|label=<small>[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]</small>|position=bottom|mark=Blue pog.svg}}
+{{Location map~|China|lat=29.6561 |long=115.6308|label=<small>[[Jiangxi Lushan F.C.|Jiangxi&nbsp;Lushan]]</small>|position=left|mark=Blue pog.svg}}
+{{Location map~|China|lat=36.0877 |long=103.6829|label=<small>[[Lanzhou Longyuan Athletic F.C.|Lanzhou&nbsp;Longyuan&nbsp;Athletic]]</small>|position=left|mark=Blue pog.svg}}
+{{Location map~|China|lat=31.8430 |long=121.1389|label=<small>[[Nantong Haimen Codion F.C.|Nantong Haimen&nbsp;Codion]]</small>|position=top|mark=Blue pog.svg}}
+{{Location map~|China|lat=35.3950 |long=117.0089|label=<small>[[Shandong Taishan F.C.|Shandong&nbsp;Taishan&nbsp;B]]</small>|position=right|mark=Blue pog.svg}}
+{{Location map~|China|lat=30.8721 |long=121.7347|label=<small>[[Shanghai Port F.C.|Shanghai&nbsp;Port&nbsp;B]]</small>|position=right|mark=Blue pog.svg}}
+{{Location map~|China|lat=36.0643 |long=117.1876|label=<small>[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]]</small>|position=top|mark=Blue pog.svg}}
+{{Location map~|China|lat=31.5462 |long=120.2634|label=<small>[[Wuxi Wugo F.C.|Wuxi Wugo]]</small>|position=left|mark=Blue pog.svg}}
+{{Location map~|China|lat=37.6925 |long=112.6011|label=<small>[[Shanxi Chongde Ronghai F.C.|Shanxi&nbsp;Chongde&nbsp;Ronghai]]</small>|position=left|mark=Blue pog.svg}}
+{{Location map~|China|lat=30.5891 |long=114.2682|label=<small>Wuhan</small>|position=top|mark=Black pog.svg}}
+{{Location map~|China|lat=30.5732 |long=103.8938|label=<small>[[Chengdu Rongcheng F.C.|Chengdu&nbsp;Rongcheng&nbsp;B]]</small>|position=left|mark=Red pog.svg}}
+{{Location map~|China|lat=25.7847 |long=114.8823|label=<small>[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]</small>|position=top|mark=Red pog.svg}}
+{{Location map~|China|lat=22.7630 |long=108.3895|label=<small>[[Guangxi Hengchen F.C.|Guangxi&nbsp;Hengchen]]</small>|position=left|mark=Red pog.svg}}
+{{Location map~|China|lat=23.8762 |long=106.6307|label=<small>[[Guangxi Lanhang F.C.|Guangxi&nbsp;Lanhang]]</small>|position=left|mark=Red pog.svg}}
+{{Location map~|China|lat=23.1173 |long=113.4511|label=<small>Guangzhou</small>|position=right|mark=Black pog.svg}}
+{{Location map~|China|lat=26.6207 |long=106.6059|label=<small>[[Guizhou Zhucheng Athletic F.C.|Guizhou&nbsp;Zhucheng&nbsp;Athletic]]</small>|position=left|mark=Red pog.svg}}
+{{Location map~|China|lat=25.1269 |long=102.6604|label=<small>[[Kunming City F.C.|Kunming&nbsp;City]]</small>|position=left|mark=Red pog.svg}}
+{{Location map~|China|lat=24.7527 |long=118.5185|label=<small>[[Quanzhou Yassin F.C.|Quanzhou&nbsp;Yassin]]</small>|position=right|mark=Red pog.svg}}
+{{Location map~|China|lat=22.8094 |long=113.8830|label=<small>[[Shenzhen 2028 F.C.|Shenzhen 2028]]</small>|position=bottom|mark=Red pog.svg}}
+{{Location map~|China|lat=28.0043 |long=120.6722|label=<small>[[Wenzhou Professional F.C.|Wenzhou]]</small>|position=right|mark=Red pog.svg}}
+
+<!--DISPLAY OF TEAMS BASED IN THE SAME CITY-->
+{{Location map~|China|mark=TransparentPlaceholder.png|marksize=1|lat=47.0 |long=97.0|label_size=80|label=
+{{nowrap|'''[[Wuhan]] teams:'''}}<br>
+{{nowrap|[[File:Blue pog.svg|8px]] [[Hubei Istar F.C.|Hubei&nbsp;Istar]]<br />
+[[File:Red pog.svg|8px]] [[Wuhan Three Towns F.C.|Wuhan&nbsp;Three&nbsp;Towns&nbsp;B]]}}
+<br/>
+{{nowrap|'''[[Guangzhou]] teams:'''}}<br>
+{{nowrap|[[File:Red pog.svg|8px]] [[Guangzhou Dandelion F.C.|Guangzhou&nbsp;Dandelion]]<br/>
+[[File:Red pog.svg|8px]] [[Guangdong Mingtu F.C.|Guangdong&nbsp;Mingtu]]}}
+|position=right}}
+}}
+
+{|class="wikitable sortable" style="font-size:100%"
+!Team
+!Head coach
+!City
+!Stadium
+!Capacity
+!2024 season
+|-
+|rowspan="3"|[[Wuxi Wugo F.C.|Wuxi Wugo]] <sup>[[2024 China League One|R]]</sup>
+|rowspan="3"|{{flagicon|KOR}} [[Kim Bong-gil]]
+|rowspan="3"|[[Wuxi]]
+|[[Wuxi Sports Center]]
+|28,800
+|data-sort-value="1"; rowspan="3"|[[2024 China League One|CL1]], 15th
+|-
+|[[Jiangyin Sports Centre]] ([[Jiangyin]])
+|30,161
+|-
+|[[Yixing Sports Center]] ([[Yixing]])
+|
+|-
+|[[Jiangxi Lushan F.C.|Jiangxi Lushan]] <sup>[[2024 China League One|R]]</sup>
+|{{flagicon|CHN}} [[Wang Weijia (football manager)|Wang Weijia]]
+|[[Ruichang]]
+|[[Ruichang Sports Park Stadium]]
+|13,188
+|data-sort-value="2"|[[2024 China League One|CL1]], 16th
+|-
+|[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]
+|{{flagicon|CHN}} [[Xu Lei (football manager)|Xu Lei]]
+|[[Hangzhou]]
+|[[Linping Sports Centre Stadium]]
+|10,200
+|data-sort-value="3"|5th
+|-
+|[[Shandong Taishan F.C.|Shandong Taishan B]]
+|{{flagicon|CHN}} [[Han Peng (footballer, born 1983)|Han Peng]]
+|[[Jinan]]
+|[[Zoucheng Sports Centre Stadium]] ([[Zoucheng]])
+|30,000
+|data-sort-value="4"|6th
+|-
+|rowspan="2"|[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|rowspan="2"|{{flagicon|CHN}} [[Liu Junwei]]
+|rowspan="2"|[[Nanning]]
+|[[Nanning Sports School]] Wuhe Campus Stadium
+|
+|data-sort-value="5"|7th
+|-
+|[[Guangxi Sports Center]]
+|60,000
+|-
+|[[Shanghai Port F.C.|Shanghai Port B]]
+|{{flagicon|CHN}} [[Chen Xufeng]]
+|[[Shanghai]]
+|Lingang Football Complex Sports Center
+|2,300
+|data-sort-value="6"|9th
+|-
+|[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|{{flagicon|CHN}} [[Lu Qiang (football manager)|Lu Qiang]]
+|[[Nantong]]
+|[[Haimen Sports Centre]]
+|10,000
+|data-sort-value="7"|10th
+|-
+|[[Wenzhou Professional F.C.|Wenzhou]]
+|{{flagicon|MAC}} [[Carlos Leonel]]
+|[[Wenzhou]]
+|[[Wenzhou Sports Centre]]
+|14,865
+|data-sort-value="8"|11th
+|-
+|rowspan="2"|[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]
+|rowspan="2"|{{flagicon|SRB}} [[Dragan Stančić]]
+|rowspan="2"|[[Ganzhou]]
+|[[Dingnan Youth Football Training Center]] ([[Dingnan County|Dingnan]])
+|12,000
+|data-sort-value="9"; rowspan="2"|12th
+|-
+|[[Ganzhou Fitness Center]]
+|40,000
+|-
+|[[Beijing Institute of Technology F.C.|Beijing IT]]
+|{{flagicon|CHN}} [[Yu Fei (footballer)|Yu Fei]]
+|[[Beijing]]
+|[[Beijing Institute of Technology|BIT Eastern Athletic Field]]
+|5,000
+|data-sort-value="10"|13th
+|-
+|[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|{{flagicon|KOR}} [[Shin Hong-gi]]
+|[[Lanzhou]]
+|[[Lanzhou Olympic Center Stadium]]
+|60,000
+|data-sort-value="11"|14th
+|-
+|[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]]
+|{{flagicon|CHN}} [[Yuan Weiwei]]
+|[[Tai'an]]
+|[[Wenhe Sports Park Football Stadium]]
+|2,500
+|data-sort-value="12"|15th
+|-
+|[[Hubei Istar F.C.|Hubei Istar]]
+|{{flagicon|CHN}} [[Gao Feng (footballer, born 1981)|Gao Feng]]
+|[[Wuhan]]
+|Hubei Sports Bureau Football Administration Center Football Field
+|2,000
+|data-sort-value="13"|16th
+|-
+|rowspan="2"|[[Guangxi Lanhang F.C.|Guangxi Lanhang]]
+|rowspan="2"|{{flagicon|CHN}} [[Gong Lei (footballer)|Gong Lei]]
+|rowspan="2"|[[Laibin]]
+|[[Baise Sports Center Stadium]] ([[Baise]])
+|20,000
+|data-sort-value="14"; rowspan="2"|17th
+|-
+|[[Jiuling Lake Football Training Centre]] Field 1 ([[Guigang]])
+|
+|-
+|rowspan="2"|[[Kunming City F.C.|Kunming City]]
+|rowspan="2"|{{flagicon|GER}} [[Michael Weiß (football manager)|Michael Weiß]]
+|rowspan="2"|[[Kunming]]
+|[[Kehua Football Center]] Field 2
+|
+|data-sort-value="15"; rowspan="2"|18th
+|-
+|[[Kehua Football Center Sky Stadium]]
+|10,000
+|-
+|rowspan="2"|[[Shenzhen 2028 F.C.|Shenzhen 2028]] <sup>[[2024 Chinese Champions League|P]]</sup>
+|rowspan="2"|{{flagicon|CHN}} [[Wang Baoshan]]
+|rowspan="2"|[[Shenzhen]]
+|{{ill|Shenzhen Youth Football Training Base|zh|深圳市青少年足球训练基地}} Centre Stadium
+|10,000
+|data-sort-value="16"; rowspan="2"|[[2024 Chinese Champions League|CMCL]], 1st
+|-
+|{{ill|Shenzhen Youth Football Training Base|zh|深圳市青少年足球训练基地}} Field 1
+|
+|-
+|rowspan="2"|[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]] <sup>[[2024 Chinese Champions League|P]]</sup>
+|rowspan="2"|{{flagicon|ESP}} [[Óscar Céspedes]]
+|rowspan="2"|[[Guiyang]]
+|[[Guiyang Olympic Sports Center]]
+|51,636
+|data-sort-value="17"; rowspan="2"|[[2024 Chinese Champions League|CMCL]], 2nd
+|-
+|[[Zunyi Olympic Sports Centre Stadium]]
+|40,000
+|-
+|[[Guangdong Mingtu F.C.|Guangdong Mingtu]] <sup>[[2024 Chinese Champions League|P]]</sup>
+|{{flagicon|JPN}} [[Tsutomu Takahata]]
+|[[Guangzhou]] {{small|([[Huadu, Guangzhou|Huadu]])}}
+|[[Huadu Stadium]]
+|13,394
+|data-sort-value="18"|[[2024 Chinese Champions League|CMCL]], 3rd
+|-
+|[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]] <sup>[[2024 Chinese Champions League|P]]</sup>
+|{{flagicon|CHN}} [[Tan Ende]]
+|Guangzhou {{small|([[Zengcheng, Guangzhou|Zengcheng]])}}
+|[[Zengcheng Stadium]]
+|12,000
+|data-sort-value="19"|[[2024 Chinese Champions League|CMCL]], 4th
+|-
+|[[Wuhan Three Towns F.C.|Wuhan Three Towns B]] <sup>[[2024 CFA U-21 League|P]]</sup>
+|{{flagicon|CHN}} [[Jiang Kun (footballer)|Jiang Kun]]
+|[[Wuhan]]
+|[[Hankou Cultural Sports Centre]]
+|20,000
+|data-sort-value="20"|[[2024 CFA U-21 League|U-21]], 1st
+|-
+|[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]] <sup>[[2024 CFA U-21 League|P]]</sup>
+|{{flagicon|CHN}} [[Xu Jianye]]
+|[[Chengdu]]
+|[[Shuangliu Sports Centre]]
+|26,000
+|data-sort-value="21"|[[2024 CFA U-21 League|U-21]], 2nd
+|-
+|[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|{{flagicon|CHN}} [[Yu Ming]]
+|[[Taiyuan]]
+|[[Taiyuan University]] Football Field
+|2,257
+|data-sort-value="22"|19th
+|-
+|[[Quanzhou Yassin F.C.|Quanzhou Yassin]]
+|{{flagicon|CHN}} [[Yang Xiaoqi]]
+|[[Jinjiang, Fujian|Jinjiang]]
+|[[Jinjiang Football Training Center]]
+|8,000
+|data-sort-value="23"|20th
+|-
+|[[Changchun Xidu F.C.|Changchun Xidu]] <sup>[[2024 Chinese Champions League|P]]</sup>
+|{{flagicon|CHN}} [[Li Bin (footballer, born 1981)|Li Bin]]
+|[[Changchun]]
+|[[Yatai Training Center]] Main Stadium
+|7,000
+|data-sort-value="24"|[[2024 Chinese Champions League|CMCL]], 5th
+|}
+
+==North Group==
+===League table===
+<onlyinclude>{{#invoke:Sports table|main|style=WDL
+|teamwidth=210 |match_col_width=35
+|source=[https://uk.soccerway.com/national/china-pr/china-league-two/2025/regular-season/north/g26352/ Soccerway]
+|section=North Group
+
+<!--Update team positions here-->
+|team_order=WXW, SDT, NHC, CCX, JXL, HLW, TAT, SHP, SCR, LLA, BIT, HBI
+
+<!--Update team results here and then (if needed) positions above-->
+|update=complete<!--UPDATE DATE AFTER UPDATING LEAGUE TABLE-->
+|win_BIT=5 |draw_BIT=2 |loss_BIT=15|gf_BIT=21|ga_BIT=29|status_BIT= <!-- Beijing IT -->
+|win_CCX=10|draw_CCX=8 |loss_CCX=4 |gf_CCX=19|ga_CCX=11|status_CCX= <!-- Changchun Xidu -->
+|win_HLW=8 |draw_HLW=8 |loss_HLW=6 |gf_HLW=24|ga_HLW=26|status_HLW= <!-- Hangzhou Linping Wuyue -->
+|win_HBI=3 |draw_HBI=7 |loss_HBI=12|gf_HBI=23|ga_HBI=39|status_HBI= <!-- Hubei Istar -->
+|win_JXL=10|draw_JXL=5 |loss_JXL=7 |gf_JXL=25|ga_JXL=22|status_JXL= <!-- Jiangxi Lushan -->
+|win_LLA=5 |draw_LLA=7 |loss_LLA=10|gf_LLA=21|ga_LLA=32|status_LLA= <!-- Lanzhou Longyuan Athletic -->
+|win_NHC=10|draw_NHC=8 |loss_NHC=4 |gf_NHC=38|ga_NHC=24|status_NHC= <!-- Nantong Haimen Codion -->
+|win_SDT=10|draw_SDT=9 |loss_SDT=3 |gf_SDT=36|ga_SDT=22|status_SDT= <!-- Shandong Taishan B -->
+|win_SHP=6 |draw_SHP=7 |loss_SHP=9 |gf_SHP=25|ga_SHP=26|status_SHP= <!-- Shanghai Port B -->
+|win_SCR=5 |draw_SCR=8 |loss_SCR=9 |gf_SCR=17|ga_SCR=32|status_SCR= <!-- Shanxi Chongde Ronghai -->
+|win_TAT=7 |draw_TAT=5 |loss_TAT=10|gf_TAT=22|ga_TAT=25|status_TAT= <!-- Tai'an Tiankuang -->
+|win_WXW=13|draw_WXW=6 |loss_WXW=3 |gf_WXW=31|ga_WXW=14|status_WXW= <!-- Wuxi Wugo -->
+
+<!--Update team qualifications here (defined below)-->
+|result1=PRO |result2=PRO |result3=PRO |result4=PRO |result5=REL |result6=REL |result7=REL |result8=REL |result9=REL |result10=REL |result11=REL |result12=REL
+
+<!--Team definitions (wikilinks in table)-->
+|name_BIT=[[Beijing Institute of Technology F.C.|Beijing IT]]
+|name_CCX=[[Changchun Xidu F.C.|Changchun Xidu]]
+|name_HLW=[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]
+|name_HBI=[[Hubei Istar F.C.|Hubei Istar]]
+|name_JXL=[[Jiangxi Lushan F.C.|Jiangxi Lushan]]
+|name_LLA=[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|name_NHC=[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|name_SDT=[[Shandong Taishan F.C.|Shandong Taishan B]]
+|name_SHP=[[Shanghai Port F.C.|Shanghai Port B]]
+|name_SCR=[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|name_TAT=[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]]
+|name_WXW=[[Wuxi Wugo F.C.|Wuxi Wugo]]
+
+<!--Table settings and rules-->
+|show_limit=5
+|class_rules =<br />
+*During season: 1) Points; 2) Head-to-head points; 3) Head-to-head goal difference; 4) Head-to-head goals scored; 5) Goal difference; 6) Goals scored; 7) Rankings in the previous season. (Rules 2 to 4 are only applied when teams concerned have finished both/all the matches against others.)
+*After season: 1) Points; 2) Head-to-head points; 3) Head-to-head goal difference; 4) Head-to-head goals scored; 5) Goal difference; 6) Goals scored; 7) Disciplinary points (yellow card = 1 point, red card = 3 points); 8) Drawing of lots.
+
+<!--Head-to-head-->
+|hth_NHC=Nantong Haimen Codion finished ahead of Changchun Xidu on head-to-head points: Nantong Haimen Codion 0–0 Changchun Xidu, Changchun Xidu 0–1 Nantong Haimen Codion
+|hth_CCX=NHC
+
+<!--Qualification and relegation column definitions-->
+|res_col_header=Q
+|col_PRO=green1 |text_PRO=Qualification for [[#Promotion stage|Promotion stage]]
+|col_REL=red1 |text_REL=Qualification for [[#Relegation stage|Relegation stage]]
+}}</onlyinclude>
+
+===Results===
+{{#invoke:Sports results|main
+|source        = [https://uk.soccerway.com/national/china-pr/china-league-two/2025/regular-season/north/g26352/ Soccerway]
+|update        = complete
+|a_note        = yes
+|matches_style = FBR
+
+|team1=BIT |team2=CCX |team3=HLW |team4=HBI |team5=JXL |team6=LLA |team7=NHC |team8=SDT |team9=SHP |team10=SCR |team11=TAT |team12=WXW
+
+<!--Team definitions (wikilinks in table)-->
+|name_BIT=[[Beijing Institute of Technology F.C.|Beijing IT]]
+|name_CCX=[[Changchun Xidu F.C.|Changchun Xidu]]
+|name_HLW=[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]
+|name_HBI=[[Hubei Istar F.C.|Hubei Istar]]
+|name_JXL=[[Jiangxi Lushan F.C.|Jiangxi Lushan]]
+|name_LLA=[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|name_NHC=[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|name_SDT=[[Shandong Taishan F.C.|Shandong Taishan B]]
+|name_SHP=[[Shanghai Port F.C.|Shanghai Port B]]
+|name_SCR=[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|name_TAT=[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]]
+|name_WXW=[[Wuxi Wugo F.C.|Wuxi Wugo]]
+
+<!-- Beijing IT -->
+|match_BIT_CCX = 0–1
+|match_BIT_HLW = 2–3
+|match_BIT_HBI = 2–0
+|match_BIT_JXL = 0–1
+|match_BIT_LLA = 2–0
+|match_BIT_NHC = 2–3
+|match_BIT_SDT = 1–1
+|match_BIT_SHP = 2–0
+|match_BIT_SCR = 0–2
+|match_BIT_TAT = 0–1
+|match_BIT_WXW = 0–1
+
+<!-- Changchun Xidu -->
+|match_CCX_BIT = 1–0
+|match_CCX_HLW = 0–0
+|match_CCX_HBI = 1–0
+|match_CCX_JXL = 0–1
+|match_CCX_LLA = 1–1
+|match_CCX_NHC = 0–1
+|match_CCX_SDT = 2–0
+|match_CCX_SHP = 1–1
+|match_CCX_SCR = 2–0
+|match_CCX_TAT = 1–0
+|match_CCX_WXW = 2–0
+
+<!-- Hangzhou Linping Wuyue -->
+|match_HLW_BIT = 2–1
+|match_HLW_CCX = 1–0
+|match_HLW_HBI = 0–3
+|match_HLW_JXL = 1–1
+|match_HLW_LLA = 1–3
+|match_HLW_NHC = 2–0
+|match_HLW_SDT = 0–1
+|match_HLW_SHP = 1–0
+|match_HLW_SCR = 2–0
+|match_HLW_TAT = 2–2
+|match_HLW_WXW = 1–1
+
+<!-- Hubei Istar -->
+|match_HBI_BIT = 3–0
+|match_HBI_CCX = 1–3
+|match_HBI_HLW = 1–1
+|match_HBI_JXL = 1–1
+|match_HBI_LLA = 2–3
+|match_HBI_NHC = 0–0
+|match_HBI_SDT = 1–2
+|match_HBI_SHP = 0–2
+|match_HBI_SCR = 0–0
+|match_HBI_TAT = 1–3
+|match_HBI_WXW = 1–4
+
+<!-- Jiangxi Lushan -->
+|match_JXL_BIT = 1–1
+|match_JXL_CCX = 0–0
+|match_JXL_HLW = 1–2
+|match_JXL_HBI = 2–4
+|match_JXL_LLA = 2–0
+|match_JXL_NHC = 0–2
+|match_JXL_SDT = 1–3
+|match_JXL_SHP = 1–0
+|match_JXL_SCR = 1–1
+|match_JXL_TAT = 2–0
+|match_JXL_WXW = 1–0
+
+<!-- Lanzhou Longyuan Athletic -->
+|match_LLA_BIT = 0–2
+|match_LLA_CCX = 0–1
+|match_LLA_HLW = 1–1
+|match_LLA_HBI = 2–0
+|match_LLA_JXL = 0–2
+|match_LLA_NHC = 1–1
+|match_LLA_SDT = 0–2
+|match_LLA_SHP = 1–1
+|match_LLA_SCR = 3–2
+|match_LLA_TAT = 1–2
+|match_LLA_WXW = 1–2
+
+<!-- Nantong Haimen Codion -->
+|match_NHC_BIT = 3–1
+|match_NHC_CCX = 0–0
+|match_NHC_HLW = 3–1
+|match_NHC_HBI = 2–2
+|match_NHC_JXL = 4–1
+|match_NHC_LLA = 0–0
+|match_NHC_SDT = 4–4
+|match_NHC_SHP = 1–1
+|match_NHC_SCR = 7–0
+|match_NHC_TAT = 1–0
+|match_NHC_WXW = 2–0
+
+<!-- Shandong Taishan B -->
+|match_SDT_BIT = 1–0
+|match_SDT_CCX = 4–1
+|match_SDT_HLW = 3–0
+|match_SDT_HBI = 0–0
+|match_SDT_JXL = 2–0
+|match_SDT_LLA = 2–2
+|match_SDT_NHC = 2–2
+|match_SDT_SHP = 1–2
+|match_SDT_SCR = 1–1
+|match_SDT_TAT = 4–1
+|match_SDT_WXW = 1–1
+
+<!-- Shanghai Port B -->
+|match_SHP_BIT = 0–3
+|match_SHP_CCX = 0–0
+|match_SHP_HLW = 1–2
+|match_SHP_HBI = 2–2
+|match_SHP_JXL = 0–1
+|match_SHP_LLA = 1–2
+|match_SHP_NHC = 1–0
+|match_SHP_SDT = 2–0
+|match_SHP_SCR = 5–0
+|match_SHP_TAT = 2–1
+|match_SHP_WXW = 1–2
+
+<!-- Shanxi Chongde Ronghai -->
+|match_SCR_BIT = 2–1
+|match_SCR_CCX = 0–0
+|match_SCR_HLW = 0–0
+|match_SCR_HBI = 5–1
+|match_SCR_JXL = 0–3
+|match_SCR_LLA = 2–0
+|match_SCR_NHC = 1–0
+|match_SCR_SDT = 1–1
+|match_SCR_SHP = 0–0
+|match_SCR_TAT = 0–0
+|match_SCR_WXW = 0–3
+
+<!-- Tai'an Tiankuang -->
+|match_TAT_BIT = 2–1
+|match_TAT_CCX = 1–2
+|match_TAT_HLW = 1–1
+|match_TAT_HBI = 2–0
+|match_TAT_JXL = 0–2
+|match_TAT_LLA = 3–0
+|match_TAT_NHC = 0–1
+|match_TAT_SDT = 0–1
+|match_TAT_SHP = 1–1
+|match_TAT_SCR = 1–0
+|match_TAT_WXW = 1–2
+
+<!-- Wuxi Wugo -->
+|match_WXW_BIT = 1–0
+|match_WXW_CCX = 0–0
+|match_WXW_HLW = 1–0
+|match_WXW_HBI = 2–0
+|match_WXW_JXL = 1–0
+|match_WXW_LLA = 0–0
+|match_WXW_NHC = 5–1
+|match_WXW_SDT = 0–0
+|match_WXW_SHP = 4–2
+|match_WXW_SCR = 1–0
+|match_WXW_TAT = 0–0
+}}
+
+===Positions by round===
+{{#invoke:sports rbr table|table|sortable=y|legendpos=br
+
+<!--Update team positions here-->
+|update=complete
+
+|team1=WXW |team2=SDT |team3=NHC |team4=CCX |team5=JXL |team6=HLW |team7=TAT |team8=SHP |team9=SCR |team10=LLA |team11=BIT |team12=HBI
+
+|pos_BIT=11/12/12/ 9/ 9/12/12/12/12/12/11/12/12/12/12/12/12/12/12/12/12/11
+|pos_CCX= 1/ 2/ 1/ 1/ 1/ 1/ 1/ 2/ 1/ 2/ 3/ 3/ 3/ 3/ 2/ 2/ 2/ 2/ 3/ 3/ 3/ 4
+|pos_HLW= 7/ 5/ 5/ 6/ 4/ 6/ 7/ 7/ 7/10/ 7/ 7/ 7/ 7/ 6/ 6/ 6/ 6/ 6/ 6/ 6/ 6
+|pos_HBI=12/10/ 8/11/11/ 8/ 9/10/ 9/ 7/ 8/ 8/ 8/10/11/10/11/11/11/11/11/12
+|pos_JXL= 6/ 4/ 6/ 3/ 5/ 5/ 4/ 3/ 5/ 6/ 6/ 6/ 6/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5
+|pos_LLA= 8/ 8/ 7/ 7/ 7/ 9/10/11/11/11/12/11/11/11/ 8/ 8/10/10/10/10/ 9/10
+|pos_NHC= 5/ 7/ 9/ 8/ 8/10/ 6/ 6/ 4/ 3/ 2/ 2/ 2/ 2/ 3/ 3/ 3/ 4/ 4/ 2/ 2/ 3
+|pos_SDT= 4/ 6/ 4/ 5/ 3/ 4/ 5/ 4/ 6/ 5/ 4/ 4/ 4/ 4/ 4/ 4/ 4/ 3/ 2/ 4/ 4/ 2
+|pos_SHP= 2/ 1/ 3/ 4/ 6/ 3/ 3/ 5/ 3/ 4/ 5/ 5/ 5/ 6/ 7/ 7/ 7/ 7/ 7/ 7/ 7/ 8
+|pos_SCR= 9/11/10/10/10/ 7/ 8/ 9/ 8/ 9/10/10/10/ 8/ 9/ 9/ 8/ 9/ 9/ 9/10/ 9
+|pos_TAT=10/ 9/11/12/12/11/11/ 8/10/ 8/ 9/ 9/ 9/ 9/10/11/ 9/ 8/ 8/ 8/ 8/ 7
+|pos_WXW= 3/ 3/ 2/ 2/ 2/ 2/ 2/ 1/ 2/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1
+
+<!--Team definitions (wikilinks in table)-->
+|name_BIT=[[Beijing Institute of Technology F.C.|Beijing IT]]
+|name_CCX=[[Changchun Xidu F.C.|Changchun Xidu]]
+|name_HLW=[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]
+|name_HBI=[[Hubei Istar F.C.|Hubei Istar]]
+|name_JXL=[[Jiangxi Lushan F.C.|Jiangxi Lushan]]
+|name_LLA=[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|name_NHC=[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|name_SDT=[[Shandong Taishan F.C.|Shandong Taishan B]]
+|name_SHP=[[Shanghai Port F.C.|Shanghai Port B]]
+|name_SCR=[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|name_TAT=[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]]
+|name_WXW=[[Wuxi Wugo F.C.|Wuxi Wugo]]
+
+|toptext=<small>To preserve chronological evolvements, any postponed matches are not included to the round at which they were originally scheduled, but added to the full round they were played immediately afterwards. For example, if a match is scheduled for round 7, but then played between rounds 8 and 9, it will be added to the standings for round 8.</small>
+|color_1-4=green1 |color_Q=green1 |text_1-4=Qualification for [[#Promotion stage|Promotion stage]]
+|color_5-12=red1 |color_q=red1 |text_5-12=Qualification for [[#Relegation stage|Relegation stage]]
+|source=[https://uk.soccerway.com/national/china-pr/china-league-two/2025/regular-season/north/g26352/ Soccerway]
+}}
+
+===Results by match played===
+{{#invoke:Sports rbr table|table|sortable=y
+
+|team1=BIT |team2=CCX |team3=HLW |team4=HBI |team5=JXL |team6=LLA |team7=NHC |team8=SDT |team9=SHP |team10=SCR |team11=TAT |team12=WXW
+
+<!--Team definitions (wikilinks in table)-->
+|name_BIT=[[Beijing Institute of Technology F.C.|Beijing IT]]
+|name_CCX=[[Changchun Xidu F.C.|Changchun Xidu]]
+|name_HLW=[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]
+|name_HBI=[[Hubei Istar F.C.|Hubei Istar]]
+|name_JXL=[[Jiangxi Lushan F.C.|Jiangxi Lushan]]
+|name_LLA=[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|name_NHC=[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|name_SDT=[[Shandong Taishan F.C.|Shandong Taishan B]]
+|name_SHP=[[Shanghai Port F.C.|Shanghai Port B]]
+|name_SCR=[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|name_TAT=[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]]
+|name_WXW=[[Wuxi Wugo F.C.|Wuxi Wugo]]
+
+<!--Update team results here. Don’t forget to update the date (update parameter)-->
+|update=complete
+
+|res_BIT=L/L/L/W/D/L/L/L/L/L/W/L/L/L/W/L/L/D/L/W/L/W
+|res_CCX=W/W/W/L/D/W/W/D/W/L/L/W/W/W/D/W/L/D/D/D/D/D
+|res_HLW=D/D/W/D/W/L/L/L/D/L/W/L/W/W/W/W/D/W/L/D/D/D
+|res_HBI=L/D/D/L/D/W/L/L/W/W/L/L/L/L/L/D/D/D/L/L/D/L
+|res_JXL=D/D/W/W/D/L/W/W/L/L/L/W/L/W/D/W/W/W/W/L/D/L
+|res_LLA=D/D/L/W/D/L/L/L/L/D/L/W/D/D/W/L/L/D/L/W/W/L
+|res_NHC=D/D/L/W/D/L/W/W/W/W/W/D/D/W/W/D/D/L/W/W/D/L
+|res_SDT=D/D/W/D/W/L/W/W/L/D/W/D/W/D/D/W/W/D/W/L/D/W
+|res_SHP=W/W/L/L/L/W/W/D/W/D/L/D/D/L/L/L/D/D/D/W/L/L
+|res_SCR=D/L/D/D/D/W/L/L/W/D/L/L/D/W/L/L/W/L/D/L/D/W
+|res_TAT=L/D/L/L/L/W/L/W/D/W/W/D/L/L/L/L/W/L/D/D/W/W
+|res_WXW=W/D/W/D/D/W/W/W/L/W/W/W/W/L/D/W/L/W/W/D/D/W
+
+|legendpos=b
+|color_W=green1
+|color_D=yellow1
+|color_L=red1
+|text_W=Win
+|text_D=Draw
+|text_L=Loss
+|source=[https://uk.soccerway.com/national/china-pr/china-league-two/2025/regular-season/north/g26352/ Soccerway]
+}}
+
+==South Group==
+===League table===
+<onlyinclude>{{#invoke:Sports table|main|style=WDL
+|teamwidth=210 |match_col_width=35
+|source=[https://uk.soccerway.com/national/china-pr/china-league-two/2025/regular-season/south/g26353/ Soccerway]
+|section=South Group
+
+<!--Update team positions here-->
+|team_order=GXH, SHZ, CDR, GZA, GDA, WTT, WZH, GZR, GDM, KMC, QZY, GXL
+
+<!--Update team results here and then (if needed) positions above-->
+|update=complete<!--UPDATE DATE AFTER UPDATING LEAGUE TABLE-->
+|win_CDR=12|draw_CDR=4 |loss_CDR=6 |gf_CDR=39|ga_CDR=20|status_CDR= <!-- Chengdu Rongcheng B -->
+|win_GZR=4 |draw_GZR=11|loss_GZR=7 |gf_GZR=18|ga_GZR=28|status_GZR= <!-- Ganzhou Ruishi -->
+|win_GDM=4 |draw_GDM=8 |loss_GDM=10|gf_GDM=20|ga_GDM=32|status_GDM= <!-- Guangdong Mingtu -->
+|win_GXH=18|draw_GXH=3 |loss_GXH=1 |gf_GXH=47|ga_GXH=9 |status_GXH= <!-- Guangxi Hengchen -->
+|win_GXL=0 |draw_GXL=6 |loss_GXL=16|gf_GXL=10|ga_GXL=45|status_GXL= <!-- Guangxi Lanhang -->
+|win_GDA=11|draw_GDA=5 |loss_GDA=6 |gf_GDA=31|ga_GDA=18|status_GDA= <!-- Guangzhou Dandelion Alpha -->
+|win_GZA=12|draw_GZA=3 |loss_GZA=7 |gf_GZA=33|ga_GZA=25|status_GZA= <!-- Guizhou Zhucheng Athletic -->
+|win_KMC=4 |draw_KMC=7 |loss_KMC=11|gf_KMC=15|ga_KMC=31|status_KMC= <!-- Kunming City -->
+|win_QZY=3 |draw_QZY=6 |loss_QZY=13|gf_QZY=13|ga_QZY=30|status_QZY= <!-- Quanzhou Yassin -->
+|win_SHZ=14|draw_SHZ=6 |loss_SHZ=2 |gf_SHZ=30|ga_SHZ=13|status_SHZ= <!-- Shenzhen 2028 -->
+|win_WZH=6 |draw_WZH=8 |loss_WZH=8 |gf_WZH=21|ga_WZH=27|status_WZH= <!-- Wenzhou Professional -->
+|win_WTT=8 |draw_WTT=5 |loss_WTT=9 |gf_WTT=21|ga_WTT=20|status_WTT= <!-- Wuhan Three Towns B -->
+
+<!--Update team qualifications here (defined below)-->
+|result1=PRO |result2=PRO |result3=PRO |result4=PRO |result5=REL |result6=REL |result7=REL |result8=REL |result9=REL |result10=REL |result11=REL |result12=REL
+
+<!--Team definitions (wikilinks in table)-->
+|name_CDR=[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+|name_GZR=[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]
+|name_GDM=[[Guangdong Mingtu F.C.|Guangdong Mingtu]]
+|name_GXH=[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|name_GXL=[[Guangxi Lanhang F.C.|Guangxi Lanhang]]
+|name_GDA=[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|name_GZA=[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]]
+|name_KMC=[[Kunming City F.C.|Kunming City]]
+|name_QZY=[[Quanzhou Yassin F.C.|Quanzhou Yassin]]
+|name_SHZ=[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|name_WZH=[[Wenzhou Professional F.C.|Wenzhou]]
+|name_WTT=[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+
+<!--Table settings and rules-->
+|show_limit=5
+|class_rules =<br />
+*During season: 1) Points; 2) Head-to-head points; 3) Head-to-head goal difference; 4) Head-to-head goals scored; 5) Goal difference; 6) Goals scored; 7) Rankings in the previous season. (Rules 2 to 4 are only applied when teams concerned have finished both/all the matches against others.)
+*After season: 1) Points; 2) Head-to-head points; 3) Head-to-head goal difference; 4) Head-to-head goals scored; 5) Goal difference; 6) Goals scored; 7) Disciplinary points (yellow card = 1 point, red card = 3 points); 8) Drawing of lots.
+
+<!--Qualification and relegation column definitions-->
+|res_col_header=Q
+|col_PRO=green1 |text_PRO=Qualification for [[#Promotion stage|Promotion stage]]
+|col_REL=red1 |text_REL=Qualification for [[#Relegation stage|Relegation stage]]
+}}</onlyinclude>
+
+===Results===
+{{#invoke:Sports results|main
+|source        = [https://uk.soccerway.com/national/china-pr/china-league-two/2025/regular-season/south/g26353/ Soccerway]
+|update        = complete
+|a_note        = yes
+|matches_style = FBR
+
+|team1=CDR |team2=GZR |team3=GDM |team4=GXH |team5=GXL |team6=GDA |team7=GZA |team8=KMC |team9=QZY |team10=SHZ |team11=WZH |team12=WTT
+
+<!--Team definitions (wikilinks in table)-->
+|name_CDR=[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+|name_GZR=[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]
+|name_GDM=[[Guangdong Mingtu F.C.|Guangdong Mingtu]]
+|name_GXH=[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|name_GXL=[[Guangxi Lanhang F.C.|Guangxi Lanhang]]
+|name_GDA=[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|name_GZA=[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]]
+|name_KMC=[[Kunming City F.C.|Kunming City]]
+|name_QZY=[[Quanzhou Yassin F.C.|Quanzhou Yassin]]
+|name_SHZ=[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|name_WZH=[[Wenzhou Professional F.C.|Wenzhou]]
+|name_WTT=[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+
+<!-- Chengdu Rongcheng B -->
+|match_CDR_GZR = 1–1
+|match_CDR_GDM = 2–0
+|match_CDR_GXH = 1–3
+|match_CDR_GXL = 5–0
+|match_CDR_GDA = 2–1
+|match_CDR_GZA = 1–2
+|match_CDR_KMC = 2–0
+|match_CDR_QZY = 2–0
+|match_CDR_SHZ = 0–2
+|match_CDR_WZH = 3–0
+|match_CDR_WTT = 0–0
+
+<!-- Ganzhou Ruishi -->
+|match_GZR_CDR = 1–1
+|match_GZR_GDM = 2–2
+|match_GZR_GXH = 0–2
+|match_GZR_GXL = 1–0
+|match_GZR_GDA = 0–0
+|match_GZR_GZA = 2–0
+|match_GZR_KMC = 2–1
+|match_GZR_QZY = 1–1
+|match_GZR_SHZ = 1–1
+|match_GZR_WZH = 2–2
+|match_GZR_WTT = 1–0
+
+<!-- Guangdong Mingtu -->
+|match_GDM_CDR = 1–3
+|match_GDM_GZR = 2–0
+|match_GDM_GXH = 0–2
+|match_GDM_GXL = 1–1
+|match_GDM_GDA = 1–3
+|match_GDM_GZA = 3–2
+|match_GDM_KMC = 1–1
+|match_GDM_QZY = 2–1
+|match_GDM_SHZ = 0–1
+|match_GDM_WZH = 1–2
+|match_GDM_WTT = 2–3
+
+<!-- Guangxi Hengchen -->
+|match_GXH_CDR = 1–0
+|match_GXH_GZR = 2–0
+|match_GXH_GDM = 1–0
+|match_GXH_GXL = 2–1
+|match_GXH_GDA = 1–0
+|match_GXH_GZA = 0–2
+|match_GXH_KMC = 7–0
+|match_GXH_QZY = 2–0
+|match_GXH_SHZ = 2–2
+|match_GXH_WZH = 3–0
+|match_GXH_WTT = 1–1
+
+<!-- Guangxi Lanhang -->
+|match_GXL_CDR = 0–4
+|match_GXL_GZR = 2–2
+|match_GXL_GDM = 1–2
+|match_GXL_GXH = 0–5
+|match_GXL_GDA = 0–3
+|match_GXL_GZA = 0–1
+|match_GXL_KMC = 0–2
+|match_GXL_QZY = 0–1
+|match_GXL_SHZ = 0–2
+|match_GXL_WZH = 0–0
+|match_GXL_WTT = 0–4
+
+<!-- Guangzhou Dandelion Alpha -->
+|match_GDA_CDR = 2–1
+|match_GDA_GZR = 1–0
+|match_GDA_GDM = 3–0
+|match_GDA_GXH = 1–3
+|match_GDA_GXL = 1–1
+|match_GDA_GZA = 4–2
+|match_GDA_KMC = 1–2
+|match_GDA_QZY = 3–0
+|match_GDA_SHZ = 2–0
+|match_GDA_WZH = 0–0
+|match_GDA_WTT = 1–0
+
+<!-- Guizhou Zhucheng Athletic -->
+|match_GZA_CDR = 1–1
+|match_GZA_GZR = 5–0
+|match_GZA_GDM = 2–0
+|match_GZA_GXH = 1–2
+|match_GZA_GXL = 2–1
+|match_GZA_GDA = 2–1
+|match_GZA_KMC = 0–0
+|match_GZA_QZY = 1–0
+|match_GZA_SHZ = 0–1
+|match_GZA_WZH = 1–0
+|match_GZA_WTT = 2–1
+
+<!-- Kunming City -->
+|match_KMC_CDR = 0–1
+|match_KMC_GZR = 1–1
+|match_KMC_GDM = 0–0
+|match_KMC_GXH = 0–3
+|match_KMC_GXL = 0–0
+|match_KMC_GDA = 1–1
+|match_KMC_GZA = 1–2
+|match_KMC_QZY = 1–0
+|match_KMC_SHZ = 0–1
+|match_KMC_WZH = 1–0
+|match_KMC_WTT = 1–2
+
+<!-- Quanzhou Yassin -->
+|match_QZY_CDR = 1–4
+|match_QZY_GZR = 0–0
+|match_QZY_GDM = 0–0
+|match_QZY_GXH = 0–2
+|match_QZY_GXL = 1–0
+|match_QZY_GDA = 0–1
+|match_QZY_GZA = 2–2
+|match_QZY_KMC = 2–1
+|match_QZY_SHZ = 0–1
+|match_QZY_WZH = 0–0
+|match_QZY_WTT = 0–1
+
+<!-- Shenzhen 2028 -->
+|match_SHZ_CDR = 4–1
+|match_SHZ_GZR = 0–0
+|match_SHZ_GDM = 1–1
+|match_SHZ_GXH = 0–0
+|match_SHZ_GXL = 2–0
+|match_SHZ_GDA = 1–1
+|match_SHZ_GZA = 2–1
+|match_SHZ_KMC = 2–0
+|match_SHZ_QZY = 2–1
+|match_SHZ_WZH = 0–1
+|match_SHZ_WTT = 2–1
+
+<!-- Wenzhou Professional -->
+|match_WZH_CDR = 0–3
+|match_WZH_GZR = 2–1
+|match_WZH_GDM = 1–1
+|match_WZH_GXH = 0–1
+|match_WZH_GXL = 2–2
+|match_WZH_GDA = 0–1
+|match_WZH_GZA = 3–0
+|match_WZH_KMC = 2–2
+|match_WZH_QZY = 3–2
+|match_WZH_SHZ = 1–2
+|match_WZH_WTT = 1–1
+
+<!-- Wuhan Three Towns B -->
+|match_WTT_CDR = 0–1
+|match_WTT_GZR = 2–0
+|match_WTT_GDM = 0–0
+|match_WTT_GXH = 0–2
+|match_WTT_GXL = 2–1
+|match_WTT_GDA = 1–0
+|match_WTT_GZA = 0–2
+|match_WTT_KMC = 1–0
+|match_WTT_QZY = 1–1
+|match_WTT_SHZ = 0–1
+|match_WTT_WZH = 0–1
+}}
+
+===Positions by round===
+{{#invoke:sports rbr table|table|sortable=y|legendpos=br
+
+<!--Update team positions here-->
+|update=complete
+
+|team1=GXH |team2=SHZ |team3=CDR |team4=GZA |team5=GDA |team6=WTT |team7=WZH |team8=GZR |team9=GDM |team10=KMC |team11=QZY |team12=GXL
+
+|pos_CDR= 1/ 1/ 2/ 4/ 5/ 3/ 2/ 1/ 3/ 2/ 3/ 4/ 3/ 3/ 4/ 4/ 4/ 4/ 3/ 3/ 3/ 3
+|pos_GZR= 6/ 3/ 5/ 7/ 7/ 5/ 7/ 8/ 9/ 9/ 9/ 9/ 9/ 9/ 8/ 8/ 8/ 8/ 8/ 8/ 8/ 8
+|pos_GDM=12/12/12/12/11/11/11/11/10/10/10/10/10/10/10/10/10/10/10/10/10/ 9
+|pos_GXH= 3/11/ 6/ 5/ 6/ 4/ 3/ 2/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1/ 1
+|pos_GXL= 7/10/11/11/12/12/12/12/12/12/12/12/12/12/12/12/12/12/12/12/12/12
+|pos_GDA=11/ 4/ 3/ 2/ 1/ 1/ 4/ 6/ 5/ 5/ 5/ 5/ 5/ 4/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5
+|pos_GZA=10/ 2/ 1/ 1/ 3/ 6/ 5/ 4/ 2/ 4/ 4/ 3/ 4/ 5/ 3/ 2/ 2/ 3/ 4/ 4/ 4/ 4
+|pos_KMC= 8/ 7/ 7/ 6/ 4/ 7/ 8/ 7/ 7/ 8/ 8/ 8/ 8/ 8/ 9/ 9/ 9/ 9/ 9/ 9/ 9/10
+|pos_QZY= 9/ 9/10/10/10/10/10/10/11/11/11/11/11/11/11/11/11/11/11/11/11/11
+|pos_SHZ= 2/ 5/ 9/ 8/ 8/ 8/ 6/ 5/ 4/ 3/ 2/ 2/ 2/ 2/ 2/ 3/ 3/ 2/ 2/ 2/ 2/ 2
+|pos_WZH= 5/ 6/ 4/ 3/ 2/ 2/ 1/ 3/ 6/ 6/ 6/ 6/ 6/ 6/ 6/ 7/ 7/ 7/ 7/ 7/ 7/ 7
+|pos_WTT= 4/ 8/ 8/ 9/ 9/ 9/ 9/ 9/ 8/ 7/ 7/ 7/ 7/ 7/ 7/ 6/ 6/ 6/ 6/ 6/ 6/ 6
+
+<!--Team definitions (wikilinks in table)-->
+|name_CDR=[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+|name_GZR=[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]
+|name_GDM=[[Guangdong Mingtu F.C.|Guangdong Mingtu]]
+|name_GXH=[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|name_GXL=[[Guangxi Lanhang F.C.|Guangxi Lanhang]]
+|name_GDA=[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|name_GZA=[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]]
+|name_KMC=[[Kunming City F.C.|Kunming City]]
+|name_QZY=[[Quanzhou Yassin F.C.|Quanzhou Yassin]]
+|name_SHZ=[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|name_WZH=[[Wenzhou Professional F.C.|Wenzhou]]
+|name_WTT=[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+
+|toptext=<small>To preserve chronological evolvements, any postponed matches are not included to the round at which they were originally scheduled, but added to the full round they were played immediately afterwards. For example, if a match is scheduled for round 7, but then played between rounds 8 and 9, it will be added to the standings for round 8.</small>
+|color_1-4=green1 |color_Q=green1 |text_1-4=Qualification for [[#Promotion stage|Promotion stage]]
+|color_5-12=red1 |color_q=red1 |text_5-12=Qualification for [[#Relegation stage|Relegation stage]]
+|source=[https://uk.soccerway.com/national/china-pr/china-league-two/2025/regular-season/south/g26353/ Soccerway]
+}}
+
+===Results by match played===
+{{#invoke:Sports rbr table|table|sortable=y
+
+|team1=CDR |team2=GZR |team3=GDM |team4=GXH |team5=GXL |team6=GDA |team7=GZA |team8=KMC |team9=QZY |team10=SHZ |team11=WZH |team12=WTT
+
+<!--Team definitions (wikilinks in table)-->
+|name_CDR=[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+|name_GZR=[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]
+|name_GDM=[[Guangdong Mingtu F.C.|Guangdong Mingtu]]
+|name_GXH=[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|name_GXL=[[Guangxi Lanhang F.C.|Guangxi Lanhang]]
+|name_GDA=[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|name_GZA=[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]]
+|name_KMC=[[Kunming City F.C.|Kunming City]]
+|name_QZY=[[Quanzhou Yassin F.C.|Quanzhou Yassin]]
+|name_SHZ=[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|name_WZH=[[Wenzhou Professional F.C.|Wenzhou]]
+|name_WTT=[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+
+<!--Update team results here. Don’t forget to update the date (update parameter)-->
+|update=complete
+
+|res_CDR=W/W/D/L/D/W/W/W/L/W/L/L/W/W/L/D/W/W/W/D/W/L
+|res_GZR=D/W/D/D/D/W/L/L/L/L/D/D/D/W/D/D/L/D/L/D/W/L
+|res_GDM=L/L/L/L/D/D/L/D/W/D/D/D/L/W/L/W/L/L/L/D/D/W
+|res_GXH=D/L/W/W/D/W/W/W/W/W/W/W/W/W/W/D/W/W/W/W/W/W
+|res_GXL=D/L/L/L/L/L/L/L/L/L/D/D/D/D/L/D/L/L/L/L/L/L
+|res_GDA=L/W/W/W/W/D/L/L/W/L/D/W/D/D/W/L/W/W/D/W/L/W
+|res_GZA=D/W/W/W/L/L/W/W/W/L/W/W/L/L/W/W/W/L/D/D/L/W
+|res_KMC=D/D/D/W/W/L/L/W/L/D/L/L/W/L/L/D/L/L/D/L/D/L
+|res_QZY=D/D/L/L/D/L/L/L/L/W/D/D/L/L/W/L/L/L/D/L/W/L
+|res_SHZ=W/L/L/D/D/W/W/W/W/W/W/D/D/W/D/D/W/W/W/W/W/W
+|res_WZH=D/D/W/W/W/D/W/D/L/L/D/D/L/L/D/L/L/D/W/L/L/W
+|res_WTT=D/D/D/L/L/D/W/L/W/W/L/L/W/L/D/W/W/W/L/W/L/L
+
+|legendpos=b
+|color_W=green1
+|color_D=yellow1
+|color_L=red1
+|text_W=Win
+|text_D=Draw
+|text_L=Loss
+|source=[https://uk.soccerway.com/national/china-pr/china-league-two/2025/regular-season/south/g26353/ Soccerway]
+}}
+
+==Promotion stage==
+===League table===
+<onlyinclude>{{#invoke:Sports table|main|style=WDL
+|teamwidth=210 |match_col_width=35
+|source=[https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/promotion-group Soccerway]
+|section=Promotion stage
+
+<!--Update team positions here-->
+|team_order=GXH, WXW, SHZ, CDR, GZA, NHC, SDT, CCX
+
+<!--Update team results here and then (if needed) positions above-->
+|update=complete<!--UPDATE DATE AFTER UPDATING LEAGUE TABLE-->
+|win_CCX=10|draw_CCX=11|loss_CCX=9 |gf_CCX=24|ga_CCX=28|status_CCX= <!-- Changchun Xidu -->
+|win_CDR=14|draw_CDR=9 |loss_CDR=7 |gf_CDR=48|ga_CDR=27|status_CDR= <!-- Chengdu Rongcheng B -->
+|win_GXH=23|draw_GXH=4 |loss_GXH=3 |gf_GXH=62|ga_GXH=17|status_GXH=CP<!-- Guangxi Hengchen -->
+|win_GZA=15|draw_GZA=5 |loss_GZA=10|gf_GZA=39|ga_GZA=34|status_GZA= <!-- Guizhou Zhucheng Athletic -->
+|win_NHC=13|draw_NHC=10|loss_NHC=7 |gf_NHC=52|ga_NHC=34|status_NHC= <!-- Nantong Haimen Codion -->
+|win_SDT=12|draw_SDT=12|loss_SDT=6 |gf_SDT=43|ga_SDT=27|status_SDT= <!-- Shandong Taishan B -->
+|win_SHZ=16|draw_SHZ=7 |loss_SHZ=7 |gf_SHZ=36|ga_SHZ=26|status_SHZ= <!-- Shenzhen 2028 -->
+|win_WXW=19|draw_WXW=7 |loss_WXW=4 |gf_WXW=42|ga_WXW=18|status_WXW=P<!-- Wuxi Wugo -->
+
+<!--Update team qualifications here (defined below)-->
+|result1=CLO |result2=CLO
+
+<!--Team definitions (wikilinks in table)-->
+|name_CCX=[[Changchun Xidu F.C.|Changchun Xidu]]
+|name_CDR=[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+|name_GXH=[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|name_GZA=[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]]
+|name_NHC=[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|name_SDT=[[Shandong Taishan F.C.|Shandong Taishan B]]
+|name_SHZ=[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|name_WXW=[[Wuxi Wugo F.C.|Wuxi Wugo]]
+
+<!--Table settings and rules-->
+|show_limit=5
+|class_rules =<br />
+*During season: 1) Points; 2) Head-to-head points; 3) Head-to-head goal difference; 4) Head-to-head goals scored; 5) Goal difference; 6) Goals scored; 7) Rankings in the previous season. (Rules 2 to 4 are only applied when teams concerned have finished both/all the matches against others.)
+*After season: 1) Points; 2) Head-to-head points; 3) Head-to-head goal difference; 4) Head-to-head goals scored; 5) Goal difference; 6) Goals scored; 7) Disciplinary points (yellow card = 1 point, red card = 3 points); 8) Drawing of lots.
+
+<!--Qualification and relegation column definitions-->
+|res_col_header=P
+|col_CLO=green1 |text_CLO=Promotion to {{season link|2026|China League One|League One}}
+}}</onlyinclude>
+
+===Results===
+{{#invoke:Sports results|main
+|source        = [https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/promotion-group Soccerway]
+|update        = complete
+|a_note        = yes
+|matches_style = FBR
+
+|team1=CCX |team2=CDR |team3=GXH |team4=GZA |team5=NHC |team6=SDT |team7=SHZ |team8=WXW
+
+<!--Team definitions (wikilinks in table)-->
+|name_CCX=[[Changchun Xidu F.C.|Changchun Xidu]]
+|name_CDR=[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+|name_GXH=[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|name_GZA=[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]]
+|name_NHC=[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|name_SDT=[[Shandong Taishan F.C.|Shandong Taishan B]]
+|name_SHZ=[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|name_WXW=[[Wuxi Wugo F.C.|Wuxi Wugo]]
+
+<!-- Changchun Xidu -->
+|match_CCX_CDR = 1–1
+|match_CCX_GXH = 0–3
+|match_CCX_GZA = 1–2
+|match_CCX_NHC = –
+|match_CCX_SDT = –
+|match_CCX_SHZ = 0–3
+|match_CCX_WXW = –
+
+<!-- Chengdu Rongcheng B -->
+|match_CDR_CCX = 4–2
+|match_CDR_GXH = –
+|match_CDR_GZA = –
+|match_CDR_NHC = 2–1
+|match_CDR_SDT = 0–0
+|match_CDR_SHZ = –
+|match_CDR_WXW = 0–0
+
+<!-- Guangxi Hengchen -->
+|match_GXH_CCX = 4–1
+|match_GXH_CDR = –
+|match_GXH_GZA = –
+|match_GXH_NHC = 2–1
+|match_GXH_SDT = 1–0
+|match_GXH_SHZ = –
+|match_GXH_WXW = 1–2
+
+<!-- Guizhou Zhucheng Athletic -->
+|match_GZA_CCX = 0–0
+|match_GZA_CDR = –
+|match_GZA_GXH = –
+|match_GZA_NHC = 1–1
+|match_GZA_SDT = 1–0
+|match_GZA_SHZ = –
+|match_GZA_WXW = 0–2
+
+<!-- Nantong Haimen Codion -->
+|match_NHC_CCX = –
+|match_NHC_CDR = 0–0
+|match_NHC_GXH = 3–4
+|match_NHC_GZA = 4–0
+|match_NHC_SDT = –
+|match_NHC_SHZ = 2–0
+|match_NHC_WXW = –
+
+<!-- Shandong Taishan B -->
+|match_SDT_CCX = –
+|match_SDT_CDR = 1–1
+|match_SDT_GXH = 0–0
+|match_SDT_GZA = 0–2
+|match_SDT_NHC = –
+|match_SDT_SHZ = 5–0
+|match_SDT_WXW = –
+
+<!-- Shenzhen 2028 -->
+|match_SHZ_CCX = 0–0
+|match_SHZ_CDR = –
+|match_SHZ_GXH = –
+|match_SHZ_GZA = –
+|match_SHZ_NHC = 1–2
+|match_SHZ_SDT = 0–1
+|match_SHZ_WXW = 2–1
+
+<!-- Wuxi Wugo -->
+|match_WXW_CCX = –
+|match_WXW_CDR = 2–1
+|match_WXW_GXH = 1–0
+|match_WXW_GZA = 1–0
+|match_WXW_NHC = –
+|match_WXW_SDT = –
+|match_WXW_SHZ = 2–0
+}}
+
+===Positions by round===
+{{#invoke:sports rbr table|table|sortable=y|legendpos=br
+
+<!--Update team positions here-->
+|update=complete
+
+|team1=GXH |team2=WXW |team3=SHZ |team4=CDR |team5=GZA |team6=NHC |team7=SDT |team8=CCX
+
+|pos_CCX=6/7/8/8/8/8/8/8
+|pos_CDR=4/4/5/5/4/4/5/4
+|pos_GXH=1/1/1/1/1/1/1/1
+|pos_GZA=7/5/4/4/5/5/4/5
+|pos_NHC=8/8/6/7/7/7/6/6
+|pos_SDT=5/6/7/6/6/6/7/7
+|pos_SHZ=2/3/3/3/3/3/3/3
+|pos_WXW=3/2/2/2/2/2/2/2
+
+<!--Team definitions (wikilinks in table)-->
+|name_CCX=[[Changchun Xidu F.C.|Changchun Xidu]]
+|name_CDR=[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+|name_GXH=[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|name_GZA=[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]]
+|name_NHC=[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|name_SDT=[[Shandong Taishan F.C.|Shandong Taishan B]]
+|name_SHZ=[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|name_WXW=[[Wuxi Wugo F.C.|Wuxi Wugo]]
+
+|toptext=<small>To preserve chronological evolvements, any postponed matches are not included to the round at which they were originally scheduled, but added to the full round they were played immediately afterwards. For example, if a match is scheduled for round 7, but then played between rounds 8 and 9, it will be added to the standings for round 8.</small>
+|color_1=gold |text_1=Leader and promotion to {{season link|2026|China League One|League One}}
+|color_2=green1 |text_2=Promotion to {{season link|2026|China League One|League One}}
+|firstround=23
+|source=[https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/promotion-group Soccerway]
+}}
+
+===Results by match played===
+{{#invoke:Sports rbr table|table|sortable=y
+
+|team1=CCX |team2=CDR |team3=GXH |team4=GZA |team5=NHC |team6=SDT |team7=SHZ |team8=WXW
+
+<!--Team definitions (wikilinks in table)-->
+|name_CCX=[[Changchun Xidu F.C.|Changchun Xidu]]
+|name_CDR=[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+|name_GXH=[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|name_GZA=[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]]
+|name_NHC=[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|name_SDT=[[Shandong Taishan F.C.|Shandong Taishan B]]
+|name_SHZ=[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|name_WXW=[[Wuxi Wugo F.C.|Wuxi Wugo]]
+
+<!--Update team results here. Don’t forget to update the date (update parameter)-->
+|update=complete
+
+|res_CCX=D/L/L/D/L/D/L/L
+|res_CDR=D/W/D/D/D/D/L/W
+|res_GXH=W/W/W/L/W/D/W/L
+|res_GZA=L/W/W/D/L/D/W/L
+|res_NHC=L/L/W/D/L/D/W/W
+|res_SDT=D/L/L/W/D/D/L/W
+|res_SHZ=D/L/L/L/W/W/L/L
+|res_WXW=W/W/D/W/W/L/W/W
+
+|legendpos=b
+|color_W=green1
+|color_D=yellow1
+|color_L=red1
+|text_W=Win
+|text_D=Draw
+|text_L=Loss
+|firstround=23
+|source=[https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/promotion-group Soccerway]
+}}
+
+==Relegation stage==
+===Group A===
+====League table====
+<onlyinclude>{{#invoke:Sports table|main|style=WDL
+|teamwidth=210 |match_col_width=35
+|source=[https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/relegation-round-group-a Soccerway]
+|section=Relegation stage Group A
+
+<!--Update team positions here-->
+|team_order=HLW, GDA, LLA, SHP, WZH, GDM, HBI, QZY
+
+<!--Update team results here and then (if needed) positions above-->
+|update=complete<!--UPDATE DATE AFTER UPDATING LEAGUE TABLE-->
+|win_GDM=7 |draw_GDM=8 |loss_GDM=15|gf_GDM=26|ga_GDM=42|status_GDM= <!-- Guangdong Mingtu -->
+|win_GDA=13|draw_GDA=7 |loss_GDA=10|gf_GDA=37|ga_GDA=27|status_GDA= <!-- Guangzhou Dandelion Alpha -->
+|win_HLW=13|draw_HLW=8 |loss_HLW=9 |gf_HLW=34|ga_HLW=33|status_HLW= <!-- Hangzhou Linping Wuyue -->
+|win_HBI=6 |draw_HBI=9 |loss_HBI=15|gf_HBI=31|ga_HBI=48|status_HBI= <!-- Hubei Istar -->
+|win_LLA=10|draw_LLA=10|loss_LLA=10|gf_LLA=32|ga_LLA=33|status_LLA= <!-- Lanzhou Longyuan Athletic -->
+|win_QZY=3 |draw_QZY=10|loss_QZY=17|gf_QZY=17|ga_QZY=41|status_QZY=R<!-- Quanzhou Yassin -->
+|win_SHP=9 |draw_SHP=10|loss_SHP=11|gf_SHP=32|ga_SHP=32|status_SHP= <!-- Shanghai Port B -->
+|win_WZH=9 |draw_WZH=10|loss_WZH=11|gf_WZH=28|ga_WZH=33|status_WZH= <!-- Wenzhou Professional -->
+
+<!--Update team qualifications here (defined below)-->
+|result8=REL
+
+<!--Team definitions (wikilinks in table)-->
+|name_GDM=[[Guangdong Mingtu F.C.|Guangdong Mingtu]]
+|name_GDA=[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|name_HLW=[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]
+|name_HBI=[[Hubei Istar F.C.|Hubei Istar]]
+|name_LLA=[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|name_QZY=[[Quanzhou Yassin F.C.|Quanzhou Yassin]]
+|name_SHP=[[Shanghai Port F.C.|Shanghai Port B]]
+|name_WZH=[[Wenzhou Professional F.C.|Wenzhou]]
+
+<!--Table settings and rules-->
+|show_limit=5
+|class_rules =<br />
+*During season: 1) Points; 2) Head-to-head points; 3) Head-to-head goal difference; 4) Head-to-head goals scored; 5) Goal difference; 6) Goals scored; 7) Rankings in the previous season. (Rules 2 to 4 are only applied when teams concerned have finished both/all the matches against others.)
+*After season: 1) Points; 2) Head-to-head points; 3) Head-to-head goal difference; 4) Head-to-head goals scored; 5) Goal difference; 6) Goals scored; 7) Disciplinary points (yellow card = 1 point, red card = 3 points); 8) Drawing of lots.
+
+<!--Qualification and relegation column definitions-->
+|res_col_header=R
+|col_REL=red1 |text_REL=Relegation to {{season link|2026|Chinese Champions League|CMCL}}
+}}</onlyinclude>
+
+====Results====
+{{#invoke:Sports results|main
+|source        = [https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/relegation-round-group-a Soccerway]
+|update        = complete
+|a_note        = yes
+|matches_style = FBR
+
+|team1=GDM |team2=GDA |team3=HLW |team4=HBI |team5=LLA |team6=QZY |team7=SHP |team8=WZH
+
+<!--Team definitions (wikilinks in table)-->
+|name_GDM=[[Guangdong Mingtu F.C.|Guangdong Mingtu]]
+|name_GDA=[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|name_HLW=[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]
+|name_HBI=[[Hubei Istar F.C.|Hubei Istar]]
+|name_LLA=[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|name_QZY=[[Quanzhou Yassin F.C.|Quanzhou Yassin]]
+|name_SHP=[[Shanghai Port F.C.|Shanghai Port B]]
+|name_WZH=[[Wenzhou Professional F.C.|Wenzhou]]
+
+<!-- Guangdong Mingtu -->
+|match_GDM_GDA = –
+|match_GDM_HLW = 1–0
+|match_GDM_HBI = 0–1
+|match_GDM_LLA = 1–2
+|match_GDM_QZY = –
+|match_GDM_SHP = 1–0
+|match_GDM_WZH = –
+
+<!-- Guangzhou Dandelion Alpha -->
+|match_GDA_GDM = –
+|match_GDA_HLW = 1–0
+|match_GDA_HBI = 1–3
+|match_GDA_LLA = 0–0
+|match_GDA_QZY = –
+|match_GDA_SHP = 0–1
+|match_GDA_WZH = –
+
+<!-- Hangzhou Linping Wuyue -->
+|match_HLW_GDM = 2–0
+|match_HLW_GDA = 2–0
+|match_HLW_HBI = –
+|match_HLW_LLA = –
+|match_HLW_QZY = 2–1
+|match_HLW_SHP = –
+|match_HLW_WZH = 1–0
+
+<!-- Hubei Istar -->
+|match_HBI_GDM = 2–1
+|match_HBI_GDA = 0–2
+|match_HBI_HLW = –
+|match_HBI_LLA = –
+|match_HBI_QZY = 0–0
+|match_HBI_SHP = –
+|match_HBI_WZH = 0–1
+
+<!-- Lanzhou Longyuan Athletic -->
+|match_LLA_GDM = 3–0
+|match_LLA_GDA = 1–0
+|match_LLA_HLW = –
+|match_LLA_HBI = –
+|match_LLA_QZY = 0–0
+|match_LLA_SHP = –
+|match_LLA_WZH = 1–0
+
+<!-- Quanzhou Yassin -->
+|match_QZY_GDM = –
+|match_QZY_GDA = –
+|match_QZY_HLW = 2–3
+|match_QZY_HBI = 1–1
+|match_QZY_LLA = 0–4
+|match_QZY_SHP = 0–1
+|match_QZY_WZH = –
+
+<!-- Shanghai Port B -->
+|match_SHP_GDM = 0–2
+|match_SHP_GDA = 2–2
+|match_SHP_HLW = –
+|match_SHP_HBI = –
+|match_SHP_LLA = –
+|match_SHP_QZY = 0–0
+|match_SHP_WZH = 1–1
+
+<!-- Wenzhou Professional -->
+|match_WZH_GDM = –
+|match_WZH_GDA = –
+|match_WZH_HLW = 2–0
+|match_WZH_HBI = 3–1
+|match_WZH_LLA = 0–0
+|match_WZH_QZY = –
+|match_WZH_SHP = 0–2
+}}
+
+====Positions by round====
+{{#invoke:sports rbr table|table|sortable=y|legendpos=br
+
+<!--Update team positions here-->
+|update=complete
+
+|team1=HLW |team2=GDA |team3=LLA |team4=SHP |team5=WZH |team6=GDM |team7=HBI |team8=QZY
+
+|pos_GDM=6/6/6/6/6/6/6/6
+|pos_GDA=1/1/1/2/1/2/2/2
+|pos_HLW=2/2/2/1/2/1/1/1
+|pos_HBI=7/7/7/7/7/7/7/7
+|pos_LLA=5/5/5/5/5/4/3/3
+|pos_QZY=8/8/8/8/8/8/8/8
+|pos_SHP=3/3/4/3/3/3/4/4
+|pos_WZH=4/4/3/4/4/5/5/5
+
+<!--Team definitions (wikilinks in table)-->
+|name_GDM=[[Guangdong Mingtu F.C.|Guangdong Mingtu]]
+|name_GDA=[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|name_HLW=[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]
+|name_HBI=[[Hubei Istar F.C.|Hubei Istar]]
+|name_LLA=[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|name_QZY=[[Quanzhou Yassin F.C.|Quanzhou Yassin]]
+|name_SHP=[[Shanghai Port F.C.|Shanghai Port B]]
+|name_WZH=[[Wenzhou Professional F.C.|Wenzhou]]
+
+|toptext=<small>To preserve chronological evolvements, any postponed matches are not included to the round at which they were originally scheduled, but added to the full round they were played immediately afterwards. For example, if a match is scheduled for round 7, but then played between rounds 8 and 9, it will be added to the standings for round 8.</small>
+|color_7-8=red1 |text_7-8=Relegation to {{season link|2025|Chinese Champions League|CMCL}}
+|firstround=23
+|source=[https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/relegation-round-group-a Soccerway]
+}}
+
+====Results by match played====
+{{#invoke:Sports rbr table|table|sortable=y
+
+|team1=GDM |team2=GDA |team3=HLW |team4=HBI |team5=LLA |team6=QZY |team7=SHP |team8=WZH
+
+<!--Team definitions (wikilinks in table)-->
+|name_GDM=[[Guangdong Mingtu F.C.|Guangdong Mingtu]]
+|name_GDA=[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|name_HLW=[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]
+|name_HBI=[[Hubei Istar F.C.|Hubei Istar]]
+|name_LLA=[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|name_QZY=[[Quanzhou Yassin F.C.|Quanzhou Yassin]]
+|name_SHP=[[Shanghai Port F.C.|Shanghai Port B]]
+|name_WZH=[[Wenzhou Professional F.C.|Wenzhou]]
+
+<!--Update team results here. Don’t forget to update the date (update parameter)-->
+|update=complete
+
+|res_GDM=L/W/W/L/L/L/W/L
+|res_GDA=L/D/D/L/W/L/L/W
+|res_HLW=W/L/W/W/L/W/W/L
+|res_HBI=W/D/L/W/L/D/L/W
+|res_LLA=W/D/D/D/W/W/W/W
+|res_QZY=L/D/L/D/D/D/L/L
+|res_SHP=W/D/L/W/D/W/L/D
+|res_WZH=L/D/W/L/W/L/W/D
+
+|legendpos=b
+|color_W=green1
+|color_D=yellow1
+|color_L=red1
+|text_W=Win
+|text_D=Draw
+|text_L=Loss
+|firstround=23
+|source=[https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/relegation-round-group-a Soccerway]
+}}
+
+===Group B===
+====League table====
+<onlyinclude>{{#invoke:Sports table|main|style=WDL
+|teamwidth=210 |match_col_width=35
+|source=[https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/relegation-round-group-b Soccerway]
+|section=Relegation stage Group B
+
+<!--Update team positions here-->
+|team_order=JXL, TAT, WTT, BIT, SCR, GZR, KMC, GXL
+
+<!--Update team results here and then (if needed) positions above-->
+|update=complete<!--UPDATE DATE AFTER UPDATING LEAGUE TABLE-->
+|win_BIT=11|draw_BIT=2 |loss_BIT=17|gf_BIT=39|ga_BIT=36|status_BIT= <!-- Beijing IT -->
+|win_GZR=7 |draw_GZR=12|loss_GZR=11|gf_GZR=24|ga_GZR=37|status_GZR= <!-- Ganzhou Ruishi -->
+|win_GXL=0 |draw_GXL=8 |loss_GXL=22|gf_GXL=16|ga_GXL=71|status_GXL=R<!-- Guangxi Lanhang -->
+|win_JXL=14|draw_JXL=7 |loss_JXL=9 |gf_JXL=39|ga_JXL=29|status_JXL= <!-- Jiangxi Lushan -->
+|win_KMC=6 |draw_KMC=9 |loss_KMC=15|gf_KMC=24|ga_KMC=41|status_KMC=R<!-- Kunming City -->
+|win_SCR=8 |draw_SCR=11|loss_SCR=11|gf_SCR=28|ga_SCR=41|status_SCR= <!-- Shanxi Chongde Ronghai -->
+|win_TAT=11|draw_TAT=8 |loss_TAT=11|gf_TAT=31|ga_TAT=30|status_TAT= <!-- Tai'an Tiankuang -->
+|win_WTT=10|draw_WTT=8 |loss_WTT=12|gf_WTT=28|ga_WTT=27|status_WTT= <!-- Wuhan Three Towns B -->
+
+<!--Update team qualifications here (defined below)-->
+|result7=REL |result8=REL
+
+<!--Team definitions (wikilinks in table)-->
+|name_BIT=[[Beijing Institute of Technology F.C.|Beijing IT]]
+|name_GZR=[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]
+|name_GXL=[[Guangxi Lanhang F.C.|Guangxi Lanhang]]
+|name_JXL=[[Jiangxi Lushan F.C.|Jiangxi Lushan]]
+|name_KMC=[[Kunming City F.C.|Kunming City]]
+|name_SCR=[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|name_TAT=[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]]
+|name_WTT=[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+
+<!--Table settings and rules-->
+|show_limit=5
+|class_rules =<br />
+*During season: 1) Points; 2) Head-to-head points; 3) Head-to-head goal difference; 4) Head-to-head goals scored; 5) Goal difference; 6) Goals scored; 7) Rankings in the previous season. (Rules 2 to 4 are only applied when teams concerned have finished both/all the matches against others.)
+*After season: 1) Points; 2) Head-to-head points; 3) Head-to-head goal difference; 4) Head-to-head goals scored; 5) Goal difference; 6) Goals scored; 7) Disciplinary points (yellow card = 1 point, red card = 3 points); 8) Drawing of lots.
+
+<!--Qualification and relegation column definitions-->
+|res_col_header=R
+|col_REL=red1 |text_REL=Relegation to {{season link|2026|Chinese Champions League|CMCL}}
+}}</onlyinclude>
+
+====Results====
+{{#invoke:Sports results|main
+|source        = [https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/relegation-round-group-b Soccerway]
+|update        = complete
+|a_note        = yes
+|matches_style = FBR
+
+|team1=BIT |team2=GZR |team3=GXL |team4=JXL |team5=KMC |team6=SCR |team7=TAT |team8=WTT
+
+<!--Team definitions (wikilinks in table)-->
+|name_BIT=[[Beijing Institute of Technology F.C.|Beijing IT]]
+|name_GZR=[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]
+|name_GXL=[[Guangxi Lanhang F.C.|Guangxi Lanhang]]
+|name_JXL=[[Jiangxi Lushan F.C.|Jiangxi Lushan]]
+|name_KMC=[[Kunming City F.C.|Kunming City]]
+|name_SCR=[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|name_TAT=[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]]
+|name_WTT=[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+
+<!-- Beijing IT -->
+|match_BIT_GZR = 3–0
+|match_BIT_GXL = 5–0
+|match_BIT_JXL = –
+|match_BIT_KMC = 3–2
+|match_BIT_SCR = –
+|match_BIT_TAT = –
+|match_BIT_WTT = 1–0
+
+<!-- Ganzhou Ruishi -->
+|match_GZR_BIT = 1–0
+|match_GZR_GXL = –
+|match_GZR_JXL = 0–1
+|match_GZR_KMC = –
+|match_GZR_SCR = 2–0
+|match_GZR_TAT = 1–2
+|match_GZR_WTT = –
+
+<!-- Guangxi Lanhang -->
+|match_GXL_BIT = 0–3
+|match_GXL_GZR = –
+|match_GXL_JXL = 1–5
+|match_GXL_KMC = –
+|match_GXL_SCR = 1–1
+|match_GXL_TAT = 0–2
+|match_GXL_WTT = –
+
+<!-- Jiangxi Lushan -->
+|match_JXL_BIT = –
+|match_JXL_GZR = 1–2
+|match_JXL_GXL = 5–1
+|match_JXL_KMC = 1–0
+|match_JXL_SCR = –
+|match_JXL_TAT = –
+|match_JXL_WTT = 0–0
+
+<!-- Kunming City -->
+|match_KMC_BIT = 2–3
+|match_KMC_GZR = –
+|match_KMC_GXL = –
+|match_KMC_JXL = 2–0
+|match_KMC_SCR = 0–0
+|match_KMC_TAT = 1–0
+|match_KMC_WTT = –
+
+<!-- Shanxi Chongde Ronghai -->
+|match_SCR_BIT = –
+|match_SCR_GZR = 2–0
+|match_SCR_GXL = 4–2
+|match_SCR_JXL = –
+|match_SCR_KMC = 2–2
+|match_SCR_TAT = –
+|match_SCR_WTT = 0–1
+
+<!-- Tai'an Tiankuang -->
+|match_TAT_BIT = –
+|match_TAT_GZR = 0–0
+|match_TAT_GXL = 1–1
+|match_TAT_JXL = –
+|match_TAT_KMC = 1–0
+|match_TAT_SCR = –
+|match_TAT_WTT = 2–1
+
+<!-- Wuhan Three Towns B -->
+|match_WTT_BIT = 2–0
+|match_WTT_GZR = –
+|match_WTT_GXL = –
+|match_WTT_JXL = 1–1
+|match_WTT_KMC = –
+|match_WTT_SCR = 1–2
+|match_WTT_TAT = 1–1
+}}
+
+====Positions by round====
+{{#invoke:sports rbr table|table|sortable=y|legendpos=br
+
+<!--Update team positions here-->
+|update=complete
+
+|team1=JXL |team2=TAT |team3=WTT |team4=BIT |team5=SCR |team6=GZR |team7=KMC |team8=GXL
+
+|pos_BIT=7/5/6/6/5/5/5/4
+|pos_GZR=5/6/5/5/4/4/4/6
+|pos_GXL=8/8/8/8/8/8/8/8
+|pos_JXL=1/1/1/1/1/1/1/1
+|pos_KMC=6/7/7/7/7/7/7/7
+|pos_SCR=4/4/4/4/6/6/6/5
+|pos_TAT=3/3/3/3/3/3/2/2
+|pos_WTT=2/2/2/2/2/2/3/3
+
+<!--Team definitions (wikilinks in table)-->
+|name_BIT=[[Beijing Institute of Technology F.C.|Beijing IT]]
+|name_GZR=[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]
+|name_GXL=[[Guangxi Lanhang F.C.|Guangxi Lanhang]]
+|name_JXL=[[Jiangxi Lushan F.C.|Jiangxi Lushan]]
+|name_KMC=[[Kunming City F.C.|Kunming City]]
+|name_SCR=[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|name_TAT=[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]]
+|name_WTT=[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+
+|toptext=<small>To preserve chronological evolvements, any postponed matches are not included to the round at which they were originally scheduled, but added to the full round they were played immediately afterwards. For example, if a match is scheduled for round 7, but then played between rounds 8 and 9, it will be added to the standings for round 8.</small>
+|color_7-8=red1 |text_7-8=Relegation to {{season link|2025|Chinese Champions League|CMCL}}
+|firstround=23
+|source=[https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/relegation-round-group-b Soccerway]
+}}
+
+====Results by match played====
+{{#invoke:Sports rbr table|table|sortable=y
+
+|team1=BIT |team2=GZR |team3=GXL |team4=JXL |team5=KMC |team6=SCR |team7=TAT |team8=WTT
+
+<!--Team definitions (wikilinks in table)-->
+|name_BIT=[[Beijing Institute of Technology F.C.|Beijing IT]]
+|name_GZR=[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]]
+|name_GXL=[[Guangxi Lanhang F.C.|Guangxi Lanhang]]
+|name_JXL=[[Jiangxi Lushan F.C.|Jiangxi Lushan]]
+|name_KMC=[[Kunming City F.C.|Kunming City]]
+|name_SCR=[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|name_TAT=[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]]
+|name_WTT=[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+
+<!--Update team results here. Don’t forget to update the date (update parameter)-->
+|update=complete
+
+|res_BIT=W/W/L/W/W/L/W/W
+|res_GZR=L/L/W/D/W/W/L/L
+|res_GXL=L/D/L/D/L/L/L/L
+|res_JXL=W/W/W/D/L/L/W/D
+|res_KMC=L/D/W/L/W/D/L/L
+|res_SCR=W/D/L/D/L/D/W/W
+|res_TAT=D/D/L/D/W/W/W/W
+|res_WTT=D/L/W/D/L/W/L/D
+
+|legendpos=b
+|color_W=green1
+|color_D=yellow1
+|color_L=red1
+|text_W=Win
+|text_D=Draw
+|text_L=Loss
+|firstround=23
+|source=[https://uk.soccerway.com/national/china-pr/chinese-football-league-2/2025/relegation-round-group-b Soccerway]
+}}
+
+==Awards==
+===Player of the Round===
+{|class="wikitable sortable"
+|-
+!colspan="4"|Player of the Round
+|-
+! Round !! Player !! Club !! Ref.
+|-
+|1
+|{{flagicon|CHN}} [[Wang Haobin]]
+|[[Shandong Taishan F.C.|Shandong Taishan B]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/4994420.html|title=官方：山东泰山B队王昊斌梅开二度，当选中乙第1轮最佳球员|publisher=Dongqiudi|date=27 March 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|2
+|{{flagicon|CHN}} [[Rehmitulla Shohret]]
+|[[Wenzhou Professional F.C.|Wenzhou]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5008511.html|title=梅开二度，温州队中场热合米图拉当选中乙第2轮最佳球员|publisher=Dongqiudi|date=3 April 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|3
+|{{flagicon|CHN}} [[Qeyser Tursun]]
+|[[Wuxi Wugo F.C.|Wuxi Wugo]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5018894.html|title=两传一射，无锡吴钩中场凯赛尔当选中乙第3轮最佳球员|publisher=Dongqiudi|date=8 April 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|4
+|{{flagicon|CHN}} [[Yang Youxian]]
+|[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5031747.html|title=梅开二度，广州蒲公英前锋杨悠仙当选中乙第4轮最佳球员|publisher=Dongqiudi|date=14 April 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|5
+|{{flagicon|CHN}} [[Kuai Jiwen]]<br>{{flagicon|CHN}} [[Yin Jiaxi]]
+|[[Shanghai Port F.C.|Shanghai Port B]]<br>[[Shandong Taishan F.C.|Shandong Taishan B]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5049382.html|title=官方：蒯纪闻与尹嘉熙共同当选中乙第5轮最佳球员|publisher=Dongqiudi|date=22 April 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|6
+|{{flagicon|CHN}} [[Gong Zheng (footballer)|Gong Zheng]]
+|[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5064098.html|title=梅开二度，山西崇德荣海前锋龚正当选中乙第6轮最佳球员|publisher=Dongqiudi|date=29 April 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|7
+|{{flagicon|CHN}} [[Chen Long (footballer)|Chen Long]]
+|[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5078224.html|title=梅开二度，武汉三镇B队前锋陈龙当选中乙第7轮最佳球员|publisher=Dongqiudi|date=6 May 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|8
+|{{flagicon|CHN}} [[Qeyser Tursun]] (2)
+|[[Wuxi Wugo F.C.|Wuxi Wugo]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5093650.html|title=中乙官方：无锡吴钩中场凯赛尔当选联赛第8轮最佳球员|publisher=Dongqiudi|date=13 May 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|9
+|{{flagicon|CHN}} [[Li Deming (footballer)|Li Deming]]
+|[[Shanghai Port F.C.|Shanghai Port B]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5101121.html|title=官方：海港B队球员黎德明当选中乙第9轮最佳球员|publisher=Dongqiudi|date=17 May 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|10
+|{{flagicon|CHN}} [[Gu Jiayi]]
+|[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5116411.html|title=梅开二度，成都蓉城B队前锋顾嘉逸当选中乙第10轮最佳球员|publisher=Dongqiudi|date=24 May 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|11
+|{{flagicon|CHN}} [[Fei Ernanduo]]
+|[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5247079.html|title=上演五子登科，广西恒宸前锋费尔南多当选中乙第11轮最佳球员|publisher=Dongqiudi|date=18 July 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|12
+|{{flagicon|CHN}} [[Yan Ge (footballer)|Yan Ge]]
+|[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5247012.html|title=上演帽子戏法，海门珂缔缘前锋阎格当选中乙第12轮最佳球员|publisher=Dongqiudi|date=18 July 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|13
+|{{flagicon|CHN}} [[Peng Xiao]]
+|[[Shandong Taishan F.C.|Shandong Taishan B]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5163089.html|title=梅开二度，山东泰山B队后卫彭啸当选中乙第13轮最佳球员|publisher=Dongqiudi|date=15 June 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|14
+|{{flagicon|CHN}} [[Gong Zheng (footballer)|Gong Zheng]] (2)
+|[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5172633.html|title=两射一传，山西崇德荣海前锋龚正当选中乙第14轮最佳球员|publisher=Dongqiudi|date=19 June 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|15
+|{{flagicon|CHN}} [[Chen Zitong]]
+|[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5189826.html|title=中乙官方：兰州陇原竞技中场陈子桐当选联赛第15轮最佳球员|publisher=Dongqiudi|date=26 June 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|16
+|{{flagicon|CHN}} [[Wang Haobin]] (2)
+|[[Shandong Taishan F.C.|Shandong Taishan B]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5207334.html|title=梅开二度，山东泰山B队前锋王昊斌当选中乙第16轮最佳球员|publisher=Dongqiudi|date=3 July 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|17
+|{{flagicon|CHN}} [[Peng Xiao]] (2)
+|[[Shandong Taishan F.C.|Shandong Taishan B]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5225501.html|title=梅开二度，山东泰山B队后卫彭啸当选中乙第17轮最佳球员|publisher=Dongqiudi|date=10 July 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|18
+|{{flagicon|CHN}} [[Fan Bingwei]]<br>{{flagicon|CHN}} [[Wang Ziyang (footballer)|Wang Ziyang]]
+|[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]<br>[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5270934.html|title=中乙第18轮最佳：范芮玮和王梓洋并列当选|publisher=Dongqiudi|date=28 July 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|19
+|{{flagicon|CHN}} [[Tong Le]]
+|[[Wuxi Wugo F.C.|Wuxi Wugo]]
+|
+|-
+|20
+|{{flagicon|CHN}} [[Ular Muhtar]]
+|[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5262124.html|title=梅开二度，兰州陇原竞技前锋乌拉尔当选中乙第20轮最佳球员|publisher=Dongqiudi|date=24 July 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|21
+|{{flagicon|CHN}} [[Li Moyu]]
+|[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5272470.html|title=官方：成都蓉城球员李漠雨当选中乙第21轮最佳球员|publisher=Dongqiudi|date=29 July 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|22
+|{{flagicon|CHN}} [[Wang Ziyang (footballer)|Wang Ziyang]] (2)
+|[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5287991.html|title=梅开二度，深圳二零二八前锋王梓洋当选中乙第22轮最佳球员|publisher=Dongqiudi|date=6 August 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|23
+|{{flagicon|CHN}}
+|
+|
+|-
+|24
+|{{flagicon|CHN}} [[Xu Chunqing]]
+|[[Wuxi Wugo F.C.|Wuxi Wugo]]
+|<ref>{{cite web|url=https://www.dongqiudi.com/articles/5351210.html|title=为球队扩大比分，无锡吴钩前锋徐春庆当选中乙第24轮最佳球员|publisher=Dongqiudi|date=2 September 2025|access-date=10 September 2025|language=zh}}</ref>
+|-
+|25
+|{{flagicon|CHN}}
+|
+|
+|-
+|26
+|{{flagicon|CHN}}
+|
+|
+|-
+|27
+|{{flagicon|CHN}}
+|
+|
+|-
+|28
+|{{flagicon|CHN}}
+|
+|
+|-
+|29
+|{{flagicon|CHN}}
+|
+|
+|-
+|30
+|{{flagicon|CHN}}
+|
+|
+|}
+
+===Monthly awards===
+{|class="wikitable sortable" style="text-align:center"
+|-
+!rowspan="2"|Month
+!colspan="2"|Player of the Month
+!colspan="2"|Manager of the Month
+!colspan="2"|Young Player of the Month
+|-
+!Player
+!Club
+!Manager
+!Club
+!Player
+!Club
+|-
+|March/April
+|{{flagicon|CHN}} [[Yang Youxian]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/5099501.html|title=5场献4球1助攻，广州蒲公英前锋杨悠仙当选中乙3/4月最佳球员|publisher=Dongqiudi|date=16 May 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|{{flagicon|CHN}} [[Li Bin (footballer, born 1981)|Li Bin]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/5099594.html|title=曾带队领跑北区，长春喜都主帅礼彬当选中乙3/4月最佳教练|publisher=Dongqiudi|date=16 May 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Changchun Xidu F.C.|Changchun Xidu]]
+|{{flagicon|CHN}} [[Chen Yuhao (footballer, born 2004)|Chen Yuhao]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/5099829.html|title=6场2球，广州蒲公英球员陈瑜昊当选中乙3/4月最佳青年球员|publisher=Dongqiudi|date=17 May 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|-
+|May
+|{{flagicon|CHN}} [[Chen Long (footballer)|Chen Long]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/5178923.html|title=4场打进3球，武汉三镇B队前锋陈龙当选中乙5月最佳球员|publisher=Dongqiudi|date=22 June 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Wuhan Three Towns F.C.|Wuhan Three Towns B]]
+|{{flagicon|CHN}} [[Gao Wanguo]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/5178934.html|title=带队4战全胜，南通海门珂缔缘主帅高万国当选中乙5月最佳教练|publisher=Dongqiudi|date=22 June 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]]
+|{{flagicon|CHN}} [[Chen Yuhao (footballer, born 2004)|Chen Yuhao]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/5178956.html|title=蝉联，广州蒲公英球员陈瑜昊当选中乙5月最佳青年球员|publisher=Dongqiudi|date=22 June 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]]
+|-
+|June
+|{{flagicon|CHN}} [[Peng Xiao]]<ref name="Peng Xiao">{{cite web|url=https://www.dongqiudi.com/articles/5244282.html|title=中乙官方：山东泰山B队彭啸当选6月最佳球员和最佳年轻球员|publisher=Dongqiudi|date=17 July 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Shandong Taishan F.C.|Shandong Taishan B]]
+|{{flagicon|CHN}} [[Xu Lei (footballer, born 1981)|Xu Lei]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/5244303.html|title=带队4战全胜，杭州临平吴越主帅许磊当选中乙6月最佳教练|publisher=Dongqiudi|date=17 July 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]]
+|{{flagicon|CHN}} [[Peng Xiao]]<ref name="Peng Xiao"/>
+|[[Shandong Taishan F.C.|Shandong Taishan B]]
+|-
+|July
+|{{flagicon|CHN}} [[Fei Ernanduo]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/5305612.html|title=7场打进8球，广西恒宸前锋费尔南多当选中乙7月最佳球员|publisher=Dongqiudi|date=14 August 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|{{flagicon|CHN}} [[Liu Junwei]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/5305753.html|title=带队7战全胜一球未丢，恒宸主帅刘俊威当选中乙7月最佳教练|publisher=Dongqiudi|date=14 August 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Guangxi Hengchen F.C.|Guangxi Hengchen]]
+|{{flagicon|CHN}} [[Wang Ziyang (footballer)|Wang Ziyang]]<ref>{{cite web|url=https://www.dongqiudi.com/articles/5305678.html|title=7场5球1助，深圳二零二八前锋王梓洋当选中乙7月最佳青年球员|publisher=Dongqiudi|date=14 August 2025|access-date=10 September 2025|language=zh}}</ref>
+|[[Shenzhen 2028 F.C.|Shenzhen 2028]]
+|}
+
+==League attendance==
+{{fb a header}}
+{{fb a2 team|p=1 |t=[[Guizhou Zhucheng Athletic F.C.|Guizhou Zhucheng Athletic]] |s=153180 |h=31569 |l=2331 |a=12765 |nt=††}}
+{{fb a2 team|p=2 |t=[[Lanzhou Longyuan Athletic F.C.|Lanzhou Longyuan Athletic]] |s=120606 |h=15872 |l=2080 |a=10051 |pr=1667 |nt=††††}}
+{{fb a2 team|p=3 |t=[[Shandong Taishan F.C.|Shandong Taishan B]] |s=116098 |h=11613 |l=7874 |a=9675 |pr=3903}}
+{{fb a2 team|p=4 |t=[[Nantong Haimen Codion F.C.|Nantong Haimen Codion]] |s=49004 |h=7513 |l=513 |a=4084 |pr=2983}}
+{{fb a2 team|p=5 |t=[[Chengdu Rongcheng F.C.|Chengdu Rongcheng B]] |s=31419 |h=4827 |l=924 |a=2618 |nt=†††}}
+{{fb a2 team|p=6 |t=[[Jiangxi Lushan F.C.|Jiangxi Lushan]] |s=29327 |h=5285 |l=852 |a=2444 |pr=2554 |nt=†}}
+{{fb a2 team|p=7 |t=[[Guangxi Lanhang F.C.|Guangxi Lanhang]] |s=26580 |h=13566 |l=55 |a=2416 |pr=7114}}
+{{fb a2 team|p=8 |t=[[Guangxi Hengchen F.C.|Guangxi Hengchen]] |s=24659 |h=16117 |l=506 |a=2055 |pr=568}}
+{{fb a2 team|p=9 |t=[[Wenzhou Professional F.C.|Wenzhou]] |s=22039 |h=2732 |l=1068 |a=1837 |pr=96 |nt=†††††}}
+{{fb a2 team|p=10|t=[[Hangzhou Linping Wuyue F.C.|Hangzhou Linping Wuyue]] |s=20849 |h=3782 |l=541 |a=1737 |pr=1084 |nt=††††††}}
+{{fb a2 team|p=11|t=[[Shanxi Chongde Ronghai F.C.|Shanxi Chongde Ronghai]] |s=19496 |h=1936 |l=1166 |a=1625 |pr=1555 |nt=†††††††}}
+{{fb a2 team|p=12|t=[[Changchun Xidu F.C.|Changchun Xidu]] |s=18135 |h=4967 |l=243 |a=1511 |nt=††}}
+{{fb a2 team|p=13|t=[[Ganzhou Ruishi F.C.|Ganzhou Ruishi]] |s=14448 |h=5269 |l=268 |a=1204 |pr=667}}
+{{fb a2 team|p=14|t=[[Wuxi Wugo F.C.|Wuxi Wugo]] |s=10364 |h=1268 |l=247 |a=864 |pr=1656 |nt=†}}
+{{fb a2 team|p=15|t=[[Tai'an Tiankuang F.C.|Tai'an Tiankuang]] |s=9705 |h=1578 |l=423 |a=809 |pr=1240}}
+{{fb a2 team|p=16|t=[[Guangzhou Dandelion Alpha F.C.|Guangzhou Dandelion Alpha]] |s=5745 |h=623 |l=304 |a=479 |nt=††}}
+{{fb a2 team|p=17|t=[[Beijing Institute of Technology F.C.|Beijing IT]] |s=5520 |h=489 |l=289 |a=425 |pr=388}}
+{{fb a2 team|p=18|t=[[Wuhan Three Towns F.C.|Wuhan Three Towns B]] |s=4979 |h=816 |l=151 |a=415 |nt=†††}}
+{{fb a2 team|p=19|t=[[Shenzhen 2028 F.C.|Shenzhen 2028]] |s=4350 |h=522 |l=186 |a=363 |nt=††}}
+{{fb a2 team|p=20|t=[[Quanzhou Yassin F.C.|Quanzhou Yassin]] |s=4097 |h=503 |l=178 |a=341 |pr=459}}
+{{fb a2 team|p=21|t=[[Hubei Istar F.C.|Hubei Istar]] |s=3936 |h=613 |l=87 |a=328 |pr=280}}
+{{fb a2 team|p=22|t=[[Guangdong Mingtu F.C.|Guangdong Mingtu]] |s=3598 |h=685 |l=131 |a=300 |nt=††}}
+{{fb a2 team|p=23|t=[[Shanghai Port F.C.|Shanghai Port B]] |s=2971 |h=408 |l=158 |a=248 |pr=231}}
+{{fb a2 team|p=24|t=[[Kunming City F.C.|Kunming City]] |s=750 |h=131 |l=0 |a=63 |pr=127}}
+{{fb a footer|s=701855 |h=31569 |l=0 |a=2437 |pr=2300 |notes=<sup>†</sup> Teams played previous season in [[2024 China League One|CL1]].<br><sup>††</sup> Teams played previous season in [[2024 Chinese Champions League|CMCL]].<br><sup>†††</sup> Teams played previous season in [[2024 CFA U-21 League|U-21]].<br><sup>††††</sup> Team relocated from [[Rizhao]], [[Shandong]] to [[Lanzhou]], [[Gansu]].<br><sup>†††††</sup> Team relocated from [[Wuyuan County, Jiangxi|Wuyuan]], [[Jiangxi]] to [[Wenzhou]], [[Zhejiang]].<br><sup>††††††</sup> Team relocated from [[Langfang]], [[Hebei]] to [[Hangzhou]], [[Zhejiang]].<br><sup>†††††††</sup> Team relocated from [[Yan'an]], [[Shaanxi]] to [[Taiyuan]], [[Shanxi]]. |source= |u=31 August 2025}}
+
+==References==
+{{reflist|2}}
+
+==External links==
+*[https://uk.soccerway.com/national/china-pr/china-league-two Soccerway]
+
+{{China League Two}}
+{{2025 in Chinese football}}
+
+[[Category:2025 Chinese Professional Football League|3]]
+[[Category:China League Two seasons]]

@@ -1,0 +1,923 @@
+﻿{{Short description|12th season of J3 League}}
+{{more citations needed|date=January 2025}}
+{{Infobox football league season
+| competition                = J3 League
+| season                     = [[2025 in Japanese football|2025]]
+| dates                      = 15 February – 29 November 2025
+| winners                    = [[Tochigi City FC]] (1st title)
+| promoted                   = [[Tochigi City FC]]<br>[[Vanraure Hachinohe]]<br>[[Tegevajaro Miyazaki]]
+| relegated          = [[Azul Claro Numazu]]
+| continentalcup1            = 
+| continentalcup1 qualifiers = 
+| matches                    = 368
+| total goals                = 936
+| league topscorer           = [[Keigo Hashimoto]]<br>(25 goals)
+| biggest home win           = [[FC Osaka]] 7-1 [[Fukushima United FC]]<br/>(22 June 2025)
+| biggest away win           = [[Matsumoto Yamaga FC]] 0-5 [[Kochi United SC]]<br/>(5 April 2025)<br/>Kochi United SC 0-5 [[Tochigi City FC]]<br/>(13 April 2025)
+| highest scoring            = 
+| longest wins               = 
+| longest losses             = 
+| longest winless            = 
+| longest unbeaten           = 
+| highest attendance         = 15,242<br/>[[Giravanz Kitakyushu]] 0–1 [[Nara Club]]<br/>(16 August 2025)
+| lowest attendance          = 374<br/>[[FC Osaka]] 4–3 [[Thespa Gunma]]<br/>(18 April 2025)
+| attendance                 = 831,480<ref>{{cite web |title=J. League Data Site |url= https://data.j-league.or.jp/SFTD12/search?teamFlag=1&page=&startCompetitionYear=1993&endCompetitionYear=2025&competitionFrame=3 |website=data.j-league.or.jp |access-date=19 August 2025}}</ref>
+| average attendance         = 3,615
+| prevseason                 = [[2024 J3 League|2024]]
+| nextseason                 = [[2026–27 J3 League|2026–27]]
+| updated                    = 
+}}
+The '''2025 J3 League''', also known as the {{Nihongo|'''2025 [[Meiji Yasuda Life|Meiji Yasuda]] [[J3 League]]'''|2025 明治安田J3リーグ|2025 Meiji Yasuda J3 Rīgu|lead=yes}} for sponsorship reasons, was the 12th season of the [[J3 League]], the third-tier Japanese professional league for association football clubs, since its establishment in 2013.
+
+==Overview==
+This was the last J.League season played in a whole calendar year from late winter to early winter, with the following season onwards played from summer to spring.
+
+The league continued with 20 teams for 2025 season since 2023.
+
+The top two teams in the league are automatically promoted to the [[J2 League]], teams ranked 3rd to 6th dispute the promotion play-offs.
+There is the possibility that as many as two clubs will be relegated to the [[Japan Football League]]. Promotion from the JFL is conditional on holding a valid J3 license. If the JFL champions hold a license, the club is automatically promoted and the J3's 20th-placed team is automatically relegated. If the JFL runners-up hold a license, the club needs to play promotion/relegation play-offs against J3's 19th or 20th-placed team for the season, depending on whether the JFL champions hold the J3 license. The club(s) who do not hold a license cannot be promoted and no teams are relegated from the J3 League.<ref name="2024-j3-format">{{cite web |title=２０２４明治安田Ｊ３リーグ 大会方式および試合方式について：Ｊリーグ公式サイト（J.LEAGUE.jp） |url=https://www.jleague.jp/news/article/26783/ |website=Ｊリーグ.jp（日本プロサッカーリーグ） |access-date=31 January 2024 |language=ja |date=19 December 2023}}</ref>
+
+==Schedule==
+The league and match format was announced on 25 November 2024. The league began on 15 February and ended on 29 November in a round-robin format of 38 matches.<ref name="2024-j3-format" />
+
+The J3 promotion play-offs were held in a similar manner to the J2 playoffs, with the dates confirmed in November.<ref>{{cite web |title=２０２５明治安田Ｊ３リーグ 大会方式および試合方式について|url=https://www.jleague.jp/news/article/29450/ |website=Ｊリーグ.jp（日本プロサッカーリーグ） |access-date=22 January 2025 |language=ja |date=25 November 2024}}</ref>
+
+==Changes from the previous season==
+[[Tochigi SC]], [[Kagoshima United]] and [[Thespa Gunma]] were relegated to J3 League finishing in 18th, 19th, and 20th places, respectively. Tochigi SC were relegated after eight years in the second division. Kagoshima United returned to the third tier after just one season in J2, while Thespa Gunma dropped back to the J3 following five years in J2.
+
+From J3, the promoted teams were [[RB Omiya Ardija]] (formerly known as Omiya Ardija), the team was recently acquired by the [[Red Bull GmbH|Red Bull Group]], who were promoted after only one season in J3, runner-up [[FC Imabari]] got promotion for the first time ever and played the [[List of association football rivalries in Japan|Ehime derby]] against [[Ehime FC]] in J2 League, and the last team promoted was [[Kataller Toyama]] after eleven seasons in J3 thanks to an epic draw in the play-off final against [[Matsumoto Yamaga]] with a double from the striker [[Shosei Usui]] in the last ten minutes.
+
+[[Tochigi City FC|Tochigi City]] got promoted from [[Japan Football League]] for the first time ever and played the [[List of association football rivalries in Japan|Tochigi Derby]] against [[Tochigi SC]]. The second team promoted was [[Kochi United SC]], who finished as runner-up and thus qualified for the relegation play-off where they defeated [[YSCC Yokohama]] with an aggregate score of 3-1; they are the first team from [[Kochi Prefecture]] to play in the J.League.
+
+== Clubs ==
+<div style="white-space:nowrap">
+{{location map+ |Japan |float=left |width=450 |caption=Locations of the 2025 J3 League teams |places=
+{{location map~ |Japan |lat=35.139965 |long=138.856397 |label_size=80|label=[[Azul Claro Numazu]] |position=right }}
+{{location map~ |Japan |lat=37.760806 |long=140.474722 |label_size=80|label=[[Fukushima United]] |position=left }}
+{{location map~ |Japan |lat=35.5 |long=134.233333 |label_size=80|label=[[Gainare Tottori]] |position=left }}
+{{location map~ |Japan |lat=35.423222 |long=136.760778 |label_size=80|label=[[FC Gifu]] |position=top }}
+{{location map~ |Japan |lat=33.883333 |long=130.883333 |label_size=80|label=[[Giravanz Kitakyushu]] |position=bottom }}
+{{location map~ |Japan |lat=31.565020 |long=130.559790 |label_size=80|label=[[Kagoshima United FC|Kagoshima United]] |position=bottom }}
+{{location map~ |Japan |lat=34.35 |long=134.05 |label_size=80|label=[[Kamatamare Sanuki]] |position=right }}
+{{location map~ |Japan |lat=33.580431 |long=133.507921 |label_size=80|label=[[Kochi United SC|Kochi United]] |position=right }}
+{{location map~ |Japan |lat=34.684444|long=135.805|label_size=80|label=[[Nara Club]] |position=right }}
+{{location map~ |Japan |lat=34.679444|long=135.600833|label_size=80|label=[[FC Osaka]] |position=left }}
+{{location map~ |Japan |lat=26.334167 |long=127.805556 |label_size=80|label=[[FC Ryukyu|Ryukyu Okinawa]] |position=left }}
+{{location map~ |Japan |lat=31.907778 |long=131.420278 |label_size=80|label=[[Tegevajaro Miyazaki]]|position=right}}
+{{location map~ |Japan |lat=40.512278 |long=141.488389 |label_size=80|label=[[Vanraure Hachinohe]] |position=right }}
+{{location map~ |Japan  |lat=36.238 |long=137.971972 |label_size=80|label=[[Matsumoto Yamaga]] |position=right }}
+{{location map~ |Japan  |lat=36.561056 |long=136.656417 |label_size=80|label=[[Zweigen Kanazawa]] |position=left }}
+{{location map~ |Japan  |lat=36.648611 |long=138.194722 |label_size=80|label=[[Nagano Parceiro]] |position=right }}
+{{Location map~ |Japan |mark=TransparentPlaceholder.svg |marksize=1 |lat=45 |long=128.3 |label_size=80|label='''† [[Greater Tokyo Area]] teams'''<br />
+[[SC Sagamihara]]<br />[[Thespa Gunma]]<br />[[Tochigi City FC]]<br />[[Tochigi SC]]
+|position=right}}
+{{location map~ |Japan |lat=35.664257 |long=139.657137 |label_size=80|label=<div style="position:relative;top:4px">'''Greater Tokyo Area'''</div> |position=right }}
+}}
+
+{{location map+ |Japan Kanto|float=inherit |width=250 |caption=Greater Tokyo Area J3 League teams |places=
+{{location map~ |Japan Kanto|lat=35.530556 |long=139.429167 |label_size=80|label=[[SC Sagamihara]] |position=bottom }}
+{{location map~ |Japan Kanto |lat=36.411542 |long=139.053258 |label_size=80|label=[[Thespa Gunma]] |position=bottom }}
+{{location map~ |Japan Kanto|lat=36.38136380 |long=139.73031750 |label_size=80|label=[[Tochigi City FC]] |position=right }}
+{{location map~ |Japan Kanto |lat=36.556667 |long=139.986667 |label_size=80|label=[[Tochigi SC]] |position=top }}
+}}
+
+</div><noinclude>
+
+{|class="wikitable sortable"
+!Teams!!Location!!Stadium!!Capacity!!Head coach!!Last season!!License
+|-
+|[[Azul Claro Numazu]]
+|[[Numazu]], [[Shizuoka Prefecture|Shizuoka]]
+|[[Ashitaka Park Stadium]]
+|5,104
+|{{flagicon|JPN}} [[Hideto Suzuki]]
+|10th
+|J2
+|-
+|[[Fukushima United FC|Fukushima United]]
+|[[Fukushima (city)|Fukushima]], [[Fukushima Prefecture|Fukushima]]
+|[[Toho Stadium]]
+|15,454
+|{{flagicon|JPN}} [[Shuhei Terada]]
+|5th
+|J2
+|-
+|[[Gainare Tottori]]
+|[[Tottori (city)|Tottori]], [[Tottori Prefecture|Tottori]]
+|[[Axis Bird Stadium]]
+|11,999
+|{{flagicon|JPN}} [[Kentaro Hayashi]]
+|13th
+|J2
+|-
+|[[FC Gifu]]
+|[[Gifu]], [[Gifu Prefecture|Gifu]]
+|[[Gifu Nagaragawa Stadium]]
+|16,310
+|{{flagicon|JPN}} [[Kiyotaka Ishimaru]]
+|8th
+|J1
+|-
+|[[Giravanz Kitakyushu]]
+|[[Kitakyushu]], [[Fukuoka Prefecture|Fukuoka]]
+|[[Mikuni World Stadium Kitakyushu]]
+|15,300
+|{{flagicon|JPN}} [[Kohei Masumoto]]
+|7th
+|J1
+|-
+|[[Kagoshima United FC|Kagoshima United]]
+|[[Kagoshima]], [[Kagoshima Prefecture|Kagoshima]]
+|[[Shiranami Stadium]]
+|19,934
+|{{flagicon|JPN}} [[Naoki Soma]]
+|[[file:arrowdownred.png]] J2 (19th)
+|J1
+|-
+|[[Kamatamare Sanuki]]
+|[[Takamatsu]], [[Kagawa Prefecture|Kagawa]]
+|[[Pikara Stadium]]
+|30,099
+|{{flagicon|NKO}} [[Kim Jong-song]]
+|16th
+|J1
+|-
+|[[Kochi United SC|Kochi United]]
+|[[Kōchi, Kōchi|Kōchi]], [[Kōchi Prefecture|Kōchi]]
+|[[Kochi Haruno Athletic Stadium]]
+|25,000
+|{{flagicon|JPN}} [[Yutaka Akita]]
+|[[file:arrowupgreen.png]] [[Japan Football League|JFL]] (2nd)
+|J3
+|-
+|[[Matsumoto Yamaga FC|Matsumoto Yamaga]]
+|[[Matsumoto, Nagano|Matsumoto]], [[Nagano Prefecture|Nagano]]
+|[[Sunpro Alwin]]
+|20,000
+|{{flagicon|JPN}} [[Tomonobu Hayakawa]]
+|4th
+|J1
+|-
+|[[AC Nagano Parceiro|Nagano Parceiro]]
+|[[Nagano (city)|Nagano]], [[Nagano Prefecture|Nagano]]
+|[[Minami Nagano Sports Park Stadium|Nagano U Stadium]]
+|15,515
+|{{flagicon|JPN}} [[Chikara Fujimoto]]
+|18th
+|J2
+|-
+|[[Nara Club]]
+|[[Nara (city)|Nara]], [[Nara Prefecture|Nara]]
+|[[Rohto Field Nara]]
+|30,600
+|{{flagicon|JPN}} [[Michiharu Otagiri]]
+|17th
+|J2
+|-
+|[[FC Osaka]]
+|[[Higashiōsaka]], [[Osaka Prefecture|Osaka]]
+|[[Hanazono Rugby Stadium]]
+|27,346
+|{{flagicon|JPN}} [[Naoto Otake]]
+|6th
+|J2
+|-
+|[[FC Ryukyu|Ryukyu Okinawa]]
+| [[Naha]], [[Okinawa Prefecture|Okinawa]]
+|[[Tapic Kenso Hiyagon Stadium]]
+|15,500
+|{{flagicon|JPN}} [[Tadaaki Hirakawa]]
+|14th
+|J1
+|-
+|[[SC Sagamihara]]
+|[[Sagamihara]], [[Kanagawa Prefecture|Kanagawa]]
+|[[Sagamihara Gion Stadium]]
+|6,291
+|{{flagicon|GER}} [[Yuki Richard Stalph]]
+|9th
+|J2
+|-
+|[[Tegevajaro Miyazaki]] 
+|[[Miyazaki (city)|Miyazaki]], [[Miyazaki Prefecture|Miyazaki]]
+|[[Ichigo Miyazaki Shintomi Football Stadium]] 
+|5,354
+|{{flagicon|JPN}} [[Yuji Okuma]]
+|15th
+|J2
+|-
+|[[Thespa Gunma]]
+|[[Maebashi]], [[Gunma Prefecture|Gunma]]
+|[[Shoda Shoyu Stadium Gunma]]
+|15,253
+|{{flagicon|JPN}} [[Masaru Okita]]
+|[[file:arrowdownred.png]] J2 (20th)
+|J1
+|-
+|[[Tochigi City FC]]
+|[[Tochigi (city)|Tochigi]], [[Tochigi Prefecture|Tochigi]]
+|[[City Football Station]]
+|5,129
+|{{flagicon|JPN}} [[Naoki Imaya]]
+|[[file:arrowupgreen.png]] JFL (1st)
+|J2
+|-
+|[[Tochigi SC]]
+|[[Utsunomiya]], [[Tochigi Prefecture|Tochigi]]
+|[[Kanseki Stadium Tochigi]]
+|25,244
+|{{flagicon|JPN}} [[Shinji Kobayashi]]
+|[[file:arrowdownred.png]] J2 (18th)
+|J1
+|-
+|[[Vanraure Hachinohe]]
+|[[Hachinohe]], [[Aomori Prefecture|Aomori]]
+|[[Prifoods Stadium]]
+|5,124
+|{{flagicon|JPN}} [[Nobuhiro Ishizaki]]
+|7th
+|J2
+|-
+|[[Zweigen Kanazawa]]
+|[[Kanazawa]], [[Ishikawa Prefecture|Ishikawa]]
+|[[Kanazawa Stadium|Kanazawa Go Go Curry Stadium]]
+|10,444
+|{{flagicon|JPN}} [[Masateru Tsujita]]
+|12th
+|J1
+|}
+
+=== Personnel and kits === 
+{| class="wikitable sortable"
+|-
+! Club !! Manager !! Captain !! Kit manufacturer !!Main shirt sponsor
+|-
+|[[Azul Claro Numazu]]
+|{{flagicon|JPN}} [[Masashi Nakayama]]
+|{{flagicon|JPN}} [[Takuya Sugai]]
+|{{flagicon|BRA}} [[Athleta (sports manufacturer)|Athleta]]
+|USUI
+|-
+|[[Fukushima United]]
+|{{flagicon|JPN}} [[Shuhei Terada]]
+|{{flagicon|JPN}} [[Takeaki Harigaya]]
+|{{flagicon|DEN}} [[Hummel International|Hummel]]
+|SportsX
+|-
+|[[Gainare Tottori]]
+|{{flagicon|JPN}} [[Kentaro Hayashi]]
+|{{flagicon|JPN}} [[Hayato Nukui]]
+|{{flagicon|JPN}} 
+|
+|-
+|[[FC Gifu]]
+|{{flagicon|JPN}} [[Kiyotaka Ishimaru]]
+|{{flagicon|JPN}} [[Naoki Yamada]]
+|{{flagicon|JPN}} Razzoli
+|Hot Staff
+|-
+|[[Giravanz Kitakyushu]]
+|{{flagicon|JPN}} Kohei Masumoto
+|{{flagicon|JPN}} [[Haruki Izawa]]
+|{{flagicon|ENG}} [[Umbro]]
+|[[Yaskawa]]
+|-
+|[[Kagoshima United]]
+|{{flagicon|JPN}} [[Naoki Soma]]
+|{{flagicon|JPN}} [[Shuto Inaba]]
+|{{flagicon|USA}} [[Under Armour]]
+|BHC
+|-
+|[[Kamatamare Sanuki]]
+|{{flagicon|NKO}} [[Kim Jong-song]]
+|{{flagicon|JPN}} [[Nao Eguchi]]
+|{{flagicon|DEN}} [[Hummel International|Hummel]]
+|[[Fuji Electric]]
+|-
+|[[Kochi United SC]]
+|{{flagicon|JPN}} [[Yutaka Akita]]
+|{{flagicon|JPN}} [[Daichi Kobayashi]]
+|{{flagicon|ENG}} [[Admiral Sportswear|Admiral]]
+|[[Yamaha Motor Company|Yamaha]]
+|-
+|[[Matsumoto Yamaga]]
+|{{flagicon|JPN}} [[Tomonobu Hayakawa]]
+|{{flagicon|JPN}} [[Yusuke Kikui]]
+|{{flagicon|JPN}} Razuso
+|[[Epson]]
+|-
+|[[Nagano Parceiro]]
+|{{flagicon|JPN}} [[Chikara Fujimoto]]
+|{{flagicon|JPN}} [[Yuya Ono]]
+|{{flagicon|JPN}} 
+|Hokio
+|-
+|[[Nara Club]]
+|{{flagicon|JPN}} [[Michiharu Otagiri]]
+|{{flagicon|JPN}} [[Daisei Suzuki]]
+|{{flagicon|USA}} Squadra
+|Daiwa House Group
+|-
+|[[FC Osaka]]
+|{{flagicon|JPN}} Mitsukyo Yabuta
+|{{flagicon|JPN}} Takahiro Kitsui
+| 
+|[[Daihatsu|Daihatsu Kyushu]]
+|-
+|[[FC Ryukyu|Ryukyu Okinawa]]
+|{{flagicon|JPN}} [[Tadaaki Hirakawa]] 
+|{{flagicon|JPN}} [[Yuta Sato]]
+|{{flagicon|JPN}} 
+|
+|-
+|[[SC Sagamihara]]
+|{{flagicon|JPN}} [[Yuki Richard Stalph]]
+|{{flagicon|JPN}} [[Toshio Shimakawa]]
+|{{flagicon|ENG}} [[Umbro]]
+|
+|-
+|[[Tegevajaro Miyazaki]]
+|{{flagicon|JPN}} [[Yuji Okuma]]
+|{{flagicon|JPN}} [[Keigo Hashimoto]]
+|{{flagicon|JPN}} [[Yonex]]
+|Ichigo
+|-
+|[[Thespa Gunma]]
+|{{flagicon|JPN}} Masaru Okita
+|{{flagicon|JPN}} [[Shusuke Yonehara]]
+|{{flagicon|ESP}} [[Kelme (company)|Kelme]]
+|Cainz
+|-
+|[[Tochigi City FC|Tochigi City]]
+|{{flagicon|JPN}} [[Naoki Imaya]]
+|{{flagicon|JPN}} [[Rempei Uchida]]
+|{{flagicon|JPN}} Luxperior
+|[[Otsuka Pharmaceutical]]<br/>([[Pocari Sweat]])
+|-
+|[[Tochigi SC]]
+|{{flagicon|JPN}} [[Shinji Kobayashi]]
+|{{flagicon|JPN}} [[Sho Sato]]
+|{{flagicon|BRA}} [[Athleta (sports manufacturer)|Athleta]]
+|TKC
+|-
+|[[Vanraure Hachinohe]]
+|{{flagicon|JPN}} [[Nobuhiro Ishizaki]]
+|{{flagicon|JPN}} [[Shogo Onishi]]
+|{{flagicon|DEN}} [[Hummel International|Hummel]]
+|Atmix
+|-
+|[[Zweigen Kanazawa]]
+|{{flagicon|JPN}} Maki Tsujita
+|{{flagicon|JPN}} [[Hiroto Hatao]]
+|{{flagicon|DEN}} [[Hummel International|Hummel]]
+|Twelve
+|}
+
+===Managerial changes===
+{| class="wikitable sortable"
+|-
+!Team
+!Outgoing manager !!Manner of departure !!Date of vacancy !!Position in the table !!Incoming manager !!Date of<br />appointment 
+!scope="col" class="unsortable"|{{abbr|Ref.|References}}
+|-
+|[[Zweigen Kanazawa]]
+|{{fbaicon|JPN}} [[Akira Ito (footballer)|Akira Ito]]
+|Appointed as general manager
+|1 June 2025
+|11th
+|{{fbaicon|JPN}} [[Masateru Tsujita]]
+|3 June 2025
+|<ref>{{cite web |title=Announcement of change of head coach of the first team |url=https://www.zweigen-kanazawa.jp/news/?id=17909 |website=www.zweigen-kanazawa.jp |access-date=11 June 2025}}</ref>
+|-
+|[[Nara Club]]
+|{{fbaicon|JPN}} [[Ichizo Nakata]]
+|Sacked
+|12 June 2025
+|8th
+|{{fbaicon|JPN}} [[Michiharu Otagiri]]
+|12 June 2025
+|<ref>{{cite web |title=Notice of Termination of Coach Kazuzo Nakata's Contract |url=https://naraclub.jp/archives/63514 |website=naraclub.jp |access-date=12 June 2025}}</ref><ref>{{cite web |title=Announcement of the appointment of Michiharu Odagiri as Director |url=https://naraclub.jp/archives/63525 |website=naraclub.jp |access-date=12 June 2025}}</ref>
+|-
+|[[FC Gifu]]
+|{{fbaicon|JPN}} [[Yasuaki Oshima]]
+|Sacked
+|2 July 2025
+|18th
+|{{fbaicon|JPN}} Koji Ohashi
+|2 July 2025
+|<ref>{{cite web |title=Notice of contact termination of coach Yasuaki Oshima |url=https://www.fc-gifu.com/news_information/152563.html |website=www.fc-gifu.com |access-date=23 July 2025}}</ref>
+|-
+|[[FC Gifu]]
+|{{fbaicon|JPN}} Koji Ohashi
+|Replaced by permanent manager
+|2 July 2025
+|18th
+|{{fbaicon|JPN}} [[Kiyotaka Ishimaru]]
+|7 July 2025
+|<ref>{{cite web |title=Kiyotaka Ishimaru Announcement of Director Inauguration |url=https://www.fc-gifu.com/news_information/152698.html |website=www.fc-gifu.com |access-date=23 July 2025}}</ref>
+|-
+|[[Kamatamare Sanuki]]
+|{{fbaicon|JPN}} [[Atsushi Yoneyama]]
+|Sacked
+|6 July 2025
+|20th
+|{{fbaicon|NKO}} [[Kim Jong-song]]
+|8 July 2025
+|<ref>{{cite web |title=Notice of dismissal of Atsushi Yoneyama, Coach |url=https://kamatamare.jp/news/?id=4181&item=TEAM |website=kamatamare.jp/ |access-date=15 July 2025}}</ref><ref>{{cite web |title=Announcement of the appointment of Mr. Kim Jong-sung as Head Coach |url=https://kamatamare.jp/news/?id=4182&item=TEAM |website=kamatamare.jp |access-date=15 July 2025}}</ref>
+|-
+|[[FC Osaka]]
+||{{fbaicon|JPN}} [[Naoto Otake]]
+|Sacked
+|31 August 2025
+|4th
+||{{fbaicon|JPN}} Mitsukyo Yabuta (Interim)
+|31 August 2025
+|<ref>{{cite web |title=Notice of retirement of coach Naoto Otake |url=https://www.fc-osaka.com/post/20250831 |website=www.fc-osaka.com |access-date=6 September 2025}}</ref>
+|-
+|[[Azul Claro Numazu]]
+||{{fbaicon|JPN}} [[Masashi Nakayama]]
+|Sacked
+|14 September 2025
+|20th
+||{{fbaicon|JPN}} [[Hideto Suzuki]]
+|14 September 2025
+|<ref>{{cite web |title=Announcement of retirement of coach Masashi Nakayama |url=https://www.azul-claro.jp/information_info/2025/09/14/78548/ |website=www.azul-claro.jp |access-date=23 November 2025}}</ref>
+<ref>{{cite web |title=Announcement of the appointment of Hideto Suzuki as coach |url=https://www.azul-claro.jp/information_info/2025/09/14/78550/ |website=www.azul-claro.jp |access-date=23 November 2025}}</ref>
+|-
+|[[Kochi United SC]]
+||{{fbaicon|JPN}} [[Yutaka Akita]]
+|Sacked
+|23 September 2025
+|16th
+||{{fbaicon|JPN}} Takahisa Shiraishi
+|23 September 2025
+|
+|}
+
+===Foreign players===
+From the 2021 season onwards, there are no limitations on signing foreign players, but clubs could only register up to five of them for a single matchday squad.<ref>{{cite web|url=https://www.jleague.jp/release/post-56861/|title=「ホームグロウン制度」の導入と「外国籍選手枠」の変更について|website=JLeague.jp|url-status=live|language=ja |publisher=Japan Professional Football League|date=20 November 2018|trans-title=About the introduction of the "homegrown system" and the change of the "foreign player quota"|archive-url=https://web.archive.org/web/20181120082513/https://www.jleague.jp/release/post-56861/ |archive-date=20 November 2018 }}</ref> Players from J.League partner nations (Thailand, Vietnam, Myanmar, Malaysia, Cambodia, Singapore, Indonesia, and Qatar) were exempted from these restrictions.
+
+*Players name in '''bold''' indicates the player is registered during the summer transfer window.
+*Player's name in ''italics'' indicates the player has Japanese nationality in addition to their FIFA nationality, holds the nationality of a J.League partner nation, or is exempt from being treated as a foreign player due to having been born in Japan and being enrolled in, or having graduated from an approved type of school in the country.<ref>{{cite web|url=https://www.jfa.jp/documents/pdf/basic/br20.pdf|title=プロサッカー選手の契約、登録および移籍に関する規則|language=ja|publisher=Japan Football Association|trans-title=Rules for contracting, registering and transferring professional soccer players|website=JFA.jp|accessdate=1 March 2022}}</ref>
+
+{| class="wikitable sortable" style="font-size:90%;"
+|-
+! width="200"|Club
+! width="160"|Player 1
+! width="160"|Player 2
+! width="160"|Player 3
+! width="160"|Player 4
+! width="160"|Player 5
+! width="160"|Player 6
+! width="160"|Former players
+|-
+| [[Azul Claro Numazu]]
+| {{flagicon|BRA}} [[Gustavo Rissi]]
+| {{flagicon|BRA}} [[Lucas Sena (footballer, born March 2001)|Lucas Sena]]
+| {{flagicon|BRA}} [[Weverton (footballer, born 2002)|Weverton]]
+| {{flagicon|GER}} [[Guirone Gueguim]]
+| {{flagicon|GHA}} ''[[Wadi Ibrahim Suzuki]]''
+| {{flagicon|ESP}} '''[[Enric Martínez]]'''
+| 
+|-
+| [[Fukushima United FC|Fukushima United]]
+|
+|
+|
+|
+|
+| 
+|
+|-
+| [[Gainare Tottori]]
+| {{flagicon|CHN}} [[Jin Shiming]]
+| {{flagicon|USA}} [[Kojo Dadzie]]
+|
+|
+|
+|
+| 
+|-
+| [[FC Gifu]]
+| {{flagicon|BRA}} [[Dudu (footballer, born 21 April 1990)|Dudu]]
+| {{flagicon|PRK}} ''[[Mun In-ju]]''
+| {{flagicon|KOR}} [[Kim Yoo-geon]]
+| {{flagicon|ESP}} [[Jon Ander Serantes]]
+|
+|
+| 
+|-
+| [[Giravanz Kitakyushu]]
+| {{flagicon|KOR}} ''[[Koh Seung-jin]]''
+|
+|
+|
+| 
+| 
+|
+|-
+| [[Kagoshima United FC|Kagoshima United]]
+| {{flagicon|BRA}} [[Gaudencio (footballer)|Gaudencio]]
+| {{flagicon|BRA}} [[Renan (footballer, born 1996)|Renan]]
+| {{flagicon|BRA}} [[Rodrigo Angelotti]]
+|
+|
+|
+|
+|-
+| [[Kamatamare Sanuki]]
+| {{flagicon|BRA}} [[Eduardo (footballer, born June 2000)|Eduardo]]
+| {{flagicon|KEN}} [[Ismael Dunga]]
+|
+|
+| 
+| 
+|
+|-
+| [[Kochi United SC|Kochi United]]
+| {{flagicon|KOR}} [[Kang Sung-chan]]
+| {{flagicon|KOR}} '''''[[Park Se-gi]]'''''
+| {{flagicon|KOR}} '''''[[Park Yong-ie]]'''''
+| {{flagicon|ESP}} '''[[Arnau Riera (footballer, born 1997)|Arnau Riera]]'''
+|
+| 
+| 
+|-
+| [[Matsumoto Yamaga FC|Matsumoto Yamaga]]
+| {{flagicon|BRA}} [[Lucas Vargas]]
+| {{flagicon|BRA}} [[Tiago (footballer, born 1998)|Tiago]]
+| {{flagicon|KOR}} [[Kim Jun-hyun (footballer, born 2006)|Kim Jun-hyun]]
+|
+|
+|
+| 
+|-
+| [[AC Nagano Parceiro|Nagano Parceiro]]
+| {{flagicon|BRA}} ''[[Thales Paula]]''
+| {{flagicon|KOR}} [[Lee Seung-won (footballer, born 2005)|Lee Seung-won]]
+| {{flagicon|KOR}} [[Lim Ji-hoon]]
+|
+|
+|
+| 
+|-
+| [[Nara Club]]
+| {{flagicon|KOR}} [[Yu Ye-chan]]
+|
+|
+|
+|
+|
+| {{flagicon|ESP}} ''[[Marc Vito]]''<br>{{flagicon|THA}} ''[[Chanapach Buaphan]]''<br>{{flagicon|THA}} ''[[Thawatchai Inprakhon]]''
+|-
+| [[FC Osaka]]
+| {{flagicon|BRA}} [[Vinícius (footballer, born 2003)|Vinícius]]
+| {{flagicon|KOR}} [[Kim Yoon-sik (footballer, born 2003)|Kim Yoon-sik]]
+| {{flagicon|KOR}} [[Shin Dong-min (footballer)|Shin Dong-min]]
+| {{flagicon|KOR}} ''[[Woo Sang-ho (footballer)|Woo Sang-ho]]''
+| {{flagicon|TOG}} '''[[Yves Avelete]]'''
+|
+| {{flagicon|KOR}} [[Ha Ji-sung]]<br>{{flagicon|KOR}} [[Lee Dong-yeol (footballer)|Lee Dong-yeol]] 
+|-
+| [[FC Ryukyu|Ryukyu Okinawa]]
+|
+| 
+|
+|
+|
+| 
+| {{flagicon|KOR}} [[Jo Eun-soo]]
+|-
+| [[SC Sagamihara]]
+| {{flagicon|BRA}} [[Rafael Furtado]]
+| {{flagicon|DOM}} [[Noam Baumann]]
+| {{flagicon|POL}} [[Kevin Pytlik]]
+| 
+|
+|
+| {{flagicon|FRA}} [[Robin Maulun]] <br> {{flagicon|NGA}} [[Origbaajo Ismaila]]
+|-
+| [[Tegevajaro Miyazaki]]
+| {{flagicon|KOR}} [[Kim Geon-yeon]]
+| {{flagicon|KOR}} [[Lee Chung-won]]
+|
+|
+|
+| 
+|
+|-
+| [[Thespa Gunma]]
+| {{flagicon|KOR}} [[Kim Je-hee]]
+|
+|
+|
+| 
+|
+|
+|-
+| [[Tochigi City FC]]
+| {{flagicon|AUS}} [[Joe Caletti]]
+| {{flagicon|BRA}} [[Carlos Eduardo (footballer, born 2001)|Carlos Eduardo]]
+| {{flagicon|CRO}} [[Matej Jonjić]]
+| {{flagicon|NGA}} [[Peter Utaka]]
+| {{flagicon|NGA}} [[Taofiq Jibril]]
+|
+| 
+|-
+| [[Tochigi SC]]
+| {{flagicon|KOR}} [[Kim Min-jun (footballer, born 2005)|Kim Min-jun]]
+| {{flagicon|NGA}} ''[[Kenneth Otabor]]''
+|
+| 
+|
+|
+| {{flagicon|BRA}} [[Rafael Costa (footballer, born 2000)|Rafael Costa]]
+|-
+| [[Vanraure Hachinohe]]
+|
+| 
+|
+| 
+| 
+| 
+|
+|-
+| [[Zweigen Kanazawa]]
+| {{flagicon|BRA}} [[Jeferson Jari]]
+| {{flagicon|BRA}} [[Patric (footballer, born 1987)|Patric]]
+|
+|
+|
+| 
+| 
+|}
+{{notelist}}
+
+== League table ==
+{{2025 J3 League table}}
+
+== Play-offs ==
+=== Promotion play-offs ===
+The usual format was applied in the 2025 season. Promotion play-offs, officially called the ''Meiji Yasuda Road To J2 Play-offs 2025{{#tag:ref|On the official J.League English website, it is listed as ''J2 Promotion Play-Offs''|group=upper-alpha}}'' ({{langx|ja|明治安田J2昇格プレーオフ2025}}), was held from the semi-finals, where the match-ups were previously semi-determined. Based on the J3 placements at the end of the regular season, the third-placed team played against the sixth-placed, while the fourth-placed team played against the fifth-placed. The winners of the semi-finals played the final, with the winners promoted to the J2.
+
+If a match was tied in the play-offs, the team with the highest league position are declared the winner. The rank order was: J3's third, fourth, fifth, and sixth-placed teams.<ref>{{cite web|url=https://www.jleague.jp/news/article/32585/|title=明治安田Ｊ２昇格プレーオフ２０２５ 出場チーム決定|language=ja|date=29 November 2025}}</ref>
+{{4TeamBracket
+| sets=1/1 | aggregate=N | nowrap=y
+| boldwinner = y
+| RD1=Semi-finals
+| RD2=Final
+| RD1-seed1=3
+| RD1-team1='''[[FC Osaka]]'''
+| RD1-score1=1
+| RD1-seed2=6
+| RD1-team2=[[Zweigen Kanazawa]]
+| RD1-score2=0
+| RD1-seed3=4
+| RD1-team3='''[[Tegevajaro Miyazaki]]'''
+| RD1-score3-1=2
+| RD1-seed4=5
+| RD1-team4=[[Kagoshima United FC|Kagoshima United]]
+| RD1-score4-1=0
+| RD2-seed1=3
+| RD2-team1=[[FC Osaka]]
+| RD2-score1=0
+| RD2-seed2=4
+| RD2-team2=[[Tegevajaro Miyazaki]]
+| RD2-score2=4
+}}
+
+=== Semi-finals ===
+{{Football box
+| date       = {{Start date|2025|12|07|df=y}}
+| time       = 15:03 [[Japan Standard Time|JST]]
+| team1      = [[FC Osaka]]
+| score      = 1–0
+| report     = https://www.jleague.jp/sp/match/j2playoff/2025/120703/live/#live
+| team2      = [[Zweigen Kanazawa]]
+| goals1     = [[Takumi Shimada|T. Shimada]] {{goal|80}}
+| goals2     =
+| stadium    = [[Axis Bird Stadium]], [[Tottori (city)|Tottori]], [[Tottori Prefecture|Tottori]]
+| attendance = 2,127
+| referee    = Yosuke Kubota
+}}
+----
+{{Football box
+| date       = {{Start date|2025|12|07|df=y}}
+| time       = 15:03 [[Japan Standard Time|JST]]
+| team1      = [[Tegevajaro Miyazaki]]
+| score      = 2–0
+| report     = https://www.jleague.jp/sp/match/j2playoff/2025/120704/live/#live
+| team2      = [[Kagoshima United FC|Kagoshima United]]
+| goals1     =[[Ren Inoue|R. Inoue]] {{goal|45+2}}<br>[[Yuma Matsumoto|Y. Matsumoto]] {{goal|63}}
+| goals2     =
+| stadium    = [[Ichigo Miyazaki Shintomi Football Stadium]], [[Miyazaki, Miyazaki|Miyazaki]]
+| attendance = 4,389
+| referee    = Toshihiro Nakai
+}}
+
+=== Final ===
+{{Football box
+| date       = {{Start date|2025|12|14|df=y}}
+| time       = 15:00 [[Japan Standard Time|JST]]
+| team1      = [[FC Osaka]]
+| score      = 0–4
+| report     = [https://www.jleague.co/match/j2-promotion-play-off/2025121401/#overview Report]
+| team2      = [[Tegevajaro Miyazaki]]
+| goals1     =
+| goals2     = {{own goal|29}} Riku Hashimoto <br /> {{goal|42}} Shu Yoshizawa <br /> {{goal|63}} Hayate Take <br /> {{goal|70}} Mahiro Ano
+| stadium    = [[Hanazono Rugby Stadium]], [[Higashiosaka, Osaka|Higashiosaka]]
+| attendance = 1 487
+| referee    = Yuzo Sutani
+}}
+
+=== Relegation play-offs ===
+The relegation play-offs, officially called the ''2025 J3/JFL Play-Offs'' ({{langx|ja|2025 J3・JFL入れ替え戦{{#tag:ref|The logo and signage reads ''2025 J.League J3・JFL入れ替え戦''|group=upper-alpha}}}}), took place on 7 and 14 December 2025.
+If two teams were level, the match went to extra time and a penalty shoot-out. The away goals rule does not count. Since the champions of the [[2025 Japan Football League]], [[Honda FC]], did not hold a J3 professional license, they were ineligible for promotion. As a result, the bottom placed team faced the runners-up in the relegation play-off, while the 19th-place team avoided it.
+
+===Overview===
+<section begin=Details />
+{{TwoLegStart}}
+{{TwoLegResult|[[Azul Claro Numazu]] {{small|(J3)}}||3–4|'''[[Reilac Shiga FC|Reilac Shiga]]''' {{small|(JFL)}}||2–3|1–1}}
+|}<section end=Details />
+
+===Matches===
+{{Football box
+|id         = JFL v J3
+|date       = 7 December 2025
+|time       = TBA [[Japan Standard Time|JST]]
+|team1      = [[Reilac Shiga FC|Reilac Shiga]]
+|score      = 3–2
+|report     = [https://www.jleague.co/match/j3-jfl-replace/2025120705/#overview Report]
+|team2      = [[Azul Claro Numazu]]
+|goals1     = [[Taiga Nishiyama|T. Nishiyama]] {{goal|3}}<br>[[Frank Romero (footballer)|F. Romero]] {{goal|23}}<br>[[Kaito Miyake|K. Miyake]] {{goal|81}}
+|goals2     = [[Keita Shirawachi|K. Shirawachi]] {{goal|13}}<br>[[Kengo Kawamata|K. Kawamata]] {{goal|74}}
+|stadium    = Heiwado HATO Stadium, [[Shiga Prefecture|Shiga]]
+|attendance = 
+|referee    = 
+}}
+{{Football box
+|id         = J3 v JFL
+|date       = 14 December 2025
+|time       = TBA [[Japan Standard Time|JST]]
+|team1      = [[Azul Claro Numazu]]
+|score      = 1–1
+|report     = [https://www.jleague.co/match/j3-jfl-replace/2025121402/#overview Report]
+|team2      = [[Reilac Shiga FC|Reilac Shiga]]
+|goals1     = Keita Shirawachi {{goal|23}} <br /> Kaiyo Yanagimachi {{sent off|0|83}} <br /> Guirone Gueguim {{sent off|0|90+4}}
+|goals2     = {{goal|22}} Shun Akiyama
+|stadium    = [[Ashitaka Stadium]], [[Numazu]]
+|attendance = 8 255
+|referee    = Tetsuro Yoshida
+}}
+
+==Season statistics==
+{{updated|26 July 2025}}
+
+===Top scorers===
+{| class="wikitable" style="text-align:center"
+|-
+!Rank
+!Player
+!Club
+!Goals<ref>{{cite web |title=All Positions {{!}} Goals {{!}} All clubs {{!}} MEIJI YASUDA J3 LEAGUE {{!}} 2025 Player Stats |url=https://www.jleague.co/stats/players/j3/2025/all/goals/all/ |website=J.LEAGUE |access-date=25 February 2025 |language=en}}</ref><ref>{{cite web |title=J. League Data Site |url=https://data.j-league.or.jp/SFRT09/search?yearFlag=false&competition_id=3&sub_competition_id=&section_id=0&number=&competition_year_id=2025&competition_year=2024&competitionName=%E6%98%8E%E6%B2%BB%E5%AE%89%E7%94%B0%EF%BC%AA%EF%BC%93%E3%83%AA%E3%83%BC%E3%82%B0&sub_competition=&sectionName=%E6%9C%80%E6%96%B0%E7%AF%80&section_id=0&sub_error_flag=&sub_competition_flag=1 |website=data.j-league.or.jp |access-date=25 February 2025}}</ref>
+|-
+|rowspan=1|1
+|align=left|{{fbaicon|JPN}} [[Keigo Hashimoto]]
+|align=left|Tegevajaro Miyazaki
+|rowspan=1|25
+|-
+|rowspan=4|2
+|align=left|{{fbaicon|JPN}} [[Ryuji Sawakami]]
+|align=left|Vanraure Hachinohe
+|rowspan=4|12
+|-
+|align=left|{{fbaicon|JPN}} [[Yusei Toshida]]
+|align=left|Zweigen Kanazawa
+|-
+|align=left|{{fbaicon|JPN}} [[Takumi Shimada]]
+|align=left|FC Osaka
+|-
+|align=left|{{fbaicon|JPN}} [[Yuta Togashi]]
+|align=left|Gainare Tottori
+|-
+|rowspan=3|6
+|align=left|{{fbaicon|JPN}} [[Paulo Junichi Tanaka]]
+|align=left|Tochigi City
+|rowspan=3|11
+|-
+|align=left|{{fbaicon|BRA}} [[Patric (footballer, born 1987)|Patric]]
+|align=left|Zweigen Kanazawa
+|-
+|align=left|{{fbaicon|JPN}} [[Yuki Okada (footballer, born 1996)|Yuki Okada]]
+|align=left|Nara Club
+|-
+|rowspan=5|9
+|align=left|{{fbaicon|JPN}} [[Hiroki Higuchi]]
+|align=left|Fukushima United
+|rowspan=5|10
+|-
+|align=left|{{fbaicon|JPN}} [[Kota Mori]]
+|align=left|Fukushima United
+|-
+|align=left|{{fbaicon|JPN}} [[Ryunosuke Ota]]
+|align=left|Tochigi SC
+|-
+|align=left|{{fbaicon|JPN}} [[Kokoro Kobayashi]]
+|align=left|Kōchi United SC
+|-
+|align=left|{{fbaicon|JPN}} [[Keito Kawamura]]
+|align=left|Kagoshima United
+|}
+
+== Awards ==
+===Monthly awards===
+{| class="wikitable" style="font-size: 12.5px"
+|-
+!rowspan="2"|Month
+!colspan="2"|Manager of the Month
+!colspan="2"|[[J.League Monthly MVP|Monthly MVP]]
+!colspan="2"|Goal of the Month
+!colspan="2"|Young Player of the Month
+!colspan="2"|Save of the Month
+!rowspan="2"|References
+|-
+!Manager!!Club!!Player!!Club!!Player!!Club!!Player!!Club!!Player!!Club
+|-
+|February/March
+|[[Naoto Otake]]
+|FC Osaka
+|[[Paulo Junichi Tanaka]]
+|Tochigi City
+|[[Yoshihito Kondo]]
+|Kagoshima United
+|[[Yuto Kunitake]]
+|Nara Club
+|[[Toi Yamamoto]]
+|FC Osaka
+|align=center|<ref>{{cite web|url=https://www.jleague.jp/news/article/30726/|title=2・3月度「2025 明治安田Jリーグ KONAMI 月間MVP」を発表！「月間ベストゴール」「月間優秀監督賞」「月間ヤングプレーヤー賞」「月間ベストセーブ賞」の各賞も決定！|trans-title=The "2025 Meiji Yasuda J.League KONAMI Monthly MVP" for February and March has been announced! The awards for "Best Goal of the Month," "Excellent Manager of the Month," "Young Player of the Month," and "Best Save of the Month" have also been decided!|language=ja|access-date=23 April 2025|date=15 April 2025|website=JLeague.jp |publisher=Japan Professional Football League}}</ref>
+|-
+|April
+|[[Naoki Imaya]]
+|Tochigi City
+|[[Kokoro Kobayashi]]
+|Kochi United SC
+|[[Daisuke Inazumi]]
+|Vanraure Hachinohe
+|[[Sora Tanaka]]
+|Matsumoto Yamaga
+|[[Takumi Yamanoi]]
+|Zweigen Kanazawa
+|align=center|<ref>{{cite web|url=https://www.jleague.jp/news/article/30952/|title=4月度「2025 明治安田Ｊリーグ KONAMI 月間MVP」を発表！「月間ベストゴール」「月間優秀監督賞」「月間ヤングプレーヤー賞」「月間ベストセーブ賞」の各賞も決定！|trans-title=The "2025 Meiji Yasuda J.League KONAMI Monthly MVP" for April has been announced! The winners of the "Monthly Best Goal," "Monthly Outstanding Manager," "Monthly Young Player," and "Monthly Best Save" awards have also been decided!|language=ja|access-date=24 May 2025|date=20 May 2025|website=JLeague.jp |publisher=Japan Professional Football League}}</ref>
+|-
+|May
+|[[Yuji Okuma]]
+|Tegevajaro Miyazaki
+|[[Takumi Shimada]]
+|FC Osaka
+|[[Toi Kagami]]
+|Thespa Gunma
+|[[Sora Tanaka]]
+|Matsumoto Yamaga
+|[[Hisaya Sato]]
+|FC Ryukyu
+|align=center|<ref>{{cite web |title=5月度「２０２５明治安田Ｊリーグ KONAMI 月間MVP」を発表！「月間ベストゴール」「月間優秀監督賞」「月間ヤングプレーヤー賞」「月間ベストセーブ賞」の各賞も決定！：Ｊリーグ公式サイト（J.LEAGUE.jp） |url=https://www.jleague.jp/news/article/31194/ |website=Ｊリーグ.jp（日本プロサッカーリーグ） |access-date=28 July 2025 |language=ja}}</ref>
+|-
+|June
+|[[Nobuhiro Ishizaki]]
+|Vanraure Hachinohe
+|[[Genki Egawa]]
+|Tegevajaro Miyazaki
+|[[Keito Kawamura]]
+|Kagoshima United
+|[[Sora Tanaka]]
+|Roasso Kumamoto
+|[[Kaito Konomi]]
+|Giravanz Kitakyushu
+|align=center|<ref>{{cite web|url=https://www.jleague.jp/news/article/31444/|title=6月度「2025明治安田Jリーグ KONAMI 月間MVP」を発表！「月間ベストゴール」「月間優秀監督賞」「月間ヤングプレーヤー賞」「月間ベストセーブ賞」の各賞も決定！|trans-title=The "2025 Meiji Yasuda J.League KONAMI Monthly MVP" for June has been announced! The winners of the "Monthly Best Goal", "Monthly Outstanding Manager", "Monthly Young Player", and "Monthly Best Save" awards have also been decided!|language=ja|access-date=16 July 2025|date=15 July 2025|website=JLeague.jp |publisher=Japan Professional Football League}}</ref>
+|}
+
+==See also==
+* [[2025 Japanese Super Cup]]
+* [[2025 Emperor's Cup]]
+* [[2025 J1 League]]
+* [[2025 J2 League]]
+* [[2025 J.League Cup]]
+* [[2025 Japan Football League]]
+<!-- * [[2025 Japanese Regional Leagues]] -->
+
+== Footnotes ==
+{{Notelist-ua}}
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [https://www.jleague.co/standings/j3/2025 Official website] on jleague.co {{in lang|en}}
+
+{{J.League}}
+{{Japanese Club Football|group=third}}
+{{2025 in Japanese football}}
+
+{{DEFAULTSORT:J3 League}}
+[[Category:2025 J.League|3]]
+[[Category:J3 League seasons|2025]]

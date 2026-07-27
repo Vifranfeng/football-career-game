@@ -1,0 +1,87 @@
+﻿{{Infobox football league season
+| competition = [[Serie C]]
+| season = [[2026–27 in Italian football|2026–27]]
+| dates = 
+| logo = Serie C sky wifi 2025-2026.png
+| pixels = 140
+| promoted =
+| relegated =
+| matches =
+| matches footnote =
+| total goals = 
+| total goals footnote = 
+| league topscorer =
+| biggest home win = 
+| biggest away win = 
+| highest scoring = 
+| longest wins = 
+| longest unbeaten = 
+| longest winless = 
+| longest losses = 
+| highest attendance = 
+| lowest attendance = 
+| attendance = 
+| average attendance = 
+| prevseason = [[2025–26 Serie C|2025–26]]
+| nextseason =
+| updated =
+}}
+The '''2026–27 Serie C''', officially known as '''Serie C [[Sky Italia|Sky Wifi]]''' for sponsorship, will be the twelfth season of the unified [[Serie C]] division, the third tier of the [[Italian football league system]].
+
+==Changes==
+The league will be composed of 60 teams, geographically divided into three groups. The group composition will be decided and formalized by the Serie C league committee between July and August.
+
+The following teams have changed divisions since the 2025–26 season:
+
+===To Serie C===
+'''Relegated from [[2025–26 Serie B|Serie B]]'''
+* [[SSC Bari|Bari]]
+* [[AC Reggiana 1919|Reggiana]]
+* [[Spezia Calcio|Spezia]]
+* [[Delfino Pescara 1936|Pescara]]
+
+'''Promoted from [[2025–26 Serie D|Serie D]]'''
+* [[FC Vado|Vado]] (Group A winners)
+* [[US Folgore Caratese ASD|Folgore Caratese]] (Group B winners)
+* [[Treviso FBC 1993|Treviso]] (Group C winners)
+* [[Calcio Desenzano SSD|Desenzano]] (Group D winners)
+* [[US Grosseto 1912|Grosseto]] (Group E winners)
+* [[AS Ostia Mare Lido Calcio|Ostia Mare]] (Group F winners)
+* [[Scafatese Calcio 1922|Scafatese]] (Group G winners)
+* [[SSD Barletta 1922|Barletta]] (Group H winners)
+* [[SSD Savoia 1908 FC|Savoia]] (Group I winners)
+
+===From Serie C===
+'''Promoted to [[2026–27 Serie B|Serie B]]'''
+* [[LR Vicenza|Vicenza]] (Group A winners)
+* [[SS Arezzo|Arezzo]] (Group B winners)
+* [[Benevento Calcio|Benevento]] (Group C winners)
+* [[Ascoli Calcio|Ascoli]] (Play-off winners)
+
+'''Relegated to [[2026–27 Serie D|Serie D]]'''
+* [[Virtus Verona|Virtus Verona]]
+* [[Aurora Pro Patria 1919|Pro Patria]]
+* [[US Triestina|Triestina]]
+* [[AC Bra|Bra]]
+* [[US Città di Pontedera|Pontedera]]
+* [[Rimini FC 1912|Rimini]] (excluded)
+* [[Calcio Foggia 1920|Foggia]] (successively readmitted)
+* [[ASD Siracusa Calcio 1924|Siracusa]]
+* [[FC Trapani 1905|Trapani]]
+
+[[Ternana Calcio|Ternana]] were the only club that did not submit an application to take part in the league, and were replaced by [[Calcio Foggia 1920]].
+
+==References==
+{{Portal|Association football|Italy}}
+{{reflist}}
+
+==External links==
+* [http://www.lega-pro.com Official website]
+
+{{Serie C}}
+{{Serie C seasons}}
+{{2026–27 in Italian football}}
+{{DEFAULTSORT:2026-27 Serie C}}
+[[Category:Serie C seasons]]
+[[Category:2026–27 in Italian football leagues|3]]
+[[Category:2026–27 in European third-tier association football leagues|Italy]]
