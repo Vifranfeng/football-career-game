@@ -1226,8 +1226,8 @@
     }
     if (
       championsLeagueWins === 0 &&
-      europeanTopFlightSeasons >= 8 &&
-      peakOverall >= 88 &&
+      europeanTopFlightSeasons >= 6 &&
+      peakOverall >= 84 &&
       (
         ballonDorWins >= 1 ||
         topChampionshipCount >= 4 ||
@@ -1236,8 +1236,8 @@
     ) {
       verdicts.push({
         icon: "♙",
-        name: "欧冠终身遗憾",
-        description: "耳朵去哪了",
+        name: "耳朵去哪了",
+        description: "荣誉满载，却始终与大耳朵杯擦肩而过",
         tier: "negative"
       });
     }
@@ -9712,6 +9712,9 @@
     if (name === "世界杯冠军") {
       return "assets/trophies/world-cup.svg";
     }
+    if (name === "亚洲杯冠军") {
+      return "assets/trophies/asian-cup.svg";
+    }
     if (/英超冠军|西甲冠军|德甲冠军|意甲冠军|法甲冠军|中超冠军|J1联赛冠军|K1联赛冠军|沙特联冠军|泰超冠军|马来超冠军/.test(name)) {
       return "assets/trophies/league-trophy.svg";
     }
@@ -9721,7 +9724,7 @@
     if (name === "金球奖") {
       return "assets/trophies/ballon-dor.svg";
     }
-    if (/亚洲杯冠军|欧洲杯冠军|美洲杯冠军|非洲杯冠军|中北美金杯赛冠军|大洋洲国家杯冠军|亚冠冠军/.test(name)) {
+    if (/欧洲杯冠军|美洲杯冠军|非洲杯冠军|中北美金杯赛冠军|大洋洲国家杯冠军|亚冠冠军/.test(name)) {
       return "assets/trophies/continental-cup.svg";
     }
     if (name === "世俱杯冠军") {
