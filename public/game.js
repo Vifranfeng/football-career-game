@@ -2,6 +2,16 @@
   var app = document.getElementById("app");
   var clubBadgeCache = {};
   var clubBadgeRequests = {};
+  var CLUB_BADGE_CACHE_PREFIX = "football-career-badge:";
+  var CLUB_BADGE_SEARCH_ALIASES = {
+    "Inter Milan": "Internazionale",
+    "Atletico de Madrid": "Atletico Madrid",
+    "Bayern Munich": "Bayern Munchen",
+    "Paris Saint-Germain": "Paris SG",
+    "Sporting CP": "Sporting Lisbon",
+    "Manchester United": "Man United",
+    "Manchester City": "Man City"
+  };
   var LEAGUE_MATCH_COUNTS = {
     "Premier League": 38,
     "EFL Championship": 46,
@@ -588,6 +598,9 @@
           image.loading = "lazy";
           image.addEventListener("error", function () {
             image.remove();
+            node.classList.remove("club-api-badge-loaded");
+            delete clubBadgeCache[clubId];
+            removePersistentClubBadge(clubId);
           });
           node.appendChild(image);
           node.classList.add("club-api-badge-loaded");
@@ -612,30 +625,28 @@
       clubBadgeCache[clubId] = CLUB_BADGE_OVERRIDES[clubId];
       return Promise.resolve(CLUB_BADGE_OVERRIDES[clubId]);
     }
+    var persistedBadge = getPersistentClubBadge(clubId);
+    if (persistedBadge) {
+      clubBadgeCache[clubId] = persistedBadge;
+      return Promise.resolve(persistedBadge);
+    }
     if (typeof fetch !== "function") {
       return Promise.resolve(fallbackBadge);
     }
-    var endpoint = "https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=" + encodeURIComponent(club.name);
-    clubBadgeRequests[clubId] = fetch(endpoint)
-      .then(function (response) {
-        if (!response.ok) throw new Error("badge-api-" + response.status);
-        return response.json();
-      })
-      .then(function (payload) {
-        var teams = (payload && payload.teams) || [];
-        var footballTeams = teams.filter(function (team) {
-          return !team.strSport || team.strSport === "Soccer";
-        });
-        var normalizedName = club.name.toLowerCase().replace(/[^a-z0-9]/g, "");
-        var match = footballTeams.find(function (team) {
-          return String(team.strTeam || "").toLowerCase().replace(/[^a-z0-9]/g, "") === normalizedName;
-        });
-        var badgeUrl = match && (match.strBadge || match.strTeamBadge) || fallbackBadge;
-        clubBadgeCache[clubId] = badgeUrl;
-        return badgeUrl;
+    var searchNames = unique([
+      club.apiName || club.name,
+      CLUB_BADGE_SEARCH_ALIASES[club.name]
+    ].filter(Boolean));
+    clubBadgeRequests[clubId] = searchClubBadgeTerms(searchNames, club)
+      .then(function (badgeUrl) {
+        if (badgeUrl) {
+          clubBadgeCache[clubId] = badgeUrl;
+          persistClubBadge(clubId, badgeUrl);
+          return badgeUrl;
+        }
+        return fallbackBadge;
       })
       .catch(function () {
-        clubBadgeCache[clubId] = fallbackBadge;
         return fallbackBadge;
       })
       .then(function (result) {
@@ -643,6 +654,66 @@
         return result;
       });
     return clubBadgeRequests[clubId];
+  }
+
+  function searchClubBadgeTerms(searchNames, club) {
+    var index = 0;
+    function next() {
+      if (index >= searchNames.length) return Promise.resolve("");
+      var searchName = searchNames[index++];
+      var endpoint = "https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=" +
+        encodeURIComponent(searchName);
+      return fetch(endpoint)
+        .then(function (response) {
+          if (!response.ok) throw new Error("badge-api-" + response.status);
+          return response.json();
+        })
+        .then(function (payload) {
+          var teams = (payload && payload.teams) || [];
+          var footballTeams = teams.filter(function (team) {
+            return !team.strSport || team.strSport === "Soccer";
+          });
+          var normalizedTerms = searchNames.concat([club.name]).map(normalizeClubSearchName);
+          var match = footballTeams.find(function (team) {
+            return normalizedTerms.indexOf(normalizeClubSearchName(team.strTeam)) !== -1;
+          });
+          var badgeUrl = match && (match.strBadge || match.strTeamBadge);
+          return badgeUrl || next();
+        })
+        .catch(function () {
+          return next();
+        });
+    }
+    return next();
+  }
+
+  function normalizeClubSearchName(name) {
+    return String(name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  }
+
+  function getPersistentClubBadge(clubId) {
+    try {
+      return window.localStorage ? window.localStorage.getItem(CLUB_BADGE_CACHE_PREFIX + clubId) || "" : "";
+    } catch (error) {
+      return "";
+    }
+  }
+
+  function persistClubBadge(clubId, badgeUrl) {
+    if (!/^https?:\/\//.test(badgeUrl)) return;
+    try {
+      if (window.localStorage) window.localStorage.setItem(CLUB_BADGE_CACHE_PREFIX + clubId, badgeUrl);
+    } catch (error) {
+      // Resource caching is optional; the game remains fully playable without it.
+    }
+  }
+
+  function removePersistentClubBadge(clubId) {
+    try {
+      if (window.localStorage) window.localStorage.removeItem(CLUB_BADGE_CACHE_PREFIX + clubId);
+    } catch (error) {
+      // Ignore unavailable storage.
+    }
   }
 
   function renderCreateScreen() {
@@ -5291,6 +5362,9 @@
     if (forcedShootout) {
       campaign.leaguePosition = Math.min(campaign.leaguePosition, 8);
     }
+    if (finalDecision && finalDecision.type === "champions-league") {
+      campaign.leaguePosition = Math.min(campaign.leaguePosition, 8);
+    }
     if (campaign.leaguePosition >= 25) {
       campaign.stage = "联赛阶段出局";
       return campaign;
@@ -5331,6 +5405,8 @@
         : -1;
       var won = forcedShootout && roundIndex < shootoutRoundIndex
         ? true
+        : finalDecision && finalDecision.type === "champions-league" && round.stage !== "决赛"
+          ? true
         : forcedShootout && round.stage === forcedShootout.shootoutStage
           ? forcedShootout.shootoutAdvanced
           : finalDecision && finalDecision.type === "champions-league" && round.stage === "决赛"
@@ -6645,6 +6721,13 @@
       window.LeagueSimulation.forceClubChampion
     ) {
       window.LeagueSimulation.forceClubChampion(fullLeagueSeason, club.id);
+    }
+    if (fullLeagueSeason) {
+      fullLeagueSeason.table.forEach(function (row) {
+        var tableClub = getClubById(row.clubId) ||
+          leagueTeams.find(function (candidate) { return candidate.id === row.clubId; });
+        if (tableClub) row.clubName = getClubDisplayName(tableClub);
+      });
     }
     var playerLeagueRow = fullLeagueSeason && fullLeagueSeason.table.find(function (row) {
       return row.clubId === club.id;
@@ -9592,31 +9675,28 @@
       return "assets/trophies/golden-boot.svg";
     }
     if (name === "欧冠冠军") {
-      return "https://commons.wikimedia.org/wiki/Special:Redirect/file/Coppa_Campioni.svg";
+      return "assets/trophies/champions-league.svg";
     }
     if (name === "欧联杯冠军") {
-      return "https://commons.wikimedia.org/wiki/Special:Redirect/file/PD-Shape_Europa_League_Trophy.svg";
+      return "assets/trophies/europa-league.svg";
     }
     if (name === "世界杯冠军") {
-      return "https://commons.wikimedia.org/wiki/Special:Redirect/file/FIFA_World_Cup_Icon_(Campionato_mondiale_di_calcio).svg";
+      return "assets/trophies/world-cup.svg";
     }
-    if (name === "英超冠军") {
-      return "https://commons.wikimedia.org/wiki/Special:Redirect/file/Premier_league_trophy_icon.png";
+    if (/英超冠军|西甲冠军|德甲冠军|意甲冠军|法甲冠军|中超冠军|J1联赛冠军|K1联赛冠军|沙特联冠军|泰超冠军|马来超冠军/.test(name)) {
+      return "assets/trophies/league-trophy.svg";
     }
-    if (name === "足总杯冠军") {
-      return "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Football_Association_Cup_trophy.svg";
+    if (/足总杯冠军|国王杯冠军|德国杯冠军|意大利杯冠军|法国杯冠军|足协杯冠军|天皇杯冠军|沙王冠冠军/.test(name)) {
+      return "assets/trophies/domestic-cup.svg";
     }
     if (name === "金球奖") {
-      return "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bal%C3%B3n_Oro.svg";
+      return "assets/trophies/ballon-dor.svg";
     }
-    if (name === "德甲冠军") {
-      return "https://commons.wikimedia.org/wiki/Special:Redirect/file/Icon_Trophy_Bundesliga_%281_Fu%C3%9Fball-Bundesliga%29.svg";
-    }
-    if (name === "亚洲杯冠军") {
-      return "https://commons.wikimedia.org/wiki/Special:Redirect/file/Coppa_Asia.svg";
+    if (/亚洲杯冠军|欧洲杯冠军|美洲杯冠军|非洲杯冠军|中北美金杯赛冠军|大洋洲国家杯冠军|亚冠冠军/.test(name)) {
+      return "assets/trophies/continental-cup.svg";
     }
     if (name === "世俱杯冠军") {
-      return "https://commons.wikimedia.org/wiki/Special:Redirect/file/FIFA_Club_World_Cup_logo.svg";
+      return "assets/trophies/club-world-cup.svg";
     }
     return "";
   }

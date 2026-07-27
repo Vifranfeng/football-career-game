@@ -215,6 +215,7 @@ if (process.argv.includes("--batch")) {
   let continentalCompetitionMismatch = 0;
   let continentalMatchOverflow = 0;
   let domesticCupChampionMismatch = 0;
+  let continentalChampionStageMismatch = 0;
   let leagueStandingRangeViolation = 0;
   let inheritedEuropeanQualificationViolation = 0;
   let repeatedContinentalOpponentViolation = 0;
@@ -344,6 +345,12 @@ if (process.argv.includes("--batch")) {
         !continentalTitle
       ) {
         domesticCupChampionMismatch += 1;
+      }
+      if (
+        season.competitionStats.continentalChampion &&
+        season.competitionStats.continentalStage !== "冠军"
+      ) {
+        continentalChampionStageMismatch += 1;
       }
       if (
         !season.leagueStanding ||
@@ -527,6 +534,7 @@ if (process.argv.includes("--batch")) {
       continentalCompetitionMismatch,
       continentalMatchOverflow,
       domesticCupChampionMismatch,
+      continentalChampionStageMismatch,
       leagueStandingRangeViolation
       ,
       inheritedEuropeanQualificationViolation
