@@ -1160,6 +1160,10 @@
     var ballonDorWins = careerHonors.filter(function (name) {
       return name === "金球奖";
     }).length;
+    var individualHonorCount = careerHonors.filter(function (name) {
+      return !isCompetitionChampionship(name) &&
+        /金靴|助攻王|最佳阵容|最佳新秀|最佳球员|全勤铁人/.test(name);
+    }).length;
     var championsLeagueWins = careerHonors.filter(function (name) {
       return name === "欧冠冠军";
     }).length;
@@ -1312,6 +1316,18 @@
         icon: "◇",
         name: "金球遗珠",
         description: "多次进入金球奖候选，却始终没能最终捧杯",
+        tier: "negative"
+      });
+    }
+    if (
+      ballonDorWins === 0 &&
+      championshipCount >= 8 &&
+      individualHonorCount >= 8
+    ) {
+      verdicts.push({
+        icon: "◌",
+        name: "唯独没有金球",
+        description: "冠军和个人荣誉塞满奖杯柜，金球奖却始终假装不认识你",
         tier: "negative"
       });
     }
@@ -5868,9 +5884,10 @@
     var goalCeiling = getSeasonGoalCeiling(player, appearances, goalSkill);
     var goalLambda = Math.min(
       goalCeiling * 0.92,
-      appearances * goalRate * overallFactor * style.chances * goalSeasonVariance
+      appearances * goalRate * overallFactor * style.chances * goalSeasonVariance * 0.92
     );
-    var assistLambda = appearances * assistRate * overallFactor * style.chances * assistSeasonVariance;
+    var assistLambda =
+      appearances * assistRate * overallFactor * style.chances * assistSeasonVariance * 0.9;
     var goals = Math.min(goalCeiling, samplePoisson(goalLambda));
     var assists = Math.min(appearances, samplePoisson(assistLambda));
     var contribution = simulatePositionContribution(
@@ -6150,8 +6167,8 @@
     else if (roll <= 20) potential = Math.max(baseOverall + 14, randomInt(72, 79));
     else if (roll <= 60) potential = randomInt(80, 84);
     else if (roll <= 82) potential = randomInt(85, 89);
-    else if (roll <= 94) potential = randomInt(90, 94);
-    else potential = randomInt(95, 98);
+    else if (roll <= 96) potential = randomInt(90, 94);
+    else potential = randomInt(95, 97);
 
     var academyScore = academyClub
       ? academyClub.reputation * 0.4 +
@@ -6248,6 +6265,12 @@
     }
     if (player.age >= 29) {
       change = Math.min(change, 0);
+    }
+    if (previous >= 94 && change > 0 && randomInt(1, 100) > 24) {
+      change = 0;
+    }
+    if (previous >= 96 && change > 0) {
+      change = 0;
     }
 
     change = clamp(change, -6, 6);
@@ -6602,7 +6625,7 @@
     if (
       player.status.reputation < 78 ||
       stats.appearances < 24 ||
-      (player.overall < 88 && !exceptionalDoubleSeason)
+      (player.overall < 86 && !exceptionalDoubleSeason)
     ) {
       return false;
     }
@@ -6625,11 +6648,11 @@
     }
     if (player.position === "LB" || player.position === "RB") {
       return majorChampion &&
-        player.overall >= 88 &&
+        player.overall >= 87 &&
         (output >= 8 || eliteDefensiveChampion) &&
         stats.teamContribution >= 76;
     }
-    return player.overall >= 89 &&
+    return player.overall >= 88 &&
       stats.appearances >= 28 &&
       majorChampion &&
       stats.teamContribution >= 78 &&
@@ -6675,6 +6698,28 @@
       Math.max(0, (stats.teamContribution || 70) - 78) * 0.008;
     if (eliteDouble && output >= 24 && player.status.reputation >= 88) {
       chance = Math.max(chance, 0.72);
+    }
+    var playerAwardScore =
+      player.overall * 0.45 +
+      Math.min(60, output) * 0.25 +
+      player.status.reputation * 0.12 +
+      (stats.teamContribution || 70) * 0.08 +
+      (majorChampion ? 6 : 0) +
+      (eliteDouble ? 6 : 0);
+    var rivalAwardScore = randomBetween(79, 93);
+    if (Math.random() < 0.3) {
+      rivalAwardScore += randomBetween(4, 9);
+    }
+    if (Math.random() < 0.06) {
+      rivalAwardScore += randomBetween(10, 15);
+    }
+    var rivalGap = rivalAwardScore - playerAwardScore;
+    if (rivalGap >= 5) {
+      chance *= 0.58;
+    } else if (rivalGap >= 0) {
+      chance *= 0.72;
+    } else if (rivalGap >= -4) {
+      chance *= 0.86;
     }
     return clamp(chance, 0.08, 0.86);
   }

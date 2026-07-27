@@ -236,6 +236,14 @@ if (process.argv.includes("--batch")) {
   let ballonDorNominatedSeasons = 0;
   let ballonDorWins = 0;
   let ballonDorWinningCareers = 0;
+  const ballonDorCareerDistribution = {
+    "0次": 0,
+    "1次": 0,
+    "2次": 0,
+    "3次": 0,
+    "4-5次": 0,
+    "6次以上": 0
+  };
   let nationalTournamentEvents = 0;
   let nationalTournamentEventMismatch = 0;
   let choiceMemoryContradictions = 0;
@@ -258,6 +266,16 @@ if (process.argv.includes("--batch")) {
     const strategy = index % 2 === 0 ? "stable" : "ambitious";
     const simulatedPosition = positions[index % positions.length];
     const result = runCareer(strategy, index, simulatedPosition);
+    const careerBallonDorWins = result.seasons.filter((season) =>
+      season.trophies.includes("金球奖")
+    ).length;
+    const ballonDorDistributionBand =
+      careerBallonDorWins === 0 ? "0次" :
+      careerBallonDorWins === 1 ? "1次" :
+      careerBallonDorWins === 2 ? "2次" :
+      careerBallonDorWins === 3 ? "3次" :
+      careerBallonDorWins <= 5 ? "4-5次" : "6次以上";
+    ballonDorCareerDistribution[ballonDorDistributionBand] += 1;
     ballonDorByPosition[simulatedPosition].careers += 1;
     if (result.player.everCaptain) captainCareers += 1;
     if (result.seasons.some((season) => season.legendStory)) careersWithLegendMoment += 1;
@@ -593,6 +611,7 @@ if (process.argv.includes("--batch")) {
       ballonDorWinningCareerRate: Math.round(ballonDorWinningCareers / total * 1000) / 10
     },
     ballonDorByPosition,
+    ballonDorCareerDistribution,
     bands,
     outputPer30AtOverall80To87: outputPer30,
     consistency: {
