@@ -9517,7 +9517,7 @@
       "球队在最后时刻被 " + opponentName + " 完成绝杀，整季努力停在了终场哨前。",
       opponentName + " 的门将打出超神表现，连续化解必进球，让比赛始终无法被扳回来。",
       "一次争议判罚改变了比赛走势，" + getClubDisplayName(club) + " 在持续围攻中仍未能追回比分。",
-      "球队领先后没能控制住节奏，" + opponentName + " 在下半场完成逆转。"
+      "球队没能控制住下半场节奏，" + opponentName + " 抓住防线松动的机会取得制胜进球。"
     ];
     var exitScore = importantContinentalExit
       ? competitionStats.continentalScore || ""
