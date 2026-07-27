@@ -1,50 +1,53 @@
+const fs = require("fs");
 const path = require("path");
 
 global.window = {};
 require(path.resolve(__dirname, "../data/clubs.js"));
 
-const clubs = window.CLUBS;
-const endpoint = "https://www.thesportsdb.com/api/v1/json/123/searchteams.php?t=";
+const root = path.resolve(__dirname, "..");
+const appSource = fs.readFileSync(path.join(root, "app.js"), "utf8");
+const overrideBlock = appSource.match(
+  /var CLUB_BADGE_OVERRIDES = \{([\s\S]*?)\n  \};/
+);
+const fixedBadgeIds = new Set();
 
-async function auditClub(club) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 8000);
-  try {
-    const response = await fetch(endpoint + encodeURIComponent(club.name), {
-      signal: controller.signal
-    });
-    const payload = response.ok ? await response.json() : null;
-    const teams = payload && payload.teams || [];
-    const match = teams.find((team) =>
-      (!team.strSport || team.strSport === "Soccer") &&
-      Boolean(team.strBadge || team.strTeamBadge)
-    );
-    return { club, found: Boolean(match) };
-  } catch {
-    return { club, found: false };
-  } finally {
-    clearTimeout(timeout);
+if (overrideBlock) {
+  const entryPattern = /^\s*(?:"([^"]+)"|([a-zA-Z0-9_-]+)):\s*"https?:\/\/[^"]+"/gm;
+  let match;
+  while ((match = entryPattern.exec(overrideBlock[1]))) {
+    fixedBadgeIds.add(match[1] || match[2]);
   }
 }
 
-async function main() {
-  const results = [];
-  for (let index = 0; index < clubs.length; index += 12) {
-    const batch = clubs.slice(index, index + 12);
-    results.push(...await Promise.all(batch.map(auditClub)));
-  }
+const topFiveLeagues = new Set([
+  "Premier League",
+  "LALIGA EA SPORTS",
+  "Bundesliga",
+  "Serie A",
+  "Ligue 1 McDonald's"
+]);
 
-  const leagues = {};
-  results.forEach(({ club, found }) => {
-    leagues[club.league] ||= { total: 0, found: 0, missing: [] };
-    leagues[club.league].total += 1;
-    if (found) {
-      leagues[club.league].found += 1;
+const report = {};
+window.CLUBS
+  .filter((club) => topFiveLeagues.has(club.league))
+  .forEach((club) => {
+    report[club.league] ||= { total: 0, fixed: 0, missing: [] };
+    report[club.league].total += 1;
+    if (fixedBadgeIds.has(club.id)) {
+      report[club.league].fixed += 1;
     } else {
-      leagues[club.league].missing.push(`${club.id}:${club.name}`);
+      report[club.league].missing.push(`${club.id}:${club.name}`);
     }
   });
-  console.log(JSON.stringify(leagues, null, 2));
-}
 
-main();
+const missingTotal = Object.values(report)
+  .reduce((sum, league) => sum + league.missing.length, 0);
+
+console.log(JSON.stringify({
+  leagues: report,
+  total: Object.values(report).reduce((sum, league) => sum + league.total, 0),
+  fixed: Object.values(report).reduce((sum, league) => sum + league.fixed, 0),
+  missing: missingTotal
+}, null, 2));
+
+process.exitCode = missingTotal ? 1 : 0;

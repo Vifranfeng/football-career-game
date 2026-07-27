@@ -216,7 +216,44 @@
     manutd: 0.12
   };
   var CLUB_BADGE_OVERRIDES = {
+    arsenal: "https://crests.football-data.org/57.png",
+    villa: "https://crests.football-data.org/58.png",
+    "london-blue": "https://crests.football-data.org/61.png",
+    everton: "https://crests.football-data.org/62.png",
+    liverpool: "https://crests.football-data.org/64.png",
+    mancity: "https://crests.football-data.org/65.png",
+    manutd: "https://crests.football-data.org/66.png",
+    newcastle: "https://crests.football-data.org/67.png",
+    tottenham: "https://crests.football-data.org/73.png",
+    brighton: "https://crests.football-data.org/397.png",
+    brentford: "https://crests.football-data.org/402.png",
+    atletico: "https://crests.football-data.org/78.png",
+    espanyol: "https://crests.football-data.org/80.png",
+    barcelona: "https://crests.football-data.org/81.png",
+    "madrid-royal": "https://crests.football-data.org/86.png",
+    betis: "https://crests.football-data.org/90.png",
+    villarreal: "https://crests.football-data.org/94.png",
+    "sevilla-sol": "https://crests.football-data.org/559.png",
+    leverkusen: "https://crests.football-data.org/3.png",
+    dortmund: "https://crests.football-data.org/4.png",
+    "munich-red": "https://crests.football-data.org/5.png",
+    hamburg: "https://crests.football-data.org/7.png",
+    "berlin-wall": "https://crests.football-data.org/10.png",
+    wolfsburg2: "https://crests.football-data.org/11.png",
+    frankfurt: "https://crests.football-data.org/19.png",
+    stpauli2: "https://crests.football-data.org/20.png",
+    heidenheim2: "https://crests.football-data.org/44.png",
+    "milan-night": "https://crests.football-data.org/98.png",
+    fiorentina: "https://crests.football-data.org/99.png",
+    roma: "https://crests.football-data.org/100.png",
+    inter: "https://crests.football-data.org/108.png",
+    juventus: "https://crests.football-data.org/109.png",
+    "turin-bulls": "https://crests.football-data.org/586.png",
+    "marseille-wave": "https://crests.football-data.org/516.png",
+    lille: "https://crests.football-data.org/521.png",
+    "lyon-river": "https://crests.football-data.org/523.png",
     "paris-lumiere": "https://crests.football-data.org/524.png",
+    monaco: "https://crests.football-data.org/548.png",
     "blackpool-l1": "https://r2.thesportsdb.com/images/media/team/badge/utywru1448754934.png",
     "reading-l1": "https://r2.thesportsdb.com/images/media/team/badge/tprvtu1448811527.png",
     "huddersfield-l1": "https://r2.thesportsdb.com/images/media/team/badge/y11fin1677527513.png",
@@ -1658,6 +1695,17 @@
       state.player.loyaltyMilestonesSeen.push(event.loyaltyMilestone);
       state.player.loyaltyMilestonesSeen = unique(state.player.loyaltyMilestonesSeen);
     }
+    if (event.id === "outgrown-current-club") {
+      state.player.outgrownClubDecisions = state.player.outgrownClubDecisions || {};
+      state.player.outgrownClubDecisions[state.player.currentClubId] = {
+        seasonYear: state.player.seasonYear,
+        overall: state.player.overall,
+        choice: option.label,
+        deferUntil: state.player.seasonYear +
+          (option.label === "继续带领球队前进" ? 6 :
+            option.label === "再观察一个赛季" ? 4 : 0)
+      };
+    }
     if (event.id === "captain-appointment" && option.label === "正式接过队长袖标") {
       state.player.isCaptain = true;
       state.player.everCaptain = true;
@@ -3094,7 +3142,44 @@
         finalOptions.push(retirementOption);
       }
     }
+    synchronizeOfferLeaguePositions(finalOptions, currentClub, summary);
     return finalOptions;
+  }
+
+  function synchronizeOfferLeaguePositions(options, currentClub, summary) {
+    var usedByLeague = {};
+    var orderedOptions = options.slice().sort(function (first, second) {
+      return Number(second.club.id === currentClub.id) - Number(first.club.id === currentClub.id);
+    });
+    orderedOptions.forEach(function (option) {
+      if (!option.clubSnapshot || !option.club) return;
+      var league = option.club.league;
+      usedByLeague[league] = usedByLeague[league] || {};
+      var used = usedByLeague[league];
+      if (used[option.club.id]) {
+        option.clubSnapshot.league = getLeagueDisplayName(league) + "第 " + used[option.club.id] + " 名";
+        return;
+      }
+      var teamCount = LEAGUE_TEAM_COUNTS[league] || 20;
+      var position = option.club.id === currentClub.id && summary.leagueStanding
+        ? summary.leagueStanding.position
+        : getOfferLeaguePosition(option.club, summary, teamCount);
+      var occupied = Object.keys(used).map(function (clubId) {
+        return used[clubId];
+      });
+      if (occupied.indexOf(position) !== -1) {
+        var available = [];
+        for (var candidate = 1; candidate <= teamCount; candidate += 1) {
+          if (occupied.indexOf(candidate) === -1) available.push(candidate);
+        }
+        available.sort(function (first, second) {
+          return Math.abs(first - position) - Math.abs(second - position);
+        });
+        position = available[0] || position;
+      }
+      used[option.club.id] = position;
+      option.clubSnapshot.league = getLeagueDisplayName(league) + "第 " + position + " 名";
+    });
   }
 
   function findHomecomingClub(player, currentClub) {
@@ -4171,6 +4256,8 @@
   function buildOutgrownCurrentClubEvent(player) {
     var club = getClubById(player.currentClubId);
     var strengthGap = player.overall - getClubStrength(club);
+    var previousDecision = (player.outgrownClubDecisions || {})[club.id];
+    var lastSeenSeason = (player.eventLastSeenSeason || {})["outgrown-current-club"] || 0;
     var recentlyTransferred = player.lastTransfer &&
       player.lastTransfer.toClubId === club.id &&
       player.lastTransfer.seasonYear >= player.seasonYear - 1;
@@ -4181,6 +4268,15 @@
       strengthGap < 8 ||
       recentlyTransferred ||
       player.pendingForcedDeparture ||
+      (lastSeenSeason && player.seasonYear - lastSeenSeason < 4) ||
+      (
+        previousDecision &&
+        previousDecision.choice !== "寻求更高舞台" &&
+        (
+          player.seasonYear < previousDecision.deferUntil ||
+          player.overall < previousDecision.overall + 3
+        )
+      ) ||
       Math.random() > clamp(0.48 + strengthGap * 0.035, 0.58, 0.88)
     ) {
       return null;
@@ -5503,7 +5599,7 @@
   function getOfferLeaguePosition(club, summary, teamCount) {
     if (summary && window.LeagueSimulation) {
       var currentLeagueRow = (summary.leagueTable || []).find(function (row) {
-        return row.clubId === club.id;
+        return doesLeagueTableRowMatchClub(row, club);
       });
       if (currentLeagueRow) return currentLeagueRow.position;
       summary.offerLeagueTables = summary.offerLeagueTables || {};
@@ -5514,6 +5610,17 @@
           : window.CLUBS.filter(function (candidate) {
               return candidate.league === club.league;
             });
+        window.CLUBS.filter(function (candidate) {
+          return candidate.league === club.league;
+        }).forEach(function (candidate) {
+          var alreadyIncluded = teams.some(function (team) {
+            return doesLeagueTableRowMatchClub({
+              clubId: team.id,
+              clubName: team.nameZh || team.name
+            }, candidate);
+          });
+          if (!alreadyIncluded) teams.push(candidate);
+        });
         if (teams.length >= 2) {
           summary.offerLeagueTables[club.league] =
             window.LeagueSimulation.simulateFullLeagueSeason({
@@ -5526,7 +5633,7 @@
         }
       }
       var row = (summary.offerLeagueTables[club.league] || []).find(function (item) {
-        return item.clubId === club.id;
+        return doesLeagueTableRowMatchClub(item, club);
       });
       if (row) return row.position;
     }
@@ -5535,6 +5642,20 @@
       ? prior.expected
       : Math.round(1 + (92 - getClubStrength(club)) * (club.leagueLevel === 1 ? 0.55 : 0.72));
     return Math.round(clamp(expectedPosition + randomInt(-2, 2), 1, teamCount));
+  }
+
+  function doesLeagueTableRowMatchClub(row, club) {
+    if (!row || !club) return false;
+    if (row.clubId === club.id) return true;
+    var rowNames = [row.clubName, row.name, row.nameZh]
+      .filter(Boolean)
+      .map(normalizeClubSearchName);
+    var clubNames = [club.name, club.nameZh, getClubDisplayName(club)]
+      .filter(Boolean)
+      .map(normalizeClubSearchName);
+    return rowNames.some(function (name) {
+      return clubNames.indexOf(name) !== -1;
+    });
   }
 
   function completeCompetitionWorldResults(club, domesticCupCampaign, continentalCampaign) {
@@ -6472,16 +6593,22 @@
       return null;
     }
 
-    var opponent = pickEuropeanOpponent(club.id, 82);
-    if (!opponent) return null;
+    var opponentName = competitionStats.continentalOpponent;
+    var opponent = opponentName ? null : pickEuropeanOpponent(club.id, 82);
+    opponentName = opponentName || (opponent ? getClubDisplayName(opponent) : "");
+    if (!opponentName) return null;
 
     player.refereeScandalSeen = true;
-    var benefited = Math.random() < 0.28;
-    var fixture = getClubDisplayName(club) + " 对阵 " + getClubDisplayName(opponent);
+    var exitedCompetition = /出局|失利/.test(competitionStats.continentalStage || "");
+    var benefited = !exitedCompetition && Math.random() < 0.28;
+    var fixture = getClubDisplayName(club) + " 对阵 " + opponentName;
+    var stageLabel = competitionStats.continentalStage
+      ? "的欧冠" + competitionStats.continentalStage.replace("出局", "").replace("失利", "")
+      : "的欧冠淘汰赛";
     return {
       text: benefited
-        ? fixture + " 的欧冠淘汰赛出现连续争议判罚，球队在巨大质疑声中改变了比赛走势。这一夜多年后仍被对手球迷反复提起。"
-        : fixture + " 的欧冠淘汰赛被连续争议判罚彻底改变，这一夜成为俱乐部历史上的判罚惨案。",
+        ? fixture + stageLabel + "出现连续争议判罚，球队在巨大质疑声中晋级。这一夜多年后仍被对手球迷反复提起。"
+        : fixture + stageLabel + "被连续争议判罚改变走势，球队最终遭到淘汰，这一夜成为俱乐部历史上的判罚惨案。",
       effects: benefited
         ? { reputation: -3, happiness: -2, coachRelation: 1 }
         : { reputation: 1, happiness: -7, fitness: -3 }
@@ -9232,9 +9359,14 @@
       "球队在最后时刻被 " + opponentName + " 完成绝杀，整季努力停在了终场哨前。",
       opponentName + " 的门将打出超神表现，连续化解必进球，让比赛始终无法被扳回来。",
       "一次争议判罚改变了比赛走势，" + getClubDisplayName(club) + " 在持续围攻中仍未能追回比分。",
-      "球队领先后没能控制住节奏，" + opponentName + " 在下半场完成逆转。",
-      "决胜点球大战中球队罚失关键点球，最终以最残酷的方式告别赛事。"
+      "球队领先后没能控制住节奏，" + opponentName + " 在下半场完成逆转。"
     ];
+    var exitScore = importantContinentalExit
+      ? competitionStats.continentalScore || ""
+      : "";
+    if (/点球大战/.test(exitScore)) {
+      reasons.push("决胜点球大战中球队罚失关键点球，最终以最残酷的方式告别赛事。");
+    }
 
     if (player.position === "GK") {
       reasons.push(
@@ -9715,7 +9847,10 @@
     if (name === "亚洲杯冠军") {
       return "assets/trophies/asian-cup.svg";
     }
-    if (/英超冠军|西甲冠军|德甲冠军|意甲冠军|法甲冠军|中超冠军|J1联赛冠军|K1联赛冠军|沙特联冠军|泰超冠军|马来超冠军/.test(name)) {
+    if (name === "英超冠军") {
+      return "assets/trophies/premier-league.svg";
+    }
+    if (/西甲冠军|德甲冠军|意甲冠军|法甲冠军|中超冠军|J1联赛冠军|K1联赛冠军|沙特联冠军|泰超冠军|马来超冠军/.test(name)) {
       return "assets/trophies/league-trophy.svg";
     }
     if (/足总杯冠军|国王杯冠军|德国杯冠军|意大利杯冠军|法国杯冠军|足协杯冠军|天皇杯冠军|沙王冠冠军/.test(name)) {

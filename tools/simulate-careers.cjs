@@ -132,6 +132,8 @@ function runCareer(strategy, seedOffset, requestedPosition) {
       achievements: summary.achievements.slice(),
       injuries: summary.injuries.slice(),
       legendStory: summary.legendStory,
+      defeatReason: summary.defeatReason,
+      refereeScandal: summary.refereeScandal,
       ballonDorNominated: summary.ballonDorNominated,
       memory: summary.seasonMoment,
       choiceOutcome: summaryState.lastChoiceOutcome,
@@ -150,6 +152,12 @@ function runCareer(strategy, seedOffset, requestedPosition) {
         game.getClubStrength(option.club) >
           game.getClubStrength(game.getClubById(summaryState.player.currentClubId))
       ),
+      offerSnapshots: summaryState.transferOptions.map((option) => ({
+        clubId: option.club.id,
+        clubName: option.club.name,
+        league: option.club.league,
+        leagueLabel: option.clubSnapshot && option.clubSnapshot.league || ""
+      })),
       homecomingAudits,
       selectedTransferType: selectedTransfer ? selectedTransfer.type : "",
       transfer: selectedTransfer ? selectedTransfer.label + " -> " + selectedTransfer.club.name : "none"
@@ -239,6 +247,11 @@ if (process.argv.includes("--batch")) {
   let clubIdentityCareers = 0;
   let lateCareerCoronationCareers = 0;
   let lateCareerCoronationContradictions = 0;
+  let duplicateOfferLeaguePositions = 0;
+  const duplicateOfferLeaguePositionExamples = [];
+  let repeatedOutgrownClubEvents = 0;
+  let shootoutDefeatReasonMismatch = 0;
+  let refereeScandalOpponentMismatch = 0;
   const repeatedContinentalOpponentExamples = [];
   const inheritedEuropeanQualificationExamples = [];
   for (let index = 0; index < total; index += 1) {
@@ -267,6 +280,52 @@ if (process.argv.includes("--batch")) {
     peaks.push(Math.max(...result.player.career.map((entry) => entry.overall)));
     result.seasons.forEach((season, seasonIndex) => {
       const previousSeason = result.seasons[seasonIndex - 1];
+      const seenOfferPositions = new Map();
+      season.offerSnapshots.forEach((offer) => {
+        const positionMatch = offer.leagueLabel.match(/第\s*(\d+)\s*名/);
+        if (!positionMatch) return;
+        const key = `${offer.league}:${positionMatch[1]}`;
+        if (seenOfferPositions.has(key) && seenOfferPositions.get(key) !== offer.clubId) {
+          duplicateOfferLeaguePositions += 1;
+          if (duplicateOfferLeaguePositionExamples.length < 8) {
+            duplicateOfferLeaguePositionExamples.push({
+              age: season.age,
+              club: season.club,
+              duplicate: key,
+              offers: season.offerSnapshots
+            });
+          }
+        }
+        seenOfferPositions.set(key, offer.clubId);
+      });
+      if (season.eventId === "outgrown-current-club") {
+        const previousMatchingEvent = result.seasons
+          .slice(0, seasonIndex)
+          .reverse()
+          .find((entry) =>
+            entry.eventId === "outgrown-current-club" &&
+            entry.club === season.club
+          );
+        if (
+          previousMatchingEvent &&
+          season.age - previousMatchingEvent.age < 4
+        ) {
+          repeatedOutgrownClubEvents += 1;
+        }
+      }
+      if (
+        /点球大战/.test(season.defeatReason || "") &&
+        !/点球大战/.test(season.competitionStats.continentalScore || "")
+      ) {
+        shootoutDefeatReasonMismatch += 1;
+      }
+      if (
+        season.refereeScandal &&
+        season.competitionStats.continentalOpponent &&
+        !season.refereeScandal.includes(season.competitionStats.continentalOpponent)
+      ) {
+        refereeScandalOpponentMismatch += 1;
+      }
       const negativeChoiceText =
         /没有成功|未能|没能|失败|受挫|不敌|淘汰|落败|失误|不适应|卷进|消耗得不轻|声望.{0,6}(下降|受损)|舆论.{0,6}(争议|反噬|质疑)|更衣室.{0,8}(矛盾|裂痕)|明显透支|长期休战/.test(season.choiceOutcome || "");
       const positiveChoiceText =
@@ -602,6 +661,16 @@ if (process.argv.includes("--batch")) {
       lateCareerCoronationCareers
       ,
       lateCareerCoronationContradictions
+      ,
+      duplicateOfferLeaguePositions
+      ,
+      duplicateOfferLeaguePositionExamples
+      ,
+      repeatedOutgrownClubEvents
+      ,
+      shootoutDefeatReasonMismatch
+      ,
+      refereeScandalOpponentMismatch
     }
   };
   if (process.argv.includes("--compact")) {
@@ -616,6 +685,11 @@ if (process.argv.includes("--batch")) {
         lateCareerCoronationCareers: report.consistency.lateCareerCoronationCareers,
         lateCareerCoronationContradictions: report.consistency.lateCareerCoronationContradictions,
         falseChampionMemories: report.consistency.falseChampionMemories,
+        duplicateOfferLeaguePositions: report.consistency.duplicateOfferLeaguePositions,
+        duplicateOfferLeaguePositionExamples: report.consistency.duplicateOfferLeaguePositionExamples,
+        repeatedOutgrownClubEvents: report.consistency.repeatedOutgrownClubEvents,
+        shootoutDefeatReasonMismatch: report.consistency.shootoutDefeatReasonMismatch,
+        refereeScandalOpponentMismatch: report.consistency.refereeScandalOpponentMismatch,
         choiceEffectContradictions: report.consistency.choiceEffectContradictions,
         choiceEffectContradictionExamples: report.consistency.choiceEffectContradictionExamples
       }
