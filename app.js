@@ -152,8 +152,8 @@
   var POSITION_RATES = {
     GK: { goal: 0.0005, assist: 0.012 },
     CB: { goal: 0.035, assist: 0.025 },
-    LB: { goal: 0.1, assist: 0.12 },
-    RB: { goal: 0.1, assist: 0.12 },
+    LB: { goal: 0.1, assist: 0.095 },
+    RB: { goal: 0.1, assist: 0.095 },
     CM: { goal: 0.1, assist: 0.13 },
     CAM: { goal: 0.27, assist: 0.15 },
     LM: { goal: 0.16, assist: 0.18 },
@@ -5324,6 +5324,24 @@
       finalDecision,
       competitionImpact
     );
+    if (
+      competitionImpact.shootoutStage &&
+      competitionImpact.shootoutAdvanced === false
+    ) {
+      var shootoutOpponent = getClubById(competitionImpact.opponentClubId);
+      continentalCampaign.stage = competitionImpact.shootoutStage === "决赛"
+        ? "决赛失利"
+        : competitionImpact.shootoutStage + "出局";
+      continentalCampaign.opponent = shootoutOpponent
+        ? getClubDisplayName(shootoutOpponent)
+        : continentalCampaign.opponent;
+      continentalCampaign.score = competitionImpact.shootoutStage === "决赛"
+        ? "在点球大战中惜败于 "
+        : "在总比分战平后点球大战惜败于 ";
+      continentalCampaign.runnerUp = competitionImpact.shootoutStage === "决赛";
+      continentalCampaign.champion = "";
+      continentalCampaign.notableWin = "";
+    }
     completeCompetitionWorldResults(club, domesticCupCampaign, continentalCampaign);
     var continentalMatches = continentalCampaign.matches;
 
@@ -8545,7 +8563,7 @@
         effects.happiness -= 5;
         note = playerTakesPenalty
           ? "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
-            " 的点球大战中，你罚进了自己的点球，但球队仍在后续轮次落败出局。"
+            " 的点球大战中，你罚进了自己的点球，但队友随后罚失，球队仍在本轮落败出局。"
           : "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
             " 的点球大战中，你的选择没能换来晋级，球队就此出局。";
       }
@@ -9364,19 +9382,23 @@
     var exitScore = importantContinentalExit
       ? competitionStats.continentalScore || ""
       : "";
-    if (/点球大战/.test(exitScore)) {
-      reasons.push("决胜点球大战中球队罚失关键点球，最终以最残酷的方式告别赛事。");
+    var shootoutDefeat = /点球大战/.test(exitScore);
+    if (shootoutDefeat) {
+      reasons = [
+        "双方在常规时间和加时赛都未能分出胜负，" + getClubDisplayName(club) +
+        " 最终在点球大战中罚失关键点球，以最残酷的方式告别赛事。"
+      ];
     }
 
-    if (player.position === "GK") {
+    if (!shootoutDefeat && player.position === "GK") {
       reasons.push(
         "你完成了多次关键扑救，但防线在最后一次定位球中漏人，球队仍被 " + opponentName + " 淘汰。"
       );
-    } else if (["CB", "LB", "RB"].indexOf(player.position) !== -1) {
+    } else if (!shootoutDefeat && ["CB", "LB", "RB"].indexOf(player.position) !== -1) {
       reasons.push(
         "球队大部分时间守住了压力，却在一次定位球二点争抢中失位，被 " + opponentName + " 抓住唯一机会。"
       );
-    } else if (playerWasKey) {
+    } else if (!shootoutDefeat && playerWasKey) {
       reasons.push(
         "你创造出了足够多的机会，但全队临门一脚连续失准，" + opponentName + " 将微弱优势守到了最后。"
       );
@@ -9842,15 +9864,27 @@
       return "assets/trophies/europa-league.svg";
     }
     if (name === "世界杯冠军") {
-      return "assets/trophies/world-cup.svg";
+      return "assets/trophies/world-cup-classic.svg";
     }
     if (name === "亚洲杯冠军") {
-      return "assets/trophies/asian-cup.svg";
+      return "assets/trophies/asian-cup-classic.svg";
     }
     if (name === "英超冠军") {
-      return "assets/trophies/premier-league.svg";
+      return "assets/trophies/premier-league-classic.png";
     }
-    if (/西甲冠军|德甲冠军|意甲冠军|法甲冠军|中超冠军|J1联赛冠军|K1联赛冠军|沙特联冠军|泰超冠军|马来超冠军/.test(name)) {
+    if (name === "西甲冠军") {
+      return "assets/trophies/la-liga.png";
+    }
+    if (name === "德甲冠军") {
+      return "assets/trophies/bundesliga.svg";
+    }
+    if (name === "意甲冠军") {
+      return "assets/trophies/serie-a.png";
+    }
+    if (name === "法甲冠军") {
+      return "assets/trophies/ligue-1.svg";
+    }
+    if (/中超冠军|J1联赛冠军|K1联赛冠军|沙特联冠军|泰超冠军|马来超冠军/.test(name)) {
       return "assets/trophies/league-trophy.svg";
     }
     if (/足总杯冠军|国王杯冠军|德国杯冠军|意大利杯冠军|法国杯冠军|足协杯冠军|天皇杯冠军|沙王冠冠军/.test(name)) {
