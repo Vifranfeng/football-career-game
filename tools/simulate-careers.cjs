@@ -170,10 +170,20 @@ function printCareer(result, label) {
 if (process.argv.includes("--batch")) {
   const total = Number(process.argv[process.argv.indexOf("--batch") + 1]) || 100;
   const peaks = [];
+  let totalChampionships = 0;
+  let totalCareerSeasons = 0;
+  let totalCareerAppearances = 0;
+  let totalCareerGoals = 0;
+  let totalCareerAssists = 0;
+  let totalClubsRepresented = 0;
   const positions = ["GK", "CB", "LB", "RB", "CM", "CAM", "LM", "RM", "LW", "RW", "ST"];
   const positionOutput = Object.fromEntries(positions.map((position) => [
     position,
     { seasons: 0, appearances: 0, goals: 0, assists: 0 }
+  ]));
+  const ballonDorByPosition = Object.fromEntries(positions.map((position) => [
+    position,
+    { careers: 0, nominations: 0, wins: 0, winningCareers: 0 }
   ]));
   let forcedDerbiesWithoutMemory = 0;
   let falseChampionMemories = 0;
@@ -216,7 +226,9 @@ if (process.argv.includes("--batch")) {
   const inheritedEuropeanQualificationExamples = [];
   for (let index = 0; index < total; index += 1) {
     const strategy = index % 2 === 0 ? "stable" : "ambitious";
-    const result = runCareer(strategy, index, positions[index % positions.length]);
+    const simulatedPosition = positions[index % positions.length];
+    const result = runCareer(strategy, index, simulatedPosition);
+    ballonDorByPosition[simulatedPosition].careers += 1;
     if (result.player.everCaptain) captainCareers += 1;
     if (result.seasons.some((season) => season.legendStory)) careersWithLegendMoment += 1;
     if (result.seasons.some((season) => season.eventId.startsWith("club-identity-"))) {
@@ -227,7 +239,14 @@ if (process.argv.includes("--batch")) {
     }
     if (result.seasons.some((season) => season.trophies.includes("金球奖"))) {
       ballonDorWinningCareers += 1;
+      ballonDorByPosition[simulatedPosition].winningCareers += 1;
     }
+    totalChampionships += result.player.totals.trophies;
+    totalCareerSeasons += result.player.career.length;
+    totalCareerAppearances += result.player.totals.appearances;
+    totalCareerGoals += result.player.totals.goals;
+    totalCareerAssists += result.player.totals.assists;
+    totalClubsRepresented += new Set(result.player.career.map((entry) => entry.clubId)).size;
     peaks.push(Math.max(...result.player.career.map((entry) => entry.overall)));
     result.seasons.forEach((season, seasonIndex) => {
       const previousSeason = result.seasons[seasonIndex - 1];
@@ -403,7 +422,11 @@ if (process.argv.includes("--batch")) {
         injuredHighAppearanceViolation += 1;
       }
       if (season.ballonDorNominated) ballonDorNominatedSeasons += 1;
-      if (season.trophies.includes("金球奖")) ballonDorWins += 1;
+      if (season.ballonDorNominated) ballonDorByPosition[simulatedPosition].nominations += 1;
+      if (season.trophies.includes("金球奖")) {
+        ballonDorWins += 1;
+        ballonDorByPosition[simulatedPosition].wins += 1;
+      }
       if (season.event.includes("名单公布")) {
         nationalTournamentEvents += 1;
         const eventCompetition = season.event.replace("名单公布", "");
@@ -460,6 +483,17 @@ if (process.argv.includes("--batch")) {
   const report = {
     total,
     averagePeak: Math.round(peaks.reduce((sum, peak) => sum + peak, 0) / total * 10) / 10,
+    careerAverages: {
+      championships: Math.round(totalChampionships / total * 10) / 10,
+      seasons: Math.round(totalCareerSeasons / total * 10) / 10,
+      appearances: Math.round(totalCareerAppearances / total),
+      goals: Math.round(totalCareerGoals / total),
+      assists: Math.round(totalCareerAssists / total),
+      clubs: Math.round(totalClubsRepresented / total * 10) / 10,
+      ballonDorWins: Math.round(ballonDorWins / total * 100) / 100,
+      ballonDorWinningCareerRate: Math.round(ballonDorWinningCareers / total * 1000) / 10
+    },
+    ballonDorByPosition,
     bands,
     outputPer30AtOverall80To87: outputPer30,
     consistency: {
@@ -530,6 +564,8 @@ if (process.argv.includes("--batch")) {
       total: report.total,
       averagePeak: report.averagePeak,
       bands: report.bands,
+      careerAverages: report.careerAverages,
+      ballonDorByPosition: report.ballonDorByPosition,
       consistency: {
         clubIdentityCareers: report.consistency.clubIdentityCareers,
         lateCareerCoronationCareers: report.consistency.lateCareerCoronationCareers,

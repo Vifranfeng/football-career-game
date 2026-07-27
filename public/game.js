@@ -662,6 +662,7 @@
       buildMiniStat("出场", summary.appearances) +
       buildMiniStat("进球", summary.goals) +
       buildMiniStat("助攻", summary.assists) +
+      buildMiniStat("球队贡献", summary.teamContribution || 0) +
       buildMiniStat("成长", signed(summary.growth)) +
       buildMiniStat("身价", formatMoney(summary.value)) +
       buildMiniStat("声望", player.status.reputation) +
@@ -728,6 +729,7 @@
       (summary.rejectedOfferNote ? '  <p class="section-copy rejected-offer-note">' + summary.rejectedOfferNote + "</p>" : "") +
       '  <h3 class="summary-subtitle">全年总评</h3>' +
       '  <p class="section-copy season-review">' + buildAnnualReview(summary, player) + "</p>" +
+      buildPositionContributionNote(summary) +
       (summary.clubDecisionNote ? '  <p class="section-copy">' + summary.clubDecisionNote + "</p>" : "") +
       '  <p class="choice-result"><strong>关键选择：</strong>' + state.lastChoiceLabel + ' · ' + state.lastChoiceOutcome + "</p>" +
       "</div>" +
@@ -869,15 +871,50 @@
       shortStays >= 4;
     var peakOverall = getPeakOverall(player.career);
     var verdicts = [];
+    var careerTrophies = player.career.reduce(function (all, entry) {
+      return all.concat(entry.trophies || []).concat(entry.nationalHonors || []);
+    }, []);
+    var trophyCount = function (name) {
+      return careerTrophies.filter(function (trophy) { return trophy === name; }).length;
+    };
+    var domesticCupPattern = /足总杯冠军|国王杯冠军|德国杯冠军|意大利杯冠军|法国杯冠军|足协杯冠军|天皇杯冠军|韩国足总杯冠军|沙王冠冠军/;
+    var domesticCupCount = careerTrophies.filter(function (name) {
+      return domesticCupPattern.test(name);
+    }).length;
+    var fourthPlaceCount = player.career.filter(function (entry) {
+      return entry.leagueStanding && entry.leagueStanding.position === 4;
+    }).length;
+    var runnerUpCount = player.career.reduce(function (sum, entry) {
+      return sum + (entry.leagueStanding && entry.leagueStanding.position === 2 ? 1 : 0) +
+        (entry.achievements || []).filter(function (name) { return /亚军/.test(name); }).length;
+    }, 0);
+    var comebackCount = player.career.filter(function (entry) {
+      return /逆转|翻盘|让二追三/.test((entry.seasonMoment || "") + (entry.legendStory || "") + (entry.keyMatchStory || ""));
+    }).length;
+    var lateWinnerCount = player.career.filter(function (entry) {
+      return /绝杀|补时/.test((entry.seasonMoment || "") + (entry.legendStory || "") + (entry.keyMatchStory || ""));
+    }).length;
+    var penaltyMissCount = player.career.filter(function (entry) {
+      return /点球踢飞|罚失点球/.test((entry.seasonMoment || "") + (entry.keyMatchStory || ""));
+    }).length;
+    var injurySeasons = player.career.filter(function (entry) {
+      return entry.injuries && entry.injuries.length;
+    }).length;
+    var ironSeasons = player.career.filter(function (entry) {
+      return entry.appearances >= 40 && (!entry.injuries || !entry.injuries.length);
+    }).length;
+    var careerCleanSheets = player.career.reduce(function (sum, entry) {
+      return sum + (entry.cleanSheets || 0);
+    }, 0);
     var primaryClubShare = longestStay && player.totals.appearances
       ? longestStay.appearances / player.totals.appearances
       : 0;
     var isOneClubCareer =
       longestStay &&
-      longestStay.seasons >= 12 &&
-      longestStay.appearances >= 320 &&
-      primaryClubShare >= 0.78 &&
-      formalTransferCount <= 2;
+      longestStay.seasons >= 10 &&
+      longestStay.appearances >= 260 &&
+      primaryClubShare >= 0.68 &&
+      formalTransferCount <= 3;
     var careerScoringRate = player.totals.appearances
       ? player.totals.goals / player.totals.appearances
       : 0;
@@ -1057,6 +1094,87 @@
         icon: "↯",
         name: "漂泊失意",
         description: "频繁辗转多支球队，却没能真正找到归属",
+        tier: "negative"
+      });
+    }
+
+    if (trophyCount("足总杯冠军") >= 3) {
+      verdicts.push({
+        icon: "☕",
+        name: "保温杯收集者",
+        description: "至少三次捧起足总杯，杯赛保温工作十分稳定"
+      });
+    }
+    if (fourthPlaceCount >= 4) {
+      verdicts.push({
+        icon: "④",
+        name: "争四狂魔",
+        description: "四次以上把联赛第四名收入囊中"
+      });
+    }
+    if (runnerUpCount >= 5) {
+      verdicts.push({
+        icon: "Ⅱ",
+        name: "银牌收藏家",
+        description: "至少五次距离冠军只差最后一步",
+        tier: "negative"
+      });
+    }
+    if (trophyCount("欧联杯冠军") >= 3) {
+      verdicts.push({
+        icon: "▽",
+        name: "欧联批发商",
+        description: "三次以上拿下欧联杯，周四夜晚格外熟悉"
+      });
+    }
+    if (domesticCupCount >= 6) {
+      verdicts.push({
+        icon: "DNA",
+        name: "杯赛DNA",
+        description: "六座以上国内杯赛冠军证明淘汰赛血统"
+      });
+    }
+    if (comebackCount >= 4) {
+      verdicts.push({
+        icon: "↻",
+        name: "逆风局专家",
+        description: "多次参与翻盘和逆转，落后才像真正开始"
+      });
+    }
+    if (lateWinnerCount >= 4) {
+      verdicts.push({
+        icon: "90+",
+        name: "绝杀说明书",
+        description: "补时与绝杀反复成为生涯关键词"
+      });
+    }
+    if (careerCleanSheets >= 180) {
+      verdicts.push({
+        icon: "▰",
+        name: "门前卷帘门",
+        description: "生涯完成至少一百八十次零封"
+      });
+    }
+    if (ironSeasons >= 8) {
+      verdicts.push({
+        icon: "∞",
+        name: "铁人模式",
+        description: "至少八个赛季健康出场四十次以上"
+      });
+    }
+    if (injurySeasons >= 6) {
+      verdicts.push({
+        icon: "✚",
+        name: "玻璃属性拉满",
+        description: "六个以上赛季受到伤病影响",
+        tier: "negative"
+      });
+    }
+    if (penaltyMissCount >= 2) {
+      verdicts.push({
+        icon: "×",
+        name: "十二码恐惧症",
+        description: "关键点球不止一次飞向看台",
         tier: "negative"
       });
     }
@@ -1320,6 +1438,9 @@
     if (event.id === "captain-crisis") {
       dynamicResolution.effects.reputation += option.label === "公开保护队友" ? 1 : 0;
       dynamicResolution.note = "队长身份让你的选择影响了整个更衣室，后续比赛会检验这次处理是否有效。";
+    }
+    if (event.id.indexOf("captain-scrutiny-") === 0) {
+      state.player.lastCaptainScrutinySeason = state.player.seasonYear;
     }
     if (event.id.indexOf("club-identity-") === 0) {
       state.player.clubIdentityEventsSeen = state.player.clubIdentityEventsSeen || [];
@@ -1980,6 +2101,11 @@
       appearances: stats.appearances,
       goals: stats.goals,
       assists: stats.assists,
+      teamContribution: stats.teamContribution,
+      cleanSheets: stats.cleanSheets,
+      penaltySaves: stats.penaltySaves,
+      headedGoals: stats.headedGoals,
+      setPieceGoals: stats.setPieceGoals,
       leagueGoals: stats.leagueGoals,
       leagueAssists: stats.leagueAssists,
       competitionStats: competitionStats,
@@ -3498,6 +3624,7 @@
       var contextEventIsPriority = contextEvent &&
         (contextEvent.id === "captain-appointment" ||
          contextEvent.id === "captain-crisis" ||
+         contextEvent.id.indexOf("captain-scrutiny-") === 0 ||
          contextEvent.id === "outgrown-current-club" ||
          contextEvent.id === "late-career-coronation" ||
          contextEvent.id === "career-role-transition" ||
@@ -3563,7 +3690,9 @@
         return player.age <= 23;
       }
       if (event.id === "veteran-leader") {
-        return player.age >= 28;
+        var lastVeteranSeason = (player.eventLastSeenSeason || {})[event.id] || 0;
+        return player.age >= 25 &&
+          (!lastVeteranSeason || player.seasonYear - lastVeteranSeason >= 6);
       }
       if (event.maxAge && player.age > event.maxAge) {
         return false;
@@ -3662,6 +3791,11 @@
     var loyaltyEvent = buildClubLoyaltyEvent(player);
     if (loyaltyEvent) {
       return loyaltyEvent;
+    }
+
+    var offFieldEvent = buildOffFieldPressureEvent(player);
+    if (offFieldEvent) {
+      return offFieldEvent;
     }
 
     var injuryEvent = buildUnexpectedInjuryEvent(player);
@@ -3771,21 +3905,21 @@
       return sum + season.appearances;
     }, 0);
     var captainChance = clamp(
-      0.24 +
-      Math.max(0, seasonsAtClub - 3) * 0.1 +
+      0.34 +
+      Math.max(0, seasonsAtClub - 2) * 0.1 +
       Math.max(0, player.status.reputation - 58) * 0.006 +
-      Math.max(0, recentAppearances - 70) * 0.002,
-      0.24,
-      0.82
+      Math.max(0, recentAppearances - 45) * 0.002,
+      0.3,
+      0.86
     );
     if (
       !player.isCaptain &&
-      player.age >= 23 &&
-      seasonsAtClub >= 3 &&
-      player.status.reputation >= 58 &&
-      player.status.coachRelation >= 58 &&
+      player.age >= 20 &&
+      seasonsAtClub >= 2 &&
+      player.status.reputation >= 52 &&
+      player.status.coachRelation >= 52 &&
       player.overall >= getClubStrength(club) - 8 &&
-      recentAppearances >= 55 &&
+      recentAppearances >= 36 &&
       Math.random() < captainChance
     ) {
       return {
@@ -3799,15 +3933,45 @@
         ]
       };
     }
-    if (player.isCaptain && Math.random() < 0.12) {
+    var lastCaptainScrutiny = player.lastCaptainScrutinySeason || 0;
+    if (
+      player.isCaptain &&
+      (!lastCaptainScrutiny || player.seasonYear - lastCaptainScrutiny >= 5) &&
+      Math.random() < 0.14
+    ) {
+      var scrutinyType = pickOne(["fans", "teammates", "media"]);
+      if (scrutinyType === "fans") {
+        return {
+          id: "captain-scrutiny-fans",
+          title: "球迷开始质疑队长袖标",
+          text: "球队连续丢分后，看台上出现了针对你的嘘声。部分球迷认为你的表现和态度不足以代表俱乐部。",
+          options: [
+            { label: "赛后主动面对球迷", effects: { reputation: 3, happiness: -2, fitness: -2 } },
+            { label: "用下一场表现回应", effects: { reputation: 2, fitness: -5, coachRelation: 1 } },
+            { label: "拒绝回应看台压力", effects: { happiness: 2, reputation: -3 } }
+          ]
+        };
+      }
+      if (scrutinyType === "teammates") {
+        return {
+          id: "captain-scrutiny-teammates",
+          title: "队友并不完全服从你的领导",
+          text: "几名主力认为你在更衣室拥有过多话语权，训练中的分歧已经开始影响球队气氛。",
+          options: [
+            { label: "私下听取队友意见", effects: { happiness: 3, coachRelation: 2, reputation: -1 } },
+            { label: "坚持队长应有标准", effects: { reputation: 2, coachRelation: 3, happiness: -3 } },
+            { label: "让主教练出面处理", effects: { coachRelation: 4, reputation: -2, happiness: -1 } }
+          ]
+        };
+      }
       return {
-        id: "captain-crisis",
-        title: "队长必须回应更衣室危机",
-        text: "连续失分后年轻球员和老将对战术产生分歧，教练组要求你代表球队作出回应。",
+        id: "captain-scrutiny-media",
+        title: "记者公开质疑你的领袖能力",
+        text: "发布会上，记者连续追问你是否只在顺境中像一名队长，并把近期失利归因于球队缺少真正的领导者。",
         options: [
-          { label: "公开保护队友", effects: { reputation: 3, happiness: 3, coachRelation: -1 } },
-          { label: "内部要求提高标准", effects: { coachRelation: 4, reputation: 2, fitness: -3 } },
-          { label: "完全支持主教练", effects: { coachRelation: 6, happiness: -3, reputation: -1 } }
+          { label: "公开承担全部责任", effects: { reputation: 3, happiness: -3, fitness: -2 } },
+          { label: "强调责任属于全队", effects: { happiness: 2, reputation: -1, coachRelation: 1 } },
+          { label: "直接反驳记者质疑", effects: { reputation: 2, coachRelation: -2, happiness: -1 } }
         ]
       };
     }
@@ -3934,6 +4098,21 @@
   }
 
   function buildSeasonTransitionEvent(player) {
+    var collapseArc = player.pendingCollapseArc;
+    if (collapseArc && player.seasonYear >= collapseArc.nextSeasonYear) {
+      player.pendingCollapseArc = null;
+      player.pendingSeasonTransition = null;
+      return {
+        id: "catastrophic-defeat-aftermath-" + player.seasonYear,
+        title: "欧冠惨案的余震仍未结束",
+        text: "那场大比分失利已经过去数月，但更衣室、球迷和媒体仍在追问球队会就此沉沦，还是把耻辱变成反弹起点。",
+        options: [
+          { label: "推动全队彻底复盘", effects: { fitness: -3, coachRelation: 2 } },
+          { label: "公开承担惨败责任", effects: { reputation: 1, happiness: -2 } },
+          { label: "从身体和训练重建", effects: { fitness: 2, coachRelation: 1 } }
+        ]
+      };
+    }
     var transition = player.pendingSeasonTransition;
     if (!transition) return null;
     player.pendingSeasonTransition = null;
@@ -4004,7 +4183,7 @@
     var club = getClubById(player.currentClubId);
     var yearsAtClub = player.age - (player.currentClubStartAge || 16);
     var seen = player.loyaltyMilestonesSeen || [];
-    var milestones = [16, 12, 8, 5];
+    var milestones = [16, 12, 10, 8, 5];
     var milestone = milestones.find(function (years) {
       return yearsAtClub >= years && seen.indexOf(years) === -1;
     });
@@ -4033,6 +4212,15 @@
         { label: "接受功勋领袖职责", effects: { reputation: 5, coachRelation: 5, happiness: 3, fitness: -2 } },
         { label: "只专注自己的比赛", effects: { fitness: 2, coachRelation: -1 } },
         { label: "开始考虑新的生活", effects: { transferInterest: 7, happiness: 2 } }
+      ];
+    } else if (milestone >= 10) {
+      title = "十年坚守写成一人一城";
+      text = "你已经连续为 " + clubName + " 效力 " + yearsAtClub +
+        " 年。十年间的出场和贡献让球迷开始把你的名字与这座城市绑定在一起。";
+      options = [
+        { label: "继续守护这座城市", effects: { reputation: 5, coachRelation: 4, happiness: 4 } },
+        { label: "把忠诚留在球场上", effects: { coachRelation: 3, fitness: -2, reputation: 2 } },
+        { label: "不排除未来新挑战", effects: { transferInterest: 6, happiness: 1, reputation: -2 } }
       ];
     } else if (milestone >= 8) {
       title = "队长袖标与长期责任摆在面前";
@@ -4367,6 +4555,54 @@
     };
   }
 
+  function buildOffFieldPressureEvent(player) {
+    var eventChance = 0.14 +
+      (player.status.happiness < 50 ? 0.05 : 0) +
+      (player.status.coachRelation < 48 ? 0.04 : 0) +
+      (player.status.reputation >= 82 ? 0.025 : 0);
+    if (Math.random() >= eventChance) {
+      return null;
+    }
+
+    var lastSeen = player.eventLastSeenSeason || {};
+    var candidates = [
+      {
+        id: "dressing-room-friction",
+        title: "更衣室矛盾逐渐公开",
+        text: "连续几场比赛的分工争议让队内气氛变得紧张，有队友认为你获得了过多球权和关注，教练组要求尽快平息分歧。",
+        options: [
+          { label: "私下与队友沟通", effects: { happiness: 2, coachRelation: 2, reputation: -1, fitness: -1 } },
+          { label: "公开维护自己的位置", effects: { reputation: 2, happiness: -3, coachRelation: -2 } },
+          { label: "主动让出部分职责", effects: { happiness: 3, coachRelation: 3, reputation: -2 } }
+        ]
+      },
+      {
+        id: "media-pressure-cycle",
+        title: "舆论风向突然转冷",
+        text: "媒体连续放大你的失误，社交平台上的讨论也开始影响训练氛围。一次不恰当的回应可能让风波继续升级。",
+        options: [
+          { label: "接受采访正面回应", effects: { reputation: 3, happiness: -2, fitness: -2 } },
+          { label: "暂停发声专注比赛", effects: { coachRelation: 2, happiness: 1, reputation: -1 } },
+          { label: "用公开训练回应质疑", effects: { reputation: 2, coachRelation: 2, fitness: -5 } }
+        ]
+      },
+      {
+        id: "transfer-rumor-storm",
+        title: "转会绯闻扰乱赛季节奏",
+        text: "多家媒体把你与其他俱乐部联系起来，传闻尚未得到证实，却已经让球迷、队友和管理层开始猜测你的未来。",
+        options: [
+          { label: "公开承诺留队", effects: { reputation: 2, happiness: 1, coachRelation: 3, transferInterest: -4 } },
+          { label: "保留未来可能性", effects: { transferInterest: 7, reputation: 1, coachRelation: -3, happiness: -1 } },
+          { label: "交给经纪团队处理", effects: { transferInterest: 3, happiness: 2, reputation: -2, coachRelation: -1 } }
+        ]
+      }
+    ].filter(function (event) {
+      return !lastSeen[event.id] || player.seasonYear - lastSeen[event.id] >= 4;
+    });
+
+    return candidates.length ? pickOne(candidates) : null;
+  }
+
   function buildUnexpectedInjuryEvent(player) {
     var workloadRisk = player.status.fitness < 65 ? 0.08 : player.status.fitness < 78 ? 0.035 : 0;
     var ageRisk = player.age >= 31 ? 0.035 : player.age >= 28 ? 0.015 : 0;
@@ -4376,6 +4612,7 @@
     }
 
     var severe = Math.random() < 0.22;
+
     return {
       id: severe ? "unexpected-major-injury" : "unexpected-injury",
       title: severe ? "意外重伤打乱赛季计划" : "突发伤病迫使你停下来",
@@ -5016,20 +5253,38 @@
       assistRate *= style.forwardAssists;
     }
 
-    var goalSeasonVariance = randomBetween(0.84, 1.17);
+    var goalSeasonVariance = randomBetween(0.86, 1.14);
     var assistSeasonVariance = randomBetween(0.84, 1.17);
-    if (goalSkill >= 82 && Math.random() < 0.025) goalSeasonVariance *= randomBetween(1.3, 1.55);
+    if (goalSkill >= 82 && Math.random() < 0.012) goalSeasonVariance *= randomBetween(1.18, 1.32);
     if (assistSkill >= 82 && Math.random() < 0.025) assistSeasonVariance *= randomBetween(1.3, 1.5);
-    var goalLambda = appearances * goalRate * overallFactor * style.chances * goalSeasonVariance;
+    var goalCeiling = getSeasonGoalCeiling(player, appearances, goalSkill);
+    var goalLambda = Math.min(
+      goalCeiling * 0.92,
+      appearances * goalRate * overallFactor * style.chances * goalSeasonVariance
+    );
     var assistLambda = appearances * assistRate * overallFactor * style.chances * assistSeasonVariance;
-    var goals = Math.min(appearances * 2, samplePoisson(goalLambda));
+    var goals = Math.min(goalCeiling, samplePoisson(goalLambda));
     var assists = Math.min(appearances, samplePoisson(assistLambda));
+    var contribution = simulatePositionContribution(
+      player,
+      club,
+      appearances,
+      goals,
+      assists,
+      profile,
+      style
+    );
     var goalSplit = allocateCompetitionOutput(goals, competitionStats);
     var assistSplit = allocateCompetitionOutput(assists, competitionStats);
     return {
       appearances: appearances,
       goals: goals,
       assists: assists,
+      teamContribution: contribution.score,
+      cleanSheets: contribution.cleanSheets,
+      penaltySaves: contribution.penaltySaves,
+      headedGoals: contribution.headedGoals,
+      setPieceGoals: contribution.setPieceGoals,
       leagueGoals: goalSplit.league,
       domesticCupGoals: goalSplit.domesticCup,
       continentalGoals: goalSplit.continental,
@@ -5037,6 +5292,114 @@
       domesticCupAssists: assistSplit.domesticCup,
       continentalAssists: assistSplit.continental
     };
+  }
+
+  function simulatePositionContribution(player, club, appearances, goals, assists, profile, style) {
+    var defensivePosition = ["GK", "CB", "LB", "RB"].indexOf(player.position) !== -1;
+    var cleanSheets = 0;
+    var penaltySaves = 0;
+    var headedGoals = 0;
+    var setPieceGoals = 0;
+    if (defensivePosition) {
+      var cleanSheetRate = clamp(
+        0.2 +
+        (getClubStrength(club) - 70) * 0.009 +
+        (player.overall - getClubStrength(club)) * 0.006,
+        0.12,
+        0.52
+      );
+      cleanSheets = Math.min(appearances, samplePoisson(appearances * cleanSheetRate));
+    }
+    if (player.position === "GK") {
+      penaltySaves = Math.min(
+        6,
+        samplePoisson(appearances * (0.025 + Math.max(0, (profile.reflexes || 60) - 70) * 0.0015))
+      );
+    } else if (player.position === "CB") {
+      headedGoals = Math.min(goals, Math.round(goals * randomBetween(0.55, 0.85)));
+      setPieceGoals = Math.min(goals, Math.max(headedGoals, Math.round(goals * style.setPieces * 0.68)));
+    } else if (player.position === "LB" || player.position === "RB") {
+      headedGoals = Math.min(goals, Math.round(goals * randomBetween(0.18, 0.42)));
+      setPieceGoals = Math.min(goals, Math.round(goals * style.setPieces * randomBetween(0.25, 0.5)));
+    }
+    var score;
+    if (player.position === "GK") {
+      score = 34 + appearances * 0.45 + cleanSheets * 1.25 + penaltySaves * 4.5 +
+        Math.max(0, player.overall - 75) * 0.7;
+    } else if (defensivePosition) {
+      score = 30 + appearances * 0.34 + cleanSheets * 0.72 + goals * 2.4 +
+        assists * 1.8 + headedGoals * 2 + setPieceGoals * 1.4 +
+        Math.max(0, player.overall - 75) * 0.55;
+    } else {
+      score = 28 + appearances * 0.28 + goals * 1.8 + assists * 1.55 +
+        Math.max(0, player.overall - 75) * 0.5;
+    }
+    return {
+      score: clamp(Math.round(score), 20, 99),
+      cleanSheets: cleanSheets,
+      penaltySaves: penaltySaves,
+      headedGoals: headedGoals,
+      setPieceGoals: setPieceGoals
+    };
+  }
+
+  function getSeasonGoalCeiling(player, appearances, goalSkill) {
+    var baseRates = {
+      GK: 0.025,
+      CB: 0.16,
+      LB: 0.23,
+      RB: 0.23,
+      CM: 0.38,
+      CAM: 0.7,
+      LM: 0.56,
+      RM: 0.56,
+      LW: 0.8,
+      RW: 0.8,
+      ST: 0.98
+    };
+    var eliteWeights = {
+      GK: 0,
+      CB: 0.18,
+      LB: 0.24,
+      RB: 0.24,
+      CM: 0.42,
+      CAM: 0.78,
+      LM: 0.72,
+      RM: 0.72,
+      LW: 0.92,
+      RW: 0.92,
+      ST: 1
+    };
+    var absoluteCaps = {
+      GK: 3,
+      CB: 18,
+      LB: 24,
+      RB: 24,
+      CM: 34,
+      CAM: 54,
+      LM: 48,
+      RM: 48,
+      LW: 66,
+      RW: 66,
+      ST: 75
+    };
+    var baseRate = baseRates[player.position] || 0.5;
+    var eliteBonus = Math.max(0, player.overall - 86) * 0.012 *
+      (eliteWeights[player.position] || 0.5);
+    var ceilingRate = baseRate + eliteBonus;
+    var isEliteAttacker = ["ST", "LW", "RW"].indexOf(player.position) !== -1 &&
+      player.overall >= 93 &&
+      goalSkill >= 88;
+
+    // Record-breaking scoring seasons remain possible, but should feel exceptional.
+    if (isEliteAttacker && Math.random() < 0.012) {
+      ceilingRate *= randomBetween(1.18, 1.3);
+    }
+
+    return Math.max(
+      player.position === "GK" ? 1 : 2,
+      Math.min(absoluteCaps[player.position] || 45, Math.round(appearances * ceilingRate))
+    );
   }
 
   function allocateCompetitionOutput(total, competitionStats) {
@@ -5113,7 +5476,11 @@
 
   function getLeagueRelativeOutputFactor(player, club) {
     var benchmark;
-    if (club.leagueLevel === 2) {
+    if (club.league === "China League One") {
+      benchmark = 61;
+    } else if (club.league === "Chinese Super League") {
+      benchmark = 67;
+    } else if (club.leagueLevel === 2) {
       benchmark = 67;
     } else if (isBigFiveTopFlight(club)) {
       benchmark = 83;
@@ -5127,7 +5494,11 @@
       benchmark = 74;
     }
     var relativeGap = player.overall - benchmark;
-    return clamp(1 + relativeGap * 0.027, 0.68, 1.42);
+    var gapWeight =
+      club.league === "Chinese Super League" || club.league === "China League One"
+        ? 0.035
+        : club.leagueLevel === 2 ? 0.032 : 0.027;
+    return clamp(1 + relativeGap * gapWeight, 0.68, 1.46);
   }
 
   function simulateInternationalStats(player, appearances) {
@@ -5165,11 +5536,11 @@
   function generateInitialPotential(baseOverall, academyClub, origin) {
     var roll = randomInt(1, 100);
     var potential;
-    if (roll <= 2) potential = Math.max(baseOverall + 10, randomInt(65, 69));
-    else if (roll <= 10) potential = Math.max(baseOverall + 16, randomInt(76, 80));
-    else if (roll <= 65) potential = randomInt(82, 86);
-    else if (roll <= 80) potential = randomInt(87, 90);
-    else if (roll <= 92) potential = randomInt(91, 94);
+    if (roll <= 5) potential = Math.max(baseOverall + 10, randomInt(65, 69));
+    else if (roll <= 20) potential = Math.max(baseOverall + 14, randomInt(72, 79));
+    else if (roll <= 60) potential = randomInt(80, 84);
+    else if (roll <= 82) potential = randomInt(85, 89);
+    else if (roll <= 94) potential = randomInt(90, 94);
     else potential = randomInt(95, 98);
 
     var academyScore = academyClub
@@ -5178,9 +5549,9 @@
         academyClub.youthChance * 0.25
       : 60;
     if (academyScore >= 82) {
-      potential = Math.max(82, potential + randomInt(1, 3));
+      potential += randomInt(0, 2);
     } else if (academyScore >= 72) {
-      potential = Math.max(80, potential + randomInt(0, 2));
+      potential += randomInt(0, 1);
     } else if (academyScore <= 58 && randomInt(1, 100) <= 28) {
       potential -= 1;
     }
@@ -5194,6 +5565,7 @@
     ) {
       potential += randomInt(1, 3);
     }
+    potential += 2;
     return clamp(potential, Math.max(65, baseOverall + 10), 99);
   }
 
@@ -5628,6 +6000,9 @@
       (seasonOutlook.continentalChampion === "欧冠冠军" ||
        seasonOutlook.leagueChampion ||
        seasonOutlook.worldChampion);
+    var eliteDefensiveChampion = seasonOutlook &&
+      (seasonOutlook.continentalChampion === "欧冠冠军" ||
+       seasonOutlook.worldChampion);
 
     if (player.position === "ST" || player.position === "LW" || player.position === "RW") {
       return output >= 30 || (majorChampion && output >= 23);
@@ -5639,9 +6014,16 @@
       return output >= 20 || (majorChampion && output >= 14);
     }
     if (player.position === "LB" || player.position === "RB") {
-      return output >= 11 && player.overall >= 90 && majorChampion;
+      return majorChampion &&
+        player.overall >= 88 &&
+        (output >= 8 || eliteDefensiveChampion) &&
+        stats.teamContribution >= 76;
     }
-    return player.overall >= 91 && stats.appearances >= 28 && majorChampion;
+    return player.overall >= 89 &&
+      stats.appearances >= 28 &&
+      majorChampion &&
+      stats.teamContribution >= 78 &&
+      (eliteDefensiveChampion || player.status.reputation >= 90);
   }
 
   function getBallonDorChance(player, stats, seasonOutlook) {
@@ -5653,33 +6035,55 @@
     var eliteDouble = seasonOutlook &&
       seasonOutlook.leagueChampion &&
       seasonOutlook.continentalChampion === "欧冠冠军";
+    var previousSeason = player.career && player.career.length
+      ? player.career[player.career.length - 1]
+      : null;
+    var mediaNarrativeBonus =
+      Math.max(-0.1, (player.status.reputation - 82) * 0.009) +
+      (previousSeason && previousSeason.ballonDorControversy ? 0.1 : 0) +
+      (previousSeason && previousSeason.ballonDorNominated ? 0.04 : 0);
+    var fairPlayBonus = clamp(
+      (player.status.coachRelation - 55) * 0.0025 +
+      (player.status.happiness - 55) * 0.0015,
+      -0.14,
+      0.14
+    );
+    var defensiveAwardCase =
+      ["GK", "CB", "LB", "RB"].indexOf(player.position) !== -1 &&
+      majorChampion &&
+      player.overall >= 89;
     var chance =
       0.22 +
       Math.max(0, player.overall - 88) * 0.055 +
-      Math.max(0, player.status.reputation - 78) * 0.008 +
+      Math.max(0, player.status.reputation - 78) * 0.006 +
       Math.max(0, output - 18) * 0.008 +
       (majorChampion ? 0.1 : 0) +
-      (eliteDouble ? 0.18 : 0);
+      (eliteDouble ? 0.18 : 0) +
+      mediaNarrativeBonus +
+      fairPlayBonus +
+      (defensiveAwardCase ? 0.12 : 0) +
+      Math.max(0, (stats.teamContribution || 70) - 78) * 0.008;
     if (eliteDouble && output >= 24 && player.status.reputation >= 88) {
       chance = Math.max(chance, 0.72);
     }
-    var previousWins = (player.career || []).filter(function (season) {
-      return (season.trophies || []).indexOf("金球奖") !== -1;
-    });
-    if (previousWins.length && previousWins[previousWins.length - 1].age === player.age - 1) {
-      chance *= 0.72;
-    }
-    if (previousWins.length >= 3) {
-      chance *= 0.58;
-    }
-    return clamp(chance, 0.2, 0.82);
+    return clamp(chance, 0.08, 0.86);
   }
 
   function buildBallonDorControversy(player, club, stats, trophies, seasonOutlook) {
+    var previousControversies = (player.career || []).filter(function (season) {
+      return Boolean(season.ballonDorControversy);
+    });
     if (
       !player.pendingBallonDorNomination ||
       trophies.indexOf("金球奖") !== -1 ||
-      stats.appearances < 30
+      stats.appearances < 30 ||
+      previousControversies.length >= 2
+    ) {
+      return "";
+    }
+    if (
+      previousControversies.length &&
+      player.age - previousControversies[previousControversies.length - 1].age < 4
     ) {
       return "";
     }
@@ -5696,6 +6100,13 @@
       robberyScore < 105 &&
       !(player.overall >= 93 && stats.goals >= 35 && output >= 55)
     ) {
+      return "";
+    }
+    var controversyChance = previousControversies.length ? 0.18 : 0.34;
+    if (player.overall >= 94 && output >= 60) {
+      controversyChance += 0.08;
+    }
+    if (Math.random() >= controversyChance) {
       return "";
     }
     var rivalClubs = window.CLUBS.filter(function (candidate) {
@@ -7412,8 +7823,27 @@
         (player.overall - 82) * 0.2 + (tacticalFit - 68) * 0.16 +
         tacticalBonus + randomBetween(-7, 7);
       var advanced = matchScore >= 0;
+      var collapseChance = clamp(
+        0.06 + Math.max(0, -matchScore - 2) * 0.025,
+        0.06,
+        0.22
+      );
+      var catastrophicDefeat = !advanced && Math.random() < collapseChance;
 
-      if (advanced && option.label === "持续冲击对手禁区" && Math.random() < 0.24) {
+      if (catastrophicDefeat) {
+        var collapseScore = pickOne(["0:5", "1:6", "2:7", "2:8"]);
+        effects.reputation -= randomInt(7, 11);
+        effects.happiness -= randomInt(8, 13);
+        effects.coachRelation -= randomInt(5, 8);
+        effects.fitness -= randomInt(3, 7);
+        player.developmentMomentum = Math.min(-2, player.developmentMomentum || 0);
+        player.pendingCollapseArc = {
+          nextSeasonYear: player.seasonYear + 1,
+          opponentClubId: event.opponentClubId
+        };
+        note = event.stage + "面对 " + opponentName + "，球队从上半场开始全面失控，最终以 " +
+          collapseScore + " 遭遇欧冠惨案。防线、战术和更衣室都受到重创，这场失利成为俱乐部多年难以摆脱的伤痕。";
+      } else if (advanced && option.label === "持续冲击对手禁区" && Math.random() < 0.24) {
         effects.reputation -= 4;
         effects.happiness += 2;
         note = event.stage + "面对 " + opponentName + "，你在补时阶段制造争议点球并帮助球队晋级；胜利保住了，但判罚在赛后引发巨大争论。";
@@ -7429,11 +7859,11 @@
       majorMatchStory = note;
       competitionImpact = {
         leaguePoints: 0,
-        continentalStrength: advanced ? 4 : 0,
+        continentalStrength: advanced ? 4 : catastrophicDefeat ? -5 : 0,
         shootoutStage: event.stage.replace("欧冠", "").replace("战", ""),
         shootoutAdvanced: advanced,
         opponentClubId: event.opponentClubId,
-        source: event.stage + "对阵" + opponentName
+        source: catastrophicDefeat ? "欧冠惨案" : event.stage + "对阵" + opponentName
       };
     }
 
@@ -7461,22 +7891,44 @@
           shootoutBonus = -2;
         }
       }
+      var playerTakesPenalty = player.position !== "GK" &&
+        option.label !== "不主动进入前五顺位";
+      // Each kick receives a fresh hidden probability and ignores player ratings.
+      var penaltyWindow = randomBetween(0.48, 0.94);
+      var playerScoredPenalty = !playerTakesPenalty || Math.random() < penaltyWindow;
       var shootoutScore =
         (getClubStrength(getClubById(player.currentClubId)) - getClubStrength(shootoutOpponent)) * 0.35 +
         (shootoutSkill - 68) * 0.18 +
         shootoutBonus +
+        (playerTakesPenalty ? (playerScoredPenalty ? 2 : -5) : 0) +
         randomBetween(-6, 6);
       var shootoutAdvanced = shootoutScore >= 0;
-      if (shootoutAdvanced) {
+      if (playerTakesPenalty && !playerScoredPenalty && shootoutAdvanced) {
+        effects.reputation -= 2;
+        effects.happiness -= 2;
+        note = "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
+          " 的点球大战中，你把点球踢飞了；好在队友和门将随后救回局面，球队仍然惊险晋级。";
+      } else if (playerTakesPenalty && !playerScoredPenalty) {
+        effects.reputation -= 6;
+        effects.happiness -= 7;
+        note = "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
+          " 的点球大战中，你把点球踢飞，球队最终被淘汰，这次罚失成为赛后舆论的焦点。";
+      } else if (shootoutAdvanced) {
         effects.reputation += 5;
         effects.happiness += 4;
-        note = "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
-          " 的点球大战中，你的选择帮助球队顶住压力并成功晋级。";
+        note = playerTakesPenalty
+          ? "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
+            " 的点球大战中，你罚进自己的点球，球队最终顶住压力成功晋级。"
+          : "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
+            " 的点球大战中，你的选择帮助球队顶住压力并成功晋级。";
       } else {
         effects.reputation -= option.label === "不主动进入前五顺位" ? 2 : 4;
         effects.happiness -= 5;
-        note = "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
-          " 的点球大战中，你的选择没能换来晋级，球队就此出局。";
+        note = playerTakesPenalty
+          ? "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
+            " 的点球大战中，你罚进了自己的点球，但球队仍在后续轮次落败出局。"
+          : "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
+            " 的点球大战中，你的选择没能换来晋级，球队就此出局。";
       }
       majorMatchStory = note;
       competitionImpact = {
@@ -7952,6 +8404,108 @@
       }
     }
 
+    if (event.id.indexOf("catastrophic-defeat-aftermath-") === 0) {
+      var reboundChance =
+        option.label === "推动全队彻底复盘" ? 0.56 :
+        option.label === "从身体和训练重建" ? 0.52 : 0.48;
+      reboundChance += (player.status.coachRelation - 55) * 0.002;
+      reboundChance += (player.status.happiness - 55) * 0.0015;
+      if (Math.random() < clamp(reboundChance, 0.34, 0.68)) {
+        effects.reputation += 4;
+        effects.happiness += 5;
+        effects.coachRelation += 3;
+        effects.fitness += 3;
+        player.developmentMomentum = Math.max(3, player.developmentMomentum || 0);
+        note = "球队没有被惨案击垮。复盘和训练重新凝聚了更衣室，耻辱开始转化为触底反弹的动力。";
+      } else {
+        effects.reputation -= 4;
+        effects.happiness -= 6;
+        effects.coachRelation -= 4;
+        effects.fitness -= 3;
+        player.potential = Math.max(player.overall, player.potential - randomInt(1, 3));
+        player.developmentMomentum = Math.min(-3, player.developmentMomentum || 0);
+        note = "惨败的裂痕没有愈合。更衣室互相怀疑，舆论持续施压，球队和你的发展都进入一段沉沦期。";
+      }
+    }
+
+    var alreadyFailed = classifyChoiceEffect(note, effects, {
+      competitionOutcome: competitionOutcome
+    }) === "failure";
+    var hasResolvedHighStakesOutcome = Boolean(
+      competitionOutcome ||
+      competitionImpact ||
+      positionChange ||
+      /成功|没有成功|未能|失败|受挫|反复|淘汰|落败/.test(note)
+    );
+    if (!alreadyFailed && !hasResolvedHighStakesOutcome) {
+      var riskChance = 0.18;
+      if (/主动|公开|强行|全力|提前|承担|要求|反击/.test(option.label)) {
+        riskChance += 0.12;
+      }
+      if (player.status.fitness < 60) riskChance += 0.07;
+      if (player.status.happiness < 45) riskChance += 0.06;
+      if (player.status.coachRelation < 42) riskChance += 0.06;
+      if (Math.random() < clamp(riskChance, 0.16, 0.48)) {
+        effects.overall = Math.min(0, effects.overall);
+        var setbackType = pickOne(["media", "locker-room", "physical", "sporting"]);
+        if (setbackType === "media") {
+          effects.reputation = Math.min(-randomInt(4, 8), effects.reputation);
+          effects.happiness = Math.min(-randomInt(2, 5), effects.happiness);
+          effects.transferInterest = Math.max(2, effects.transferInterest);
+          note = "计划没有按预想推进，失误被媒体持续放大，舆论争议让你的声望和心态明显受损。";
+        } else if (setbackType === "locker-room") {
+          effects.coachRelation = Math.min(-randomInt(4, 7), effects.coachRelation);
+          effects.happiness = Math.min(-randomInt(4, 7), effects.happiness);
+          effects.reputation = Math.min(-2, effects.reputation);
+          note = "这次决定引发更衣室矛盾，部分队友公开质疑你的处理方式，教练组也不得不介入。";
+        } else if (setbackType === "physical") {
+          effects.fitness = Math.min(-randomInt(6, 12), effects.fitness);
+          effects.happiness = Math.min(-randomInt(2, 4), effects.happiness);
+          effects.reputation = Math.min(-1, effects.reputation);
+          note = "你为执行决定付出了超出预期的身体代价，恢复节奏被打乱，随后一段时间的状态明显波动。";
+        } else {
+          effects.reputation = Math.min(-randomInt(3, 6), effects.reputation);
+          effects.coachRelation = Math.min(-randomInt(2, 5), effects.coachRelation);
+          effects.fitness = Math.min(-randomInt(2, 6), effects.fitness);
+          note = "事情的发展偏离原定方向，场上效果没有兑现承诺，教练组和外界同时降低了评价。";
+        }
+      } else if (Math.random() < 0.12) {
+        var positiveAftermath = pickOne(["support", "unity", "momentum"]);
+        if (positiveAftermath === "support") {
+          effects.reputation += randomInt(2, 5);
+          effects.happiness += randomInt(1, 3);
+          note = "这次处理意外赢得球迷和媒体支持，外界评价迅速转好。";
+        } else if (positiveAftermath === "unity") {
+          effects.coachRelation += randomInt(2, 5);
+          effects.happiness += randomInt(2, 4);
+          note = "你的处理方式让更衣室更加团结，队友和教练组都提高了对你的信任。";
+        } else {
+          effects.fitness += randomInt(2, 5);
+          effects.reputation += randomInt(1, 3);
+          note = "决定执行得比预期顺利，连续的正面反馈让你的竞技状态进一步提升。";
+        }
+      }
+    }
+    if (
+      !alreadyFailed &&
+      hasResolvedHighStakesOutcome &&
+      Math.random() < 0.14
+    ) {
+      var secondaryCost = pickOne(["media", "locker-room", "physical"]);
+      if (secondaryCost === "media") {
+        effects.reputation -= randomInt(2, 5);
+        effects.happiness -= randomInt(1, 3);
+        note += " 不过赛后的言论引发舆论争议，外界并没有完全接受你的处理方式。";
+      } else if (secondaryCost === "locker-room") {
+        effects.coachRelation -= randomInt(2, 4);
+        effects.happiness -= randomInt(2, 5);
+        note += " 不过队内对责任和球权分配产生分歧，更衣室关系因此出现裂痕。";
+      } else {
+        effects.fitness -= randomInt(5, 10);
+        note += " 不过这次决定造成明显透支，后续恢复和出场节奏都会受到影响。";
+      }
+    }
+
     return {
       effects: effects,
       note: note,
@@ -8021,6 +8575,21 @@
 
   function buildSummaryCard(label, value) {
     return '<div class="summary-card"><div class="stat-label">' + label + '</div><div class="stat-value">' + value + "</div></div>";
+  }
+
+  function buildPositionContributionNote(summary) {
+    if (summary.position === "GK") {
+      return '<p class="section-copy season-review"><strong>门将贡献：</strong>' +
+        (summary.cleanSheets || 0) + " 次零封，" +
+        (summary.penaltySaves || 0) + " 次扑出点球。关键扑救和禁区控制共同构成了你的赛季评价。</p>";
+    }
+    if (["CB", "LB", "RB"].indexOf(summary.position) !== -1) {
+      return '<p class="section-copy season-review"><strong>防守贡献：</strong>参与 ' +
+        (summary.cleanSheets || 0) + " 场零封，打入 " +
+        (summary.headedGoals || 0) + " 粒头球，其中 " +
+        (summary.setPieceGoals || 0) + " 球来自定位球进攻。</p>";
+    }
+    return "";
   }
 
   function renderTrophyPill(name) {
