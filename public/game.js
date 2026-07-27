@@ -537,6 +537,7 @@
     transferOptions: [],
     lastChoiceLabel: "",
     lastChoiceOutcome: "",
+    lastChoiceResultType: "neutral",
     gameOver: false,
     clubForms: {},
     clubEconomics: {},
@@ -1600,6 +1601,7 @@
     state.clubForms = {};
     state.clubEconomics = {};
     state.lastChoiceOutcome = "";
+    state.lastChoiceResultType = "neutral";
     render();
   }
 
@@ -1729,6 +1731,7 @@
       );
     }
     state.lastChoiceLabel = option.label;
+    state.lastChoiceResultType = dynamicResolution.resultType || "neutral";
     var summary = simulatePhase(state.player);
     state.lastChoiceOutcome = buildChoiceOutcome(event, option, summary, dynamicResolution.note);
     if (shouldForceMarketRetirement(state.player)) {
@@ -1773,6 +1776,7 @@
     var choiceResult = classifyChoiceEffect(failureText, effects, dynamicResolution);
     var choiceFailed = choiceResult === "failure";
     var choiceSucceeded = choiceResult === "success";
+    var choiceMixed = choiceResult === "mixed";
     var majorAchievement = (summary.achievements || []).find(function (name) {
       return /三冠王|世界冠军|世界俱乐部冠军|世界最佳球员|纪录|传奇/.test(name);
     });
@@ -1794,6 +1798,7 @@
       !hasRelegation &&
       !choiceFailed &&
       !choiceSucceeded &&
+      !choiceMixed &&
       !majorAchievement &&
       !hasBallonDorControversy &&
       !hasRefereeScandal &&
@@ -1880,6 +1885,13 @@
         '<div class="result-fx-card result-fx-success" style="--fx-order:' + cards.length + '">' +
         '  <div class="result-fx-up"><i>↑</i><i>↑</i><i>↑</i></div>' +
         '  <strong>选择成功</strong><span>你的决定收到了积极回报</span>' +
+        "</div>"
+      );
+    } else if (choiceMixed) {
+      cards.push(
+        '<div class="result-fx-card result-fx-neutral" style="--fx-order:' + cards.length + '">' +
+        '  <div class="neutral-fx-mark">±</div>' +
+        '  <strong>有得有失</strong><span>决定带来回报，也让你付出了代价</span>' +
         "</div>"
       );
     } else if (neutralPerformance) {
@@ -1993,16 +2005,22 @@
 
   function classifyChoiceEffect(text, effects, dynamicResolution) {
     var resultText = text || "";
+    if (
+      dynamicResolution &&
+      /^(success|failure|mixed|neutral)$/.test(dynamicResolution.resultType || "")
+    ) {
+      return dynamicResolution.resultType;
+    }
     var explicitFailure =
-      /没有成功|未能|没能|没有换来|没有奏效|不敌|被淘汰|落败|失败|失误|不适应|受挫|伤情反复|伤势反复|失去首发|状态下滑|声望.{0,4}(下降|下滑|受损)|遭遇重创|受到打击|舆论反噬|代价比预想更大|恢复.{0,4}打乱|逼得太紧|心理包袱|更加尖锐|更不满意|更不耐烦|表现没有完全接住|没交出足够|没有完全跟上/.test(resultText);
+      /没有成功|未能|没能|没有换来|没有奏效|不敌|被淘汰|落败|失败|失误|不适应|受挫|伤情反复|伤势反复|失去首发|失去位置|状态下滑|影响力.{0,4}(下降|受限)|声望.{0,6}(下降|下滑|受损)|遭遇重创|受到打击|舆论反噬|舆论.{0,6}(争议|质疑|施压|发酵)|代价.{0,8}(更大|过大|明显|超出)|恢复.{0,6}(打乱|受影响)|逼得太紧|心理包袱|更加尖锐|更不满意|更不耐烦|表现没有完全接住|没交出足够|没有完全跟上|卷进.{0,10}(情绪|矛盾)|消耗得不轻|受到.{0,6}消耗|关系.{0,6}(恶化|裂痕)|更衣室.{0,8}(矛盾|裂痕|怀疑)|引发.{0,8}(矛盾|不满|质疑)|公开质疑|长期休战|明显透支|没有完全接受|不完全买账|没有真正消失|没有完全兑现|无法完全支撑|很吃力|显得有些自私|观感变差/.test(resultText);
     var explicitSuccess =
-      /取得成功|决定.{0,6}奏效|赢得.{0,10}冠军|帮助球队晋级|成功|顶住|认可|满意|回应|适应效果很好|提升|稳住|兑现|接纳|得到控制|获得耐心|压住了伤病|避免了当众崩盘/.test(resultText);
+      /取得成功|决定.{0,6}奏效|赢得.{0,10}冠军|帮助球队晋级|成功|顶住|认可|满意|回应|适应效果很好|提升|稳住|兑现|接纳|得到控制|获得耐心|压住了伤病|避免了当众崩盘|赢得.{0,8}(支持|信任)|更加团结|评价迅速转好|取得正面效果|顺利/.test(resultText);
 
     if (dynamicResolution && dynamicResolution.competitionOutcome) {
       return dynamicResolution.competitionOutcome.won ? "success" : "failure";
     }
-    if (explicitFailure) {
-      return "failure";
+    if (explicitFailure && explicitSuccess) {
+      return "mixed";
     }
 
     var weights = {
@@ -2017,6 +2035,9 @@
       return sum + (effects[key] || 0) * weights[key];
     }, 0);
 
+    if (explicitFailure) {
+      return "failure";
+    }
     if (explicitSuccess && netEffect >= -1) {
       return "success";
     }
@@ -8896,14 +8917,15 @@
       }
     }
 
-    var alreadyFailed = classifyChoiceEffect(note, effects, {
+    var initialResultType = classifyChoiceEffect(note, effects, {
       competitionOutcome: competitionOutcome
-    }) === "failure";
+    });
+    var alreadyFailed = initialResultType === "failure";
     var hasResolvedHighStakesOutcome = Boolean(
       competitionOutcome ||
       competitionImpact ||
       positionChange ||
-      /成功|没有成功|未能|失败|受挫|反复|淘汰|落败/.test(note)
+      initialResultType !== "neutral"
     );
     if (!alreadyFailed && !hasResolvedHighStakesOutcome) {
       var riskChance = 0.18;
@@ -8974,9 +8996,13 @@
       }
     }
 
+    var finalResultType = classifyChoiceEffect(note, effects, {
+      competitionOutcome: competitionOutcome
+    });
     return {
       effects: effects,
       note: note,
+      resultType: finalResultType,
       competitionOutcome: competitionOutcome,
       majorMatchStory: majorMatchStory,
       competitionImpact: competitionImpact,
@@ -9719,6 +9745,7 @@
       transferOptions: [],
       lastChoiceLabel: "",
       lastChoiceOutcome: "",
+      lastChoiceResultType: "neutral",
       gameOver: false,
       clubForms: {},
       clubEconomics: {},

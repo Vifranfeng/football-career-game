@@ -135,6 +135,7 @@ function runCareer(strategy, seedOffset, requestedPosition) {
       ballonDorNominated: summary.ballonDorNominated,
       memory: summary.seasonMoment,
       choiceOutcome: summaryState.lastChoiceOutcome,
+      choiceResultType: summaryState.lastChoiceResultType,
       derbyNote: summary.derbyNote,
       derbyWasFeatured: summary.derbyWasFeatured,
       decision: summary.clubDecisionNote || "",
@@ -231,6 +232,8 @@ if (process.argv.includes("--batch")) {
   let nationalTournamentEventMismatch = 0;
   let choiceMemoryContradictions = 0;
   const choiceMemoryContradictionExamples = [];
+  let choiceEffectContradictions = 0;
+  const choiceEffectContradictionExamples = [];
   let continentalDecisionContradictions = 0;
   let championsLeagueShootoutEvents = 0;
   let clubIdentityCareers = 0;
@@ -264,6 +267,23 @@ if (process.argv.includes("--batch")) {
     peaks.push(Math.max(...result.player.career.map((entry) => entry.overall)));
     result.seasons.forEach((season, seasonIndex) => {
       const previousSeason = result.seasons[seasonIndex - 1];
+      const negativeChoiceText =
+        /没有成功|未能|没能|失败|受挫|不敌|淘汰|落败|失误|不适应|卷进|消耗得不轻|声望.{0,6}(下降|受损)|舆论.{0,6}(争议|反噬|质疑)|更衣室.{0,8}(矛盾|裂痕)|明显透支|长期休战/.test(season.choiceOutcome || "");
+      const positiveChoiceText =
+        /取得成功|决定.{0,6}奏效|帮助球队晋级|赢得.{0,10}冠军|稳住|得到认可|更加团结|评价迅速转好/.test(season.choiceOutcome || "");
+      if (
+        (negativeChoiceText && season.choiceResultType === "success") ||
+        (positiveChoiceText && !negativeChoiceText && season.choiceResultType === "failure")
+      ) {
+        choiceEffectContradictions += 1;
+        if (choiceEffectContradictionExamples.length < 8) {
+          choiceEffectContradictionExamples.push({
+            eventId: season.eventId,
+            resultType: season.choiceResultType,
+            outcome: season.choiceOutcome
+          });
+        }
+      }
       if (
         season.eventId === "late-career-coronation" &&
         season.leagueStanding.position !== 1
@@ -569,6 +589,10 @@ if (process.argv.includes("--batch")) {
       ,
       choiceMemoryContradictionExamples
       ,
+      choiceEffectContradictions
+      ,
+      choiceEffectContradictionExamples
+      ,
       continentalDecisionContradictions
       ,
       championsLeagueShootoutEvents
@@ -591,7 +615,9 @@ if (process.argv.includes("--batch")) {
         clubIdentityCareers: report.consistency.clubIdentityCareers,
         lateCareerCoronationCareers: report.consistency.lateCareerCoronationCareers,
         lateCareerCoronationContradictions: report.consistency.lateCareerCoronationContradictions,
-        falseChampionMemories: report.consistency.falseChampionMemories
+        falseChampionMemories: report.consistency.falseChampionMemories,
+        choiceEffectContradictions: report.consistency.choiceEffectContradictions,
+        choiceEffectContradictionExamples: report.consistency.choiceEffectContradictionExamples
       }
     }));
   } else {

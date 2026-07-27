@@ -19,6 +19,22 @@
     return Math.sqrt(-2 * Math.log(first)) * Math.cos(2 * Math.PI * second);
   }
 
+  function randomBetween(minimum, maximum) {
+    return minimum + Math.random() * (maximum - minimum);
+  }
+
+  function generateSeasonSwing() {
+    var roll = Math.random();
+    var direction = Math.random() < 0.5 ? -1 : 1;
+    if (roll < 0.025) {
+      return { value: direction * randomBetween(7, 11), type: direction > 0 ? "奇迹赛季" : "崩盘赛季" };
+    }
+    if (roll < 0.14) {
+      return { value: direction * randomBetween(3, 6), type: direction > 0 ? "超预期" : "低迷" };
+    }
+    return { value: normalRandom() * 2.15, type: "正常" };
+  }
+
   function getProfile(leagueId, teams, requestedMatches) {
     var configured = PROFILES[leagueId] || {};
     var teamCount = Math.max(2, teams.length);
@@ -74,10 +90,12 @@
     var playerImpact = options.isPlayerClub
       ? calculatePlayerImpact(options.player, club, options.seasonStats)
       : { total: 0, attack: 0, defense: 0 };
+    var seasonSwing = generateSeasonSwing();
     return {
       total: current * (1 - priorWeight) + historic * priorWeight + finance + form + squad +
-        playerImpact.total + Number(options.seasonPowerBonus || 0) + normalRandom() * 2.6,
-      playerImpact: playerImpact
+        playerImpact.total + Number(options.seasonPowerBonus || 0) + seasonSwing.value,
+      playerImpact: playerImpact,
+      seasonType: seasonSwing.type
     };
   }
 
@@ -115,7 +133,12 @@
         seasonPowerBonus: club.id === options.playerClubId ? options.playerClubPowerBonus : 0,
         seasonYear: options.seasonYear
       });
-      return { club: club, power: calculated.total, playerImpact: calculated.playerImpact };
+      return {
+        club: club,
+        power: calculated.total,
+        playerImpact: calculated.playerImpact,
+        seasonType: calculated.seasonType
+      };
     });
     var averagePower = powers.reduce(function (sum, item) { return sum + item.power; }, 0) / powers.length;
     var provisional = powers.map(function (item) {
@@ -125,7 +148,11 @@
         0.72,
         2.48
       );
-      var targetPoints = profile.matches * expectedPpm + normalRandom() * (profile.matches >= 38 ? 4.8 : 4.2);
+      var pointsNoise = normalRandom() * (profile.matches >= 38 ? 5.6 : 4.9);
+      if (Math.random() < 0.09) {
+        pointsNoise += (Math.random() < 0.5 ? -1 : 1) * randomBetween(4, 9);
+      }
+      var targetPoints = profile.matches * expectedPpm + pointsNoise;
       var record = generateRecordFromTargetPoints({
         matches: profile.matches,
         targetPoints: clamp(targetPoints, 12, profile.matches * 2.62),
@@ -148,6 +175,7 @@
         goalsAgainst: goalsAgainst,
         goalDifference: goalsFor - goalsAgainst,
         points: record.points,
+        seasonType: item.seasonType,
         tieBreaker: Math.random()
       };
     });
