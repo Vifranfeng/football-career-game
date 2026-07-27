@@ -578,7 +578,8 @@
     gameOver: false,
     clubForms: {},
     clubEconomics: {},
-    clubLeagueOrigins: {}
+    clubLeagueOrigins: {},
+    worldLeagueTables: {}
   };
 
   function init() {
@@ -726,7 +727,7 @@
   }
 
   function normalizeClubSearchName(name) {
-    return String(name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    return String(name || "").toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
   }
 
   function getPersistentClubBadge(clubId) {
@@ -1637,6 +1638,7 @@
     state.gameOver = false;
     state.clubForms = {};
     state.clubEconomics = {};
+    state.worldLeagueTables = {};
     state.lastChoiceOutcome = "";
     state.lastChoiceResultType = "neutral";
     render();
@@ -2217,7 +2219,18 @@
     if (option.club.id === previousClub.id && state.latestSummary) {
       applyPlayerClubLeagueTransition(state.player, previousClub, state.latestSummary);
     } else if (option.club.id !== previousClub.id) {
-      state.player.nextContinentalCompetition = getIncomingClubEuropeanCompetition(option.club);
+      state.player.nextContinentalCompetition =
+        option.clubSnapshot && option.clubSnapshot.continentalCompetition !== undefined
+          ? option.clubSnapshot.continentalCompetition
+          : getIncomingClubEuropeanCompetition(option.club);
+      if (option.clubSnapshot && option.clubSnapshot.leaguePosition) {
+        state.player.incomingClubMomentum = {
+          clubId: option.club.id,
+          sourceSeason: state.player.seasonYear,
+          position: option.clubSnapshot.leaguePosition,
+          teamCount: LEAGUE_TEAM_COUNTS[option.club.league] || 20
+        };
+      }
     }
     state.player.currentClubId = option.club.id;
     state.player.pendingForcedDeparture = false;
@@ -2828,12 +2841,8 @@
         strength <= player.overall + 9 &&
         canFundWorldClassMove &&
         !seenClubIds[club.id];
-    }).sort(function (a, b) {
-      var strengthFitA = Math.abs(getClubStrength(a) - player.overall);
-      var strengthFitB = Math.abs(getClubStrength(b) - player.overall);
-      return strengthFitA - getClubTransferBudget(a) / 60000000 -
-        (strengthFitB - getClubTransferBudget(b) / 60000000);
     });
+    eliteMarketPool = rankTransferCandidatesByMarketFit(eliteMarketPool, player);
 
     if (eliteMarketSeason && eliteMarketPool.length) {
       var desiredExternalOffers = player.overall >= 88 ? 3 : 2;
@@ -3823,7 +3832,9 @@
       return {
         league: getLeagueDisplayName(club.league) + "第 " + summary.leagueStanding.position + " 名",
         cup: getCompetitionNames(club).domesticCup.replace("冠军", "") + currentCup,
-        continental: currentEurope
+        continental: currentEurope,
+        leaguePosition: summary.leagueStanding.position,
+        continentalCompetition: getContinentalQualificationFromSeason(club, summary)
       };
     }
 
@@ -3859,9 +3870,13 @@
       continental = "亚冠" + (strength >= 88 ? "四强" : strength >= 80 ? "八强" : "小组赛");
     }
     return {
-      league: getLeagueDisplayName(club.league) + "第 " + position + " 名",
+      league: "上季" + getLeagueDisplayName(club.league) + "第 " + position + " 名",
       cup: getCompetitionNames(club).domesticCup.replace("冠军", "") + cupStage,
-      continental: continental
+      continental: continental,
+      leaguePosition: position,
+      continentalCompetition: club.region === "欧洲" && club.leagueLevel === 1
+        ? getContinentalCompetitionFromPosition(club, position)
+        : ""
     };
   }
 
@@ -4007,6 +4022,25 @@
       budget *= 0.62;
     }
     return roundTransferAmount(budget);
+  }
+
+  function rankTransferCandidatesByMarketFit(clubs, player) {
+    return clubs.map(function (club) {
+      var budget = getClubTransferBudget(club);
+      var valueCoverage = budget / Math.max(1000000, player.value);
+      var squadNeed = player.overall - getClubStrength(club);
+      var affordable = valueCoverage >= 1 ? 18 : valueCoverage * 18;
+      var roleNeed = clamp(10 - Math.abs(squadNeed - 1) * 1.4, -4, 10);
+      var financialHeadroom = clamp((budget - player.value) / 10000000, -8, 12);
+      return {
+        club: club,
+        score: affordable + roleNeed + financialHeadroom + randomBetween(-5, 5)
+      };
+    }).sort(function (first, second) {
+      return second.score - first.score;
+    }).map(function (entry) {
+      return entry.club;
+    });
   }
 
   function ensureCurrentEvent() {
@@ -5621,6 +5655,10 @@
       });
       if (currentLeagueRow) return currentLeagueRow.position;
       summary.offerLeagueTables = summary.offerLeagueTables || {};
+      var cachedTable = getCachedSeasonLeagueTable(summary.seasonYear, club.league);
+      if (!summary.offerLeagueTables[club.league] && cachedTable.length) {
+        summary.offerLeagueTables[club.league] = cachedTable;
+      }
       if (!summary.offerLeagueTables[club.league]) {
         var roster = window.LEAGUE_ROSTERS && window.LEAGUE_ROSTERS[club.league];
         var teams = roster && roster.length
@@ -5648,6 +5686,11 @@
               seasonYear: summary.seasonYear,
               matches: LEAGUE_MATCH_COUNTS[club.league]
             }).table;
+          cacheSeasonLeagueTable(
+            summary.seasonYear,
+            club.league,
+            summary.offerLeagueTables[club.league]
+          );
         }
       }
       var row = (summary.offerLeagueTables[club.league] || []).find(function (item) {
@@ -5662,15 +5705,51 @@
     return Math.round(clamp(expectedPosition + randomInt(-2, 2), 1, teamCount));
   }
 
+  function getSeasonLeagueTableKey(seasonYear, league) {
+    return String(seasonYear || 0) + "::" + String(league || "");
+  }
+
+  function cacheSeasonLeagueTable(seasonYear, league, table) {
+    if (!league || !table || !table.length) return;
+    state.worldLeagueTables = state.worldLeagueTables || {};
+    state.worldLeagueTables[getSeasonLeagueTableKey(seasonYear, league)] = table;
+  }
+
+  function getCachedSeasonLeagueTable(seasonYear, league) {
+    state.worldLeagueTables = state.worldLeagueTables || {};
+    return state.worldLeagueTables[getSeasonLeagueTableKey(seasonYear, league)] || [];
+  }
+
+  function getIncomingClubMomentumBonus(player, club) {
+    var momentum = player && player.incomingClubMomentum;
+    if (
+      !momentum ||
+      !club ||
+      momentum.clubId !== club.id ||
+      momentum.sourceSeason !== player.seasonYear - 1
+    ) {
+      return 0;
+    }
+    if (momentum.position === 1) return 3.8;
+    if (momentum.position <= 3) return 2.4;
+    if (momentum.position <= 6) return 1.2;
+    return 0;
+  }
+
   function doesLeagueTableRowMatchClub(row, club) {
     if (!row || !club) return false;
     if (row.clubId === club.id) return true;
     var rowNames = [row.clubName, row.name, row.nameZh]
       .filter(Boolean)
-      .map(normalizeClubSearchName);
+      .map(normalizeClubSearchName)
+      .filter(Boolean);
     var clubNames = [club.name, club.nameZh, getClubDisplayName(club)]
       .filter(Boolean)
-      .map(normalizeClubSearchName);
+      .map(normalizeClubSearchName)
+      .filter(Boolean);
+    if (!rowNames.length || !clubNames.length) {
+      return false;
+    }
     return rowNames.some(function (name) {
       return clubNames.indexOf(name) !== -1;
     });
@@ -6881,7 +6960,12 @@
             goals: stats.leagueGoals,
             assists: stats.leagueAssists
           },
-          playerClubPowerBonus: clamp((competitionImpact.leaguePoints || 0) * 0.28, -1.5, 2.5)
+          playerClubPowerBonus: clamp(
+            (competitionImpact.leaguePoints || 0) * 0.28 +
+              getIncomingClubMomentumBonus(player, club),
+            -1.5,
+            6.5
+          )
         })
       : null;
     if (
@@ -6890,6 +6974,9 @@
       window.LeagueSimulation.forceClubChampion
     ) {
       window.LeagueSimulation.forceClubChampion(fullLeagueSeason, club.id);
+    }
+    if (fullLeagueSeason) {
+      cacheSeasonLeagueTable(player.seasonYear, club.league, fullLeagueSeason.table);
     }
     if (fullLeagueSeason) {
       fullLeagueSeason.table.forEach(function (row) {
@@ -7205,6 +7292,14 @@
     if (domesticCupWinner) return rules.cupWinner === "欧联杯" ? "欧联区" : "欧协联区";
     if (position === rules.europaLeague) return "欧联区";
     if (position === rules.conferenceLeague) return "欧协联区";
+    return "";
+  }
+
+  function getContinentalCompetitionFromPosition(club, position) {
+    var status = getEuropeanQualificationStatus(club, position, false);
+    if (status === "欧冠区" || status === "欧冠资格赛区") return "欧冠";
+    if (status === "欧联区") return "欧联杯";
+    if (status === "欧协联区") return "欧协联";
     return "";
   }
 
@@ -9924,7 +10019,8 @@
       gameOver: false,
       clubForms: {},
       clubEconomics: {},
-      clubLeagueOrigins: {}
+      clubLeagueOrigins: {},
+      worldLeagueTables: {}
     };
     render();
   }
