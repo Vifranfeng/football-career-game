@@ -17,13 +17,13 @@
     "Serie C": 38,
     "Ligue 1 McDonald's": 34,
     "Ligue 2 BKT": 34,
-    "Championnat National": 34,
+    "Championnat National": 30,
     "J1 League": 38,
     "J2 League": 38,
     "J3 League": 38,
     "K League 1": 38,
     "K League 2": 36,
-    "K3 League": 30,
+    "K3 League": 28,
     "Chinese Super League": 30,
     "China League One": 30,
     "China League Two": 30,
@@ -50,13 +50,13 @@
     "Serie C": 20,
     "Ligue 1 McDonald's": 18,
     "Ligue 2 BKT": 18,
-    "Championnat National": 18,
+    "Championnat National": 16,
     "J1 League": 20,
     "J2 League": 20,
     "J3 League": 20,
     "K League 1": 12,
     "K League 2": 14,
-    "K3 League": 16,
+    "K3 League": 15,
     "Chinese Super League": 16,
     "China League One": 16,
     "China League Two": 16,
@@ -3649,11 +3649,7 @@
 
     var strength = getClubStrength(club);
     var teamCount = LEAGUE_TEAM_COUNTS[club.league] || 20;
-    var prior = CLUB_LEAGUE_PRIORS[club.id];
-    var expectedPosition = prior
-      ? prior.expected
-      : Math.round(1 + (92 - strength) * (club.leagueLevel === 1 ? 0.55 : 0.72));
-    var position = Math.round(clamp(expectedPosition + randomInt(-2, 2), 1, teamCount));
+    var position = getOfferLeaguePosition(club, summary, teamCount);
     var cupRoll = strength + randomInt(-12, 10);
     var cupStage = cupRoll >= 94 ? "冠军" :
       cupRoll >= 87 ? "四强" :
@@ -5404,6 +5400,43 @@
       : competitionName + stage + "成功晋级";
   }
 
+  function getOfferLeaguePosition(club, summary, teamCount) {
+    if (summary && window.LeagueSimulation) {
+      var currentLeagueRow = (summary.leagueTable || []).find(function (row) {
+        return row.clubId === club.id;
+      });
+      if (currentLeagueRow) return currentLeagueRow.position;
+      summary.offerLeagueTables = summary.offerLeagueTables || {};
+      if (!summary.offerLeagueTables[club.league]) {
+        var roster = window.LEAGUE_ROSTERS && window.LEAGUE_ROSTERS[club.league];
+        var teams = roster && roster.length
+          ? roster.slice()
+          : window.CLUBS.filter(function (candidate) {
+              return candidate.league === club.league;
+            });
+        if (teams.length >= 2) {
+          summary.offerLeagueTables[club.league] =
+            window.LeagueSimulation.simulateFullLeagueSeason({
+              leagueId: club.league,
+              teams: teams,
+              playerClubId: "",
+              seasonYear: summary.seasonYear,
+              matches: LEAGUE_MATCH_COUNTS[club.league]
+            }).table;
+        }
+      }
+      var row = (summary.offerLeagueTables[club.league] || []).find(function (item) {
+        return item.clubId === club.id;
+      });
+      if (row) return row.position;
+    }
+    var prior = CLUB_LEAGUE_PRIORS[club.id];
+    var expectedPosition = prior
+      ? prior.expected
+      : Math.round(1 + (92 - getClubStrength(club)) * (club.leagueLevel === 1 ? 0.55 : 0.72));
+    return Math.round(clamp(expectedPosition + randomInt(-2, 2), 1, teamCount));
+  }
+
   function completeCompetitionWorldResults(club, domesticCupCampaign, continentalCampaign) {
     if (!window.CompetitionSimulation) return;
     var sameCountry = window.CLUBS.filter(function (candidate) {
@@ -6570,9 +6603,15 @@
     var playerImpact = clamp((player.overall - clubStrength) * 0.12, -1.5, 2.5) * participation;
     var teamPower = clubStrength + playerImpact;
     var competitionImpact = player.pendingSeasonCompetitionImpact || {};
-    var leagueTeams = window.CLUBS.filter(function (candidate) {
-      return candidate.league === club.league;
-    });
+    var rosterTeams = window.LEAGUE_ROSTERS && window.LEAGUE_ROSTERS[club.league];
+    var leagueTeams = rosterTeams && rosterTeams.length
+      ? rosterTeams.slice()
+      : window.CLUBS.filter(function (candidate) {
+          return candidate.league === club.league;
+        });
+    if (!leagueTeams.some(function (candidate) { return candidate.id === club.id; })) {
+      leagueTeams[leagueTeams.length - 1] = club;
+    }
     var configuredTeamCount = LEAGUE_TEAM_COUNTS[club.league] || leagueTeams.length;
     if (leagueTeams.length > configuredTeamCount) {
       leagueTeams = leagueTeams.filter(function (candidate) {

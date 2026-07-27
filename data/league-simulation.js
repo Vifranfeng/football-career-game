@@ -98,7 +98,12 @@
   }
 
   function simulateFullLeagueSeason(options) {
-    var teams = (options.teams || []).slice();
+    var seenTeamIds = {};
+    var teams = (options.teams || []).filter(function (club) {
+      if (!club || !club.id || seenTeamIds[club.id]) return false;
+      seenTeamIds[club.id] = true;
+      return true;
+    });
     if (teams.length < 2) throw new Error("simulateFullLeagueSeason requires at least two teams");
     var profile = getProfile(options.leagueId, teams, options.matches);
     var powers = teams.map(function (club) {

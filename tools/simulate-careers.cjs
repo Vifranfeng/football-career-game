@@ -39,6 +39,7 @@ function createGame() {
     "clubs.js",
     "third-tier-clubs.js",
     "third-tier-translations.js",
+    "league-rosters.js",
     "derbies.js",
     "events.js",
     "league-simulation.js",
