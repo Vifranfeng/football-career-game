@@ -654,6 +654,7 @@
 
   function loadClubVerdictTheme(clubId, badgeUrl, displayedImage) {
     if (!document.querySelector('[data-verdict-club="' + clubId + '"]')) return;
+    applyClubVerdictBadgeImage(clubId, badgeUrl);
     if (/^data:|^blob:|^\//.test(badgeUrl)) {
       applyClubVerdictTheme(clubId, displayedImage);
       return;
@@ -667,6 +668,18 @@
       applyClubVerdictFallbackTheme(clubId);
     });
     sampler.src = badgeUrl;
+  }
+
+  function applyClubVerdictBadgeImage(clubId, badgeUrl) {
+    var safeBadgeUrl = String(badgeUrl || "")
+      .replace(/\\/g, "\\\\")
+      .replace(/"/g, '\\"');
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[data-verdict-club="' + clubId + '"]'),
+      function (node) {
+        node.style.setProperty("--club-badge-image", 'url("' + safeBadgeUrl + '")');
+      }
+    );
   }
 
   function applyClubVerdictTheme(clubId, image) {
@@ -729,29 +742,13 @@
   }
 
   function applyClubVerdictFallbackTheme(clubId) {
-    var hue = String(clubId || "").split("").reduce(function (total, character) {
-      return (total + character.charCodeAt(0) * 17) % 360;
-    }, 205);
-    var primary = hslToRgb(hue / 360, 0.7, 0.52);
-    var secondary = hslToRgb(((hue + 42) % 360) / 360, 0.62, 0.68);
     Array.prototype.forEach.call(
       document.querySelectorAll('[data-verdict-club="' + clubId + '"]'),
       function (node) {
-        node.style.setProperty("--club-primary-rgb", primary.join(","));
-        node.style.setProperty("--club-secondary-rgb", secondary.join(","));
+        node.style.setProperty("--club-primary-rgb", "225,232,240");
+        node.style.setProperty("--club-secondary-rgb", "255,255,255");
       }
     );
-  }
-
-  function hslToRgb(hue, saturation, lightness) {
-    function convert(offset) {
-      var channel = (offset + hue) % 1;
-      var factor = saturation * Math.min(lightness, 1 - lightness);
-      return lightness - factor * Math.max(-1, Math.min(channel * 6 - 3, Math.min(9 - channel * 6, 1)));
-    }
-    return [convert(1 / 3), convert(0), convert(-1 / 3)].map(function (value) {
-      return Math.round(value * 255);
-    });
   }
 
   function loadClubBadge(clubId) {

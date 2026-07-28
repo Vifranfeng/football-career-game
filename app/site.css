@@ -956,6 +956,7 @@ select {
 .career-verdict-club {
   --club-primary-rgb: 221, 180, 72;
   --club-secondary-rgb: 244, 238, 210;
+  --club-badge-image: none;
   position: relative;
   overflow: hidden;
   border-color: rgba(var(--club-primary-rgb), 0.78);
@@ -971,16 +972,15 @@ select {
 .career-verdict-club::before {
   position: absolute;
   z-index: 0;
-  inset: -45%;
+  inset: -35%;
   content: "";
   pointer-events: none;
-  background: conic-gradient(
-    from 210deg,
-    transparent 0 34%,
-    rgba(var(--club-secondary-rgb), 0.2) 42%,
-    transparent 51% 100%
-  );
-  animation: club-verdict-orbit 7s linear infinite;
+  background-image: var(--club-badge-image);
+  background-repeat: no-repeat;
+  background-position: 18% 50%;
+  background-size: 155px 155px;
+  filter: blur(24px) saturate(1.35);
+  opacity: 0.28;
 }
 
 .career-verdict-club::after {
@@ -1055,12 +1055,6 @@ select {
     box-shadow:
       0 0 0 1px rgba(var(--club-secondary-rgb), 0.34),
       0 8px 34px rgba(var(--club-primary-rgb), 0.34);
-  }
-}
-
-@keyframes club-verdict-orbit {
-  to {
-    transform: rotate(360deg);
   }
 }
 
