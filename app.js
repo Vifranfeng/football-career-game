@@ -5246,6 +5246,8 @@
     var club = getClubById(transition.clubId);
     if (!club || club.id !== player.currentClubId) return null;
     if (transition.type === "european-qualification") {
+      var isAsianContinentalCampaign =
+        club.region === "亚洲" || isSaudiClub(club) || transition.competition === "亚冠";
       var matchingEuropeanSeasons = (player.career || []).filter(function (season) {
         return season.clubId === club.id &&
           season.competitionStats &&
@@ -5264,14 +5266,22 @@
       return {
         id: "season-transition-europe-" + player.seasonYear,
         title: firstEuropeanCampaign
-          ? "首次进入欧洲赛场"
+          ? isAsianContinentalCampaign
+            ? "首次进入亚冠赛场"
+            : "首次进入欧洲赛场"
           : upgradedToChampionsLeague
             ? "欧战舞台升级为欧冠"
-            : "欧战目标发生变化",
+            : isAsianContinentalCampaign
+              ? "亚冠征程即将开始"
+              : "欧战目标发生变化",
         text: getClubDisplayName(club) + " 获得了" + transition.competition + "资格。" +
           (firstEuropeanCampaign
-            ? "这是你首次随队征战欧洲赛事。"
-            : "相比上赛季，球队面对的欧战强度和目标都发生了变化。"),
+            ? isAsianContinentalCampaign
+              ? "这是你首次随队征战亚冠。"
+              : "这是你首次随队征战欧洲赛事。"
+            : isAsianContinentalCampaign
+              ? "新赛季的亚冠赛程会压缩恢复时间，也会带来更高关注度。"
+              : "相比上赛季，球队面对的欧战强度和目标都发生了变化。"),
         options: [
           { label: "主动承担双线重任", effects: { reputation: 2, fitness: -4, coachRelation: 2 } },
           { label: "接受合理轮换", effects: { fitness: 2, coachRelation: 2 } },
