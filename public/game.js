@@ -635,7 +635,7 @@
           image.alt = getClubDisplayName(getClubById(clubId)) + " 队徽";
           image.loading = "lazy";
           image.addEventListener("load", function () {
-            applyClubVerdictTheme(clubId, image);
+            loadClubVerdictTheme(clubId, badgeUrl, image);
           });
           image.addEventListener("error", function () {
             image.remove();
@@ -650,6 +650,23 @@
         });
       });
     });
+  }
+
+  function loadClubVerdictTheme(clubId, badgeUrl, displayedImage) {
+    if (!document.querySelector('[data-verdict-club="' + clubId + '"]')) return;
+    if (/^data:|^blob:|^\//.test(badgeUrl)) {
+      applyClubVerdictTheme(clubId, displayedImage);
+      return;
+    }
+    var sampler = new Image();
+    sampler.crossOrigin = "anonymous";
+    sampler.addEventListener("load", function () {
+      applyClubVerdictTheme(clubId, sampler);
+    });
+    sampler.addEventListener("error", function () {
+      applyClubVerdictFallbackTheme(clubId);
+    });
+    sampler.src = badgeUrl;
   }
 
   function applyClubVerdictTheme(clubId, image) {
@@ -686,7 +703,6 @@
         var blue = pixels[index + 2];
         var maximum = Math.max(red, green, blue);
         var minimum = Math.min(red, green, blue);
-        if (maximum < 24 || (maximum > 245 && minimum > 245)) continue;
         var key = [
           Math.round(red / 32) * 32,
           Math.round(green / 32) * 32,
@@ -694,11 +710,19 @@
         ].map(function (value) { return clamp(value, 0, 255); }).join(",");
         buckets[key] = (buckets[key] || 0) + 1 + (maximum - minimum) / 180;
       }
-      return Object.keys(buckets).sort(function (first, second) {
+      var colors = Object.keys(buckets).sort(function (first, second) {
         return buckets[second] - buckets[first];
       }).slice(0, 2).map(function (key) {
         return key.split(",").map(Number);
       });
+      if (
+        colors.length > 1 &&
+        colors[0][0] + colors[0][1] + colors[0][2] <
+          colors[1][0] + colors[1][1] + colors[1][2]
+      ) {
+        colors.reverse();
+      }
+      return colors;
     } catch (error) {
       return [];
     }
@@ -6409,6 +6433,12 @@
       0,
       continentalMatches
     );
+    var veteranWorkload = getVeteranWorkloadMultiplier(player);
+    if (veteranWorkload < 1) {
+      leagueApps = Math.round(leagueApps * veteranWorkload);
+      cupApps = Math.round(cupApps * veteranWorkload);
+      continentalApps = Math.round(continentalApps * veteranWorkload);
+    }
     var injury = player.pendingSeasonInjury;
     if (injury) {
       var availabilityFactor = injury.availabilityFactor ||
@@ -6456,6 +6486,21 @@
         : 0,
       total: Math.max(1, leagueApps + cupApps + continentalApps)
     };
+  }
+
+  function getVeteranWorkloadMultiplier(player) {
+    var curve = getPlayerCareerCurve(player);
+    var workloadAge = player.position === "GK" ? player.age - 2 : player.age;
+    var seasonsIntoDecline = workloadAge - curve.hardDecline;
+    if (seasonsIntoDecline < 0) return 1;
+    var multiplier =
+      seasonsIntoDecline === 0 ? 0.92 :
+      seasonsIntoDecline === 1 ? 0.84 :
+      seasonsIntoDecline === 2 ? 0.75 :
+      seasonsIntoDecline === 3 ? 0.67 : 0.58;
+    if (player.isCaptain) multiplier += 0.03;
+    if ((player.talents && player.talents.durability || 70) >= 85) multiplier += 0.03;
+    return clamp(multiplier + randomBetween(-0.025, 0.025), 0.52, 0.96);
   }
 
   function simulateDomesticCupCampaign(club, clubStrength) {
@@ -7400,7 +7445,7 @@
     if (player.status.fitness < 50) {
       growth -= randomInt(1, 2);
     }
-    if (player.status.coachRelation > 75) {
+    if (player.status.coachRelation > 75 && player.age <= curve.peakEnd) {
       growth += 1;
     }
     if (player.status.happiness < 45) {
