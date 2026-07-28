@@ -983,13 +983,17 @@ select {
   display: grid;
   width: 31px;
   height: 31px;
+  margin: auto;
   place-items: center;
+  line-height: 0;
 }
 
 .career-verdict-club-badge img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transform: translateY(-1px);
 }
 
 .career-verdict-club-badge .club-api-fallback {

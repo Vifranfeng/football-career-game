@@ -1661,6 +1661,9 @@
         });
       }
     }
+    verdicts.sort(function (first, second) {
+      return Number(Boolean(second.clubId)) - Number(Boolean(first.clubId));
+    });
     return verdicts.slice(0, 9);
   }
 
