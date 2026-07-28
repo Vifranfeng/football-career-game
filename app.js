@@ -1072,12 +1072,14 @@
         appearances: 0,
         goals: 0,
         assists: 0,
+        cleanSheets: 0,
         championships: 0
       };
       clubEntries[entry.clubId].seasons += 1;
       clubEntries[entry.clubId].appearances += entry.appearances || 0;
       clubEntries[entry.clubId].goals += entry.goals || 0;
       clubEntries[entry.clubId].assists += entry.assists || 0;
+      clubEntries[entry.clubId].cleanSheets += entry.cleanSheets || 0;
       clubEntries[entry.clubId].championships += (entry.trophies || []).filter(isCompetitionChampionship).length;
     });
     var clubIds = Object.keys(clubEntries);
@@ -1139,12 +1141,19 @@
     var primaryClubShare = longestStay && player.totals.appearances
       ? longestStay.appearances / player.totals.appearances
       : 0;
+    var primaryClubContribution = longestStay
+      ? longestStay.appearances * 1.2 +
+        longestStay.goals * 2 +
+        longestStay.assists * 1.5 +
+        longestStay.cleanSheets * 1.2 +
+        longestStay.championships * 30
+      : 0;
     var isOneClubCareer =
       longestStay &&
       longestStay.seasons >= 10 &&
       longestStay.appearances >= 260 &&
       primaryClubShare >= 0.68 &&
-      formalTransferCount <= 3;
+      primaryClubContribution >= 400;
     var careerScoringRate = player.totals.appearances
       ? player.totals.goals / player.totals.appearances
       : 0;
@@ -1426,7 +1435,7 @@
     }
 
     if (isOneClubCareer) {
-      verdicts.push({ icon: "◆", name: "一人一城", description: "绝大多数职业生涯都奉献给同一支俱乐部" });
+      verdicts.push({ icon: "◆", name: "一人一城", description: "多年坚守同一支俱乐部，并留下足够深厚的累计贡献" });
     } else if (longestStay && longestStay.seasons >= 8 && longestStay.appearances >= 220) {
       verdicts.push({
         icon: "♜",
@@ -1695,6 +1704,10 @@
           source: "derby-prep"
         };
       }
+    }
+    if (event.id === "shanghai-derby-crowd-clash") {
+      state.player.pendingShanghaiDerbyClash = null;
+      state.player.shanghaiDerbyClashSeen = true;
     }
     if (event.id === "rival-transfer-backlash" && option.label === "用德比表现回应") {
       state.player.pendingDerbyId = state.player.lastTransfer && state.player.lastTransfer.rivalryId || "";
@@ -2420,6 +2433,20 @@
     }
     var ballonDorControversy = buildBallonDorControversy(player, club, stats, trophies, seasonOutlook);
     var derbyResult = simulateDerbyMoment(player, club, stats);
+    if (
+      !player.shanghaiDerbyClashSeen &&
+      !player.pendingShanghaiDerbyClash &&
+      derbyResult.note &&
+      derbyResult.note.indexOf("上海德比") !== -1 &&
+      ["shanghaiport", "shenhua"].indexOf(club.id) !== -1 &&
+      Math.random() < 0.16
+    ) {
+      player.pendingShanghaiDerbyClash = {
+        clubId: club.id,
+        rivalClubId: club.id === "shanghaiport" ? "shenhua" : "shanghaiport",
+        seasonYear: player.seasonYear
+      };
+    }
     var nationalSummary = simulateNationalTeamSeason(player);
     var dynastyMoments = buildDynastyMoments(player, club, trophies, nationalSummary);
     var legendStory = buildSingleMatchScoringStory(player, club, stats) ||
@@ -4074,6 +4101,7 @@
          contextEvent.id === "late-career-coronation" ||
          contextEvent.id === "career-role-transition" ||
          contextEvent.id.indexOf("club-identity-") === 0 ||
+         contextEvent.id === "shanghai-derby-crowd-clash" ||
          contextEvent.id === "champions-league-key-match" ||
          contextEvent.id === "champions-league-penalty-shootout");
       var selectedEvent = contextEvent && (contextEventIsPriority || Math.random() < 0.58)
@@ -4166,6 +4194,11 @@
   }
 
   function buildContextEvent(player) {
+    var shanghaiDerbyClashEvent = buildShanghaiDerbyCrowdClashEvent(player);
+    if (shanghaiDerbyClashEvent) {
+      return shanghaiDerbyClashEvent;
+    }
+
     var seasonTransitionEvent = buildSeasonTransitionEvent(player);
     if (seasonTransitionEvent) {
       return seasonTransitionEvent;
@@ -4272,6 +4305,26 @@
     }
 
     return null;
+  }
+
+  function buildShanghaiDerbyCrowdClashEvent(player) {
+    var incident = player.pendingShanghaiDerbyClash;
+    if (!incident || player.shanghaiDerbyClashSeen) return null;
+    var representedClub = getClubById(incident.clubId);
+    var rivalClub = getClubById(incident.rivalClubId);
+    if (!representedClub || !rivalClub) return null;
+    return {
+      id: "shanghai-derby-crowd-clash",
+      title: "上海德比赛后爆发球迷冲突",
+      text: getClubDisplayName(representedClub) + " 与 " +
+        getClubDisplayName(rivalClub) +
+        " 的比赛结束后，两队部分球迷在场外发生互殴。俱乐部、警方和媒体都希望球员公开表态，避免冲突继续扩大。",
+      options: [
+        { label: "公开呼吁停止冲突", effects: { reputation: 3, happiness: -2, coachRelation: 1 } },
+        { label: "随俱乐部慰问伤者", effects: { reputation: 4, coachRelation: 3, fitness: -2 } },
+        { label: "拒绝卷入场外争议", effects: { happiness: 1, reputation: -3, coachRelation: -1 } }
+      ]
+    };
   }
 
   function buildNationalTournamentEvent(player) {
@@ -4438,7 +4491,7 @@
       yearsAtClub < 1 ||
       player.overall < getClubStrength(club) - 8 ||
       player.status.reputation < 48 ||
-      Math.random() >= clamp(0.028 + yearsAtClub * 0.006, 0.035, 0.06)
+      Math.random() >= clamp(0.055 + yearsAtClub * 0.01, 0.065, 0.11)
     ) {
       return null;
     }
