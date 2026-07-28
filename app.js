@@ -7735,7 +7735,7 @@
     addStory(
       isDefender &&
       stats.appearances >= 30 &&
-      trophies.length >= 2 &&
+      trophies.filter(isCompetitionChampionship).length >= 2 &&
       player.status.reputation >= 68,
       32,
       "你以防线领袖身份完成双冠赛季，几次门线解围和决赛封堵被球迷视为与进球同等重要的冠军瞬间。"
