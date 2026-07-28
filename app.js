@@ -805,19 +805,34 @@
       );
     }).join("");
     if (isTargetClubChoice) {
-      var targetChoices = state.currentEvent.options.map(function (option, index) {
-        return option.targetClubId
-          ? '<option value="' + index + '">' +
-            getClubDisplayName(getClubById(option.targetClubId)) + " · " +
-            getLeagueDisplayName(getClubById(option.targetClubId).league) +
-            "</option>"
-          : "";
+      var targetOptionEntries = state.currentEvent.options.map(function (option, index) {
+        var targetClub = option.targetClubId && getClubById(option.targetClubId);
+        return targetClub
+          ? { optionIndex: index, club: targetClub, league: targetClub.league }
+          : null;
+      }).filter(Boolean);
+      var targetLeagues = unique(targetOptionEntries.map(function (entry) {
+        return entry.league;
+      })).sort(function (first, second) {
+        return getLeagueDisplayName(first).localeCompare(getLeagueDisplayName(second), "zh-CN");
+      });
+      var initialTargetLeague = targetLeagues[0];
+      var leagueChoices = targetLeagues.map(function (league, index) {
+        return '<option value="' + index + '">' + getLeagueDisplayName(league) + "</option>";
+      }).join("");
+      var targetChoices = targetOptionEntries.filter(function (entry) {
+        return entry.league === initialTargetLeague;
+      }).map(function (entry) {
+        return '<option value="' + entry.optionIndex + '">' +
+          getClubDisplayName(entry.club) + "</option>";
       }).join("");
       var stayIndex = state.currentEvent.options.findIndex(function (option) {
         return !option.targetClubId;
       });
       eventHtml =
-        '<label class="field-label" for="preferred-club-select">公开指定心仪球队</label>' +
+        '<label class="field-label" for="preferred-league-select">先选择目标联赛</label>' +
+        '<select id="preferred-league-select" class="input">' + leagueChoices + "</select>" +
+        '<label class="field-label" for="preferred-club-select">再选择心仪球队</label>' +
         '<select id="preferred-club-select" class="input">' + targetChoices + "</select>" +
         '<button class="option-card btn btn-ghost" id="confirm-preferred-club">' +
         '  <div class="option-title">公开表达加盟意愿</div>' +
@@ -849,9 +864,19 @@
     });
     var preferredClubButton = document.getElementById("confirm-preferred-club");
     if (preferredClubButton) {
+      var preferredLeagueSelect = document.getElementById("preferred-league-select");
+      var preferredClubSelect = document.getElementById("preferred-club-select");
+      preferredLeagueSelect.addEventListener("change", function () {
+        var selectedLeague = targetLeagues[Number(preferredLeagueSelect.value)];
+        preferredClubSelect.innerHTML = targetOptionEntries.filter(function (entry) {
+          return entry.league === selectedLeague;
+        }).map(function (entry) {
+          return '<option value="' + entry.optionIndex + '">' +
+            getClubDisplayName(entry.club) + "</option>";
+        }).join("");
+      });
       preferredClubButton.addEventListener("click", function () {
-        var select = document.getElementById("preferred-club-select");
-        handleEventChoice(Number(select.value));
+        handleEventChoice(Number(preferredClubSelect.value));
       });
     }
     hydrateClubBadges();
@@ -5069,10 +5094,7 @@
     ) {
       return null;
     }
-    var targetClubs = getOutgrownTargetClubs(player, club).filter(function (targetClub) {
-      return targetClub.band === "豪门" ||
-        targetClub.reputation >= club.reputation - 3;
-    }).slice(0, 40);
+    var targetClubs = getOutgrownTargetClubs(player, club);
     if (!targetClubs.length) return null;
 
     var targetOptions = targetClubs.map(function (targetClub) {
@@ -5130,23 +5152,13 @@
   }
 
   function getOutgrownTargetClubs(player, currentClub) {
-    var currentStrength = getClubStrength(currentClub);
     var candidates = window.CLUBS.filter(function (club) {
-      var strength = getClubStrength(club);
-      var budget = getClubTransferBudget(club);
       return club.id !== currentClub.id &&
         club.leagueLevel === 1 &&
-        (
-          strength >= currentStrength - 2 ||
-          club.reputation >= currentClub.reputation + 5 ||
-          isBigFiveTopFlight(club)
-        ) &&
-        strength <= player.overall + 10 &&
-        budget >= Math.max(player.value * 0.45, 3000000) &&
         (player.blockedTransferClubIds || []).indexOf(club.id) === -1;
     });
     candidates = rankTransferCandidatesByMarketFit(candidates, player);
-    return candidates.slice(0, 60);
+    return candidates;
   }
 
   function buildCaptainEvent(player) {
