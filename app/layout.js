@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         <Script src="/data/competition-simulation.js?v=20260727-110" strategy="beforeInteractive" />
         <Script src="/data/derbies.js" strategy="beforeInteractive" />
         <Script src="/data/events.js" strategy="beforeInteractive" />
-        <Script src="/game.js?v=20260728-116" strategy="afterInteractive" />
+        <Script src="/game.js?v=20260728-117" strategy="afterInteractive" />
       </body>
     </html>
   );

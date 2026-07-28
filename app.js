@@ -632,7 +632,6 @@
         Array.prototype.forEach.call(document.querySelectorAll('[data-club-badge="' + clubId + '"]'), function (node) {
           if (node.querySelector("img")) return;
           var image = document.createElement("img");
-          image.crossOrigin = "anonymous";
           image.alt = getClubDisplayName(getClubById(clubId)) + " 队徽";
           image.loading = "lazy";
           image.addEventListener("load", function () {
