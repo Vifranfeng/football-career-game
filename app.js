@@ -3831,6 +3831,35 @@
 
   function synchronizeOfferLeaguePositions(options, currentClub, summary) {
     var usedByLeague = {};
+    var claimedContinentalChampions = {};
+    options.forEach(function (option) {
+      if (!option.clubSnapshot || !option.clubSnapshot.continental) return;
+      var match = option.clubSnapshot.continental.match(/^(欧冠|欧联杯|欧协联|亚冠)冠军$/);
+      if (!match) return;
+      claimedContinentalChampions[match[1]] =
+        claimedContinentalChampions[match[1]] || [];
+      claimedContinentalChampions[match[1]].push(option);
+    });
+    Object.keys(claimedContinentalChampions).forEach(function (competition) {
+      var claimants = claimedContinentalChampions[competition];
+      if (claimants.length <= 1) return;
+      var currentClubActuallyWon =
+        summary &&
+        summary.competitionStats &&
+        summary.competitionStats.continentalName === competition &&
+        summary.competitionStats.continentalStage === "冠军";
+      claimants.sort(function (first, second) {
+        if (currentClubActuallyWon) {
+          if (first.club.id === currentClub.id) return -1;
+          if (second.club.id === currentClub.id) return 1;
+        }
+        return getClubStrength(second.club) - getClubStrength(first.club);
+      });
+      claimants.slice(1).forEach(function (option) {
+        option.clubSnapshot.continental = competition +
+          (getClubStrength(option.club) >= 87 ? "四强" : "八强");
+      });
+    });
     var orderedOptions = options.slice().sort(function (first, second) {
       return Number(second.club.id === currentClub.id) - Number(first.club.id === currentClub.id);
     });
@@ -4497,6 +4526,44 @@
     return Math.max(120000, Math.round(salary));
   }
 
+  function findClubByDisplayName(name) {
+    return (window.CLUBS || []).find(function (club) {
+      return getClubDisplayName(club) === name ||
+        club.name === name ||
+        club.nameZh === name;
+    }) || null;
+  }
+
+  function getSharedContinentalResult(summary, competition, currentClub) {
+    var stats = summary && summary.competitionStats;
+    if (!stats || stats.continentalName !== competition) return null;
+    var worldResult = stats.continentalWorldResult || {};
+    var championId = worldResult.championId || "";
+    var runnerUpId = worldResult.runnerUpId || "";
+    if (stats.continentalStage === "冠军") {
+      championId = currentClub.id;
+    } else if (stats.continentalStage === "决赛失利") {
+      var finalOpponent = findClubByDisplayName(stats.continentalOpponent);
+      championId = finalOpponent ? finalOpponent.id : championId;
+      runnerUpId = currentClub.id;
+    }
+    return {
+      championId: championId,
+      runnerUpId: runnerUpId,
+      semifinalists: worldResult.semifinalists || [],
+      participantIds: worldResult.participantIds || []
+    };
+  }
+
+  function getSharedContinentalStage(club, sharedResult) {
+    if (!sharedResult) return "";
+    if (club.id === sharedResult.championId) return "冠军";
+    if (club.id === sharedResult.runnerUpId) return "亚军";
+    if (sharedResult.semifinalists.indexOf(club.id) !== -1) return "四强";
+    if (sharedResult.participantIds.indexOf(club.id) !== -1) return "八强";
+    return "联赛阶段";
+  }
+
   function buildOfferClubSnapshot(club, currentClub, summary) {
     if (club.id === currentClub.id && summary && summary.leagueStanding) {
       var currentCup = summary.competitionStats && summary.competitionStats.domesticCupStage || "未参赛";
@@ -4531,10 +4598,19 @@
           ? "欧联杯"
           : qualification === "欧协联区" ? "欧协联" : "";
       if (competition) {
+        var sharedEuropeanResult = getSharedContinentalResult(
+          summary,
+          competition,
+          currentClub
+        );
         var europeanRoll = strength + randomInt(-10, 9);
-        var europeanStage = europeanRoll >= 94 ? "冠军" :
-          europeanRoll >= 88 ? "四强" :
-          europeanRoll >= 81 ? "八强" : "联赛阶段";
+        var europeanStage = sharedEuropeanResult
+          ? getSharedContinentalStage(club, sharedEuropeanResult)
+          : europeanRoll >= 94
+            ? "四强"
+            : europeanRoll >= 81
+              ? "八强"
+              : "联赛阶段";
         continental = competition + europeanStage;
       }
     } else if (
@@ -4542,7 +4618,12 @@
       (club.region === "亚洲" || isSaudiClub(club)) &&
       position <= 3
     ) {
-      continental = "亚冠" + (strength >= 88 ? "四强" : strength >= 80 ? "八强" : "小组赛");
+      var sharedAsianResult = getSharedContinentalResult(summary, "亚冠", currentClub);
+      continental = "亚冠" + (
+        sharedAsianResult
+          ? getSharedContinentalStage(club, sharedAsianResult)
+          : strength >= 88 ? "四强" : strength >= 80 ? "八强" : "小组赛"
+      );
     }
     return {
       league: "上季" + getLeagueDisplayName(club.league) + "第 " + position + " 名",
