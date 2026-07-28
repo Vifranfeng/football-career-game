@@ -795,6 +795,8 @@
     ensureCurrentEvent();
     var player = state.player;
     var club = getClubById(player.currentClubId);
+    var isTargetClubChoice = state.currentEvent.id === "outgrown-current-club" &&
+      state.currentEvent.options.some(function (option) { return option.targetClubId; });
     var eventHtml = state.currentEvent.options.map(function (option, index) {
       return (
         '<button class="option-card btn btn-ghost" data-option-index="' + index + '">' +
@@ -802,6 +804,27 @@
         "</button>"
       );
     }).join("");
+    if (isTargetClubChoice) {
+      var targetChoices = state.currentEvent.options.map(function (option, index) {
+        return option.targetClubId
+          ? '<option value="' + index + '">' + getClubDisplayName(getClubById(option.targetClubId)) + "</option>"
+          : "";
+      }).join("");
+      var stayIndex = state.currentEvent.options.findIndex(function (option) {
+        return !option.targetClubId;
+      });
+      eventHtml =
+        '<label class="field-label" for="preferred-club-select">公开指定心仪球队</label>' +
+        '<select id="preferred-club-select" class="input">' + targetChoices + "</select>" +
+        '<button class="option-card btn btn-ghost" id="confirm-preferred-club">' +
+        '  <div class="option-title">公开表达加盟意愿</div>' +
+        "</button>" +
+        (stayIndex >= 0
+          ? '<button class="option-card btn btn-ghost" data-option-index="' + stayIndex + '">' +
+            '  <div class="option-title">继续带领球队前进</div>' +
+            "</button>"
+          : "");
+    }
 
     app.innerHTML =
       '<section class="screen">' +
@@ -821,6 +844,13 @@
         handleEventChoice(Number(button.getAttribute("data-option-index")));
       });
     });
+    var preferredClubButton = document.getElementById("confirm-preferred-club");
+    if (preferredClubButton) {
+      preferredClubButton.addEventListener("click", function () {
+        var select = document.getElementById("preferred-club-select");
+        handleEventChoice(Number(select.value));
+      });
+    }
     hydrateClubBadges();
   }
 
@@ -908,6 +938,7 @@
       buildMiniStat("国家队助攻", summary.nationalAssists || 0) +
       "  </div>" +
       buildCompetitionBreakdown(summary) +
+      buildSeasonInjurySummary(summary) +
       (summary.leagueTable && summary.leagueTable.length
         ? '<button class="btn btn-ghost league-table-button" id="open-league-table">查看积分榜</button>'
         : "") +
@@ -1050,6 +1081,7 @@
       buildSummaryCard("效力球队", clubsVisited) +
       buildSummaryCard("生涯最高 OVR", getPeakOverall(player.career)) +
       "  </div>" +
+      buildCareerInjurySummary(player) +
       '  <div class="summary-card retirement-honors"><h3 class="section-title">生涯荣誉</h3><div class="honors-list">' + (honors.length ? honors.map(function (name) { return '<span class="trophy-pill retirement-trophy-pill">' + findTrophyIcon(name) + '<span>' + name + (honorCounts[name] > 1 ? " ×" + honorCounts[name] : "") + "</span></span>"; }).join("") : '<span class="muted">没有记录到奖杯</span>') + "</div></div>" +
       "</div>" +
       '<div class="career-ledger panel">' +
@@ -1138,9 +1170,6 @@
     var careerCleanSheets = player.career.reduce(function (sum, entry) {
       return sum + (entry.cleanSheets || 0);
     }, 0);
-    var primaryClubShare = longestStay && player.totals.appearances
-      ? longestStay.appearances / player.totals.appearances
-      : 0;
     var primaryClubContribution = longestStay
       ? longestStay.appearances * 1.2 +
         longestStay.goals * 2 +
@@ -1151,8 +1180,7 @@
     var isOneClubCareer =
       longestStay &&
       longestStay.seasons >= 10 &&
-      longestStay.appearances >= 260 &&
-      primaryClubShare >= 0.68 &&
+      longestStay.appearances >= 220 &&
       primaryClubContribution >= 400;
     var careerScoringRate = player.totals.appearances
       ? player.totals.goals / player.totals.appearances
@@ -1583,6 +1611,8 @@
     var academyClub = pickAcademyClub(clubs, startingClub);
     var playerOrigin = pickOne(PLAYER_ORIGINS);
     var baseOverall = 49 + randomInt(0, 8);
+    var durabilityTalent = generateInjuryTalent();
+    var recoveryTalent = generateInjuryTalent();
     var player = {
       name: String(formData.get("name") || "新秀").trim(),
       country: country.name,
@@ -1627,6 +1657,18 @@
       careerCurveBonus: 0,
       loyaltyMilestonesSeen: [],
       pendingSeasonInjury: null,
+      injury: createEmptyInjuryState(),
+      injuryHistory: [],
+      talents: {
+        durability: durabilityTalent,
+        recovery: recoveryTalent
+      },
+      durability: durabilityTalent,
+      injuryProneness: clamp(100 - durabilityTalent, 5, 65),
+      injuryArchetype: generateInjuryArchetype(),
+      matchSharpness: 100,
+      medicalCondition: 100,
+      healthySeasonStreak: 0,
       status: {
         fitness: randomInt(82, 94),
         happiness: randomInt(68, 82),
@@ -1651,6 +1693,12 @@
     };
 
     player.initialPotential = player.potential;
+    player.potential = clamp(
+      player.potential +
+      Math.round((durabilityTalent - 70) * 0.1 + (recoveryTalent - 70) * 0.07),
+      Math.max(65, baseOverall + 10),
+      99
+    );
     player.peakPotential = player.potential;
     player.value = calculateMarketValue(player, startingClub, null);
     player.currentSalary = calculateSalaryValue(player, startingClub, "renewal");
@@ -1682,7 +1730,10 @@
     state.player.eventHistory = state.player.eventHistory.slice(-5);
     state.player.eventLastSeenSeason = state.player.eventLastSeenSeason || {};
     state.player.eventLastSeenSeason[event.id] = state.player.seasonYear;
-    state.player.pendingSeasonInjury = buildInjuryRecord(event, option, dynamicResolution);
+    var choiceInjuryRecord = buildInjuryRecord(event, option, dynamicResolution);
+    if (choiceInjuryRecord) {
+      state.player.pendingSeasonInjury = choiceInjuryRecord;
+    }
     if (dynamicResolution.competitionOutcome) {
       state.player.pendingCompetitionOutcome = dynamicResolution.competitionOutcome;
     }
@@ -1729,14 +1780,28 @@
     }
     if (event.id === "outgrown-current-club") {
       state.player.outgrownClubDecisions = state.player.outgrownClubDecisions || {};
+      if (option.targetClubId) {
+        state.player.preferredTransferClubId = option.targetClubId;
+        dynamicResolution.note = "你通过经纪团队公开表示希望加盟 " +
+          getClubDisplayName(getClubById(option.targetClubId)) +
+          "。消息已经传出，但对方是否正式报价仍取决于预算、阵容需求和谈判结果。";
+      }
       state.player.outgrownClubDecisions[state.player.currentClubId] = {
         seasonYear: state.player.seasonYear,
         overall: state.player.overall,
-        choice: option.label,
+        choice: option.targetClubId ? "寻求更高舞台" : option.label,
+        targetClubId: option.targetClubId || "",
         deferUntil: state.player.seasonYear +
           (option.label === "继续带领球队前进" ? 6 :
             option.label === "再观察一个赛季" ? 4 : 0)
       };
+    }
+    if (event.id === "early-career-homesickness") {
+      state.player.homesicknessEventSeen = true;
+      if (option.label === "公开表达回国意愿") {
+        state.player.pendingChinaReturnRequest = state.player.seasonYear;
+        dynamicResolution.note = "你承认自己很想回到熟悉的环境踢球，经纪团队已经向中超俱乐部释放消息，但暂时不能保证收到报价。";
+      }
     }
     if (event.id === "captain-appointment") {
       state.player.captainDecisionClubs = state.player.captainDecisionClubs || {};
@@ -1807,6 +1872,7 @@
       state.player.pendingAmbitiousDeparture = option.label === "寻求更高舞台";
     }
     applyEffects(state.player, dynamicResolution.effects);
+    applyChoiceRelatedInjuryRisk(state.player, option, dynamicResolution.effects);
     if (dynamicResolution.positionChange) {
       applyCareerRoleTransition(
         state.player,
@@ -2147,6 +2213,323 @@
     return "主宰比赛";
   }
 
+  function createEmptyInjuryState() {
+    return {
+      active: false,
+      injuryId: null,
+      name: "",
+      severity: "none",
+      weeksRemaining: 0,
+      totalWeeks: 0,
+      recurrenceRisk: 0,
+      affectedAttributes: [],
+      permanentLoss: 0,
+      treatment: ""
+    };
+  }
+
+  function generateInjuryTalent() {
+    return clamp(
+      Math.round((randomInt(48, 92) + randomInt(58, 88) + randomInt(62, 84)) / 3),
+      35,
+      95
+    );
+  }
+
+  function generateInjuryArchetype() {
+    var roll = randomInt(1, 100);
+    if (roll <= 12) return "ironman";
+    if (roll <= 45) return "resilient";
+    if (roll <= 90) return "normal";
+    if (roll <= 99) return "fragile";
+    return "chronic";
+  }
+
+  function normalizePlayerInjuryData(player) {
+    player.injury = Object.assign(createEmptyInjuryState(), player.injury || {});
+    player.injuryHistory = player.injuryHistory || [];
+    player.talents = player.talents || {};
+    player.talents.durability = player.talents.durability || player.durability || 70;
+    player.talents.recovery = player.talents.recovery || 70;
+    player.durability = player.talents.durability;
+    player.injuryProneness = player.injuryProneness == null
+      ? clamp(100 - player.durability, 5, 65)
+      : player.injuryProneness;
+    player.injuryArchetype = player.injuryArchetype || "normal";
+    player.matchSharpness = player.matchSharpness == null ? 100 : player.matchSharpness;
+    player.medicalCondition = player.medicalCondition == null ? 100 : player.medicalCondition;
+    player.healthySeasonStreak = player.healthySeasonStreak || 0;
+    return player;
+  }
+
+  function getDurabilityRiskMultiplier(durability) {
+    var normalized = (70 - durability) / 30;
+    return clamp(1 + 0.35 * Math.tanh(normalized), 0.7, 1.4);
+  }
+
+  function calculateSeasonInjuryRisk(player, club) {
+    normalizePlayerInjuryData(player);
+    var expectedAppearances = clamp(
+      24 + (player.overall - getClubStrength(club)) * 1.1,
+      8,
+      46
+    );
+    var exposure = clamp(expectedAppearances / 35, 0.25, 1.2);
+    var ageFactor = player.age < 21 ? 0.92 : player.age < 29 ? 1 : player.age < 33 ? 1.12 : 1.28;
+    var fatigueFactor = 1 + Math.max(0, 75 - player.status.fitness) / 100;
+    var congestionFactor = player.nextContinentalCompetition ? 1.12 : 1;
+    var archetypeFactor = (window.INJURY_ARCHETYPE_MULTIPLIERS || {})[player.injuryArchetype] || 1;
+    var medicalFactor = 1 + Math.max(0, 75 - player.medicalCondition) / 160;
+    return clamp(
+      0.19 *
+      exposure *
+      ageFactor *
+      getDurabilityRiskMultiplier(player.talents.durability) *
+      archetypeFactor *
+      fatigueFactor *
+      congestionFactor *
+      medicalFactor,
+      0.04,
+      0.5
+    );
+  }
+
+  function weightedInjuryChoice(player) {
+    var injuries = (window.INJURY_TYPES || []).map(function (injury) {
+      var weight = injury.weight;
+      var hadSameInjury = player.injuryHistory.some(function (entry) {
+        return entry.injuryId === injury.id;
+      });
+      if (hadSameInjury) weight *= 1 + injury.recurrenceRisk;
+      if (player.age >= 30 && (injury.id === "muscle_strain" || injury.id === "hamstring")) {
+        weight *= 1.25;
+      }
+      if (player.position === "GK" && injury.id === "hamstring") weight *= 0.6;
+      if (player.position === "GK" && injury.id === "shoulder") weight *= 1.6;
+      if (injury.severity === "major") {
+        var lastMajor = player.injuryHistory.slice().reverse().find(function (entry) {
+          return entry.severity === "major";
+        });
+        var majorCount = player.injuryHistory.filter(function (entry) {
+          return entry.severity === "major";
+        }).length;
+        if (lastMajor) {
+          var seasonsSince = player.age - lastMajor.age;
+          weight *= seasonsSince <= 1 ? 0.2 : seasonsSince === 2 ? 0.5 : seasonsSince === 3 ? 0.8 : 1;
+        }
+        weight *= majorCount === 0 ? 1 : majorCount === 1 ? 0.55 : 0.12;
+        if (player.injuryArchetype === "chronic") weight = Math.max(weight, injury.weight * 0.35);
+      }
+      if (player.talents.durability >= 85 && injury.severity === "major") weight *= 0.45;
+      if (player.talents.durability <= 50 && injury.severity === "major") weight *= 1.35;
+      return { injury: injury, weight: weight };
+    });
+    var total = injuries.reduce(function (sum, item) { return sum + item.weight; }, 0);
+    var roll = Math.random() * total;
+    for (var index = 0; index < injuries.length; index += 1) {
+      roll -= injuries[index].weight;
+      if (roll <= 0) return injuries[index].injury;
+    }
+    return injuries.length ? injuries[injuries.length - 1].injury : null;
+  }
+
+  function calculatePermanentInjuryDamage(player, injury) {
+    if (injury.severity !== "serious" && injury.severity !== "major") return 0;
+    var resistance = player.talents.recovery * 0.65 + player.talents.durability * 0.35;
+    if (injury.severity === "serious") {
+      return resistance < 75 && Math.random() < 0.25 ? 1 : 0;
+    }
+    if (resistance >= 85) return pickOne([0, 1]);
+    if (resistance >= 65) return pickOne([1, 1, 2]);
+    return pickOne([1, 2, 2, 3]);
+  }
+
+  function applyInjuryAttributeDamage(player, injuryState) {
+    if (!injuryState || injuryState.effectsApplied) return;
+    var loss = injuryState.permanentLoss || 0;
+    var attributes = injuryState.affectedAttributes || [];
+    attributes.forEach(function (attribute) {
+      if (player.profile[attribute] != null && loss > 0) {
+        player.profile[attribute] = clamp(player.profile[attribute] - loss, 25, 99);
+      }
+    });
+    player.overall = calculateProfileOverall(player.position, player.profile);
+    injuryState.effectsApplied = true;
+  }
+
+  function prepareSeasonInjury(player, club) {
+    normalizePlayerInjuryData(player);
+    if (player.injuryPreparedSeason === player.seasonYear) return;
+    player.injuryPreparedSeason = player.seasonYear;
+    player.matchSharpness = clamp(player.matchSharpness + randomInt(10, 22), 20, 100);
+    player.medicalCondition = clamp(player.medicalCondition + randomInt(8, 18), 20, 100);
+
+    if (player.injury.active && player.injury.weeksRemaining > 0) {
+      player.pendingSeasonInjury = Object.assign({}, player.injury, {
+        weeksOut: Math.min(52, player.injury.weeksRemaining),
+        carryOver: true,
+        label: player.injury.name + "康复期",
+        maxAppearances: Math.max(0, Math.round(46 * (1 - Math.min(52, player.injury.weeksRemaining) / 52)))
+      });
+      return;
+    }
+    if (Math.random() >= calculateSeasonInjuryRisk(player, club)) {
+      player.pendingSeasonInjury = null;
+      return;
+    }
+
+    var injuryType = weightedInjuryChoice(player);
+    if (!injuryType) return;
+    var weeks = randomInt(injuryType.minWeeks, injuryType.maxWeeks);
+    var previousSame = player.injuryHistory.slice().reverse().find(function (entry) {
+      return entry.injuryId === injuryType.id;
+    });
+    var recurrence = Boolean(previousSame && Math.random() < injuryType.recurrenceRisk);
+    if (recurrence) weeks = Math.min(52, weeks + randomInt(1, 4));
+    var permanentLoss = calculatePermanentInjuryDamage(player, injuryType);
+    player.injury = {
+      active: true,
+      injuryId: injuryType.id,
+      name: injuryType.name,
+      severity: injuryType.severity,
+      weeksRemaining: weeks,
+      totalWeeks: weeks,
+      recurrenceRisk: injuryType.recurrenceRisk,
+      affectedAttributes: injuryType.attributes || [],
+      permanentLoss: permanentLoss,
+      recurrence: recurrence,
+      treatment: "",
+      effectsApplied: false
+    };
+    player.status.fitness = clamp(player.status.fitness - injuryType.fitnessPenalty, 15, 100);
+    player.matchSharpness = clamp(player.matchSharpness - weeks * 1.25, 20, 100);
+    player.medicalCondition = clamp(player.medicalCondition - injuryType.fitnessPenalty, 15, 100);
+    player.pendingSeasonInjury = Object.assign({}, player.injury, {
+      weeksOut: weeks,
+      label: recurrence ? injuryType.name + "复发" : injuryType.name,
+      availabilityFactor: clamp((52 - Math.min(52, weeks)) / 52, 0.02, 0.98),
+      maxAppearances: Math.max(1, Math.round(46 * (52 - Math.min(52, weeks)) / 52)),
+      detail: (recurrence ? "旧伤复发，" : "") + "预计伤停 " + weeks + " 周。"
+    });
+    player.injuryHistory.push({
+      seasonYear: player.seasonYear,
+      age: player.age,
+      injuryId: injuryType.id,
+      name: injuryType.name,
+      severity: injuryType.severity,
+      weeksOut: weeks,
+      clubId: player.currentClubId,
+      recurrence: recurrence,
+      permanentOverallLoss: permanentLoss
+    });
+    if (weeks < 8) {
+      applyInjuryAttributeDamage(player, player.injury);
+    }
+  }
+
+  function getInjuryGrowthMultiplier(injury) {
+    if (!injury) return 1;
+    if (injury.severity === "minor") return 0.9;
+    if (injury.severity === "moderate") return 0.7;
+    if (injury.severity === "serious") return 0.4;
+    if (injury.severity === "major") return 0.15;
+    return 1;
+  }
+
+  function finalizeSeasonInjury(player) {
+    normalizePlayerInjuryData(player);
+    var seasonInjury = player.pendingSeasonInjury;
+    if (!seasonInjury) {
+      player.healthySeasonStreak += 1;
+      if (player.healthySeasonStreak >= 3 && player.talents.durability >= 75) {
+        player.status.coachRelation = clamp(player.status.coachRelation + 1, 0, 100);
+        player.matchSharpness = clamp(player.matchSharpness + 5, 0, 100);
+      }
+      return;
+    }
+    player.healthySeasonStreak = 0;
+    player.injury.weeksRemaining = Math.max(0, player.injury.weeksRemaining - 52);
+    if (player.injury.weeksRemaining <= 0) {
+      player.injury.active = false;
+      player.matchSharpness = clamp(
+        player.matchSharpness + randomInt(12, 26) + Math.round((player.talents.recovery - 70) * 0.2),
+        35,
+        84
+      );
+      player.status.fitness = clamp(player.status.fitness + randomInt(10, 20), 35, 88);
+      player.medicalCondition = clamp(
+        player.medicalCondition + randomInt(12, 24) + Math.round((player.talents.recovery - 70) * 0.15),
+        35,
+        92
+      );
+    }
+  }
+
+  function getInjuryTransferModifier(player) {
+    normalizePlayerInjuryData(player);
+    var recentMajor = player.injuryHistory.filter(function (injury) {
+      return injury.age >= player.age - 2 &&
+        (injury.severity === "serious" || injury.severity === "major");
+    }).length;
+    return clamp(1 - recentMajor * 0.08, 0.72, 1);
+  }
+
+  function applyChoiceRelatedInjuryRisk(player, option, effects) {
+    if (player.pendingSeasonInjury || player.injury.active) return;
+    var aggressiveChoice =
+      /主动|强行|提前|接管|扛起|持续冲击|全力|高强度|扩大活动范围|咬牙/.test(option.label) ||
+      (effects.fitness || 0) <= -5;
+    if (!aggressiveChoice) return;
+    var lowFitnessRisk = Math.max(0, 68 - player.status.fitness) * 0.012;
+    var exertionRisk = Math.max(0, -(effects.fitness || 0) - 3) * 0.012;
+    var risk = clamp(lowFitnessRisk + exertionRisk, 0.02, 0.34);
+    if (Math.random() >= risk) return;
+
+    var candidateIds = player.status.fitness < 50
+      ? ["hamstring", "ankle_sprain", "muscle_strain"]
+      : ["muscle_strain", "ankle_sprain"];
+    var injuryType = pickOne((window.INJURY_TYPES || []).filter(function (injury) {
+      return candidateIds.indexOf(injury.id) !== -1;
+    }));
+    if (!injuryType) return;
+    var weeks = randomInt(injuryType.minWeeks, injuryType.maxWeeks);
+    player.injury = {
+      active: true,
+      injuryId: injuryType.id,
+      name: injuryType.name,
+      severity: injuryType.severity,
+      weeksRemaining: weeks,
+      totalWeeks: weeks,
+      recurrenceRisk: injuryType.recurrenceRisk,
+      affectedAttributes: injuryType.attributes || [],
+      permanentLoss: 0,
+      recurrence: false,
+      treatment: "负荷过高",
+      effectsApplied: true
+    };
+    player.pendingSeasonInjury = Object.assign({}, player.injury, {
+      weeksOut: weeks,
+      label: injuryType.name,
+      availabilityFactor: clamp((52 - weeks) / 52, 0.1, 0.98),
+      maxAppearances: Math.max(1, Math.round(46 * (52 - weeks) / 52)),
+      detail: "低体力下仍采用激进方式导致受伤，预计伤停 " + weeks + " 周。"
+    });
+    player.injuryHistory.push({
+      seasonYear: player.seasonYear,
+      age: player.age,
+      injuryId: injuryType.id,
+      name: injuryType.name,
+      severity: injuryType.severity,
+      weeksOut: weeks,
+      clubId: player.currentClubId,
+      recurrence: false,
+      permanentOverallLoss: 0,
+      cause: "低体力下激进比赛"
+    });
+    player.status.fitness = clamp(player.status.fitness - injuryType.fitnessPenalty, 15, 100);
+    player.matchSharpness = clamp(player.matchSharpness - weeks * 1.2, 20, 100);
+  }
+
   function buildInjuryRecord(event, option, dynamicResolution) {
     var injuryIds = ["minor-injury", "unexpected-injury", "unexpected-major-injury"];
     if (injuryIds.indexOf(event.id) === -1) {
@@ -2154,6 +2537,57 @@
     }
 
     var note = dynamicResolution.note || "";
+    var player = state.player;
+    if (player && player.injury && player.injury.injuryId) {
+      var injuryState = player.injury;
+      if (option.label === "完整接受康复治疗") {
+        injuryState.weeksRemaining = Math.min(60, injuryState.weeksRemaining + 2);
+        injuryState.totalWeeks = injuryState.weeksRemaining;
+        injuryState.recurrenceRisk = Math.max(0, injuryState.recurrenceRisk - 0.08);
+        injuryState.treatment = "保守康复";
+        player.medicalCondition = clamp(player.medicalCondition + 8, 0, 100);
+      } else if (option.label === "缩短恢复期提前复出") {
+        injuryState.weeksRemaining = Math.max(1, injuryState.weeksRemaining - 3);
+        injuryState.totalWeeks = injuryState.weeksRemaining;
+        injuryState.recurrenceRisk = clamp(injuryState.recurrenceRisk + 0.15, 0, 0.65);
+        injuryState.treatment = "提前复出";
+        player.matchSharpness = clamp(player.matchSharpness - 10, 0, 100);
+      } else if (option.label === "接受手术") {
+        injuryState.weeksRemaining = Math.min(64, injuryState.weeksRemaining + 8);
+        injuryState.totalWeeks = injuryState.weeksRemaining;
+        injuryState.recurrenceRisk = Math.max(0, injuryState.recurrenceRisk - 0.12);
+        injuryState.permanentLoss = Math.max(0, injuryState.permanentLoss - 1);
+        injuryState.treatment = "手术治疗";
+        player.medicalCondition = clamp(player.medicalCondition + 12, 0, 100);
+      }
+      applyInjuryAttributeDamage(player, injuryState);
+      var historyEntry = player.injuryHistory[player.injuryHistory.length - 1];
+      if (historyEntry && historyEntry.injuryId === injuryState.injuryId && historyEntry.age === player.age) {
+        historyEntry.weeksOut = injuryState.totalWeeks;
+        historyEntry.permanentOverallLoss = injuryState.permanentLoss;
+        historyEntry.treatment = injuryState.treatment;
+      }
+      return Object.assign({}, injuryState, {
+        weeksOut: Math.min(52, injuryState.weeksRemaining),
+        label: injuryState.name + (injuryState.recurrence ? "复发" : ""),
+        availabilityFactor: clamp((52 - Math.min(52, injuryState.weeksRemaining)) / 52, 0.02, 0.98),
+        maxAppearances: Math.max(1, Math.round(46 * (52 - Math.min(52, injuryState.weeksRemaining)) / 52)),
+        detail: note || ("预计伤停 " + injuryState.totalWeeks + " 周。")
+      });
+    }
+    var recoveredFromMajorInjury = (player.injuryHistory || []).some(function (injury) {
+      return (injury.severity === "serious" || injury.severity === "major") &&
+        player.career.some(function (season) {
+          return season.age > injury.age && season.appearances >= 30 && season.overall >= 80;
+        });
+    });
+    if (recoveredFromMajorInjury) {
+      verdicts.push({
+        icon: "↟",
+        name: "战胜伤病",
+        description: "经历严重伤病后重新回到高水平赛场"
+      });
+    }
     if (note.indexOf("反复") !== -1) {
       return { label: "伤病复发", severity: "major", availabilityFactor: 0.46, maxAppearances: 18, detail: note };
     }
@@ -2422,6 +2856,8 @@
 
   function simulatePhase(player) {
     var club = getClubById(player.currentClubId);
+    normalizePlayerInjuryData(player);
+    prepareSeasonInjury(player, club);
     refreshContinentalQualificationFromCareer(player, club);
     var clubStrength = getClubStrength(club);
     var playingChance = calculatePlayingChance(player, club);
@@ -2430,6 +2866,11 @@
     var stats = simulateStats(player, appearances, competitionStats);
     var potentialResult = evolvePlayerPotential(player, club, stats);
     var plannedGrowth = calculateOverallChange(player);
+    if (plannedGrowth > 0 && player.pendingSeasonInjury) {
+      plannedGrowth = Math.round(
+        plannedGrowth * getInjuryGrowthMultiplier(player.pendingSeasonInjury)
+      );
+    }
     var seasonOutlook = simulateClubSeasonOutlook(player, club, stats, competitionStats);
     var nationalSummary = simulateNationalTeamSeason(player);
     var trophies = simulateTrophies(player, club, stats, seasonOutlook, nationalSummary);
@@ -2556,6 +2997,7 @@
     entry.keyMatchStory = player.pendingMajorMatchStory || "";
 
     player.career.push(entry);
+    finalizeSeasonInjury(player);
     player.pendingSeasonInjury = null;
     player.pendingBallonDorNomination = false;
     player.pendingCompetitionOutcome = null;
@@ -2627,7 +3069,8 @@
     var transferScore = player.overall * 0.5 + player.status.reputation * 0.2 + summary.goals * 0.6 + summary.assists * 0.4 + player.status.transferInterest * 0.3;
     var renewalChance = clamp((player.status.coachRelation + summary.appearances - 22 + currentClub.youthChance * 0.15) / 100, 0.2, 0.88);
     var similarOfferChance = clamp((summary.appearances + player.status.reputation * 0.35 + player.overall - currentClubStrength + 24) / 100, 0.18, 0.82);
-    var formalOfferChance = clamp((transferScore - 42) / 55, 0.12, 0.84);
+    var formalOfferChance = clamp((transferScore - 42) / 55, 0.12, 0.84) *
+      getInjuryTransferModifier(player);
     var yearsAtCurrentClub = player.age - (player.currentClubStartAge || 16);
     var contractYearsRemaining = Math.max(0, (player.contractUntilAge || player.age) - player.age);
     var renewalWindowOpen = contractYearsRemaining <= 1;
@@ -2707,7 +3150,12 @@
         seenClubIds[option.club.id] = true;
         return;
       }
-      if (!forcedDeparture && !option.marketBreakthrough && !option.worldClassPursuit && (option.type === "formal" || option.type === "transfer")) {
+      if (
+        !forcedDeparture &&
+        !option.marketBreakthrough &&
+        !option.worldClassPursuit &&
+        (option.type === "formal" || option.type === "transfer")
+      ) {
         var minimumAcceptedFee = getMinimumAcceptedTransferFee(player, currentClub, option.club, summary);
         if (option.transferFee < minimumAcceptedFee) {
           seenClubIds[option.club.id] = true;
@@ -2721,6 +3169,41 @@
       }
       seenClubIds[option.club.id] = true;
       options.push(option);
+    }
+
+    if (player.preferredTransferClubId) {
+      var publiclyNamedClub = getClubById(player.preferredTransferClubId);
+      var preferredClub = eligibleDestinations.find(function (club) {
+        return club.id === player.preferredTransferClubId;
+      });
+      var preferredInterestChance = preferredClub
+        ? clamp(
+            0.34 +
+            (player.overall - getClubStrength(preferredClub)) * 0.025 +
+            Math.max(0, player.status.reputation - 55) * 0.005 +
+            Math.max(0, summary.appearances - 24) * 0.008,
+            0.16,
+            0.78
+          )
+        : 0;
+      if (preferredClub && Math.random() < preferredInterestChance) {
+        pushUniqueOption({
+          label: "心仪球队回应你的意愿",
+          description: getClubDisplayName(preferredClub) +
+            " 注意到你公开表达的加盟意愿，并决定尝试推动转会。",
+          club: preferredClub,
+          coachDelta: 3,
+          happinessDelta: 5,
+          type: "formal",
+          targetedPursuit: true
+        });
+      } else if (publiclyNamedClub) {
+        rejectedOffers.push(
+          "你公开表示希望加盟 " + getClubDisplayName(publiclyNamedClub) +
+          "，但对方评估预算和阵容需求后没有提交正式报价。"
+        );
+      }
+      player.preferredTransferClubId = "";
     }
 
     if (player.parentClubId && player.loanReturnAge === player.age) {
@@ -2743,9 +3226,20 @@
     var chineseReturn =
       player.countryCode === "CN" &&
       currentClub.league !== "Chinese Super League";
-    var homecomingMinimumAge = chineseReturn ? 33 : 35;
-    var homecomingMinimumReputation = chineseReturn ? 55 : 75;
-    var homecomingChance = chineseReturn
+    var earlyChinaReturnRequest =
+      chineseReturn &&
+      player.pendingChinaReturnRequest === player.seasonYear;
+    var homecomingMinimumAge = earlyChinaReturnRequest ? player.age : chineseReturn ? 33 : 35;
+    var homecomingMinimumReputation = earlyChinaReturnRequest ? 15 : chineseReturn ? 55 : 75;
+    var homecomingChance = earlyChinaReturnRequest
+      ? clamp(
+          0.42 +
+          Math.max(0, player.overall - 60) * 0.012 +
+          Math.max(0, player.status.reputation - 20) * 0.004,
+          0.42,
+          0.78
+        )
+      : chineseReturn
       ? clamp(
           0.48 +
           (player.age - 33) * 0.1 +
@@ -2784,6 +3278,14 @@
         happinessDelta: chineseReturn ? 2 : 8,
         type: chineseReturn ? "formal" : "homecoming"
       });
+    }
+    if (earlyChinaReturnRequest) {
+      if (!options.some(function (offer) {
+        return offer.club && offer.club.league === "Chinese Super League";
+      })) {
+        rejectedOffers.push("你公开表达了回国意愿，但中超俱乐部评估阵容和预算后暂时没有提交正式报价。");
+      }
+      player.pendingChinaReturnRequest = null;
     }
 
     var rivalTargets = getDirectRivalClubs(currentClub.id).filter(function (club) {
@@ -3012,9 +3514,12 @@
       return club.region === currentClub.region || club.leagueLevel === currentClub.leagueLevel;
     });
     var similarPool = regionalSimilar.length ? regionalSimilar : similar;
-    var availableSimilarPool = (similarPool.length ? similarPool : eligibleDestinations).filter(function (club) {
+    var availableSimilarPool = rankTransferCandidatesByMarketFit(
+      (similarPool.length ? similarPool : eligibleDestinations).filter(function (club) {
       return !seenClubIds[club.id];
-    });
+      }),
+      player
+    );
     var needsDevelopmentLoan = !player.parentClubId &&
       player.age <= 23 &&
       player.overall <= 78 &&
@@ -3884,6 +4389,7 @@
     if (isSaudiClub(club) && offerType !== "loan") {
       salary *= player.status.reputation >= 75 ? 2.8 : 2.2;
     }
+    salary *= getInjuryTransferModifier(player);
     return Math.max(120000, Math.round(salary));
   }
 
@@ -4050,6 +4556,7 @@
       reputationMultiplier *
       leagueMultiplier *
       positionMultiplier *
+      getInjuryTransferModifier(player) *
       clamp(performanceMultiplier, 0.58, 1.3) *
       randomBetween(0.96, 1.04);
     return clamp(roundTransferAmount(marketValue), 80000, 220000000);
@@ -4099,9 +4606,20 @@
       var affordable = valueCoverage >= 1 ? 18 : valueCoverage * 18;
       var roleNeed = clamp(10 - Math.abs(squadNeed - 1) * 1.4, -4, 10);
       var financialHeadroom = clamp((budget - player.value) / 10000000, -8, 12);
+      var isAsianCandidatePool = clubs.length > 0 && clubs.every(function (candidate) {
+        return candidate.region === "亚洲";
+      });
+      var nationalityMarketBonus = 0;
+      if (player.countryCode === "CN" && isAsianCandidatePool && club.region === "亚洲") {
+        nationalityMarketBonus =
+          club.league === "Chinese Super League" || club.league === "China League One"
+            ? 22
+            : -7;
+      }
       return {
         club: club,
-        score: affordable + roleNeed + financialHeadroom + randomBetween(-5, 5)
+        score: affordable + roleNeed + financialHeadroom +
+          nationalityMarketBonus + randomBetween(-5, 5)
       };
     }).sort(function (first, second) {
       return second.score - first.score;
@@ -4112,16 +4630,22 @@
 
   function ensureCurrentEvent() {
     if (!state.currentEvent) {
+      normalizePlayerInjuryData(state.player);
       refreshContinentalQualificationFromCareer(
         state.player,
         getClubById(state.player.currentClubId)
       );
-      var contextEvent = buildContextEvent(state.player);
+      prepareSeasonInjury(state.player, getClubById(state.player.currentClubId));
+      var injuryEvent = buildUnexpectedInjuryEvent(state.player);
+      var contextEvent = injuryEvent || buildContextEvent(state.player);
       var contextEventIsPriority = contextEvent &&
-        (contextEvent.id === "captain-appointment" ||
+        (contextEvent.id === "unexpected-major-injury" ||
+         contextEvent.id === "unexpected-injury" ||
+         contextEvent.id === "captain-appointment" ||
          contextEvent.id === "captain-crisis" ||
          contextEvent.id.indexOf("captain-scrutiny-") === 0 ||
          contextEvent.id === "outgrown-current-club" ||
+         contextEvent.id === "early-career-homesickness" ||
          contextEvent.id === "late-career-coronation" ||
          contextEvent.id === "career-role-transition" ||
          contextEvent.id.indexOf("club-identity-") === 0 ||
@@ -4226,6 +4750,11 @@
     var seasonTransitionEvent = buildSeasonTransitionEvent(player);
     if (seasonTransitionEvent) {
       return seasonTransitionEvent;
+    }
+
+    var homesicknessEvent = buildEarlyCareerHomesicknessEvent(player);
+    if (homesicknessEvent) {
+      return homesicknessEvent;
     }
 
     var majorFinalEvent = buildMajorFinalEvent(player);
@@ -4408,17 +4937,84 @@
     ) {
       return null;
     }
+    var targetClubs = getOutgrownTargetClubs(player, club);
+    var targetOptions = targetClubs.map(function (targetClub) {
+      return {
+        label: "公开表示想加盟 " + getClubDisplayName(targetClub),
+        targetClubId: targetClub.id,
+        effects: {
+          transferInterest: 18,
+          reputation: 2,
+          coachRelation: -6,
+          happiness: 3
+        }
+      };
+    });
+    if (!targetOptions.length) {
+      targetOptions.push({
+        label: "寻求更高舞台",
+        effects: { transferInterest: 18, reputation: 2, coachRelation: -6, happiness: 3 }
+      });
+    }
+    targetOptions.push({
+      label: "继续带领球队前进",
+      effects: { reputation: 3, coachRelation: 5, happiness: 2 }
+    });
     return {
       id: "outgrown-current-club",
       title: "你的水平已经超出球队现有平台",
       text: "你目前的能力明显高于 " + getClubDisplayName(club) +
-        " 的阵容平均水平。经纪团队认为，现在是决定继续带领球队，还是主动追求更高舞台的时候。",
+        " 的阵容平均水平。你可以指定经纪团队优先接触的下一站，也可以继续留队。",
+      options: targetOptions
+    };
+  }
+
+  function buildEarlyCareerHomesicknessEvent(player) {
+    var club = getClubById(player.currentClubId);
+    if (
+      player.countryCode !== "CN" ||
+      !club ||
+      club.country === "中国" ||
+      player.age < 17 ||
+      player.age > 24 ||
+      player.homesicknessEventSeen ||
+      (
+        player.status.happiness >= 72 &&
+        player.age - (player.currentClubStartAge || player.age) >= 2
+      ) ||
+      Math.random() > clamp(0.16 + Math.max(0, 68 - player.status.happiness) * 0.012, 0.16, 0.48)
+    ) {
+      return null;
+    }
+    return {
+      id: "early-career-homesickness",
+      title: "归乡思切",
+      text: "早年独自在海外生活让你开始想念家人、语言和熟悉的比赛环境。经纪团队询问你是否要公开表达回到中超踢球的意愿。",
       options: [
-        { label: "寻求更高舞台", effects: { transferInterest: 18, reputation: 2, coachRelation: -6, happiness: 3 } },
-        { label: "继续带领球队前进", effects: { reputation: 3, coachRelation: 5, happiness: 2 } },
-        { label: "再观察一个赛季", effects: { transferInterest: 4, coachRelation: 1 } }
+        { label: "公开表达回国意愿", effects: { happiness: 5, transferInterest: 8, reputation: -1, coachRelation: -2 } },
+        { label: "请家人来陪伴自己", effects: { happiness: 4, fitness: 1, coachRelation: 1 } },
+        { label: "坚持适应海外生活", effects: { happiness: -2, reputation: 2, coachRelation: 2 } }
       ]
     };
+  }
+
+  function getOutgrownTargetClubs(player, currentClub) {
+    var currentStrength = getClubStrength(currentClub);
+    var candidates = window.CLUBS.filter(function (club) {
+      var strength = getClubStrength(club);
+      var budget = getClubTransferBudget(club);
+      return club.id !== currentClub.id &&
+        club.leagueLevel === 1 &&
+        strength >= currentStrength + 3 &&
+        strength <= player.overall + 10 &&
+        budget >= Math.max(player.value * 0.72, 5000000) &&
+        (player.blockedTransferClubIds || []).indexOf(club.id) === -1 &&
+        !(player.transferHistory || []).some(function (transfer) {
+          return transfer.fromClubId === club.id;
+        });
+    });
+    candidates = rankTransferCandidatesByMarketFit(candidates, player);
+    return candidates.slice(0, 18);
   }
 
   function buildCaptainEvent(player) {
@@ -5135,25 +5731,25 @@
   }
 
   function buildUnexpectedInjuryEvent(player) {
-    var workloadRisk = player.status.fitness < 65 ? 0.08 : player.status.fitness < 78 ? 0.035 : 0;
-    var ageRisk = player.age >= 31 ? 0.035 : player.age >= 28 ? 0.015 : 0;
-    var injuryChance = 0.035 + workloadRisk + ageRisk;
-    if (Math.random() > injuryChance) {
-      return null;
-    }
-
-    var severe = Math.random() < 0.22;
+    normalizePlayerInjuryData(player);
+    var injury = player.pendingSeasonInjury;
+    if (
+      !injury ||
+      injury.carryOver ||
+      injury.totalWeeks < 8 ||
+      player.injury.treatment
+    ) return null;
+    var severe = injury.severity === "serious" || injury.severity === "major";
 
     return {
-      id: severe ? "unexpected-major-injury" : "unexpected-injury",
-      title: severe ? "意外重伤打乱赛季计划" : "突发伤病迫使你停下来",
-      text: severe
-        ? "一次并不激烈的对抗中，你意外遭遇严重伤情。队医认为仓促复出可能留下长期隐患。"
-        : "你在训练或比赛中突然感到不适，检查结果意味着必须重新安排接下来的训练和出场负荷。",
+      id: injury.severity === "major" ? "unexpected-major-injury" : "unexpected-injury",
+      title: severe ? injury.name + "打乱赛季计划" : "伤病迫使你停下来",
+      text: "检查确认你遭遇了" + injury.name + "，预计伤停 " +
+        injury.totalWeeks + " 周。队医提醒，康复方式会影响复发概率和长期身体状态。",
       options: [
-        { label: "完整接受康复治疗", description: "缺席时间更长，但能降低后遗症风险。", effects: { fitness: severe ? -22 : -12, overall: severe ? -1 : 0, happiness: -3, coachRelation: 2 } },
-        { label: "缩短恢复期提前复出", description: "可能赶上关键比赛，也可能伤情反复。", effects: { fitness: severe ? -30 : -18, reputation: 2, coachRelation: 1, happiness: -2 } },
-        { label: "调整踢法保护身体", description: "减少消耗，但短期表现上限会下降。", effects: { fitness: severe ? -16 : -8, overall: -1, happiness: 1 } }
+        { label: "完整接受康复治疗", effects: { fitness: severe ? -18 : -10, happiness: -3, coachRelation: 2 } },
+        { label: "缩短恢复期提前复出", effects: { fitness: severe ? -26 : -16, reputation: 2, happiness: -3 } },
+        { label: "接受手术", effects: { fitness: severe ? -22 : -14, happiness: -4, coachRelation: 3 } }
       ]
     };
   }
@@ -5371,6 +5967,7 @@
       player.status.coachRelation * 0.0015 +
       player.status.fitness * 0.001 +
       statusImpact.playingChance;
+    chance += ((player.matchSharpness == null ? 100 : player.matchSharpness) - 75) * 0.0015;
     if (footRole === "natural-wide" || footRole === "natural-fullback") {
       chance += 0.018;
     } else if (
@@ -6924,18 +7521,29 @@
     if (!opponentName) return null;
 
     player.refereeScandalSeen = true;
-    var exitedCompetition = /出局|失利/.test(competitionStats.continentalStage || "");
-    var benefited = !exitedCompetition && Math.random() < 0.28;
+    var continentalStage = competitionStats.continentalStage || "";
+    var exitedCompetition = /出局|失利/.test(continentalStage);
+    var wonChampionsLeague =
+      continentalStage === "冠军" ||
+      competitionStats.continentalChampion === "欧冠冠军";
+    var benefited = wonChampionsLeague || (!exitedCompetition && Math.random() < 0.28);
     var fixture = getClubDisplayName(club) + " 对阵 " + opponentName;
-    var stageLabel = competitionStats.continentalStage
-      ? "的欧冠" + competitionStats.continentalStage.replace("出局", "").replace("失利", "")
-      : "的欧冠淘汰赛";
+    var stageLabel = wonChampionsLeague
+      ? "的欧冠决赛"
+      : continentalStage
+        ? "的欧冠" + continentalStage.replace("出局", "").replace("失利", "")
+        : "的欧冠淘汰赛";
+    var controversyText = wonChampionsLeague
+      ? fixture + stageLabel +
+        "出现连续争议判罚。球队最终捧起欧冠奖杯，但赛后遭到媒体、对手和中立球迷的口诛笔伐，这座冠军也因此长期伴随着争议。"
+      : fixture + stageLabel +
+        "出现连续争议判罚，球队在巨大质疑声中晋级。这一夜多年后仍被对手球迷反复提起。";
     return {
       text: benefited
-        ? fixture + stageLabel + "出现连续争议判罚，球队在巨大质疑声中晋级。这一夜多年后仍被对手球迷反复提起。"
+        ? controversyText
         : fixture + stageLabel + "被连续争议判罚改变走势，球队最终遭到淘汰，这一夜成为俱乐部历史上的判罚惨案。",
       effects: benefited
-        ? { reputation: -3, happiness: -2, coachRelation: 1 }
+        ? { reputation: wonChampionsLeague ? -5 : -3, happiness: -2, coachRelation: 1 }
         : { reputation: 1, happiness: -7, fitness: -3 }
     };
   }
@@ -7271,17 +7879,6 @@
       continentalChampion = finalDecision.won ? "欧冠冠军" : "";
       continentalRunnerUp = !finalDecision.won;
       specialStory = finalDecision.story;
-    }
-
-    if (
-      leagueChampion &&
-      domesticCupWinner &&
-      continentalChampion === "欧冠冠军"
-    ) {
-      var trebleConfirmationChance = teamPower >= 92 ? 0.1 : teamPower >= 88 ? 0.035 : 0.008;
-      if (Math.random() > trebleConfirmationChance) {
-        domesticCupWinner = false;
-      }
     }
 
     if ((continentalChampion === "欧冠冠军" || continentalChampion === "亚冠冠军") && teamPower >= 92 && randomInt(0, 100) > 74) {
@@ -9364,16 +9961,11 @@
           effects.happiness -= 3;
           note = "提前复出导致伤情反复，你不得不再次长期休战，身体状态和球队位置都受到打击。";
         }
-      } else if (option.label === "调整踢法保护身体") {
-        if (profile.offBall + profile.passing >= 130) {
-          effects.overall += 1;
-          effects.fitness += 4;
-          note = "你依靠阅读比赛和处理球方式减少了身体消耗，新踢法逐渐稳定下来。";
-        } else {
-          effects.reputation -= 2;
-          effects.coachRelation -= 2;
-          note = "新的踢法没有完全掩盖身体限制，你在场上的影响力明显下降。";
-        }
+      } else if (option.label === "接受手术") {
+        effects.fitness -= isMajorInjury ? 4 : 2;
+        effects.happiness -= 2;
+        effects.coachRelation += 2;
+        note = "你接受手术并选择更漫长的恢复周期。本赛季出场受到更大影响，但复发风险和永久损伤有所降低。";
       }
     }
 
@@ -9594,6 +10186,40 @@
       return '<div class="trophy-row">' + badges.join("") + "</div>";
     }
     return '<div class="empty-state">这一年没有收获冠军，也没有遭遇需要记录的伤病。</div>';
+  }
+
+  function buildSeasonInjurySummary(summary) {
+    var injury = summary.injuries && summary.injuries[0];
+    if (!injury) return "";
+    var missedMatches = summary.competitionStats && summary.competitionStats.injuryMatchesMissed || 0;
+    var permanentText = injury.permanentLoss
+      ? " · 永久能力影响 " + injury.permanentLoss + " 点"
+      : "";
+    var recurrenceText = injury.recurrence ? " · 旧伤复发" : "";
+    return '<div class="competition-breakdown injury-summary-card">' +
+      '<span>' + (injury.severity === "major" ? "重大伤病" : "伤病") + "</span>" +
+      "<b>" + injury.label + " · 预计伤停 " + (injury.weeksOut || injury.totalWeeks || 0) + " 周</b>" +
+      "<b>预计少出场 " + missedMatches + " 次 · 成长速度下降" +
+      permanentText + recurrenceText + "</b></div>";
+  }
+
+  function buildCareerInjurySummary(player) {
+    var history = player.injuryHistory || [];
+    if (!history.length) {
+      return '<div class="summary-card"><h3 class="section-title">生涯伤病</h3><span class="muted">没有记录到严重伤病</span></div>';
+    }
+    var totalWeeks = history.reduce(function (sum, injury) {
+      return sum + (injury.weeksOut || 0);
+    }, 0);
+    var severityOrder = { minor: 1, moderate: 2, serious: 3, major: 4 };
+    var worst = history.slice().sort(function (first, second) {
+      return (severityOrder[second.severity] || 0) - (severityOrder[first.severity] || 0) ||
+        (second.weeksOut || 0) - (first.weeksOut || 0);
+    })[0];
+    return '<div class="summary-card"><h3 class="section-title">生涯伤病</h3>' +
+      '<div class="honors-list"><span class="injury-pill">共 ' + history.length + " 次</span>" +
+      '<span class="injury-pill">累计缺阵 ' + totalWeeks + " 周</span>" +
+      '<span class="injury-pill">最严重：' + worst.name + "</span></div></div>";
   }
 
   function buildCompetitionBreakdown(summary) {

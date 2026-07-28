@@ -42,6 +42,7 @@ function createGame() {
     "league-rosters.js",
     "derbies.js",
     "events.js",
+    "injuries.js",
     "league-simulation.js",
     "competition-simulation.js"
   ].forEach((file) => {
