@@ -1619,6 +1619,7 @@
       isCaptain: false,
       everCaptain: false,
       captainSinceAge: null,
+      captainDecisionClubs: {},
       clubIdentityEventsSeen: [],
       lateCareerCoronationSeen: false,
       roleTransitionAttempts: 0,
@@ -1737,11 +1738,15 @@
             option.label === "再观察一个赛季" ? 4 : 0)
       };
     }
-    if (event.id === "captain-appointment" && option.label === "正式接过队长袖标") {
-      state.player.isCaptain = true;
-      state.player.everCaptain = true;
-      state.player.captainSinceAge = state.player.age;
-      dynamicResolution.note = "你正式成为球队队长。从现在开始，关键比赛和更衣室事件会把你视为第一责任人。";
+    if (event.id === "captain-appointment") {
+      state.player.captainDecisionClubs = state.player.captainDecisionClubs || {};
+      state.player.captainDecisionClubs[state.player.currentClubId] = true;
+      if (option.label === "正式接过队长袖标") {
+        state.player.isCaptain = true;
+        state.player.everCaptain = true;
+        state.player.captainSinceAge = state.player.age;
+        dynamicResolution.note = "你正式成为球队队长。从现在开始，关键比赛和更衣室事件会把你视为第一责任人。";
+      }
     }
     if (event.id === "captain-crisis") {
       dynamicResolution.effects.reputation += option.label === "公开保护队友" ? 1 : 0;
@@ -2432,7 +2437,14 @@
     if (refereeScandal) {
       applyEffects(player, refereeScandal.effects);
     }
-    var ballonDorControversy = buildBallonDorControversy(player, club, stats, trophies, seasonOutlook);
+    var ballonDorControversy = buildBallonDorControversy(
+      player,
+      club,
+      stats,
+      trophies,
+      seasonOutlook,
+      nationalSummary
+    );
     var derbyResult = simulateDerbyMoment(player, club, stats);
     if (
       !player.shanghaiDerbyClashSeen &&
@@ -2568,7 +2580,11 @@
   }
 
   function refreshContinentalQualificationFromCareer(player, club) {
-    if (!club || club.region !== "欧洲") return;
+    if (
+      !club ||
+      (club.region !== "欧洲" && club.region !== "亚洲") ||
+      club.leagueLevel !== 1
+    ) return;
     var previousEntries = (player.career || []).filter(function (entry) {
       return entry.clubId === club.id && entry.age === player.age - 1;
     });
@@ -2578,10 +2594,16 @@
   }
 
   function getContinentalQualificationFromSeason(club, summary) {
-    if (!club || club.region !== "欧洲" || !summary) return "";
+    if (!club || !summary || club.leagueLevel !== 1) return "";
     var trophies = summary.trophies || [];
     var status = summary.leagueStanding && summary.leagueStanding.status;
     var competitionNames = getCompetitionNames(club);
+
+    if (club.region === "亚洲") {
+      if (trophies.indexOf("亚冠冠军") !== -1) return "亚冠";
+      return status === "洲际赛事资格区" ? "亚冠" : "";
+    }
+    if (club.region !== "欧洲") return "";
 
     if (trophies.indexOf("欧冠冠军") !== -1 || trophies.indexOf("欧联杯冠军") !== -1) {
       return "欧冠";
@@ -3908,7 +3930,7 @@
     } else if (
       club.leagueLevel === 1 &&
       (club.region === "亚洲" || isSaudiClub(club)) &&
-      position <= 4
+      position <= 3
     ) {
       continental = "亚冠" + (strength >= 88 ? "四强" : strength >= 80 ? "八强" : "小组赛");
     }
@@ -3919,7 +3941,9 @@
       leaguePosition: position,
       continentalCompetition: club.region === "欧洲" && club.leagueLevel === 1
         ? getContinentalCompetitionFromPosition(club, position)
-        : ""
+        : club.region === "亚洲" && club.leagueLevel === 1 && position <= 3
+          ? "亚冠"
+          : ""
     };
   }
 
@@ -4399,6 +4423,10 @@
 
   function buildCaptainEvent(player) {
     var club = getClubById(player.currentClubId);
+    var captainDecisionMade = Boolean(
+      player.captainDecisionClubs &&
+      player.captainDecisionClubs[club.id]
+    );
     var seasonsAtClub = Math.max(0, player.age - (player.currentClubStartAge || player.age));
     var recentClubSeasons = (player.career || []).filter(function (season) {
       return season.clubId === club.id;
@@ -4416,6 +4444,7 @@
     );
     if (
       !player.isCaptain &&
+      !captainDecisionMade &&
       player.age >= 20 &&
       seasonsAtClub >= 2 &&
       player.status.reputation >= 52 &&
@@ -5569,7 +5598,13 @@
     player.nextContinentalCompetition = "";
     if (finalDecision && finalDecision.type === "champions-league") {
       campaign.name = "欧冠";
-    } else if (qualifiedCompetition && club.region === "欧洲") {
+    } else if (
+      qualifiedCompetition &&
+      (
+        (club.region === "欧洲" && qualifiedCompetition !== "亚冠") ||
+        (club.region === "亚洲" && qualifiedCompetition === "亚冠")
+      )
+    ) {
       campaign.name = qualifiedCompetition;
     } else if (
       club.region === "欧洲" &&
@@ -6812,6 +6847,14 @@
     if (!wonChampionsLeague && !wonWorldCup) {
       chance *= 0.85;
     }
+    if (
+      !wonChampionsLeague &&
+      !wonWorldCup &&
+      !seasonOutlook.leagueChampion &&
+      !isDominantBallonDorSeason(player, stats)
+    ) {
+      chance *= 0.35;
+    }
     if (isWorldCupSeason) {
       if (wonWorldCup) {
         chance *= 1.18;
@@ -6850,6 +6893,20 @@
     return clamp(chance, 0.08, 0.86);
   }
 
+  function isDominantBallonDorSeason(player, stats) {
+    var output = stats.goals + stats.assists;
+    if (player.overall < 90) return false;
+    if (["ST", "LW", "RW"].indexOf(player.position) !== -1) {
+      return stats.goals >= 30 && output >= 42;
+    }
+    if (player.position === "CAM") return output >= 34;
+    if (["LM", "RM", "CM"].indexOf(player.position) !== -1) return output >= 28;
+    if (["LB", "RB"].indexOf(player.position) !== -1) {
+      return stats.teamContribution >= 88 && output >= 14;
+    }
+    return stats.teamContribution >= 92 && stats.appearances >= 32;
+  }
+
   function buildRefereeScandalMoment(player, club, competitionStats) {
     if (
       player.refereeScandalSeen ||
@@ -6883,13 +6940,23 @@
     };
   }
 
-  function buildBallonDorControversy(player, club, stats, trophies, seasonOutlook) {
+  function buildBallonDorControversy(player, club, stats, trophies, seasonOutlook, nationalSummary) {
     var previousControversies = (player.career || []).filter(function (season) {
       return Boolean(season.ballonDorControversy);
     });
+    var wonBallonDor = trophies.indexOf("金球奖") !== -1;
+    var wonWorldCup = nationalSummary &&
+      (nationalSummary.honors || []).indexOf("世界杯冠军") !== -1;
+    var hasTopTitle =
+      seasonOutlook.continentalChampion === "欧冠冠军" ||
+      seasonOutlook.leagueChampion ||
+      wonWorldCup;
+    if (wonBallonDor && !hasTopTitle && !isDominantBallonDorSeason(player, stats)) {
+      return "评奖结果引发巨大争议。你没有顶级冠军，个人表现也未形成压倒性优势，外界质疑你从更具说服力的竞争者手中“偷走”了金球奖。";
+    }
     if (
       !player.pendingBallonDorNomination ||
-      trophies.indexOf("金球奖") !== -1 ||
+      wonBallonDor ||
       stats.appearances < 30 ||
       previousControversies.length >= 2
     ) {
