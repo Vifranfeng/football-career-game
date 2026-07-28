@@ -807,7 +807,10 @@
     if (isTargetClubChoice) {
       var targetChoices = state.currentEvent.options.map(function (option, index) {
         return option.targetClubId
-          ? '<option value="' + index + '">' + getClubDisplayName(getClubById(option.targetClubId)) + "</option>"
+          ? '<option value="' + index + '">' +
+            getClubDisplayName(getClubById(option.targetClubId)) + " · " +
+            getLeagueDisplayName(getClubById(option.targetClubId).league) +
+            "</option>"
           : "";
       }).join("");
       var stayIndex = state.currentEvent.options.findIndex(function (option) {
@@ -1782,6 +1785,8 @@
       state.player.outgrownClubDecisions = state.player.outgrownClubDecisions || {};
       if (option.targetClubId) {
         state.player.preferredTransferClubId = option.targetClubId;
+        state.player.preferredTransferPledgeYear = state.player.seasonYear;
+        state.player.lastPreferredClubRejectionSeason = 0;
         dynamicResolution.note = "你通过经纪团队公开表示希望加盟 " +
           getClubDisplayName(getClubById(option.targetClubId)) +
           "。消息已经传出，但对方是否正式报价仍取决于预算、阵容需求和谈判结果。";
@@ -2677,6 +2682,11 @@
       }
       state.player.isCaptain = false;
       state.player.captainSinceAge = null;
+      if (option.club.id === state.player.preferredTransferClubId) {
+        state.player.preferredTransferClubId = "";
+        state.player.preferredTransferPledgeYear = 0;
+        state.player.lastPreferredClubRejectionSeason = 0;
+      }
     } else if (option.type === "return") {
       state.player.currentClubStartAge = state.player.age + 1;
     } else if (option.type === "renewal") {
@@ -3173,37 +3183,66 @@
 
     if (player.preferredTransferClubId) {
       var publiclyNamedClub = getClubById(player.preferredTransferClubId);
-      var preferredClub = eligibleDestinations.find(function (club) {
-        return club.id === player.preferredTransferClubId;
-      });
+      var preferredClub = publiclyNamedClub &&
+        publiclyNamedClub.id !== currentClub.id &&
+        publiclyNamedClub.leagueLevel === 1 &&
+        (player.blockedTransferClubIds || []).indexOf(publiclyNamedClub.id) === -1 &&
+        getClubTransferBudget(publiclyNamedClub) >= player.value * 0.55 &&
+        player.overall >= getClubStrength(publiclyNamedClub) - 12
+          ? publiclyNamedClub
+          : null;
       var preferredInterestChance = preferredClub
         ? clamp(
-            0.34 +
-            (player.overall - getClubStrength(preferredClub)) * 0.025 +
-            Math.max(0, player.status.reputation - 55) * 0.005 +
-            Math.max(0, summary.appearances - 24) * 0.008,
-            0.16,
-            0.78
+            0.46 +
+            (player.overall - getClubStrength(preferredClub)) * 0.028 +
+            Math.max(0, player.status.reputation - 50) * 0.006 +
+            Math.max(0, summary.appearances - 20) * 0.009 +
+            (preferredClub.band === "豪门" ? -0.08 : 0),
+            0.2,
+            0.9
           )
         : 0;
-      if (preferredClub && Math.random() < preferredInterestChance) {
+      var earnedPreferredClubOffer = Boolean(
+        preferredClub &&
+        getClubTransferBudget(preferredClub) >= player.value * 0.72 &&
+        summary.appearances >= 22 &&
+        player.status.reputation >= 65 &&
+        (
+          player.overall >= getClubStrength(preferredClub) - 2 ||
+          player.overall >= 88
+        )
+      );
+      if (
+        preferredClub &&
+        (earnedPreferredClubOffer || Math.random() < preferredInterestChance)
+      ) {
         pushUniqueOption({
-          label: "心仪球队回应你的意愿",
+          label: earnedPreferredClubOffer
+            ? "心仪球队兑现长期关注"
+            : "心仪球队回应你的意愿",
           description: getClubDisplayName(preferredClub) +
-            " 注意到你公开表达的加盟意愿，并决定尝试推动转会。",
+            (earnedPreferredClubOffer
+              ? " 持续关注了你的成长。如今你的实力已经达到阵容要求，俱乐部正式提交报价。"
+              : " 注意到你公开表达的加盟意愿，并决定尝试推动转会。"),
           club: preferredClub,
           coachDelta: 3,
           happinessDelta: 5,
           type: "formal",
           targetedPursuit: true
         });
-      } else if (publiclyNamedClub) {
+      } else if (
+        publiclyNamedClub &&
+        (
+          !player.lastPreferredClubRejectionSeason ||
+          player.seasonYear - player.lastPreferredClubRejectionSeason >= 2
+        )
+      ) {
         rejectedOffers.push(
           "你公开表示希望加盟 " + getClubDisplayName(publiclyNamedClub) +
-          "，但对方评估预算和阵容需求后没有提交正式报价。"
+          "，但对方目前认为你的实力、阵容定位或转会成本尚未达到引援条件。你的投诚意愿仍然有效。"
         );
+        player.lastPreferredClubRejectionSeason = player.seasonYear;
       }
-      player.preferredTransferClubId = "";
     }
 
     if (player.parentClubId && player.loanReturnAge === player.age) {
@@ -5005,16 +5044,17 @@
       var budget = getClubTransferBudget(club);
       return club.id !== currentClub.id &&
         club.leagueLevel === 1 &&
-        strength >= currentStrength + 3 &&
+        (
+          strength >= currentStrength - 2 ||
+          club.reputation >= currentClub.reputation + 5 ||
+          isBigFiveTopFlight(club)
+        ) &&
         strength <= player.overall + 10 &&
-        budget >= Math.max(player.value * 0.72, 5000000) &&
-        (player.blockedTransferClubIds || []).indexOf(club.id) === -1 &&
-        !(player.transferHistory || []).some(function (transfer) {
-          return transfer.fromClubId === club.id;
-        });
+        budget >= Math.max(player.value * 0.45, 3000000) &&
+        (player.blockedTransferClubIds || []).indexOf(club.id) === -1;
     });
     candidates = rankTransferCandidatesByMarketFit(candidates, player);
-    return candidates.slice(0, 18);
+    return candidates.slice(0, 60);
   }
 
   function buildCaptainEvent(player) {
