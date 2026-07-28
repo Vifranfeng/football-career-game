@@ -795,7 +795,7 @@
     ensureCurrentEvent();
     var player = state.player;
     var club = getClubById(player.currentClubId);
-    var isTargetClubChoice = state.currentEvent.id === "outgrown-current-club" &&
+    var isTargetClubChoice =
       state.currentEvent.options.some(function (option) { return option.targetClubId; });
     var eventHtml = state.currentEvent.options.map(function (option, index) {
       return (
@@ -824,7 +824,7 @@
         "</button>" +
         (stayIndex >= 0
           ? '<button class="option-card btn btn-ghost" data-option-index="' + stayIndex + '">' +
-            '  <div class="option-title">继续带领球队前进</div>' +
+            '  <div class="option-title">' + state.currentEvent.options[stayIndex].label + "</div>" +
             "</button>"
           : "");
     }
@@ -1871,10 +1871,25 @@
       option.label === "寻求离队" ||
       option.label === "寻求更高舞台" ||
       option.label === "要求转会" ||
+      option.label === "公开要求转会" ||
       option.label === "听取其他球队机会"
     ) {
       state.player.pendingForcedDeparture = true;
       state.player.pendingAmbitiousDeparture = option.label === "寻求更高舞台";
+    }
+    if (event.id === "elite-club-exit-interview") {
+      state.player.lastEliteExitInterviewSeason = state.player.seasonYear;
+      state.player.eliteExitInterviewSeen = true;
+      if (option.targetClubId) {
+        state.player.pendingEliteExitDemand = true;
+        state.player.pendingForcedDeparture = true;
+        state.player.preferredTransferClubId = option.targetClubId;
+        state.player.preferredTransferPledgeYear = state.player.seasonYear;
+        state.player.lastPreferredClubRejectionSeason = 0;
+        dynamicResolution.note = "你在采访中公开表示希望加盟 " +
+          getClubDisplayName(getClubById(option.targetClubId)) +
+          "。这次表态已经破坏了你与现俱乐部的关系，目标球队是否立即行动仍取决于预算和阵容需求。";
+      }
     }
     applyEffects(state.player, dynamicResolution.effects);
     applyChoiceRelatedInjuryRisk(state.player, option, dynamicResolution.effects);
@@ -2633,6 +2648,15 @@
     if (transferCollapse) {
       state.player.status.happiness = clamp(state.player.status.happiness - 4, 20, 100);
       state.player.status.reputation = applyReputationChange(state.player, previousClub, -1);
+      if (state.player.pendingEliteExitDemand) {
+        state.player.status.coachRelation = clamp(
+          state.player.status.coachRelation - 9,
+          0,
+          100
+        );
+        state.player.status.happiness = clamp(state.player.status.happiness - 4, 20, 100);
+        transferCollapse.note += " 你此前已经公开要求离队，如今交易失败，俱乐部与更衣室对你的态度明显恶化。";
+      }
       state.player.blockedTransferClubIds = state.player.blockedTransferClubIds || [];
       state.player.blockedTransferClubIds.push(option.club.id);
       state.player.blockedTransferClubIds = unique(state.player.blockedTransferClubIds);
@@ -2713,6 +2737,7 @@
     state.player.currentClubId = option.club.id;
     state.player.pendingForcedDeparture = false;
     state.player.pendingAmbitiousDeparture = false;
+    state.player.pendingEliteExitDemand = false;
     state.player.blockedTransferClubIds = [];
     state.player.currentSalary = option.salaryValue || state.player.currentSalary;
     state.player.status.coachRelation = option.club.id !== previousClub.id
@@ -3697,6 +3722,19 @@
       }
     }
 
+    if (!options.length && forcedDeparture && player.pendingEliteExitDemand) {
+      hasForcedStay = true;
+      pushUniqueOption({
+        label: "离队申请无人响应",
+        description: "你已经公开要求离开 " + getClubDisplayName(currentClub) +
+          "，但目标球队没有提交有效报价。你只能暂时留队，俱乐部和更衣室关系已经明显恶化。",
+        club: currentClub,
+        coachDelta: -10,
+        happinessDelta: -6,
+        type: "forced-stay"
+      });
+    }
+
     if (!options.length && !forcedDeparture) {
       hasForcedStay = true;
       pushUniqueOption({
@@ -3710,7 +3748,9 @@
     }
 
     summary.clubDecisionNote = forcedDeparture
-      ? getClubDisplayName(currentClub) + " 已接受你的离队申请，本次市场不会再提供续约或留队选项。"
+      ? hasForcedStay
+        ? "你公开要求离队却没有得到有效报价，只能在关系恶化后暂时留队。"
+        : getClubDisplayName(currentClub) + " 已接受你的离队申请，本次市场不会再提供续约或留队选项。"
       : hasDevelopmentLoan
       ? getClubDisplayName(currentClub) + " 仍然保留你的长期计划，但现阶段队内竞争过强，因此主动为你安排外租并要求保证比赛时间。"
       : hasForcedStay
@@ -4806,6 +4846,11 @@
       return lateCareerCoronationEvent;
     }
 
+    var eliteClubExitEvent = buildEliteClubExitInterviewEvent(player);
+    if (eliteClubExitEvent) {
+      return eliteClubExitEvent;
+    }
+
     var outgrownClubEvent = buildOutgrownCurrentClubEvent(player);
     if (outgrownClubEvent) {
       return outgrownClubEvent;
@@ -5004,6 +5049,53 @@
       title: "你的水平已经超出球队现有平台",
       text: "你目前的能力明显高于 " + getClubDisplayName(club) +
         " 的阵容平均水平。你可以指定经纪团队优先接触的下一站，也可以继续留队。",
+      options: targetOptions
+    };
+  }
+
+  function buildEliteClubExitInterviewEvent(player) {
+    var club = getClubById(player.currentClubId);
+    var yearsAtClub = player.age - (player.currentClubStartAge || player.age);
+    if (
+      !club ||
+      club.band !== "豪门" ||
+      player.eliteExitInterviewSeen ||
+      player.age < 21 ||
+      player.age > 32 ||
+      yearsAtClub < 2 ||
+      player.pendingForcedDeparture ||
+      player.preferredTransferClubId ||
+      Math.random() > 0.08
+    ) {
+      return null;
+    }
+    var targetClubs = getOutgrownTargetClubs(player, club).filter(function (targetClub) {
+      return targetClub.band === "豪门" ||
+        targetClub.reputation >= club.reputation - 3;
+    }).slice(0, 40);
+    if (!targetClubs.length) return null;
+
+    var targetOptions = targetClubs.map(function (targetClub) {
+      return {
+        label: "公开表示想加盟 " + getClubDisplayName(targetClub),
+        targetClubId: targetClub.id,
+        effects: {
+          transferInterest: 22,
+          reputation: -5,
+          coachRelation: -12,
+          happiness: 2
+        }
+      };
+    });
+    targetOptions.push({
+      label: "否认离队传闻",
+      effects: { reputation: 1, coachRelation: 3, happiness: -1 }
+    });
+    return {
+      id: "elite-club-exit-interview",
+      title: "媒体追问你是否准备离开豪门",
+      text: "你已经在 " + getClubDisplayName(club) +
+        " 站稳脚跟，但媒体不断追问下一站。公开点名其他球队会推动转会，也会被现俱乐部和球迷视为投诚。",
       options: targetOptions
     };
   }
