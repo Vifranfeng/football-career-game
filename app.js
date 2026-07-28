@@ -2426,7 +2426,8 @@
     var potentialResult = evolvePlayerPotential(player, club, stats);
     var plannedGrowth = calculateOverallChange(player);
     var seasonOutlook = simulateClubSeasonOutlook(player, club, stats, competitionStats);
-    var trophies = simulateTrophies(player, club, stats, seasonOutlook);
+    var nationalSummary = simulateNationalTeamSeason(player);
+    var trophies = simulateTrophies(player, club, stats, seasonOutlook, nationalSummary);
     var refereeScandal = buildRefereeScandalMoment(player, club, competitionStats);
     if (refereeScandal) {
       applyEffects(player, refereeScandal.effects);
@@ -2447,7 +2448,6 @@
         seasonYear: player.seasonYear
       };
     }
-    var nationalSummary = simulateNationalTeamSeason(player);
     var dynastyMoments = buildDynastyMoments(player, club, trophies, nationalSummary);
     var legendStory = buildSingleMatchScoringStory(player, club, stats) ||
       buildUniversalLegendStory(player, club, stats, trophies, seasonOutlook, nationalSummary);
@@ -5824,6 +5824,27 @@
     });
   }
 
+  function dedupeLeagueTeams(teams, preferredClub) {
+    var uniqueTeams = [];
+    var seenIds = {};
+    var seenNames = {};
+    var orderedTeams = preferredClub
+      ? [preferredClub].concat(teams || [])
+      : (teams || []).slice();
+    orderedTeams.forEach(function (team) {
+      if (!team || !team.id || seenIds[team.id]) return;
+      var names = [team.name, team.nameZh, getClubDisplayName(team)]
+        .filter(Boolean)
+        .map(normalizeClubSearchName)
+        .filter(Boolean);
+      if (names.some(function (name) { return seenNames[name]; })) return;
+      seenIds[team.id] = true;
+      names.forEach(function (name) { seenNames[name] = true; });
+      uniqueTeams.push(team);
+    });
+    return uniqueTeams;
+  }
+
   function completeCompetitionWorldResults(club, domesticCupCampaign, continentalCampaign) {
     if (!window.CompetitionSimulation) return;
     var sameCountry = window.CLUBS.filter(function (candidate) {
@@ -6511,7 +6532,7 @@
     };
   }
 
-  function simulateTrophies(player, club, stats, seasonOutlook) {
+  function simulateTrophies(player, club, stats, seasonOutlook, nationalSummary) {
     var pool = [];
     var competitionNames = getCompetitionNames(club);
 
@@ -6557,11 +6578,11 @@
     ) {
       pool.push("赛季最佳阵容");
     }
-    var ballonDorQualified = qualifiesForBallonDor(player, stats, seasonOutlook);
+    var ballonDorQualified = qualifiesForBallonDor(player, stats, seasonOutlook, nationalSummary);
     player.pendingBallonDorNomination = ballonDorQualified;
     if (
       ballonDorQualified &&
-      Math.random() < getBallonDorChance(player, stats, seasonOutlook)
+      Math.random() < getBallonDorChance(player, stats, seasonOutlook, nationalSummary)
     ) {
       pool.push("金球奖");
     }
@@ -6661,11 +6682,20 @@
     );
   }
 
-  function qualifiesForBallonDor(player, stats, seasonOutlook) {
+  function qualifiesForBallonDor(player, stats, seasonOutlook, nationalSummary) {
     var output = stats.goals + stats.assists;
     var wonChampionsLeague = seasonOutlook &&
       seasonOutlook.continentalChampion === "欧冠冠军";
+    var championsLeagueRunnerUp = seasonOutlook &&
+      seasonOutlook.continentalRunnerUp &&
+      seasonOutlook.continentalRunnerUpName === "欧冠";
+    var championsLeagueSemiFinalist = seasonOutlook &&
+      seasonOutlook.continentalName === "欧冠" &&
+      seasonOutlook.continentalStage === "半决赛出局";
+    var championsLeagueDeepRun = championsLeagueRunnerUp || championsLeagueSemiFinalist;
     var wonLeague = seasonOutlook && seasonOutlook.leagueChampion;
+    var wonWorldCup = nationalSummary &&
+      (nationalSummary.honors || []).indexOf("世界杯冠军") !== -1;
     var eliteDouble = wonChampionsLeague && wonLeague;
     var exceptionalDoubleSeason =
       eliteDouble &&
@@ -6686,6 +6716,7 @@
       (seasonOutlook.continentalChampion === "欧冠冠军" ||
        seasonOutlook.leagueChampion ||
        seasonOutlook.worldChampion);
+    majorChampion = majorChampion || wonWorldCup || championsLeagueDeepRun;
     var eliteDefensiveChampion = seasonOutlook &&
       (seasonOutlook.continentalChampion === "欧冠冠军" ||
        seasonOutlook.worldChampion);
@@ -6712,7 +6743,7 @@
       (eliteDefensiveChampion || player.status.reputation >= 90);
   }
 
-  function getBallonDorChance(player, stats, seasonOutlook) {
+  function getBallonDorChance(player, stats, seasonOutlook, nationalSummary) {
     var output = stats.goals + stats.assists;
     var majorChampion = seasonOutlook &&
       (seasonOutlook.continentalChampion === "欧冠冠军" ||
@@ -6721,6 +6752,25 @@
     var eliteDouble = seasonOutlook &&
       seasonOutlook.leagueChampion &&
       seasonOutlook.continentalChampion === "欧冠冠军";
+    var wonChampionsLeague = seasonOutlook &&
+      seasonOutlook.continentalChampion === "欧冠冠军";
+    var championsLeagueRunnerUp = seasonOutlook &&
+      seasonOutlook.continentalRunnerUp &&
+      seasonOutlook.continentalRunnerUpName === "欧冠";
+    var championsLeagueSemiFinalist = seasonOutlook &&
+      seasonOutlook.continentalName === "欧冠" &&
+      seasonOutlook.continentalStage === "半决赛出局";
+    var isWorldCupSeason = isWorldCupYear(player.seasonYear);
+    var wonWorldCup = nationalSummary &&
+      (nationalSummary.honors || []).indexOf("世界杯冠军") !== -1;
+    var worldCupRunnerUp = isWorldCupSeason && nationalSummary && nationalSummary.runnerUp;
+    var worldCupStory = nationalSummary && nationalSummary.finalStory || "";
+    var worldCupDeepRun = isWorldCupSeason && /四强|半决赛/.test(worldCupStory);
+    var worldCupReachedKnockouts = isWorldCupSeason &&
+      (wonWorldCup || worldCupRunnerUp || worldCupDeepRun || /八强|十六强/.test(worldCupStory));
+    var worldCupOutput = isWorldCupSeason && nationalSummary
+      ? (nationalSummary.goals || 0) + (nationalSummary.assists || 0)
+      : 0;
     var previousSeason = player.career && player.career.length
       ? player.career[player.career.length - 1]
       : null;
@@ -6744,13 +6794,36 @@
       Math.max(0, player.status.reputation - 78) * 0.006 +
       Math.max(0, output - 18) * 0.008 +
       (majorChampion ? 0.1 : 0) +
+      (wonChampionsLeague ? 0.16 : 0) +
+      (championsLeagueRunnerUp ? 0.1 : 0) +
+      (championsLeagueSemiFinalist ? 0.05 : 0) +
       (eliteDouble ? 0.18 : 0) +
+      (wonWorldCup ? 0.32 : 0) +
+      (worldCupRunnerUp ? 0.18 : 0) +
+      (worldCupDeepRun ? 0.1 : 0) +
+      Math.max(0, worldCupOutput - 2) * 0.025 +
       mediaNarrativeBonus +
       fairPlayBonus +
       (defensiveAwardCase ? 0.12 : 0) +
       Math.max(0, (stats.teamContribution || 70) - 78) * 0.008;
     if (eliteDouble && output >= 24 && player.status.reputation >= 88) {
       chance = Math.max(chance, 0.72);
+    }
+    if (!wonChampionsLeague && !wonWorldCup) {
+      chance *= 0.85;
+    }
+    if (isWorldCupSeason) {
+      if (wonWorldCup) {
+        chance *= 1.18;
+      } else if (worldCupRunnerUp) {
+        chance *= 1.02;
+      } else if (worldCupDeepRun) {
+        chance *= 0.88;
+      } else if (worldCupReachedKnockouts) {
+        chance *= 0.68;
+      } else {
+        chance *= 0.42;
+      }
     }
     var playerAwardScore =
       player.overall * 0.45 +
@@ -7031,6 +7104,7 @@
       : window.CLUBS.filter(function (candidate) {
           return candidate.league === club.league;
         });
+    leagueTeams = dedupeLeagueTeams(leagueTeams, club);
     if (!leagueTeams.some(function (candidate) { return candidate.id === club.id; })) {
       leagueTeams[leagueTeams.length - 1] = club;
     }
@@ -7195,6 +7269,8 @@
       continentalChampion: continentalChampion,
       continentalRunnerUp: continentalRunnerUp,
       continentalRunnerUpName: continentalRunnerUpName,
+      continentalName: competitionStats ? competitionStats.continentalName : "",
+      continentalStage: competitionStats ? competitionStats.continentalStage : "",
       worldChampion: worldChampion,
       specialStory: specialStory
     };
