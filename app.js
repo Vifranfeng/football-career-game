@@ -1358,11 +1358,11 @@
         tier: "super"
       });
     }
-    if (player.totals.appearances >= 400 && careerContributionRate >= 1.25) {
+    if (player.totals.appearances >= 400 && careerContributionRate >= 0.98) {
       verdicts.push({
         icon: "⚡",
-        name: "全能进攻之神",
-        description: "生涯场均直接参与 " + careerContributionRate.toFixed(2) + " 球",
+        name: "全能进攻大师",
+        description: "漫长生涯场均直接参与 " + careerContributionRate.toFixed(2) + " 球",
         tier: "super"
       });
     }
@@ -7818,7 +7818,15 @@
 
   function isDominantBallonDorSeason(player, stats) {
     var output = stats.goals + stats.assists;
-    if (player.overall < 90) return false;
+    if (player.overall < 87) return false;
+    var attackingPositions = ["ST", "LW", "RW", "CAM", "LM", "RM", "CM"];
+    if (
+      attackingPositions.indexOf(player.position) !== -1 &&
+      stats.appearances >= 28 &&
+      output / stats.appearances >= 1
+    ) {
+      return true;
+    }
     if (["ST", "LW", "RW"].indexOf(player.position) !== -1) {
       return stats.goals >= 30 && output >= 42;
     }

@@ -84,15 +84,20 @@
     var priorWeight = Math.max(0, 0.18 - elapsed * 0.015);
     var current = getClubStrength(club);
     var historic = Number(club.initialStrength || club.strength || current);
-    var finance = clamp(Number(club.budget || club.salary || 50) / 100 - 0.5, -0.6, 0.8);
+    var financeValue = Number(
+      club.finances || club.finance || club.salaryLevel || club.budget || club.salary || 50
+    );
+    var finance = clamp(financeValue / 100 - 0.5, -0.6, 0.8);
     var form = clamp(Number(club.dynamicForm || 0), -5, 5) * 0.35;
     var squad = clamp(Number(club.squadQuality || current) - current, -3, 3) * 0.25;
+    var boardValue = Number(club.boardStability || club.board || 65);
+    var stability = clamp((boardValue - 65) / 35, -0.45, 0.65);
     var playerImpact = options.isPlayerClub
       ? calculatePlayerImpact(options.player, club, options.seasonStats)
       : { total: 0, attack: 0, defense: 0 };
     var seasonSwing = generateSeasonSwing();
     return {
-      total: current * (1 - priorWeight) + historic * priorWeight + finance + form + squad +
+      total: current * (1 - priorWeight) + historic * priorWeight + finance + stability + form + squad +
         playerImpact.total + Number(options.seasonPowerBonus || 0) + seasonSwing.value,
       playerImpact: playerImpact,
       seasonType: seasonSwing.type

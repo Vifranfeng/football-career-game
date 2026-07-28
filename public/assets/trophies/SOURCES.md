@@ -6,5 +6,9 @@
 - Premier League trophy: "Premier league trophy icon.png", Wikimedia Commons, CC BY-SA 2.5.
 - FA Cup trophy: "The Football Association Cup trophy.svg", Wikimedia Commons, CC0.
 - Golden Ball icon: "Balon Oro.svg", Wikimedia Commons, CC BY-SA 4.0.
+- La Liga trophy: "Liga.png", Wikimedia Commons, CC BY-SA 2.5.
+- Bundesliga trophy: "Icon Trophy Bundesliga (1 Fußball-Bundesliga).svg", Wikimedia Commons, CC BY 4.0.
+- Serie A trophy: "Coppa Campioni d'Italia (Serie A).png", Wikimedia Commons, CC BY-SA 4.0.
+- Ligue 1 trophy: "Ligue1 trophy.svg", Wikimedia Commons.
 
 Remote images retain their Wikimedia Commons source URLs in `app.js`.

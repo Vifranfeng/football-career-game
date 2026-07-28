@@ -152,8 +152,8 @@
   var POSITION_RATES = {
     GK: { goal: 0.0005, assist: 0.012 },
     CB: { goal: 0.035, assist: 0.025 },
-    LB: { goal: 0.1, assist: 0.12 },
-    RB: { goal: 0.1, assist: 0.12 },
+    LB: { goal: 0.1, assist: 0.095 },
+    RB: { goal: 0.1, assist: 0.095 },
     CM: { goal: 0.1, assist: 0.13 },
     CAM: { goal: 0.27, assist: 0.15 },
     LM: { goal: 0.16, assist: 0.18 },
@@ -216,7 +216,44 @@
     manutd: 0.12
   };
   var CLUB_BADGE_OVERRIDES = {
+    arsenal: "https://crests.football-data.org/57.png",
+    villa: "https://crests.football-data.org/58.png",
+    "london-blue": "https://crests.football-data.org/61.png",
+    everton: "https://crests.football-data.org/62.png",
+    liverpool: "https://crests.football-data.org/64.png",
+    mancity: "https://crests.football-data.org/65.png",
+    manutd: "https://crests.football-data.org/66.png",
+    newcastle: "https://crests.football-data.org/67.png",
+    tottenham: "https://crests.football-data.org/73.png",
+    brighton: "https://crests.football-data.org/397.png",
+    brentford: "https://crests.football-data.org/402.png",
+    atletico: "https://crests.football-data.org/78.png",
+    espanyol: "https://crests.football-data.org/80.png",
+    barcelona: "https://crests.football-data.org/81.png",
+    "madrid-royal": "https://crests.football-data.org/86.png",
+    betis: "https://crests.football-data.org/90.png",
+    villarreal: "https://crests.football-data.org/94.png",
+    "sevilla-sol": "https://crests.football-data.org/559.png",
+    leverkusen: "https://crests.football-data.org/3.png",
+    dortmund: "https://crests.football-data.org/4.png",
+    "munich-red": "https://crests.football-data.org/5.png",
+    hamburg: "https://crests.football-data.org/7.png",
+    "berlin-wall": "https://crests.football-data.org/10.png",
+    wolfsburg2: "https://crests.football-data.org/11.png",
+    frankfurt: "https://crests.football-data.org/19.png",
+    stpauli2: "https://crests.football-data.org/20.png",
+    heidenheim2: "https://crests.football-data.org/44.png",
+    "milan-night": "https://crests.football-data.org/98.png",
+    fiorentina: "https://crests.football-data.org/99.png",
+    roma: "https://crests.football-data.org/100.png",
+    inter: "https://crests.football-data.org/108.png",
+    juventus: "https://crests.football-data.org/109.png",
+    "turin-bulls": "https://crests.football-data.org/586.png",
+    "marseille-wave": "https://crests.football-data.org/516.png",
+    lille: "https://crests.football-data.org/521.png",
+    "lyon-river": "https://crests.football-data.org/523.png",
     "paris-lumiere": "https://crests.football-data.org/524.png",
+    monaco: "https://crests.football-data.org/548.png",
     "blackpool-l1": "https://r2.thesportsdb.com/images/media/team/badge/utywru1448754934.png",
     "reading-l1": "https://r2.thesportsdb.com/images/media/team/badge/tprvtu1448811527.png",
     "huddersfield-l1": "https://r2.thesportsdb.com/images/media/team/badge/y11fin1677527513.png",
@@ -541,7 +578,8 @@
     gameOver: false,
     clubForms: {},
     clubEconomics: {},
-    clubLeagueOrigins: {}
+    clubLeagueOrigins: {},
+    worldLeagueTables: {}
   };
 
   function init() {
@@ -594,19 +632,102 @@
         Array.prototype.forEach.call(document.querySelectorAll('[data-club-badge="' + clubId + '"]'), function (node) {
           if (node.querySelector("img")) return;
           var image = document.createElement("img");
-          image.src = badgeUrl;
+          image.crossOrigin = "anonymous";
           image.alt = getClubDisplayName(getClubById(clubId)) + " 队徽";
           image.loading = "lazy";
+          image.addEventListener("load", function () {
+            applyClubVerdictTheme(clubId, image);
+          });
           image.addEventListener("error", function () {
             image.remove();
             node.classList.remove("club-api-badge-loaded");
             delete clubBadgeCache[clubId];
             removePersistentClubBadge(clubId);
+            applyClubVerdictFallbackTheme(clubId);
           });
+          image.src = badgeUrl;
           node.appendChild(image);
           node.classList.add("club-api-badge-loaded");
         });
       });
+    });
+  }
+
+  function applyClubVerdictTheme(clubId, image) {
+    var colors = extractBadgeColors(image);
+    if (!colors.length) {
+      applyClubVerdictFallbackTheme(clubId);
+      return;
+    }
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[data-verdict-club="' + clubId + '"]'),
+      function (node) {
+        node.style.setProperty("--club-primary-rgb", colors[0].join(","));
+        node.style.setProperty(
+          "--club-secondary-rgb",
+          (colors[1] || colors[0]).join(",")
+        );
+      }
+    );
+  }
+
+  function extractBadgeColors(image) {
+    try {
+      var canvas = document.createElement("canvas");
+      canvas.width = 36;
+      canvas.height = 36;
+      var context = canvas.getContext("2d", { willReadFrequently: true });
+      context.drawImage(image, 0, 0, 36, 36);
+      var pixels = context.getImageData(0, 0, 36, 36).data;
+      var buckets = {};
+      for (var index = 0; index < pixels.length; index += 16) {
+        if (pixels[index + 3] < 150) continue;
+        var red = pixels[index];
+        var green = pixels[index + 1];
+        var blue = pixels[index + 2];
+        var maximum = Math.max(red, green, blue);
+        var minimum = Math.min(red, green, blue);
+        if (maximum < 24 || (maximum > 245 && minimum > 245)) continue;
+        var key = [
+          Math.round(red / 32) * 32,
+          Math.round(green / 32) * 32,
+          Math.round(blue / 32) * 32
+        ].map(function (value) { return clamp(value, 0, 255); }).join(",");
+        buckets[key] = (buckets[key] || 0) + 1 + (maximum - minimum) / 180;
+      }
+      return Object.keys(buckets).sort(function (first, second) {
+        return buckets[second] - buckets[first];
+      }).slice(0, 2).map(function (key) {
+        return key.split(",").map(Number);
+      });
+    } catch (error) {
+      return [];
+    }
+  }
+
+  function applyClubVerdictFallbackTheme(clubId) {
+    var hue = String(clubId || "").split("").reduce(function (total, character) {
+      return (total + character.charCodeAt(0) * 17) % 360;
+    }, 205);
+    var primary = hslToRgb(hue / 360, 0.7, 0.52);
+    var secondary = hslToRgb(((hue + 42) % 360) / 360, 0.62, 0.68);
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[data-verdict-club="' + clubId + '"]'),
+      function (node) {
+        node.style.setProperty("--club-primary-rgb", primary.join(","));
+        node.style.setProperty("--club-secondary-rgb", secondary.join(","));
+      }
+    );
+  }
+
+  function hslToRgb(hue, saturation, lightness) {
+    function convert(offset) {
+      var channel = (offset + hue) % 1;
+      var factor = saturation * Math.min(lightness, 1 - lightness);
+      return lightness - factor * Math.max(-1, Math.min(channel * 6 - 3, Math.min(9 - channel * 6, 1)));
+    }
+    return [convert(1 / 3), convert(0), convert(-1 / 3)].map(function (value) {
+      return Math.round(value * 255);
     });
   }
 
@@ -689,7 +810,7 @@
   }
 
   function normalizeClubSearchName(name) {
-    return String(name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    return String(name || "").toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
   }
 
   function getPersistentClubBadge(clubId) {
@@ -731,23 +852,23 @@
       '<div class="hero">' +
       '  <div class="brand"><span class="brand-mark">⚽</span><span>球途 Chronicle</span></div>' +
       '  <h1 class="hero-title">手机网页足球生涯模拟器</h1>' +
-      '  <p class="hero-copy">从 16 岁开始，每次推进一年。做选择、踢比赛、拿奖杯，直到退役后回看整条生涯时间线。</p>' +
+      '  <p class="hero-copy">从 16 岁开始直到退役。</p>' +
       '</div>' +
       '<div class="panel">' +
       '  <h2 class="section-title">创建球员</h2>' +
       '  <p class="section-copy">当前版本不保存进度，刷新或关闭网页后会重新开始。</p>' +
       '  <form id="create-form" class="form-grid">' +
-      '    <label class="field"><span class="field-label">姓名</span><input name="name" maxlength="12" placeholder="例如：姚锋" value="姚锋" required></label>' +
+      '    <label class="field"><span class="field-label">姓名</span><input name="name" maxlength="12" placeholder="例如：张三" value="张三" required></label>' +
       '    <label class="field"><span class="field-label">国籍</span><select name="countryCode">' + countriesOptions + "</select></label>" +
       '    <label class="field"><span class="field-label">位置</span><select name="position">' + positionOptions + "</select></label>" +
       '    <label class="field"><span class="field-label">惯用脚</span><select name="foot"><option value="右脚">右脚</option><option value="左脚">左脚</option></select></label>' +
-      '    <label class="field"><span class="field-label">球衣号码</span><input name="number" type="number" min="1" max="99" value="34" required></label>' +
+      '    <label class="field"><span class="field-label">球衣号码</span><input name="number" type="number" min="1" max="99" value="1" required></label>' +
       '    <div class="actions">' +
       '      <button class="btn btn-primary" type="submit">开启生涯</button>' +
       '    </div>' +
       '  </form>' +
       '</div>' +
-      '<p class="footer-note">建议单局时长 3 到 8 分钟。开局路线、青训和起步俱乐部都会随机生成，生涯会按年推进。</p>' +
+      '<p class="footer-note">单局时长 3 到 8 分钟。开局路线、青训和起步俱乐部都会随机生成，生涯会按年推进。</p>' +
       '</section>';
 
     document.getElementById("create-form").addEventListener("submit", onCreatePlayer);
@@ -757,6 +878,8 @@
     ensureCurrentEvent();
     var player = state.player;
     var club = getClubById(player.currentClubId);
+    var isTargetClubChoice =
+      state.currentEvent.options.some(function (option) { return option.targetClubId; });
     var eventHtml = state.currentEvent.options.map(function (option, index) {
       return (
         '<button class="option-card btn btn-ghost" data-option-index="' + index + '">' +
@@ -764,6 +887,45 @@
         "</button>"
       );
     }).join("");
+    if (isTargetClubChoice) {
+      var targetOptionEntries = state.currentEvent.options.map(function (option, index) {
+        var targetClub = option.targetClubId && getClubById(option.targetClubId);
+        return targetClub
+          ? { optionIndex: index, club: targetClub, league: targetClub.league }
+          : null;
+      }).filter(Boolean);
+      var targetLeagues = unique(targetOptionEntries.map(function (entry) {
+        return entry.league;
+      })).sort(function (first, second) {
+        return getLeagueDisplayName(first).localeCompare(getLeagueDisplayName(second), "zh-CN");
+      });
+      var initialTargetLeague = targetLeagues[0];
+      var leagueChoices = targetLeagues.map(function (league, index) {
+        return '<option value="' + index + '">' + getLeagueDisplayName(league) + "</option>";
+      }).join("");
+      var targetChoices = targetOptionEntries.filter(function (entry) {
+        return entry.league === initialTargetLeague;
+      }).map(function (entry) {
+        return '<option value="' + entry.optionIndex + '">' +
+          getClubDisplayName(entry.club) + "</option>";
+      }).join("");
+      var stayIndex = state.currentEvent.options.findIndex(function (option) {
+        return !option.targetClubId;
+      });
+      eventHtml =
+        '<label class="field-label" for="preferred-league-select">先选择目标联赛</label>' +
+        '<select id="preferred-league-select" class="input">' + leagueChoices + "</select>" +
+        '<label class="field-label" for="preferred-club-select">再选择心仪球队</label>' +
+        '<select id="preferred-club-select" class="input">' + targetChoices + "</select>" +
+        '<button class="option-card btn btn-ghost" id="confirm-preferred-club">' +
+        '  <div class="option-title">公开表达加盟意愿</div>' +
+        "</button>" +
+        (stayIndex >= 0
+          ? '<button class="option-card btn btn-ghost" data-option-index="' + stayIndex + '">' +
+            '  <div class="option-title">' + state.currentEvent.options[stayIndex].label + "</div>" +
+            "</button>"
+          : "");
+    }
 
     app.innerHTML =
       '<section class="screen">' +
@@ -783,6 +945,23 @@
         handleEventChoice(Number(button.getAttribute("data-option-index")));
       });
     });
+    var preferredClubButton = document.getElementById("confirm-preferred-club");
+    if (preferredClubButton) {
+      var preferredLeagueSelect = document.getElementById("preferred-league-select");
+      var preferredClubSelect = document.getElementById("preferred-club-select");
+      preferredLeagueSelect.addEventListener("change", function () {
+        var selectedLeague = targetLeagues[Number(preferredLeagueSelect.value)];
+        preferredClubSelect.innerHTML = targetOptionEntries.filter(function (entry) {
+          return entry.league === selectedLeague;
+        }).map(function (entry) {
+          return '<option value="' + entry.optionIndex + '">' +
+            getClubDisplayName(entry.club) + "</option>";
+        }).join("");
+      });
+      preferredClubButton.addEventListener("click", function () {
+        handleEventChoice(Number(preferredClubSelect.value));
+      });
+    }
     hydrateClubBadges();
   }
 
@@ -870,6 +1049,7 @@
       buildMiniStat("国家队助攻", summary.nationalAssists || 0) +
       "  </div>" +
       buildCompetitionBreakdown(summary) +
+      buildSeasonInjurySummary(summary) +
       (summary.leagueTable && summary.leagueTable.length
         ? '<button class="btn btn-ghost league-table-button" id="open-league-table">查看积分榜</button>'
         : "") +
@@ -999,7 +1179,9 @@
         return '<span class="career-verdict-pill' +
           (verdict.tier === "super" ? " career-verdict-super" : "") +
           (verdict.tier === "negative" ? " career-verdict-negative" : "") +
-          '"><b>' + verdict.icon + '</b><span><strong>' +
+          (verdict.clubId ? " career-verdict-club" : "") +
+          '"' + (verdict.clubId ? ' data-verdict-club="' + verdict.clubId + '"' : "") +
+          '><b>' + verdict.icon + '</b><span><strong>' +
           verdict.name + '</strong><small>' + verdict.description + "</small></span></span>";
       }).join("") + "</div>" +
       '<div class="career-summary-block">' +
@@ -1007,11 +1189,12 @@
       buildSummaryCard("总出场", player.totals.appearances) +
       buildSummaryCard("总进球", player.totals.goals) +
       buildSummaryCard("总助攻", player.totals.assists) +
-      buildSummaryCard("顶级冠军", topChampionshipCount) +
+      buildSummaryCard("总冠军", championshipCount) +
       buildSummaryCard("国家队出场", player.nationalTeam.caps) +
       buildSummaryCard("效力球队", clubsVisited) +
       buildSummaryCard("生涯最高 OVR", getPeakOverall(player.career)) +
       "  </div>" +
+      buildCareerInjurySummary(player) +
       '  <div class="summary-card retirement-honors"><h3 class="section-title">生涯荣誉</h3><div class="honors-list">' + (honors.length ? honors.map(function (name) { return '<span class="trophy-pill retirement-trophy-pill">' + findTrophyIcon(name) + '<span>' + name + (honorCounts[name] > 1 ? " ×" + honorCounts[name] : "") + "</span></span>"; }).join("") : '<span class="muted">没有记录到奖杯</span>') + "</div></div>" +
       "</div>" +
       '<div class="career-ledger panel">' +
@@ -1034,12 +1217,14 @@
         appearances: 0,
         goals: 0,
         assists: 0,
+        cleanSheets: 0,
         championships: 0
       };
       clubEntries[entry.clubId].seasons += 1;
       clubEntries[entry.clubId].appearances += entry.appearances || 0;
       clubEntries[entry.clubId].goals += entry.goals || 0;
       clubEntries[entry.clubId].assists += entry.assists || 0;
+      clubEntries[entry.clubId].cleanSheets += entry.cleanSheets || 0;
       clubEntries[entry.clubId].championships += (entry.trophies || []).filter(isCompetitionChampionship).length;
     });
     var clubIds = Object.keys(clubEntries);
@@ -1098,15 +1283,18 @@
     var careerCleanSheets = player.career.reduce(function (sum, entry) {
       return sum + (entry.cleanSheets || 0);
     }, 0);
-    var primaryClubShare = longestStay && player.totals.appearances
-      ? longestStay.appearances / player.totals.appearances
+    var primaryClubContribution = longestStay
+      ? longestStay.appearances * 1.2 +
+        longestStay.goals * 2 +
+        longestStay.assists * 1.5 +
+        longestStay.cleanSheets * 1.2 +
+        longestStay.championships * 30
       : 0;
     var isOneClubCareer =
       longestStay &&
       longestStay.seasons >= 10 &&
-      longestStay.appearances >= 260 &&
-      primaryClubShare >= 0.68 &&
-      formalTransferCount <= 3;
+      longestStay.appearances >= 220 &&
+      primaryClubContribution >= 400;
     var careerScoringRate = player.totals.appearances
       ? player.totals.goals / player.totals.appearances
       : 0;
@@ -1121,6 +1309,10 @@
     }));
     var ballonDorWins = careerHonors.filter(function (name) {
       return name === "金球奖";
+    }).length;
+    var individualHonorCount = careerHonors.filter(function (name) {
+      return !isCompetitionChampionship(name) &&
+        /金靴|助攻王|最佳阵容|最佳新秀|最佳球员|全勤铁人/.test(name);
     }).length;
     var championsLeagueWins = careerHonors.filter(function (name) {
       return name === "欧冠冠军";
@@ -1166,11 +1358,11 @@
         tier: "super"
       });
     }
-    if (player.totals.appearances >= 400 && careerContributionRate >= 1.25) {
+    if (player.totals.appearances >= 400 && careerContributionRate >= 0.98) {
       verdicts.push({
         icon: "⚡",
-        name: "全能进攻之神",
-        description: "生涯场均直接参与 " + careerContributionRate.toFixed(2) + " 球",
+        name: "全能进攻大师",
+        description: "漫长生涯场均直接参与 " + careerContributionRate.toFixed(2) + " 球",
         tier: "super"
       });
     }
@@ -1226,8 +1418,8 @@
     }
     if (
       championsLeagueWins === 0 &&
-      europeanTopFlightSeasons >= 8 &&
-      peakOverall >= 88 &&
+      europeanTopFlightSeasons >= 6 &&
+      peakOverall >= 84 &&
       (
         ballonDorWins >= 1 ||
         topChampionshipCount >= 4 ||
@@ -1236,8 +1428,8 @@
     ) {
       verdicts.push({
         icon: "♙",
-        name: "欧冠终身遗憾",
-        description: "耳朵去哪了",
+        name: "耳朵去哪了",
+        description: "荣誉满载，却始终与大耳朵杯擦肩而过",
         tier: "negative"
       });
     }
@@ -1274,6 +1466,18 @@
         icon: "◇",
         name: "金球遗珠",
         description: "多次进入金球奖候选，却始终没能最终捧杯",
+        tier: "negative"
+      });
+    }
+    if (
+      ballonDorWins === 0 &&
+      championshipCount >= 8 &&
+      individualHonorCount >= 8
+    ) {
+      verdicts.push({
+        icon: "◌",
+        name: "唯独没有金球",
+        description: "冠军和个人荣誉塞满奖杯柜，金球奖却始终假装不认识你",
         tier: "negative"
       });
     }
@@ -1372,7 +1576,13 @@
     }
 
     if (isOneClubCareer) {
-      verdicts.push({ icon: "◆", name: "一人一城", description: "绝大多数职业生涯都奉献给同一支俱乐部" });
+      var oneClub = getClubById(longestStay.clubId);
+      verdicts.push({
+        icon: buildClubBadge(oneClub, "career-verdict-club-badge"),
+        clubId: longestStay.clubId,
+        name: "一人一城",
+        description: "多年坚守 " + getClubDisplayName(oneClub) + "，并留下足够深厚的累计贡献"
+      });
     } else if (longestStay && longestStay.seasons >= 8 && longestStay.appearances >= 220) {
       verdicts.push({
         icon: "♜",
@@ -1520,6 +1730,8 @@
     var academyClub = pickAcademyClub(clubs, startingClub);
     var playerOrigin = pickOne(PLAYER_ORIGINS);
     var baseOverall = 49 + randomInt(0, 8);
+    var durabilityTalent = generateInjuryTalent();
+    var recoveryTalent = generateInjuryTalent();
     var player = {
       name: String(formData.get("name") || "新秀").trim(),
       country: country.name,
@@ -1556,6 +1768,7 @@
       isCaptain: false,
       everCaptain: false,
       captainSinceAge: null,
+      captainDecisionClubs: {},
       clubIdentityEventsSeen: [],
       lateCareerCoronationSeen: false,
       roleTransitionAttempts: 0,
@@ -1563,6 +1776,18 @@
       careerCurveBonus: 0,
       loyaltyMilestonesSeen: [],
       pendingSeasonInjury: null,
+      injury: createEmptyInjuryState(),
+      injuryHistory: [],
+      talents: {
+        durability: durabilityTalent,
+        recovery: recoveryTalent
+      },
+      durability: durabilityTalent,
+      injuryProneness: clamp(100 - durabilityTalent, 5, 65),
+      injuryArchetype: generateInjuryArchetype(),
+      matchSharpness: 100,
+      medicalCondition: 100,
+      healthySeasonStreak: 0,
       status: {
         fitness: randomInt(82, 94),
         happiness: randomInt(68, 82),
@@ -1587,6 +1812,12 @@
     };
 
     player.initialPotential = player.potential;
+    player.potential = clamp(
+      player.potential +
+      Math.round((durabilityTalent - 70) * 0.1 + (recoveryTalent - 70) * 0.07),
+      Math.max(65, baseOverall + 10),
+      99
+    );
     player.peakPotential = player.potential;
     player.value = calculateMarketValue(player, startingClub, null);
     player.currentSalary = calculateSalaryValue(player, startingClub, "renewal");
@@ -1600,6 +1831,7 @@
     state.gameOver = false;
     state.clubForms = {};
     state.clubEconomics = {};
+    state.worldLeagueTables = {};
     state.lastChoiceOutcome = "";
     state.lastChoiceResultType = "neutral";
     render();
@@ -1617,7 +1849,10 @@
     state.player.eventHistory = state.player.eventHistory.slice(-5);
     state.player.eventLastSeenSeason = state.player.eventLastSeenSeason || {};
     state.player.eventLastSeenSeason[event.id] = state.player.seasonYear;
-    state.player.pendingSeasonInjury = buildInjuryRecord(event, option, dynamicResolution);
+    var choiceInjuryRecord = buildInjuryRecord(event, option, dynamicResolution);
+    if (choiceInjuryRecord) {
+      state.player.pendingSeasonInjury = choiceInjuryRecord;
+    }
     if (dynamicResolution.competitionOutcome) {
       state.player.pendingCompetitionOutcome = dynamicResolution.competitionOutcome;
     }
@@ -1641,6 +1876,10 @@
         };
       }
     }
+    if (event.id === "shanghai-derby-crowd-clash") {
+      state.player.pendingShanghaiDerbyClash = null;
+      state.player.shanghaiDerbyClashSeen = true;
+    }
     if (event.id === "rival-transfer-backlash" && option.label === "用德比表现回应") {
       state.player.pendingDerbyId = state.player.lastTransfer && state.player.lastTransfer.rivalryId || "";
       state.player.pendingDerbyResolution = {
@@ -1658,11 +1897,42 @@
       state.player.loyaltyMilestonesSeen.push(event.loyaltyMilestone);
       state.player.loyaltyMilestonesSeen = unique(state.player.loyaltyMilestonesSeen);
     }
-    if (event.id === "captain-appointment" && option.label === "正式接过队长袖标") {
-      state.player.isCaptain = true;
-      state.player.everCaptain = true;
-      state.player.captainSinceAge = state.player.age;
-      dynamicResolution.note = "你正式成为球队队长。从现在开始，关键比赛和更衣室事件会把你视为第一责任人。";
+    if (event.id === "outgrown-current-club") {
+      state.player.outgrownClubDecisions = state.player.outgrownClubDecisions || {};
+      if (option.targetClubId) {
+        state.player.preferredTransferClubId = option.targetClubId;
+        state.player.preferredTransferPledgeYear = state.player.seasonYear;
+        state.player.lastPreferredClubRejectionSeason = 0;
+        dynamicResolution.note = "你通过经纪团队公开表示希望加盟 " +
+          getClubDisplayName(getClubById(option.targetClubId)) +
+          "。消息已经传出，但对方是否正式报价仍取决于预算、阵容需求和谈判结果。";
+      }
+      state.player.outgrownClubDecisions[state.player.currentClubId] = {
+        seasonYear: state.player.seasonYear,
+        overall: state.player.overall,
+        choice: option.targetClubId ? "寻求更高舞台" : option.label,
+        targetClubId: option.targetClubId || "",
+        deferUntil: state.player.seasonYear +
+          (option.label === "继续带领球队前进" ? 6 :
+            option.label === "再观察一个赛季" ? 4 : 0)
+      };
+    }
+    if (event.id === "early-career-homesickness") {
+      state.player.homesicknessEventSeen = true;
+      if (option.label === "公开表达回国意愿") {
+        state.player.pendingChinaReturnRequest = state.player.seasonYear;
+        dynamicResolution.note = "你承认自己很想回到熟悉的环境踢球，经纪团队已经向中超俱乐部释放消息，但暂时不能保证收到报价。";
+      }
+    }
+    if (event.id === "captain-appointment") {
+      state.player.captainDecisionClubs = state.player.captainDecisionClubs || {};
+      state.player.captainDecisionClubs[state.player.currentClubId] = true;
+      if (option.label === "正式接过队长袖标") {
+        state.player.isCaptain = true;
+        state.player.everCaptain = true;
+        state.player.captainSinceAge = state.player.age;
+        dynamicResolution.note = "你正式成为球队队长。从现在开始，关键比赛和更衣室事件会把你视为第一责任人。";
+      }
     }
     if (event.id === "captain-crisis") {
       dynamicResolution.effects.reputation += option.label === "公开保护队友" ? 1 : 0;
@@ -1717,12 +1987,28 @@
       option.label === "寻求离队" ||
       option.label === "寻求更高舞台" ||
       option.label === "要求转会" ||
+      option.label === "公开要求转会" ||
       option.label === "听取其他球队机会"
     ) {
       state.player.pendingForcedDeparture = true;
       state.player.pendingAmbitiousDeparture = option.label === "寻求更高舞台";
     }
+    if (event.id === "elite-club-exit-interview") {
+      state.player.lastEliteExitInterviewSeason = state.player.seasonYear;
+      state.player.eliteExitInterviewSeen = true;
+      if (option.targetClubId) {
+        state.player.pendingEliteExitDemand = true;
+        state.player.pendingForcedDeparture = true;
+        state.player.preferredTransferClubId = option.targetClubId;
+        state.player.preferredTransferPledgeYear = state.player.seasonYear;
+        state.player.lastPreferredClubRejectionSeason = 0;
+        dynamicResolution.note = "你在采访中公开表示希望加盟 " +
+          getClubDisplayName(getClubById(option.targetClubId)) +
+          "。这次表态已经破坏了你与现俱乐部的关系，目标球队是否立即行动仍取决于预算和阵容需求。";
+      }
+    }
     applyEffects(state.player, dynamicResolution.effects);
+    applyChoiceRelatedInjuryRisk(state.player, option, dynamicResolution.effects);
     if (dynamicResolution.positionChange) {
       applyCareerRoleTransition(
         state.player,
@@ -2017,7 +2303,10 @@
       /取得成功|决定.{0,6}奏效|赢得.{0,10}冠军|帮助球队晋级|成功|顶住|认可|满意|回应|适应效果很好|提升|稳住|兑现|接纳|得到控制|获得耐心|压住了伤病|避免了当众崩盘|赢得.{0,8}(支持|信任)|更加团结|评价迅速转好|取得正面效果|顺利/.test(resultText);
 
     if (dynamicResolution && dynamicResolution.competitionOutcome) {
-      return dynamicResolution.competitionOutcome.won ? "success" : "failure";
+      if (!dynamicResolution.competitionOutcome.won) {
+        return "failure";
+      }
+      return explicitFailure ? "mixed" : "success";
     }
     if (explicitFailure && explicitSuccess) {
       return "mixed";
@@ -2060,6 +2349,323 @@
     return "主宰比赛";
   }
 
+  function createEmptyInjuryState() {
+    return {
+      active: false,
+      injuryId: null,
+      name: "",
+      severity: "none",
+      weeksRemaining: 0,
+      totalWeeks: 0,
+      recurrenceRisk: 0,
+      affectedAttributes: [],
+      permanentLoss: 0,
+      treatment: ""
+    };
+  }
+
+  function generateInjuryTalent() {
+    return clamp(
+      Math.round((randomInt(48, 92) + randomInt(58, 88) + randomInt(62, 84)) / 3),
+      35,
+      95
+    );
+  }
+
+  function generateInjuryArchetype() {
+    var roll = randomInt(1, 100);
+    if (roll <= 12) return "ironman";
+    if (roll <= 45) return "resilient";
+    if (roll <= 90) return "normal";
+    if (roll <= 99) return "fragile";
+    return "chronic";
+  }
+
+  function normalizePlayerInjuryData(player) {
+    player.injury = Object.assign(createEmptyInjuryState(), player.injury || {});
+    player.injuryHistory = player.injuryHistory || [];
+    player.talents = player.talents || {};
+    player.talents.durability = player.talents.durability || player.durability || 70;
+    player.talents.recovery = player.talents.recovery || 70;
+    player.durability = player.talents.durability;
+    player.injuryProneness = player.injuryProneness == null
+      ? clamp(100 - player.durability, 5, 65)
+      : player.injuryProneness;
+    player.injuryArchetype = player.injuryArchetype || "normal";
+    player.matchSharpness = player.matchSharpness == null ? 100 : player.matchSharpness;
+    player.medicalCondition = player.medicalCondition == null ? 100 : player.medicalCondition;
+    player.healthySeasonStreak = player.healthySeasonStreak || 0;
+    return player;
+  }
+
+  function getDurabilityRiskMultiplier(durability) {
+    var normalized = (70 - durability) / 30;
+    return clamp(1 + 0.35 * Math.tanh(normalized), 0.7, 1.4);
+  }
+
+  function calculateSeasonInjuryRisk(player, club) {
+    normalizePlayerInjuryData(player);
+    var expectedAppearances = clamp(
+      24 + (player.overall - getClubStrength(club)) * 1.1,
+      8,
+      46
+    );
+    var exposure = clamp(expectedAppearances / 35, 0.25, 1.2);
+    var ageFactor = player.age < 21 ? 0.92 : player.age < 29 ? 1 : player.age < 33 ? 1.12 : 1.28;
+    var fatigueFactor = 1 + Math.max(0, 75 - player.status.fitness) / 100;
+    var congestionFactor = player.nextContinentalCompetition ? 1.12 : 1;
+    var archetypeFactor = (window.INJURY_ARCHETYPE_MULTIPLIERS || {})[player.injuryArchetype] || 1;
+    var medicalFactor = 1 + Math.max(0, 75 - player.medicalCondition) / 160;
+    return clamp(
+      0.19 *
+      exposure *
+      ageFactor *
+      getDurabilityRiskMultiplier(player.talents.durability) *
+      archetypeFactor *
+      fatigueFactor *
+      congestionFactor *
+      medicalFactor,
+      0.04,
+      0.5
+    );
+  }
+
+  function weightedInjuryChoice(player) {
+    var injuries = (window.INJURY_TYPES || []).map(function (injury) {
+      var weight = injury.weight;
+      var hadSameInjury = player.injuryHistory.some(function (entry) {
+        return entry.injuryId === injury.id;
+      });
+      if (hadSameInjury) weight *= 1 + injury.recurrenceRisk;
+      if (player.age >= 30 && (injury.id === "muscle_strain" || injury.id === "hamstring")) {
+        weight *= 1.25;
+      }
+      if (player.position === "GK" && injury.id === "hamstring") weight *= 0.6;
+      if (player.position === "GK" && injury.id === "shoulder") weight *= 1.6;
+      if (injury.severity === "major") {
+        var lastMajor = player.injuryHistory.slice().reverse().find(function (entry) {
+          return entry.severity === "major";
+        });
+        var majorCount = player.injuryHistory.filter(function (entry) {
+          return entry.severity === "major";
+        }).length;
+        if (lastMajor) {
+          var seasonsSince = player.age - lastMajor.age;
+          weight *= seasonsSince <= 1 ? 0.2 : seasonsSince === 2 ? 0.5 : seasonsSince === 3 ? 0.8 : 1;
+        }
+        weight *= majorCount === 0 ? 1 : majorCount === 1 ? 0.55 : 0.12;
+        if (player.injuryArchetype === "chronic") weight = Math.max(weight, injury.weight * 0.35);
+      }
+      if (player.talents.durability >= 85 && injury.severity === "major") weight *= 0.45;
+      if (player.talents.durability <= 50 && injury.severity === "major") weight *= 1.35;
+      return { injury: injury, weight: weight };
+    });
+    var total = injuries.reduce(function (sum, item) { return sum + item.weight; }, 0);
+    var roll = Math.random() * total;
+    for (var index = 0; index < injuries.length; index += 1) {
+      roll -= injuries[index].weight;
+      if (roll <= 0) return injuries[index].injury;
+    }
+    return injuries.length ? injuries[injuries.length - 1].injury : null;
+  }
+
+  function calculatePermanentInjuryDamage(player, injury) {
+    if (injury.severity !== "serious" && injury.severity !== "major") return 0;
+    var resistance = player.talents.recovery * 0.65 + player.talents.durability * 0.35;
+    if (injury.severity === "serious") {
+      return resistance < 75 && Math.random() < 0.25 ? 1 : 0;
+    }
+    if (resistance >= 85) return pickOne([0, 1]);
+    if (resistance >= 65) return pickOne([1, 1, 2]);
+    return pickOne([1, 2, 2, 3]);
+  }
+
+  function applyInjuryAttributeDamage(player, injuryState) {
+    if (!injuryState || injuryState.effectsApplied) return;
+    var loss = injuryState.permanentLoss || 0;
+    var attributes = injuryState.affectedAttributes || [];
+    attributes.forEach(function (attribute) {
+      if (player.profile[attribute] != null && loss > 0) {
+        player.profile[attribute] = clamp(player.profile[attribute] - loss, 25, 99);
+      }
+    });
+    player.overall = calculateProfileOverall(player.position, player.profile);
+    injuryState.effectsApplied = true;
+  }
+
+  function prepareSeasonInjury(player, club) {
+    normalizePlayerInjuryData(player);
+    if (player.injuryPreparedSeason === player.seasonYear) return;
+    player.injuryPreparedSeason = player.seasonYear;
+    player.matchSharpness = clamp(player.matchSharpness + randomInt(10, 22), 20, 100);
+    player.medicalCondition = clamp(player.medicalCondition + randomInt(8, 18), 20, 100);
+
+    if (player.injury.active && player.injury.weeksRemaining > 0) {
+      player.pendingSeasonInjury = Object.assign({}, player.injury, {
+        weeksOut: Math.min(52, player.injury.weeksRemaining),
+        carryOver: true,
+        label: player.injury.name + "康复期",
+        maxAppearances: Math.max(0, Math.round(46 * (1 - Math.min(52, player.injury.weeksRemaining) / 52)))
+      });
+      return;
+    }
+    if (Math.random() >= calculateSeasonInjuryRisk(player, club)) {
+      player.pendingSeasonInjury = null;
+      return;
+    }
+
+    var injuryType = weightedInjuryChoice(player);
+    if (!injuryType) return;
+    var weeks = randomInt(injuryType.minWeeks, injuryType.maxWeeks);
+    var previousSame = player.injuryHistory.slice().reverse().find(function (entry) {
+      return entry.injuryId === injuryType.id;
+    });
+    var recurrence = Boolean(previousSame && Math.random() < injuryType.recurrenceRisk);
+    if (recurrence) weeks = Math.min(52, weeks + randomInt(1, 4));
+    var permanentLoss = calculatePermanentInjuryDamage(player, injuryType);
+    player.injury = {
+      active: true,
+      injuryId: injuryType.id,
+      name: injuryType.name,
+      severity: injuryType.severity,
+      weeksRemaining: weeks,
+      totalWeeks: weeks,
+      recurrenceRisk: injuryType.recurrenceRisk,
+      affectedAttributes: injuryType.attributes || [],
+      permanentLoss: permanentLoss,
+      recurrence: recurrence,
+      treatment: "",
+      effectsApplied: false
+    };
+    player.status.fitness = clamp(player.status.fitness - injuryType.fitnessPenalty, 15, 100);
+    player.matchSharpness = clamp(player.matchSharpness - weeks * 1.25, 20, 100);
+    player.medicalCondition = clamp(player.medicalCondition - injuryType.fitnessPenalty, 15, 100);
+    player.pendingSeasonInjury = Object.assign({}, player.injury, {
+      weeksOut: weeks,
+      label: recurrence ? injuryType.name + "复发" : injuryType.name,
+      availabilityFactor: clamp((52 - Math.min(52, weeks)) / 52, 0.02, 0.98),
+      maxAppearances: Math.max(1, Math.round(46 * (52 - Math.min(52, weeks)) / 52)),
+      detail: (recurrence ? "旧伤复发，" : "") + "预计伤停 " + weeks + " 周。"
+    });
+    player.injuryHistory.push({
+      seasonYear: player.seasonYear,
+      age: player.age,
+      injuryId: injuryType.id,
+      name: injuryType.name,
+      severity: injuryType.severity,
+      weeksOut: weeks,
+      clubId: player.currentClubId,
+      recurrence: recurrence,
+      permanentOverallLoss: permanentLoss
+    });
+    if (weeks < 8) {
+      applyInjuryAttributeDamage(player, player.injury);
+    }
+  }
+
+  function getInjuryGrowthMultiplier(injury) {
+    if (!injury) return 1;
+    if (injury.severity === "minor") return 0.9;
+    if (injury.severity === "moderate") return 0.7;
+    if (injury.severity === "serious") return 0.4;
+    if (injury.severity === "major") return 0.15;
+    return 1;
+  }
+
+  function finalizeSeasonInjury(player) {
+    normalizePlayerInjuryData(player);
+    var seasonInjury = player.pendingSeasonInjury;
+    if (!seasonInjury) {
+      player.healthySeasonStreak += 1;
+      if (player.healthySeasonStreak >= 3 && player.talents.durability >= 75) {
+        player.status.coachRelation = clamp(player.status.coachRelation + 1, 0, 100);
+        player.matchSharpness = clamp(player.matchSharpness + 5, 0, 100);
+      }
+      return;
+    }
+    player.healthySeasonStreak = 0;
+    player.injury.weeksRemaining = Math.max(0, player.injury.weeksRemaining - 52);
+    if (player.injury.weeksRemaining <= 0) {
+      player.injury.active = false;
+      player.matchSharpness = clamp(
+        player.matchSharpness + randomInt(12, 26) + Math.round((player.talents.recovery - 70) * 0.2),
+        35,
+        84
+      );
+      player.status.fitness = clamp(player.status.fitness + randomInt(10, 20), 35, 88);
+      player.medicalCondition = clamp(
+        player.medicalCondition + randomInt(12, 24) + Math.round((player.talents.recovery - 70) * 0.15),
+        35,
+        92
+      );
+    }
+  }
+
+  function getInjuryTransferModifier(player) {
+    normalizePlayerInjuryData(player);
+    var recentMajor = player.injuryHistory.filter(function (injury) {
+      return injury.age >= player.age - 2 &&
+        (injury.severity === "serious" || injury.severity === "major");
+    }).length;
+    return clamp(1 - recentMajor * 0.08, 0.72, 1);
+  }
+
+  function applyChoiceRelatedInjuryRisk(player, option, effects) {
+    if (player.pendingSeasonInjury || player.injury.active) return;
+    var aggressiveChoice =
+      /主动|强行|提前|接管|扛起|持续冲击|全力|高强度|扩大活动范围|咬牙/.test(option.label) ||
+      (effects.fitness || 0) <= -5;
+    if (!aggressiveChoice) return;
+    var lowFitnessRisk = Math.max(0, 68 - player.status.fitness) * 0.012;
+    var exertionRisk = Math.max(0, -(effects.fitness || 0) - 3) * 0.012;
+    var risk = clamp(lowFitnessRisk + exertionRisk, 0.02, 0.34);
+    if (Math.random() >= risk) return;
+
+    var candidateIds = player.status.fitness < 50
+      ? ["hamstring", "ankle_sprain", "muscle_strain"]
+      : ["muscle_strain", "ankle_sprain"];
+    var injuryType = pickOne((window.INJURY_TYPES || []).filter(function (injury) {
+      return candidateIds.indexOf(injury.id) !== -1;
+    }));
+    if (!injuryType) return;
+    var weeks = randomInt(injuryType.minWeeks, injuryType.maxWeeks);
+    player.injury = {
+      active: true,
+      injuryId: injuryType.id,
+      name: injuryType.name,
+      severity: injuryType.severity,
+      weeksRemaining: weeks,
+      totalWeeks: weeks,
+      recurrenceRisk: injuryType.recurrenceRisk,
+      affectedAttributes: injuryType.attributes || [],
+      permanentLoss: 0,
+      recurrence: false,
+      treatment: "负荷过高",
+      effectsApplied: true
+    };
+    player.pendingSeasonInjury = Object.assign({}, player.injury, {
+      weeksOut: weeks,
+      label: injuryType.name,
+      availabilityFactor: clamp((52 - weeks) / 52, 0.1, 0.98),
+      maxAppearances: Math.max(1, Math.round(46 * (52 - weeks) / 52)),
+      detail: "低体力下仍采用激进方式导致受伤，预计伤停 " + weeks + " 周。"
+    });
+    player.injuryHistory.push({
+      seasonYear: player.seasonYear,
+      age: player.age,
+      injuryId: injuryType.id,
+      name: injuryType.name,
+      severity: injuryType.severity,
+      weeksOut: weeks,
+      clubId: player.currentClubId,
+      recurrence: false,
+      permanentOverallLoss: 0,
+      cause: "低体力下激进比赛"
+    });
+    player.status.fitness = clamp(player.status.fitness - injuryType.fitnessPenalty, 15, 100);
+    player.matchSharpness = clamp(player.matchSharpness - weeks * 1.2, 20, 100);
+  }
+
   function buildInjuryRecord(event, option, dynamicResolution) {
     var injuryIds = ["minor-injury", "unexpected-injury", "unexpected-major-injury"];
     if (injuryIds.indexOf(event.id) === -1) {
@@ -2067,6 +2673,57 @@
     }
 
     var note = dynamicResolution.note || "";
+    var player = state.player;
+    if (player && player.injury && player.injury.injuryId) {
+      var injuryState = player.injury;
+      if (option.label === "完整接受康复治疗") {
+        injuryState.weeksRemaining = Math.min(60, injuryState.weeksRemaining + 2);
+        injuryState.totalWeeks = injuryState.weeksRemaining;
+        injuryState.recurrenceRisk = Math.max(0, injuryState.recurrenceRisk - 0.08);
+        injuryState.treatment = "保守康复";
+        player.medicalCondition = clamp(player.medicalCondition + 8, 0, 100);
+      } else if (option.label === "缩短恢复期提前复出") {
+        injuryState.weeksRemaining = Math.max(1, injuryState.weeksRemaining - 3);
+        injuryState.totalWeeks = injuryState.weeksRemaining;
+        injuryState.recurrenceRisk = clamp(injuryState.recurrenceRisk + 0.15, 0, 0.65);
+        injuryState.treatment = "提前复出";
+        player.matchSharpness = clamp(player.matchSharpness - 10, 0, 100);
+      } else if (option.label === "接受手术") {
+        injuryState.weeksRemaining = Math.min(64, injuryState.weeksRemaining + 8);
+        injuryState.totalWeeks = injuryState.weeksRemaining;
+        injuryState.recurrenceRisk = Math.max(0, injuryState.recurrenceRisk - 0.12);
+        injuryState.permanentLoss = Math.max(0, injuryState.permanentLoss - 1);
+        injuryState.treatment = "手术治疗";
+        player.medicalCondition = clamp(player.medicalCondition + 12, 0, 100);
+      }
+      applyInjuryAttributeDamage(player, injuryState);
+      var historyEntry = player.injuryHistory[player.injuryHistory.length - 1];
+      if (historyEntry && historyEntry.injuryId === injuryState.injuryId && historyEntry.age === player.age) {
+        historyEntry.weeksOut = injuryState.totalWeeks;
+        historyEntry.permanentOverallLoss = injuryState.permanentLoss;
+        historyEntry.treatment = injuryState.treatment;
+      }
+      return Object.assign({}, injuryState, {
+        weeksOut: Math.min(52, injuryState.weeksRemaining),
+        label: injuryState.name + (injuryState.recurrence ? "复发" : ""),
+        availabilityFactor: clamp((52 - Math.min(52, injuryState.weeksRemaining)) / 52, 0.02, 0.98),
+        maxAppearances: Math.max(1, Math.round(46 * (52 - Math.min(52, injuryState.weeksRemaining)) / 52)),
+        detail: note || ("预计伤停 " + injuryState.totalWeeks + " 周。")
+      });
+    }
+    var recoveredFromMajorInjury = (player.injuryHistory || []).some(function (injury) {
+      return (injury.severity === "serious" || injury.severity === "major") &&
+        player.career.some(function (season) {
+          return season.age > injury.age && season.appearances >= 30 && season.overall >= 80;
+        });
+    });
+    if (recoveredFromMajorInjury) {
+      verdicts.push({
+        icon: "↟",
+        name: "战胜伤病",
+        description: "经历严重伤病后重新回到高水平赛场"
+      });
+    }
     if (note.indexOf("反复") !== -1) {
       return { label: "伤病复发", severity: "major", availabilityFactor: 0.46, maxAppearances: 18, detail: note };
     }
@@ -2107,6 +2764,15 @@
     if (transferCollapse) {
       state.player.status.happiness = clamp(state.player.status.happiness - 4, 20, 100);
       state.player.status.reputation = applyReputationChange(state.player, previousClub, -1);
+      if (state.player.pendingEliteExitDemand) {
+        state.player.status.coachRelation = clamp(
+          state.player.status.coachRelation - 9,
+          0,
+          100
+        );
+        state.player.status.happiness = clamp(state.player.status.happiness - 4, 20, 100);
+        transferCollapse.note += " 你此前已经公开要求离队，如今交易失败，俱乐部与更衣室对你的态度明显恶化。";
+      }
       state.player.blockedTransferClubIds = state.player.blockedTransferClubIds || [];
       state.player.blockedTransferClubIds.push(option.club.id);
       state.player.blockedTransferClubIds = unique(state.player.blockedTransferClubIds);
@@ -2156,6 +2822,11 @@
       }
       state.player.isCaptain = false;
       state.player.captainSinceAge = null;
+      if (option.club.id === state.player.preferredTransferClubId) {
+        state.player.preferredTransferClubId = "";
+        state.player.preferredTransferPledgeYear = 0;
+        state.player.lastPreferredClubRejectionSeason = 0;
+      }
     } else if (option.type === "return") {
       state.player.currentClubStartAge = state.player.age + 1;
     } else if (option.type === "renewal") {
@@ -2166,11 +2837,23 @@
     if (option.club.id === previousClub.id && state.latestSummary) {
       applyPlayerClubLeagueTransition(state.player, previousClub, state.latestSummary);
     } else if (option.club.id !== previousClub.id) {
-      state.player.nextContinentalCompetition = getIncomingClubEuropeanCompetition(option.club);
+      state.player.nextContinentalCompetition =
+        option.clubSnapshot && option.clubSnapshot.continentalCompetition !== undefined
+          ? option.clubSnapshot.continentalCompetition
+          : getIncomingClubEuropeanCompetition(option.club);
+      if (option.clubSnapshot && option.clubSnapshot.leaguePosition) {
+        state.player.incomingClubMomentum = {
+          clubId: option.club.id,
+          sourceSeason: state.player.seasonYear,
+          position: option.clubSnapshot.leaguePosition,
+          teamCount: LEAGUE_TEAM_COUNTS[option.club.league] || 20
+        };
+      }
     }
     state.player.currentClubId = option.club.id;
     state.player.pendingForcedDeparture = false;
     state.player.pendingAmbitiousDeparture = false;
+    state.player.pendingEliteExitDemand = false;
     state.player.blockedTransferClubIds = [];
     state.player.currentSalary = option.salaryValue || state.player.currentSalary;
     state.player.status.coachRelation = option.club.id !== previousClub.id
@@ -2324,6 +3007,8 @@
 
   function simulatePhase(player) {
     var club = getClubById(player.currentClubId);
+    normalizePlayerInjuryData(player);
+    prepareSeasonInjury(player, club);
     refreshContinentalQualificationFromCareer(player, club);
     var clubStrength = getClubStrength(club);
     var playingChance = calculatePlayingChance(player, club);
@@ -2332,15 +3017,41 @@
     var stats = simulateStats(player, appearances, competitionStats);
     var potentialResult = evolvePlayerPotential(player, club, stats);
     var plannedGrowth = calculateOverallChange(player);
+    if (plannedGrowth > 0 && player.pendingSeasonInjury) {
+      plannedGrowth = Math.round(
+        plannedGrowth * getInjuryGrowthMultiplier(player.pendingSeasonInjury)
+      );
+    }
     var seasonOutlook = simulateClubSeasonOutlook(player, club, stats, competitionStats);
-    var trophies = simulateTrophies(player, club, stats, seasonOutlook);
+    var nationalSummary = simulateNationalTeamSeason(player);
+    var trophies = simulateTrophies(player, club, stats, seasonOutlook, nationalSummary);
     var refereeScandal = buildRefereeScandalMoment(player, club, competitionStats);
     if (refereeScandal) {
       applyEffects(player, refereeScandal.effects);
     }
-    var ballonDorControversy = buildBallonDorControversy(player, club, stats, trophies, seasonOutlook);
+    var ballonDorControversy = buildBallonDorControversy(
+      player,
+      club,
+      stats,
+      trophies,
+      seasonOutlook,
+      nationalSummary
+    );
     var derbyResult = simulateDerbyMoment(player, club, stats);
-    var nationalSummary = simulateNationalTeamSeason(player);
+    if (
+      !player.shanghaiDerbyClashSeen &&
+      !player.pendingShanghaiDerbyClash &&
+      derbyResult.note &&
+      derbyResult.note.indexOf("上海德比") !== -1 &&
+      ["shanghaiport", "shenhua"].indexOf(club.id) !== -1 &&
+      Math.random() < 0.16
+    ) {
+      player.pendingShanghaiDerbyClash = {
+        clubId: club.id,
+        rivalClubId: club.id === "shanghaiport" ? "shenhua" : "shanghaiport",
+        seasonYear: player.seasonYear
+      };
+    }
     var dynastyMoments = buildDynastyMoments(player, club, trophies, nationalSummary);
     var legendStory = buildSingleMatchScoringStory(player, club, stats) ||
       buildUniversalLegendStory(player, club, stats, trophies, seasonOutlook, nationalSummary);
@@ -2437,6 +3148,7 @@
     entry.keyMatchStory = player.pendingMajorMatchStory || "";
 
     player.career.push(entry);
+    finalizeSeasonInjury(player);
     player.pendingSeasonInjury = null;
     player.pendingBallonDorNomination = false;
     player.pendingCompetitionOutcome = null;
@@ -2461,7 +3173,11 @@
   }
 
   function refreshContinentalQualificationFromCareer(player, club) {
-    if (!club || club.region !== "欧洲") return;
+    if (
+      !club ||
+      (club.region !== "欧洲" && club.region !== "亚洲") ||
+      club.leagueLevel !== 1
+    ) return;
     var previousEntries = (player.career || []).filter(function (entry) {
       return entry.clubId === club.id && entry.age === player.age - 1;
     });
@@ -2471,10 +3187,16 @@
   }
 
   function getContinentalQualificationFromSeason(club, summary) {
-    if (!club || club.region !== "欧洲" || !summary) return "";
+    if (!club || !summary || club.leagueLevel !== 1) return "";
     var trophies = summary.trophies || [];
     var status = summary.leagueStanding && summary.leagueStanding.status;
     var competitionNames = getCompetitionNames(club);
+
+    if (club.region === "亚洲") {
+      if (trophies.indexOf("亚冠冠军") !== -1) return "亚冠";
+      return status === "洲际赛事资格区" ? "亚冠" : "";
+    }
+    if (club.region !== "欧洲") return "";
 
     if (trophies.indexOf("欧冠冠军") !== -1 || trophies.indexOf("欧联杯冠军") !== -1) {
       return "欧冠";
@@ -2498,7 +3220,8 @@
     var transferScore = player.overall * 0.5 + player.status.reputation * 0.2 + summary.goals * 0.6 + summary.assists * 0.4 + player.status.transferInterest * 0.3;
     var renewalChance = clamp((player.status.coachRelation + summary.appearances - 22 + currentClub.youthChance * 0.15) / 100, 0.2, 0.88);
     var similarOfferChance = clamp((summary.appearances + player.status.reputation * 0.35 + player.overall - currentClubStrength + 24) / 100, 0.18, 0.82);
-    var formalOfferChance = clamp((transferScore - 42) / 55, 0.12, 0.84);
+    var formalOfferChance = clamp((transferScore - 42) / 55, 0.12, 0.84) *
+      getInjuryTransferModifier(player);
     var yearsAtCurrentClub = player.age - (player.currentClubStartAge || 16);
     var contractYearsRemaining = Math.max(0, (player.contractUntilAge || player.age) - player.age);
     var renewalWindowOpen = contractYearsRemaining <= 1;
@@ -2578,7 +3301,12 @@
         seenClubIds[option.club.id] = true;
         return;
       }
-      if (!forcedDeparture && !option.marketBreakthrough && !option.worldClassPursuit && (option.type === "formal" || option.type === "transfer")) {
+      if (
+        !forcedDeparture &&
+        !option.marketBreakthrough &&
+        !option.worldClassPursuit &&
+        (option.type === "formal" || option.type === "transfer")
+      ) {
         var minimumAcceptedFee = getMinimumAcceptedTransferFee(player, currentClub, option.club, summary);
         if (option.transferFee < minimumAcceptedFee) {
           seenClubIds[option.club.id] = true;
@@ -2592,6 +3320,70 @@
       }
       seenClubIds[option.club.id] = true;
       options.push(option);
+    }
+
+    if (player.preferredTransferClubId) {
+      var publiclyNamedClub = getClubById(player.preferredTransferClubId);
+      var preferredClub = publiclyNamedClub &&
+        publiclyNamedClub.id !== currentClub.id &&
+        publiclyNamedClub.leagueLevel === 1 &&
+        (player.blockedTransferClubIds || []).indexOf(publiclyNamedClub.id) === -1 &&
+        getClubTransferBudget(publiclyNamedClub) >= player.value * 0.55 &&
+        player.overall >= getClubStrength(publiclyNamedClub) - 12
+          ? publiclyNamedClub
+          : null;
+      var preferredInterestChance = preferredClub
+        ? clamp(
+            0.46 +
+            (player.overall - getClubStrength(preferredClub)) * 0.028 +
+            Math.max(0, player.status.reputation - 50) * 0.006 +
+            Math.max(0, summary.appearances - 20) * 0.009 +
+            (preferredClub.band === "豪门" ? -0.08 : 0),
+            0.2,
+            0.9
+          )
+        : 0;
+      var earnedPreferredClubOffer = Boolean(
+        preferredClub &&
+        getClubTransferBudget(preferredClub) >= player.value * 0.72 &&
+        summary.appearances >= 22 &&
+        player.status.reputation >= 65 &&
+        (
+          player.overall >= getClubStrength(preferredClub) - 2 ||
+          player.overall >= 88
+        )
+      );
+      if (
+        preferredClub &&
+        (earnedPreferredClubOffer || Math.random() < preferredInterestChance)
+      ) {
+        pushUniqueOption({
+          label: earnedPreferredClubOffer
+            ? "心仪球队兑现长期关注"
+            : "心仪球队回应你的意愿",
+          description: getClubDisplayName(preferredClub) +
+            (earnedPreferredClubOffer
+              ? " 持续关注了你的成长。如今你的实力已经达到阵容要求，俱乐部正式提交报价。"
+              : " 注意到你公开表达的加盟意愿，并决定尝试推动转会。"),
+          club: preferredClub,
+          coachDelta: 3,
+          happinessDelta: 5,
+          type: "formal",
+          targetedPursuit: true
+        });
+      } else if (
+        publiclyNamedClub &&
+        (
+          !player.lastPreferredClubRejectionSeason ||
+          player.seasonYear - player.lastPreferredClubRejectionSeason >= 2
+        )
+      ) {
+        rejectedOffers.push(
+          "你公开表示希望加盟 " + getClubDisplayName(publiclyNamedClub) +
+          "，但对方目前认为你的实力、阵容定位或转会成本尚未达到引援条件。你的投诚意愿仍然有效。"
+        );
+        player.lastPreferredClubRejectionSeason = player.seasonYear;
+      }
     }
 
     if (player.parentClubId && player.loanReturnAge === player.age) {
@@ -2614,9 +3406,20 @@
     var chineseReturn =
       player.countryCode === "CN" &&
       currentClub.league !== "Chinese Super League";
-    var homecomingMinimumAge = chineseReturn ? 33 : 35;
-    var homecomingMinimumReputation = chineseReturn ? 55 : 75;
-    var homecomingChance = chineseReturn
+    var earlyChinaReturnRequest =
+      chineseReturn &&
+      player.pendingChinaReturnRequest === player.seasonYear;
+    var homecomingMinimumAge = earlyChinaReturnRequest ? player.age : chineseReturn ? 33 : 35;
+    var homecomingMinimumReputation = earlyChinaReturnRequest ? 15 : chineseReturn ? 55 : 75;
+    var homecomingChance = earlyChinaReturnRequest
+      ? clamp(
+          0.42 +
+          Math.max(0, player.overall - 60) * 0.012 +
+          Math.max(0, player.status.reputation - 20) * 0.004,
+          0.42,
+          0.78
+        )
+      : chineseReturn
       ? clamp(
           0.48 +
           (player.age - 33) * 0.1 +
@@ -2655,6 +3458,14 @@
         happinessDelta: chineseReturn ? 2 : 8,
         type: chineseReturn ? "formal" : "homecoming"
       });
+    }
+    if (earlyChinaReturnRequest) {
+      if (!options.some(function (offer) {
+        return offer.club && offer.club.league === "Chinese Super League";
+      })) {
+        rejectedOffers.push("你公开表达了回国意愿，但中超俱乐部评估阵容和预算后暂时没有提交正式报价。");
+      }
+      player.pendingChinaReturnRequest = null;
     }
 
     var rivalTargets = getDirectRivalClubs(currentClub.id).filter(function (club) {
@@ -2777,12 +3588,8 @@
         strength <= player.overall + 9 &&
         canFundWorldClassMove &&
         !seenClubIds[club.id];
-    }).sort(function (a, b) {
-      var strengthFitA = Math.abs(getClubStrength(a) - player.overall);
-      var strengthFitB = Math.abs(getClubStrength(b) - player.overall);
-      return strengthFitA - getClubTransferBudget(a) / 60000000 -
-        (strengthFitB - getClubTransferBudget(b) / 60000000);
     });
+    eliteMarketPool = rankTransferCandidatesByMarketFit(eliteMarketPool, player);
 
     if (eliteMarketSeason && eliteMarketPool.length) {
       var desiredExternalOffers = player.overall >= 88 ? 3 : 2;
@@ -2887,9 +3694,12 @@
       return club.region === currentClub.region || club.leagueLevel === currentClub.leagueLevel;
     });
     var similarPool = regionalSimilar.length ? regionalSimilar : similar;
-    var availableSimilarPool = (similarPool.length ? similarPool : eligibleDestinations).filter(function (club) {
+    var availableSimilarPool = rankTransferCandidatesByMarketFit(
+      (similarPool.length ? similarPool : eligibleDestinations).filter(function (club) {
       return !seenClubIds[club.id];
-    });
+      }),
+      player
+    );
     var needsDevelopmentLoan = !player.parentClubId &&
       player.age <= 23 &&
       player.overall <= 78 &&
@@ -3028,6 +3838,19 @@
       }
     }
 
+    if (!options.length && forcedDeparture && player.pendingEliteExitDemand) {
+      hasForcedStay = true;
+      pushUniqueOption({
+        label: "离队申请无人响应",
+        description: "你已经公开要求离开 " + getClubDisplayName(currentClub) +
+          "，但目标球队没有提交有效报价。你只能暂时留队，俱乐部和更衣室关系已经明显恶化。",
+        club: currentClub,
+        coachDelta: -10,
+        happinessDelta: -6,
+        type: "forced-stay"
+      });
+    }
+
     if (!options.length && !forcedDeparture) {
       hasForcedStay = true;
       pushUniqueOption({
@@ -3041,7 +3864,9 @@
     }
 
     summary.clubDecisionNote = forcedDeparture
-      ? getClubDisplayName(currentClub) + " 已接受你的离队申请，本次市场不会再提供续约或留队选项。"
+      ? hasForcedStay
+        ? "你公开要求离队却没有得到有效报价，只能在关系恶化后暂时留队。"
+        : getClubDisplayName(currentClub) + " 已接受你的离队申请，本次市场不会再提供续约或留队选项。"
       : hasDevelopmentLoan
       ? getClubDisplayName(currentClub) + " 仍然保留你的长期计划，但现阶段队内竞争过强，因此主动为你安排外租并要求保证比赛时间。"
       : hasForcedStay
@@ -3091,7 +3916,73 @@
         finalOptions.push(retirementOption);
       }
     }
+    synchronizeOfferLeaguePositions(finalOptions, currentClub, summary);
     return finalOptions;
+  }
+
+  function synchronizeOfferLeaguePositions(options, currentClub, summary) {
+    var usedByLeague = {};
+    var claimedContinentalChampions = {};
+    options.forEach(function (option) {
+      if (!option.clubSnapshot || !option.clubSnapshot.continental) return;
+      var match = option.clubSnapshot.continental.match(/^(欧冠|欧联杯|欧协联|亚冠)冠军$/);
+      if (!match) return;
+      claimedContinentalChampions[match[1]] =
+        claimedContinentalChampions[match[1]] || [];
+      claimedContinentalChampions[match[1]].push(option);
+    });
+    Object.keys(claimedContinentalChampions).forEach(function (competition) {
+      var claimants = claimedContinentalChampions[competition];
+      if (claimants.length <= 1) return;
+      var currentClubActuallyWon =
+        summary &&
+        summary.competitionStats &&
+        summary.competitionStats.continentalName === competition &&
+        summary.competitionStats.continentalStage === "冠军";
+      claimants.sort(function (first, second) {
+        if (currentClubActuallyWon) {
+          if (first.club.id === currentClub.id) return -1;
+          if (second.club.id === currentClub.id) return 1;
+        }
+        return getClubStrength(second.club) - getClubStrength(first.club);
+      });
+      claimants.slice(1).forEach(function (option) {
+        option.clubSnapshot.continental = competition +
+          (getClubStrength(option.club) >= 87 ? "四强" : "八强");
+      });
+    });
+    var orderedOptions = options.slice().sort(function (first, second) {
+      return Number(second.club.id === currentClub.id) - Number(first.club.id === currentClub.id);
+    });
+    orderedOptions.forEach(function (option) {
+      if (!option.clubSnapshot || !option.club) return;
+      var league = option.club.league;
+      usedByLeague[league] = usedByLeague[league] || {};
+      var used = usedByLeague[league];
+      if (used[option.club.id]) {
+        option.clubSnapshot.league = getLeagueDisplayName(league) + "第 " + used[option.club.id] + " 名";
+        return;
+      }
+      var teamCount = LEAGUE_TEAM_COUNTS[league] || 20;
+      var position = option.club.id === currentClub.id && summary.leagueStanding
+        ? summary.leagueStanding.position
+        : getOfferLeaguePosition(option.club, summary, teamCount);
+      var occupied = Object.keys(used).map(function (clubId) {
+        return used[clubId];
+      });
+      if (occupied.indexOf(position) !== -1) {
+        var available = [];
+        for (var candidate = 1; candidate <= teamCount; candidate += 1) {
+          if (occupied.indexOf(candidate) === -1) available.push(candidate);
+        }
+        available.sort(function (first, second) {
+          return Math.abs(first - position) - Math.abs(second - position);
+        });
+        position = available[0] || position;
+      }
+      used[option.club.id] = position;
+      option.clubSnapshot.league = getLeagueDisplayName(league) + "第 " + position + " 名";
+    });
   }
 
   function findHomecomingClub(player, currentClub) {
@@ -3722,7 +4613,46 @@
     if (isSaudiClub(club) && offerType !== "loan") {
       salary *= player.status.reputation >= 75 ? 2.8 : 2.2;
     }
+    salary *= getInjuryTransferModifier(player);
     return Math.max(120000, Math.round(salary));
+  }
+
+  function findClubByDisplayName(name) {
+    return (window.CLUBS || []).find(function (club) {
+      return getClubDisplayName(club) === name ||
+        club.name === name ||
+        club.nameZh === name;
+    }) || null;
+  }
+
+  function getSharedContinentalResult(summary, competition, currentClub) {
+    var stats = summary && summary.competitionStats;
+    if (!stats || stats.continentalName !== competition) return null;
+    var worldResult = stats.continentalWorldResult || {};
+    var championId = worldResult.championId || "";
+    var runnerUpId = worldResult.runnerUpId || "";
+    if (stats.continentalStage === "冠军") {
+      championId = currentClub.id;
+    } else if (stats.continentalStage === "决赛失利") {
+      var finalOpponent = findClubByDisplayName(stats.continentalOpponent);
+      championId = finalOpponent ? finalOpponent.id : championId;
+      runnerUpId = currentClub.id;
+    }
+    return {
+      championId: championId,
+      runnerUpId: runnerUpId,
+      semifinalists: worldResult.semifinalists || [],
+      participantIds: worldResult.participantIds || []
+    };
+  }
+
+  function getSharedContinentalStage(club, sharedResult) {
+    if (!sharedResult) return "";
+    if (club.id === sharedResult.championId) return "冠军";
+    if (club.id === sharedResult.runnerUpId) return "亚军";
+    if (sharedResult.semifinalists.indexOf(club.id) !== -1) return "四强";
+    if (sharedResult.participantIds.indexOf(club.id) !== -1) return "八强";
+    return "联赛阶段";
   }
 
   function buildOfferClubSnapshot(club, currentClub, summary) {
@@ -3735,7 +4665,9 @@
       return {
         league: getLeagueDisplayName(club.league) + "第 " + summary.leagueStanding.position + " 名",
         cup: getCompetitionNames(club).domesticCup.replace("冠军", "") + currentCup,
-        continental: currentEurope
+        continental: currentEurope,
+        leaguePosition: summary.leagueStanding.position,
+        continentalCompetition: getContinentalQualificationFromSeason(club, summary)
       };
     }
 
@@ -3757,23 +4689,43 @@
           ? "欧联杯"
           : qualification === "欧协联区" ? "欧协联" : "";
       if (competition) {
+        var sharedEuropeanResult = getSharedContinentalResult(
+          summary,
+          competition,
+          currentClub
+        );
         var europeanRoll = strength + randomInt(-10, 9);
-        var europeanStage = europeanRoll >= 94 ? "冠军" :
-          europeanRoll >= 88 ? "四强" :
-          europeanRoll >= 81 ? "八强" : "联赛阶段";
+        var europeanStage = sharedEuropeanResult
+          ? getSharedContinentalStage(club, sharedEuropeanResult)
+          : europeanRoll >= 94
+            ? "四强"
+            : europeanRoll >= 81
+              ? "八强"
+              : "联赛阶段";
         continental = competition + europeanStage;
       }
     } else if (
       club.leagueLevel === 1 &&
       (club.region === "亚洲" || isSaudiClub(club)) &&
-      position <= 4
+      position <= 3
     ) {
-      continental = "亚冠" + (strength >= 88 ? "四强" : strength >= 80 ? "八强" : "小组赛");
+      var sharedAsianResult = getSharedContinentalResult(summary, "亚冠", currentClub);
+      continental = "亚冠" + (
+        sharedAsianResult
+          ? getSharedContinentalStage(club, sharedAsianResult)
+          : strength >= 88 ? "四强" : strength >= 80 ? "八强" : "小组赛"
+      );
     }
     return {
-      league: getLeagueDisplayName(club.league) + "第 " + position + " 名",
+      league: "上季" + getLeagueDisplayName(club.league) + "第 " + position + " 名",
       cup: getCompetitionNames(club).domesticCup.replace("冠军", "") + cupStage,
-      continental: continental
+      continental: continental,
+      leaguePosition: position,
+      continentalCompetition: club.region === "欧洲" && club.leagueLevel === 1
+        ? getContinentalCompetitionFromPosition(club, position)
+        : club.region === "亚洲" && club.leagueLevel === 1 && position <= 3
+          ? "亚冠"
+          : ""
     };
   }
 
@@ -3880,6 +4832,7 @@
       reputationMultiplier *
       leagueMultiplier *
       positionMultiplier *
+      getInjuryTransferModifier(player) *
       clamp(performanceMultiplier, 0.58, 1.3) *
       randomBetween(0.96, 1.04);
     return clamp(roundTransferAmount(marketValue), 80000, 220000000);
@@ -3921,21 +4874,58 @@
     return roundTransferAmount(budget);
   }
 
+  function rankTransferCandidatesByMarketFit(clubs, player) {
+    return clubs.map(function (club) {
+      var budget = getClubTransferBudget(club);
+      var valueCoverage = budget / Math.max(1000000, player.value);
+      var squadNeed = player.overall - getClubStrength(club);
+      var affordable = valueCoverage >= 1 ? 18 : valueCoverage * 18;
+      var roleNeed = clamp(10 - Math.abs(squadNeed - 1) * 1.4, -4, 10);
+      var financialHeadroom = clamp((budget - player.value) / 10000000, -8, 12);
+      var isAsianCandidatePool = clubs.length > 0 && clubs.every(function (candidate) {
+        return candidate.region === "亚洲";
+      });
+      var nationalityMarketBonus = 0;
+      if (player.countryCode === "CN" && isAsianCandidatePool && club.region === "亚洲") {
+        nationalityMarketBonus =
+          club.league === "Chinese Super League" || club.league === "China League One"
+            ? 22
+            : -7;
+      }
+      return {
+        club: club,
+        score: affordable + roleNeed + financialHeadroom +
+          nationalityMarketBonus + randomBetween(-5, 5)
+      };
+    }).sort(function (first, second) {
+      return second.score - first.score;
+    }).map(function (entry) {
+      return entry.club;
+    });
+  }
+
   function ensureCurrentEvent() {
     if (!state.currentEvent) {
+      normalizePlayerInjuryData(state.player);
       refreshContinentalQualificationFromCareer(
         state.player,
         getClubById(state.player.currentClubId)
       );
-      var contextEvent = buildContextEvent(state.player);
+      prepareSeasonInjury(state.player, getClubById(state.player.currentClubId));
+      var injuryEvent = buildUnexpectedInjuryEvent(state.player);
+      var contextEvent = injuryEvent || buildContextEvent(state.player);
       var contextEventIsPriority = contextEvent &&
-        (contextEvent.id === "captain-appointment" ||
+        (contextEvent.id === "unexpected-major-injury" ||
+         contextEvent.id === "unexpected-injury" ||
+         contextEvent.id === "captain-appointment" ||
          contextEvent.id === "captain-crisis" ||
          contextEvent.id.indexOf("captain-scrutiny-") === 0 ||
          contextEvent.id === "outgrown-current-club" ||
+         contextEvent.id === "early-career-homesickness" ||
          contextEvent.id === "late-career-coronation" ||
          contextEvent.id === "career-role-transition" ||
          contextEvent.id.indexOf("club-identity-") === 0 ||
+         contextEvent.id === "shanghai-derby-crowd-clash" ||
          contextEvent.id === "champions-league-key-match" ||
          contextEvent.id === "champions-league-penalty-shootout");
       var selectedEvent = contextEvent && (contextEventIsPriority || Math.random() < 0.58)
@@ -4028,9 +5018,19 @@
   }
 
   function buildContextEvent(player) {
+    var shanghaiDerbyClashEvent = buildShanghaiDerbyCrowdClashEvent(player);
+    if (shanghaiDerbyClashEvent) {
+      return shanghaiDerbyClashEvent;
+    }
+
     var seasonTransitionEvent = buildSeasonTransitionEvent(player);
     if (seasonTransitionEvent) {
       return seasonTransitionEvent;
+    }
+
+    var homesicknessEvent = buildEarlyCareerHomesicknessEvent(player);
+    if (homesicknessEvent) {
+      return homesicknessEvent;
     }
 
     var majorFinalEvent = buildMajorFinalEvent(player);
@@ -4041,6 +5041,11 @@
     var lateCareerCoronationEvent = buildLateCareerCoronationEvent(player);
     if (lateCareerCoronationEvent) {
       return lateCareerCoronationEvent;
+    }
+
+    var eliteClubExitEvent = buildEliteClubExitInterviewEvent(player);
+    if (eliteClubExitEvent) {
+      return eliteClubExitEvent;
     }
 
     var outgrownClubEvent = buildOutgrownCurrentClubEvent(player);
@@ -4136,6 +5141,26 @@
     return null;
   }
 
+  function buildShanghaiDerbyCrowdClashEvent(player) {
+    var incident = player.pendingShanghaiDerbyClash;
+    if (!incident || player.shanghaiDerbyClashSeen) return null;
+    var representedClub = getClubById(incident.clubId);
+    var rivalClub = getClubById(incident.rivalClubId);
+    if (!representedClub || !rivalClub) return null;
+    return {
+      id: "shanghai-derby-crowd-clash",
+      title: "上海德比赛后爆发球迷冲突",
+      text: getClubDisplayName(representedClub) + " 与 " +
+        getClubDisplayName(rivalClub) +
+        " 的比赛结束后，两队部分球迷在场外发生互殴。俱乐部、警方和媒体都希望球员公开表态，避免冲突继续扩大。",
+      options: [
+        { label: "公开呼吁停止冲突", effects: { reputation: 3, happiness: -2, coachRelation: 1 } },
+        { label: "随俱乐部慰问伤者", effects: { reputation: 4, coachRelation: 3, fitness: -2 } },
+        { label: "拒绝卷入场外争议", effects: { happiness: 1, reputation: -3, coachRelation: -1 } }
+      ]
+    };
+  }
+
   function buildNationalTournamentEvent(player) {
     var competitionName = getNationalCompetitionName(player.countryCode, player.seasonYear);
     var estimatedCallupScore =
@@ -4168,6 +5193,8 @@
   function buildOutgrownCurrentClubEvent(player) {
     var club = getClubById(player.currentClubId);
     var strengthGap = player.overall - getClubStrength(club);
+    var previousDecision = (player.outgrownClubDecisions || {})[club.id];
+    var lastSeenSeason = (player.eventLastSeenSeason || {})["outgrown-current-club"] || 0;
     var recentlyTransferred = player.lastTransfer &&
       player.lastTransfer.toClubId === club.id &&
       player.lastTransfer.seasonYear >= player.seasonYear - 1;
@@ -4178,25 +5205,140 @@
       strengthGap < 8 ||
       recentlyTransferred ||
       player.pendingForcedDeparture ||
+      (lastSeenSeason && player.seasonYear - lastSeenSeason < 4) ||
+      (
+        previousDecision &&
+        previousDecision.choice !== "寻求更高舞台" &&
+        (
+          player.seasonYear < previousDecision.deferUntil ||
+          player.overall < previousDecision.overall + 3
+        )
+      ) ||
       Math.random() > clamp(0.48 + strengthGap * 0.035, 0.58, 0.88)
     ) {
       return null;
     }
+    var targetClubs = getOutgrownTargetClubs(player, club);
+    var targetOptions = targetClubs.map(function (targetClub) {
+      return {
+        label: "公开表示想加盟 " + getClubDisplayName(targetClub),
+        targetClubId: targetClub.id,
+        effects: {
+          transferInterest: 18,
+          reputation: 2,
+          coachRelation: -6,
+          happiness: 3
+        }
+      };
+    });
+    if (!targetOptions.length) {
+      targetOptions.push({
+        label: "寻求更高舞台",
+        effects: { transferInterest: 18, reputation: 2, coachRelation: -6, happiness: 3 }
+      });
+    }
+    targetOptions.push({
+      label: "继续带领球队前进",
+      effects: { reputation: 3, coachRelation: 5, happiness: 2 }
+    });
     return {
       id: "outgrown-current-club",
       title: "你的水平已经超出球队现有平台",
       text: "你目前的能力明显高于 " + getClubDisplayName(club) +
-        " 的阵容平均水平。经纪团队认为，现在是决定继续带领球队，还是主动追求更高舞台的时候。",
+        " 的阵容平均水平。你可以指定经纪团队优先接触的下一站，也可以继续留队。",
+      options: targetOptions
+    };
+  }
+
+  function buildEliteClubExitInterviewEvent(player) {
+    var club = getClubById(player.currentClubId);
+    var yearsAtClub = player.age - (player.currentClubStartAge || player.age);
+    if (
+      !club ||
+      club.band !== "豪门" ||
+      player.eliteExitInterviewSeen ||
+      player.age < 21 ||
+      player.age > 32 ||
+      yearsAtClub < 2 ||
+      player.pendingForcedDeparture ||
+      player.preferredTransferClubId ||
+      Math.random() > 0.08
+    ) {
+      return null;
+    }
+    var targetClubs = getOutgrownTargetClubs(player, club);
+    if (!targetClubs.length) return null;
+
+    var targetOptions = targetClubs.map(function (targetClub) {
+      return {
+        label: "公开表示想加盟 " + getClubDisplayName(targetClub),
+        targetClubId: targetClub.id,
+        effects: {
+          transferInterest: 22,
+          reputation: -5,
+          coachRelation: -12,
+          happiness: 2
+        }
+      };
+    });
+    targetOptions.push({
+      label: "否认离队传闻",
+      effects: { reputation: 1, coachRelation: 3, happiness: -1 }
+    });
+    return {
+      id: "elite-club-exit-interview",
+      title: "媒体追问你是否准备离开豪门",
+      text: "你已经在 " + getClubDisplayName(club) +
+        " 站稳脚跟，但媒体不断追问下一站。公开点名其他球队会推动转会，也会被现俱乐部和球迷视为投诚。",
+      options: targetOptions
+    };
+  }
+
+  function buildEarlyCareerHomesicknessEvent(player) {
+    var club = getClubById(player.currentClubId);
+    if (
+      player.countryCode !== "CN" ||
+      !club ||
+      club.country === "中国" ||
+      player.age < 17 ||
+      player.age > 24 ||
+      player.homesicknessEventSeen ||
+      (
+        player.status.happiness >= 72 &&
+        player.age - (player.currentClubStartAge || player.age) >= 2
+      ) ||
+      Math.random() > clamp(0.16 + Math.max(0, 68 - player.status.happiness) * 0.012, 0.16, 0.48)
+    ) {
+      return null;
+    }
+    return {
+      id: "early-career-homesickness",
+      title: "归乡思切",
+      text: "早年独自在海外生活让你开始想念家人、语言和熟悉的比赛环境。经纪团队询问你是否要公开表达回到中超踢球的意愿。",
       options: [
-        { label: "寻求更高舞台", effects: { transferInterest: 18, reputation: 2, coachRelation: -6, happiness: 3 } },
-        { label: "继续带领球队前进", effects: { reputation: 3, coachRelation: 5, happiness: 2 } },
-        { label: "再观察一个赛季", effects: { transferInterest: 4, coachRelation: 1 } }
+        { label: "公开表达回国意愿", effects: { happiness: 5, transferInterest: 8, reputation: -1, coachRelation: -2 } },
+        { label: "请家人来陪伴自己", effects: { happiness: 4, fitness: 1, coachRelation: 1 } },
+        { label: "坚持适应海外生活", effects: { happiness: -2, reputation: 2, coachRelation: 2 } }
       ]
     };
   }
 
+  function getOutgrownTargetClubs(player, currentClub) {
+    var candidates = window.CLUBS.filter(function (club) {
+      return club.id !== currentClub.id &&
+        club.leagueLevel === 1 &&
+        (player.blockedTransferClubIds || []).indexOf(club.id) === -1;
+    });
+    candidates = rankTransferCandidatesByMarketFit(candidates, player);
+    return candidates;
+  }
+
   function buildCaptainEvent(player) {
     var club = getClubById(player.currentClubId);
+    var captainDecisionMade = Boolean(
+      player.captainDecisionClubs &&
+      player.captainDecisionClubs[club.id]
+    );
     var seasonsAtClub = Math.max(0, player.age - (player.currentClubStartAge || player.age));
     var recentClubSeasons = (player.career || []).filter(function (season) {
       return season.clubId === club.id;
@@ -4214,6 +5356,7 @@
     );
     if (
       !player.isCaptain &&
+      !captainDecisionMade &&
       player.age >= 20 &&
       seasonsAtClub >= 2 &&
       player.status.reputation >= 52 &&
@@ -4289,7 +5432,7 @@
       yearsAtClub < 1 ||
       player.overall < getClubStrength(club) - 8 ||
       player.status.reputation < 48 ||
-      Math.random() >= clamp(0.028 + yearsAtClub * 0.006, 0.035, 0.06)
+      Math.random() >= clamp(0.055 + yearsAtClub * 0.01, 0.065, 0.11)
     ) {
       return null;
     }
@@ -4419,6 +5562,8 @@
     var club = getClubById(transition.clubId);
     if (!club || club.id !== player.currentClubId) return null;
     if (transition.type === "european-qualification") {
+      var isAsianContinentalCampaign =
+        club.region === "亚洲" || isSaudiClub(club) || transition.competition === "亚冠";
       var matchingEuropeanSeasons = (player.career || []).filter(function (season) {
         return season.clubId === club.id &&
           season.competitionStats &&
@@ -4437,14 +5582,22 @@
       return {
         id: "season-transition-europe-" + player.seasonYear,
         title: firstEuropeanCampaign
-          ? "首次进入欧洲赛场"
+          ? isAsianContinentalCampaign
+            ? "首次进入亚冠赛场"
+            : "首次进入欧洲赛场"
           : upgradedToChampionsLeague
             ? "欧战舞台升级为欧冠"
-            : "欧战目标发生变化",
+            : isAsianContinentalCampaign
+              ? "亚冠征程即将开始"
+              : "欧战目标发生变化",
         text: getClubDisplayName(club) + " 获得了" + transition.competition + "资格。" +
           (firstEuropeanCampaign
-            ? "这是你首次随队征战欧洲赛事。"
-            : "相比上赛季，球队面对的欧战强度和目标都发生了变化。"),
+            ? isAsianContinentalCampaign
+              ? "这是你首次随队征战亚冠。"
+              : "这是你首次随队征战欧洲赛事。"
+            : isAsianContinentalCampaign
+              ? "新赛季的亚冠赛程会压缩恢复时间，也会带来更高关注度。"
+              : "相比上赛季，球队面对的欧战强度和目标都发生了变化。"),
         options: [
           { label: "主动承担双线重任", effects: { reputation: 2, fitness: -4, coachRelation: 2 } },
           { label: "接受合理轮换", effects: { fitness: 2, coachRelation: 2 } },
@@ -4904,25 +6057,25 @@
   }
 
   function buildUnexpectedInjuryEvent(player) {
-    var workloadRisk = player.status.fitness < 65 ? 0.08 : player.status.fitness < 78 ? 0.035 : 0;
-    var ageRisk = player.age >= 31 ? 0.035 : player.age >= 28 ? 0.015 : 0;
-    var injuryChance = 0.035 + workloadRisk + ageRisk;
-    if (Math.random() > injuryChance) {
-      return null;
-    }
-
-    var severe = Math.random() < 0.22;
+    normalizePlayerInjuryData(player);
+    var injury = player.pendingSeasonInjury;
+    if (
+      !injury ||
+      injury.carryOver ||
+      injury.totalWeeks < 8 ||
+      player.injury.treatment
+    ) return null;
+    var severe = injury.severity === "serious" || injury.severity === "major";
 
     return {
-      id: severe ? "unexpected-major-injury" : "unexpected-injury",
-      title: severe ? "意外重伤打乱赛季计划" : "突发伤病迫使你停下来",
-      text: severe
-        ? "一次并不激烈的对抗中，你意外遭遇严重伤情。队医认为仓促复出可能留下长期隐患。"
-        : "你在训练或比赛中突然感到不适，检查结果意味着必须重新安排接下来的训练和出场负荷。",
+      id: injury.severity === "major" ? "unexpected-major-injury" : "unexpected-injury",
+      title: severe ? injury.name + "打乱赛季计划" : "伤病迫使你停下来",
+      text: "检查确认你遭遇了" + injury.name + "，预计伤停 " +
+        injury.totalWeeks + " 周。队医提醒，康复方式会影响复发概率和长期身体状态。",
       options: [
-        { label: "完整接受康复治疗", description: "缺席时间更长，但能降低后遗症风险。", effects: { fitness: severe ? -22 : -12, overall: severe ? -1 : 0, happiness: -3, coachRelation: 2 } },
-        { label: "缩短恢复期提前复出", description: "可能赶上关键比赛，也可能伤情反复。", effects: { fitness: severe ? -30 : -18, reputation: 2, coachRelation: 1, happiness: -2 } },
-        { label: "调整踢法保护身体", description: "减少消耗，但短期表现上限会下降。", effects: { fitness: severe ? -16 : -8, overall: -1, happiness: 1 } }
+        { label: "完整接受康复治疗", effects: { fitness: severe ? -18 : -10, happiness: -3, coachRelation: 2 } },
+        { label: "缩短恢复期提前复出", effects: { fitness: severe ? -26 : -16, reputation: 2, happiness: -3 } },
+        { label: "接受手术", effects: { fitness: severe ? -22 : -14, happiness: -4, coachRelation: 3 } }
       ]
     };
   }
@@ -5140,6 +6293,7 @@
       player.status.coachRelation * 0.0015 +
       player.status.fitness * 0.001 +
       statusImpact.playingChance;
+    chance += ((player.matchSharpness == null ? 100 : player.matchSharpness) - 75) * 0.0015;
     if (footRole === "natural-wide" || footRole === "natural-fullback") {
       chance += 0.018;
     } else if (
@@ -5225,6 +6379,24 @@
       finalDecision,
       competitionImpact
     );
+    if (
+      competitionImpact.shootoutStage &&
+      competitionImpact.shootoutAdvanced === false
+    ) {
+      var shootoutOpponent = getClubById(competitionImpact.opponentClubId);
+      continentalCampaign.stage = competitionImpact.shootoutStage === "决赛"
+        ? "决赛失利"
+        : competitionImpact.shootoutStage + "出局";
+      continentalCampaign.opponent = shootoutOpponent
+        ? getClubDisplayName(shootoutOpponent)
+        : continentalCampaign.opponent;
+      continentalCampaign.score = competitionImpact.shootoutStage === "决赛"
+        ? "在点球大战中惜败于 "
+        : "在总比分战平后点球大战惜败于 ";
+      continentalCampaign.runnerUp = competitionImpact.shootoutStage === "决赛";
+      continentalCampaign.champion = "";
+      continentalCampaign.notableWin = "";
+    }
     completeCompetitionWorldResults(club, domesticCupCampaign, continentalCampaign);
     var continentalMatches = continentalCampaign.matches;
 
@@ -5349,7 +6521,13 @@
     player.nextContinentalCompetition = "";
     if (finalDecision && finalDecision.type === "champions-league") {
       campaign.name = "欧冠";
-    } else if (qualifiedCompetition && club.region === "欧洲") {
+    } else if (
+      qualifiedCompetition &&
+      (
+        (club.region === "欧洲" && qualifiedCompetition !== "亚冠") ||
+        (club.region === "亚洲" && qualifiedCompetition === "亚冠")
+      )
+    ) {
       campaign.name = qualifiedCompetition;
     } else if (
       club.region === "欧洲" &&
@@ -5500,10 +6678,14 @@
   function getOfferLeaguePosition(club, summary, teamCount) {
     if (summary && window.LeagueSimulation) {
       var currentLeagueRow = (summary.leagueTable || []).find(function (row) {
-        return row.clubId === club.id;
+        return doesLeagueTableRowMatchClub(row, club);
       });
       if (currentLeagueRow) return currentLeagueRow.position;
       summary.offerLeagueTables = summary.offerLeagueTables || {};
+      var cachedTable = getCachedSeasonLeagueTable(summary.seasonYear, club.league);
+      if (!summary.offerLeagueTables[club.league] && cachedTable.length) {
+        summary.offerLeagueTables[club.league] = cachedTable;
+      }
       if (!summary.offerLeagueTables[club.league]) {
         var roster = window.LEAGUE_ROSTERS && window.LEAGUE_ROSTERS[club.league];
         var teams = roster && roster.length
@@ -5511,6 +6693,17 @@
           : window.CLUBS.filter(function (candidate) {
               return candidate.league === club.league;
             });
+        window.CLUBS.filter(function (candidate) {
+          return candidate.league === club.league;
+        }).forEach(function (candidate) {
+          var alreadyIncluded = teams.some(function (team) {
+            return doesLeagueTableRowMatchClub({
+              clubId: team.id,
+              clubName: team.nameZh || team.name
+            }, candidate);
+          });
+          if (!alreadyIncluded) teams.push(candidate);
+        });
         if (teams.length >= 2) {
           summary.offerLeagueTables[club.league] =
             window.LeagueSimulation.simulateFullLeagueSeason({
@@ -5520,10 +6713,15 @@
               seasonYear: summary.seasonYear,
               matches: LEAGUE_MATCH_COUNTS[club.league]
             }).table;
+          cacheSeasonLeagueTable(
+            summary.seasonYear,
+            club.league,
+            summary.offerLeagueTables[club.league]
+          );
         }
       }
       var row = (summary.offerLeagueTables[club.league] || []).find(function (item) {
-        return item.clubId === club.id;
+        return doesLeagueTableRowMatchClub(item, club);
       });
       if (row) return row.position;
     }
@@ -5532,6 +6730,77 @@
       ? prior.expected
       : Math.round(1 + (92 - getClubStrength(club)) * (club.leagueLevel === 1 ? 0.55 : 0.72));
     return Math.round(clamp(expectedPosition + randomInt(-2, 2), 1, teamCount));
+  }
+
+  function getSeasonLeagueTableKey(seasonYear, league) {
+    return String(seasonYear || 0) + "::" + String(league || "");
+  }
+
+  function cacheSeasonLeagueTable(seasonYear, league, table) {
+    if (!league || !table || !table.length) return;
+    state.worldLeagueTables = state.worldLeagueTables || {};
+    state.worldLeagueTables[getSeasonLeagueTableKey(seasonYear, league)] = table;
+  }
+
+  function getCachedSeasonLeagueTable(seasonYear, league) {
+    state.worldLeagueTables = state.worldLeagueTables || {};
+    return state.worldLeagueTables[getSeasonLeagueTableKey(seasonYear, league)] || [];
+  }
+
+  function getIncomingClubMomentumBonus(player, club) {
+    var momentum = player && player.incomingClubMomentum;
+    if (
+      !momentum ||
+      !club ||
+      momentum.clubId !== club.id ||
+      momentum.sourceSeason !== player.seasonYear - 1
+    ) {
+      return 0;
+    }
+    if (momentum.position === 1) return 3.8;
+    if (momentum.position <= 3) return 2.4;
+    if (momentum.position <= 6) return 1.2;
+    return 0;
+  }
+
+  function doesLeagueTableRowMatchClub(row, club) {
+    if (!row || !club) return false;
+    if (row.clubId === club.id) return true;
+    var rowNames = [row.clubName, row.name, row.nameZh]
+      .filter(Boolean)
+      .map(normalizeClubSearchName)
+      .filter(Boolean);
+    var clubNames = [club.name, club.nameZh, getClubDisplayName(club)]
+      .filter(Boolean)
+      .map(normalizeClubSearchName)
+      .filter(Boolean);
+    if (!rowNames.length || !clubNames.length) {
+      return false;
+    }
+    return rowNames.some(function (name) {
+      return clubNames.indexOf(name) !== -1;
+    });
+  }
+
+  function dedupeLeagueTeams(teams, preferredClub) {
+    var uniqueTeams = [];
+    var seenIds = {};
+    var seenNames = {};
+    var orderedTeams = preferredClub
+      ? [preferredClub].concat(teams || [])
+      : (teams || []).slice();
+    orderedTeams.forEach(function (team) {
+      if (!team || !team.id || seenIds[team.id]) return;
+      var names = [team.name, team.nameZh, getClubDisplayName(team)]
+        .filter(Boolean)
+        .map(normalizeClubSearchName)
+        .filter(Boolean);
+      if (names.some(function (name) { return seenNames[name]; })) return;
+      seenIds[team.id] = true;
+      names.forEach(function (name) { seenNames[name] = true; });
+      uniqueTeams.push(team);
+    });
+    return uniqueTeams;
   }
 
   function completeCompetitionWorldResults(club, domesticCupCampaign, continentalCampaign) {
@@ -5647,9 +6916,10 @@
     var goalCeiling = getSeasonGoalCeiling(player, appearances, goalSkill);
     var goalLambda = Math.min(
       goalCeiling * 0.92,
-      appearances * goalRate * overallFactor * style.chances * goalSeasonVariance
+      appearances * goalRate * overallFactor * style.chances * goalSeasonVariance * 0.92
     );
-    var assistLambda = appearances * assistRate * overallFactor * style.chances * assistSeasonVariance;
+    var assistLambda =
+      appearances * assistRate * overallFactor * style.chances * assistSeasonVariance * 0.9;
     var goals = Math.min(goalCeiling, samplePoisson(goalLambda));
     var assists = Math.min(appearances, samplePoisson(assistLambda));
     var contribution = simulatePositionContribution(
@@ -5929,8 +7199,8 @@
     else if (roll <= 20) potential = Math.max(baseOverall + 14, randomInt(72, 79));
     else if (roll <= 60) potential = randomInt(80, 84);
     else if (roll <= 82) potential = randomInt(85, 89);
-    else if (roll <= 94) potential = randomInt(90, 94);
-    else potential = randomInt(95, 98);
+    else if (roll <= 96) potential = randomInt(90, 94);
+    else potential = randomInt(95, 97);
 
     var academyScore = academyClub
       ? academyClub.reputation * 0.4 +
@@ -6027,6 +7297,12 @@
     }
     if (player.age >= 29) {
       change = Math.min(change, 0);
+    }
+    if (previous >= 94 && change > 0 && randomInt(1, 100) > 24) {
+      change = 0;
+    }
+    if (previous >= 96 && change > 0) {
+      change = 0;
     }
 
     change = clamp(change, -6, 6);
@@ -6214,7 +7490,7 @@
     };
   }
 
-  function simulateTrophies(player, club, stats, seasonOutlook) {
+  function simulateTrophies(player, club, stats, seasonOutlook, nationalSummary) {
     var pool = [];
     var competitionNames = getCompetitionNames(club);
 
@@ -6260,11 +7536,11 @@
     ) {
       pool.push("赛季最佳阵容");
     }
-    var ballonDorQualified = qualifiesForBallonDor(player, stats, seasonOutlook);
+    var ballonDorQualified = qualifiesForBallonDor(player, stats, seasonOutlook, nationalSummary);
     player.pendingBallonDorNomination = ballonDorQualified;
     if (
       ballonDorQualified &&
-      Math.random() < getBallonDorChance(player, stats, seasonOutlook)
+      Math.random() < getBallonDorChance(player, stats, seasonOutlook, nationalSummary)
     ) {
       pool.push("金球奖");
     }
@@ -6364,11 +7640,20 @@
     );
   }
 
-  function qualifiesForBallonDor(player, stats, seasonOutlook) {
+  function qualifiesForBallonDor(player, stats, seasonOutlook, nationalSummary) {
     var output = stats.goals + stats.assists;
     var wonChampionsLeague = seasonOutlook &&
       seasonOutlook.continentalChampion === "欧冠冠军";
+    var championsLeagueRunnerUp = seasonOutlook &&
+      seasonOutlook.continentalRunnerUp &&
+      seasonOutlook.continentalRunnerUpName === "欧冠";
+    var championsLeagueSemiFinalist = seasonOutlook &&
+      seasonOutlook.continentalName === "欧冠" &&
+      seasonOutlook.continentalStage === "半决赛出局";
+    var championsLeagueDeepRun = championsLeagueRunnerUp || championsLeagueSemiFinalist;
     var wonLeague = seasonOutlook && seasonOutlook.leagueChampion;
+    var wonWorldCup = nationalSummary &&
+      (nationalSummary.honors || []).indexOf("世界杯冠军") !== -1;
     var eliteDouble = wonChampionsLeague && wonLeague;
     var exceptionalDoubleSeason =
       eliteDouble &&
@@ -6381,7 +7666,7 @@
     if (
       player.status.reputation < 78 ||
       stats.appearances < 24 ||
-      (player.overall < 88 && !exceptionalDoubleSeason)
+      (player.overall < 86 && !exceptionalDoubleSeason)
     ) {
       return false;
     }
@@ -6389,6 +7674,7 @@
       (seasonOutlook.continentalChampion === "欧冠冠军" ||
        seasonOutlook.leagueChampion ||
        seasonOutlook.worldChampion);
+    majorChampion = majorChampion || wonWorldCup || championsLeagueDeepRun;
     var eliteDefensiveChampion = seasonOutlook &&
       (seasonOutlook.continentalChampion === "欧冠冠军" ||
        seasonOutlook.worldChampion);
@@ -6404,18 +7690,18 @@
     }
     if (player.position === "LB" || player.position === "RB") {
       return majorChampion &&
-        player.overall >= 88 &&
+        player.overall >= 87 &&
         (output >= 8 || eliteDefensiveChampion) &&
         stats.teamContribution >= 76;
     }
-    return player.overall >= 89 &&
+    return player.overall >= 88 &&
       stats.appearances >= 28 &&
       majorChampion &&
       stats.teamContribution >= 78 &&
       (eliteDefensiveChampion || player.status.reputation >= 90);
   }
 
-  function getBallonDorChance(player, stats, seasonOutlook) {
+  function getBallonDorChance(player, stats, seasonOutlook, nationalSummary) {
     var output = stats.goals + stats.assists;
     var majorChampion = seasonOutlook &&
       (seasonOutlook.continentalChampion === "欧冠冠军" ||
@@ -6424,6 +7710,25 @@
     var eliteDouble = seasonOutlook &&
       seasonOutlook.leagueChampion &&
       seasonOutlook.continentalChampion === "欧冠冠军";
+    var wonChampionsLeague = seasonOutlook &&
+      seasonOutlook.continentalChampion === "欧冠冠军";
+    var championsLeagueRunnerUp = seasonOutlook &&
+      seasonOutlook.continentalRunnerUp &&
+      seasonOutlook.continentalRunnerUpName === "欧冠";
+    var championsLeagueSemiFinalist = seasonOutlook &&
+      seasonOutlook.continentalName === "欧冠" &&
+      seasonOutlook.continentalStage === "半决赛出局";
+    var isWorldCupSeason = isWorldCupYear(player.seasonYear);
+    var wonWorldCup = nationalSummary &&
+      (nationalSummary.honors || []).indexOf("世界杯冠军") !== -1;
+    var worldCupRunnerUp = isWorldCupSeason && nationalSummary && nationalSummary.runnerUp;
+    var worldCupStory = nationalSummary && nationalSummary.finalStory || "";
+    var worldCupDeepRun = isWorldCupSeason && /四强|半决赛/.test(worldCupStory);
+    var worldCupReachedKnockouts = isWorldCupSeason &&
+      (wonWorldCup || worldCupRunnerUp || worldCupDeepRun || /八强|十六强/.test(worldCupStory));
+    var worldCupOutput = isWorldCupSeason && nationalSummary
+      ? (nationalSummary.goals || 0) + (nationalSummary.assists || 0)
+      : 0;
     var previousSeason = player.career && player.career.length
       ? player.career[player.career.length - 1]
       : null;
@@ -6447,7 +7752,14 @@
       Math.max(0, player.status.reputation - 78) * 0.006 +
       Math.max(0, output - 18) * 0.008 +
       (majorChampion ? 0.1 : 0) +
+      (wonChampionsLeague ? 0.16 : 0) +
+      (championsLeagueRunnerUp ? 0.1 : 0) +
+      (championsLeagueSemiFinalist ? 0.05 : 0) +
       (eliteDouble ? 0.18 : 0) +
+      (wonWorldCup ? 0.32 : 0) +
+      (worldCupRunnerUp ? 0.18 : 0) +
+      (worldCupDeepRun ? 0.1 : 0) +
+      Math.max(0, worldCupOutput - 2) * 0.025 +
       mediaNarrativeBonus +
       fairPlayBonus +
       (defensiveAwardCase ? 0.12 : 0) +
@@ -6455,7 +7767,75 @@
     if (eliteDouble && output >= 24 && player.status.reputation >= 88) {
       chance = Math.max(chance, 0.72);
     }
+    if (!wonChampionsLeague && !wonWorldCup) {
+      chance *= 0.85;
+    }
+    if (
+      !wonChampionsLeague &&
+      !wonWorldCup &&
+      !seasonOutlook.leagueChampion &&
+      !isDominantBallonDorSeason(player, stats)
+    ) {
+      chance *= 0.35;
+    }
+    if (isWorldCupSeason) {
+      if (wonWorldCup) {
+        chance *= 1.18;
+      } else if (worldCupRunnerUp) {
+        chance *= 1.02;
+      } else if (worldCupDeepRun) {
+        chance *= 0.88;
+      } else if (worldCupReachedKnockouts) {
+        chance *= 0.68;
+      } else {
+        chance *= 0.42;
+      }
+    }
+    var playerAwardScore =
+      player.overall * 0.45 +
+      Math.min(60, output) * 0.25 +
+      player.status.reputation * 0.12 +
+      (stats.teamContribution || 70) * 0.08 +
+      (majorChampion ? 6 : 0) +
+      (eliteDouble ? 6 : 0);
+    var rivalAwardScore = randomBetween(79, 93);
+    if (Math.random() < 0.3) {
+      rivalAwardScore += randomBetween(4, 9);
+    }
+    if (Math.random() < 0.06) {
+      rivalAwardScore += randomBetween(10, 15);
+    }
+    var rivalGap = rivalAwardScore - playerAwardScore;
+    if (rivalGap >= 5) {
+      chance *= 0.58;
+    } else if (rivalGap >= 0) {
+      chance *= 0.72;
+    } else if (rivalGap >= -4) {
+      chance *= 0.86;
+    }
     return clamp(chance, 0.08, 0.86);
+  }
+
+  function isDominantBallonDorSeason(player, stats) {
+    var output = stats.goals + stats.assists;
+    if (player.overall < 87) return false;
+    var attackingPositions = ["ST", "LW", "RW", "CAM", "LM", "RM", "CM"];
+    if (
+      attackingPositions.indexOf(player.position) !== -1 &&
+      stats.appearances >= 28 &&
+      output / stats.appearances >= 1
+    ) {
+      return true;
+    }
+    if (["ST", "LW", "RW"].indexOf(player.position) !== -1) {
+      return stats.goals >= 30 && output >= 42;
+    }
+    if (player.position === "CAM") return output >= 34;
+    if (["LM", "RM", "CM"].indexOf(player.position) !== -1) return output >= 28;
+    if (["LB", "RB"].indexOf(player.position) !== -1) {
+      return stats.teamContribution >= 88 && output >= 14;
+    }
+    return stats.teamContribution >= 92 && stats.appearances >= 32;
   }
 
   function buildRefereeScandalMoment(player, club, competitionStats) {
@@ -6469,29 +7849,56 @@
       return null;
     }
 
-    var opponent = pickEuropeanOpponent(club.id, 82);
-    if (!opponent) return null;
+    var opponentName = competitionStats.continentalOpponent;
+    var opponent = opponentName ? null : pickEuropeanOpponent(club.id, 82);
+    opponentName = opponentName || (opponent ? getClubDisplayName(opponent) : "");
+    if (!opponentName) return null;
 
     player.refereeScandalSeen = true;
-    var benefited = Math.random() < 0.28;
-    var fixture = getClubDisplayName(club) + " 对阵 " + getClubDisplayName(opponent);
+    var continentalStage = competitionStats.continentalStage || "";
+    var exitedCompetition = /出局|失利/.test(continentalStage);
+    var wonChampionsLeague =
+      continentalStage === "冠军" ||
+      competitionStats.continentalChampion === "欧冠冠军";
+    var benefited = wonChampionsLeague || (!exitedCompetition && Math.random() < 0.28);
+    var fixture = getClubDisplayName(club) + " 对阵 " + opponentName;
+    var stageLabel = wonChampionsLeague
+      ? "的欧冠决赛"
+      : continentalStage
+        ? "的欧冠" + continentalStage.replace("出局", "").replace("失利", "")
+        : "的欧冠淘汰赛";
+    var controversyText = wonChampionsLeague
+      ? fixture + stageLabel +
+        "出现连续争议判罚。球队最终捧起欧冠奖杯，但赛后遭到媒体、对手和中立球迷的口诛笔伐，这座冠军也因此长期伴随着争议。"
+      : fixture + stageLabel +
+        "出现连续争议判罚，球队在巨大质疑声中晋级。这一夜多年后仍被对手球迷反复提起。";
     return {
       text: benefited
-        ? fixture + " 的欧冠淘汰赛出现连续争议判罚，球队在巨大质疑声中改变了比赛走势。这一夜多年后仍被对手球迷反复提起。"
-        : fixture + " 的欧冠淘汰赛被连续争议判罚彻底改变，这一夜成为俱乐部历史上的判罚惨案。",
+        ? controversyText
+        : fixture + stageLabel + "被连续争议判罚改变走势，球队最终遭到淘汰，这一夜成为俱乐部历史上的判罚惨案。",
       effects: benefited
-        ? { reputation: -3, happiness: -2, coachRelation: 1 }
+        ? { reputation: wonChampionsLeague ? -5 : -3, happiness: -2, coachRelation: 1 }
         : { reputation: 1, happiness: -7, fitness: -3 }
     };
   }
 
-  function buildBallonDorControversy(player, club, stats, trophies, seasonOutlook) {
+  function buildBallonDorControversy(player, club, stats, trophies, seasonOutlook, nationalSummary) {
     var previousControversies = (player.career || []).filter(function (season) {
       return Boolean(season.ballonDorControversy);
     });
+    var wonBallonDor = trophies.indexOf("金球奖") !== -1;
+    var wonWorldCup = nationalSummary &&
+      (nationalSummary.honors || []).indexOf("世界杯冠军") !== -1;
+    var hasTopTitle =
+      seasonOutlook.continentalChampion === "欧冠冠军" ||
+      seasonOutlook.leagueChampion ||
+      wonWorldCup;
+    if (wonBallonDor && !hasTopTitle && !isDominantBallonDorSeason(player, stats)) {
+      return "评奖结果引发巨大争议。你没有顶级冠军，个人表现也未形成压倒性优势，外界质疑你从更具说服力的竞争者手中“偷走”了金球奖。";
+    }
     if (
       !player.pendingBallonDorNomination ||
-      trophies.indexOf("金球奖") !== -1 ||
+      wonBallonDor ||
       stats.appearances < 30 ||
       previousControversies.length >= 2
     ) {
@@ -6706,6 +8113,7 @@
       : window.CLUBS.filter(function (candidate) {
           return candidate.league === club.league;
         });
+    leagueTeams = dedupeLeagueTeams(leagueTeams, club);
     if (!leagueTeams.some(function (candidate) { return candidate.id === club.id; })) {
       leagueTeams[leagueTeams.length - 1] = club;
     }
@@ -6733,7 +8141,12 @@
             goals: stats.leagueGoals,
             assists: stats.leagueAssists
           },
-          playerClubPowerBonus: clamp((competitionImpact.leaguePoints || 0) * 0.28, -1.5, 2.5)
+          playerClubPowerBonus: clamp(
+            (competitionImpact.leaguePoints || 0) * 0.28 +
+              getIncomingClubMomentumBonus(player, club),
+            -1.5,
+            6.5
+          )
         })
       : null;
     if (
@@ -6742,6 +8155,9 @@
       window.LeagueSimulation.forceClubChampion
     ) {
       window.LeagueSimulation.forceClubChampion(fullLeagueSeason, club.id);
+    }
+    if (fullLeagueSeason) {
+      cacheSeasonLeagueTable(player.seasonYear, club.league, fullLeagueSeason.table);
     }
     if (fullLeagueSeason) {
       fullLeagueSeason.table.forEach(function (row) {
@@ -6799,17 +8215,6 @@
       specialStory = finalDecision.story;
     }
 
-    if (
-      leagueChampion &&
-      domesticCupWinner &&
-      continentalChampion === "欧冠冠军"
-    ) {
-      var trebleConfirmationChance = teamPower >= 92 ? 0.1 : teamPower >= 88 ? 0.035 : 0.008;
-      if (Math.random() > trebleConfirmationChance) {
-        domesticCupWinner = false;
-      }
-    }
-
     if ((continentalChampion === "欧冠冠军" || continentalChampion === "亚冠冠军") && teamPower >= 92 && randomInt(0, 100) > 74) {
       worldChampion = true;
     }
@@ -6862,6 +8267,8 @@
       continentalChampion: continentalChampion,
       continentalRunnerUp: continentalRunnerUp,
       continentalRunnerUpName: continentalRunnerUpName,
+      continentalName: competitionStats ? competitionStats.continentalName : "",
+      continentalStage: competitionStats ? competitionStats.continentalStage : "",
       worldChampion: worldChampion,
       specialStory: specialStory
     };
@@ -7060,6 +8467,14 @@
     return "";
   }
 
+  function getContinentalCompetitionFromPosition(club, position) {
+    var status = getEuropeanQualificationStatus(club, position, false);
+    if (status === "欧冠区" || status === "欧冠资格赛区") return "欧冠";
+    if (status === "欧联区") return "欧联杯";
+    if (status === "欧协联区") return "欧协联";
+    return "";
+  }
+
   function buildLegacyLegendStory(player, club, stats, trophies, seasonOutlook) {
     var combinedOutput = stats.goals + stats.assists;
     var championsLeagueWin = trophies.indexOf("欧冠冠军") !== -1;
@@ -7251,7 +8666,7 @@
     addStory(
       isDefender &&
       stats.appearances >= 30 &&
-      trophies.length >= 2 &&
+      trophies.filter(isCompetitionChampionship).length >= 2 &&
       player.status.reputation >= 68,
       32,
       "你以防线领袖身份完成双冠赛季，几次门线解围和决赛封堵被球迷视为与进球同等重要的冠军瞬间。"
@@ -8415,7 +9830,7 @@
         effects.happiness -= 5;
         note = playerTakesPenalty
           ? "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
-            " 的点球大战中，你罚进了自己的点球，但球队仍在后续轮次落败出局。"
+            " 的点球大战中，你罚进了自己的点球，但队友随后罚失，球队仍在本轮落败出局。"
           : "欧冠" + event.stage + "对阵 " + shootoutOpponentName +
             " 的点球大战中，你的选择没能换来晋级，球队就此出局。";
       }
@@ -8880,16 +10295,11 @@
           effects.happiness -= 3;
           note = "提前复出导致伤情反复，你不得不再次长期休战，身体状态和球队位置都受到打击。";
         }
-      } else if (option.label === "调整踢法保护身体") {
-        if (profile.offBall + profile.passing >= 130) {
-          effects.overall += 1;
-          effects.fitness += 4;
-          note = "你依靠阅读比赛和处理球方式减少了身体消耗，新踢法逐渐稳定下来。";
-        } else {
-          effects.reputation -= 2;
-          effects.coachRelation -= 2;
-          note = "新的踢法没有完全掩盖身体限制，你在场上的影响力明显下降。";
-        }
+      } else if (option.label === "接受手术") {
+        effects.fitness -= isMajorInjury ? 4 : 2;
+        effects.happiness -= 2;
+        effects.coachRelation += 2;
+        note = "你接受手术并选择更漫长的恢复周期。本赛季出场受到更大影响，但复发风险和永久损伤有所降低。";
       }
     }
 
@@ -9112,6 +10522,40 @@
     return '<div class="empty-state">这一年没有收获冠军，也没有遭遇需要记录的伤病。</div>';
   }
 
+  function buildSeasonInjurySummary(summary) {
+    var injury = summary.injuries && summary.injuries[0];
+    if (!injury) return "";
+    var missedMatches = summary.competitionStats && summary.competitionStats.injuryMatchesMissed || 0;
+    var permanentText = injury.permanentLoss
+      ? " · 永久能力影响 " + injury.permanentLoss + " 点"
+      : "";
+    var recurrenceText = injury.recurrence ? " · 旧伤复发" : "";
+    return '<div class="competition-breakdown injury-summary-card">' +
+      '<span>' + (injury.severity === "major" ? "重大伤病" : "伤病") + "</span>" +
+      "<b>" + injury.label + " · 预计伤停 " + (injury.weeksOut || injury.totalWeeks || 0) + " 周</b>" +
+      "<b>预计少出场 " + missedMatches + " 次 · 成长速度下降" +
+      permanentText + recurrenceText + "</b></div>";
+  }
+
+  function buildCareerInjurySummary(player) {
+    var history = player.injuryHistory || [];
+    if (!history.length) {
+      return '<div class="summary-card"><h3 class="section-title">生涯伤病</h3><span class="muted">没有记录到严重伤病</span></div>';
+    }
+    var totalWeeks = history.reduce(function (sum, injury) {
+      return sum + (injury.weeksOut || 0);
+    }, 0);
+    var severityOrder = { minor: 1, moderate: 2, serious: 3, major: 4 };
+    var worst = history.slice().sort(function (first, second) {
+      return (severityOrder[second.severity] || 0) - (severityOrder[first.severity] || 0) ||
+        (second.weeksOut || 0) - (first.weeksOut || 0);
+    })[0];
+    return '<div class="summary-card"><h3 class="section-title">生涯伤病</h3>' +
+      '<div class="honors-list"><span class="injury-pill">共 ' + history.length + " 次</span>" +
+      '<span class="injury-pill">累计缺阵 ' + totalWeeks + " 周</span>" +
+      '<span class="injury-pill">最严重：' + worst.name + "</span></div></div>";
+  }
+
   function buildCompetitionBreakdown(summary) {
     var competitionStats = summary.competitionStats;
     if (!competitionStats) return "";
@@ -9229,19 +10673,28 @@
       "球队在最后时刻被 " + opponentName + " 完成绝杀，整季努力停在了终场哨前。",
       opponentName + " 的门将打出超神表现，连续化解必进球，让比赛始终无法被扳回来。",
       "一次争议判罚改变了比赛走势，" + getClubDisplayName(club) + " 在持续围攻中仍未能追回比分。",
-      "球队领先后没能控制住节奏，" + opponentName + " 在下半场完成逆转。",
-      "决胜点球大战中球队罚失关键点球，最终以最残酷的方式告别赛事。"
+      "球队没能控制住下半场节奏，" + opponentName + " 抓住防线松动的机会取得制胜进球。"
     ];
+    var exitScore = importantContinentalExit
+      ? competitionStats.continentalScore || ""
+      : "";
+    var shootoutDefeat = /点球大战/.test(exitScore);
+    if (shootoutDefeat) {
+      reasons = [
+        "双方在常规时间和加时赛都未能分出胜负，" + getClubDisplayName(club) +
+        " 最终在点球大战中罚失关键点球，以最残酷的方式告别赛事。"
+      ];
+    }
 
-    if (player.position === "GK") {
+    if (!shootoutDefeat && player.position === "GK") {
       reasons.push(
         "你完成了多次关键扑救，但防线在最后一次定位球中漏人，球队仍被 " + opponentName + " 淘汰。"
       );
-    } else if (["CB", "LB", "RB"].indexOf(player.position) !== -1) {
+    } else if (!shootoutDefeat && ["CB", "LB", "RB"].indexOf(player.position) !== -1) {
       reasons.push(
         "球队大部分时间守住了压力，却在一次定位球二点争抢中失位，被 " + opponentName + " 抓住唯一机会。"
       );
-    } else if (playerWasKey) {
+    } else if (!shootoutDefeat && playerWasKey) {
       reasons.push(
         "你创造出了足够多的机会，但全队临门一脚连续失准，" + opponentName + " 将微弱优势守到了最后。"
       );
@@ -9707,9 +11160,27 @@
       return "assets/trophies/europa-league.svg";
     }
     if (name === "世界杯冠军") {
-      return "assets/trophies/world-cup.svg";
+      return "assets/trophies/world-cup-classic.svg";
     }
-    if (/英超冠军|西甲冠军|德甲冠军|意甲冠军|法甲冠军|中超冠军|J1联赛冠军|K1联赛冠军|沙特联冠军|泰超冠军|马来超冠军/.test(name)) {
+    if (name === "亚洲杯冠军") {
+      return "assets/trophies/asian-cup-classic.svg";
+    }
+    if (name === "英超冠军") {
+      return "assets/trophies/premier-league-classic.png";
+    }
+    if (name === "西甲冠军") {
+      return "assets/trophies/la-liga.png";
+    }
+    if (name === "德甲冠军") {
+      return "assets/trophies/bundesliga.svg";
+    }
+    if (name === "意甲冠军") {
+      return "assets/trophies/serie-a.png";
+    }
+    if (name === "法甲冠军") {
+      return "assets/trophies/ligue-1.svg";
+    }
+    if (/中超冠军|J1联赛冠军|K1联赛冠军|沙特联冠军|泰超冠军|马来超冠军/.test(name)) {
       return "assets/trophies/league-trophy.svg";
     }
     if (/足总杯冠军|国王杯冠军|德国杯冠军|意大利杯冠军|法国杯冠军|足协杯冠军|天皇杯冠军|沙王冠冠军/.test(name)) {
@@ -9718,7 +11189,7 @@
     if (name === "金球奖") {
       return "assets/trophies/ballon-dor.svg";
     }
-    if (/亚洲杯冠军|欧洲杯冠军|美洲杯冠军|非洲杯冠军|中北美金杯赛冠军|大洋洲国家杯冠军|亚冠冠军/.test(name)) {
+    if (/欧洲杯冠军|美洲杯冠军|非洲杯冠军|中北美金杯赛冠军|大洋洲国家杯冠军|亚冠冠军/.test(name)) {
       return "assets/trophies/continental-cup.svg";
     }
     if (name === "世俱杯冠军") {
@@ -9749,7 +11220,8 @@
       gameOver: false,
       clubForms: {},
       clubEconomics: {},
-      clubLeagueOrigins: {}
+      clubLeagueOrigins: {},
+      worldLeagueTables: {}
     };
     render();
   }

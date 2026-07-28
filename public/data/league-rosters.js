@@ -83,6 +83,15 @@
     return normalize(value) || "club";
   }
 
+  var CLUB_MATCH_ALIASES = {
+    intermilan: ["inter"],
+    atleticodemadrid: ["atleticomadrid"],
+    monaco: ["asmonaco"],
+    lyon: ["olympiquelyonnais"],
+    brightonandhovealbion: ["brighton"],
+    parissaintgermain: ["parissg"]
+  };
+
   var CLUB_BASE_STRENGTHS = {
     arsenal: 89, liverpool: 90, manchestercity: 92, manchesterunited: 84, chelsea: 86,
     realmadrid: 93, barcelona: 91, atleticodemadrid: 87,
@@ -111,7 +120,9 @@
     window.LEAGUE_ROSTERS[league] = rosters[league].map(function (entry, index) {
       var key = normalize(entry[0]);
       var club = existing.find(function (candidate) {
-        return normalize(candidate.name) === key ||
+        var candidateKey = normalize(candidate.name);
+        return candidateKey === key ||
+          (CLUB_MATCH_ALIASES[key] || []).indexOf(candidateKey) !== -1 ||
           candidate.nameZh === entry[1];
       });
       if (club) {
