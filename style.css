@@ -953,6 +953,50 @@ select {
   line-height: 1.35;
 }
 
+.career-verdict-club {
+  --club-primary-rgb: 221, 180, 72;
+  --club-secondary-rgb: 244, 238, 210;
+  border-color: rgba(var(--club-primary-rgb), 0.78);
+  background:
+    radial-gradient(circle at 13% 20%, rgba(var(--club-secondary-rgb), 0.3), transparent 42%),
+    linear-gradient(135deg, rgba(var(--club-primary-rgb), 0.42), rgba(24, 31, 38, 0.97) 72%);
+  box-shadow:
+    0 0 0 1px rgba(var(--club-secondary-rgb), 0.12),
+    0 10px 30px rgba(var(--club-primary-rgb), 0.18);
+}
+
+.career-verdict-club > b {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  place-items: center;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.career-verdict-club strong {
+  color: rgb(var(--club-secondary-rgb));
+}
+
+.career-verdict-club-badge {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+}
+
+.career-verdict-club-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.career-verdict-club-badge .club-api-fallback {
+  color: #17212a;
+  font-size: 0.58rem;
+}
+
 .career-verdict-super {
   position: relative;
   min-width: 210px;

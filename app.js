@@ -632,19 +632,102 @@
         Array.prototype.forEach.call(document.querySelectorAll('[data-club-badge="' + clubId + '"]'), function (node) {
           if (node.querySelector("img")) return;
           var image = document.createElement("img");
-          image.src = badgeUrl;
+          image.crossOrigin = "anonymous";
           image.alt = getClubDisplayName(getClubById(clubId)) + " 队徽";
           image.loading = "lazy";
+          image.addEventListener("load", function () {
+            applyClubVerdictTheme(clubId, image);
+          });
           image.addEventListener("error", function () {
             image.remove();
             node.classList.remove("club-api-badge-loaded");
             delete clubBadgeCache[clubId];
             removePersistentClubBadge(clubId);
+            applyClubVerdictFallbackTheme(clubId);
           });
+          image.src = badgeUrl;
           node.appendChild(image);
           node.classList.add("club-api-badge-loaded");
         });
       });
+    });
+  }
+
+  function applyClubVerdictTheme(clubId, image) {
+    var colors = extractBadgeColors(image);
+    if (!colors.length) {
+      applyClubVerdictFallbackTheme(clubId);
+      return;
+    }
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[data-verdict-club="' + clubId + '"]'),
+      function (node) {
+        node.style.setProperty("--club-primary-rgb", colors[0].join(","));
+        node.style.setProperty(
+          "--club-secondary-rgb",
+          (colors[1] || colors[0]).join(",")
+        );
+      }
+    );
+  }
+
+  function extractBadgeColors(image) {
+    try {
+      var canvas = document.createElement("canvas");
+      canvas.width = 36;
+      canvas.height = 36;
+      var context = canvas.getContext("2d", { willReadFrequently: true });
+      context.drawImage(image, 0, 0, 36, 36);
+      var pixels = context.getImageData(0, 0, 36, 36).data;
+      var buckets = {};
+      for (var index = 0; index < pixels.length; index += 16) {
+        if (pixels[index + 3] < 150) continue;
+        var red = pixels[index];
+        var green = pixels[index + 1];
+        var blue = pixels[index + 2];
+        var maximum = Math.max(red, green, blue);
+        var minimum = Math.min(red, green, blue);
+        if (maximum < 24 || (maximum > 245 && minimum > 245)) continue;
+        var key = [
+          Math.round(red / 32) * 32,
+          Math.round(green / 32) * 32,
+          Math.round(blue / 32) * 32
+        ].map(function (value) { return clamp(value, 0, 255); }).join(",");
+        buckets[key] = (buckets[key] || 0) + 1 + (maximum - minimum) / 180;
+      }
+      return Object.keys(buckets).sort(function (first, second) {
+        return buckets[second] - buckets[first];
+      }).slice(0, 2).map(function (key) {
+        return key.split(",").map(Number);
+      });
+    } catch (error) {
+      return [];
+    }
+  }
+
+  function applyClubVerdictFallbackTheme(clubId) {
+    var hue = String(clubId || "").split("").reduce(function (total, character) {
+      return (total + character.charCodeAt(0) * 17) % 360;
+    }, 205);
+    var primary = hslToRgb(hue / 360, 0.7, 0.52);
+    var secondary = hslToRgb(((hue + 42) % 360) / 360, 0.62, 0.68);
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[data-verdict-club="' + clubId + '"]'),
+      function (node) {
+        node.style.setProperty("--club-primary-rgb", primary.join(","));
+        node.style.setProperty("--club-secondary-rgb", secondary.join(","));
+      }
+    );
+  }
+
+  function hslToRgb(hue, saturation, lightness) {
+    function convert(offset) {
+      var channel = (offset + hue) % 1;
+      var factor = saturation * Math.min(lightness, 1 - lightness);
+      return lightness - factor * Math.max(-1, Math.min(channel * 6 - 3, Math.min(9 - channel * 6, 1)));
+    }
+    return [convert(1 / 3), convert(0), convert(-1 / 3)].map(function (value) {
+      return Math.round(value * 255);
     });
   }
 
@@ -769,23 +852,23 @@
       '<div class="hero">' +
       '  <div class="brand"><span class="brand-mark">⚽</span><span>球途 Chronicle</span></div>' +
       '  <h1 class="hero-title">手机网页足球生涯模拟器</h1>' +
-      '  <p class="hero-copy">从 16 岁开始，每次推进一年。做选择、踢比赛、拿奖杯，直到退役后回看整条生涯时间线。</p>' +
+      '  <p class="hero-copy">从 16 岁开始直到退役。</p>' +
       '</div>' +
       '<div class="panel">' +
       '  <h2 class="section-title">创建球员</h2>' +
       '  <p class="section-copy">当前版本不保存进度，刷新或关闭网页后会重新开始。</p>' +
       '  <form id="create-form" class="form-grid">' +
-      '    <label class="field"><span class="field-label">姓名</span><input name="name" maxlength="12" placeholder="例如：姚锋" value="姚锋" required></label>' +
+      '    <label class="field"><span class="field-label">姓名</span><input name="name" maxlength="12" placeholder="例如：张三" value="张三" required></label>' +
       '    <label class="field"><span class="field-label">国籍</span><select name="countryCode">' + countriesOptions + "</select></label>" +
       '    <label class="field"><span class="field-label">位置</span><select name="position">' + positionOptions + "</select></label>" +
       '    <label class="field"><span class="field-label">惯用脚</span><select name="foot"><option value="右脚">右脚</option><option value="左脚">左脚</option></select></label>' +
-      '    <label class="field"><span class="field-label">球衣号码</span><input name="number" type="number" min="1" max="99" value="34" required></label>' +
+      '    <label class="field"><span class="field-label">球衣号码</span><input name="number" type="number" min="1" max="99" value="1" required></label>' +
       '    <div class="actions">' +
       '      <button class="btn btn-primary" type="submit">开启生涯</button>' +
       '    </div>' +
       '  </form>' +
       '</div>' +
-      '<p class="footer-note">建议单局时长 3 到 8 分钟。开局路线、青训和起步俱乐部都会随机生成，生涯会按年推进。</p>' +
+      '<p class="footer-note">单局时长 3 到 8 分钟。开局路线、青训和起步俱乐部都会随机生成，生涯会按年推进。</p>' +
       '</section>';
 
     document.getElementById("create-form").addEventListener("submit", onCreatePlayer);
@@ -1096,7 +1179,9 @@
         return '<span class="career-verdict-pill' +
           (verdict.tier === "super" ? " career-verdict-super" : "") +
           (verdict.tier === "negative" ? " career-verdict-negative" : "") +
-          '"><b>' + verdict.icon + '</b><span><strong>' +
+          (verdict.clubId ? " career-verdict-club" : "") +
+          '"' + (verdict.clubId ? ' data-verdict-club="' + verdict.clubId + '"' : "") +
+          '><b>' + verdict.icon + '</b><span><strong>' +
           verdict.name + '</strong><small>' + verdict.description + "</small></span></span>";
       }).join("") + "</div>" +
       '<div class="career-summary-block">' +
@@ -1104,7 +1189,7 @@
       buildSummaryCard("总出场", player.totals.appearances) +
       buildSummaryCard("总进球", player.totals.goals) +
       buildSummaryCard("总助攻", player.totals.assists) +
-      buildSummaryCard("顶级冠军", topChampionshipCount) +
+      buildSummaryCard("总冠军", championshipCount) +
       buildSummaryCard("国家队出场", player.nationalTeam.caps) +
       buildSummaryCard("效力球队", clubsVisited) +
       buildSummaryCard("生涯最高 OVR", getPeakOverall(player.career)) +
@@ -1491,7 +1576,13 @@
     }
 
     if (isOneClubCareer) {
-      verdicts.push({ icon: "◆", name: "一人一城", description: "多年坚守同一支俱乐部，并留下足够深厚的累计贡献" });
+      var oneClub = getClubById(longestStay.clubId);
+      verdicts.push({
+        icon: buildClubBadge(oneClub, "career-verdict-club-badge"),
+        clubId: longestStay.clubId,
+        name: "一人一城",
+        description: "多年坚守 " + getClubDisplayName(oneClub) + "，并留下足够深厚的累计贡献"
+      });
     } else if (longestStay && longestStay.seasons >= 8 && longestStay.appearances >= 220) {
       verdicts.push({
         icon: "♜",
